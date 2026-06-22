@@ -1,0 +1,1591 @@
+<!--
+  Generated from the Taasika SQL dump (snapshot 240, 'published-19jan26').
+  Source schema: taasika2-foss-26jan26.sql
+  Template reference: samplexml/ (UniTime XML interface)
+  See: https://www.unitime.org/uct_interfaces.php
+-->
+
+<offerings campus="COEP" year="2026" term="Spr" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from Taasika snapshot 240" includeExams="none">
+  <offering id="32529" offered="true" action="update">
+    <course id="32529" subject="CS" courseNbr="102" controlling="true" title="Constitution of India" scheduleBookNote=""/>
+    <config name="1" limit="160">
+      <subpart type="Lec" suffix="" minPerWeek="120"/>
+      <class id="CS 102 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18944" share="100" lead="true"/>
+      </class>
+      <class id="CS 102 Lec 2" type="Lec" suffix="2" limit="80" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18944" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32534" offered="true" action="update">
+    <course id="32534" subject="CS" courseNbr="107" controlling="true" title="Computer Organization" scheduleBookNote=""/>
+    <config name="1" limit="160">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <class id="CS 107 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
+      </class>
+      <class id="CS 107 Lec 2" type="Lec" suffix="2" limit="80" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32537" offered="true" action="update">
+    <course id="32537" subject="CS" courseNbr="109" controlling="true" title="Artificial Intelligence" scheduleBookNote=""/>
+    <config name="1" limit="160">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 109 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="TY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18834" share="100" lead="true"/>
+      </class>
+      <class id="CS 109 Lec 2" type="Lec" suffix="2" limit="80" scheduleNote="TY-Div2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18865" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32539" offered="true" action="update">
+    <course id="32539" subject="CS" courseNbr="110" controlling="true" title="Computer Networks" scheduleBookNote=""/>
+    <config name="1" limit="220">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 110 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="TY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18844" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lec 2" type="Lec" suffix="2" limit="80" scheduleNote="TY-Div2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18844" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18844" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY1-T2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18844" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY1-T3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18844" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="TY1-T4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18844" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 5" type="Lab" suffix="5" limit="20" scheduleNote="TY1-T5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18936" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 6" type="Lab" suffix="6" limit="20" scheduleNote="TY2-T1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <instructor id="taasika-teacher-18835" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 7" type="Lab" suffix="7" limit="20" scheduleNote="TY2-T2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+        <instructor id="taasika-teacher-18846" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 8" type="Lab" suffix="8" limit="20" scheduleNote="TY2-T3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18835" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 9" type="Lab" suffix="9" limit="20" scheduleNote="TY2-T4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18835" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 10" type="Lab" suffix="10" limit="20" scheduleNote="TY2-T5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18835" share="100" lead="true"/>
+      </class>
+      <class id="CS 110 Lab 11" type="Lab" suffix="11" limit="20" scheduleNote="TY2-T6" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <instructor id="taasika-teacher-18846" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32572" offered="true" action="update">
+    <course id="32572" subject="CS" courseNbr="128" controlling="true" title="MDM-Data Structures, Files and Algorithms" scheduleBookNote=""/>
+    <config name="1" limit="160">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <class id="CS 128 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="SY-MDM1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18874" share="100" lead="true"/>
+      </class>
+      <class id="CS 128 Lec 2" type="Lec" suffix="2" limit="80" scheduleNote="SY-MDM2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18938" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32590" offered="true" action="update">
+    <course id="32590" subject="CS" courseNbr="142" controlling="true" title="Development Tools Labrotary" scheduleBookNote=""/>
+    <config name="1" limit="220">
+      <subpart type="Lec" suffix="" minPerWeek="60"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 142 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="SY1-S1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18836" share="100" lead="true"/>
+      </class>
+      <class id="CS 142 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="SY1-S2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+        <instructor id="taasika-teacher-18836" share="100" lead="true"/>
+      </class>
+      <class id="CS 142 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="SY1-S3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18836" share="100" lead="true"/>
+      </class>
+      <class id="CS 142 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="SY1-S4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <room id="taasika-room-8968" building="CSED" roomNbr="Cogni-5"/>
+        <instructor id="taasika-teacher-18836" share="100" lead="true"/>
+      </class>
+      <class id="CS 142 Lab 5" type="Lab" suffix="5" limit="20" scheduleNote="SY1-S5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <room id="taasika-room-8968" building="CSED" roomNbr="Cogni-5"/>
+        <instructor id="taasika-teacher-18836" share="100" lead="true"/>
+      </class>
+      <class id="CS 142 Lab 6" type="Lab" suffix="6" limit="20" scheduleNote="SY2-S1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18873" share="100" lead="true"/>
+      </class>
+      <class id="CS 142 Lab 7" type="Lab" suffix="7" limit="20" scheduleNote="SY2-S2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <room id="taasika-room-8966" building="CSED" roomNbr="Cogni-34"/>
+        <instructor id="taasika-teacher-18873" share="100" lead="true"/>
+      </class>
+      <class id="CS 142 Lab 8" type="Lab" suffix="8" limit="20" scheduleNote="SY2-S3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18873" share="100" lead="true"/>
+      </class>
+      <class id="CS 142 Lab 9" type="Lab" suffix="9" limit="20" scheduleNote="SY2-S4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18873" share="100" lead="true"/>
+      </class>
+      <class id="CS 142 Lab 10" type="Lab" suffix="10" limit="20" scheduleNote="SY2-S6(DSY)" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18873" share="100" lead="true"/>
+      </class>
+      <class id="CS 142 Lab 11" type="Lab" suffix="11" limit="20" scheduleNote="SY2-S5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18873" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32640" offered="true" action="update">
+    <course id="32640" subject="CS" courseNbr="171" controlling="true" title="Design and Analysis of Algorithm" scheduleBookNote=""/>
+    <config name="1" limit="220">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 171 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="TY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18930" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lec 2" type="Lec" suffix="2" limit="80" scheduleNote="TY-Div2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18940" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18930" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY1-T2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18930" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY1-T3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18930" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="TY1-T4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18930" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 5" type="Lab" suffix="5" limit="20" scheduleNote="TY1-T5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18930" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 6" type="Lab" suffix="6" limit="20" scheduleNote="TY2-T1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <instructor id="taasika-teacher-18940" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 7" type="Lab" suffix="7" limit="20" scheduleNote="TY2-T2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+        <instructor id="taasika-teacher-18940" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 8" type="Lab" suffix="8" limit="20" scheduleNote="TY2-T3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18940" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 9" type="Lab" suffix="9" limit="20" scheduleNote="TY2-T4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18940" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 10" type="Lab" suffix="10" limit="20" scheduleNote="TY2-T5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18928" share="100" lead="true"/>
+      </class>
+      <class id="CS 171 Lab 11" type="Lab" suffix="11" limit="20" scheduleNote="TY2-T6" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <instructor id="taasika-teacher-18928" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32646" offered="true" action="update">
+    <course id="32646" subject="CS" courseNbr="177" controlling="true" title="DE4: GPU Computing" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 177 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-B4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
+      </class>
+      <class id="CS 177 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT1-B5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
+      </class>
+      <class id="CS 177 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="BT2-B6" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18836" share="100" lead="true"/>
+      </class>
+      <class id="CS 177 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="BT2-B5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32648" offered="true" action="update">
+    <course id="32648" subject="CS" courseNbr="179" controlling="true" title="Minor4-Data Science" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <class id="CS 179 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="BT-Minor" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <instructor id="taasika-teacher-18928" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32661" offered="true" action="update">
+    <course id="32661" subject="CS" courseNbr="190" controlling="true" title="Theory of Computation" scheduleBookNote=""/>
+    <config name="1" limit="220">
+      <subpart type="Lec" suffix="" minPerWeek="120"/>
+      <subpart type="Lab" suffix="" minPerWeek="60"/>
+      <class id="CS 190 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18832" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lec 2" type="Lec" suffix="2" limit="80" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="SY1-S1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18832" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="SY1-S2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+        <instructor id="taasika-teacher-18832" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="SY1-S3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18832" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="SY1-S4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <room id="taasika-room-8968" building="CSED" roomNbr="Cogni-5"/>
+        <instructor id="taasika-teacher-18832" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 5" type="Lab" suffix="5" limit="20" scheduleNote="SY1-S5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <room id="taasika-room-8968" building="CSED" roomNbr="Cogni-5"/>
+        <instructor id="taasika-teacher-18832" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 6" type="Lab" suffix="6" limit="20" scheduleNote="SY2-S1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 7" type="Lab" suffix="7" limit="20" scheduleNote="SY2-S2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <room id="taasika-room-8966" building="CSED" roomNbr="Cogni-34"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 8" type="Lab" suffix="8" limit="20" scheduleNote="SY2-S3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 9" type="Lab" suffix="9" limit="20" scheduleNote="SY2-S4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 10" type="Lab" suffix="10" limit="20" scheduleNote="SY2-S5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 190 Lab 11" type="Lab" suffix="11" limit="20" scheduleNote="SY2-S6(DSY)" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32673" offered="true" action="update">
+    <course id="32673" subject="MT" courseNbr="111" controlling="true" title="PSEC3-Deep Learning" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 111 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-DE3A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18849" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32675" offered="true" action="update">
+    <course id="32675" subject="CS" courseNbr="195" controlling="true" title="Data Mining and Machine Learning" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 195 Lec 1" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18834" share="100" lead="true"/>
+      </class>
+      <class id="CS 195 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18834" share="100" lead="true"/>
+      </class>
+      <class id="CS 195 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="MTCE-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+        <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+        <instructor id="taasika-teacher-18834" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32676" offered="true" action="update">
+    <course id="32676" subject="CS" courseNbr="196" controlling="true" title="Security in Computing" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 196 Lec 1" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18845" share="100" lead="true"/>
+      </class>
+      <class id="CS 196 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18845" share="100" lead="true"/>
+      </class>
+      <class id="CS 196 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="MTCE-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+        <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+        <instructor id="taasika-teacher-18845" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32677" offered="true" action="update">
+    <course id="32677" subject="CS" courseNbr="197" controlling="true" title="Embedded Systems" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 197 Lec 1" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18925" share="100" lead="true"/>
+      </class>
+      <class id="CS 197 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18925" share="100" lead="true"/>
+      </class>
+      <class id="CS 197 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="MTCE-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+        <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32678" offered="true" action="update">
+    <course id="32678" subject="MT" courseNbr="112" controlling="true" title="PSEC2-Cloud Computing and Virtualization" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 112 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18848" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32679" offered="true" action="update">
+    <course id="32679" subject="MT" courseNbr="113" controlling="true" title="PSEC2-Natural Language Processing" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 113 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+        <instructor id="taasika-teacher-18839" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32680" offered="true" action="update">
+    <course id="32680" subject="MT" courseNbr="114" controlling="true" title="PSEC3-Multicore Technology" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 114 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-DE3B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18836" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32681" offered="true" action="update">
+    <course id="32681" subject="MT" courseNbr="115" controlling="true" title="MTech Network Security" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="MT 115 Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18832" share="100" lead="true"/>
+      </class>
+      <class id="MT 115 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18848" share="100" lead="true"/>
+      </class>
+      <class id="MT 115 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="MTCSIS-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18848" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32682" offered="true" action="update">
+    <course id="32682" subject="MT" courseNbr="116" controlling="true" title="MTech Wireless Networks" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="MT 116 Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18843" share="100" lead="true"/>
+      </class>
+      <class id="MT 116 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18843" share="100" lead="true"/>
+      </class>
+      <class id="MT 116 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="MTCSIS-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18843" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32683" offered="true" action="update">
+    <course id="32683" subject="MT" courseNbr="117" controlling="true" title="MTech Digital Forensics and Data Recovery" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="MT 117 Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18846" share="100" lead="true"/>
+      </class>
+      <class id="MT 117 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18846" share="100" lead="true"/>
+      </class>
+      <class id="MT 117 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="MTCSIS-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18846" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32684" offered="true" action="update">
+    <course id="32684" subject="MT" courseNbr="118" controlling="true" title="PSEC2- Cloud Computing and Security" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 118 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18848" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32685" offered="true" action="update">
+    <course id="32685" subject="MT" courseNbr="119" controlling="true" title="PSEC3- Web Security" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 119 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-DE3A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <instructor id="taasika-teacher-18881" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32699" offered="true" action="update">
+    <course id="32699" subject="CS" courseNbr="200" controlling="true" title="Object Oriented Programming and Design" scheduleBookNote=""/>
+    <config name="1" limit="220">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 200 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18921" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lec 2" type="Lec" suffix="2" limit="80" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18881" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="SY1-S1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18921" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="SY1-S2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+        <instructor id="taasika-teacher-18921" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="SY1-S3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18921" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="SY1-S4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8968" building="CSED" roomNbr="Cogni-5"/>
+        <instructor id="taasika-teacher-18921" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 5" type="Lab" suffix="5" limit="20" scheduleNote="SY1-S5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8968" building="CSED" roomNbr="Cogni-5"/>
+        <instructor id="taasika-teacher-18865" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 6" type="Lab" suffix="6" limit="20" scheduleNote="SY2-S1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18881" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 7" type="Lab" suffix="7" limit="20" scheduleNote="SY2-S2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8966" building="CSED" roomNbr="Cogni-34"/>
+        <instructor id="taasika-teacher-18881" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 8" type="Lab" suffix="8" limit="20" scheduleNote="SY2-S3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18881" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 9" type="Lab" suffix="9" limit="20" scheduleNote="SY2-S4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18881" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 10" type="Lab" suffix="10" limit="20" scheduleNote="SY2-S5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8959" building="CSED" roomNbr="DSL"/>
+        <instructor id="taasika-teacher-18865" share="100" lead="true"/>
+      </class>
+      <class id="CS 200 Lab 11" type="Lab" suffix="11" limit="20" scheduleNote="SY2-S6(DSY)" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18865" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32701" offered="true" action="update">
+    <course id="32701" subject="CS" courseNbr="201" controlling="true" title="OE Fundamentals of Operating Systems" scheduleBookNote=""/>
+    <config name="1" limit="200">
+      <subpart type="Lec" suffix="" minPerWeek="120"/>
+      <class id="CS 201 Lec 1" type="Lec" suffix="1" limit="100" scheduleNote="SY-OE1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+      <class id="CS 201 Lec 2" type="Lec" suffix="2" limit="100" scheduleNote="SY-OE2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+        <instructor id="taasika-teacher-18936" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32703" offered="true" action="update">
+    <course id="32703" subject="CS" courseNbr="202" controlling="true" title="DE II -  Advanced System Programming" scheduleBookNote=""/>
+    <config name="1" limit="60">
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 202 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+      <class id="CS 202 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY2-T5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+      <class id="CS 202 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY2-T6" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32704" offered="true" action="update">
+    <course id="32704" subject="CS" courseNbr="203" controlling="true" title="DE II - BlockChain Technologies" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="CS 203 Lab 1" type="Lab" suffix="1" limit="40" scheduleNote="TY1-BCT" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18923" share="100" lead="true"/>
+      </class>
+      <class id="CS 203 Lab 2" type="Lab" suffix="2" limit="40" scheduleNote="TY2-BCT" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18923" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32705" offered="true" action="update">
+    <course id="32705" subject="CS" courseNbr="204" controlling="true" title="DE II- BlockChain Technologies" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 204 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18923" share="100" lead="true"/>
+      </class>
+      <class id="CS 204 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY1-T2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18923" share="100" lead="true"/>
+      </class>
+      <class id="CS 204 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY2-T1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+        <instructor id="taasika-teacher-18923" share="100" lead="true"/>
+      </class>
+      <class id="CS 204 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="TY2-T2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+        <instructor id="taasika-teacher-18923" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32706" offered="true" action="update">
+    <course id="32706" subject="CS" courseNbr="205" controlling="true" title="DE II - Data Science" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="CS 205 Lab 1" type="Lab" suffix="1" limit="40" scheduleNote="TY1-DSci" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18847" share="100" lead="true"/>
+      </class>
+      <class id="CS 205 Lab 2" type="Lab" suffix="2" limit="40" scheduleNote="TY2-DSci" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18847" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32707" offered="true" action="update">
+    <course id="32707" subject="CS" courseNbr="206" controlling="true" title="DE II - Data Science" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 206 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18847" share="100" lead="true"/>
+      </class>
+      <class id="CS 206 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY1-T4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18847" share="100" lead="true"/>
+      </class>
+      <class id="CS 206 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY2-T3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18847" share="100" lead="true"/>
+      </class>
+      <class id="CS 206 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="TY2-T4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18847" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32712" offered="true" action="update">
+    <course id="32712" subject="CS" courseNbr="211" controlling="true" title="DE II - Advanced System Programming" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="CS 211 Lab 1" type="Lab" suffix="1" limit="40" scheduleNote="TY1-ASP" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+      <class id="CS 211 Lab 2" type="Lab" suffix="2" limit="40" scheduleNote="TY2-ASP" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32713" offered="true" action="update">
+    <course id="32713" subject="CS" courseNbr="212" controlling="true" title="MDM - CS - Fundamentals of Database Management Systems" scheduleBookNote=""/>
+    <config name="1" limit="160">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 212 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="TY-MDM1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18841" share="100" lead="true"/>
+      </class>
+      <class id="CS 212 Lec 2" type="Lec" suffix="2" limit="80" scheduleNote="TY-MDM2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+        <instructor id="taasika-teacher-18924" share="100" lead="true"/>
+      </class>
+      <class id="CS 212 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY-MDM1-B1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+      <class id="CS 212 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY-MDM1-B2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+        <instructor id="taasika-teacher-18841" share="100" lead="true"/>
+      </class>
+      <class id="CS 212 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY-MDM1-B3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <instructor id="taasika-teacher-18841" share="100" lead="true"/>
+      </class>
+      <class id="CS 212 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="TY-MDM2-B1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <instructor id="taasika-teacher-18924" share="100" lead="true"/>
+      </class>
+      <class id="CS 212 Lab 5" type="Lab" suffix="5" limit="20" scheduleNote="TY-MDM2-B2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+        <instructor id="taasika-teacher-18924" share="100" lead="true"/>
+      </class>
+      <class id="CS 212 Lab 6" type="Lab" suffix="6" limit="20" scheduleNote="TY-MDM2-B3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32714" offered="true" action="update">
+    <course id="32714" subject="CS" courseNbr="213" controlling="true" title="Introduction of Blockchains Cryptocurrencies and Smart Contracts" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="CS 213 Lab 1" type="Lab" suffix="1" limit="40" scheduleNote="BT1-IBCSC" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+        <instructor id="taasika-teacher-18843" share="100" lead="true"/>
+      </class>
+      <class id="CS 213 Lab 2" type="Lab" suffix="2" limit="40" scheduleNote="BT2-IBCSC" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+        <instructor id="taasika-teacher-18843" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32715" offered="true" action="update">
+    <course id="32715" subject="CS" courseNbr="214" controlling="true" title="DE4: Introduction of Blockchains CSC" scheduleBookNote=""/>
+    <config name="1" limit="60">
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 214 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-B1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <instructor id="taasika-teacher-18843" share="100" lead="true"/>
+      </class>
+      <class id="CS 214 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT2-B1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <instructor id="taasika-teacher-18843" share="100" lead="true"/>
+      </class>
+      <class id="CS 214 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="BT2-B2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18843" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32716" offered="true" action="update">
+    <course id="32716" subject="CS" courseNbr="215" controlling="true" title="DE4-GIS: Geographical Information Systems" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="CS 215 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-GIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18849" share="100" lead="true"/>
+      </class>
+      <class id="CS 215 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT2-GIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8968" building="CSED" roomNbr="Cogni-5"/>
+        <instructor id="taasika-teacher-18849" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32717" offered="true" action="update">
+    <course id="32717" subject="CS" courseNbr="216" controlling="true" title="DE4-GIS: Geographical Information Systems" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 216 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-B2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+        <instructor id="taasika-teacher-18849" share="100" lead="true"/>
+      </class>
+      <class id="CS 216 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT1-B3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+        <instructor id="taasika-teacher-18849" share="100" lead="true"/>
+      </class>
+      <class id="CS 216 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="BT2-B4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+        <instructor id="taasika-teacher-18928" share="100" lead="true"/>
+      </class>
+      <class id="CS 216 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="BT2-B3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+        <instructor id="taasika-teacher-18928" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32718" offered="true" action="update">
+    <course id="32718" subject="CS" courseNbr="217" controlling="true" title="DE4: GPU Computing" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="CS 217 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-GPU" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
+      </class>
+      <class id="CS 217 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT2-GPU" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32719" offered="true" action="update">
+    <course id="32719" subject="CS" courseNbr="218" controlling="true" title="Honor4-IOT Security" scheduleBookNote=""/>
+    <config name="1" limit="60">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="CS 218 Lab 1" type="Lab" suffix="1" limit="30" scheduleNote="BT1-HONORS-IOT" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18835" share="100" lead="true"/>
+      </class>
+      <class id="CS 218 Lab 2" type="Lab" suffix="2" limit="30" scheduleNote="BT2-HONORS-IOT" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18835" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32720" offered="true" action="update">
+    <course id="32720" subject="CS" courseNbr="219" controlling="true" title="Honor4-Reinforcement Learning" scheduleBookNote=""/>
+    <config name="1" limit="60">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="CS 219 Lab 1" type="Lab" suffix="1" limit="30" scheduleNote="BT1-HONORS-RL" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <instructor id="taasika-teacher-18927" share="100" lead="true"/>
+      </class>
+      <class id="CS 219 Lab 2" type="Lab" suffix="2" limit="30" scheduleNote="BT2-HONORS-RL" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <instructor id="taasika-teacher-18927" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32721" offered="true" action="update">
+    <course id="32721" subject="CS" courseNbr="220" controlling="true" title="OE:Data Structures" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <class id="CS 220 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="MT-OE" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+        <instructor id="taasika-teacher-18930" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32722" offered="true" action="update">
+    <course id="32722" subject="MT" courseNbr="124" controlling="true" title="PSEC2- Blockchain Technology" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 124 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18923" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32723" offered="true" action="update">
+    <course id="32723" subject="MT" courseNbr="125" controlling="true" title="PSEC3- Internet of Things and Security" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 125 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-DE3B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18835" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32724" offered="true" action="update">
+    <course id="32724" subject="MT" courseNbr="126" controlling="true" title="Deep Learning" scheduleBookNote=""/>
+    <config name="1" limit="25">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <class id="MT 126 Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18849" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32725" offered="true" action="update">
+    <course id="32725" subject="MT" courseNbr="127" controlling="true" title="Deep Learning" scheduleBookNote=""/>
+    <config name="1" limit="25">
+      <subpart type="Lec" suffix="" minPerWeek="120"/>
+      <class id="MT 127 Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18849" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32726" offered="true" action="update">
+    <course id="32726" subject="MT" courseNbr="128" controlling="true" title="Generative Adversarial Network" scheduleBookNote=""/>
+    <config name="1" limit="25">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="MT 128 Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18931" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32728" offered="true" action="update">
+    <course id="32728" subject="MT" courseNbr="129" controlling="true" title="Optimization Techniques" scheduleBookNote=""/>
+    <config name="1" limit="25">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="MT 129 Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18928" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32730" offered="true" action="update">
+    <course id="32730" subject="MT" courseNbr="130" controlling="true" title="PSEC2- Explainable Artificial Intelligence" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 130 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTAI-DE2A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18921" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32731" offered="true" action="update">
+    <course id="32731" subject="MT" courseNbr="131" controlling="true" title="PSEC2- ML-OPS" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 131 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTAI-DE2B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <instructor id="taasika-teacher-18939" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32732" offered="true" action="update">
+    <course id="32732" subject="MT" courseNbr="132" controlling="true" title="PSEC3- Graph Neural Network" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 132 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTAI-DE3B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <instructor id="taasika-teacher-18873" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32733" offered="true" action="update">
+    <course id="32733" subject="MT" courseNbr="133" controlling="true" title="PSEC3- Natural Language Processing" scheduleBookNote=""/>
+    <config name="1" limit="60">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 133 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTAI-DE3A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18839" share="100" lead="true"/>
+      </class>
+      <class id="MT 133 Lab 2" type="Lab" suffix="2" limit="40" scheduleNote="MTDS-DE3B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18839" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32734" offered="true" action="update">
+    <course id="32734" subject="MT" courseNbr="134" controlling="true" title="Big Data Analytics with Apache Spark" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="MT 134 Lec 1" type="Lec" suffix="1" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18925" share="100" lead="true"/>
+      </class>
+      <class id="MT 134 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTDS-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18925" share="100" lead="true"/>
+      </class>
+      <class id="MT 134 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="MTDS-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18925" share="100" lead="true"/>
+      </class>
+      <class id="MT 134 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="MTDS-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18925" share="100" lead="true"/>
+      </class>
+      <class id="MT 134 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="MTDS-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18925" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32736" offered="true" action="update">
+    <course id="32736" subject="MT" courseNbr="135" controlling="true" title="Advanced Machine Learning and Deep" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="MT 135 Lec 1" type="Lec" suffix="1" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18847" share="100" lead="true"/>
+      </class>
+      <class id="MT 135 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTDS-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18874" share="100" lead="true"/>
+      </class>
+      <class id="MT 135 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="MTDS-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18874" share="100" lead="true"/>
+      </class>
+      <class id="MT 135 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="MTDS-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18834" share="100" lead="true"/>
+      </class>
+      <class id="MT 135 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="MTDS-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18874" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32738" offered="true" action="update">
+    <course id="32738" subject="MT" courseNbr="136" controlling="true" title="ML Ops and Systems" scheduleBookNote=""/>
+    <config name="1" limit="80">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="MT 136 Lec 1" type="Lec" suffix="1" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18926" share="100" lead="true"/>
+      </class>
+      <class id="MT 136 Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MTDS-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18926" share="100" lead="true"/>
+      </class>
+      <class id="MT 136 Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="MTDS-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18926" share="100" lead="true"/>
+      </class>
+      <class id="MT 136 Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="MTDS-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18926" share="100" lead="true"/>
+      </class>
+      <class id="MT 136 Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="MTDS-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18926" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32740" offered="true" action="update">
+    <course id="32740" subject="MT" courseNbr="137" controlling="true" title="PSEC2- Computer Vision" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 137 Lab 1" type="Lab" suffix="1" limit="40" scheduleNote="MTDS-A,B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18940" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32741" offered="true" action="update">
+    <course id="32741" subject="MT" courseNbr="138" controlling="true" title="PSEC2- R Programming" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 138 Lab 1" type="Lab" suffix="1" limit="40" scheduleNote="MTDS-C,D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18922" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32742" offered="true" action="update">
+    <course id="32742" subject="MT" courseNbr="139" controlling="true" title="PSEC3- Generative Adversarial Network" scheduleBookNote=""/>
+    <config name="1" limit="40">
+      <subpart type="Lab" suffix="" minPerWeek="180"/>
+      <class id="MT 139 Lab 1" type="Lab" suffix="1" limit="40" scheduleNote="MTDS-DE3A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18931" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32743" offered="true" action="update">
+    <course id="32743" subject="MT" courseNbr="140" controlling="true" title="MTech Effective Technical Communication Skills" scheduleBookNote=""/>
+    <config name="1" limit="20">
+      <subpart type="Lec" suffix="" minPerWeek="60"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="MT 140 Lec 1" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18857" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32745" offered="true" action="update">
+    <course id="32745" subject="CS" courseNbr="221" controlling="true" title="FY Reserved Subject" scheduleBookNote=""/>
+    <config name="1" limit="300">
+      <subpart type="Lec" suffix="" minPerWeek="300"/>
+      <class id="CS 221 Lec 1" type="Lec" suffix="1" limit="100" scheduleNote="FY-Reserved1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18941" share="100" lead="true"/>
+      </class>
+      <class id="CS 221 Lec 2" type="Lec" suffix="2" limit="100" scheduleNote="FY-Reserved2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18942" share="100" lead="true"/>
+      </class>
+      <class id="CS 221 Lec 3" type="Lec" suffix="3" limit="100" scheduleNote="FY-Reserved3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <instructor id="taasika-teacher-18943" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32747" offered="true" action="update">
+    <course id="32747" subject="CS" courseNbr="223" controlling="true" title="Discrete Structures(FY)" scheduleBookNote=""/>
+    <config name="1" limit="500">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="60"/>
+      <class id="CS 223 Lec 1" type="Lec" suffix="1" limit="100" scheduleNote="FY-CSE4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+        <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lec 2" type="Lec" suffix="2" limit="100" scheduleNote="FY-CSE1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lec 3" type="Lec" suffix="3" limit="100" scheduleNote="FY-CSE3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lec 4" type="Lec" suffix="4" limit="100" scheduleNote="FY-CSE2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+        <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+        <instructor id="taasika-teacher-18933" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lec 5" type="Lec" suffix="5" limit="100" scheduleNote="FY-AIML" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+        <room id="taasika-room-8970" building="AC" roomNbr="NC-03"/>
+        <instructor id="taasika-teacher-18932" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 1" type="Lab" suffix="1" limit="25" scheduleNote="FY-CSE1-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 2" type="Lab" suffix="2" limit="25" scheduleNote="FY-CSE1-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 3" type="Lab" suffix="3" limit="25" scheduleNote="FY-CSE3-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8988" building="AC" roomNbr="NC-14"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 4" type="Lab" suffix="4" limit="25" scheduleNote="FY-CSE3-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8988" building="AC" roomNbr="NC-14"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 5" type="Lab" suffix="5" limit="25" scheduleNote="FY-CSE2-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18933" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 6" type="Lab" suffix="6" limit="25" scheduleNote="FY-CSE2-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 7" type="Lab" suffix="7" limit="25" scheduleNote="FY-CSE1-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8988" building="AC" roomNbr="NC-14"/>
+        <instructor id="taasika-teacher-18933" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 8" type="Lab" suffix="8" limit="25" scheduleNote="FY-AIML-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8970" building="AC" roomNbr="NC-03"/>
+        <instructor id="taasika-teacher-18933" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 9" type="Lab" suffix="9" limit="25" scheduleNote="FY-CSE4-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 10" type="Lab" suffix="10" limit="25" scheduleNote="FY-AIML-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8973" building="AC" roomNbr="NC-04"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 11" type="Lab" suffix="11" limit="25" scheduleNote="FY-CSE3-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 12" type="Lab" suffix="12" limit="25" scheduleNote="FY-CSE3-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 13" type="Lab" suffix="13" limit="25" scheduleNote="FY-CSE4-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8988" building="AC" roomNbr="NC-14"/>
+        <instructor id="taasika-teacher-18833" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 14" type="Lab" suffix="14" limit="25" scheduleNote="FY-CSE1-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8988" building="AC" roomNbr="NC-14"/>
+        <instructor id="taasika-teacher-18933" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 15" type="Lab" suffix="15" limit="25" scheduleNote="FY-CSE4-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 16" type="Lab" suffix="16" limit="25" scheduleNote="FY-CSE2-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <instructor id="taasika-teacher-18933" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 17" type="Lab" suffix="17" limit="25" scheduleNote="FY-AIML-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+        <instructor id="taasika-teacher-18929" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 18" type="Lab" suffix="18" limit="25" scheduleNote="FY-AIML-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+        <instructor id="taasika-teacher-18932" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 19" type="Lab" suffix="19" limit="25" scheduleNote="FY-CSE4-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8986" building="AC" roomNbr="NC-12"/>
+        <instructor id="taasika-teacher-18932" share="100" lead="true"/>
+      </class>
+      <class id="CS 223 Lab 20" type="Lab" suffix="20" limit="25" scheduleNote="FY-CSE2-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+        <room id="taasika-room-8988" building="AC" roomNbr="NC-14"/>
+        <instructor id="taasika-teacher-18932" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32749" offered="true" action="update">
+    <course id="32749" subject="CS" courseNbr="224" controlling="true" title="AI for Multidisciplinary Applications(FY)" scheduleBookNote=""/>
+    <config name="1" limit="300">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <class id="CS 224 Lec 1" type="Lec" suffix="1" limit="100" scheduleNote="FY-AIMA1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+        <instructor id="taasika-teacher-18926" share="100" lead="true"/>
+      </class>
+      <class id="CS 224 Lec 2" type="Lec" suffix="2" limit="100" scheduleNote="FY-AIMA2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+        <room id="taasika-room-8970" building="AC" roomNbr="NC-03"/>
+        <instructor id="taasika-teacher-18935" share="100" lead="true"/>
+      </class>
+      <class id="CS 224 Lec 3" type="Lec" suffix="3" limit="100" scheduleNote="FY-AIMA3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+        <room id="taasika-room-8973" building="AC" roomNbr="NC-04"/>
+        <instructor id="taasika-teacher-18937" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32750" offered="true" action="update">
+    <course id="32750" subject="CS" courseNbr="225" controlling="true" title="Python Programming (FY)" scheduleBookNote=""/>
+    <config name="1" limit="600">
+      <subpart type="Lec" suffix="" minPerWeek="60"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 225 Lec 1" type="Lec" suffix="1" limit="200" scheduleNote="FY-PP4n5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+        <instructor id="taasika-teacher-18931" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lec 2" type="Lec" suffix="2" limit="100" scheduleNote="FY-PP1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+        <room id="taasika-room-8972" building="AC" roomNbr="NC-08"/>
+        <instructor id="taasika-teacher-18927" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lec 3" type="Lec" suffix="3" limit="100" scheduleNote="FY-PP2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+        <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <instructor id="taasika-teacher-18934" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lec 4" type="Lec" suffix="4" limit="100" scheduleNote="FY-PP3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+        <room id="taasika-room-8983" building="AC" roomNbr="NC-09"/>
+        <instructor id="taasika-teacher-18939" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 1" type="Lab" suffix="1" limit="25" scheduleNote="FY-PP1-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18935" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 2" type="Lab" suffix="2" limit="25" scheduleNote="FY-PP2-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18927" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 3" type="Lab" suffix="3" limit="25" scheduleNote="FY-PP3-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18927" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 4" type="Lab" suffix="4" limit="25" scheduleNote="FY-PP4-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18927" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 5" type="Lab" suffix="5" limit="25" scheduleNote="FY-PP5-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18927" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 6" type="Lab" suffix="6" limit="25" scheduleNote="FY-PP1-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8990" building="ENTCX" roomNbr="CET-B"/>
+        <instructor id="taasika-teacher-18931" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 7" type="Lab" suffix="7" limit="25" scheduleNote="FY-PP2-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8990" building="ENTCX" roomNbr="CET-B"/>
+        <instructor id="taasika-teacher-18932" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 8" type="Lab" suffix="8" limit="25" scheduleNote="FY-PP3-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8990" building="ENTCX" roomNbr="CET-B"/>
+        <instructor id="taasika-teacher-18931" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 9" type="Lab" suffix="9" limit="25" scheduleNote="FY-PP4-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8990" building="ENTCX" roomNbr="CET-B"/>
+        <instructor id="taasika-teacher-18939" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 10" type="Lab" suffix="10" limit="25" scheduleNote="FY-PP5-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8990" building="ENTCX" roomNbr="CET-B"/>
+        <instructor id="taasika-teacher-18931" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 11" type="Lab" suffix="11" limit="25" scheduleNote="FY-PP1-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <instructor id="taasika-teacher-18937" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 12" type="Lab" suffix="12" limit="25" scheduleNote="FY-PP2-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <instructor id="taasika-teacher-18934" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 13" type="Lab" suffix="13" limit="25" scheduleNote="FY-PP3-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <instructor id="taasika-teacher-18934" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 14" type="Lab" suffix="14" limit="25" scheduleNote="FY-PP4-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8990" building="ENTCX" roomNbr="CET-B"/>
+        <instructor id="taasika-teacher-18934" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 15" type="Lab" suffix="15" limit="25" scheduleNote="FY-PP5-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <instructor id="taasika-teacher-18934" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 16" type="Lab" suffix="16" limit="25" scheduleNote="FY-PP1-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8992" building="ENTCX" roomNbr="CET-D"/>
+        <instructor id="taasika-teacher-18939" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 17" type="Lab" suffix="17" limit="25" scheduleNote="FY-PP2-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8992" building="ENTCX" roomNbr="CET-D"/>
+        <instructor id="taasika-teacher-18939" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 18" type="Lab" suffix="18" limit="25" scheduleNote="FY-PP3-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8992" building="ENTCX" roomNbr="CET-D"/>
+        <instructor id="taasika-teacher-18939" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 19" type="Lab" suffix="19" limit="25" scheduleNote="FY-PP5-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18936" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 20" type="Lab" suffix="20" limit="25" scheduleNote="FY-PP5-E" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8990" building="ENTCX" roomNbr="CET-B"/>
+        <instructor id="taasika-teacher-18937" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 21" type="Lab" suffix="21" limit="25" scheduleNote="FY-PP5-F" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <instructor id="taasika-teacher-18932" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 22" type="Lab" suffix="22" limit="25" scheduleNote="FY-PP5-A_" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18932" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 23" type="Lab" suffix="23" limit="25" scheduleNote="FY-PP4-A_" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18932" share="100" lead="true"/>
+      </class>
+      <class id="CS 225 Lab 24" type="Lab" suffix="24" limit="25" scheduleNote="FY-PP3-A_" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18932" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32752" offered="true" action="update">
+    <course id="32752" subject="CS" courseNbr="226" controlling="true" title="Web Design(FY)" scheduleBookNote=""/>
+    <config name="1" limit="200">
+      <subpart type="Lec" suffix="" minPerWeek="60"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 226 Lec 1" type="Lec" suffix="1" limit="100" scheduleNote="FY-WD1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8970" building="AC" roomNbr="NC-03"/>
+        <instructor id="taasika-teacher-18924" share="100" lead="true"/>
+      </class>
+      <class id="CS 226 Lec 2" type="Lec" suffix="2" limit="100" scheduleNote="FY-WD2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8970" building="AC" roomNbr="NC-03"/>
+        <room id="taasika-room-8973" building="AC" roomNbr="NC-04"/>
+        <instructor id="taasika-teacher-18938" share="100" lead="true"/>
+      </class>
+      <class id="CS 226 Lab 1" type="Lab" suffix="1" limit="25" scheduleNote="FY-WD1-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <instructor id="taasika-teacher-18924" share="100" lead="true"/>
+      </class>
+      <class id="CS 226 Lab 2" type="Lab" suffix="2" limit="25" scheduleNote="FY-WD1-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <instructor id="taasika-teacher-18936" share="100" lead="true"/>
+      </class>
+      <class id="CS 226 Lab 3" type="Lab" suffix="3" limit="25" scheduleNote="FY-WD1-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <room id="taasika-room-8968" building="CSED" roomNbr="Cogni-5"/>
+        <instructor id="taasika-teacher-18939" share="100" lead="true"/>
+      </class>
+      <class id="CS 226 Lab 4" type="Lab" suffix="4" limit="25" scheduleNote="FY-WD1-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <instructor id="taasika-teacher-18927" share="100" lead="true"/>
+      </class>
+      <class id="CS 226 Lab 5" type="Lab" suffix="5" limit="25" scheduleNote="FY-WD2-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <room id="taasika-room-8968" building="CSED" roomNbr="Cogni-5"/>
+        <instructor id="taasika-teacher-18938" share="100" lead="true"/>
+      </class>
+      <class id="CS 226 Lab 6" type="Lab" suffix="6" limit="25" scheduleNote="FY-WD2-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+        <instructor id="taasika-teacher-18938" share="100" lead="true"/>
+      </class>
+      <class id="CS 226 Lab 7" type="Lab" suffix="7" limit="25" scheduleNote="FY-WD2-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <instructor id="taasika-teacher-18938" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32754" offered="true" action="update">
+    <course id="32754" subject="CS" courseNbr="227" controlling="true" title="Programming for Problem Solving (FY)" scheduleBookNote=""/>
+    <config name="1" limit="200">
+      <subpart type="Lec" suffix="" minPerWeek="60"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="CS 227 Lec 1" type="Lec" suffix="1" limit="200" scheduleNote="FY-PPS1n2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8983" building="AC" roomNbr="NC-09"/>
+        <instructor id="taasika-teacher-18874" share="100" lead="true"/>
+      </class>
+      <class id="CS 227 Lab 1" type="Lab" suffix="1" limit="25" scheduleNote="FY-PPS1-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18874" share="100" lead="true"/>
+      </class>
+      <class id="CS 227 Lab 2" type="Lab" suffix="2" limit="25" scheduleNote="FY-PPS1-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18931" share="100" lead="true"/>
+      </class>
+      <class id="CS 227 Lab 3" type="Lab" suffix="3" limit="25" scheduleNote="FY-PPS1-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18874" share="100" lead="true"/>
+      </class>
+      <class id="CS 227 Lab 4" type="Lab" suffix="4" limit="25" scheduleNote="FY-PPS1-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8990" building="ENTCX" roomNbr="CET-B"/>
+        <instructor id="taasika-teacher-18937" share="100" lead="true"/>
+      </class>
+      <class id="CS 227 Lab 5" type="Lab" suffix="5" limit="25" scheduleNote="FY-PPS2-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8990" building="ENTCX" roomNbr="CET-B"/>
+        <instructor id="taasika-teacher-18937" share="100" lead="true"/>
+      </class>
+      <class id="CS 227 Lab 6" type="Lab" suffix="6" limit="25" scheduleNote="FY-PPS2-B" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8992" building="ENTCX" roomNbr="CET-D"/>
+        <instructor id="taasika-teacher-18931" share="100" lead="true"/>
+      </class>
+      <class id="CS 227 Lab 7" type="Lab" suffix="7" limit="25" scheduleNote="FY-PPS2-C" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+        <instructor id="taasika-teacher-18934" share="100" lead="true"/>
+      </class>
+      <class id="CS 227 Lab 8" type="Lab" suffix="8" limit="25" scheduleNote="FY-PPS2-D" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+        <instructor id="taasika-teacher-18874" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+  <offering id="32758" offered="true" action="update">
+    <course id="32758" subject="CS" courseNbr="228" controlling="true" title="Economics (SY)" scheduleBookNote=""/>
+    <config name="1" limit="160">
+      <subpart type="Lec" suffix="" minPerWeek="120"/>
+      <class id="CS 228 Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18880" share="100" lead="true"/>
+      </class>
+      <class id="CS 228 Lec 2" type="Lec" suffix="2" limit="80" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+        <instructor id="taasika-teacher-18880" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+</offerings>

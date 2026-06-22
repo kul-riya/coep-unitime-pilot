@@ -1,0 +1,13 @@
+<!--
+  Generated from the Taasika SQL dump (snapshot 240, 'published-19jan26').
+  Source schema: taasika2-foss-26jan26.sql
+  Template reference: samplexml/ (UniTime XML interface)
+  See: https://www.unitime.org/uct_interfaces.php
+-->
+<academicClassifications campus="COEP" term="Spr" year="2026">
+  <academicClassification externalId="taasika-class-MT" code="MT" name="M.Tech."/>
+  <academicClassification externalId="taasika-class-SY" code="SY" name="Second Year B.Tech."/>
+  <academicClassification externalId="taasika-class-TY" code="TY" name="Third Year B.Tech."/>
+  <academicClassification externalId="taasika-class-BT" code="BT" name="Final Year B.Tech."/>
+  <academicClassification externalId="taasika-class-FY" code="FY" name="First Year B.Tech."/>
+</academicClassifications>

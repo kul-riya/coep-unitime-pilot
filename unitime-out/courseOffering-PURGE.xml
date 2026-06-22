@@ -1,0 +1,206 @@
+<!--
+  PURGE FILE — import this BEFORE re-importing courseOffering.xml
+  
+  Purpose: delete all 63 instructional offerings that were created by a
+  previous import run (which used different course numbers).  UniTime
+  matches each <offering> by its external-id attribute, so the courseNbr
+  here does not have to match what is currently in the database — the
+  record is found by id and then deleted.
+
+  Steps:
+    1. Administration > Academic Sessions > Data Exchange
+    2. Upload THIS file  (courseOffering-PURGE.xml)  → click "Update Data"
+    3. Confirm all 63 offerings are deleted (log should say "deleted" for each)
+    4. Upload the real  courseOffering.xml            → click "Update Data"
+-->
+<offerings campus="COEP" year="2026" term="Spr">
+  <offering id="32529" offered="false" action="delete">
+    <course id="32529" subject="CS" courseNbr="102" controlling="true" title=""/>
+  </offering>
+  <offering id="32534" offered="false" action="delete">
+    <course id="32534" subject="CS" courseNbr="107" controlling="true" title=""/>
+  </offering>
+  <offering id="32537" offered="false" action="delete">
+    <course id="32537" subject="CS" courseNbr="109" controlling="true" title=""/>
+  </offering>
+  <offering id="32539" offered="false" action="delete">
+    <course id="32539" subject="CS" courseNbr="110" controlling="true" title=""/>
+  </offering>
+  <offering id="32572" offered="false" action="delete">
+    <course id="32572" subject="CS" courseNbr="128" controlling="true" title=""/>
+  </offering>
+  <offering id="32590" offered="false" action="delete">
+    <course id="32590" subject="CS" courseNbr="142" controlling="true" title=""/>
+  </offering>
+  <offering id="32640" offered="false" action="delete">
+    <course id="32640" subject="CS" courseNbr="171" controlling="true" title=""/>
+  </offering>
+  <offering id="32646" offered="false" action="delete">
+    <course id="32646" subject="CS" courseNbr="177" controlling="true" title=""/>
+  </offering>
+  <offering id="32648" offered="false" action="delete">
+    <course id="32648" subject="CS" courseNbr="179" controlling="true" title=""/>
+  </offering>
+  <offering id="32661" offered="false" action="delete">
+    <course id="32661" subject="CS" courseNbr="190" controlling="true" title=""/>
+  </offering>
+  <offering id="32673" offered="false" action="delete">
+    <course id="32673" subject="MT" courseNbr="111" controlling="true" title=""/>
+  </offering>
+  <offering id="32675" offered="false" action="delete">
+    <course id="32675" subject="CS" courseNbr="195" controlling="true" title=""/>
+  </offering>
+  <offering id="32676" offered="false" action="delete">
+    <course id="32676" subject="CS" courseNbr="196" controlling="true" title=""/>
+  </offering>
+  <offering id="32677" offered="false" action="delete">
+    <course id="32677" subject="CS" courseNbr="197" controlling="true" title=""/>
+  </offering>
+  <offering id="32678" offered="false" action="delete">
+    <course id="32678" subject="MT" courseNbr="112" controlling="true" title=""/>
+  </offering>
+  <offering id="32679" offered="false" action="delete">
+    <course id="32679" subject="MT" courseNbr="113" controlling="true" title=""/>
+  </offering>
+  <offering id="32680" offered="false" action="delete">
+    <course id="32680" subject="MT" courseNbr="114" controlling="true" title=""/>
+  </offering>
+  <offering id="32681" offered="false" action="delete">
+    <course id="32681" subject="MT" courseNbr="115" controlling="true" title=""/>
+  </offering>
+  <offering id="32682" offered="false" action="delete">
+    <course id="32682" subject="MT" courseNbr="116" controlling="true" title=""/>
+  </offering>
+  <offering id="32683" offered="false" action="delete">
+    <course id="32683" subject="MT" courseNbr="117" controlling="true" title=""/>
+  </offering>
+  <offering id="32684" offered="false" action="delete">
+    <course id="32684" subject="MT" courseNbr="118" controlling="true" title=""/>
+  </offering>
+  <offering id="32685" offered="false" action="delete">
+    <course id="32685" subject="MT" courseNbr="119" controlling="true" title=""/>
+  </offering>
+  <offering id="32699" offered="false" action="delete">
+    <course id="32699" subject="CS" courseNbr="200" controlling="true" title=""/>
+  </offering>
+  <offering id="32701" offered="false" action="delete">
+    <course id="32701" subject="CS" courseNbr="201" controlling="true" title=""/>
+  </offering>
+  <offering id="32703" offered="false" action="delete">
+    <course id="32703" subject="CS" courseNbr="202" controlling="true" title=""/>
+  </offering>
+  <offering id="32704" offered="false" action="delete">
+    <course id="32704" subject="CS" courseNbr="203" controlling="true" title=""/>
+  </offering>
+  <offering id="32705" offered="false" action="delete">
+    <course id="32705" subject="CS" courseNbr="204" controlling="true" title=""/>
+  </offering>
+  <offering id="32706" offered="false" action="delete">
+    <course id="32706" subject="CS" courseNbr="205" controlling="true" title=""/>
+  </offering>
+  <offering id="32707" offered="false" action="delete">
+    <course id="32707" subject="CS" courseNbr="206" controlling="true" title=""/>
+  </offering>
+  <offering id="32712" offered="false" action="delete">
+    <course id="32712" subject="CS" courseNbr="211" controlling="true" title=""/>
+  </offering>
+  <offering id="32713" offered="false" action="delete">
+    <course id="32713" subject="CS" courseNbr="212" controlling="true" title=""/>
+  </offering>
+  <offering id="32714" offered="false" action="delete">
+    <course id="32714" subject="CS" courseNbr="213" controlling="true" title=""/>
+  </offering>
+  <offering id="32715" offered="false" action="delete">
+    <course id="32715" subject="CS" courseNbr="214" controlling="true" title=""/>
+  </offering>
+  <offering id="32716" offered="false" action="delete">
+    <course id="32716" subject="CS" courseNbr="215" controlling="true" title=""/>
+  </offering>
+  <offering id="32717" offered="false" action="delete">
+    <course id="32717" subject="CS" courseNbr="216" controlling="true" title=""/>
+  </offering>
+  <offering id="32718" offered="false" action="delete">
+    <course id="32718" subject="CS" courseNbr="217" controlling="true" title=""/>
+  </offering>
+  <offering id="32719" offered="false" action="delete">
+    <course id="32719" subject="CS" courseNbr="218" controlling="true" title=""/>
+  </offering>
+  <offering id="32720" offered="false" action="delete">
+    <course id="32720" subject="CS" courseNbr="219" controlling="true" title=""/>
+  </offering>
+  <offering id="32721" offered="false" action="delete">
+    <course id="32721" subject="CS" courseNbr="220" controlling="true" title=""/>
+  </offering>
+  <offering id="32722" offered="false" action="delete">
+    <course id="32722" subject="MT" courseNbr="124" controlling="true" title=""/>
+  </offering>
+  <offering id="32723" offered="false" action="delete">
+    <course id="32723" subject="MT" courseNbr="125" controlling="true" title=""/>
+  </offering>
+  <offering id="32724" offered="false" action="delete">
+    <course id="32724" subject="MT" courseNbr="126" controlling="true" title=""/>
+  </offering>
+  <offering id="32725" offered="false" action="delete">
+    <course id="32725" subject="MT" courseNbr="127" controlling="true" title=""/>
+  </offering>
+  <offering id="32726" offered="false" action="delete">
+    <course id="32726" subject="MT" courseNbr="128" controlling="true" title=""/>
+  </offering>
+  <offering id="32728" offered="false" action="delete">
+    <course id="32728" subject="MT" courseNbr="129" controlling="true" title=""/>
+  </offering>
+  <offering id="32730" offered="false" action="delete">
+    <course id="32730" subject="MT" courseNbr="130" controlling="true" title=""/>
+  </offering>
+  <offering id="32731" offered="false" action="delete">
+    <course id="32731" subject="MT" courseNbr="131" controlling="true" title=""/>
+  </offering>
+  <offering id="32732" offered="false" action="delete">
+    <course id="32732" subject="MT" courseNbr="132" controlling="true" title=""/>
+  </offering>
+  <offering id="32733" offered="false" action="delete">
+    <course id="32733" subject="MT" courseNbr="133" controlling="true" title=""/>
+  </offering>
+  <offering id="32734" offered="false" action="delete">
+    <course id="32734" subject="MT" courseNbr="134" controlling="true" title=""/>
+  </offering>
+  <offering id="32736" offered="false" action="delete">
+    <course id="32736" subject="MT" courseNbr="135" controlling="true" title=""/>
+  </offering>
+  <offering id="32738" offered="false" action="delete">
+    <course id="32738" subject="MT" courseNbr="136" controlling="true" title=""/>
+  </offering>
+  <offering id="32740" offered="false" action="delete">
+    <course id="32740" subject="MT" courseNbr="137" controlling="true" title=""/>
+  </offering>
+  <offering id="32741" offered="false" action="delete">
+    <course id="32741" subject="MT" courseNbr="138" controlling="true" title=""/>
+  </offering>
+  <offering id="32742" offered="false" action="delete">
+    <course id="32742" subject="MT" courseNbr="139" controlling="true" title=""/>
+  </offering>
+  <offering id="32743" offered="false" action="delete">
+    <course id="32743" subject="MT" courseNbr="140" controlling="true" title=""/>
+  </offering>
+  <offering id="32745" offered="false" action="delete">
+    <course id="32745" subject="CS" courseNbr="221" controlling="true" title=""/>
+  </offering>
+  <offering id="32747" offered="false" action="delete">
+    <course id="32747" subject="CS" courseNbr="223" controlling="true" title=""/>
+  </offering>
+  <offering id="32749" offered="false" action="delete">
+    <course id="32749" subject="CS" courseNbr="224" controlling="true" title=""/>
+  </offering>
+  <offering id="32750" offered="false" action="delete">
+    <course id="32750" subject="CS" courseNbr="225" controlling="true" title=""/>
+  </offering>
+  <offering id="32752" offered="false" action="delete">
+    <course id="32752" subject="CS" courseNbr="226" controlling="true" title=""/>
+  </offering>
+  <offering id="32754" offered="false" action="delete">
+    <course id="32754" subject="CS" courseNbr="227" controlling="true" title=""/>
+  </offering>
+  <offering id="32758" offered="false" action="delete">
+    <course id="32758" subject="CS" courseNbr="228" controlling="true" title=""/>
+  </offering>
+</offerings>

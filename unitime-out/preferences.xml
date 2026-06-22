@@ -1,0 +1,607 @@
+<!--
+  Generated from the Taasika SQL dump (snapshot 240, 'published-19jan26').
+  Source schema: taasika2-foss-26jan26.sql
+  Template reference: samplexml/ (UniTime XML interface)
+  See: https://www.unitime.org/uct_interfaces.php
+-->
+
+<preferences campus="COEP" term="Spr" year="2026" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from courseOffering.xml">
+  <subpart subject="CS" course="102" config="1" type="Lec">
+    <timePref pattern="2 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="102" type="Lec" suffix="1"/>
+  <class subject="CS" course="102" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="107" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="107" type="Lec" suffix="1"/>
+  <class subject="CS" course="107" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="109" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="109" type="Lec" suffix="1"/>
+  <class subject="CS" course="109" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="109" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <subpart subject="CS" course="110" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="110" type="Lec" suffix="1"/>
+  <class subject="CS" course="110" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="110" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="110" type="Lab" suffix="1"/>
+  <class subject="CS" course="110" type="Lab" suffix="2"/>
+  <class subject="CS" course="110" type="Lab" suffix="3"/>
+  <class subject="CS" course="110" type="Lab" suffix="4"/>
+  <class subject="CS" course="110" type="Lab" suffix="5"/>
+  <class subject="CS" course="110" type="Lab" suffix="6"/>
+  <class subject="CS" course="110" type="Lab" suffix="7"/>
+  <class subject="CS" course="110" type="Lab" suffix="8"/>
+  <class subject="CS" course="110" type="Lab" suffix="9"/>
+  <class subject="CS" course="110" type="Lab" suffix="10"/>
+  <class subject="CS" course="110" type="Lab" suffix="11"/>
+  <subpart subject="CS" course="128" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="128" type="Lec" suffix="1"/>
+  <class subject="CS" course="128" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="142" config="1" type="Lec">
+    <timePref pattern="1 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <subpart subject="CS" course="142" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="142" type="Lab" suffix="1"/>
+  <class subject="CS" course="142" type="Lab" suffix="2"/>
+  <class subject="CS" course="142" type="Lab" suffix="3"/>
+  <class subject="CS" course="142" type="Lab" suffix="4"/>
+  <class subject="CS" course="142" type="Lab" suffix="5"/>
+  <class subject="CS" course="142" type="Lab" suffix="6"/>
+  <class subject="CS" course="142" type="Lab" suffix="7"/>
+  <class subject="CS" course="142" type="Lab" suffix="8"/>
+  <class subject="CS" course="142" type="Lab" suffix="9"/>
+  <class subject="CS" course="142" type="Lab" suffix="10"/>
+  <class subject="CS" course="142" type="Lab" suffix="11"/>
+  <subpart subject="CS" course="171" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="171" type="Lec" suffix="1"/>
+  <class subject="CS" course="171" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="171" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="171" type="Lab" suffix="1"/>
+  <class subject="CS" course="171" type="Lab" suffix="2"/>
+  <class subject="CS" course="171" type="Lab" suffix="3"/>
+  <class subject="CS" course="171" type="Lab" suffix="4"/>
+  <class subject="CS" course="171" type="Lab" suffix="5"/>
+  <class subject="CS" course="171" type="Lab" suffix="6"/>
+  <class subject="CS" course="171" type="Lab" suffix="7"/>
+  <class subject="CS" course="171" type="Lab" suffix="8"/>
+  <class subject="CS" course="171" type="Lab" suffix="9"/>
+  <class subject="CS" course="171" type="Lab" suffix="10"/>
+  <class subject="CS" course="171" type="Lab" suffix="11"/>
+  <subpart subject="CS" course="177" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="177" type="Lab" suffix="1"/>
+  <class subject="CS" course="177" type="Lab" suffix="2"/>
+  <class subject="CS" course="177" type="Lab" suffix="3"/>
+  <class subject="CS" course="177" type="Lab" suffix="4"/>
+  <subpart subject="CS" course="179" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="179" type="Lec" suffix="1"/>
+  <subpart subject="CS" course="190" config="1" type="Lec">
+    <timePref pattern="2 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="190" type="Lec" suffix="1"/>
+  <class subject="CS" course="190" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="190" config="1" type="Lab">
+    <timePref pattern="1 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="190" type="Lab" suffix="1"/>
+  <class subject="CS" course="190" type="Lab" suffix="2"/>
+  <class subject="CS" course="190" type="Lab" suffix="3"/>
+  <class subject="CS" course="190" type="Lab" suffix="4"/>
+  <class subject="CS" course="190" type="Lab" suffix="5"/>
+  <class subject="CS" course="190" type="Lab" suffix="6"/>
+  <class subject="CS" course="190" type="Lab" suffix="7"/>
+  <class subject="CS" course="190" type="Lab" suffix="8"/>
+  <class subject="CS" course="190" type="Lab" suffix="9"/>
+  <class subject="CS" course="190" type="Lab" suffix="10"/>
+  <class subject="CS" course="190" type="Lab" suffix="11"/>
+  <subpart subject="MT" course="111" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="111" type="Lab" suffix="1"/>
+  <subpart subject="CS" course="195" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="195" type="Lec" suffix="1"/>
+  <subpart subject="CS" course="195" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="195" type="Lab" suffix="1"/>
+  <class subject="CS" course="195" type="Lab" suffix="2"/>
+  <subpart subject="CS" course="196" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="196" type="Lec" suffix="1"/>
+  <subpart subject="CS" course="196" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="196" type="Lab" suffix="1"/>
+  <class subject="CS" course="196" type="Lab" suffix="2"/>
+  <subpart subject="CS" course="197" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="197" type="Lec" suffix="1"/>
+  <subpart subject="CS" course="197" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="197" type="Lab" suffix="1"/>
+  <class subject="CS" course="197" type="Lab" suffix="2"/>
+  <subpart subject="MT" course="112" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="112" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="113" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="113" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="114" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="114" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="115" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="115" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="115" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="115" type="Lab" suffix="1"/>
+  <class subject="MT" course="115" type="Lab" suffix="2"/>
+  <subpart subject="MT" course="116" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="116" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="116" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="116" type="Lab" suffix="1"/>
+  <class subject="MT" course="116" type="Lab" suffix="2"/>
+  <subpart subject="MT" course="117" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="117" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="117" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="117" type="Lab" suffix="1"/>
+  <class subject="MT" course="117" type="Lab" suffix="2"/>
+  <subpart subject="MT" course="118" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="118" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="119" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="119" type="Lab" suffix="1"/>
+  <subpart subject="CS" course="200" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="200" type="Lec" suffix="1"/>
+  <class subject="CS" course="200" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="200" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="200" type="Lab" suffix="1"/>
+  <class subject="CS" course="200" type="Lab" suffix="2"/>
+  <class subject="CS" course="200" type="Lab" suffix="3"/>
+  <class subject="CS" course="200" type="Lab" suffix="4"/>
+  <class subject="CS" course="200" type="Lab" suffix="5"/>
+  <class subject="CS" course="200" type="Lab" suffix="6"/>
+  <class subject="CS" course="200" type="Lab" suffix="7"/>
+  <class subject="CS" course="200" type="Lab" suffix="8"/>
+  <class subject="CS" course="200" type="Lab" suffix="9"/>
+  <class subject="CS" course="200" type="Lab" suffix="10"/>
+  <class subject="CS" course="200" type="Lab" suffix="11"/>
+  <subpart subject="CS" course="201" config="1" type="Lec">
+    <timePref pattern="2 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="201" type="Lec" suffix="1"/>
+  <class subject="CS" course="201" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="202" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="202" type="Lab" suffix="1"/>
+  <class subject="CS" course="202" type="Lab" suffix="2"/>
+  <class subject="CS" course="202" type="Lab" suffix="3"/>
+  <subpart subject="CS" course="203" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="203" type="Lab" suffix="1"/>
+  <class subject="CS" course="203" type="Lab" suffix="2"/>
+  <subpart subject="CS" course="204" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="204" type="Lab" suffix="1"/>
+  <class subject="CS" course="204" type="Lab" suffix="2"/>
+  <class subject="CS" course="204" type="Lab" suffix="3"/>
+  <class subject="CS" course="204" type="Lab" suffix="4"/>
+  <subpart subject="CS" course="205" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="205" type="Lab" suffix="1"/>
+  <class subject="CS" course="205" type="Lab" suffix="2"/>
+  <subpart subject="CS" course="206" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="206" type="Lab" suffix="1"/>
+  <class subject="CS" course="206" type="Lab" suffix="2"/>
+  <class subject="CS" course="206" type="Lab" suffix="3"/>
+  <class subject="CS" course="206" type="Lab" suffix="4"/>
+  <subpart subject="CS" course="211" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="211" type="Lab" suffix="1"/>
+  <class subject="CS" course="211" type="Lab" suffix="2"/>
+  <subpart subject="CS" course="212" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="212" type="Lec" suffix="1"/>
+  <class subject="CS" course="212" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="212" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="212" type="Lab" suffix="1"/>
+  <class subject="CS" course="212" type="Lab" suffix="2"/>
+  <class subject="CS" course="212" type="Lab" suffix="3"/>
+  <class subject="CS" course="212" type="Lab" suffix="4"/>
+  <class subject="CS" course="212" type="Lab" suffix="5"/>
+  <class subject="CS" course="212" type="Lab" suffix="6"/>
+  <subpart subject="CS" course="213" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="213" type="Lab" suffix="1"/>
+  <class subject="CS" course="213" type="Lab" suffix="2"/>
+  <subpart subject="CS" course="214" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="214" type="Lab" suffix="1"/>
+  <class subject="CS" course="214" type="Lab" suffix="2"/>
+  <class subject="CS" course="214" type="Lab" suffix="3"/>
+  <subpart subject="CS" course="215" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="215" type="Lab" suffix="1"/>
+  <class subject="CS" course="215" type="Lab" suffix="2"/>
+  <subpart subject="CS" course="216" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="216" type="Lab" suffix="1"/>
+  <class subject="CS" course="216" type="Lab" suffix="2"/>
+  <class subject="CS" course="216" type="Lab" suffix="3"/>
+  <class subject="CS" course="216" type="Lab" suffix="4"/>
+  <subpart subject="CS" course="217" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="217" type="Lab" suffix="1"/>
+  <class subject="CS" course="217" type="Lab" suffix="2"/>
+  <subpart subject="CS" course="218" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="218" type="Lab" suffix="1"/>
+  <class subject="CS" course="218" type="Lab" suffix="2"/>
+  <subpart subject="CS" course="219" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="219" type="Lab" suffix="1"/>
+  <class subject="CS" course="219" type="Lab" suffix="2"/>
+  <subpart subject="CS" course="220" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="220" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="124" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="124" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="125" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="125" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="126" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="126" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="127" config="1" type="Lec">
+    <timePref pattern="2 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="127" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="128" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="128" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="128" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <subpart subject="MT" course="129" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="129" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="129" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <subpart subject="MT" course="130" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="130" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="131" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="131" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="132" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="132" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="133" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="133" type="Lab" suffix="1"/>
+  <class subject="MT" course="133" type="Lab" suffix="2"/>
+  <subpart subject="MT" course="134" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="134" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="134" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="134" type="Lab" suffix="1"/>
+  <class subject="MT" course="134" type="Lab" suffix="2"/>
+  <class subject="MT" course="134" type="Lab" suffix="3"/>
+  <class subject="MT" course="134" type="Lab" suffix="4"/>
+  <subpart subject="MT" course="135" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="135" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="135" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="135" type="Lab" suffix="1"/>
+  <class subject="MT" course="135" type="Lab" suffix="2"/>
+  <class subject="MT" course="135" type="Lab" suffix="3"/>
+  <class subject="MT" course="135" type="Lab" suffix="4"/>
+  <subpart subject="MT" course="136" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="136" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="136" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="136" type="Lab" suffix="1"/>
+  <class subject="MT" course="136" type="Lab" suffix="2"/>
+  <class subject="MT" course="136" type="Lab" suffix="3"/>
+  <class subject="MT" course="136" type="Lab" suffix="4"/>
+  <subpart subject="MT" course="137" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="137" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="138" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="138" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="139" config="1" type="Lab">
+    <timePref pattern="1 x 180" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="139" type="Lab" suffix="1"/>
+  <subpart subject="MT" course="140" config="1" type="Lec">
+    <timePref pattern="1 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="MT" course="140" type="Lec" suffix="1"/>
+  <subpart subject="MT" course="140" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <subpart subject="CS" course="221" config="1" type="Lec">
+    <timePref pattern="5 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="221" type="Lec" suffix="1"/>
+  <class subject="CS" course="221" type="Lec" suffix="2"/>
+  <class subject="CS" course="221" type="Lec" suffix="3"/>
+  <subpart subject="CS" course="223" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="223" type="Lec" suffix="1"/>
+  <class subject="CS" course="223" type="Lec" suffix="2"/>
+  <class subject="CS" course="223" type="Lec" suffix="3"/>
+  <class subject="CS" course="223" type="Lec" suffix="4"/>
+  <class subject="CS" course="223" type="Lec" suffix="5"/>
+  <subpart subject="CS" course="223" config="1" type="Lab">
+    <timePref pattern="1 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="223" type="Lab" suffix="1"/>
+  <class subject="CS" course="223" type="Lab" suffix="2"/>
+  <class subject="CS" course="223" type="Lab" suffix="3"/>
+  <class subject="CS" course="223" type="Lab" suffix="4"/>
+  <class subject="CS" course="223" type="Lab" suffix="5"/>
+  <class subject="CS" course="223" type="Lab" suffix="6"/>
+  <class subject="CS" course="223" type="Lab" suffix="7"/>
+  <class subject="CS" course="223" type="Lab" suffix="8"/>
+  <class subject="CS" course="223" type="Lab" suffix="9"/>
+  <class subject="CS" course="223" type="Lab" suffix="10"/>
+  <class subject="CS" course="223" type="Lab" suffix="11"/>
+  <class subject="CS" course="223" type="Lab" suffix="12"/>
+  <class subject="CS" course="223" type="Lab" suffix="13"/>
+  <class subject="CS" course="223" type="Lab" suffix="14"/>
+  <class subject="CS" course="223" type="Lab" suffix="15"/>
+  <class subject="CS" course="223" type="Lab" suffix="16"/>
+  <class subject="CS" course="223" type="Lab" suffix="17"/>
+  <class subject="CS" course="223" type="Lab" suffix="18"/>
+  <class subject="CS" course="223" type="Lab" suffix="19"/>
+  <class subject="CS" course="223" type="Lab" suffix="20"/>
+  <subpart subject="CS" course="224" config="1" type="Lec">
+    <timePref pattern="3 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="224" type="Lec" suffix="1"/>
+  <class subject="CS" course="224" type="Lec" suffix="2"/>
+  <class subject="CS" course="224" type="Lec" suffix="3"/>
+  <subpart subject="CS" course="225" config="1" type="Lec">
+    <timePref pattern="1 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="225" type="Lec" suffix="1"/>
+  <class subject="CS" course="225" type="Lec" suffix="2"/>
+  <class subject="CS" course="225" type="Lec" suffix="3"/>
+  <class subject="CS" course="225" type="Lec" suffix="4"/>
+  <subpart subject="CS" course="225" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="225" type="Lab" suffix="1"/>
+  <class subject="CS" course="225" type="Lab" suffix="2"/>
+  <class subject="CS" course="225" type="Lab" suffix="3"/>
+  <class subject="CS" course="225" type="Lab" suffix="4"/>
+  <class subject="CS" course="225" type="Lab" suffix="5"/>
+  <class subject="CS" course="225" type="Lab" suffix="6"/>
+  <class subject="CS" course="225" type="Lab" suffix="7"/>
+  <class subject="CS" course="225" type="Lab" suffix="8"/>
+  <class subject="CS" course="225" type="Lab" suffix="9"/>
+  <class subject="CS" course="225" type="Lab" suffix="10"/>
+  <class subject="CS" course="225" type="Lab" suffix="11"/>
+  <class subject="CS" course="225" type="Lab" suffix="12"/>
+  <class subject="CS" course="225" type="Lab" suffix="13"/>
+  <class subject="CS" course="225" type="Lab" suffix="14"/>
+  <class subject="CS" course="225" type="Lab" suffix="15"/>
+  <class subject="CS" course="225" type="Lab" suffix="16"/>
+  <class subject="CS" course="225" type="Lab" suffix="17"/>
+  <class subject="CS" course="225" type="Lab" suffix="18"/>
+  <class subject="CS" course="225" type="Lab" suffix="19"/>
+  <class subject="CS" course="225" type="Lab" suffix="20"/>
+  <class subject="CS" course="225" type="Lab" suffix="21"/>
+  <class subject="CS" course="225" type="Lab" suffix="22"/>
+  <class subject="CS" course="225" type="Lab" suffix="23"/>
+  <class subject="CS" course="225" type="Lab" suffix="24"/>
+  <subpart subject="CS" course="226" config="1" type="Lec">
+    <timePref pattern="1 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="226" type="Lec" suffix="1"/>
+  <class subject="CS" course="226" type="Lec" suffix="2"/>
+  <subpart subject="CS" course="226" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="226" type="Lab" suffix="1"/>
+  <class subject="CS" course="226" type="Lab" suffix="2"/>
+  <class subject="CS" course="226" type="Lab" suffix="3"/>
+  <class subject="CS" course="226" type="Lab" suffix="4"/>
+  <class subject="CS" course="226" type="Lab" suffix="5"/>
+  <class subject="CS" course="226" type="Lab" suffix="6"/>
+  <class subject="CS" course="226" type="Lab" suffix="7"/>
+  <subpart subject="CS" course="227" config="1" type="Lec">
+    <timePref pattern="1 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="227" type="Lec" suffix="1"/>
+  <subpart subject="CS" course="227" config="1" type="Lab">
+    <timePref pattern="1 x 120" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="227" type="Lab" suffix="1"/>
+  <class subject="CS" course="227" type="Lab" suffix="2"/>
+  <class subject="CS" course="227" type="Lab" suffix="3"/>
+  <class subject="CS" course="227" type="Lab" suffix="4"/>
+  <class subject="CS" course="227" type="Lab" suffix="5"/>
+  <class subject="CS" course="227" type="Lab" suffix="6"/>
+  <class subject="CS" course="227" type="Lab" suffix="7"/>
+  <class subject="CS" course="227" type="Lab" suffix="8"/>
+  <subpart subject="CS" course="228" config="1" type="Lec">
+    <timePref pattern="2 x 60" level="R"/>
+    <datePref pattern="Full Term" level="R"/>
+  </subpart>
+  <class subject="CS" course="228" type="Lec" suffix="1"/>
+  <class subject="CS" course="228" type="Lec" suffix="2"/>
+</preferences>

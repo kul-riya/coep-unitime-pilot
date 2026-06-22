@@ -1,0 +1,397 @@
+<!--
+  Generated from the Taasika SQL dump (snapshot 240, 'published-19jan26').
+  Source schema: taasika2-foss-26jan26.sql
+  Template reference: samplexml/ (UniTime XML interface)
+  See: https://www.unitime.org/uct_interfaces.php
+-->
+
+<buildingsRooms campus="COEP" term="Spr" year="2026">
+  <building externalId="taasika-bldg-AC" abbreviation="AC" locationX="100" locationY="100" name="Academic Complex">
+    <room externalId="taasika-room-8952" locationX="100" locationY="100" roomNumber="AC-202NC-06" displayName="AC-202 (NC-06)" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8953" locationX="100" locationY="100" roomNumber="AC-203NC-07" displayName="AC-203(NC-07)" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8970" locationX="100" locationY="100" roomNumber="NC-03" displayName="NC-03" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8971" locationX="100" locationY="100" roomNumber="AC-201NC-05" displayName="AC-201(NC-05)" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8972" locationX="100" locationY="100" roomNumber="NC-08" displayName="NC-08" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8973" locationX="100" locationY="100" roomNumber="NC-04" displayName="NC-04" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8974" locationX="100" locationY="100" roomNumber="NC-01" displayName="NC-01" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8975" locationX="100" locationY="100" roomNumber="NC-02" displayName="NC-02" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8983" locationX="100" locationY="100" roomNumber="NC-09" displayName="NC-09" roomClassification="classroom" capacity="200" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8984" locationX="100" locationY="100" roomNumber="NC-10" displayName="NC-10" roomClassification="classroom" capacity="200" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8985" locationX="100" locationY="100" roomNumber="NC-11" displayName="NC-11" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8986" locationX="100" locationY="100" roomNumber="NC-12" displayName="NC-12" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8987" locationX="100" locationY="100" roomNumber="NC-13" displayName="NC-13" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8988" locationX="100" locationY="100" roomNumber="NC-14" displayName="NC-14" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+  </building>
+  <building externalId="taasika-bldg-ENTCX" abbreviation="ENTCX" locationX="200" locationY="100" name="ENTC Extension Building">
+    <room externalId="taasika-room-8954" locationX="200" locationY="100" roomNumber="SH" displayName="SH" roomClassification="classroom" capacity="80" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8989" locationX="200" locationY="100" roomNumber="CET-A" displayName="CET-A" roomClassification="lab" capacity="25" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8990" locationX="200" locationY="100" roomNumber="CET-B" displayName="CET-B" roomClassification="lab" capacity="25" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8991" locationX="200" locationY="100" roomNumber="CET-C" displayName="CET-C" roomClassification="lab" capacity="25" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8992" locationX="200" locationY="100" roomNumber="CET-D" displayName="CET-D" roomClassification="lab" capacity="25" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+  </building>
+  <building externalId="taasika-bldg-CSED" abbreviation="CSED" locationX="150" locationY="150" name="Computer Engineering and IT Department">
+    <room externalId="taasika-room-8955" locationX="150" locationY="150" roomNumber="DBMSL" displayName="DBMSL" roomClassification="lab" capacity="20" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8956" locationX="150" locationY="150" roomNumber="FOSS1" displayName="FOSS1" roomClassification="lab" capacity="25" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8957" locationX="150" locationY="150" roomNumber="FOSS2" displayName="FOSS2" roomClassification="lab" capacity="25" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8958" locationX="150" locationY="150" roomNumber="GML" displayName="GML" roomClassification="lab" capacity="20" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8959" locationX="150" locationY="150" roomNumber="DSL" displayName="DSL" roomClassification="lab" capacity="15" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8960" locationX="150" locationY="150" roomNumber="PL" displayName="PL" roomClassification="lab" capacity="21" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8961" locationX="150" locationY="150" roomNumber="ASL" displayName="ASL" roomClassification="lab" capacity="21" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8962" locationX="150" locationY="150" roomNumber="ISL" displayName="ISL" roomClassification="lab" capacity="22" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8963" locationX="150" locationY="150" roomNumber="Cogni-1" displayName="Cogni-1" roomClassification="lab" capacity="20" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8964" locationX="150" locationY="150" roomNumber="Cogni-2" displayName="Cogni-2" roomClassification="lab" capacity="20" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8965" locationX="150" locationY="150" roomNumber="Cogni-3" displayName="Cogni-3" roomClassification="lab" capacity="20" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8966" locationX="150" locationY="150" roomNumber="Cogni-34" displayName="Cogni-34" roomClassification="lab" capacity="20" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8967" locationX="150" locationY="150" roomNumber="Cogni-4" displayName="Cogni-4" roomClassification="lab" capacity="20" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8968" locationX="150" locationY="150" roomNumber="Cogni-5" displayName="Cogni-5" roomClassification="lab" capacity="20" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8969" locationX="150" locationY="150" roomNumber="DML" displayName="DML" roomClassification="lab" capacity="30" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+  </building>
+  <building externalId="taasika-bldg-ONL" abbreviation="ONL" locationX="0" locationY="0" name="Online (Virtual)">
+    <room externalId="taasika-room-8976" locationX="0" locationY="0" roomNumber="online1" displayName="online1" roomClassification="virtual" capacity="100" instructional="False" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+    </room>
+    <room externalId="taasika-room-8977" locationX="0" locationY="0" roomNumber="online2" displayName="online2" roomClassification="virtual" capacity="100" instructional="False" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+    </room>
+    <room externalId="taasika-room-8978" locationX="0" locationY="0" roomNumber="Online3" displayName="Online3" roomClassification="virtual" capacity="100" instructional="False" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+    </room>
+  </building>
+  <building externalId="taasika-bldg-NCSE" abbreviation="NCSE" locationX="175" locationY="175" name="New CSE Building">
+    <room externalId="taasika-room-8979" locationX="175" locationY="175" roomNumber="NC27" displayName="NC27" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8980" locationX="175" locationY="175" roomNumber="NC28" displayName="NC28" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+  </building>
+  <building externalId="taasika-bldg-BHAU" abbreviation="BHAU" locationX="300" locationY="200" name="Bhau Institute">
+    <room externalId="taasika-room-8981" locationX="300" locationY="200" roomNumber="Bhau1" displayName="Bhau1" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8982" locationX="300" locationY="200" roomNumber="Bhau2" displayName="Bhau2" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+      </roomFeatures>
+    </room>
+  </building>
+  <building externalId="taasika-bldg-UNAV" abbreviation="UNAV" locationX="250" locationY="250" name="Unavailable Lab Pool">
+    <room externalId="taasika-room-8993" locationX="250" locationY="250" roomNumber="Unavail-A" displayName="Unavail-A" roomClassification="lab" capacity="25" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8994" locationX="250" locationY="250" roomNumber="Unavail-B" displayName="Unavail-B" roomClassification="lab" capacity="25" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8995" locationX="250" locationY="250" roomNumber="Unavail-C" displayName="Unavail-C" roomClassification="lab" capacity="25" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+    <room externalId="taasika-room-8996" locationX="250" locationY="250" roomNumber="Unavail-D" displayName="Unavail-D" roomClassification="lab" capacity="25" instructional="True" scheduledRoomType="computingLab">
+      <roomDepartments>
+        <assigned departmentNumber="0101" percent="100"/>
+      </roomDepartments>
+      <roomFeatures>
+        <roomFeature feature="computerProjection" value="Computer Projection"/>
+        <roomFeature feature="puccComputer" value="Computer"/>
+      </roomFeatures>
+    </room>
+  </building>
+</buildingsRooms>

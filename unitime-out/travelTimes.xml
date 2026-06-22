@@ -1,0 +1,65 @@
+<!--
+  Generated from the Taasika SQL dump (snapshot 240, 'published-19jan26').
+  Source schema: taasika2-foss-26jan26.sql
+  Template reference: samplexml/ (UniTime XML interface)
+  See: https://www.unitime.org/uct_interfaces.php
+-->
+
+<traveltimes campus="COEP" year="2026" term="Spr" created="Generated from Taasika snapshot 240">
+  <from building="AC" roomNbr="AC-202NC-06">
+    <to building="ENTCX" roomNbr="SH">5</to>
+    <to building="CSED" roomNbr="DBMSL">5</to>
+    <to building="ONL" roomNbr="online1">5</to>
+    <to building="NCSE" roomNbr="NC27">5</to>
+    <to building="BHAU" roomNbr="Bhau1">5</to>
+    <to building="UNAV" roomNbr="Unavail-A">5</to>
+  </from>
+  <from building="ENTCX" roomNbr="SH">
+    <to building="AC" roomNbr="AC-202NC-06">5</to>
+    <to building="CSED" roomNbr="DBMSL">5</to>
+    <to building="ONL" roomNbr="online1">5</to>
+    <to building="NCSE" roomNbr="NC27">5</to>
+    <to building="BHAU" roomNbr="Bhau1">5</to>
+    <to building="UNAV" roomNbr="Unavail-A">5</to>
+  </from>
+  <from building="CSED" roomNbr="DBMSL">
+    <to building="AC" roomNbr="AC-202NC-06">5</to>
+    <to building="ENTCX" roomNbr="SH">5</to>
+    <to building="ONL" roomNbr="online1">5</to>
+    <to building="NCSE" roomNbr="NC27">3</to>
+    <to building="BHAU" roomNbr="Bhau1">5</to>
+    <to building="UNAV" roomNbr="Unavail-A">5</to>
+  </from>
+  <from building="ONL" roomNbr="online1">
+    <to building="AC" roomNbr="AC-202NC-06">5</to>
+    <to building="ENTCX" roomNbr="SH">5</to>
+    <to building="CSED" roomNbr="DBMSL">5</to>
+    <to building="NCSE" roomNbr="NC27">5</to>
+    <to building="BHAU" roomNbr="Bhau1">5</to>
+    <to building="UNAV" roomNbr="Unavail-A">5</to>
+  </from>
+  <from building="NCSE" roomNbr="NC27">
+    <to building="AC" roomNbr="AC-202NC-06">5</to>
+    <to building="ENTCX" roomNbr="SH">5</to>
+    <to building="CSED" roomNbr="DBMSL">3</to>
+    <to building="ONL" roomNbr="online1">5</to>
+    <to building="BHAU" roomNbr="Bhau1">5</to>
+    <to building="UNAV" roomNbr="Unavail-A">5</to>
+  </from>
+  <from building="BHAU" roomNbr="Bhau1">
+    <to building="AC" roomNbr="AC-202NC-06">5</to>
+    <to building="ENTCX" roomNbr="SH">5</to>
+    <to building="CSED" roomNbr="DBMSL">5</to>
+    <to building="ONL" roomNbr="online1">5</to>
+    <to building="NCSE" roomNbr="NC27">5</to>
+    <to building="UNAV" roomNbr="Unavail-A">5</to>
+  </from>
+  <from building="UNAV" roomNbr="Unavail-A">
+    <to building="AC" roomNbr="AC-202NC-06">5</to>
+    <to building="ENTCX" roomNbr="SH">5</to>
+    <to building="CSED" roomNbr="DBMSL">5</to>
+    <to building="ONL" roomNbr="online1">5</to>
+    <to building="NCSE" roomNbr="NC27">5</to>
+    <to building="BHAU" roomNbr="Bhau1">5</to>
+  </from>
+</traveltimes>

@@ -1,0 +1,23 @@
+<!--
+  Generated from the Taasika SQL dump (snapshot 240, 'published-19jan26').
+  Source schema: taasika2-foss-26jan26.sql
+  Template reference: samplexml/ (UniTime XML interface)
+  See: https://www.unitime.org/uct_interfaces.php
+-->
+<posMajors campus="COEP" term="Spr" year="2026">
+  <posMajor externalId="taasika-maj-MT-CE" code="CE" name="Computer Engineering" academicArea="MT"/>
+  <posMajor externalId="taasika-maj-BT-CE" code="CE" name="Computer Engineering" academicArea="BT"/>
+  <posMajor externalId="taasika-maj-BT-MIN" code="MIN" name="Minor of CSE" academicArea="BT"/>
+  <posMajor externalId="taasika-maj-MT-OE" code="OE" name="Open Elective Track" academicArea="MT"/>
+  <posMajor externalId="taasika-maj-MT-IS" code="IS" name="Information Security" academicArea="MT"/>
+  <posMajor externalId="taasika-maj-MT-AI" code="AI" name="Artificial Intelligence" academicArea="MT"/>
+  <posMajor externalId="taasika-maj-MT-DS" code="DS" name="Data Science" academicArea="MT"/>
+  <posMajor externalId="taasika-maj-BT-MDM" code="MDM" name="Multi-Disciplinary Minor" academicArea="BT"/>
+  <posMajor externalId="taasika-maj-BT-RES" code="RES" name="Reserved Cohort" academicArea="BT"/>
+  <posMajor externalId="taasika-maj-BT-OE" code="OE" name="Open Elective Track" academicArea="BT"/>
+  <posMajor externalId="taasika-maj-BT-AIMA" code="AIMA" name="AI for Interdisciplinary Applications" academicArea="BT"/>
+  <posMajor externalId="taasika-maj-BT-PP" code="PP" name="Python Programming" academicArea="BT"/>
+  <posMajor externalId="taasika-maj-BT-WD" code="WD" name="Web Design" academicArea="BT"/>
+  <posMajor externalId="taasika-maj-BT-PPS" code="PPS" name="Programming for Problem Solving" academicArea="BT"/>
+  <posMajor externalId="taasika-maj-BT-AIML" code="AIML" name="AI and Machine Learning" academicArea="BT"/>
+</posMajors>

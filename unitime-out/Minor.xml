@@ -1,0 +1,9 @@
+<!--
+  Generated from the Taasika SQL dump (snapshot 240, 'published-19jan26').
+  Source schema: taasika2-foss-26jan26.sql
+  Template reference: samplexml/ (UniTime XML interface)
+  See: https://www.unitime.org/uct_interfaces.php
+-->
+<posMinors campus="COEP" term="Spr" year="2026">
+  <!-- No minors used; Minor-of-CSE programs are modelled as posMajors. -->
+</posMinors>
