@@ -97,6 +97,27 @@ different values:
 | Subjects skipped | 121 of 184 controlling (lec) subjects have no `subjectClassTeacher` and no `subjectBatchTeacher` row in snapshot 240, so they were intentionally omitted from `courseOffering.xml` while still appearing in `courseCatalog.xml`. |
 | Mock student naming | `externalId = <classShortName>-S<index>`, first name from a fixed 30-name list, last name from a 15-surname list. |
 
+## Evaluate a solution
+
+After exporting a timetable from UniTime (**Course Timetabling Solver → Export**
+CSV, or Timetable Grid export), score it against the constraints in this
+directory:
+
+```powershell
+python scripts\eval_timetable_kpis.py
+python scripts\eval_timetable_kpis.py --csv solutions\COEPSpr2026_v2.csv --out solutions\kpi_report.json
+```
+
+The script prints a console summary and writes `solutions/kpi_report.json`.
+
+| Score | Meaning |
+| ----- | ------- |
+| Hard feasibility (0–100) | Equal-weight average of coverage, time-pattern fidelity, date pattern, room capacity, lunch/weekend, instructor/room double-booking, and student conflict rates |
+| Preference score (0–100) | Average of room-preference hit rate and instructor-identity match rate |
+| Efficiency metrics | Instructor weekly load (mean/stdev), travel-gap violations, UNAV/ONL usage, early/mid/late slot spread, back-to-back density |
+
+Hard failures and preference misses include up to 8 example rows each for debugging.
+
 ## Re-generating
 
 The full pipeline is reproducible from the SQL.  From the repo root:

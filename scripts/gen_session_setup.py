@@ -49,8 +49,35 @@ def _slot_starts(num_slots: int = SLOTS_PER_DAY) -> list[str]:
     return out
 
 
-def _all_days_codes() -> list[str]:
-    return ["M", "T", "W", "Th", "F", "S", "Su"]
+# Day codes UniTime may assign; each pattern only gets codes whose
+# meeting count equals nbrMeetings (e.g. "2 x 60" → MW, TTh, never MWF).
+_DAY_CODE_CATALOG: list[str] = [
+    "M", "T", "W", "Th", "F", "S", "Su",
+    "MW", "MF", "WF", "TTh", "MT", "MTh", "TF", "WTh", "ThF", "WS", "FS",
+    "MWF", "MThF", "TThS", "MTW", "MTF", "MWTh", "WThF",
+    "MTWTh", "MTWF", "MTThF", "MWThF", "TWThF",
+    "MTWThF",
+    "MTWThFS",
+]
+_DAY_PARSE_TOKENS = ("Th", "Su", "M", "T", "W", "F", "S")
+
+
+def _meeting_count(code: str) -> int:
+    remaining = code
+    count = 0
+    while remaining:
+        for tok in _DAY_PARSE_TOKENS:
+            if remaining.startswith(tok):
+                count += 1
+                remaining = remaining[len(tok) :]
+                break
+        else:
+            raise ValueError(f"unrecognized day code: {code!r}")
+    return count
+
+
+def _day_codes_for_meetings(nbr_meetings: int) -> list[str]:
+    return [c for c in _DAY_CODE_CATALOG if _meeting_count(c) == nbr_meetings]
 
 
 def _header() -> str:
@@ -169,7 +196,6 @@ def _date_patterns_block() -> str:
 
 def _time_patterns_block() -> str:
     starts = _slot_starts()
-    days = _all_days_codes()
 
     patterns: list[tuple[str, int, int]] = [
         ("1 x 60", 1, 60),
@@ -194,18 +220,18 @@ def _time_patterns_block() -> str:
             )
             continue
         slots_per_meeting = max(1, mins_per_meeting // 5)
+        day_codes = _day_codes_for_meetings(nbr_meetings)
+        if not day_codes:
+            raise ValueError(
+                f"no day codes with {nbr_meetings} meetings for pattern {name!r}"
+            )
         lines.append(
             f'    <timePattern name="{name}" nbrMeetings="{nbr_meetings}" '
             f'minsPerMeeting="{mins_per_meeting}" type="Standard" visible="true" '
             f'nbrSlotsPerMeeting="{slots_per_meeting}" breakTime="0">'
         )
-        if nbr_meetings == 1:
-            for d in days:
-                lines.append(f'      <days code="{d}"/>')
-        else:
-            grouped_days = ["MWF", "MW", "TTh", "TThS", "MTWThF", "MTWThFS"]
-            for d in grouped_days:
-                lines.append(f'      <days code="{d}"/>')
+        for d in day_codes:
+            lines.append(f'      <days code="{d}"/>')
         max_start_idx = max(0, SLOTS_PER_DAY - (mins_per_meeting // SLOT_MIN))
         for idx in range(max_start_idx + 1):
             if idx >= len(starts):

@@ -1,0 +1,169 @@
+{
+  "summary": {
+    "classes_in_offerings": 254,
+    "classes_in_solution": 254,
+    "hard_feasibility_score": 97.13,
+    "hard_checks": 5768,
+    "hard_failures": 328,
+    "preference_score": 54.33,
+    "unav_onl_assignments": 45,
+    "unav_onl_pct": 17.72,
+    "instructor_conflicts": 0,
+    "room_conflicts": 0,
+    "student_conflict_pairs": 641,
+    "students_with_conflict": 288,
+    "students_total": 3990,
+    "travel_violations": 0,
+    "back_to_back_pct": 13.16
+  },
+  "hard": {
+    "coverage": {
+      "name": "coverage",
+      "checked": 254,
+      "passed": 254,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "time_pattern_fidelity": {
+      "name": "time_pattern_fidelity",
+      "checked": 254,
+      "passed": 217,
+      "failed": 37,
+      "rate_pct": 85.43,
+      "examples": [
+        "CS 102 Lec 1: need 2 x 60, got 5x60min (MTWThF 3:30p-4:30p)",
+        "CS 102 Lec 2: need 2 x 60, got 3x60min (MWF 8:30a-9:30a)",
+        "CS 107 Lec 1: need 3 x 60, got 2x60min (TTh 4:30p-5:30p)",
+        "CS 107 Lec 2: need 3 x 60, got 2x60min (TTh 5:30p-6:30p)",
+        "CS 110 Lec 1: need 3 x 60, got 2x60min (TTh 5:30p-6:30p)",
+        "CS 110 Lec 2: need 3 x 60, got 5x60min (MTWThF 10:30a-11:30a)",
+        "CS 128 Lec 1: need 3 x 60, got 2x60min (TTh 4:30p-5:30p)",
+        "CS 128 Lec 2: need 3 x 60, got 2x60min (TTh 2:30p-3:30p)"
+      ]
+    },
+    "date_pattern": {
+      "name": "date_pattern",
+      "checked": 254,
+      "passed": 254,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "room_capacity": {
+      "name": "room_capacity",
+      "checked": 254,
+      "passed": 254,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "lunch_weekend": {
+      "name": "lunch_weekend",
+      "checked": 254,
+      "passed": 251,
+      "failed": 3,
+      "rate_pct": 98.82,
+      "examples": [
+        "MT 128 Lec 1: weekend meeting on S",
+        "MT 136 Lec 1: weekend meeting on S",
+        "CS 223 Lab 19: weekend meeting on S"
+      ]
+    },
+    "instructor_double_booking": {
+      "name": "instructor_double_booking",
+      "checked": 254,
+      "passed": 254,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "room_double_booking": {
+      "name": "room_double_booking",
+      "checked": 254,
+      "passed": 254,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "student_conflicts": {
+      "name": "student_conflicts",
+      "checked": 3990,
+      "passed": 3702,
+      "failed": 288,
+      "rate_pct": 92.78,
+      "examples": [
+        "MT-CE-S001 on M: CS 195 Lab 1 overlaps CS 197 Lab 1",
+        "MT-CE-S001 on Th: CS 197 Lec 1 overlaps MT 112 Lab 1",
+        "MT-CE-S002 on M: MT 113 Lab 1 overlaps CS 195 Lec 1",
+        "MT-CE-S002 on T: CS 195 Lab 2 overlaps CS 197 Lab 2",
+        "MT-CE-S002 on T: CS 197 Lab 2 overlaps CS 195 Lec 1",
+        "MT-CE-S002 on W: CS 196 Lab 2 overlaps CS 195 Lec 1",
+        "MT-CE-S003 on M: CS 195 Lec 1 overlaps MT 111 Lab 1",
+        "MT-CE-S004 on W: MT 114 Lab 1 overlaps CS 195 Lec 1"
+      ]
+    }
+  },
+  "preference": {
+    "room_preference": {
+      "name": "room_preference",
+      "checked": 254,
+      "passed": 22,
+      "failed": 232,
+      "rate_pct": 8.66,
+      "examples": [
+        "CS 102 Lec 1: NCSE NC27 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 102 Lec 2: BHAU Bhau1 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 107 Lec 1: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 107 Lec 2: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 110 Lec 1: AC NC-14 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "CS 110 Lec 2: AC AC-201NC-05 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "CS 110 Lab 1: UNAV Unavail-C not in preferred ['CSED FOSS1', 'CSED PL']",
+        "CS 110 Lab 2: CSED Cogni-2 not in preferred ['CSED FOSS1', 'CSED PL']"
+      ]
+    },
+    "instructor_identity": {
+      "name": "instructor_identity",
+      "checked": 254,
+      "passed": 254,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "unav_onl": {
+      "count": 45,
+      "pct": 17.72,
+      "total_assignments": 254
+    }
+  },
+  "efficiency": {
+    "instructor_load": {
+      "instructors": 46,
+      "mean_minutes": 708.3,
+      "stdev_minutes": 294.4,
+      "max_minutes": 1200,
+      "min_minutes": 60
+    },
+    "travel_violations": 0,
+    "travel_examples": [],
+    "back_to_back_pct": 13.16,
+    "consecutive_pairs": 152,
+    "adjacent_pairs": 20,
+    "slot_spread": {
+      "early_pct": 17.15,
+      "mid_pct": 50.87,
+      "late_pct": 31.98,
+      "early": 59,
+      "mid": 175,
+      "late": 110,
+      "total_meetings": 344
+    }
+  },
+  "meta": {
+    "csv": "D:\\Riya\\College\\btech\\solutions\\COEPSpr2026_v2.csv",
+    "data_dir": "D:\\Riya\\College\\btech\\unitime-out",
+    "rooms_indexed": 45,
+    "staff": 113,
+    "enrolled_students": 3990
+  }
+}

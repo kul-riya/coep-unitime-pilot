@@ -124,12 +124,17 @@
       <time start="1830"/>
     </timePattern>
     <timePattern name="2 x 60" nbrMeetings="2" minsPerMeeting="60" type="Standard" visible="true" nbrSlotsPerMeeting="12" breakTime="0">
-      <days code="MWF"/>
       <days code="MW"/>
+      <days code="MF"/>
+      <days code="WF"/>
       <days code="TTh"/>
-      <days code="TThS"/>
-      <days code="MTWThF"/>
-      <days code="MTWThFS"/>
+      <days code="MT"/>
+      <days code="MTh"/>
+      <days code="TF"/>
+      <days code="WTh"/>
+      <days code="ThF"/>
+      <days code="WS"/>
+      <days code="FS"/>
       <time start="0830"/>
       <time start="0930"/>
       <time start="1030"/>
@@ -144,11 +149,12 @@
     </timePattern>
     <timePattern name="3 x 60" nbrMeetings="3" minsPerMeeting="60" type="Standard" visible="true" nbrSlotsPerMeeting="12" breakTime="0">
       <days code="MWF"/>
-      <days code="MW"/>
-      <days code="TTh"/>
+      <days code="MThF"/>
       <days code="TThS"/>
-      <days code="MTWThF"/>
-      <days code="MTWThFS"/>
+      <days code="MTW"/>
+      <days code="MTF"/>
+      <days code="MWTh"/>
+      <days code="WThF"/>
       <time start="0830"/>
       <time start="0930"/>
       <time start="1030"/>
@@ -162,12 +168,11 @@
       <time start="1830"/>
     </timePattern>
     <timePattern name="4 x 60" nbrMeetings="4" minsPerMeeting="60" type="Standard" visible="true" nbrSlotsPerMeeting="12" breakTime="0">
-      <days code="MWF"/>
-      <days code="MW"/>
-      <days code="TTh"/>
-      <days code="TThS"/>
-      <days code="MTWThF"/>
-      <days code="MTWThFS"/>
+      <days code="MTWTh"/>
+      <days code="MTWF"/>
+      <days code="MTThF"/>
+      <days code="MWThF"/>
+      <days code="TWThF"/>
       <time start="0830"/>
       <time start="0930"/>
       <time start="1030"/>
@@ -181,12 +186,7 @@
       <time start="1830"/>
     </timePattern>
     <timePattern name="5 x 60" nbrMeetings="5" minsPerMeeting="60" type="Standard" visible="true" nbrSlotsPerMeeting="12" breakTime="0">
-      <days code="MWF"/>
-      <days code="MW"/>
-      <days code="TTh"/>
-      <days code="TThS"/>
       <days code="MTWThF"/>
-      <days code="MTWThFS"/>
       <time start="0830"/>
       <time start="0930"/>
       <time start="1030"/>
@@ -219,12 +219,17 @@
       <time start="1730"/>
     </timePattern>
     <timePattern name="2 x 120" nbrMeetings="2" minsPerMeeting="120" type="Standard" visible="true" nbrSlotsPerMeeting="24" breakTime="0">
-      <days code="MWF"/>
       <days code="MW"/>
+      <days code="MF"/>
+      <days code="WF"/>
       <days code="TTh"/>
-      <days code="TThS"/>
-      <days code="MTWThF"/>
-      <days code="MTWThFS"/>
+      <days code="MT"/>
+      <days code="MTh"/>
+      <days code="TF"/>
+      <days code="WTh"/>
+      <days code="ThF"/>
+      <days code="WS"/>
+      <days code="FS"/>
       <time start="0830"/>
       <time start="0930"/>
       <time start="1030"/>
