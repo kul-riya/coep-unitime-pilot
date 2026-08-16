@@ -1,6 +1,6 @@
 # UniTime XML Inputs - Even Sem 2025-26 (COEP)
 
-This directory holds 15 UniTime XML files generated from
+This directory holds UniTime XML files generated from
 `taasika2-foss-26jan26.sql/taasika2-foss-26jan26.sql`, snapshot
 `240 - 'published-19jan26'` (Even Sem 25-26, effective 19 Jan 2026).
 
@@ -67,15 +67,21 @@ defined by an earlier file:
     and `cancelled="false"`.  Times are intentionally left blank for UniTime
     to solve.  Rooms in `subjectRoom` / `classRoom` / `batchRoom` are kept
     as preferences (not pre-assignments).
-13. `studentInfo.xml`           - 3,990 mock students, named with
-    Indian-style first / last names, mapped to area + classification + major
-    + studentGroup of their class and (round-robin) batch.
-14. `studentRequest.xml`        - one course request per offered subject for
-    each mock student (derived from their class's `subjectClassTeacher` rows
-    + their batch's `subjectBatchTeacher` rows).
-15. `studentenrollments.xml`    - direct Lec + Lab section enrolment for
-    each mock student, matched to the section suffix produced in
-    `courseOffering.xml`.
+13. `preferences.xml`           - **required for the course timetabling
+    solver.** Assigns a time pattern + date pattern on every scheduling
+    subpart (and class). Without this, UniTime treats classes as “arrange
+    hours” and **does not load them** → solver shows ~0/17 variables instead
+    of ~254. Import **after** `courseOffering.xml` (re-import whenever
+    offerings are reloaded).
+14. `studentInfo.xml`           - 2,130 simulated students (`61yy03aaa` IDs:
+    500/year × FY–BT with 400 CE + 100 AIML, plus 130 MT). Mapped to
+    academic area + classification + major. Uses `incremental="true"`.
+    Student groups are intentionally omitted (UniTime's StudentImport can
+    throw Hibernate `TransientObjectException` when merging large groups).
+15. `studentRequest.xml`        - course requests from the preference-based
+    enrollment simulation (defaults + one pick per elective group).
+16. `studentenrollments.xml`    - Lec/Lab section enrolments matching
+    `courseOffering.xml` suffixes (equal split across elective options).
 
 ## Decisions taken automatically
 
@@ -87,7 +93,7 @@ different values:
 | -------- | ------- |
 | Department codes | `0101`=CEIT (Taasika dept 1), `0102`=ENTC (2), `0103`=INSTRU (3), `0104`=IT/CEIT (4) |
 | Subject area scheme | Three areas split by program: `CS` (B.Tech CSE/IT), `MT` (M.Tech), `IFC` (Interdisciplinary). No `VSEC` area because no subject in snapshot 240 was tagged as VSEC. |
-| Course numbering | Per-area sequential numbers starting at 101, ordered by `subjectId`.  Lab subjects that pair with a Lec subject do *not* consume a number - they share the Lec's number.  Stable across re-runs of the same snapshot. |
+| Course numbering | Taasika ``subjectShortName`` (e.g. `CN`, `OOPD`, `DS-FY`). Parentheses become hyphens. Lab companions share the Lec course number. Class ids are ``CN Lec 1``, ``CN Lab 2``, etc. |
 | Lec+Lab pairing | A Lab/Tut subject is merged into its Lec partner if `lab.shortName == lec.shortName + "-Lab"` (or `"Lab"`, `" Lab"`, `"-Tut"`, `" Tut"`, `"-Tutorial"`, `" Tutorial"`).  67 candidate pairs in snapshot 240; 48 actually used after dropping the 19 Lec subjects with no `subjectClassTeacher` rows. |
 | Course credits | Paired: `lec.eachSlot * lec.nSlots + 0.5 * lab.eachSlot * lab.nSlots` (Indian engineering convention).  Unpaired: `eachSlot * nSlots` (lec-only) or `0.5 * eachSlot * nSlots` (lab-only).  Minimum 1. |
 | Building inference | Heuristic on `roomName` and `roomShortName`. Online classrooms get a virtual building, "Unavailable" labs go into their own pool. |
@@ -105,8 +111,17 @@ directory:
 
 ```powershell
 python scripts\eval_timetable_kpis.py
-python scripts\eval_timetable_kpis.py --csv solutions\COEPSpr2026_v2.csv --out solutions\kpi_report.json
+python scripts\eval_timetable_kpis.py --csv solutions\COEPSpr2026_v4.csv --out solutions\kpi_report.json
 ```
+
+If a UniTime CSV export still shows numeric courses (`CS 102`), relabel it to
+Taasika short codes (`CS CN`) and build an HTML grid:
+
+```powershell
+python scripts\relabel_timetable_csv.py solutions\COEPSpr2026_v4.csv
+```
+
+This writes `solutions/timetable_v4.html` and updates the CSV COURSE column.
 
 The script prints a console summary and writes `solutions/kpi_report.json`.
 
@@ -129,12 +144,24 @@ python scripts\gen_buildings.py
 python scripts\gen_staff.py
 python scripts\gen_course_catalog.py
 python scripts\gen_course_offering.py
+python scripts\gen_preferences.py
 python scripts\gen_students.py
 ```
 
 To target a different snapshot (for example `241 - 'draft-19jan26-onwards'`),
 edit the `snapshot_id=240` argument inside each `gen_*.py` script (or override
 via the loader's `load(snapshot_id=...)` call).
+
+Verify time patterns and KPI after a UniTime export:
+
+```powershell
+python scripts\verify_time_patterns.py
+python scripts\eval_timetable_kpis.py --csv solutions\COEPSpr2026_v4.csv --out solutions\kpi_report.json
+```
+
+See [`solutions/UNITIME_RESOLVE_CHECKLIST.md`](../solutions/UNITIME_RESOLVE_CHECKLIST.md)
+and [`unitime-out/solver_parameters_recommended.txt`](solver_parameters_recommended.txt)
+for re-import, solver settings, and re-solve steps.
 
 ## What is intentionally not in these files
 

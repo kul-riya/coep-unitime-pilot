@@ -25,7 +25,7 @@ from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "unitime-out"
-DEFAULT_CSV = ROOT / "solutions" / "COEPSpr2026_v2.csv"
+DEFAULT_CSV = ROOT / "solutions" / "COEPSpr2026_v4.csv"
 DEFAULT_OUT = ROOT / "solutions" / "kpi_report.json"
 
 # UniTime day-code tokens, longest-first so "Th" / "Su" beat "T" / "S".
@@ -284,8 +284,69 @@ def load_preferences(path: Path) -> dict[tuple[str, str, str], str]:
     return out
 
 
+def _full_class_id(subject: str, course_nbr: str, itype: str, suffix: str) -> str:
+    return f"{subject} {course_nbr} {itype} {suffix}".strip()
+
+
+@dataclass
+class ClassIdIndex:
+    """Map CSV/enrollment ids (``CS CN Lec 1``) to offering ids (``CN Lec 1``)."""
+
+    offerings: dict[str, OfferingClass]
+    alias_to_canonical: dict[str, str]
+
+    @classmethod
+    def from_offerings(cls, offerings: dict[str, OfferingClass]) -> ClassIdIndex:
+        alias: dict[str, str] = {}
+        for cid, off in offerings.items():
+            alias[cid] = cid
+            full = _full_class_id(off.subject, off.course_nbr, off.itype, off.suffix)
+            alias[full] = cid
+            short = f"{off.course_nbr} {off.itype} {off.suffix}".strip()
+            if short:
+                alias[short] = cid
+        return cls(offerings=offerings, alias_to_canonical=alias)
+
+    def resolve(self, class_id: str) -> str | None:
+        if class_id in self.alias_to_canonical:
+            return self.alias_to_canonical[class_id]
+        parts = class_id.split()
+        if len(parts) >= 4:
+            subject, course_nbr, itype, suffix = parts[0], parts[1], parts[2], parts[-1]
+            full = _full_class_id(subject, course_nbr, itype, suffix)
+            if full in self.alias_to_canonical:
+                return self.alias_to_canonical[full]
+        return None
+
+    def offering_for(self, class_id: str) -> OfferingClass | None:
+        canonical = self.resolve(class_id)
+        if canonical is None:
+            return None
+        return self.offerings.get(canonical)
+
+
+def load_room_preferences(path: Path) -> dict[tuple[str, str, str, str], list[str]]:
+    """(subject, course, type, suffix) → list of 'BUILDING ROOM' keys."""
+    root = ET.parse(path).getroot()
+    out: dict[tuple[str, str, str, str], list[str]] = defaultdict(list)
+    for cls in root.findall("class"):
+        key = (
+            cls.get("subject", ""),
+            cls.get("course", ""),
+            cls.get("type", ""),
+            cls.get("suffix", ""),
+        )
+        for rp in cls.findall("roomPref"):
+            room_key = f"{rp.get('building', '')} {rp.get('room', '')}".strip()
+            if room_key and room_key not in out[key]:
+                out[key].append(room_key)
+    return dict(out)
+
+
 def load_offerings(
-    path: Path, patterns: dict[tuple[str, str, str], str]
+    path: Path,
+    patterns: dict[tuple[str, str, str], str],
+    room_prefs: dict[tuple[str, str, str, str], list[str]] | None = None,
 ) -> dict[str, OfferingClass]:
     root = ET.parse(path).getroot()
     classes: dict[str, OfferingClass] = {}
@@ -302,11 +363,16 @@ def load_offerings(
             for cls in config.findall("class"):
                 itype = cls.get("type", "")
                 suffix = cls.get("suffix", "")
-                class_id = cls.get("id") or f"{subject} {course_nbr} {itype} {suffix}"
+                class_id = cls.get("id") or _full_class_id(subject, course_nbr, itype, suffix)
                 rooms = [
                     f"{r.get('building', '')} {r.get('roomNbr', '')}".strip()
                     for r in cls.findall("room")
                 ]
+                if room_prefs:
+                    extra = room_prefs.get((subject, course_nbr, itype, suffix), [])
+                    for rk in extra:
+                        if rk not in rooms:
+                            rooms.append(rk)
                 instr = None
                 for ins in cls.findall("instructor"):
                     if ins.get("lead", "true").lower() == "true" or instr is None:
@@ -384,7 +450,7 @@ def resolve_instructor(
 
 def load_assignments(
     path: Path,
-    offerings: dict[str, OfferingClass],
+    id_index: ClassIdIndex,
     by_label: dict[str, list[StaffMember]],
     by_id: dict[str, StaffMember],
 ) -> list[Assignment]:
@@ -394,7 +460,8 @@ def load_assignments(
         course = row["COURSE"].strip()
         itype = row["ITYPE"].strip()
         section = row["SECTION"].strip()
-        class_id = f"{course} {itype} {section}"
+        raw_class_id = f"{course} {itype} {section}"
+        canonical = id_index.resolve(raw_class_id) or raw_class_id
         parts = course.split(None, 1)
         subject = parts[0] if parts else ""
         course_nbr = parts[1] if len(parts) > 1 else ""
@@ -404,11 +471,12 @@ def load_assignments(
         day_code = row["DAY"].strip()
         days = _expand_days(day_code)
         meetings = [Meeting(d, start, end) for d in days]
-        expected = offerings.get(class_id).instructor_id if class_id in offerings else None
+        off = id_index.offering_for(raw_class_id)
+        expected = off.instructor_id if off else None
         raw_instr = row["INSTRUCTOR"].strip()
         assignments.append(
             Assignment(
-                class_id=class_id,
+                class_id=canonical,
                 subject=subject,
                 course_nbr=course_nbr,
                 itype=itype,
@@ -588,10 +656,13 @@ def evaluate(
     student_conflict_count = 0
     students_with_conflict = 0
     student_examples: list[str] = []
+    id_index = ClassIdIndex.from_offerings(offerings)
+
     for sid, class_ids in enrollments.items():
         meetings: list[tuple[Meeting, str]] = []
         for cid in class_ids:
-            a = by_class.get(cid)
+            canonical = id_index.resolve(cid) or cid
+            a = by_class.get(canonical)
             if a is None:
                 continue
             for m in a.meetings:
@@ -612,7 +683,9 @@ def evaluate(
                         student_conflict_count += 1
                         conflicted = True
                         if len(student_examples) < _EXAMPLE_LIMIT:
-                            student_examples.append(f"{sid} on {day}: {ca} overlaps {cb}")
+                            student_examples.append(
+                                f"{sid} on {day}: {ca} overlaps {cb}"
+                            )
         if conflicted:
             students_with_conflict += 1
 
@@ -846,12 +919,16 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     patterns = load_preferences(data_dir / "preferences.xml")
-    offerings = load_offerings(data_dir / "courseOffering.xml", patterns)
+    room_prefs = load_room_preferences(data_dir / "preferences.xml")
+    offerings = load_offerings(
+        data_dir / "courseOffering.xml", patterns, room_prefs=room_prefs
+    )
     rooms = load_rooms_from_buildings(data_dir / "buildingRoomImport.xml")
     by_id, by_label = load_staff_indexes(data_dir / "staff.xml")
     travel = load_travel(data_dir / "travelTimes.xml")
     enrollments = load_enrollments(data_dir / "studentenrollments.xml")
-    assignments = load_assignments(csv_path, offerings, by_label, by_id)
+    id_index = ClassIdIndex.from_offerings(offerings)
+    assignments = load_assignments(csv_path, id_index, by_label, by_id)
 
     report = evaluate(offerings, assignments, rooms, travel, enrollments, by_id)
     report["meta"] = {

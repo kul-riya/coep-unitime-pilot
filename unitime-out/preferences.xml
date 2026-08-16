@@ -5,603 +5,1276 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<preferences campus="COEP" term="Spr" year="2026" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from courseOffering.xml">
-  <subpart subject="CS" course="102" config="1" type="Lec">
+<preferences campus="COEP" term="Spr" year="2026" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from courseOffering.xml + Taasika room prefs">
+  <subpart subject="CS" course="CoI" config="1" type="Lec">
     <timePref pattern="2 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="102" type="Lec" suffix="1"/>
-  <class subject="CS" course="102" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="107" config="1" type="Lec">
+  <class subject="CS" course="CoI" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-201NC-05" level="P"/>
+  </class>
+  <class subject="CS" course="CoI" type="Lec" suffix="2">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-201NC-05" level="P"/>
+  </class>
+  <subpart subject="CS" course="CO" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="107" type="Lec" suffix="1"/>
-  <class subject="CS" course="107" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="109" config="1" type="Lec">
+  <class subject="CS" course="CO" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-201NC-05" level="P"/>
+  </class>
+  <class subject="CS" course="CO" type="Lec" suffix="2">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-201NC-05" level="P"/>
+  </class>
+  <subpart subject="CS" course="AI" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="109" type="Lec" suffix="1"/>
-  <class subject="CS" course="109" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="109" config="1" type="Lab">
+  <class subject="CS" course="AI" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-202NC-06" level="P"/>
+  </class>
+  <class subject="CS" course="AI" type="Lec" suffix="2">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-202NC-06" level="P"/>
+  </class>
+  <subpart subject="CS" course="AI" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <subpart subject="CS" course="110" config="1" type="Lec">
+  <subpart subject="CS" course="CN" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="110" type="Lec" suffix="1"/>
-  <class subject="CS" course="110" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="110" config="1" type="Lab">
+  <class subject="CS" course="CN" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-202NC-06" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lec" suffix="2">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-202NC-06" level="P"/>
+  </class>
+  <subpart subject="CS" course="CN" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="110" type="Lab" suffix="1"/>
-  <class subject="CS" course="110" type="Lab" suffix="2"/>
-  <class subject="CS" course="110" type="Lab" suffix="3"/>
-  <class subject="CS" course="110" type="Lab" suffix="4"/>
-  <class subject="CS" course="110" type="Lab" suffix="5"/>
-  <class subject="CS" course="110" type="Lab" suffix="6"/>
-  <class subject="CS" course="110" type="Lab" suffix="7"/>
-  <class subject="CS" course="110" type="Lab" suffix="8"/>
-  <class subject="CS" course="110" type="Lab" suffix="9"/>
-  <class subject="CS" course="110" type="Lab" suffix="10"/>
-  <class subject="CS" course="110" type="Lab" suffix="11"/>
-  <subpart subject="CS" course="128" config="1" type="Lec">
+  <class subject="CS" course="CN" type="Lab" suffix="1">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lab" suffix="2">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lab" suffix="3">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lab" suffix="4">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lab" suffix="5">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lab" suffix="6">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+    <roomPref building="CSED" room="ASL" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lab" suffix="7">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+    <roomPref building="AC" room="NC-01" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lab" suffix="8">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lab" suffix="9">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+    <roomPref building="CSED" room="GML" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lab" suffix="10">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+    <roomPref building="CSED" room="GML" level="P"/>
+  </class>
+  <class subject="CS" course="CN" type="Lab" suffix="11">
+    <roomPref building="CSED" room="FOSS1" level="R"/>
+  </class>
+  <subpart subject="CS" course="MDM-DSFA" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="128" type="Lec" suffix="1"/>
-  <class subject="CS" course="128" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="142" config="1" type="Lec">
+  <class subject="CS" course="MDM-DSFA" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-201NC-05" level="P"/>
+  </class>
+  <class subject="CS" course="MDM-DSFA" type="Lec" suffix="2">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-202NC-06" level="P"/>
+  </class>
+  <subpart subject="CS" course="DTL" config="1" type="Lec">
     <timePref pattern="1 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <subpart subject="CS" course="142" config="1" type="Lab">
+  <subpart subject="CS" course="DTL" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="142" type="Lab" suffix="1"/>
-  <class subject="CS" course="142" type="Lab" suffix="2"/>
-  <class subject="CS" course="142" type="Lab" suffix="3"/>
-  <class subject="CS" course="142" type="Lab" suffix="4"/>
-  <class subject="CS" course="142" type="Lab" suffix="5"/>
-  <class subject="CS" course="142" type="Lab" suffix="6"/>
-  <class subject="CS" course="142" type="Lab" suffix="7"/>
-  <class subject="CS" course="142" type="Lab" suffix="8"/>
-  <class subject="CS" course="142" type="Lab" suffix="9"/>
-  <class subject="CS" course="142" type="Lab" suffix="10"/>
-  <class subject="CS" course="142" type="Lab" suffix="11"/>
-  <subpart subject="CS" course="171" config="1" type="Lec">
+  <class subject="CS" course="DTL" type="Lab" suffix="1">
+    <roomPref building="CSED" room="GML" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="DTL" type="Lab" suffix="2">
+    <roomPref building="CSED" room="GML" level="R"/>
+    <roomPref building="CSED" room="ISL" level="P"/>
+  </class>
+  <class subject="CS" course="DTL" type="Lab" suffix="3">
+    <roomPref building="CSED" room="GML" level="R"/>
+  </class>
+  <class subject="CS" course="DTL" type="Lab" suffix="4">
+    <roomPref building="CSED" room="GML" level="R"/>
+    <roomPref building="CSED" room="Cogni-5" level="P"/>
+  </class>
+  <class subject="CS" course="DTL" type="Lab" suffix="5">
+    <roomPref building="CSED" room="GML" level="R"/>
+    <roomPref building="CSED" room="Cogni-5" level="P"/>
+  </class>
+  <class subject="CS" course="DTL" type="Lab" suffix="6">
+    <roomPref building="CSED" room="GML" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="DTL" type="Lab" suffix="7">
+    <roomPref building="CSED" room="GML" level="R"/>
+    <roomPref building="CSED" room="Cogni-34" level="P"/>
+  </class>
+  <class subject="CS" course="DTL" type="Lab" suffix="8">
+    <roomPref building="CSED" room="GML" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DTL" type="Lab" suffix="9">
+    <roomPref building="CSED" room="GML" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="DTL" type="Lab" suffix="10">
+    <roomPref building="CSED" room="GML" level="R"/>
+  </class>
+  <class subject="CS" course="DTL" type="Lab" suffix="11">
+    <roomPref building="CSED" room="GML" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <subpart subject="CS" course="DAA" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="171" type="Lec" suffix="1"/>
-  <class subject="CS" course="171" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="171" config="1" type="Lab">
+  <class subject="CS" course="DAA" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-202NC-06" level="R"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lec" suffix="2">
+    <roomPref building="AC" room="AC-202NC-06" level="R"/>
+  </class>
+  <subpart subject="CS" course="DAA" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="171" type="Lab" suffix="1"/>
-  <class subject="CS" course="171" type="Lab" suffix="2"/>
-  <class subject="CS" course="171" type="Lab" suffix="3"/>
-  <class subject="CS" course="171" type="Lab" suffix="4"/>
-  <class subject="CS" course="171" type="Lab" suffix="5"/>
-  <class subject="CS" course="171" type="Lab" suffix="6"/>
-  <class subject="CS" course="171" type="Lab" suffix="7"/>
-  <class subject="CS" course="171" type="Lab" suffix="8"/>
-  <class subject="CS" course="171" type="Lab" suffix="9"/>
-  <class subject="CS" course="171" type="Lab" suffix="10"/>
-  <class subject="CS" course="171" type="Lab" suffix="11"/>
-  <subpart subject="CS" course="177" config="1" type="Lab">
+  <class subject="CS" course="DAA" type="Lab" suffix="1">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lab" suffix="2">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lab" suffix="3">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lab" suffix="4">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lab" suffix="5">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lab" suffix="6">
+    <roomPref building="CSED" room="ASL" level="R"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lab" suffix="7">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="AC" room="NC-01" level="P"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lab" suffix="8">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lab" suffix="9">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="CSED" room="GML" level="P"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lab" suffix="10">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="CSED" room="GML" level="P"/>
+  </class>
+  <class subject="CS" course="DAA" type="Lab" suffix="11">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="CSED" room="FOSS1" level="P"/>
+  </class>
+  <subpart subject="CS" course="DE4-GPU-Lab" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="177" type="Lab" suffix="1"/>
-  <class subject="CS" course="177" type="Lab" suffix="2"/>
-  <class subject="CS" course="177" type="Lab" suffix="3"/>
-  <class subject="CS" course="177" type="Lab" suffix="4"/>
-  <subpart subject="CS" course="179" config="1" type="Lec">
+  <class subject="CS" course="DE4-GPU-Lab" type="Lab" suffix="1">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+    <roomPref building="CSED" room="Cogni-4" level="P"/>
+  </class>
+  <class subject="CS" course="DE4-GPU-Lab" type="Lab" suffix="2">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+    <roomPref building="CSED" room="Cogni-4" level="P"/>
+  </class>
+  <class subject="CS" course="DE4-GPU-Lab" type="Lab" suffix="3">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <class subject="CS" course="DE4-GPU-Lab" type="Lab" suffix="4">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+  </class>
+  <subpart subject="CS" course="Minor4-DS" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="179" type="Lec" suffix="1"/>
-  <subpart subject="CS" course="190" config="1" type="Lec">
+  <class subject="CS" course="Minor4-DS" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+  </class>
+  <subpart subject="CS" course="TOC" config="1" type="Lec">
     <timePref pattern="2 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="190" type="Lec" suffix="1"/>
-  <class subject="CS" course="190" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="190" config="1" type="Lab">
+  <class subject="CS" course="TOC" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-201NC-05" level="P"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lec" suffix="2">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-201NC-05" level="P"/>
+  </class>
+  <subpart subject="CS" course="TOC" config="1" type="Lab">
     <timePref pattern="1 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="190" type="Lab" suffix="1"/>
-  <class subject="CS" course="190" type="Lab" suffix="2"/>
-  <class subject="CS" course="190" type="Lab" suffix="3"/>
-  <class subject="CS" course="190" type="Lab" suffix="4"/>
-  <class subject="CS" course="190" type="Lab" suffix="5"/>
-  <class subject="CS" course="190" type="Lab" suffix="6"/>
-  <class subject="CS" course="190" type="Lab" suffix="7"/>
-  <class subject="CS" course="190" type="Lab" suffix="8"/>
-  <class subject="CS" course="190" type="Lab" suffix="9"/>
-  <class subject="CS" course="190" type="Lab" suffix="10"/>
-  <class subject="CS" course="190" type="Lab" suffix="11"/>
-  <subpart subject="MT" course="111" config="1" type="Lab">
+  <class subject="CS" course="TOC" type="Lab" suffix="1">
+    <roomPref building="CSED" room="PL" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lab" suffix="2">
+    <roomPref building="CSED" room="PL" level="R"/>
+    <roomPref building="CSED" room="ISL" level="P"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lab" suffix="3">
+    <roomPref building="CSED" room="PL" level="R"/>
+    <roomPref building="CSED" room="GML" level="P"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lab" suffix="4">
+    <roomPref building="CSED" room="PL" level="R"/>
+    <roomPref building="CSED" room="Cogni-5" level="P"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lab" suffix="5">
+    <roomPref building="CSED" room="PL" level="R"/>
+    <roomPref building="CSED" room="Cogni-5" level="P"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lab" suffix="6">
+    <roomPref building="CSED" room="PL" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lab" suffix="7">
+    <roomPref building="CSED" room="PL" level="R"/>
+    <roomPref building="CSED" room="Cogni-34" level="P"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lab" suffix="8">
+    <roomPref building="CSED" room="PL" level="R"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lab" suffix="9">
+    <roomPref building="CSED" room="PL" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lab" suffix="10">
+    <roomPref building="CSED" room="PL" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="TOC" type="Lab" suffix="11">
+    <roomPref building="CSED" room="PL" level="R"/>
+    <roomPref building="CSED" room="GML" level="P"/>
+  </class>
+  <subpart subject="MT" course="PSEC3-DL" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="111" type="Lab" suffix="1"/>
-  <subpart subject="CS" course="195" config="1" type="Lec">
+  <class subject="MT" course="PSEC3-DL" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="CS" course="DMML" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="195" type="Lec" suffix="1"/>
-  <subpart subject="CS" course="195" config="1" type="Lab">
+  <class subject="CS" course="DMML" type="Lec" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="CS" course="DMML" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="195" type="Lab" suffix="1"/>
-  <class subject="CS" course="195" type="Lab" suffix="2"/>
-  <subpart subject="CS" course="196" config="1" type="Lec">
+  <class subject="CS" course="DMML" type="Lab" suffix="1">
+    <roomPref building="CSED" room="DML" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <class subject="CS" course="DMML" type="Lab" suffix="2">
+    <roomPref building="CSED" room="DML" level="R"/>
+    <roomPref building="NCSE" room="NC28" level="P"/>
+  </class>
+  <subpart subject="CS" course="SIC" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="196" type="Lec" suffix="1"/>
-  <subpart subject="CS" course="196" config="1" type="Lab">
+  <class subject="CS" course="SIC" type="Lec" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="CS" course="SIC" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="196" type="Lab" suffix="1"/>
-  <class subject="CS" course="196" type="Lab" suffix="2"/>
-  <subpart subject="CS" course="197" config="1" type="Lec">
+  <class subject="CS" course="SIC" type="Lab" suffix="1">
+    <roomPref building="CSED" room="DML" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <class subject="CS" course="SIC" type="Lab" suffix="2">
+    <roomPref building="CSED" room="DML" level="R"/>
+    <roomPref building="NCSE" room="NC28" level="P"/>
+  </class>
+  <subpart subject="CS" course="ES" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="197" type="Lec" suffix="1"/>
-  <subpart subject="CS" course="197" config="1" type="Lab">
+  <class subject="CS" course="ES" type="Lec" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="CS" course="ES" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="197" type="Lab" suffix="1"/>
-  <class subject="CS" course="197" type="Lab" suffix="2"/>
-  <subpart subject="MT" course="112" config="1" type="Lab">
+  <class subject="CS" course="ES" type="Lab" suffix="1">
+    <roomPref building="CSED" room="DML" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <class subject="CS" course="ES" type="Lab" suffix="2">
+    <roomPref building="CSED" room="DML" level="R"/>
+    <roomPref building="NCSE" room="NC28" level="P"/>
+  </class>
+  <subpart subject="MT" course="PSEC2-CCV" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="112" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="113" config="1" type="Lab">
+  <class subject="MT" course="PSEC2-CCV" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="MT" course="PSEC2-NLP" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="113" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="114" config="1" type="Lab">
+  <class subject="MT" course="PSEC2-NLP" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+    <roomPref building="NCSE" room="NC28" level="P"/>
+  </class>
+  <subpart subject="MT" course="PSEC3-MT" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="114" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="115" config="1" type="Lec">
+  <class subject="MT" course="PSEC3-MT" type="Lab" suffix="1">
+    <roomPref building="CSED" room="ASL" level="R"/>
+    <roomPref building="AC" room="AC-201NC-05" level="P"/>
+  </class>
+  <subpart subject="MT" course="MT-NS" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="115" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="115" config="1" type="Lab">
+  <class subject="MT" course="MT-NS" type="Lec" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="MT" course="MT-NS" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="115" type="Lab" suffix="1"/>
-  <class subject="MT" course="115" type="Lab" suffix="2"/>
-  <subpart subject="MT" course="116" config="1" type="Lec">
+  <class subject="MT" course="MT-NS" type="Lab" suffix="1">
+    <roomPref building="CSED" room="DML" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <class subject="MT" course="MT-NS" type="Lab" suffix="2">
+    <roomPref building="CSED" room="DML" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <subpart subject="MT" course="MT-WNS" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="116" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="116" config="1" type="Lab">
+  <class subject="MT" course="MT-WNS" type="Lec" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="MT" course="MT-WNS" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="116" type="Lab" suffix="1"/>
-  <class subject="MT" course="116" type="Lab" suffix="2"/>
-  <subpart subject="MT" course="117" config="1" type="Lec">
+  <class subject="MT" course="MT-WNS" type="Lab" suffix="1">
+    <roomPref building="CSED" room="Cogni-3" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <class subject="MT" course="MT-WNS" type="Lab" suffix="2">
+    <roomPref building="CSED" room="Cogni-3" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <subpart subject="MT" course="MT-DFDR" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="117" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="117" config="1" type="Lab">
+  <class subject="MT" course="MT-DFDR" type="Lec" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="MT" course="MT-DFDR" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="117" type="Lab" suffix="1"/>
-  <class subject="MT" course="117" type="Lab" suffix="2"/>
-  <subpart subject="MT" course="118" config="1" type="Lab">
+  <class subject="MT" course="MT-DFDR" type="Lab" suffix="1">
+    <roomPref building="CSED" room="DML" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <class subject="MT" course="MT-DFDR" type="Lab" suffix="2">
+    <roomPref building="CSED" room="DML" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <subpart subject="MT" course="PSEC2-CCS" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="118" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="119" config="1" type="Lab">
+  <class subject="MT" course="PSEC2-CCS" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="MT" course="PSEC3-WS" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="119" type="Lab" suffix="1"/>
-  <subpart subject="CS" course="200" config="1" type="Lec">
+  <class subject="MT" course="PSEC3-WS" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+    <roomPref building="CSED" room="ASL" level="P"/>
+  </class>
+  <subpart subject="CS" course="OOPD" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="200" type="Lec" suffix="1"/>
-  <class subject="CS" course="200" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="200" config="1" type="Lab">
+  <class subject="CS" course="OOPD" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-201NC-05" level="R"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lec" suffix="2">
+    <roomPref building="AC" room="AC-201NC-05" level="R"/>
+  </class>
+  <subpart subject="CS" course="OOPD" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="200" type="Lab" suffix="1"/>
-  <class subject="CS" course="200" type="Lab" suffix="2"/>
-  <class subject="CS" course="200" type="Lab" suffix="3"/>
-  <class subject="CS" course="200" type="Lab" suffix="4"/>
-  <class subject="CS" course="200" type="Lab" suffix="5"/>
-  <class subject="CS" course="200" type="Lab" suffix="6"/>
-  <class subject="CS" course="200" type="Lab" suffix="7"/>
-  <class subject="CS" course="200" type="Lab" suffix="8"/>
-  <class subject="CS" course="200" type="Lab" suffix="9"/>
-  <class subject="CS" course="200" type="Lab" suffix="10"/>
-  <class subject="CS" course="200" type="Lab" suffix="11"/>
-  <subpart subject="CS" course="201" config="1" type="Lec">
+  <class subject="CS" course="OOPD" type="Lab" suffix="1">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lab" suffix="2">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="ISL" level="P"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lab" suffix="3">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="GML" level="P"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lab" suffix="4">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="Cogni-5" level="P"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lab" suffix="5">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="Cogni-5" level="P"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lab" suffix="6">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lab" suffix="7">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="Cogni-34" level="P"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lab" suffix="8">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lab" suffix="9">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lab" suffix="10">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="DSL" level="P"/>
+  </class>
+  <class subject="CS" course="OOPD" type="Lab" suffix="11">
+    <roomPref building="CSED" room="DBMSL" level="R"/>
+    <roomPref building="CSED" room="GML" level="P"/>
+  </class>
+  <subpart subject="CS" course="OE-FOS" config="1" type="Lec">
     <timePref pattern="2 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="201" type="Lec" suffix="1"/>
-  <class subject="CS" course="201" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="202" config="1" type="Lab">
+  <class subject="CS" course="OE-FOS" type="Lec" suffix="1">
+    <roomPref building="NCSE" room="NC27" level="R"/>
+  </class>
+  <class subject="CS" course="OE-FOS" type="Lec" suffix="2">
+    <roomPref building="NCSE" room="NC27" level="R"/>
+    <roomPref building="NCSE" room="NC28" level="P"/>
+  </class>
+  <subpart subject="CS" course="DE2-ASP-Lab" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="202" type="Lab" suffix="1"/>
-  <class subject="CS" course="202" type="Lab" suffix="2"/>
-  <class subject="CS" course="202" type="Lab" suffix="3"/>
-  <subpart subject="CS" course="203" config="1" type="Lab">
+  <class subject="CS" course="DE2-ASP-Lab" type="Lab" suffix="1">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DE2-ASP-Lab" type="Lab" suffix="2">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="CSED" room="GML" level="P"/>
+  </class>
+  <class subject="CS" course="DE2-ASP-Lab" type="Lab" suffix="3">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="CSED" room="FOSS1" level="P"/>
+  </class>
+  <subpart subject="CS" course="DE2-BCT" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="203" type="Lab" suffix="1"/>
-  <class subject="CS" course="203" type="Lab" suffix="2"/>
-  <subpart subject="CS" course="204" config="1" type="Lab">
+  <class subject="CS" course="DE2-BCT" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-201NC-05" level="R"/>
+  </class>
+  <class subject="CS" course="DE2-BCT" type="Lab" suffix="2">
+    <roomPref building="AC" room="AC-201NC-05" level="R"/>
+    <roomPref building="AC" room="AC-202NC-06" level="P"/>
+  </class>
+  <subpart subject="CS" course="DE2-BCT-Lab" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="204" type="Lab" suffix="1"/>
-  <class subject="CS" course="204" type="Lab" suffix="2"/>
-  <class subject="CS" course="204" type="Lab" suffix="3"/>
-  <class subject="CS" course="204" type="Lab" suffix="4"/>
-  <subpart subject="CS" course="205" config="1" type="Lab">
+  <class subject="CS" course="DE2-BCT-Lab" type="Lab" suffix="1">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DE2-BCT-Lab" type="Lab" suffix="2">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DE2-BCT-Lab" type="Lab" suffix="3">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="CSED" room="ASL" level="P"/>
+  </class>
+  <class subject="CS" course="DE2-BCT-Lab" type="Lab" suffix="4">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="AC" room="NC-01" level="P"/>
+  </class>
+  <subpart subject="CS" course="DE2-DSci" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="205" type="Lab" suffix="1"/>
-  <class subject="CS" course="205" type="Lab" suffix="2"/>
-  <subpart subject="CS" course="206" config="1" type="Lab">
+  <class subject="CS" course="DE2-DSci" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-202NC-06" level="R"/>
+    <roomPref building="AC" room="AC-201NC-05" level="P"/>
+  </class>
+  <class subject="CS" course="DE2-DSci" type="Lab" suffix="2">
+    <roomPref building="AC" room="AC-202NC-06" level="R"/>
+  </class>
+  <subpart subject="CS" course="DE2-DSci-Lab" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="206" type="Lab" suffix="1"/>
-  <class subject="CS" course="206" type="Lab" suffix="2"/>
-  <class subject="CS" course="206" type="Lab" suffix="3"/>
-  <class subject="CS" course="206" type="Lab" suffix="4"/>
-  <subpart subject="CS" course="211" config="1" type="Lab">
+  <class subject="CS" course="DE2-DSci-Lab" type="Lab" suffix="1">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DE2-DSci-Lab" type="Lab" suffix="2">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="CSED" room="PL" level="P"/>
+  </class>
+  <class subject="CS" course="DE2-DSci-Lab" type="Lab" suffix="3">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <class subject="CS" course="DE2-DSci-Lab" type="Lab" suffix="4">
+    <roomPref building="CSED" room="FOSS2" level="R"/>
+    <roomPref building="CSED" room="GML" level="P"/>
+  </class>
+  <subpart subject="CS" course="DE2-ASP" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="211" type="Lab" suffix="1"/>
-  <class subject="CS" course="211" type="Lab" suffix="2"/>
-  <subpart subject="CS" course="212" config="1" type="Lec">
+  <class subject="CS" course="DE2-ASP" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-202NC-06" level="R"/>
+  </class>
+  <class subject="CS" course="DE2-ASP" type="Lab" suffix="2">
+    <roomPref building="AC" room="AC-202NC-06" level="R"/>
+  </class>
+  <subpart subject="CS" course="MDM-FDMS" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="212" type="Lec" suffix="1"/>
-  <class subject="CS" course="212" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="212" config="1" type="Lab">
+  <class subject="CS" course="MDM-FDMS" type="Lec" suffix="1">
+    <roomPref building="NCSE" room="NC27" level="R"/>
+  </class>
+  <class subject="CS" course="MDM-FDMS" type="Lec" suffix="2">
+    <roomPref building="NCSE" room="NC27" level="R"/>
+    <roomPref building="NCSE" room="NC28" level="P"/>
+  </class>
+  <subpart subject="CS" course="MDM-FDMS" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="212" type="Lab" suffix="1"/>
-  <class subject="CS" course="212" type="Lab" suffix="2"/>
-  <class subject="CS" course="212" type="Lab" suffix="3"/>
-  <class subject="CS" course="212" type="Lab" suffix="4"/>
-  <class subject="CS" course="212" type="Lab" suffix="5"/>
-  <class subject="CS" course="212" type="Lab" suffix="6"/>
-  <subpart subject="CS" course="213" config="1" type="Lab">
+  <class subject="CS" course="MDM-FDMS" type="Lab" suffix="1">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+  </class>
+  <class subject="CS" course="MDM-FDMS" type="Lab" suffix="2">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+    <roomPref building="CSED" room="Cogni-3" level="P"/>
+  </class>
+  <class subject="CS" course="MDM-FDMS" type="Lab" suffix="3">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+  </class>
+  <class subject="CS" course="MDM-FDMS" type="Lab" suffix="4">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+  </class>
+  <class subject="CS" course="MDM-FDMS" type="Lab" suffix="5">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+    <roomPref building="CSED" room="Cogni-3" level="P"/>
+  </class>
+  <class subject="CS" course="MDM-FDMS" type="Lab" suffix="6">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+    <roomPref building="CSED" room="Cogni-3" level="P"/>
+  </class>
+  <subpart subject="CS" course="DE4-IBCS" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="213" type="Lab" suffix="1"/>
-  <class subject="CS" course="213" type="Lab" suffix="2"/>
-  <subpart subject="CS" course="214" config="1" type="Lab">
+  <class subject="CS" course="DE4-IBCS" type="Lab" suffix="1">
+    <roomPref building="NCSE" room="NC28" level="R"/>
+  </class>
+  <class subject="CS" course="DE4-IBCS" type="Lab" suffix="2">
+    <roomPref building="NCSE" room="NC28" level="R"/>
+  </class>
+  <subpart subject="CS" course="DE4-IBC-Lab" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="214" type="Lab" suffix="1"/>
-  <class subject="CS" course="214" type="Lab" suffix="2"/>
-  <class subject="CS" course="214" type="Lab" suffix="3"/>
-  <subpart subject="CS" course="215" config="1" type="Lab">
+  <class subject="CS" course="DE4-IBC-Lab" type="Lab" suffix="1">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+  </class>
+  <class subject="CS" course="DE4-IBC-Lab" type="Lab" suffix="2">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+  </class>
+  <class subject="CS" course="DE4-IBC-Lab" type="Lab" suffix="3">
+    <roomPref building="CSED" room="Cogni-2" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <subpart subject="CS" course="DE4-GIS" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="215" type="Lab" suffix="1"/>
-  <class subject="CS" course="215" type="Lab" suffix="2"/>
-  <subpart subject="CS" course="216" config="1" type="Lab">
+  <class subject="CS" course="DE4-GIS" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="AC" room="AC-202NC-06" level="P"/>
+  </class>
+  <class subject="CS" course="DE4-GIS" type="Lab" suffix="2">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="CSED" room="Cogni-5" level="P"/>
+  </class>
+  <subpart subject="CS" course="DE4-GIS-Lab" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="216" type="Lab" suffix="1"/>
-  <class subject="CS" course="216" type="Lab" suffix="2"/>
-  <class subject="CS" course="216" type="Lab" suffix="3"/>
-  <class subject="CS" course="216" type="Lab" suffix="4"/>
-  <subpart subject="CS" course="217" config="1" type="Lab">
+  <class subject="CS" course="DE4-GIS-Lab" type="Lab" suffix="1">
+    <roomPref building="CSED" room="Cogni-3" level="R"/>
+  </class>
+  <class subject="CS" course="DE4-GIS-Lab" type="Lab" suffix="2">
+    <roomPref building="CSED" room="Cogni-3" level="R"/>
+  </class>
+  <class subject="CS" course="DE4-GIS-Lab" type="Lab" suffix="3">
+    <roomPref building="CSED" room="Cogni-3" level="R"/>
+    <roomPref building="CSED" room="Cogni-4" level="P"/>
+  </class>
+  <class subject="CS" course="DE4-GIS-Lab" type="Lab" suffix="4">
+    <roomPref building="CSED" room="Cogni-3" level="R"/>
+  </class>
+  <subpart subject="CS" course="DE4-GPU" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="217" type="Lab" suffix="1"/>
-  <class subject="CS" course="217" type="Lab" suffix="2"/>
-  <subpart subject="CS" course="218" config="1" type="Lab">
+  <class subject="CS" course="DE4-GPU" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+  </class>
+  <class subject="CS" course="DE4-GPU" type="Lab" suffix="2">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="CSED" room="Cogni-2" level="P"/>
+  </class>
+  <subpart subject="CS" course="Honor4-IOT" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="218" type="Lab" suffix="1"/>
-  <class subject="CS" course="218" type="Lab" suffix="2"/>
-  <subpart subject="CS" course="219" config="1" type="Lab">
+  <class subject="CS" course="Honor4-IOT" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-202NC-06" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <class subject="CS" course="Honor4-IOT" type="Lab" suffix="2">
+    <roomPref building="AC" room="AC-202NC-06" level="R"/>
+  </class>
+  <subpart subject="CS" course="Honor4-RL" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="219" type="Lab" suffix="1"/>
-  <class subject="CS" course="219" type="Lab" suffix="2"/>
-  <subpart subject="CS" course="220" config="1" type="Lec">
+  <class subject="CS" course="Honor4-RL" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+  </class>
+  <class subject="CS" course="Honor4-RL" type="Lab" suffix="2">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+  </class>
+  <subpart subject="CS" course="OE-DS" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="220" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="124" config="1" type="Lab">
+  <class subject="CS" course="OE-DS" type="Lec" suffix="1">
+    <roomPref building="NCSE" room="NC28" level="R"/>
+  </class>
+  <subpart subject="MT" course="PSEC2-BT" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="124" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="125" config="1" type="Lab">
+  <class subject="MT" course="PSEC2-BT" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="MT" course="PSEC3-ITS" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="125" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="126" config="1" type="Lec">
+  <class subject="MT" course="PSEC3-ITS" type="Lab" suffix="1">
+    <roomPref building="CSED" room="PL" level="R"/>
+  </class>
+  <subpart subject="MT" course="MT-DL" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="126" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="127" config="1" type="Lec">
+  <class subject="MT" course="MT-DL" type="Lec" suffix="1">
+    <roomPref building="NCSE" room="NC27" level="R"/>
+  </class>
+  <subpart subject="MT" course="MTDL-Lab" config="1" type="Lec">
     <timePref pattern="2 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="127" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="128" config="1" type="Lec">
+  <class subject="MT" course="MTDL-Lab" type="Lec" suffix="1">
+    <roomPref building="CSED" room="Cogni-1" level="R"/>
+    <roomPref building="NCSE" room="NC27" level="P"/>
+  </class>
+  <subpart subject="MT" course="MT-GAN" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="128" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="128" config="1" type="Lab">
+  <class subject="MT" course="MT-GAN" type="Lec" suffix="1">
+    <roomPref building="NCSE" room="NC27" level="R"/>
+  </class>
+  <subpart subject="MT" course="MT-GAN" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <subpart subject="MT" course="129" config="1" type="Lec">
+  <subpart subject="MT" course="MT-OT" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="129" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="129" config="1" type="Lab">
+  <class subject="MT" course="MT-OT" type="Lec" suffix="1">
+    <roomPref building="NCSE" room="NC27" level="R"/>
+  </class>
+  <subpart subject="MT" course="MT-OT" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <subpart subject="MT" course="130" config="1" type="Lab">
+  <subpart subject="MT" course="PSEC2-EAI" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="130" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="131" config="1" type="Lab">
+  <class subject="MT" course="PSEC2-EAI" type="Lab" suffix="1">
+    <roomPref building="NCSE" room="NC27" level="R"/>
+  </class>
+  <subpart subject="MT" course="PSEC2-MLPS" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="131" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="132" config="1" type="Lab">
+  <class subject="MT" course="PSEC2-MLPS" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+  </class>
+  <subpart subject="MT" course="PSEC3-GNN" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="132" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="133" config="1" type="Lab">
+  <class subject="MT" course="PSEC3-GNN" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+  </class>
+  <subpart subject="MT" course="MT-NLP" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="133" type="Lab" suffix="1"/>
-  <class subject="MT" course="133" type="Lab" suffix="2"/>
-  <subpart subject="MT" course="134" config="1" type="Lec">
+  <class subject="MT" course="MT-NLP" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <class subject="MT" course="MT-NLP" type="Lab" suffix="2">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="MT" course="MT-BDAAS" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="134" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="134" config="1" type="Lab">
+  <class subject="MT" course="MT-BDAAS" type="Lec" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+    <roomPref building="NCSE" room="NC27" level="P"/>
+  </class>
+  <subpart subject="MT" course="MT-BDAAS" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="134" type="Lab" suffix="1"/>
-  <class subject="MT" course="134" type="Lab" suffix="2"/>
-  <class subject="MT" course="134" type="Lab" suffix="3"/>
-  <class subject="MT" course="134" type="Lab" suffix="4"/>
-  <subpart subject="MT" course="135" config="1" type="Lec">
+  <class subject="MT" course="MT-BDAAS" type="Lab" suffix="1">
+    <roomPref building="CSED" room="Cogni-1" level="R"/>
+  </class>
+  <class subject="MT" course="MT-BDAAS" type="Lab" suffix="2">
+    <roomPref building="CSED" room="Cogni-1" level="R"/>
+  </class>
+  <class subject="MT" course="MT-BDAAS" type="Lab" suffix="3">
+    <roomPref building="CSED" room="Cogni-1" level="R"/>
+  </class>
+  <class subject="MT" course="MT-BDAAS" type="Lab" suffix="4">
+    <roomPref building="CSED" room="Cogni-1" level="R"/>
+  </class>
+  <subpart subject="MT" course="MT-AMLD" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="135" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="135" config="1" type="Lab">
+  <class subject="MT" course="MT-AMLD" type="Lec" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+    <roomPref building="NCSE" room="NC27" level="P"/>
+  </class>
+  <subpart subject="MT" course="MT-AMLD" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="135" type="Lab" suffix="1"/>
-  <class subject="MT" course="135" type="Lab" suffix="2"/>
-  <class subject="MT" course="135" type="Lab" suffix="3"/>
-  <class subject="MT" course="135" type="Lab" suffix="4"/>
-  <subpart subject="MT" course="136" config="1" type="Lec">
+  <class subject="MT" course="MT-AMLD" type="Lab" suffix="1">
+    <roomPref building="CSED" room="ISL" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <class subject="MT" course="MT-AMLD" type="Lab" suffix="2">
+    <roomPref building="CSED" room="ISL" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <class subject="MT" course="MT-AMLD" type="Lab" suffix="3">
+    <roomPref building="CSED" room="ISL" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <class subject="MT" course="MT-AMLD" type="Lab" suffix="4">
+    <roomPref building="CSED" room="ISL" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <subpart subject="MT" course="MT-MLOS" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="136" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="136" config="1" type="Lab">
+  <class subject="MT" course="MT-MLOS" type="Lec" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+    <roomPref building="NCSE" room="NC27" level="P"/>
+  </class>
+  <subpart subject="MT" course="MT-MLOS" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="136" type="Lab" suffix="1"/>
-  <class subject="MT" course="136" type="Lab" suffix="2"/>
-  <class subject="MT" course="136" type="Lab" suffix="3"/>
-  <class subject="MT" course="136" type="Lab" suffix="4"/>
-  <subpart subject="MT" course="137" config="1" type="Lab">
+  <class subject="MT" course="MT-MLOS" type="Lab" suffix="1">
+    <roomPref building="CSED" room="Cogni-4" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <class subject="MT" course="MT-MLOS" type="Lab" suffix="2">
+    <roomPref building="CSED" room="Cogni-4" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <class subject="MT" course="MT-MLOS" type="Lab" suffix="3">
+    <roomPref building="CSED" room="Cogni-4" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <class subject="MT" course="MT-MLOS" type="Lab" suffix="4">
+    <roomPref building="CSED" room="Cogni-4" level="R"/>
+    <roomPref building="CSED" room="Cogni-1" level="P"/>
+  </class>
+  <subpart subject="MT" course="PSEC2-CV" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="137" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="138" config="1" type="Lab">
+  <class subject="MT" course="PSEC2-CV" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-202NC-06" level="R"/>
+  </class>
+  <subpart subject="MT" course="PSEC2-MTRP" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="138" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="139" config="1" type="Lab">
+  <class subject="MT" course="PSEC2-MTRP" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="SH" level="R"/>
+  </class>
+  <subpart subject="MT" course="PSEC3-GAN" config="1" type="Lab">
     <timePref pattern="1 x 180" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="139" type="Lab" suffix="1"/>
-  <subpart subject="MT" course="140" config="1" type="Lec">
+  <class subject="MT" course="PSEC3-GAN" type="Lab" suffix="1">
+    <roomPref building="AC" room="AC-202NC-06" level="R"/>
+  </class>
+  <subpart subject="MT" course="MT-ETCSA" config="1" type="Lec">
     <timePref pattern="1 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="MT" course="140" type="Lec" suffix="1"/>
-  <subpart subject="MT" course="140" config="1" type="Lab">
+  <class subject="MT" course="MT-ETCSA" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-203NC-07" level="R"/>
+    <roomPref building="ENTCX" room="SH" level="P"/>
+  </class>
+  <subpart subject="MT" course="MT-ETCSA" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <subpart subject="CS" course="221" config="1" type="Lec">
+  <subpart subject="CS" course="FY-Reserved" config="1" type="Lec">
     <timePref pattern="5 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="221" type="Lec" suffix="1"/>
-  <class subject="CS" course="221" type="Lec" suffix="2"/>
-  <class subject="CS" course="221" type="Lec" suffix="3"/>
-  <subpart subject="CS" course="223" config="1" type="Lec">
+  <class subject="CS" course="FY-Reserved" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-201NC-05" level="R"/>
+  </class>
+  <class subject="CS" course="FY-Reserved" type="Lec" suffix="2">
+    <roomPref building="AC" room="AC-201NC-05" level="R"/>
+    <roomPref building="AC" room="AC-202NC-06" level="P"/>
+  </class>
+  <class subject="CS" course="FY-Reserved" type="Lec" suffix="3">
+    <roomPref building="AC" room="AC-201NC-05" level="R"/>
+    <roomPref building="AC" room="AC-203NC-07" level="P"/>
+  </class>
+  <subpart subject="CS" course="DS-FY" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="223" type="Lec" suffix="1"/>
-  <class subject="CS" course="223" type="Lec" suffix="2"/>
-  <class subject="CS" course="223" type="Lec" suffix="3"/>
-  <class subject="CS" course="223" type="Lec" suffix="4"/>
-  <class subject="CS" course="223" type="Lec" suffix="5"/>
-  <subpart subject="CS" course="223" config="1" type="Lab">
+  <class subject="CS" course="DS-FY" type="Lec" suffix="1">
+    <roomPref building="AC" room="NC-01" level="R"/>
+    <roomPref building="AC" room="NC-02" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lec" suffix="2">
+    <roomPref building="AC" room="NC-01" level="R"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lec" suffix="3">
+    <roomPref building="AC" room="NC-01" level="R"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lec" suffix="4">
+    <roomPref building="AC" room="NC-01" level="R"/>
+    <roomPref building="AC" room="NC-02" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lec" suffix="5">
+    <roomPref building="AC" room="NC-01" level="R"/>
+    <roomPref building="AC" room="NC-03" level="P"/>
+  </class>
+  <subpart subject="CS" course="DS-FY" config="1" type="Lab">
     <timePref pattern="1 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="223" type="Lab" suffix="1"/>
-  <class subject="CS" course="223" type="Lab" suffix="2"/>
-  <class subject="CS" course="223" type="Lab" suffix="3"/>
-  <class subject="CS" course="223" type="Lab" suffix="4"/>
-  <class subject="CS" course="223" type="Lab" suffix="5"/>
-  <class subject="CS" course="223" type="Lab" suffix="6"/>
-  <class subject="CS" course="223" type="Lab" suffix="7"/>
-  <class subject="CS" course="223" type="Lab" suffix="8"/>
-  <class subject="CS" course="223" type="Lab" suffix="9"/>
-  <class subject="CS" course="223" type="Lab" suffix="10"/>
-  <class subject="CS" course="223" type="Lab" suffix="11"/>
-  <class subject="CS" course="223" type="Lab" suffix="12"/>
-  <class subject="CS" course="223" type="Lab" suffix="13"/>
-  <class subject="CS" course="223" type="Lab" suffix="14"/>
-  <class subject="CS" course="223" type="Lab" suffix="15"/>
-  <class subject="CS" course="223" type="Lab" suffix="16"/>
-  <class subject="CS" course="223" type="Lab" suffix="17"/>
-  <class subject="CS" course="223" type="Lab" suffix="18"/>
-  <class subject="CS" course="223" type="Lab" suffix="19"/>
-  <class subject="CS" course="223" type="Lab" suffix="20"/>
-  <subpart subject="CS" course="224" config="1" type="Lec">
+  <class subject="CS" course="DS-FY" type="Lab" suffix="1">
+    <roomPref building="AC" room="NC-13" level="R"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="2">
+    <roomPref building="AC" room="NC-13" level="R"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="3">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-14" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="4">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-14" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="5">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="AC-202NC-06" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="6">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="AC-203NC-07" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="7">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-14" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="8">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-03" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="9">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="AC-203NC-07" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="10">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-04" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="11">
+    <roomPref building="AC" room="NC-13" level="R"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="12">
+    <roomPref building="AC" room="NC-13" level="R"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="13">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-14" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="14">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-14" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="15">
+    <roomPref building="AC" room="NC-13" level="R"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="16">
+    <roomPref building="AC" room="NC-13" level="R"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="17">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-02" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="18">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-01" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="19">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-12" level="P"/>
+  </class>
+  <class subject="CS" course="DS-FY" type="Lab" suffix="20">
+    <roomPref building="AC" room="NC-13" level="R"/>
+    <roomPref building="AC" room="NC-14" level="P"/>
+  </class>
+  <subpart subject="CS" course="AIMA" config="1" type="Lec">
     <timePref pattern="3 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="224" type="Lec" suffix="1"/>
-  <class subject="CS" course="224" type="Lec" suffix="2"/>
-  <class subject="CS" course="224" type="Lec" suffix="3"/>
-  <subpart subject="CS" course="225" config="1" type="Lec">
+  <class subject="CS" course="AIMA" type="Lec" suffix="1">
+    <roomPref building="AC" room="NC-02" level="R"/>
+  </class>
+  <class subject="CS" course="AIMA" type="Lec" suffix="2">
+    <roomPref building="AC" room="NC-02" level="R"/>
+    <roomPref building="AC" room="NC-03" level="P"/>
+  </class>
+  <class subject="CS" course="AIMA" type="Lec" suffix="3">
+    <roomPref building="AC" room="NC-02" level="R"/>
+    <roomPref building="AC" room="NC-04" level="P"/>
+  </class>
+  <subpart subject="CS" course="PP-FY" config="1" type="Lec">
     <timePref pattern="1 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="225" type="Lec" suffix="1"/>
-  <class subject="CS" course="225" type="Lec" suffix="2"/>
-  <class subject="CS" course="225" type="Lec" suffix="3"/>
-  <class subject="CS" course="225" type="Lec" suffix="4"/>
-  <subpart subject="CS" course="225" config="1" type="Lab">
+  <class subject="CS" course="PP-FY" type="Lec" suffix="1">
+    <roomPref building="AC" room="NC-10" level="R"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lec" suffix="2">
+    <roomPref building="AC" room="NC-10" level="R"/>
+    <roomPref building="AC" room="NC-08" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lec" suffix="3">
+    <roomPref building="AC" room="NC-10" level="R"/>
+    <roomPref building="AC" room="AC-203NC-07" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lec" suffix="4">
+    <roomPref building="AC" room="NC-10" level="R"/>
+    <roomPref building="AC" room="NC-09" level="P"/>
+  </class>
+  <subpart subject="CS" course="PP-FY" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="225" type="Lab" suffix="1"/>
-  <class subject="CS" course="225" type="Lab" suffix="2"/>
-  <class subject="CS" course="225" type="Lab" suffix="3"/>
-  <class subject="CS" course="225" type="Lab" suffix="4"/>
-  <class subject="CS" course="225" type="Lab" suffix="5"/>
-  <class subject="CS" course="225" type="Lab" suffix="6"/>
-  <class subject="CS" course="225" type="Lab" suffix="7"/>
-  <class subject="CS" course="225" type="Lab" suffix="8"/>
-  <class subject="CS" course="225" type="Lab" suffix="9"/>
-  <class subject="CS" course="225" type="Lab" suffix="10"/>
-  <class subject="CS" course="225" type="Lab" suffix="11"/>
-  <class subject="CS" course="225" type="Lab" suffix="12"/>
-  <class subject="CS" course="225" type="Lab" suffix="13"/>
-  <class subject="CS" course="225" type="Lab" suffix="14"/>
-  <class subject="CS" course="225" type="Lab" suffix="15"/>
-  <class subject="CS" course="225" type="Lab" suffix="16"/>
-  <class subject="CS" course="225" type="Lab" suffix="17"/>
-  <class subject="CS" course="225" type="Lab" suffix="18"/>
-  <class subject="CS" course="225" type="Lab" suffix="19"/>
-  <class subject="CS" course="225" type="Lab" suffix="20"/>
-  <class subject="CS" course="225" type="Lab" suffix="21"/>
-  <class subject="CS" course="225" type="Lab" suffix="22"/>
-  <class subject="CS" course="225" type="Lab" suffix="23"/>
-  <class subject="CS" course="225" type="Lab" suffix="24"/>
-  <subpart subject="CS" course="226" config="1" type="Lec">
+  <class subject="CS" course="PP-FY" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="2">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="3">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="4">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="5">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="6">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-B" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="7">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-B" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="8">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-B" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="9">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-B" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="10">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-B" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="11">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-C" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="12">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-C" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="13">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-C" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="14">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-B" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="15">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-C" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="16">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-D" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="17">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-D" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="18">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-D" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="19">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="20">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-B" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="21">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-C" level="P"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="22">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="23">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PP-FY" type="Lab" suffix="24">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <subpart subject="CS" course="WD-FY" config="1" type="Lec">
     <timePref pattern="1 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="226" type="Lec" suffix="1"/>
-  <class subject="CS" course="226" type="Lec" suffix="2"/>
-  <subpart subject="CS" course="226" config="1" type="Lab">
+  <class subject="CS" course="WD-FY" type="Lec" suffix="1">
+    <roomPref building="AC" room="NC-03" level="R"/>
+  </class>
+  <class subject="CS" course="WD-FY" type="Lec" suffix="2">
+    <roomPref building="AC" room="NC-03" level="R"/>
+    <roomPref building="AC" room="NC-04" level="P"/>
+  </class>
+  <subpart subject="CS" course="WD-FY" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="226" type="Lab" suffix="1"/>
-  <class subject="CS" course="226" type="Lab" suffix="2"/>
-  <class subject="CS" course="226" type="Lab" suffix="3"/>
-  <class subject="CS" course="226" type="Lab" suffix="4"/>
-  <class subject="CS" course="226" type="Lab" suffix="5"/>
-  <class subject="CS" course="226" type="Lab" suffix="6"/>
-  <class subject="CS" course="226" type="Lab" suffix="7"/>
-  <subpart subject="CS" course="227" config="1" type="Lec">
+  <class subject="CS" course="WD-FY" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="CET-C" level="R"/>
+    <roomPref building="CSED" room="Cogni-2" level="P"/>
+  </class>
+  <class subject="CS" course="WD-FY" type="Lab" suffix="2">
+    <roomPref building="ENTCX" room="CET-C" level="R"/>
+  </class>
+  <class subject="CS" course="WD-FY" type="Lab" suffix="3">
+    <roomPref building="ENTCX" room="CET-C" level="R"/>
+    <roomPref building="CSED" room="Cogni-5" level="P"/>
+  </class>
+  <class subject="CS" course="WD-FY" type="Lab" suffix="4">
+    <roomPref building="ENTCX" room="CET-C" level="R"/>
+  </class>
+  <class subject="CS" course="WD-FY" type="Lab" suffix="5">
+    <roomPref building="ENTCX" room="CET-C" level="R"/>
+    <roomPref building="CSED" room="Cogni-5" level="P"/>
+  </class>
+  <class subject="CS" course="WD-FY" type="Lab" suffix="6">
+    <roomPref building="ENTCX" room="CET-C" level="R"/>
+    <roomPref building="CSED" room="DBMSL" level="P"/>
+  </class>
+  <class subject="CS" course="WD-FY" type="Lab" suffix="7">
+    <roomPref building="ENTCX" room="CET-C" level="R"/>
+  </class>
+  <subpart subject="CS" course="PPS-FY" config="1" type="Lec">
     <timePref pattern="1 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="227" type="Lec" suffix="1"/>
-  <subpart subject="CS" course="227" config="1" type="Lab">
+  <class subject="CS" course="PPS-FY" type="Lec" suffix="1">
+    <roomPref building="AC" room="NC-09" level="R"/>
+  </class>
+  <subpart subject="CS" course="PPS-FY" config="1" type="Lab">
     <timePref pattern="1 x 120" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="227" type="Lab" suffix="1"/>
-  <class subject="CS" course="227" type="Lab" suffix="2"/>
-  <class subject="CS" course="227" type="Lab" suffix="3"/>
-  <class subject="CS" course="227" type="Lab" suffix="4"/>
-  <class subject="CS" course="227" type="Lab" suffix="5"/>
-  <class subject="CS" course="227" type="Lab" suffix="6"/>
-  <class subject="CS" course="227" type="Lab" suffix="7"/>
-  <class subject="CS" course="227" type="Lab" suffix="8"/>
-  <subpart subject="CS" course="228" config="1" type="Lec">
+  <class subject="CS" course="PPS-FY" type="Lab" suffix="1">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PPS-FY" type="Lab" suffix="2">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PPS-FY" type="Lab" suffix="3">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <class subject="CS" course="PPS-FY" type="Lab" suffix="4">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-B" level="P"/>
+  </class>
+  <class subject="CS" course="PPS-FY" type="Lab" suffix="5">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-B" level="P"/>
+  </class>
+  <class subject="CS" course="PPS-FY" type="Lab" suffix="6">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-D" level="P"/>
+  </class>
+  <class subject="CS" course="PPS-FY" type="Lab" suffix="7">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+    <roomPref building="ENTCX" room="CET-C" level="P"/>
+  </class>
+  <class subject="CS" course="PPS-FY" type="Lab" suffix="8">
+    <roomPref building="ENTCX" room="CET-A" level="R"/>
+  </class>
+  <subpart subject="CS" course="Eco" config="1" type="Lec">
     <timePref pattern="2 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="228" type="Lec" suffix="1"/>
-  <class subject="CS" course="228" type="Lec" suffix="2"/>
+  <class subject="CS" course="Eco" type="Lec" suffix="1">
+    <roomPref building="AC" room="AC-201NC-05" level="R"/>
+  </class>
+  <class subject="CS" course="Eco" type="Lec" suffix="2">
+    <roomPref building="AC" room="AC-201NC-05" level="R"/>
+  </class>
 </preferences>
