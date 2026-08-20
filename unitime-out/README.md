@@ -40,7 +40,7 @@ defined by an earlier file:
    posMajor inside the BT area, so no minors are produced.
 6. `studentGroup.xml`           - one group per Taasika class (43) and per
    batch (165), code = Taasika short name.
-7. `buildingRoomImport.xml`     - 49 rooms grouped into 7 inferred buildings:
+7. `buildingRoomImport.xml`     - 45 rooms grouped into 7 inferred buildings:
    `AC` (Academic Complex), `CSED` (CSE Dept), `ENTCX` (ENTC Extension),
    `NCSE` (New CSE Building), `BHAU` (Bhau Institute), `ONL` (Online), and
    `UNAV` (Unavailable lab pool).
@@ -67,7 +67,7 @@ defined by an earlier file:
     and `cancelled="false"`.  Times are intentionally left blank for UniTime
     to solve.  Rooms in `subjectRoom` / `classRoom` / `batchRoom` are kept
     as preferences (not pre-assignments).
-13. `studentInfo.xml`           - 3,990 mock students, named with
+13. `studentInfo.xml`           - 2,130 mock students, named with
     Indian-style first / last names, mapped to area + classification + major
     + studentGroup of their class and (round-robin) batch.
 14. `studentRequest.xml`        - one course request per offered subject for
@@ -76,6 +76,22 @@ defined by an earlier file:
 15. `studentenrollments.xml`    - direct Lec + Lab section enrolment for
     each mock student, matched to the section suffix produced in
     `courseOffering.xml`.
+
+## Local UniTime 4.9 room-loader note
+
+In UniTime 4.9, `buildingRoomImport.xml` loads the external room catalogue;
+it does not create the internal instructional-room records read by the course
+solver.  For the local MySQL pilot, generate and run the supplied loader after
+importing `buildingRoomImport.xml` and before importing `roomSharing.xml`:
+
+```powershell
+python scripts\gen_instructional_room_sql.py
+mysql -u timetable -p timetable < unitime-out\load_instructional_rooms.sql
+```
+
+After the loader completes, re-import `roomSharing.xml` and
+`courseOffering.xml` so room availability and class room preferences are
+linked to the newly created instructional rooms.
 
 ## Decisions taken automatically
 
@@ -130,6 +146,7 @@ python scripts\gen_staff.py
 python scripts\gen_course_catalog.py
 python scripts\gen_course_offering.py
 python scripts\gen_students.py
+python scripts\gen_preferences.py
 ```
 
 To target a different snapshot (for example `241 - 'draft-19jan26-onwards'`),
@@ -141,11 +158,12 @@ via the loader's `load(snapshot_id=...)` call).
 - **Pre-assigned times.**  We are asking UniTime to solve the timetable, so
   every class section is left without a `<time>` element.  The existing 661
   `timeTable` rows in Taasika are not imported as preferences.
-- **Distribution preferences** (`SAME_ROOM`, `SAME_TIME`, ...).  Taasika's
-  `batchCanOverlap` table implies parallel lab sections, which is already
-  represented by having one Lab section per batch.  If you need stronger
-  constraints, generate them via UniTime's
-  [Preferences XML](https://www.unitime.org/interface/preferences.xml).
+- **Fixed-section distribution constraints.** `preferences.xml` includes
+  required `SAME_STUDENTS` constraints for lecture sections with an identical
+  simulated cohort and required `DIFFERENT_TIME` constraints for every other
+  pair of fixed enrolled sections that share at least one student. These make
+  the timetable respect the simulated roster even when UniTime could otherwise
+  re-section students into alternative classes.
 - **Exam definitions for individual courses.**  `examinationPeriods` are
   declared in `sessionSetup.xml` but no per-course `<exam>` elements are
   emitted.  Taasika does not model final/midterm exams.

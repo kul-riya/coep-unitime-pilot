@@ -1,0 +1,196 @@
+{
+  "summary": {
+    "classes_in_offerings": 437,
+    "classes_in_solution": 224,
+    "hard_feasibility_score": 77.65,
+    "hard_checks": 3455,
+    "hard_failures": 1102,
+    "preference_score": 53.64,
+    "unav_onl_assignments": 8,
+    "unav_onl_pct": 3.57,
+    "instructor_conflicts": 3,
+    "room_conflicts": 0,
+    "student_conflict_pairs": 1132,
+    "students_with_conflict": 695,
+    "students_total": 2130,
+    "travel_violations": 0,
+    "back_to_back_pct": 8.55
+  },
+  "hard": {
+    "coverage": {
+      "name": "coverage",
+      "checked": 437,
+      "passed": 110,
+      "failed": 327,
+      "rate_pct": 25.17,
+      "examples": [
+        "missing assignment for CS 102 Lec 3",
+        "missing assignment for CS 102 Lec 4",
+        "missing assignment for CS 102 Lec 5",
+        "missing assignment for CS 107 Lec 3",
+        "missing assignment for CS 107 Lec 4",
+        "missing assignment for CS 107 Lec 5",
+        "missing assignment for CS 109 Lec 3",
+        "missing assignment for CS 109 Lec 4"
+      ]
+    },
+    "time_pattern_fidelity": {
+      "name": "time_pattern_fidelity",
+      "checked": 110,
+      "passed": 78,
+      "failed": 32,
+      "rate_pct": 70.91,
+      "examples": [
+        "MT 111 Lab 1: need 2 x 120, got 1x180min (F 8:30a-11:30a)",
+        "MT 112 Lab 1: need 2 x 120, got 1x180min (T 9:30a-12:30p)",
+        "MT 113 Lab 1: need 2 x 120, got 1x180min (W 8:30a-11:30a)",
+        "MT 114 Lab 1: need 2 x 120, got 1x180min (M 8:30a-11:30a)",
+        "MT 118 Lab 1: need 2 x 120, got 1x180min (M 1:30p-4:30p)",
+        "MT 119 Lab 1: need 2 x 120, got 1x180min (M 1:30p-4:30p)",
+        "CS 203 Lab 1: need 2 x 120, got 1x180min (F 1:30p-4:30p)",
+        "CS 203 Lab 2: need 2 x 120, got 1x180min (W 1:30p-4:30p)"
+      ]
+    },
+    "date_pattern": {
+      "name": "date_pattern",
+      "checked": 110,
+      "passed": 110,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "room_capacity": {
+      "name": "room_capacity",
+      "checked": 110,
+      "passed": 73,
+      "failed": 37,
+      "rate_pct": 66.36,
+      "examples": [
+        "CS 102 Lec 1: limit 100 > capacity 80 (ENTCX SH)",
+        "CS 102 Lec 2: limit 100 > capacity 80 (ENTCX SH)",
+        "CS 107 Lec 1: limit 100 > capacity 80 (ENTCX SH)",
+        "CS 109 Lec 1: limit 100 > capacity 80 (ENTCX SH)",
+        "CS 109 Lec 2: limit 100 > capacity 80 (ENTCX SH)",
+        "CS 110 Lec 2: limit 100 > capacity 80 (ENTCX SH)",
+        "CS 128 Lec 1: limit 100 > capacity 80 (ENTCX SH)",
+        "CS 128 Lec 2: limit 100 > capacity 80 (ENTCX SH)"
+      ]
+    },
+    "lunch_weekend": {
+      "name": "lunch_weekend",
+      "checked": 110,
+      "passed": 102,
+      "failed": 8,
+      "rate_pct": 92.73,
+      "examples": [
+        "CS 107 Lec 2: weekend meeting on S",
+        "CS 109 Lec 1: weekend meeting on S",
+        "CS 179 Lec 1: weekend meeting on S",
+        "CS 220 Lec 1: weekend meeting on S",
+        "CS 223 Lec 1: weekend meeting on S",
+        "CS 223 Lec 3: weekend meeting on S",
+        "CS 223 Lec 4: weekend meeting on S",
+        "CS 225 Lec 2: weekend meeting on Su"
+      ]
+    },
+    "instructor_double_booking": {
+      "name": "instructor_double_booking",
+      "checked": 224,
+      "passed": 221,
+      "failed": 3,
+      "rate_pct": 98.66,
+      "examples": [
+        "instructor taasika-teacher-18928: CS 225 Lab 18 overlaps CS 179 Lec 1",
+        "instructor taasika-teacher-18928: CS 216 Lab 4 overlaps CS 226 Lab 3",
+        "instructor taasika-teacher-18928: CS 225 Lab 16 overlaps MT 129 Lec 1"
+      ]
+    },
+    "room_double_booking": {
+      "name": "room_double_booking",
+      "checked": 224,
+      "passed": 224,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "student_conflicts": {
+      "name": "student_conflicts",
+      "checked": 2130,
+      "passed": 1435,
+      "failed": 695,
+      "rate_pct": 67.37,
+      "examples": [
+        "610103001 on Th: CS 226 Lab 1 overlaps CS 223 Lab 1",
+        "610103002 on M: CS 224 Lec 2 overlaps CS 223 Lec 2",
+        "610103002 on W: CS 224 Lec 2 overlaps CS 223 Lec 2",
+        "610103005 on M: CS 223 Lec 5 overlaps CS 225 Lab 17",
+        "610103006 on Th: CS 226 Lab 2 overlaps CS 221 Lec 1",
+        "610103007 on M: CS 224 Lec 2 overlaps CS 223 Lec 2",
+        "610103007 on W: CS 224 Lec 2 overlaps CS 223 Lec 2",
+        "610103007 on T: CS 225 Lab 6 overlaps CS 221 Lec 2"
+      ]
+    }
+  },
+  "preference": {
+    "room_preference": {
+      "name": "room_preference",
+      "checked": 110,
+      "passed": 8,
+      "failed": 102,
+      "rate_pct": 7.27,
+      "examples": [
+        "CS 102 Lec 1: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 102 Lec 2: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 107 Lec 1: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 107 Lec 2: AC NC-03 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 109 Lec 1: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "CS 109 Lec 2: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "CS 110 Lec 1: AC NC-04 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "CS 110 Lec 2: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']"
+      ]
+    },
+    "instructor_identity": {
+      "name": "instructor_identity",
+      "checked": 110,
+      "passed": 110,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "unav_onl": {
+      "count": 8,
+      "pct": 3.57,
+      "total_assignments": 224
+    }
+  },
+  "efficiency": {
+    "instructor_load": {
+      "instructors": 46,
+      "mean_minutes": 633.9,
+      "stdev_minutes": 316.4,
+      "max_minutes": 1320,
+      "min_minutes": 60
+    },
+    "travel_violations": 0,
+    "travel_examples": [],
+    "back_to_back_pct": 8.55,
+    "consecutive_pairs": 117,
+    "adjacent_pairs": 10,
+    "slot_spread": {
+      "early_pct": 13.88,
+      "mid_pct": 54.57,
+      "late_pct": 31.55,
+      "early": 44,
+      "mid": 173,
+      "late": 100,
+      "total_meetings": 317
+    }
+  },
+  "meta": {
+    "csv": "C:\\Users\\ved20\\Downloads\\course-solution (2).csv",
+    "data_dir": "C:\\Users\\ved20\\OneDrive\\Desktop\\B.Tech project\\coep-unitime-pilot\\unitime-out",
+    "rooms_indexed": 62,
+    "staff": 113,
+    "enrolled_students": 2130
+  }
+}

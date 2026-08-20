@@ -1,36 +1,36 @@
 {
   "summary": {
-    "classes_in_offerings": 254,
+    "classes_in_offerings": 140,
     "classes_in_solution": 254,
-    "hard_feasibility_score": 97.13,
-    "hard_checks": 5768,
-    "hard_failures": 328,
-    "preference_score": 54.33,
+    "hard_feasibility_score": 86.01,
+    "hard_checks": 3338,
+    "hard_failures": 1807,
+    "preference_score": 54.64,
     "unav_onl_assignments": 45,
     "unav_onl_pct": 17.72,
-    "instructor_conflicts": 0,
+    "instructor_conflicts": 3,
     "room_conflicts": 0,
-    "student_conflict_pairs": 641,
-    "students_with_conflict": 288,
-    "students_total": 3990,
-    "travel_violations": 0,
-    "back_to_back_pct": 13.16
+    "student_conflict_pairs": 4331,
+    "students_with_conflict": 1765,
+    "students_total": 2130,
+    "travel_violations": 1,
+    "back_to_back_pct": 13.33
   },
   "hard": {
     "coverage": {
       "name": "coverage",
-      "checked": 254,
-      "passed": 254,
+      "checked": 140,
+      "passed": 140,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
     "time_pattern_fidelity": {
       "name": "time_pattern_fidelity",
-      "checked": 254,
-      "passed": 217,
+      "checked": 140,
+      "passed": 103,
       "failed": 37,
-      "rate_pct": 85.43,
+      "rate_pct": 73.57,
       "examples": [
         "CS 102 Lec 1: need 2 x 60, got 5x60min (MTWThF 3:30p-4:30p)",
         "CS 102 Lec 2: need 2 x 60, got 3x60min (MWF 8:30a-9:30a)",
@@ -44,39 +44,42 @@
     },
     "date_pattern": {
       "name": "date_pattern",
-      "checked": 254,
-      "passed": 254,
+      "checked": 140,
+      "passed": 140,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
     "room_capacity": {
       "name": "room_capacity",
-      "checked": 254,
-      "passed": 254,
+      "checked": 140,
+      "passed": 140,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
     "lunch_weekend": {
       "name": "lunch_weekend",
-      "checked": 254,
-      "passed": 251,
-      "failed": 3,
-      "rate_pct": 98.82,
+      "checked": 140,
+      "passed": 138,
+      "failed": 2,
+      "rate_pct": 98.57,
       "examples": [
         "MT 128 Lec 1: weekend meeting on S",
-        "MT 136 Lec 1: weekend meeting on S",
-        "CS 223 Lab 19: weekend meeting on S"
+        "MT 136 Lec 1: weekend meeting on S"
       ]
     },
     "instructor_double_booking": {
       "name": "instructor_double_booking",
       "checked": 254,
-      "passed": 254,
-      "failed": 0,
-      "rate_pct": 100.0,
-      "examples": []
+      "passed": 251,
+      "failed": 3,
+      "rate_pct": 98.82,
+      "examples": [
+        "instructor taasika-teacher-18928: CS 171 Lab 10 overlaps CS 225 Lab 17",
+        "instructor taasika-teacher-18928: CS 171 Lab 11 overlaps CS 225 Lab 16",
+        "instructor taasika-teacher-18928: CS 179 Lec 1 overlaps CS 226 Lab 3"
+      ]
     },
     "room_double_booking": {
       "name": "room_double_booking",
@@ -88,29 +91,29 @@
     },
     "student_conflicts": {
       "name": "student_conflicts",
-      "checked": 3990,
-      "passed": 3702,
-      "failed": 288,
-      "rate_pct": 92.78,
+      "checked": 2130,
+      "passed": 365,
+      "failed": 1765,
+      "rate_pct": 17.14,
       "examples": [
-        "MT-CE-S001 on M: CS 195 Lab 1 overlaps CS 197 Lab 1",
-        "MT-CE-S001 on Th: CS 197 Lec 1 overlaps MT 112 Lab 1",
-        "MT-CE-S002 on M: MT 113 Lab 1 overlaps CS 195 Lec 1",
-        "MT-CE-S002 on T: CS 195 Lab 2 overlaps CS 197 Lab 2",
-        "MT-CE-S002 on T: CS 197 Lab 2 overlaps CS 195 Lec 1",
-        "MT-CE-S002 on W: CS 196 Lab 2 overlaps CS 195 Lec 1",
-        "MT-CE-S003 on M: CS 195 Lec 1 overlaps MT 111 Lab 1",
-        "MT-CE-S004 on W: MT 114 Lab 1 overlaps CS 195 Lec 1"
+        "610103001 on M: CS 223 Lec 1 overlaps CS 225 Lab 1",
+        "610103002 on M: CS 226 Lab 6 overlaps CS 224 Lec 2",
+        "610103002 on W: CS 224 Lec 2 overlaps CS 225 Lab 6",
+        "610103002 on Th: CS 227 Lab 2 overlaps CS 224 Lec 2",
+        "610103002 on F: CS 224 Lec 2 overlaps CS 227 Lec 1",
+        "610103003 on M: CS 226 Lab 3 overlaps CS 225 Lec 3",
+        "610103003 on F: CS 226 Lec 1 overlaps CS 221 Lec 3",
+        "610103004 on W: CS 225 Lab 18 overlaps CS 227 Lab 4"
       ]
     }
   },
   "preference": {
     "room_preference": {
       "name": "room_preference",
-      "checked": 254,
-      "passed": 22,
-      "failed": 232,
-      "rate_pct": 8.66,
+      "checked": 140,
+      "passed": 13,
+      "failed": 127,
+      "rate_pct": 9.29,
       "examples": [
         "CS 102 Lec 1: NCSE NC27 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
         "CS 102 Lec 2: BHAU Bhau1 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
@@ -118,14 +121,14 @@
         "CS 107 Lec 2: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
         "CS 110 Lec 1: AC NC-14 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
         "CS 110 Lec 2: AC AC-201NC-05 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
-        "CS 110 Lab 1: UNAV Unavail-C not in preferred ['CSED FOSS1', 'CSED PL']",
-        "CS 110 Lab 2: CSED Cogni-2 not in preferred ['CSED FOSS1', 'CSED PL']"
+        "CS 128 Lec 1: AC NC-12 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 128 Lec 2: AC NC-11 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']"
       ]
     },
     "instructor_identity": {
       "name": "instructor_identity",
-      "checked": 254,
-      "passed": 254,
+      "checked": 140,
+      "passed": 140,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
@@ -140,14 +143,16 @@
     "instructor_load": {
       "instructors": 46,
       "mean_minutes": 708.3,
-      "stdev_minutes": 294.4,
-      "max_minutes": 1200,
+      "stdev_minutes": 308.9,
+      "max_minutes": 1260,
       "min_minutes": 60
     },
-    "travel_violations": 0,
-    "travel_examples": [],
-    "back_to_back_pct": 13.16,
-    "consecutive_pairs": 152,
+    "travel_violations": 1,
+    "travel_examples": [
+      "taasika-teacher-18928 on W: CS 225 Lab 18@UNAV \u2192 CS 179 Lec 1@AC gap=0min need\u22655"
+    ],
+    "back_to_back_pct": 13.33,
+    "consecutive_pairs": 150,
     "adjacent_pairs": 20,
     "slot_spread": {
       "early_pct": 17.15,
@@ -160,10 +165,10 @@
     }
   },
   "meta": {
-    "csv": "D:\\Riya\\College\\btech\\solutions\\COEPSpr2026_v2.csv",
-    "data_dir": "D:\\Riya\\College\\btech\\unitime-out",
+    "csv": "C:\\Users\\ved20\\OneDrive\\Desktop\\B.Tech project\\coep-unitime-pilot\\solutions\\COEPSpr2026_v2.csv",
+    "data_dir": "C:\\Users\\ved20\\OneDrive\\Desktop\\B.Tech project\\coep-unitime-pilot\\unitime-out",
     "rooms_indexed": 45,
     "staff": 113,
-    "enrolled_students": 3990
+    "enrolled_students": 2130
   }
 }

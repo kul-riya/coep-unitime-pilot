@@ -62,6 +62,20 @@ BUILDINGS: Dict[str, Dict[str, object]] = {
     },
 }
 
+EXCLUDED_ROOM_SHORT_NAMES = {"Cogni-34"}
+
+SUPPLEMENTAL_CSE_LABS: List[dict] = [
+    {
+        "roomId": f"new-cse-lab-f{floor}-{lab:02d}",
+        "roomName": f"New CSE Building, Floor {floor}, CSE Lab {lab:02d}",
+        "roomShortName": f"CSE-F{floor}-L{lab:02d}",
+            "roomCount": 25,
+        "snapshotId": 240,
+    }
+    for floor in range(1, 4)
+    for lab in range(1, 7)
+]
+
 
 def _building_for(room_name: str, room_short: str) -> str:
     name = (room_name or "").lower()
@@ -113,6 +127,8 @@ def _wrap(root_attrs: str, body: str) -> str:
 def _gen_buildings(rooms: List[dict]) -> None:
     by_building: Dict[str, List[dict]] = defaultdict(list)
     for r in rooms:
+        if (r.get("roomShortName") or "").strip() in EXCLUDED_ROOM_SHORT_NAMES:
+            continue
         b = _building_for(r["roomName"], r["roomShortName"])
         by_building[b].append(r)
 
@@ -132,6 +148,9 @@ def _gen_buildings(rooms: List[dict]) -> None:
             cls = _room_classification(r["roomName"], r["roomShortName"])
             schedt = _scheduled_room_type(r["roomName"], r["roomShortName"])
             instr = "True" if cls != "virtual" else "False"
+            room_capacity = int(r["roomCount"] or 0)
+            if cls == "lab" and room_capacity == 20:
+                room_capacity = 25
             room_nbr = _room_number(r["roomShortName"], r["roomName"], code)
             if room_nbr in seen_room_numbers:
                 continue
@@ -142,8 +161,11 @@ def _gen_buildings(rooms: List[dict]) -> None:
                 f'roomNumber="{xml_escape(room_nbr)}" '
                 f'displayName="{xml_escape(r["roomShortName"])}" '
                 f'roomClassification="{cls}" '
-                f'capacity="{r["roomCount"] or 0}" '
-                f'instructional="{instr}" '
+                f'capacity="{room_capacity}" '
+                # UniTime's Buildings & Rooms XML schema uses this historical
+                # misspelling.  Using "instructional" is silently ignored,
+                # leaving imported rooms non-instructional and unusable.
+                f'instuctional="{instr}" '
                 f'scheduledRoomType="{schedt}">'
             )
             lines.append('      <roomDepartments>')
@@ -186,6 +208,8 @@ def _gen_room_sharing(rooms: List[dict], fixed_entries: List[dict]) -> None:
     lines.append(f'  <!-- LUNCH window derived from {lunch_count} fixedEntry rows -->')
     seen_sharing: set[str] = set()
     for r in rooms:
+        if (r.get("roomShortName") or "").strip() in EXCLUDED_ROOM_SHORT_NAMES:
+            continue
         room_nbr = _room_number(r["roomShortName"], r["roomName"], "")
         building = _building_for(r["roomName"], r["roomShortName"])
         key = f"{building}-{room_nbr}"
@@ -211,6 +235,8 @@ def _gen_room_sharing(rooms: List[dict], fixed_entries: List[dict]) -> None:
 def _gen_travel_times(rooms: List[dict]) -> None:
     by_building: Dict[str, List[dict]] = defaultdict(list)
     for r in rooms:
+        if (r.get("roomShortName") or "").strip() in EXCLUDED_ROOM_SHORT_NAMES:
+            continue
         by_building[_building_for(r["roomName"], r["roomShortName"])].append(r)
 
     lines: List[str] = [
@@ -227,7 +253,11 @@ def _gen_travel_times(rooms: List[dict]) -> None:
                     continue
                 for r_dst in by_building[dst][:1]:
                     dst_nbr = _room_number(r_dst["roomShortName"], r_dst["roomName"], dst)
-                    minutes = 5 if {src, dst} != {"CSED", "NCSE"} else 3
+                    # Campus walking time supplied by the user: at most four
+                    # minutes between any two different buildings.  UniTime
+                    # treats the same room (and unlisted same-building room
+                    # transitions) as zero travel time.
+                    minutes = 4
                     lines.append(
                         f'    <to building="{dst}" roomNbr="{xml_escape(dst_nbr)}">{minutes}</to>'
                     )
@@ -240,7 +270,7 @@ def _gen_travel_times(rooms: List[dict]) -> None:
 
 def main() -> None:
     data = load(snapshot_id=240, tables=["room", "fixedEntry"])
-    rooms = sorted(data.filtered("room"), key=lambda r: r["roomId"])
+    rooms = sorted(data.filtered("room"), key=lambda r: r["roomId"]) + SUPPLEMENTAL_CSE_LABS
     fes = data.filtered("fixedEntry")
 
     _gen_buildings(rooms)

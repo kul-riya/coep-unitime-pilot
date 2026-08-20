@@ -105,13 +105,6 @@
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8966" building="CSED" roomNbr="Cogni-34">
-    <department code="0101" control="true"/>
-    <sharing>
-      <unavailable days="MTWThF" start="1230" end="1330"/>
-      <unavailable days="SSu" start="0830" end="1830"/>
-    </sharing>
-  </location>
   <location id="taasika-room-8967" building="CSED" roomNbr="Cogni-4">
     <department code="0101" control="true"/>
     <sharing>
@@ -316,6 +309,132 @@
     </sharing>
   </location>
   <location id="taasika-room-8996" building="UNAV" roomNbr="Unavail-D">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f1-01" building="NCSE" roomNbr="CSE-F1-L01">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f1-02" building="NCSE" roomNbr="CSE-F1-L02">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f1-03" building="NCSE" roomNbr="CSE-F1-L03">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f1-04" building="NCSE" roomNbr="CSE-F1-L04">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f1-05" building="NCSE" roomNbr="CSE-F1-L05">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f1-06" building="NCSE" roomNbr="CSE-F1-L06">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f2-01" building="NCSE" roomNbr="CSE-F2-L01">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f2-02" building="NCSE" roomNbr="CSE-F2-L02">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f2-03" building="NCSE" roomNbr="CSE-F2-L03">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f2-04" building="NCSE" roomNbr="CSE-F2-L04">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f2-05" building="NCSE" roomNbr="CSE-F2-L05">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f2-06" building="NCSE" roomNbr="CSE-F2-L06">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f3-01" building="NCSE" roomNbr="CSE-F3-L01">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f3-02" building="NCSE" roomNbr="CSE-F3-L02">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f3-03" building="NCSE" roomNbr="CSE-F3-L03">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f3-04" building="NCSE" roomNbr="CSE-F3-L04">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f3-05" building="NCSE" roomNbr="CSE-F3-L05">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="MTWThF" start="1230" end="1330"/>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-new-cse-lab-f3-06" building="NCSE" roomNbr="CSE-F3-L06">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="MTWThF" start="1230" end="1330"/>

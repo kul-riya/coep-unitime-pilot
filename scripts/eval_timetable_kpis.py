@@ -831,6 +831,12 @@ def print_report(report: dict[str, Any]) -> None:
 
 
 def main(argv: list[str] | None = None) -> int:
+    # PowerShell sessions on Windows commonly default to cp1252, which cannot
+    # render the Unicode arrow used in travel examples. Keep report generation
+    # independent of the active terminal code page.
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--csv", type=Path, default=DEFAULT_CSV, help="UniTime solution CSV")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT, help="JSON report path")

@@ -164,7 +164,14 @@ MT_PROGRAMS: list[tuple[str, int, list[str], list[str]]] = [
 ]
 
 
-def load_indexes() -> tuple[dict, dict[str, tuple[int, dict]], dict[int, list[int]], dict[int, list[int]]]:
+def load_indexes() -> tuple[
+    dict,
+    dict[str, tuple[int, dict]],
+    dict[int, list[int]],
+    dict[int, list[int]],
+    dict[str, dict[str, list[int]]],
+    dict[str, int],
+]:
     subject_idx = json.loads((SCRIPTS_DIR / "subject_index.json").read_text(encoding="utf-8"))
     offering = json.loads((SCRIPTS_DIR / "offering_index.json").read_text(encoding="utf-8"))
     by_short: dict[str, tuple[int, dict]] = {}
@@ -183,7 +190,13 @@ def load_indexes() -> tuple[dict, dict[str, tuple[int, dict]], dict[int, list[in
     for d in (lec_suf, lab_suf):
         for sid in d:
             d[sid] = sorted(set(d[sid]))
-    return subject_idx, by_short, lec_suf, lab_suf
+
+    # parent_child: offering_sid -> {lec_suffix: [lab_suffixes]}
+    parent_child: dict[str, dict[str, list[int]]] = offering.get("parent_child", {})
+    # lec_to_lab: primary_sid -> lab_sid
+    lec_to_lab: dict[str, int] = offering.get("lec_to_lab", {})
+
+    return subject_idx, by_short, lec_suf, lab_suf, parent_child, lec_to_lab
 
 
 def expand_mdm_lab(shorts: list[str] | None, by_short: dict) -> list[str]:
@@ -203,8 +216,14 @@ def class_tags_for_short(
     lec_suf: dict[int, list[int]],
     lab_suf: dict[int, list[int]],
     rr: int,
+    parent_child: dict[str, dict[str, list[int]]] | None = None,
+    lec_to_lab_map: dict[str, int] | None = None,
 ) -> list[tuple[str, str, str, int]]:
-    """Return list of (subjectArea, courseNbr, type, suffix) for one shortName."""
+    """Return list of (subjectArea, courseNbr, type, suffix) for one shortName.
+
+    When parent_child is provided, Lab section assignment is constrained to
+    only the Lab suffixes that are children of the chosen Lec suffix.
+    """
     if short not in by_short:
         return []
     sid, info = by_short[short]
@@ -213,15 +232,22 @@ def class_tags_for_short(
     tags: list[tuple[str, str, str, int]] = []
 
     lecs = lec_suf.get(sid) or []
+    chosen_lec_suf: int | None = None
     # Some lab companion rows inherit lec list via primary in probe; only emit Lec
     # when this subject actually has Lec offsets (or is the primary non-lab).
     if lecs and not info.get("isLab"):
-        suf = lecs[rr % len(lecs)]
-        tags.append((area, nbr, "Lec", suf))
+        chosen_lec_suf = lecs[rr % len(lecs)]
+        tags.append((area, nbr, "Lec", chosen_lec_suf))
 
     labs = lab_suf.get(sid) or []
     if labs:
-        suf = labs[rr % len(labs)]
+        # If parent-child mapping exists for this offering, constrain Lab to
+        # children of the chosen Lec section
+        allowed_labs = _constrained_labs(
+            sid, chosen_lec_suf, labs, parent_child, lec_to_lab_map
+        )
+        n_divs = max(len(lecs), 1)
+        suf = allowed_labs[(rr // n_divs) % len(allowed_labs)]
         tags.append((area, nbr, "Lab", suf))
     elif info.get("isLab"):
         # lab short with sections stored under its own sid only — already handled
@@ -237,11 +263,36 @@ def class_tags_for_short(
                     # Only auto-add if caller didn't list lab short separately
                     # and course numbers match (merged offering)
                     if oinfo["courseNumber"] == nbr and not any(t[2] == "Lab" for t in tags):
-                        suf = olabs[rr % len(olabs)]
+                        allowed_labs = _constrained_labs(
+                            sid, chosen_lec_suf, olabs, parent_child, lec_to_lab_map
+                        )
+                        n_divs = max(len(lecs), 1)
+                        suf = allowed_labs[(rr // n_divs) % len(allowed_labs)]
                         tags.append((area, nbr, "Lab", suf))
                 break
 
     return tags
+
+
+def _constrained_labs(
+    primary_sid: int,
+    chosen_lec_suf: int | None,
+    all_labs: list[int],
+    parent_child: dict[str, dict[str, list[int]]] | None,
+    lec_to_lab_map: dict[str, int] | None,
+) -> list[int]:
+    """Filter Lab suffixes to only those that are children of the chosen Lec."""
+    if parent_child is None or chosen_lec_suf is None:
+        return all_labs
+    # The parent_child key is the offering sid (the primary/lec subject id)
+    offering_key = str(primary_sid)
+    pc = parent_child.get(offering_key)
+    if pc is None:
+        return all_labs
+    children = pc.get(str(chosen_lec_suf))
+    if children:
+        return children
+    return all_labs
 
 
 def enroll_shorts(
@@ -250,31 +301,71 @@ def enroll_shorts(
     lec_suf: dict,
     lab_suf: dict,
     rr: int,
+    parent_child: dict[str, dict[str, list[int]]] | None = None,
+    lec_to_lab_map: dict[str, int] | None = None,
 ) -> list[tuple[str, str, str, int]]:
     seen: set[tuple[str, str, str, int]] = set()
     out: list[tuple[str, str, str, int]] = []
     shorts_list = list(shorts)
     # When both primary and lab short are listed, prefer explicit; avoid double lab
     explicit_labs = {s for s in shorts_list if s in by_short and by_short[s][1].get("isLab")}
+
+    # --- Two-pass approach for parent-child awareness ---
+    # Pass 1: resolve all Lec assignments and record chosen Lec suffix per (area, nbr)
+    chosen_lec_for_course: dict[tuple[str, str], int] = {}  # (area, nbr) -> lec suffix
+
+    for short in shorts_list:
+        if short not in by_short:
+            continue
+        sid, info = by_short[short]
+        if info.get("isLab"):
+            continue  # skip labs in pass 1
+        tags = class_tags_for_short(
+            short, by_short, lec_suf, lab_suf, rr,
+            parent_child, lec_to_lab_map,
+        )
+        if explicit_labs:
+            tags = [t for t in tags if t[2] != "Lab"]
+        for t in tags:
+            if t not in seen:
+                seen.add(t)
+                out.append(t)
+            if t[2] == "Lec":
+                chosen_lec_for_course[(t[0], t[1])] = t[3]
+
+    # Pass 2: resolve Lab shorts, constrained by the Lec already chosen
     for short in shorts_list:
         if short not in by_short:
             continue
         sid, info = by_short[short]
         if not info.get("isLab"):
-            # lec (+ auto lab only if lab short not also listed)
-            tags = class_tags_for_short(short, by_short, lec_suf, lab_suf, rr)
-            if explicit_labs:
-                tags = [t for t in tags if t[2] != "Lab"]
-            for t in tags:
-                if t not in seen:
-                    seen.add(t)
-                    out.append(t)
+            continue  # skip non-labs in pass 2
+
+        area = info["subjectArea"]
+        nbr = info["courseNumber"]
+        lec_suffix_for_this = chosen_lec_for_course.get((area, nbr))
+
+        # Find the primary (Lec) subject id for parent_child lookup
+        primary_sid = info.get("primarySubjectId", sid)
+        primary_lecs = lec_suf.get(primary_sid) or []
+        n_divs = max(len(primary_lecs), 1)
+
+        labs = lab_suf.get(sid) or []
+        if labs and lec_suffix_for_this is not None and parent_child:
+            allowed = _constrained_labs(
+                primary_sid, lec_suffix_for_this, labs, parent_child, lec_to_lab_map
+            )
+            lab_suffix = allowed[(rr // n_divs) % len(allowed)]
+        elif labs:
+            lab_suffix = labs[(rr // n_divs) % len(labs)]
         else:
-            tags = class_tags_for_short(short, by_short, lec_suf, lab_suf, rr)
-            for t in tags:
-                if t not in seen:
-                    seen.add(t)
-                    out.append(t)
+            continue
+
+        tag = (area, nbr, "Lab", lab_suffix)
+        if tag not in seen:
+            seen.add(tag)
+            out.append(tag)
+
     return out
 
 
@@ -297,7 +388,7 @@ def picks_for_student(year_key: str, seq: int) -> list[str]:
 
 
 def main() -> None:
-    subject_idx, by_short, lec_suf, lab_suf = load_indexes()
+    subject_idx, by_short, lec_suf, lab_suf, parent_child, lec_to_lab_idx = load_indexes()
 
     # Fix MDM lab expansion with real by_short
     def resolve_btech(year_key: str, seq: int) -> list[str]:
@@ -371,7 +462,8 @@ def main() -> None:
         info_lines.append("    </studentGroups>")
         info_lines.append("  </student>")
 
-        tags = enroll_shorts(shorts, by_short, lec_suf, lab_suf, rr)
+        tags = enroll_shorts(shorts, by_short, lec_suf, lab_suf, rr,
+                             parent_child, lec_to_lab_idx)
         for s in shorts:
             if s not in by_short:
                 missing_shorts.add(s)

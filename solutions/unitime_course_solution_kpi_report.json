@@ -1,0 +1,176 @@
+{
+  "summary": {
+    "classes_in_offerings": 140,
+    "classes_in_solution": 224,
+    "hard_feasibility_score": 95.67,
+    "hard_checks": 3158,
+    "hard_failures": 119,
+    "preference_score": 55.45,
+    "unav_onl_assignments": 11,
+    "unav_onl_pct": 4.91,
+    "instructor_conflicts": 1,
+    "room_conflicts": 0,
+    "student_conflict_pairs": 128,
+    "students_with_conflict": 78,
+    "students_total": 2130,
+    "travel_violations": 0,
+    "back_to_back_pct": 13.82
+  },
+  "hard": {
+    "coverage": {
+      "name": "coverage",
+      "checked": 140,
+      "passed": 110,
+      "failed": 30,
+      "rate_pct": 78.57,
+      "examples": [
+        "missing assignment for CS 142 Lab 1",
+        "missing assignment for CS 142 Lab 2",
+        "missing assignment for CS 142 Lab 3",
+        "missing assignment for CS 142 Lab 4",
+        "missing assignment for CS 142 Lab 5",
+        "missing assignment for CS 142 Lab 6",
+        "missing assignment for CS 142 Lab 7",
+        "missing assignment for CS 142 Lab 8"
+      ]
+    },
+    "time_pattern_fidelity": {
+      "name": "time_pattern_fidelity",
+      "checked": 110,
+      "passed": 110,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "date_pattern": {
+      "name": "date_pattern",
+      "checked": 110,
+      "passed": 110,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "room_capacity": {
+      "name": "room_capacity",
+      "checked": 110,
+      "passed": 110,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "lunch_weekend": {
+      "name": "lunch_weekend",
+      "checked": 110,
+      "passed": 100,
+      "failed": 10,
+      "rate_pct": 90.91,
+      "examples": [
+        "CS 107 Lec 1: weekend meeting on S",
+        "CS 109 Lec 2: weekend meeting on S",
+        "CS 128 Lec 2: weekend meeting on S",
+        "CS 179 Lec 1: weekend meeting on S",
+        "CS 212 Lec 1: weekend meeting on S",
+        "MT 140 Lec 1: weekend meeting on Su",
+        "CS 223 Lec 1: weekend meeting on S",
+        "CS 223 Lec 3: weekend meeting on S"
+      ]
+    },
+    "instructor_double_booking": {
+      "name": "instructor_double_booking",
+      "checked": 224,
+      "passed": 223,
+      "failed": 1,
+      "rate_pct": 99.55,
+      "examples": [
+        "instructor taasika-teacher-18928: CS 216 Lab 4 overlaps CS 226 Lab 3"
+      ]
+    },
+    "room_double_booking": {
+      "name": "room_double_booking",
+      "checked": 224,
+      "passed": 224,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "student_conflicts": {
+      "name": "student_conflicts",
+      "checked": 2130,
+      "passed": 2052,
+      "failed": 78,
+      "rate_pct": 96.34,
+      "examples": [
+        "610203006 on M: CS 190 Lec 2 overlaps CS 201 Lec 2",
+        "610203006 on T: CS 190 Lec 2 overlaps CS 201 Lec 2",
+        "610203016 on M: CS 190 Lec 2 overlaps CS 201 Lec 2",
+        "610203016 on T: CS 190 Lec 2 overlaps CS 201 Lec 2",
+        "610203026 on M: CS 190 Lec 2 overlaps CS 201 Lec 2",
+        "610203026 on T: CS 190 Lec 2 overlaps CS 201 Lec 2",
+        "610203036 on M: CS 190 Lec 2 overlaps CS 201 Lec 2",
+        "610203036 on T: CS 190 Lec 2 overlaps CS 201 Lec 2"
+      ]
+    }
+  },
+  "preference": {
+    "room_preference": {
+      "name": "room_preference",
+      "checked": 110,
+      "passed": 12,
+      "failed": 98,
+      "rate_pct": 10.91,
+      "examples": [
+        "CS 102 Lec 1: AC NC-13 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 107 Lec 1: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 107 Lec 2: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 109 Lec 1: AC NC-12 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "CS 109 Lec 2: AC NC-12 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "CS 110 Lec 1: AC NC-04 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "CS 128 Lec 1: AC NC-14 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CS 171 Lec 2: AC NC-14 not in preferred ['AC AC-202NC-06']"
+      ]
+    },
+    "instructor_identity": {
+      "name": "instructor_identity",
+      "checked": 110,
+      "passed": 110,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "unav_onl": {
+      "count": 11,
+      "pct": 4.91,
+      "total_assignments": 224
+    }
+  },
+  "efficiency": {
+    "instructor_load": {
+      "instructors": 46,
+      "mean_minutes": 633.9,
+      "stdev_minutes": 316.4,
+      "max_minutes": 1320,
+      "min_minutes": 60
+    },
+    "travel_violations": 0,
+    "travel_examples": [],
+    "back_to_back_pct": 13.82,
+    "consecutive_pairs": 123,
+    "adjacent_pairs": 17,
+    "slot_spread": {
+      "early_pct": 17.67,
+      "mid_pct": 51.74,
+      "late_pct": 30.6,
+      "early": 56,
+      "mid": 164,
+      "late": 97,
+      "total_meetings": 317
+    }
+  },
+  "meta": {
+    "csv": "C:\\Users\\ved20\\Downloads\\course-solution (1).csv",
+    "data_dir": "C:\\Users\\ved20\\OneDrive\\Desktop\\B.Tech project\\coep-unitime-pilot\\unitime-out",
+    "rooms_indexed": 45,
+    "staff": 113,
+    "enrolled_students": 2130
+  }
+}

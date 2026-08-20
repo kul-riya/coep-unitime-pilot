@@ -1,0 +1,358 @@
+xml_classes=254
+csv_assignments=224
+missing_xml_classes=30
+extra_csv_classes=0
+students=2130
+explicit_enrollment_records=15780
+capacity_over_limit_sections=121
+capacity_excess_total=8433
+student_overlap_pairs=78
+students_with_overlaps=78
+instructor_overlap_pairs=268
+room_overlap_pairs=0
+
+MISSING CLASSES:
+CS 142 Lab 1
+CS 142 Lab 10
+CS 142 Lab 11
+CS 142 Lab 2
+CS 142 Lab 3
+CS 142 Lab 4
+CS 142 Lab 5
+CS 142 Lab 6
+CS 142 Lab 7
+CS 142 Lab 8
+CS 142 Lab 9
+CS 225 Lab 10
+CS 225 Lab 14
+CS 225 Lab 15
+CS 225 Lab 19
+CS 225 Lab 20
+CS 225 Lab 21
+CS 225 Lab 22
+CS 225 Lab 23
+CS 225 Lab 4
+CS 225 Lab 5
+CS 225 Lab 9
+CS 227 Lab 1
+CS 227 Lab 2
+CS 227 Lab 3
+CS 227 Lab 4
+CS 227 Lab 5
+CS 227 Lab 6
+CS 227 Lab 7
+CS 227 Lab 8
+
+TOP CAPACITY EXCESSES:
+CS 179 Lec 1: enrolled=500, limit=80
+CS 227 Lec 1: enrolled=500, limit=200
+CS 219 Lab 2: enrolled=250, limit=30
+CS 218 Lab 1: enrolled=250, limit=30
+CS 228 Lec 2: enrolled=250, limit=80
+CS 228 Lec 1: enrolled=250, limit=80
+CS 200 Lec 2: enrolled=250, limit=80
+CS 200 Lec 1: enrolled=250, limit=80
+CS 190 Lec 2: enrolled=250, limit=80
+CS 190 Lec 1: enrolled=250, limit=80
+CS 171 Lec 2: enrolled=250, limit=80
+CS 171 Lec 1: enrolled=250, limit=80
+CS 110 Lec 2: enrolled=250, limit=80
+CS 110 Lec 1: enrolled=250, limit=80
+CS 109 Lec 2: enrolled=250, limit=80
+CS 109 Lec 1: enrolled=250, limit=80
+CS 107 Lec 2: enrolled=250, limit=80
+CS 107 Lec 1: enrolled=250, limit=80
+CS 102 Lec 2: enrolled=250, limit=80
+CS 102 Lec 1: enrolled=250, limit=80
+
+STUDENT CONFLICT EXAMPLES:
+610203006: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203016: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203026: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203036: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203046: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203056: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203066: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203076: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203086: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203096: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203106: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203116: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203126: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203136: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203146: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203156: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203166: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203176: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203186: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+610203196: CS 190 Lec 2 vs CS 201 Lec 2 on M,T
+
+INSTRUCTOR CONFLICTS:
+A: CS 107 Lec 1 vs CS 109 Lec 2 on S,T,Th
+A: CS 107 Lec 1 vs CS 223 Lec 3 on S,T,Th
+A: CS 107 Lec 1 vs MT 137 Lab 1 on T
+A: CS 107 Lec 2 vs CS 171 Lab 8 on M
+A: CS 107 Lec 2 vs CS 205 Lab 1 on W
+A: CS 107 Lec 2 vs CS 206 Lab 2 on M
+A: CS 107 Lec 2 vs CS 206 Lab 4 on F
+A: CS 107 Lec 2 vs CS 223 Lab 10 on W
+A: CS 107 Lec 2 vs CS 223 Lab 13 on M
+A: CS 109 Lec 2 vs CS 223 Lec 3 on S,T,Th
+A: CS 109 Lec 2 vs MT 137 Lab 1 on T
+A: CS 171 Lec 2 vs CS 190 Lab 6 on F
+A: CS 171 Lab 6 vs CS 177 Lab 1 on Th
+A: CS 171 Lab 7 vs CS 190 Lec 2 on T
+A: CS 171 Lab 8 vs CS 190 Lab 11 on M
+A: CS 171 Lab 8 vs CS 206 Lab 2 on M
+A: CS 171 Lab 8 vs CS 223 Lab 13 on M
+A: CS 177 Lab 4 vs MT 135 Lec 1 on T
+A: CS 177 Lab 4 vs MT 137 Lab 1 on T
+A: CS 190 Lec 2 vs CS 206 Lab 1 on M
+A: CS 190 Lab 7 vs CS 206 Lab 1 on M
+A: CS 190 Lab 8 vs CS 200 Lab 10 on T
+A: CS 190 Lab 10 vs CS 200 Lab 10 on T
+A: CS 190 Lab 11 vs CS 206 Lab 2 on M
+A: CS 200 Lab 11 vs CS 217 Lab 1 on F
+A: CS 200 Lab 11 vs CS 223 Lab 11 on F
+A: CS 205 Lab 1 vs CS 223 Lab 10 on W
+A: CS 206 Lab 2 vs CS 223 Lab 13 on M
+A: CS 217 Lab 1 vs CS 223 Lab 11 on F
+A: CS 217 Lab 2 vs MT 135 Lec 1 on M
+A: CS 223 Lec 3 vs MT 137 Lab 1 on T
+V: CS 110 Lab 7 vs CS 212 Lab 2 on M
+V: CS 195 Lab 1 vs CS 212 Lec 1 on T
+S: CS 110 Lec 1 vs CS 215 Lab 1 on M
+S: CS 110 Lec 1 vs CS 216 Lab 1 on T
+S: CS 110 Lec 1 vs MT 125 Lab 1 on M
+S: CS 110 Lec 2 vs CS 215 Lab 2 on F
+S: CS 110 Lec 2 vs CS 218 Lab 1 on W
+S: CS 110 Lab 1 vs CS 201 Lec 1 on Th
+S: CS 110 Lab 3 vs CS 218 Lab 1 on W
+S: CS 110 Lab 4 vs CS 177 Lab 3 on T
+S: CS 110 Lab 4 vs CS 201 Lec 1 on T
+S: CS 110 Lab 6 vs CS 211 Lab 1 on Th
+S: CS 110 Lab 6 vs CS 216 Lab 2 on Th
+S: CS 110 Lab 8 vs CS 212 Lab 6 on W
+S: CS 110 Lab 8 vs MT 126 Lec 1 on W
+S: CS 110 Lab 9 vs CS 202 Lab 3 on M
+S: CS 110 Lab 10 vs CS 202 Lab 2 on W
+S: CS 177 Lab 3 vs CS 201 Lec 1 on T
+S: CS 202 Lab 1 vs MT 111 Lab 1 on M
+S: CS 202 Lab 1 vs MT 114 Lab 1 on M
+S: CS 211 Lab 1 vs CS 216 Lab 2 on Th
+S: CS 211 Lab 2 vs CS 218 Lab 2 on F
+S: CS 211 Lab 2 vs MT 126 Lec 1 on F
+S: CS 212 Lab 1 vs MT 111 Lab 1 on M
+S: CS 212 Lab 1 vs MT 114 Lab 1 on M
+S: CS 212 Lab 6 vs MT 126 Lec 1 on W
+S: CS 215 Lab 1 vs MT 125 Lab 1 on M
+S: CS 218 Lab 1 vs MT 127 Lec 1 on W
+S: MT 111 Lab 1 vs MT 114 Lab 1 on M
+(Adjunct): CS 110 Lab 5 vs CS 212 Lec 2 on W
+(Adjunct): CS 110 Lab 5 vs CS 223 Lec 2 on W
+(Adjunct): CS 110 Lab 5 vs CS 225 Lab 2 on W
+(Adjunct): CS 110 Lab 5 vs MT 128 Lec 1 on W
+(Adjunct): CS 110 Lab 5 vs MT 136 Lab 2 on W
+(Adjunct): CS 171 Lec 1 vs CS 171 Lab 11 on M
+(Adjunct): CS 171 Lec 1 vs CS 216 Lab 3 on W
+(Adjunct): CS 171 Lec 1 vs CS 224 Lec 3 on M,T,W
+(Adjunct): CS 171 Lec 1 vs MT 131 Lab 1 on M
+(Adjunct): CS 171 Lab 1 vs CS 223 Lab 3 on M
+(Adjunct): CS 171 Lab 1 vs CS 223 Lab 5 on M
+(Adjunct): CS 171 Lab 1 vs CS 225 Lab 24 on M
+(Adjunct): CS 171 Lab 1 vs MT 138 Lab 1 on M
+(Adjunct): CS 171 Lab 1 vs MT 139 Lab 1 on M
+(Adjunct): CS 171 Lab 2 vs CS 204 Lab 2 on F
+(Adjunct): CS 171 Lab 2 vs CS 219 Lab 1 on F
+(Adjunct): CS 171 Lab 2 vs MT 134 Lab 1 on F
+(Adjunct): CS 171 Lab 3 vs CS 179 Lec 1 on T
+(Adjunct): CS 171 Lab 3 vs CS 223 Lec 1 on T
+(Adjunct): CS 171 Lab 3 vs CS 223 Lec 4 on T
+(Adjunct): CS 171 Lab 3 vs CS 223 Lec 5 on T
+(Adjunct): CS 171 Lab 3 vs MT 136 Lab 4 on T
+(Adjunct): CS 171 Lab 4 vs CS 197 Lab 2 on F
+(Adjunct): CS 171 Lab 4 vs CS 204 Lab 4 on F
+(Adjunct): CS 171 Lab 4 vs CS 219 Lab 1 on F
+(Adjunct): CS 171 Lab 4 vs CS 225 Lab 7 on F
+(Adjunct): CS 171 Lab 4 vs CS 225 Lab 8 on F
+(Adjunct): CS 171 Lab 4 vs CS 226 Lab 1 on F
+(Adjunct): CS 171 Lab 5 vs CS 179 Lec 1 on Th
+(Adjunct): CS 171 Lab 5 vs CS 223 Lec 1 on Th
+(Adjunct): CS 171 Lab 5 vs CS 223 Lec 4 on Th
+(Adjunct): CS 171 Lab 5 vs CS 223 Lec 5 on Th
+(Adjunct): CS 171 Lab 10 vs CS 204 Lab 1 on W
+(Adjunct): CS 171 Lab 10 vs CS 223 Lab 9 on W
+(Adjunct): CS 171 Lab 10 vs CS 223 Lab 14 on W
+(Adjunct): CS 171 Lab 10 vs CS 223 Lab 20 on W
+(Adjunct): CS 171 Lab 10 vs CS 225 Lab 3 on W
+(Adjunct): CS 171 Lab 11 vs CS 197 Lec 1 on M
+(Adjunct): CS 171 Lab 11 vs CS 224 Lec 3 on M
+(Adjunct): CS 171 Lab 11 vs CS 225 Lec 2 on M
+(Adjunct): CS 171 Lab 11 vs MT 131 Lab 1 on M
+(Adjunct): CS 171 Lab 11 vs MT 138 Lab 1 on M
+(Adjunct): CS 171 Lab 11 vs MT 139 Lab 1 on M
+(Adjunct): CS 179 Lec 1 vs CS 223 Lec 1 on S,T,Th
+(Adjunct): CS 179 Lec 1 vs CS 223 Lec 4 on S,T,Th
+(Adjunct): CS 179 Lec 1 vs CS 223 Lec 5 on S,T,Th
+(Adjunct): CS 179 Lec 1 vs MT 136 Lab 4 on T
+(Adjunct): CS 197 Lec 1 vs CS 216 Lab 3 on W
+(Adjunct): CS 197 Lec 1 vs CS 225 Lec 1 on W
+(Adjunct): CS 197 Lec 1 vs CS 225 Lec 2 on M
+(Adjunct): CS 197 Lec 1 vs CS 226 Lec 1 on T
+(Adjunct): CS 197 Lec 1 vs MT 138 Lab 1 on M
+(Adjunct): CS 197 Lec 1 vs MT 139 Lab 1 on M
+(Adjunct): CS 197 Lab 1 vs CS 203 Lab 2 on Th
+(Adjunct): CS 197 Lab 1 vs CS 225 Lab 16 on Th
+(Adjunct): CS 197 Lab 2 vs CS 204 Lab 4 on F
+(Adjunct): CS 197 Lab 2 vs CS 219 Lab 1 on F
+(Adjunct): CS 197 Lab 2 vs CS 225 Lab 7 on F
+(Adjunct): CS 197 Lab 2 vs CS 225 Lab 8 on F
+(Adjunct): CS 197 Lab 2 vs CS 226 Lab 1 on F
+(Adjunct): CS 201 Lec 2 vs CS 204 Lab 3 on M
+(Adjunct): CS 201 Lec 2 vs CS 216 Lab 4 on T
+(Adjunct): CS 201 Lec 2 vs CS 219 Lab 2 on M
+(Adjunct): CS 201 Lec 2 vs CS 223 Lec 2 on M
+(Adjunct): CS 201 Lec 2 vs CS 226 Lab 3 on T
+(Adjunct): CS 201 Lec 2 vs MT 134 Lab 3 on T
+(Adjunct): CS 203 Lab 1 vs CS 212 Lec 2 on F
+(Adjunct): CS 203 Lab 1 vs CS 220 Lec 1 on F
+(Adjunct): CS 203 Lab 1 vs CS 223 Lab 6 on F
+(Adjunct): CS 203 Lab 1 vs CS 225 Lab 1 on F
+(Adjunct): CS 203 Lab 1 vs CS 225 Lab 12 on F
+(Adjunct): CS 203 Lab 1 vs CS 226 Lab 4 on F
+(Adjunct): CS 203 Lab 1 vs MT 128 Lec 1 on F
+(Adjunct): CS 203 Lab 2 vs CS 225 Lab 16 on Th
+(Adjunct): CS 203 Lab 2 vs MT 136 Lab 3 on Th
+(Adjunct): CS 204 Lab 1 vs CS 223 Lab 9 on W
+(Adjunct): CS 204 Lab 1 vs CS 223 Lab 14 on W
+(Adjunct): CS 204 Lab 1 vs CS 223 Lab 20 on W
+(Adjunct): CS 204 Lab 1 vs CS 225 Lab 3 on W
+(Adjunct): CS 204 Lab 2 vs CS 219 Lab 1 on F
+(Adjunct): CS 204 Lab 2 vs MT 134 Lab 1 on F
+(Adjunct): CS 204 Lab 3 vs CS 219 Lab 2 on M
+(Adjunct): CS 204 Lab 3 vs CS 223 Lec 2 on M
+(Adjunct): CS 204 Lab 3 vs CS 225 Lec 3 on M
+(Adjunct): CS 204 Lab 3 vs CS 225 Lab 6 on M
+(Adjunct): CS 204 Lab 4 vs CS 219 Lab 1 on F
+(Adjunct): CS 204 Lab 4 vs CS 225 Lab 7 on F
+(Adjunct): CS 204 Lab 4 vs CS 225 Lab 8 on F
+(Adjunct): CS 204 Lab 4 vs CS 226 Lab 1 on F
+(Adjunct): CS 212 Lec 2 vs CS 223 Lab 6 on F
+(Adjunct): CS 212 Lec 2 vs CS 223 Lab 18 on Th
+(Adjunct): CS 212 Lec 2 vs CS 225 Lab 1 on F
+(Adjunct): CS 212 Lec 2 vs CS 225 Lab 2 on W
+(Adjunct): CS 212 Lec 2 vs CS 225 Lab 11 on Th
+(Adjunct): CS 212 Lec 2 vs CS 226 Lab 4 on F
+(Adjunct): CS 212 Lec 2 vs MT 124 Lab 1 on Th
+(Adjunct): CS 212 Lec 2 vs MT 136 Lab 2 on W
+(Adjunct): CS 212 Lab 4 vs CS 223 Lab 17 on T
+(Adjunct): CS 212 Lab 4 vs CS 225 Lab 17 on T
+(Adjunct): CS 212 Lab 4 vs MT 134 Lab 4 on T
+(Adjunct): CS 212 Lab 5 vs MT 134 Lec 1 on T
+(Adjunct): CS 216 Lab 3 vs CS 224 Lec 3 on W
+(Adjunct): CS 216 Lab 3 vs CS 225 Lec 1 on W
+(Adjunct): CS 216 Lab 4 vs CS 226 Lab 3 on T
+(Adjunct): CS 216 Lab 4 vs MT 134 Lab 3 on T
+(Adjunct): CS 219 Lab 1 vs CS 225 Lab 7 on F
+(Adjunct): CS 219 Lab 1 vs CS 225 Lab 8 on F
+(Adjunct): CS 219 Lab 1 vs CS 226 Lab 1 on F
+(Adjunct): CS 219 Lab 1 vs MT 134 Lab 1 on F
+(Adjunct): CS 219 Lab 2 vs CS 220 Lec 1 on M
+(Adjunct): CS 219 Lab 2 vs CS 223 Lec 2 on M
+(Adjunct): CS 219 Lab 2 vs CS 225 Lec 3 on M
+(Adjunct): CS 219 Lab 2 vs CS 225 Lec 4 on M
+(Adjunct): CS 219 Lab 2 vs CS 225 Lab 6 on M
+(Adjunct): CS 220 Lec 1 vs CS 223 Lab 15 on W
+(Adjunct): CS 220 Lec 1 vs CS 225 Lec 4 on M
+(Adjunct): CS 220 Lec 1 vs CS 225 Lab 6 on M
+(Adjunct): CS 220 Lec 1 vs CS 225 Lab 12 on F
+(Adjunct): CS 220 Lec 1 vs CS 225 Lab 13 on W
+(Adjunct): CS 223 Lec 1 vs CS 223 Lec 4 on S,T,Th
+(Adjunct): CS 223 Lec 1 vs CS 223 Lec 5 on S,T,Th
+(Adjunct): CS 223 Lec 1 vs MT 136 Lab 4 on T
+(Adjunct): CS 223 Lec 2 vs CS 223 Lab 8 on Th
+(Adjunct): CS 223 Lec 2 vs CS 225 Lab 2 on W
+(Adjunct): CS 223 Lec 2 vs CS 225 Lab 11 on Th
+(Adjunct): CS 223 Lec 2 vs MT 128 Lec 1 on Th,W
+(Adjunct): CS 223 Lec 2 vs MT 136 Lab 2 on W
+(Adjunct): CS 223 Lec 4 vs CS 223 Lec 5 on S,T,Th
+(Adjunct): CS 223 Lec 4 vs MT 136 Lab 4 on T
+(Adjunct): CS 223 Lec 5 vs MT 136 Lab 4 on T
+(Adjunct): CS 223 Lab 1 vs CS 225 Lab 18 on Th
+(Adjunct): CS 223 Lab 1 vs CS 226 Lab 2 on Th
+(Adjunct): CS 223 Lab 1 vs MT 124 Lab 1 on Th
+(Adjunct): CS 223 Lab 1 vs MT 136 Lab 1 on Th
+(Adjunct): CS 223 Lab 2 vs CS 223 Lab 16 on Su
+(Adjunct): CS 223 Lab 2 vs CS 223 Lab 19 on Su
+(Adjunct): CS 223 Lab 3 vs CS 223 Lab 5 on M
+(Adjunct): CS 223 Lab 3 vs CS 225 Lab 24 on M
+(Adjunct): CS 223 Lab 3 vs MT 138 Lab 1 on M
+(Adjunct): CS 223 Lab 3 vs MT 139 Lab 1 on M
+(Adjunct): CS 223 Lab 4 vs CS 225 Lab 13 on W
+(Adjunct): CS 223 Lab 4 vs MT 129 Lec 1 on W
+(Adjunct): CS 223 Lab 4 vs MT 136 Lec 1 on W
+(Adjunct): CS 223 Lab 5 vs CS 225 Lab 24 on M
+(Adjunct): CS 223 Lab 5 vs MT 138 Lab 1 on M
+(Adjunct): CS 223 Lab 5 vs MT 139 Lab 1 on M
+(Adjunct): CS 223 Lab 6 vs CS 225 Lab 1 on F
+(Adjunct): CS 223 Lab 6 vs CS 226 Lab 4 on F
+(Adjunct): CS 223 Lab 7 vs CS 225 Lab 18 on Th
+(Adjunct): CS 223 Lab 7 vs CS 226 Lab 2 on Th
+(Adjunct): CS 223 Lab 7 vs MT 124 Lab 1 on Th
+(Adjunct): CS 223 Lab 7 vs MT 136 Lab 1 on Th
+(Adjunct): CS 223 Lab 8 vs CS 225 Lab 11 on Th
+(Adjunct): CS 223 Lab 8 vs MT 128 Lec 1 on Th
+(Adjunct): CS 223 Lab 9 vs CS 223 Lab 14 on W
+(Adjunct): CS 223 Lab 9 vs CS 223 Lab 20 on W
+(Adjunct): CS 223 Lab 9 vs CS 225 Lab 3 on W
+(Adjunct): CS 223 Lab 14 vs CS 223 Lab 20 on W
+(Adjunct): CS 223 Lab 14 vs CS 225 Lab 3 on W
+(Adjunct): CS 223 Lab 15 vs CS 225 Lab 13 on W
+(Adjunct): CS 223 Lab 16 vs CS 223 Lab 19 on Su
+(Adjunct): CS 223 Lab 17 vs CS 225 Lab 17 on T
+(Adjunct): CS 223 Lab 17 vs MT 134 Lab 4 on T
+(Adjunct): CS 223 Lab 18 vs CS 225 Lab 11 on Th
+(Adjunct): CS 223 Lab 18 vs MT 124 Lab 1 on Th
+(Adjunct): CS 223 Lab 20 vs CS 225 Lab 3 on W
+(Adjunct): CS 224 Lec 1 vs MT 131 Lab 1 on M
+(Adjunct): CS 224 Lec 1 vs MT 134 Lec 1 on M,W
+(Adjunct): CS 224 Lec 1 vs MT 134 Lab 2 on F
+(Adjunct): CS 224 Lec 2 vs MT 131 Lab 1 on M
+(Adjunct): CS 224 Lec 2 vs MT 134 Lab 2 on F
+(Adjunct): CS 224 Lec 3 vs MT 131 Lab 1 on M
+(Adjunct): CS 225 Lec 2 vs MT 138 Lab 1 on M
+(Adjunct): CS 225 Lec 2 vs MT 139 Lab 1 on M
+(Adjunct): CS 225 Lec 3 vs CS 225 Lab 6 on M
+(Adjunct): CS 225 Lec 4 vs CS 225 Lab 6 on M
+(Adjunct): CS 225 Lab 1 vs CS 226 Lab 4 on F
+(Adjunct): CS 225 Lab 1 vs MT 128 Lec 1 on F
+(Adjunct): CS 225 Lab 2 vs MT 128 Lec 1 on W
+(Adjunct): CS 225 Lab 2 vs MT 136 Lab 2 on W
+(Adjunct): CS 225 Lab 7 vs CS 225 Lab 8 on F
+(Adjunct): CS 225 Lab 7 vs CS 226 Lab 1 on F
+(Adjunct): CS 225 Lab 8 vs CS 226 Lab 1 on F
+(Adjunct): CS 225 Lab 11 vs MT 124 Lab 1 on Th
+(Adjunct): CS 225 Lab 11 vs MT 128 Lec 1 on Th
+(Adjunct): CS 225 Lab 12 vs MT 129 Lec 1 on F
+(Adjunct): CS 225 Lab 12 vs MT 136 Lec 1 on F
+(Adjunct): CS 225 Lab 13 vs MT 129 Lec 1 on W
+(Adjunct): CS 225 Lab 13 vs MT 136 Lec 1 on W
+(Adjunct): CS 225 Lab 17 vs MT 134 Lab 4 on T
+(Adjunct): CS 225 Lab 18 vs CS 226 Lab 2 on Th
+(Adjunct): CS 225 Lab 18 vs MT 124 Lab 1 on Th
+(Adjunct): CS 225 Lab 18 vs MT 136 Lab 1 on Th
+(Adjunct): CS 225 Lab 24 vs MT 138 Lab 1 on M
+(Adjunct): CS 225 Lab 24 vs MT 139 Lab 1 on M
+(Adjunct): CS 226 Lab 2 vs MT 124 Lab 1 on Th
+(Adjunct): CS 226 Lab 2 vs MT 136 Lab 1 on Th
+(Adjunct): CS 226 Lab 3 vs MT 134 Lab 3 on T
+(Adjunct): CS 226 Lab 4 vs MT 128 Lec 1 on F
+(Adjunct): MT 124 Lab 1 vs MT 136 Lab 1 on Th
+(Adjunct): MT 128 Lec 1 vs MT 136 Lab 2 on W
+(Adjunct): MT 129 Lec 1 vs MT 136 Lec 1 on F,M,W
+(Adjunct): MT 131 Lab 1 vs MT 134 Lec 1 on M
+(Adjunct): MT 138 Lab 1 vs MT 139 Lab 1 on M
+A M: CS 171 Lab 11 vs MT 131 Lab 1 on M
+A M: CS 216 Lab 4 vs CS 226 Lab 3 on T
+T: CS 200 Lec 2 vs MT 115 Lab 1 on W
+T: CS 200 Lec 2 vs MT 118 Lab 1 on M
