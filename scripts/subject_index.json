@@ -1,7 +1,7 @@
 {
   "32527": {
     "subjectArea": "CS",
-    "courseNumber": "101",
+    "courseNumber": "PSE",
     "title": "Probability and Statistics for Engineers",
     "shortName": "PSE",
     "isLab": false,
@@ -12,7 +12,7 @@
   },
   "32528": {
     "subjectArea": "CS",
-    "courseNumber": "101",
+    "courseNumber": "PSE",
     "title": "Probability and Statistics for Engineers",
     "shortName": "PSETut",
     "isLab": true,
@@ -23,7 +23,7 @@
   },
   "32529": {
     "subjectArea": "CS",
-    "courseNumber": "102",
+    "courseNumber": "CoI",
     "title": "Constitution of India",
     "shortName": "CoI",
     "isLab": false,
@@ -34,7 +34,7 @@
   },
   "32530": {
     "subjectArea": "CS",
-    "courseNumber": "103",
+    "courseNumber": "EPP",
     "title": "Entrepreneurship Principles andProcess",
     "shortName": "EPP",
     "isLab": false,
@@ -45,7 +45,7 @@
   },
   "32531": {
     "subjectArea": "CS",
-    "courseNumber": "104",
+    "courseNumber": "HOC-I",
     "title": "Humanities Open Course - I",
     "shortName": "HOC-I",
     "isLab": false,
@@ -56,29 +56,29 @@
   },
   "32532": {
     "subjectArea": "CS",
-    "courseNumber": "105",
+    "courseNumber": "SE-I",
     "title": "Software Engineering: Mini Project-1",
     "shortName": "SE-I-Tut",
     "isLab": true,
     "eachSlot": 1,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32532
+    "credits": 2.5,
+    "primarySubjectId": 32533
   },
   "32533": {
     "subjectArea": "CS",
-    "courseNumber": "106",
+    "courseNumber": "SE-I",
     "title": "Software Engineering: Mini Project-1",
     "shortName": "SE-I",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
+    "credits": 2.5,
     "primarySubjectId": 32533
   },
   "32534": {
     "subjectArea": "CS",
-    "courseNumber": "107",
+    "courseNumber": "CO",
     "title": "Computer Organization",
     "shortName": "CO",
     "isLab": false,
@@ -89,7 +89,7 @@
   },
   "32535": {
     "subjectArea": "CS",
-    "courseNumber": "108",
+    "courseNumber": "DBMS",
     "title": "Database Management Systems",
     "shortName": "DBMS",
     "isLab": false,
@@ -100,7 +100,7 @@
   },
   "32536": {
     "subjectArea": "CS",
-    "courseNumber": "108",
+    "courseNumber": "DBMS",
     "title": "Database Management Systems",
     "shortName": "DBMS-Lab",
     "isLab": true,
@@ -111,7 +111,7 @@
   },
   "32537": {
     "subjectArea": "CS",
-    "courseNumber": "109",
+    "courseNumber": "AI",
     "title": "Artificial Intelligence",
     "shortName": "AI",
     "isLab": false,
@@ -122,7 +122,7 @@
   },
   "32538": {
     "subjectArea": "CS",
-    "courseNumber": "109",
+    "courseNumber": "AI",
     "title": "Artificial Intelligence",
     "shortName": "AI-Lab",
     "isLab": true,
@@ -133,7 +133,7 @@
   },
   "32539": {
     "subjectArea": "CS",
-    "courseNumber": "110",
+    "courseNumber": "CN",
     "title": "Computer Networks",
     "shortName": "CN",
     "isLab": false,
@@ -144,7 +144,7 @@
   },
   "32540": {
     "subjectArea": "CS",
-    "courseNumber": "110",
+    "courseNumber": "CN",
     "title": "Computer Networks",
     "shortName": "CN-Lab",
     "isLab": true,
@@ -155,7 +155,7 @@
   },
   "32541": {
     "subjectArea": "IFC",
-    "courseNumber": "101",
+    "courseNumber": "IFC-DA",
     "title": "TYME1 IFC Data Analytics",
     "shortName": "IFC-DA",
     "isLab": false,
@@ -166,7 +166,7 @@
   },
   "32542": {
     "subjectArea": "IFC",
-    "courseNumber": "102",
+    "courseNumber": "D2DA",
     "title": "TYME2 IFC Data Analytics",
     "shortName": "D2DA",
     "isLab": false,
@@ -177,7 +177,7 @@
   },
   "32543": {
     "subjectArea": "IFC",
-    "courseNumber": "101",
+    "courseNumber": "IFC-DA",
     "title": "TYME1 IFC Data Analytics",
     "shortName": "IFC-DALab",
     "isLab": true,
@@ -188,7 +188,7 @@
   },
   "32544": {
     "subjectArea": "IFC",
-    "courseNumber": "103",
+    "courseNumber": "D2DAL",
     "title": "TYME2 IFC Data Analytics",
     "shortName": "D2DAL",
     "isLab": true,
@@ -199,7 +199,7 @@
   },
   "32545": {
     "subjectArea": "IFC",
-    "courseNumber": "104",
+    "courseNumber": "EnTC-DA",
     "title": "TYENTC IFC Data Analytics",
     "shortName": "EnTC_DA",
     "isLab": false,
@@ -210,7 +210,7 @@
   },
   "32546": {
     "subjectArea": "IFC",
-    "courseNumber": "105",
+    "courseNumber": "EnTC-DAL",
     "title": "TYENTC IFC Data Analytics",
     "shortName": "EnTC_DAL",
     "isLab": true,
@@ -221,7 +221,7 @@
   },
   "32547": {
     "subjectArea": "IFC",
-    "courseNumber": "106",
+    "courseNumber": "MnE-DA",
     "title": "TYMnE IFC Data Analytics",
     "shortName": "MnE_DA",
     "isLab": false,
@@ -232,7 +232,7 @@
   },
   "32548": {
     "subjectArea": "IFC",
-    "courseNumber": "107",
+    "courseNumber": "MnE-DAL",
     "title": "TYMnE IFC Data Analytics",
     "shortName": "MnE_DAL",
     "isLab": true,
@@ -243,7 +243,7 @@
   },
   "32549": {
     "subjectArea": "IFC",
-    "courseNumber": "108",
+    "courseNumber": "EE-FOS",
     "title": "TYEE IFC Fundamentals of Operating Systems",
     "shortName": "EE_FOS",
     "isLab": false,
@@ -254,7 +254,7 @@
   },
   "32550": {
     "subjectArea": "IFC",
-    "courseNumber": "109",
+    "courseNumber": "IE-FML",
     "title": "TYIE IFC Fundamentals of Machine Learning",
     "shortName": "IE_FML",
     "isLab": false,
@@ -265,7 +265,7 @@
   },
   "32551": {
     "subjectArea": "IFC",
-    "courseNumber": "110",
+    "courseNumber": "IE-FMLL",
     "title": "TYIE IFC Fundamentals of Machine Learning",
     "shortName": "IE_FMLL",
     "isLab": true,
@@ -276,7 +276,7 @@
   },
   "32552": {
     "subjectArea": "CS",
-    "courseNumber": "111",
+    "courseNumber": "IPR",
     "title": "Intellectual Property Rights",
     "shortName": "IPR",
     "isLab": false,
@@ -287,7 +287,7 @@
   },
   "32553": {
     "subjectArea": "CS",
-    "courseNumber": "112",
+    "courseNumber": "LLC",
     "title": "Liberal Learning Course",
     "shortName": "LLC",
     "isLab": false,
@@ -298,7 +298,7 @@
   },
   "32554": {
     "subjectArea": "IFC",
-    "courseNumber": "111",
+    "courseNumber": "IOC-II",
     "title": "Interdisciplinary Open Course-II",
     "shortName": "IOC-II",
     "isLab": false,
@@ -309,7 +309,7 @@
   },
   "32555": {
     "subjectArea": "CS",
-    "courseNumber": "113",
+    "courseNumber": "CC",
     "title": "Compiler Construction",
     "shortName": "CC",
     "isLab": false,
@@ -320,7 +320,7 @@
   },
   "32556": {
     "subjectArea": "CS",
-    "courseNumber": "113",
+    "courseNumber": "CC",
     "title": "Compiler Construction",
     "shortName": "CC-Lab",
     "isLab": true,
@@ -331,7 +331,7 @@
   },
   "32557": {
     "subjectArea": "CS",
-    "courseNumber": "114",
+    "courseNumber": "CNS",
     "title": "Cryptography and Network Security",
     "shortName": "CNS",
     "isLab": false,
@@ -342,7 +342,7 @@
   },
   "32558": {
     "subjectArea": "CS",
-    "courseNumber": "114",
+    "courseNumber": "CNS",
     "title": "Cryptography and Network Security",
     "shortName": "CNS-Lab",
     "isLab": true,
@@ -353,7 +353,7 @@
   },
   "32559": {
     "subjectArea": "CS",
-    "courseNumber": "115",
+    "courseNumber": "DE2-CBD",
     "title": "DE-II CBD: Cloud and Big Data",
     "shortName": "DE2-CBD",
     "isLab": true,
@@ -364,7 +364,7 @@
   },
   "32560": {
     "subjectArea": "CS",
-    "courseNumber": "116",
+    "courseNumber": "DE2-DS",
     "title": "DE-II DS: Distributed Systems",
     "shortName": "DE2-DS",
     "isLab": true,
@@ -375,7 +375,7 @@
   },
   "32561": {
     "subjectArea": "CS",
-    "courseNumber": "117",
+    "courseNumber": "DE2-IR",
     "title": "DE-II IR: Information Retrieval",
     "shortName": "DE2-IR",
     "isLab": true,
@@ -386,7 +386,7 @@
   },
   "32562": {
     "subjectArea": "CS",
-    "courseNumber": "118",
+    "courseNumber": "DE3-OOMD",
     "title": "DE-III OOMD: Object Oriented Modelling and Design",
     "shortName": "DE3-OOMD",
     "isLab": true,
@@ -397,95 +397,95 @@
   },
   "32563": {
     "subjectArea": "CS",
-    "courseNumber": "119",
+    "courseNumber": "DE3-NLP",
     "title": "DE-III NLP: Natural Language Processing",
     "shortName": "DE3-NLP",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32563
   },
   "32564": {
     "subjectArea": "CS",
-    "courseNumber": "120",
+    "courseNumber": "DE3-IOT",
     "title": "DE-III IOT: Internet of Things",
     "shortName": "DE3-IOT",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32564
   },
   "32565": {
     "subjectArea": "CS",
-    "courseNumber": "121",
+    "courseNumber": "DE3-Devops",
     "title": "DE-III Devops",
     "shortName": "DE3-Devops",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32565
   },
   "32566": {
     "subjectArea": "CS",
-    "courseNumber": "122",
+    "courseNumber": "DE3-CS",
     "title": "DE-III CS: Cyber Security",
     "shortName": "DE3-CS",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32566
   },
   "32567": {
     "subjectArea": "CS",
-    "courseNumber": "123",
+    "courseNumber": "DE3-CS",
     "title": "DE-III CS: Cyber Security",
     "shortName": "DE3-CS-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32567
+    "credits": 4.0,
+    "primarySubjectId": 32566
   },
   "32568": {
     "subjectArea": "CS",
-    "courseNumber": "124",
+    "courseNumber": "DE3-Devops",
     "title": "DE-III Devops",
     "shortName": "DE3-Devops-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32568
+    "credits": 4.0,
+    "primarySubjectId": 32565
   },
   "32569": {
     "subjectArea": "CS",
-    "courseNumber": "125",
+    "courseNumber": "DE3-IOT",
     "title": "DE-III IOT: Internet of Things",
     "shortName": "DE3-IOT-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32569
+    "credits": 4.0,
+    "primarySubjectId": 32564
   },
   "32570": {
     "subjectArea": "CS",
-    "courseNumber": "126",
+    "courseNumber": "DE3-NLP",
     "title": "DE-III NLP: Natural Language Processing",
     "shortName": "DE3-NLP-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32570
+    "credits": 4.0,
+    "primarySubjectId": 32563
   },
   "32571": {
     "subjectArea": "CS",
-    "courseNumber": "127",
+    "courseNumber": "EE-CA",
     "title": "BTEE DE1 Computer Algorithms",
     "shortName": "EE_CA",
     "isLab": false,
@@ -496,7 +496,7 @@
   },
   "32572": {
     "subjectArea": "CS",
-    "courseNumber": "128",
+    "courseNumber": "MDM-DSFA",
     "title": "MDM-Data Structures, Files and Algorithms",
     "shortName": "MDM-DSFA",
     "isLab": false,
@@ -507,7 +507,7 @@
   },
   "32573": {
     "subjectArea": "CS",
-    "courseNumber": "129",
+    "courseNumber": "Minor3-IT",
     "title": "Minor3-Internet Technologies",
     "shortName": "Minor3-IT",
     "isLab": false,
@@ -518,7 +518,7 @@
   },
   "32574": {
     "subjectArea": "CS",
-    "courseNumber": "130",
+    "courseNumber": "Honor1-FICT",
     "title": "Honor1-Fundamentals of Information and CT",
     "shortName": "Honor1-FICT",
     "isLab": true,
@@ -529,7 +529,7 @@
   },
   "32575": {
     "subjectArea": "CS",
-    "courseNumber": "131",
+    "courseNumber": "Honor3-DL",
     "title": "Honor3-Deep Learning",
     "shortName": "Honor3-DL",
     "isLab": true,
@@ -540,7 +540,7 @@
   },
   "32576": {
     "subjectArea": "CS",
-    "courseNumber": "132",
+    "courseNumber": "Honor3-MA",
     "title": "Honor3-Malware Analysis",
     "shortName": "Honor3-MA",
     "isLab": true,
@@ -551,7 +551,7 @@
   },
   "32577": {
     "subjectArea": "CS",
-    "courseNumber": "133",
+    "courseNumber": "Honor1-MSD",
     "title": "Honor1-Making Sense of Data",
     "shortName": "Honor1-MSD",
     "isLab": true,
@@ -562,7 +562,7 @@
   },
   "32578": {
     "subjectArea": "CS",
-    "courseNumber": "134",
+    "courseNumber": "DSGT",
     "title": "Discrete Structures and Graph Theory",
     "shortName": "DSGT",
     "isLab": false,
@@ -573,7 +573,7 @@
   },
   "32579": {
     "subjectArea": "CS",
-    "courseNumber": "134",
+    "courseNumber": "DSGT",
     "title": "Discrete Structures and Graph Theory",
     "shortName": "DSGT-Tut",
     "isLab": true,
@@ -584,7 +584,7 @@
   },
   "32580": {
     "subjectArea": "CS",
-    "courseNumber": "135",
+    "courseNumber": "DSA-I",
     "title": "Data Structures and Algorithms I",
     "shortName": "DSA-I",
     "isLab": false,
@@ -595,7 +595,7 @@
   },
   "32581": {
     "subjectArea": "CS",
-    "courseNumber": "136",
+    "courseNumber": "DLD",
     "title": "Digital Logic Design",
     "shortName": "DLD",
     "isLab": false,
@@ -606,7 +606,7 @@
   },
   "32582": {
     "subjectArea": "CS",
-    "courseNumber": "137",
+    "courseNumber": "PPL",
     "title": "Principles of Programming Languages",
     "shortName": "PPL",
     "isLab": false,
@@ -617,7 +617,7 @@
   },
   "32583": {
     "subjectArea": "CS",
-    "courseNumber": "136",
+    "courseNumber": "DLD",
     "title": "Digital Logic Design",
     "shortName": "DLD-Lab",
     "isLab": true,
@@ -628,7 +628,7 @@
   },
   "32584": {
     "subjectArea": "CS",
-    "courseNumber": "142",
+    "courseNumber": "DTL",
     "title": "Development Tools Labrotary",
     "shortName": "DTL-Lab",
     "isLab": true,
@@ -639,7 +639,7 @@
   },
   "32585": {
     "subjectArea": "CS",
-    "courseNumber": "138",
+    "courseNumber": "FCS",
     "title": "Feedback Control System",
     "shortName": "FCS",
     "isLab": false,
@@ -650,7 +650,7 @@
   },
   "32586": {
     "subjectArea": "CS",
-    "courseNumber": "138",
+    "courseNumber": "FCS",
     "title": "Feedback Control System",
     "shortName": "FCSTut",
     "isLab": true,
@@ -661,7 +661,7 @@
   },
   "32587": {
     "subjectArea": "CS",
-    "courseNumber": "139",
+    "courseNumber": "ODEMC",
     "title": "Ordinary Differential Equations & MC",
     "shortName": "ODEMC ",
     "isLab": false,
@@ -672,7 +672,7 @@
   },
   "32588": {
     "subjectArea": "CS",
-    "courseNumber": "140",
+    "courseNumber": "ODEMC-Tut",
     "title": "Ordinary Differential Equations",
     "shortName": "ODEMC-Tut",
     "isLab": true,
@@ -683,7 +683,7 @@
   },
   "32589": {
     "subjectArea": "CS",
-    "courseNumber": "141",
+    "courseNumber": "PLEVH",
     "title": "Professional Laws Ethics and Values",
     "shortName": "PLEVH",
     "isLab": false,
@@ -694,7 +694,7 @@
   },
   "32590": {
     "subjectArea": "CS",
-    "courseNumber": "142",
+    "courseNumber": "DTL",
     "title": "Development Tools Labrotary",
     "shortName": "DTL",
     "isLab": false,
@@ -705,7 +705,7 @@
   },
   "32591": {
     "subjectArea": "CS",
-    "courseNumber": "135",
+    "courseNumber": "DSA-I",
     "title": "Data Structures and Algorithms I",
     "shortName": "DSA-I-Lab",
     "isLab": true,
@@ -716,7 +716,7 @@
   },
   "32592": {
     "subjectArea": "CS",
-    "courseNumber": "137",
+    "courseNumber": "PPL",
     "title": "Principles of Programming Languages",
     "shortName": "PPL Lab",
     "isLab": true,
@@ -727,7 +727,7 @@
   },
   "32593": {
     "subjectArea": "CS",
-    "courseNumber": "143",
+    "courseNumber": "LAUC-DSY",
     "title": "DSY Div 2 Linear algebra and Univariate Calculus",
     "shortName": "LAUC-DSY",
     "isLab": false,
@@ -738,7 +738,7 @@
   },
   "32594": {
     "subjectArea": "CS",
-    "courseNumber": "144",
+    "courseNumber": "LAUC-Tut-DSY",
     "title": "Linear algebra and Univariate Calculus",
     "shortName": "LAUC-Tut(DSY)",
     "isLab": true,
@@ -749,7 +749,7 @@
   },
   "32595": {
     "subjectArea": "CS",
-    "courseNumber": "145",
+    "courseNumber": "FOP",
     "title": "Foundation of Physics",
     "shortName": "FOP",
     "isLab": false,
@@ -760,7 +760,7 @@
   },
   "32596": {
     "subjectArea": "CS",
-    "courseNumber": "146",
+    "courseNumber": "InC",
     "title": "Innovation and Creativity",
     "shortName": "InC",
     "isLab": false,
@@ -771,7 +771,7 @@
   },
   "32597": {
     "subjectArea": "CS",
-    "courseNumber": "147",
+    "courseNumber": "FOC",
     "title": "Foundation of Cryptography",
     "shortName": "FOC",
     "isLab": false,
@@ -782,7 +782,7 @@
   },
   "32598": {
     "subjectArea": "MT",
-    "courseNumber": "101",
+    "courseNumber": "MTIS-DE-AN",
     "title": "Advancement in Networking",
     "shortName": "MTIS-DE-AN",
     "isLab": false,
@@ -793,7 +793,7 @@
   },
   "32599": {
     "subjectArea": "MT",
-    "courseNumber": "102",
+    "courseNumber": "MTIS-DE-ML",
     "title": "Machine Learning",
     "shortName": "MTIS-DE-ML",
     "isLab": false,
@@ -804,7 +804,7 @@
   },
   "32600": {
     "subjectArea": "MT",
-    "courseNumber": "103",
+    "courseNumber": "MTIS-DE-BA",
     "title": "Business Analytics",
     "shortName": "MTIS-DE-BA",
     "isLab": false,
@@ -815,7 +815,7 @@
   },
   "32601": {
     "subjectArea": "CS",
-    "courseNumber": "148",
+    "courseNumber": "RM",
     "title": "Research Methodology and Intellectual Property Rights",
     "shortName": "RM",
     "isLab": false,
@@ -826,7 +826,7 @@
   },
   "32602": {
     "subjectArea": "CS",
-    "courseNumber": "149",
+    "courseNumber": "ETC",
     "title": "Effective Technical Communication",
     "shortName": "ETC",
     "isLab": false,
@@ -837,7 +837,7 @@
   },
   "32603": {
     "subjectArea": "CS",
-    "courseNumber": "150",
+    "courseNumber": "AOS",
     "title": "Advanced Operating System",
     "shortName": "AOS",
     "isLab": false,
@@ -848,7 +848,7 @@
   },
   "32604": {
     "subjectArea": "CS",
-    "courseNumber": "151",
+    "courseNumber": "ITC",
     "title": "Information Theory and Coding",
     "shortName": "ITC",
     "isLab": false,
@@ -859,7 +859,7 @@
   },
   "32605": {
     "subjectArea": "CS",
-    "courseNumber": "152",
+    "courseNumber": "CSS",
     "title": "Computer Systems Security",
     "shortName": "CSS",
     "isLab": false,
@@ -870,7 +870,7 @@
   },
   "32606": {
     "subjectArea": "CS",
-    "courseNumber": "150",
+    "courseNumber": "AOS",
     "title": "Advanced Operating System",
     "shortName": "AOS-Lab",
     "isLab": true,
@@ -881,7 +881,7 @@
   },
   "32607": {
     "subjectArea": "CS",
-    "courseNumber": "151",
+    "courseNumber": "ITC",
     "title": "Information Theory and Coding",
     "shortName": "ITC-Lab",
     "isLab": true,
@@ -892,7 +892,7 @@
   },
   "32608": {
     "subjectArea": "CS",
-    "courseNumber": "152",
+    "courseNumber": "CSS",
     "title": "Computer Systems Security",
     "shortName": "CSS-Lab",
     "isLab": true,
@@ -903,7 +903,7 @@
   },
   "32609": {
     "subjectArea": "CS",
-    "courseNumber": "153",
+    "courseNumber": "ACT",
     "title": "Algorithms and Complexity Theory",
     "shortName": "ACT",
     "isLab": false,
@@ -914,7 +914,7 @@
   },
   "32610": {
     "subjectArea": "MT",
-    "courseNumber": "104",
+    "courseNumber": "MTCE-DE-DOS",
     "title": "MTCE-Distributed Operating System",
     "shortName": "MTCE-DE-DOS",
     "isLab": false,
@@ -925,7 +925,7 @@
   },
   "32611": {
     "subjectArea": "MT",
-    "courseNumber": "105",
+    "courseNumber": "MTCE-DE-AI",
     "title": "MTCE-Artificial Intelligence",
     "shortName": "MTCE-DE-AI",
     "isLab": false,
@@ -936,7 +936,7 @@
   },
   "32612": {
     "subjectArea": "MT",
-    "courseNumber": "106",
+    "courseNumber": "MTCE-DE-AGT",
     "title": "MTCE-Advanced Graph Theory",
     "shortName": "MTCE-DE-AGT",
     "isLab": false,
@@ -947,7 +947,7 @@
   },
   "32613": {
     "subjectArea": "MT",
-    "courseNumber": "107",
+    "courseNumber": "MTCE-TDB",
     "title": "MTCE-Topics in Databases",
     "shortName": "MTCE-TDB",
     "isLab": false,
@@ -958,7 +958,7 @@
   },
   "32614": {
     "subjectArea": "MT",
-    "courseNumber": "108",
+    "courseNumber": "MTCE-ACN",
     "title": "MTCE-Advanced Computer Networks",
     "shortName": "MTCE-ACN",
     "isLab": false,
@@ -969,7 +969,7 @@
   },
   "32615": {
     "subjectArea": "MT",
-    "courseNumber": "109",
+    "courseNumber": "MTCE-ACA",
     "title": "MTCE-Advanced Computer Architecture",
     "shortName": "MTCE-ACA",
     "isLab": false,
@@ -980,7 +980,7 @@
   },
   "32616": {
     "subjectArea": "MT",
-    "courseNumber": "107",
+    "courseNumber": "MTCE-TDB",
     "title": "MTCE-Topics in Databases",
     "shortName": "MTCE-TDB Lab",
     "isLab": true,
@@ -991,7 +991,7 @@
   },
   "32617": {
     "subjectArea": "MT",
-    "courseNumber": "108",
+    "courseNumber": "MTCE-ACN",
     "title": "MTCE-Advanced Computer Networks",
     "shortName": "MTCE-ACN Lab",
     "isLab": true,
@@ -1002,7 +1002,7 @@
   },
   "32618": {
     "subjectArea": "MT",
-    "courseNumber": "109",
+    "courseNumber": "MTCE-ACA",
     "title": "MTCE-Advanced Computer Architecture",
     "shortName": "MTCE-ACA Lab",
     "isLab": true,
@@ -1013,29 +1013,29 @@
   },
   "32619": {
     "subjectArea": "CS",
-    "courseNumber": "154",
-    "title": "Probability, Stastistics and Queuing Thoey",
+    "courseNumber": "PSQT",
+    "title": "Probability Statistics and Queuing Theory",
     "shortName": "PSQT tut",
     "isLab": true,
     "eachSlot": 1,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32619
+    "credits": 3.5,
+    "primarySubjectId": 32620
   },
   "32620": {
     "subjectArea": "CS",
-    "courseNumber": "155",
+    "courseNumber": "PSQT",
     "title": "Probability Statistics and Queuing Theory",
     "shortName": "PSQT",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 3.5,
     "primarySubjectId": 32620
   },
   "32621": {
     "subjectArea": "CS",
-    "courseNumber": "156",
+    "courseNumber": "AINN",
     "title": "Artificial Intelligence and Neural Networks",
     "shortName": "AINN",
     "isLab": false,
@@ -1046,10 +1046,10 @@
   },
   "32622": {
     "subjectArea": "CS",
-    "courseNumber": "156",
+    "courseNumber": "AINN",
     "title": "Artificial Intelligence and Neural Networks",
     "shortName": "AINN-Tut",
-    "isLab": false,
+    "isLab": true,
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.5,
@@ -1057,7 +1057,7 @@
   },
   "32623": {
     "subjectArea": "CS",
-    "courseNumber": "157",
+    "courseNumber": "AIPT-Lab",
     "title": "AI Based Programming Tool",
     "shortName": "AIPT-Lab",
     "isLab": false,
@@ -1068,7 +1068,7 @@
   },
   "32624": {
     "subjectArea": "CS",
-    "courseNumber": "158",
+    "courseNumber": "KEES",
     "title": "Knowledge Engineering and Expert System",
     "shortName": "KEES ",
     "isLab": false,
@@ -1079,7 +1079,7 @@
   },
   "32625": {
     "subjectArea": "CS",
-    "courseNumber": "159",
+    "courseNumber": "Env",
     "title": "Environmental Studies",
     "shortName": "Env",
     "isLab": false,
@@ -1090,7 +1090,7 @@
   },
   "32626": {
     "subjectArea": "CS",
-    "courseNumber": "160",
+    "courseNumber": "HOC-II",
     "title": "Humanities Open Course - II",
     "shortName": "HOC-II",
     "isLab": false,
@@ -1101,7 +1101,7 @@
   },
   "32627": {
     "subjectArea": "CS",
-    "courseNumber": "161",
+    "courseNumber": "SE-II",
     "title": "Software Engineering Mini project - II",
     "shortName": "SE-II",
     "isLab": false,
@@ -1112,7 +1112,7 @@
   },
   "32628": {
     "subjectArea": "CS",
-    "courseNumber": "161",
+    "courseNumber": "SE-II",
     "title": "Software Engineering Mini project - II",
     "shortName": "SE-II-Lab",
     "isLab": true,
@@ -1123,7 +1123,7 @@
   },
   "32629": {
     "subjectArea": "IFC",
-    "courseNumber": "112",
+    "courseNumber": "IOC-I",
     "title": "Interdisciplinary Open Course-I",
     "shortName": "IOC-I",
     "isLab": false,
@@ -1134,95 +1134,95 @@
   },
   "32630": {
     "subjectArea": "CS",
-    "courseNumber": "162",
+    "courseNumber": "DE1-ADS",
     "title": "DE1 Advanced Data Structures",
     "shortName": "DE1-ADS",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32630
   },
   "32631": {
     "subjectArea": "CS",
-    "courseNumber": "163",
+    "courseNumber": "DE1-ADS",
     "title": "DE1 Advanced Data Structures",
     "shortName": "DE1-ADS-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32631
+    "credits": 4.0,
+    "primarySubjectId": 32630
   },
   "32632": {
     "subjectArea": "CS",
-    "courseNumber": "164",
+    "courseNumber": "DE1-WST",
     "title": "DE1 Web Systems and Technologies",
     "shortName": "DE1-WST",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32632
   },
   "32633": {
     "subjectArea": "CS",
-    "courseNumber": "165",
-    "title": "DE1 Web Systems and Technologie",
+    "courseNumber": "DE1-WST",
+    "title": "DE1 Web Systems and Technologies",
     "shortName": "DE1-WST-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32633
+    "credits": 4.0,
+    "primarySubjectId": 32632
   },
   "32634": {
     "subjectArea": "CS",
-    "courseNumber": "166",
+    "courseNumber": "DE1-RTCN",
     "title": "DE1 Recent Trends in Computer Networks",
     "shortName": "DE1-RTCN",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32634
   },
   "32635": {
     "subjectArea": "CS",
-    "courseNumber": "167",
+    "courseNumber": "DE1-RTCN",
     "title": "DE1 Recent Trends in Computer Networks",
     "shortName": "DE1-RTCN-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32635
+    "credits": 4.0,
+    "primarySubjectId": 32634
   },
   "32636": {
     "subjectArea": "CS",
-    "courseNumber": "168",
+    "courseNumber": "DE1-SP",
     "title": "DE1 System Programming",
     "shortName": "DE1-SP",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32636
   },
   "32637": {
     "subjectArea": "CS",
-    "courseNumber": "169",
+    "courseNumber": "DE1-SP",
     "title": "DE1 System Programming",
     "shortName": "DE1-SP-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32637
+    "credits": 4.0,
+    "primarySubjectId": 32636
   },
   "32638": {
     "subjectArea": "CS",
-    "courseNumber": "170",
+    "courseNumber": "OS",
     "title": "Operating Systems",
     "shortName": "OS",
     "isLab": false,
@@ -1233,7 +1233,7 @@
   },
   "32639": {
     "subjectArea": "CS",
-    "courseNumber": "170",
+    "courseNumber": "OS",
     "title": "Operating Systems",
     "shortName": "OS Lab",
     "isLab": true,
@@ -1244,7 +1244,7 @@
   },
   "32640": {
     "subjectArea": "CS",
-    "courseNumber": "171",
+    "courseNumber": "DAA",
     "title": "Design and Analysis of Algorithm",
     "shortName": "DAA",
     "isLab": false,
@@ -1255,7 +1255,7 @@
   },
   "32641": {
     "subjectArea": "CS",
-    "courseNumber": "172",
+    "courseNumber": "DSci",
     "title": "Data Science",
     "shortName": "DSci",
     "isLab": false,
@@ -1266,7 +1266,7 @@
   },
   "32642": {
     "subjectArea": "CS",
-    "courseNumber": "173",
+    "courseNumber": "DSc-iLab",
     "title": "Data Science",
     "shortName": "DSc-iLab",
     "isLab": true,
@@ -1277,29 +1277,29 @@
   },
   "32643": {
     "subjectArea": "CS",
-    "courseNumber": "174",
-    "title": "DE4-SA: System Administration",
+    "courseNumber": "DE4-SA",
+    "title": "BT: DE-IV System Administration",
     "shortName": "DE4-SA-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32643
+    "credits": 4.0,
+    "primarySubjectId": 32653
   },
   "32644": {
     "subjectArea": "CS",
-    "courseNumber": "175",
-    "title": "DE4-MAN: Mobile and Ad-hoc Networks",
+    "courseNumber": "DE4-MAN",
+    "title": "BT: DE-IV Mobile and Ad-Hoc Networks",
     "shortName": "DE4-MAN-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32644
+    "credits": 4.0,
+    "primarySubjectId": 32654
   },
   "32645": {
     "subjectArea": "CS",
-    "courseNumber": "176",
+    "courseNumber": "SA",
     "title": "DE4-SA: System Administration",
     "shortName": "SA",
     "isLab": true,
@@ -1310,18 +1310,18 @@
   },
   "32646": {
     "subjectArea": "CS",
-    "courseNumber": "177",
+    "courseNumber": "DE4-GPU",
     "title": "DE4: GPU Computing",
     "shortName": "DE4-GPU-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32646
+    "credits": 4.0,
+    "primarySubjectId": 32718
   },
   "32647": {
     "subjectArea": "CS",
-    "courseNumber": "178",
+    "courseNumber": "Minor2-OOPD",
     "title": "Minor2-Object Oriented Programming and Design",
     "shortName": "Minor2-OOPD",
     "isLab": false,
@@ -1332,7 +1332,7 @@
   },
   "32648": {
     "subjectArea": "CS",
-    "courseNumber": "179",
+    "courseNumber": "Minor4-DS",
     "title": "Minor4-Data Science",
     "shortName": "Minor4-DS",
     "isLab": false,
@@ -1343,7 +1343,7 @@
   },
   "32649": {
     "subjectArea": "CS",
-    "courseNumber": "180",
+    "courseNumber": "Honor2-BDA",
     "title": "Honor2-Big Data Analytics",
     "shortName": "Honor2-BDA",
     "isLab": true,
@@ -1354,7 +1354,7 @@
   },
   "32650": {
     "subjectArea": "CS",
-    "courseNumber": "181",
+    "courseNumber": "Honor2-EH",
     "title": "Honor2-Ethical Hacking",
     "shortName": "Honor2-EH",
     "isLab": true,
@@ -1365,7 +1365,7 @@
   },
   "32651": {
     "subjectArea": "CS",
-    "courseNumber": "182",
+    "courseNumber": "MOOC-1",
     "title": "MOOC-1",
     "shortName": "MOOC-1",
     "isLab": false,
@@ -1376,7 +1376,7 @@
   },
   "32652": {
     "subjectArea": "CS",
-    "courseNumber": "183",
+    "courseNumber": "MOOC-2",
     "title": "MOOC-2",
     "shortName": "MOOC-2",
     "isLab": false,
@@ -1387,29 +1387,29 @@
   },
   "32653": {
     "subjectArea": "CS",
-    "courseNumber": "184",
+    "courseNumber": "DE4-SA",
     "title": "BT: DE-IV System Administration",
     "shortName": "DE4-SA",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32653
   },
   "32654": {
     "subjectArea": "CS",
-    "courseNumber": "185",
+    "courseNumber": "DE4-MAN",
     "title": "BT: DE-IV Mobile and Ad-Hoc Networks",
     "shortName": "DE4-MAN",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32654
   },
   "32655": {
     "subjectArea": "CS",
-    "courseNumber": "186",
+    "courseNumber": "BTP",
     "title": "BT: Project",
     "shortName": "BTP",
     "isLab": false,
@@ -1420,7 +1420,7 @@
   },
   "32656": {
     "subjectArea": "IFC",
-    "courseNumber": "113",
+    "courseNumber": "IOC-AI",
     "title": "IOC-Artificial Intelligence",
     "shortName": "IOC-AI",
     "isLab": false,
@@ -1431,7 +1431,7 @@
   },
   "32657": {
     "subjectArea": "IFC",
-    "courseNumber": "114",
+    "courseNumber": "IOC-AI-Lab",
     "title": "IOC-Artificial Intelligence",
     "shortName": "IOC-AI_Lab",
     "isLab": true,
@@ -1442,7 +1442,7 @@
   },
   "32658": {
     "subjectArea": "CS",
-    "courseNumber": "187",
+    "courseNumber": "VCPDE",
     "title": "Vector Calculus and Partial Differential Equations",
     "shortName": "VCPDE",
     "isLab": false,
@@ -1453,7 +1453,7 @@
   },
   "32659": {
     "subjectArea": "CS",
-    "courseNumber": "188",
+    "courseNumber": "BE",
     "title": "Biology for Engineers",
     "shortName": "BE",
     "isLab": false,
@@ -1464,7 +1464,7 @@
   },
   "32660": {
     "subjectArea": "CS",
-    "courseNumber": "189",
+    "courseNumber": "RPPOOP",
     "title": "Rapid Prototyping Practice Using Object Oriented Programming",
     "shortName": "RPPOOP",
     "isLab": false,
@@ -1475,7 +1475,7 @@
   },
   "32661": {
     "subjectArea": "CS",
-    "courseNumber": "190",
+    "courseNumber": "TOC",
     "title": "Theory of Computation",
     "shortName": "TOC",
     "isLab": false,
@@ -1486,7 +1486,7 @@
   },
   "32662": {
     "subjectArea": "MT",
-    "courseNumber": "110",
+    "courseNumber": "MT",
     "title": "Microprocessor Techniques",
     "shortName": "MT",
     "isLab": false,
@@ -1497,7 +1497,7 @@
   },
   "32663": {
     "subjectArea": "CS",
-    "courseNumber": "191",
+    "courseNumber": "DSA-II",
     "title": "Data Structures and Algorithms  II",
     "shortName": "DSA-II",
     "isLab": false,
@@ -1508,7 +1508,7 @@
   },
   "32664": {
     "subjectArea": "CS",
-    "courseNumber": "192",
+    "courseNumber": "DC",
     "title": "Data Communication",
     "shortName": "DC",
     "isLab": false,
@@ -1519,7 +1519,7 @@
   },
   "32665": {
     "subjectArea": "CS",
-    "courseNumber": "187",
+    "courseNumber": "VCPDE",
     "title": "Vector Calculus and Partial Differential Equations",
     "shortName": "VCPDE-Tut",
     "isLab": true,
@@ -1530,7 +1530,7 @@
   },
   "32666": {
     "subjectArea": "CS",
-    "courseNumber": "190",
+    "courseNumber": "TOC",
     "title": "Theory of Computation",
     "shortName": "TOC-Tut",
     "isLab": true,
@@ -1541,7 +1541,7 @@
   },
   "32667": {
     "subjectArea": "CS",
-    "courseNumber": "189",
+    "courseNumber": "RPPOOP",
     "title": "Rapid Prototyping Practice Using Object Oriented Programming",
     "shortName": "RPPOOP-Lab",
     "isLab": true,
@@ -1552,7 +1552,7 @@
   },
   "32668": {
     "subjectArea": "MT",
-    "courseNumber": "110",
+    "courseNumber": "MT",
     "title": "Microprocessor Techniques",
     "shortName": "MT-Lab",
     "isLab": true,
@@ -1563,7 +1563,7 @@
   },
   "32669": {
     "subjectArea": "CS",
-    "courseNumber": "191",
+    "courseNumber": "DSA-II",
     "title": "Data Structures and Algorithms  II",
     "shortName": "DSA-II-Lab",
     "isLab": true,
@@ -1574,7 +1574,7 @@
   },
   "32670": {
     "subjectArea": "CS",
-    "courseNumber": "193",
+    "courseNumber": "MVCDE",
     "title": "Multivariate Calculus and Differential  Equations",
     "shortName": "MVCDE",
     "isLab": false,
@@ -1585,7 +1585,7 @@
   },
   "32671": {
     "subjectArea": "CS",
-    "courseNumber": "193",
+    "courseNumber": "MVCDE",
     "title": "Multivariate Calculus and Differential  Equations",
     "shortName": "MVCDE-Tut",
     "isLab": true,
@@ -1596,7 +1596,7 @@
   },
   "32672": {
     "subjectArea": "CS",
-    "courseNumber": "194",
+    "courseNumber": "AAI",
     "title": "Advanced Artificial Intelligence",
     "shortName": "AAI",
     "isLab": false,
@@ -1607,7 +1607,7 @@
   },
   "32673": {
     "subjectArea": "MT",
-    "courseNumber": "111",
+    "courseNumber": "PSEC3-DL",
     "title": "PSEC3-Deep Learning",
     "shortName": "PSEC3-DL",
     "isLab": true,
@@ -1618,7 +1618,7 @@
   },
   "32674": {
     "subjectArea": "IFC",
-    "courseNumber": "115",
+    "courseNumber": "IOC-DS",
     "title": "IOC-Data Structures",
     "shortName": "IOC-DS",
     "isLab": false,
@@ -1629,7 +1629,7 @@
   },
   "32675": {
     "subjectArea": "CS",
-    "courseNumber": "195",
+    "courseNumber": "DMML",
     "title": "Data Mining and Machine Learning",
     "shortName": "DMML",
     "isLab": false,
@@ -1640,7 +1640,7 @@
   },
   "32676": {
     "subjectArea": "CS",
-    "courseNumber": "196",
+    "courseNumber": "SIC",
     "title": "Security in Computing",
     "shortName": "SIC",
     "isLab": false,
@@ -1651,7 +1651,7 @@
   },
   "32677": {
     "subjectArea": "CS",
-    "courseNumber": "197",
+    "courseNumber": "ES",
     "title": "Embedded Systems",
     "shortName": "ES",
     "isLab": false,
@@ -1662,7 +1662,7 @@
   },
   "32678": {
     "subjectArea": "MT",
-    "courseNumber": "112",
+    "courseNumber": "PSEC2-CCV",
     "title": "PSEC2-Cloud Computing and Virtualization",
     "shortName": "PSEC2-CCV",
     "isLab": true,
@@ -1673,7 +1673,7 @@
   },
   "32679": {
     "subjectArea": "MT",
-    "courseNumber": "113",
+    "courseNumber": "PSEC2-NLP",
     "title": "PSEC2-Natural Language Processing",
     "shortName": "PSEC2-NLP",
     "isLab": true,
@@ -1684,7 +1684,7 @@
   },
   "32680": {
     "subjectArea": "MT",
-    "courseNumber": "114",
+    "courseNumber": "PSEC3-MT",
     "title": "PSEC3-Multicore Technology",
     "shortName": "PSEC3-MT",
     "isLab": true,
@@ -1695,7 +1695,7 @@
   },
   "32681": {
     "subjectArea": "MT",
-    "courseNumber": "115",
+    "courseNumber": "MT-NS",
     "title": "MTech Network Security",
     "shortName": "MT-NS",
     "isLab": false,
@@ -1706,7 +1706,7 @@
   },
   "32682": {
     "subjectArea": "MT",
-    "courseNumber": "116",
+    "courseNumber": "MT-WNS",
     "title": "MTech Wireless Networks",
     "shortName": "MT-WNS",
     "isLab": false,
@@ -1717,7 +1717,7 @@
   },
   "32683": {
     "subjectArea": "MT",
-    "courseNumber": "117",
+    "courseNumber": "MT-DFDR",
     "title": "MTech Digital Forensics and Data Recovery",
     "shortName": "MT-DFDR",
     "isLab": false,
@@ -1728,7 +1728,7 @@
   },
   "32684": {
     "subjectArea": "MT",
-    "courseNumber": "118",
+    "courseNumber": "PSEC2-CCS",
     "title": "PSEC2- Cloud Computing and Security",
     "shortName": "PSEC2-CCS",
     "isLab": true,
@@ -1739,7 +1739,7 @@
   },
   "32685": {
     "subjectArea": "MT",
-    "courseNumber": "119",
+    "courseNumber": "PSEC3-WS",
     "title": "PSEC3- Web Security",
     "shortName": "PSEC3-WS",
     "isLab": true,
@@ -1750,7 +1750,7 @@
   },
   "32686": {
     "subjectArea": "CS",
-    "courseNumber": "198",
+    "courseNumber": "MLBDA",
     "title": "Machine Learning and Big Data Analytics",
     "shortName": "MLBDA",
     "isLab": false,
@@ -1761,7 +1761,7 @@
   },
   "32687": {
     "subjectArea": "CS",
-    "courseNumber": "195",
+    "courseNumber": "DMML",
     "title": "Data Mining and Machine Learning",
     "shortName": "DMML-Lab",
     "isLab": true,
@@ -1772,7 +1772,7 @@
   },
   "32688": {
     "subjectArea": "CS",
-    "courseNumber": "196",
+    "courseNumber": "SIC",
     "title": "Security in Computing",
     "shortName": "SIC-Lab",
     "isLab": true,
@@ -1783,7 +1783,7 @@
   },
   "32689": {
     "subjectArea": "CS",
-    "courseNumber": "197",
+    "courseNumber": "ES",
     "title": "Embedded Systems",
     "shortName": "ES-Lab",
     "isLab": true,
@@ -1794,7 +1794,7 @@
   },
   "32690": {
     "subjectArea": "MT",
-    "courseNumber": "115",
+    "courseNumber": "MT-NS",
     "title": "MTech Network Security",
     "shortName": "MT-NS-Lab",
     "isLab": true,
@@ -1805,7 +1805,7 @@
   },
   "32691": {
     "subjectArea": "MT",
-    "courseNumber": "116",
+    "courseNumber": "MT-WNS",
     "title": "MTech Wireless Networks",
     "shortName": "MT-WNS-Lab",
     "isLab": true,
@@ -1816,7 +1816,7 @@
   },
   "32692": {
     "subjectArea": "MT",
-    "courseNumber": "117",
+    "courseNumber": "MT-DFDR",
     "title": "MTech Digital Forensics and Data Recovery",
     "shortName": "MT-DFDR-Lab",
     "isLab": true,
@@ -1827,7 +1827,7 @@
   },
   "32693": {
     "subjectArea": "CS",
-    "courseNumber": "199",
+    "courseNumber": "DS",
     "title": "Data Structures",
     "shortName": "DS",
     "isLab": false,
@@ -1838,7 +1838,7 @@
   },
   "32694": {
     "subjectArea": "CS",
-    "courseNumber": "198",
+    "courseNumber": "MLBDA",
     "title": "Machine Learning and Big Data Analytics",
     "shortName": "MLBDA-Tut",
     "isLab": true,
@@ -1849,7 +1849,7 @@
   },
   "32695": {
     "subjectArea": "MT",
-    "courseNumber": "120",
+    "courseNumber": "MTDE2-AA",
     "title": "MTDE2-Advanced Algorithms",
     "shortName": "MTDE2-AA",
     "isLab": true,
@@ -1860,7 +1860,7 @@
   },
   "32696": {
     "subjectArea": "MT",
-    "courseNumber": "121",
+    "courseNumber": "MTDE2-DA",
     "title": "MTDE2-Data Analytics",
     "shortName": "MTDE2-DA",
     "isLab": true,
@@ -1871,7 +1871,7 @@
   },
   "32697": {
     "subjectArea": "MT",
-    "courseNumber": "122",
+    "courseNumber": "MTDE3-BI",
     "title": "MTDE3-BIoinformatics",
     "shortName": "MTDE3-BI",
     "isLab": true,
@@ -1882,7 +1882,7 @@
   },
   "32698": {
     "subjectArea": "MT",
-    "courseNumber": "123",
+    "courseNumber": "MTDE3-CC",
     "title": "MTDE3-Advanced Compiler Construction",
     "shortName": "MTDE3-CC",
     "isLab": true,
@@ -1893,7 +1893,7 @@
   },
   "32699": {
     "subjectArea": "CS",
-    "courseNumber": "200",
+    "courseNumber": "OOPD",
     "title": "Object Oriented Programming and Design",
     "shortName": "OOPD",
     "isLab": false,
@@ -1904,7 +1904,7 @@
   },
   "32700": {
     "subjectArea": "CS",
-    "courseNumber": "200",
+    "courseNumber": "OOPD",
     "title": "Object Oriented Programming and Design",
     "shortName": "OOPD-Lab",
     "isLab": true,
@@ -1915,7 +1915,7 @@
   },
   "32701": {
     "subjectArea": "CS",
-    "courseNumber": "201",
+    "courseNumber": "OE-FOS",
     "title": "OE Fundamentals of Operating Systems",
     "shortName": "OE-FOS",
     "isLab": false,
@@ -1926,7 +1926,7 @@
   },
   "32702": {
     "subjectArea": "CS",
-    "courseNumber": "171",
+    "courseNumber": "DAA",
     "title": "Design and Analysis of Algorithm",
     "shortName": "DAA-Lab",
     "isLab": true,
@@ -1937,117 +1937,117 @@
   },
   "32703": {
     "subjectArea": "CS",
-    "courseNumber": "202",
-    "title": "DE II -  Advanced System Programming",
+    "courseNumber": "DE2-ASP",
+    "title": "DE II - Advanced System Programming",
     "shortName": "DE2-ASP-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32703
+    "credits": 4.0,
+    "primarySubjectId": 32712
   },
   "32704": {
     "subjectArea": "CS",
-    "courseNumber": "203",
+    "courseNumber": "DE2-BCT",
     "title": "DE II - BlockChain Technologies",
     "shortName": "DE2-BCT",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32704
   },
   "32705": {
     "subjectArea": "CS",
-    "courseNumber": "204",
-    "title": "DE II- BlockChain Technologies",
+    "courseNumber": "DE2-BCT",
+    "title": "DE II - BlockChain Technologies",
     "shortName": "DE2-BCT-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32705
+    "credits": 4.0,
+    "primarySubjectId": 32704
   },
   "32706": {
     "subjectArea": "CS",
-    "courseNumber": "205",
+    "courseNumber": "DE2-DSci",
     "title": "DE II - Data Science",
     "shortName": "DE2-DSci",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32706
   },
   "32707": {
     "subjectArea": "CS",
-    "courseNumber": "206",
+    "courseNumber": "DE2-DSci",
     "title": "DE II - Data Science",
     "shortName": "DE2-DSci-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32707
+    "credits": 4.0,
+    "primarySubjectId": 32706
   },
   "32708": {
     "subjectArea": "CS",
-    "courseNumber": "207",
+    "courseNumber": "DE2-PP",
     "title": "DE II - POSIX Programming",
     "shortName": "DE2-PP",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32708
   },
   "32709": {
     "subjectArea": "CS",
-    "courseNumber": "208",
+    "courseNumber": "DE2-PP",
     "title": "DE II - POSIX Programming",
     "shortName": "DE2-PP-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32709
+    "credits": 4.0,
+    "primarySubjectId": 32708
   },
   "32710": {
     "subjectArea": "CS",
-    "courseNumber": "209",
+    "courseNumber": "DE2-FSD",
     "title": "DE II - Full stack Development",
     "shortName": "DE2-FSD",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32710
   },
   "32711": {
     "subjectArea": "CS",
-    "courseNumber": "210",
+    "courseNumber": "DE2-FSD",
     "title": "DE II - Full stack Development",
     "shortName": "DE2-FSD-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32711
+    "credits": 4.0,
+    "primarySubjectId": 32710
   },
   "32712": {
     "subjectArea": "CS",
-    "courseNumber": "211",
+    "courseNumber": "DE2-ASP",
     "title": "DE II - Advanced System Programming",
     "shortName": "DE2-ASP",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32712
   },
   "32713": {
     "subjectArea": "CS",
-    "courseNumber": "212",
+    "courseNumber": "MDM-FDMS",
     "title": "MDM - CS - Fundamentals of Database Management Systems",
     "shortName": "MDM-FDMS",
     "isLab": false,
@@ -2058,7 +2058,7 @@
   },
   "32714": {
     "subjectArea": "CS",
-    "courseNumber": "213",
+    "courseNumber": "DE4-IBCS",
     "title": "Introduction of Blockchains Cryptocurrencies and Smart Contracts",
     "shortName": "DE4-IBCS",
     "isLab": true,
@@ -2069,7 +2069,7 @@
   },
   "32715": {
     "subjectArea": "CS",
-    "courseNumber": "214",
+    "courseNumber": "DE4-IBC-Lab",
     "title": "DE4: Introduction of Blockchains CSC",
     "shortName": "DE4-IBC-Lab",
     "isLab": true,
@@ -2080,40 +2080,40 @@
   },
   "32716": {
     "subjectArea": "CS",
-    "courseNumber": "215",
+    "courseNumber": "DE4-GIS",
     "title": "DE4-GIS: Geographical Information Systems",
     "shortName": "DE4-GIS",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32716
   },
   "32717": {
     "subjectArea": "CS",
-    "courseNumber": "216",
+    "courseNumber": "DE4-GIS",
     "title": "DE4-GIS: Geographical Information Systems",
     "shortName": "DE4-GIS-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32717
+    "credits": 4.0,
+    "primarySubjectId": 32716
   },
   "32718": {
     "subjectArea": "CS",
-    "courseNumber": "217",
+    "courseNumber": "DE4-GPU",
     "title": "DE4: GPU Computing",
     "shortName": "DE4-GPU",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32718
   },
   "32719": {
     "subjectArea": "CS",
-    "courseNumber": "218",
+    "courseNumber": "Honor4-IOT",
     "title": "Honor4-IOT Security",
     "shortName": "Honor4-IOT",
     "isLab": true,
@@ -2124,7 +2124,7 @@
   },
   "32720": {
     "subjectArea": "CS",
-    "courseNumber": "219",
+    "courseNumber": "Honor4-RL",
     "title": "Honor4-Reinforcement Learning",
     "shortName": "Honor4-RL",
     "isLab": true,
@@ -2135,7 +2135,7 @@
   },
   "32721": {
     "subjectArea": "CS",
-    "courseNumber": "220",
+    "courseNumber": "OE-DS",
     "title": "OE:Data Structures",
     "shortName": "OE-DS",
     "isLab": false,
@@ -2146,7 +2146,7 @@
   },
   "32722": {
     "subjectArea": "MT",
-    "courseNumber": "124",
+    "courseNumber": "PSEC2-BT",
     "title": "PSEC2- Blockchain Technology",
     "shortName": "PSEC2-BT",
     "isLab": true,
@@ -2157,7 +2157,7 @@
   },
   "32723": {
     "subjectArea": "MT",
-    "courseNumber": "125",
+    "courseNumber": "PSEC3-ITS",
     "title": "PSEC3- Internet of Things and Security",
     "shortName": "PSEC3-ITS",
     "isLab": true,
@@ -2168,7 +2168,7 @@
   },
   "32724": {
     "subjectArea": "MT",
-    "courseNumber": "126",
+    "courseNumber": "MT-DL",
     "title": "Deep Learning",
     "shortName": "MT-DL",
     "isLab": false,
@@ -2179,7 +2179,7 @@
   },
   "32725": {
     "subjectArea": "MT",
-    "courseNumber": "127",
+    "courseNumber": "MTDL-Lab",
     "title": "Deep Learning",
     "shortName": "MTDL-Lab",
     "isLab": false,
@@ -2190,7 +2190,7 @@
   },
   "32726": {
     "subjectArea": "MT",
-    "courseNumber": "128",
+    "courseNumber": "MT-GAN",
     "title": "Generative Adversarial Network",
     "shortName": "MT-GAN",
     "isLab": false,
@@ -2201,10 +2201,10 @@
   },
   "32727": {
     "subjectArea": "MT",
-    "courseNumber": "128",
+    "courseNumber": "MT-GAN",
     "title": "Generative Adversarial Network",
     "shortName": "MT-GAN-Lab",
-    "isLab": false,
+    "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
@@ -2212,7 +2212,7 @@
   },
   "32728": {
     "subjectArea": "MT",
-    "courseNumber": "129",
+    "courseNumber": "MT-OT",
     "title": "Optimization Techniques",
     "shortName": "MT-OT",
     "isLab": false,
@@ -2223,10 +2223,10 @@
   },
   "32729": {
     "subjectArea": "MT",
-    "courseNumber": "129",
+    "courseNumber": "MT-OT",
     "title": "Optimization Techniques",
     "shortName": "MT-OT-Lab",
-    "isLab": false,
+    "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
@@ -2234,7 +2234,7 @@
   },
   "32730": {
     "subjectArea": "MT",
-    "courseNumber": "130",
+    "courseNumber": "PSEC2-EAI",
     "title": "PSEC2- Explainable Artificial Intelligence",
     "shortName": "PSEC2-EAI",
     "isLab": true,
@@ -2245,7 +2245,7 @@
   },
   "32731": {
     "subjectArea": "MT",
-    "courseNumber": "131",
+    "courseNumber": "PSEC2-MLPS",
     "title": "PSEC2- ML-OPS",
     "shortName": "PSEC2-MLPS",
     "isLab": true,
@@ -2256,7 +2256,7 @@
   },
   "32732": {
     "subjectArea": "MT",
-    "courseNumber": "132",
+    "courseNumber": "PSEC3-GNN",
     "title": "PSEC3- Graph Neural Network",
     "shortName": "PSEC3-GNN",
     "isLab": true,
@@ -2267,7 +2267,7 @@
   },
   "32733": {
     "subjectArea": "MT",
-    "courseNumber": "133",
+    "courseNumber": "MT-NLP",
     "title": "PSEC3- Natural Language Processing",
     "shortName": "MT-NLP",
     "isLab": true,
@@ -2278,7 +2278,7 @@
   },
   "32734": {
     "subjectArea": "MT",
-    "courseNumber": "134",
+    "courseNumber": "MT-BDAAS",
     "title": "Big Data Analytics with Apache Spark",
     "shortName": "MT-BDAAS",
     "isLab": false,
@@ -2289,7 +2289,7 @@
   },
   "32735": {
     "subjectArea": "MT",
-    "courseNumber": "134",
+    "courseNumber": "MT-BDAAS",
     "title": "Big Data Analytics with Apache Spark",
     "shortName": "MT-BDAAS-Lab",
     "isLab": true,
@@ -2300,7 +2300,7 @@
   },
   "32736": {
     "subjectArea": "MT",
-    "courseNumber": "135",
+    "courseNumber": "MT-AMLD",
     "title": "Advanced Machine Learning and Deep",
     "shortName": "MT-AMLD",
     "isLab": false,
@@ -2311,7 +2311,7 @@
   },
   "32737": {
     "subjectArea": "MT",
-    "courseNumber": "135",
+    "courseNumber": "MT-AMLD",
     "title": "Advanced Machine Learning and Deep",
     "shortName": "MT-AMLD-Lab",
     "isLab": true,
@@ -2322,7 +2322,7 @@
   },
   "32738": {
     "subjectArea": "MT",
-    "courseNumber": "136",
+    "courseNumber": "MT-MLOS",
     "title": "ML Ops and Systems",
     "shortName": "MT-MLOS",
     "isLab": false,
@@ -2333,7 +2333,7 @@
   },
   "32739": {
     "subjectArea": "MT",
-    "courseNumber": "136",
+    "courseNumber": "MT-MLOS",
     "title": "ML Ops and Systems",
     "shortName": "MT-MLOS-Lab",
     "isLab": true,
@@ -2344,7 +2344,7 @@
   },
   "32740": {
     "subjectArea": "MT",
-    "courseNumber": "137",
+    "courseNumber": "PSEC2-CV",
     "title": "PSEC2- Computer Vision",
     "shortName": "PSEC2-CV",
     "isLab": true,
@@ -2355,7 +2355,7 @@
   },
   "32741": {
     "subjectArea": "MT",
-    "courseNumber": "138",
+    "courseNumber": "PSEC2-MTRP",
     "title": "PSEC2- R Programming",
     "shortName": "PSEC2-MTRP",
     "isLab": true,
@@ -2366,7 +2366,7 @@
   },
   "32742": {
     "subjectArea": "MT",
-    "courseNumber": "139",
+    "courseNumber": "PSEC3-GAN",
     "title": "PSEC3- Generative Adversarial Network",
     "shortName": "PSEC3-GAN",
     "isLab": true,
@@ -2377,7 +2377,7 @@
   },
   "32743": {
     "subjectArea": "MT",
-    "courseNumber": "140",
+    "courseNumber": "MT-ETCSA",
     "title": "MTech Effective Technical Communication Skills",
     "shortName": "MT-ETCSA",
     "isLab": false,
@@ -2388,7 +2388,7 @@
   },
   "32744": {
     "subjectArea": "MT",
-    "courseNumber": "141",
+    "courseNumber": "MT-LL",
     "title": "MTech Liberal Learning Course",
     "shortName": "MT-LL",
     "isLab": true,
@@ -2399,7 +2399,7 @@
   },
   "32745": {
     "subjectArea": "CS",
-    "courseNumber": "221",
+    "courseNumber": "FY-Reserved",
     "title": "FY Reserved Subject",
     "shortName": "FY-Reserved",
     "isLab": false,
@@ -2410,7 +2410,7 @@
   },
   "32746": {
     "subjectArea": "CS",
-    "courseNumber": "222",
+    "courseNumber": "OE-FA",
     "title": "OE Fundamentals of Algorithms",
     "shortName": "OE-FA",
     "isLab": false,
@@ -2421,7 +2421,7 @@
   },
   "32747": {
     "subjectArea": "CS",
-    "courseNumber": "223",
+    "courseNumber": "DS-FY",
     "title": "Discrete Structures(FY)",
     "shortName": "DS(FY)",
     "isLab": false,
@@ -2432,7 +2432,7 @@
   },
   "32748": {
     "subjectArea": "CS",
-    "courseNumber": "223",
+    "courseNumber": "DS-FY",
     "title": "Discrete Structures(FY)",
     "shortName": "DS(FY)-Tut",
     "isLab": true,
@@ -2443,7 +2443,7 @@
   },
   "32749": {
     "subjectArea": "CS",
-    "courseNumber": "224",
+    "courseNumber": "AIMA",
     "title": "AI for Multidisciplinary Applications(FY)",
     "shortName": "AIMA",
     "isLab": false,
@@ -2454,7 +2454,7 @@
   },
   "32750": {
     "subjectArea": "CS",
-    "courseNumber": "225",
+    "courseNumber": "PP-FY",
     "title": "Python Programming (FY)",
     "shortName": "PP(FY)",
     "isLab": false,
@@ -2465,7 +2465,7 @@
   },
   "32751": {
     "subjectArea": "CS",
-    "courseNumber": "225",
+    "courseNumber": "PP-FY",
     "title": "Python Programming (FY)",
     "shortName": "PP(FY)-Lab",
     "isLab": true,
@@ -2476,7 +2476,7 @@
   },
   "32752": {
     "subjectArea": "CS",
-    "courseNumber": "226",
+    "courseNumber": "WD-FY",
     "title": "Web Design(FY)",
     "shortName": "WD(FY)",
     "isLab": false,
@@ -2487,7 +2487,7 @@
   },
   "32753": {
     "subjectArea": "CS",
-    "courseNumber": "226",
+    "courseNumber": "WD-FY",
     "title": "Web Design(FY)",
     "shortName": "WD(FY)-Lab",
     "isLab": true,
@@ -2498,7 +2498,7 @@
   },
   "32754": {
     "subjectArea": "CS",
-    "courseNumber": "227",
+    "courseNumber": "PPS-FY",
     "title": "Programming for Problem Solving (FY)",
     "shortName": "PPS(FY)",
     "isLab": false,
@@ -2509,7 +2509,7 @@
   },
   "32755": {
     "subjectArea": "CS",
-    "courseNumber": "227",
+    "courseNumber": "PPS-FY",
     "title": "Programming for Problem Solving (FY)",
     "shortName": "PPS(FY)-Lab",
     "isLab": true,
@@ -2520,7 +2520,7 @@
   },
   "32756": {
     "subjectArea": "CS",
-    "courseNumber": "212",
+    "courseNumber": "MDM-FDMS",
     "title": "MDM - CS - Fundamentals of Database Management Systems",
     "shortName": "MDM-FDMSLab",
     "isLab": true,
@@ -2531,10 +2531,10 @@
   },
   "32757": {
     "subjectArea": "MT",
-    "courseNumber": "140",
+    "courseNumber": "MT-ETCSA",
     "title": "MTech Effective Technical Communication Skills",
     "shortName": "MT-ETCSALab",
-    "isLab": false,
+    "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 2.0,
@@ -2542,7 +2542,7 @@
   },
   "32758": {
     "subjectArea": "CS",
-    "courseNumber": "228",
+    "courseNumber": "Eco",
     "title": "Economics (SY)",
     "shortName": "Eco",
     "isLab": false,

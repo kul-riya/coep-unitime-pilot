@@ -1,0 +1,36 @@
+<!--
+  PURGE FILE (v5) — import this BEFORE re-importing courseOffering.xml
+
+  Purpose: delete the 5 stale standalone "-Lab" instructional offerings that
+  were created by the pre-fix minPerWeek=180 bug (classifications.py wrongly
+  refused to pair a batch-registered elective lecture with its "-Lab"
+  companion, so both got emitted as separate offerings). These 5 subject ids
+  are now absorbed as the Lab subpart of their merged Lec+Lab offering (same
+  id as the lecture see courseOffering.xml), so the old standalone record
+  under the lab's own id must be removed or it will linger as an orphaned
+  duplicate course. UniTime matches each <offering> by id, so courseNbr/title
+  here don't need to match what's currently in the database.
+
+  Steps:
+    1. Administration > Academic Sessions > Data Exchange
+    2. Upload THIS file (courseOffering-PURGE-v5.xml) -> click "Update Data"
+    3. Confirm all 5 offerings are deleted (log should say "deleted" for each)
+    4. Upload courseCatalog.xml, then the real courseOffering.xml -> "Update Data"
+-->
+<offerings campus="COEP" year="2026" term="Spr">
+  <offering id="32646" offered="false" action="delete">
+    <course id="32646" subject="CS" courseNbr="DE4-GPU-Lab" controlling="true" title=""/>
+  </offering>
+  <offering id="32703" offered="false" action="delete">
+    <course id="32703" subject="CS" courseNbr="DE2-ASP-Lab" controlling="true" title=""/>
+  </offering>
+  <offering id="32705" offered="false" action="delete">
+    <course id="32705" subject="CS" courseNbr="DE2-BCT-Lab" controlling="true" title=""/>
+  </offering>
+  <offering id="32707" offered="false" action="delete">
+    <course id="32707" subject="CS" courseNbr="DE2-DSci-Lab" controlling="true" title=""/>
+  </offering>
+  <offering id="32717" offered="false" action="delete">
+    <course id="32717" subject="CS" courseNbr="DE4-GIS-Lab" controlling="true" title=""/>
+  </offering>
+</offerings>

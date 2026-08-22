@@ -30,6 +30,9 @@ from classifications import find_course_pairs
 CAMPUS = "COEP"
 TERM = "Spr"
 YEAR = 2026
+# Use "insert" for a fresh UniTime session; "update" when re-importing offerings
+# that already exist (matched by offering id / external id).
+OFFERING_ACTION = "insert"
 OUT_DIR = Path(__file__).resolve().parent.parent / "unitime-out"
 SCRIPTS_DIR = Path(__file__).resolve().parent
 
@@ -59,7 +62,126 @@ def _room_number(room_short: str) -> str:
 
 
 def _class_id(area: str, course_nbr: str, kind: str, suffix: int) -> str:
-    return f"{area} {course_nbr} {kind} {suffix}"
+    # Prefer short code on the timetable label: "CN Lec 1" not "CS 109 Lec 1".
+    return f"{course_nbr} {kind} {suffix}"
+
+
+def _mapping_rows(
+    subj: dict | None,
+    sct_by_subject: Dict[int, List[dict]],
+    sbt_by_subject: Dict[int, List[dict]],
+    *,
+    prefer_batch: bool,
+) -> tuple[list[dict], list[dict]]:
+    """Return (class_rows, batch_rows) for a subject.
+
+    Lec sections normally come from subjectClassTeacher; batch-registered
+    electives (DE/Honor/PSEC) put their lecture batches in subjectBatchTeacher
+    instead.  Lab sections normally come from subjectBatchTeacher, but some
+    M.Tech labs (e.g. MT-GAN-Lab) are registered via subjectClassTeacher.
+    """
+    if not subj:
+        return [], []
+    sid = subj["subjectId"]
+    sct = sct_by_subject.get(sid, [])
+    sbt = sbt_by_subject.get(sid, [])
+    if prefer_batch:
+        if sbt:
+            return [], sbt
+        return sct, []
+    if sct:
+        return sct, []
+    if subj.get("batches"):
+        return [], sbt
+    return sct, sbt
+
+
+def _build_lec_sections(
+    lec_subj: dict | None,
+    sct_by_subject: Dict[int, List[dict]],
+    sbt_by_subject: Dict[int, List[dict]],
+    classes: dict,
+    batches: dict,
+) -> List[dict]:
+    if not lec_subj:
+        return []
+    sct_rows, sbt_rows = _mapping_rows(
+        lec_subj, sct_by_subject, sbt_by_subject, prefer_batch=False
+    )
+    sections: List[dict] = []
+    for row in sct_rows:
+        cls = classes.get(row["classId"])
+        if not cls:
+            continue
+        sections.append(
+            {
+                "row": row,
+                "limit": cls["classCount"] or 0,
+                "schedule_note": cls["classShortName"],
+                "via": "class",
+                "class": cls,
+                "batch": None,
+            }
+        )
+    for row in sbt_rows:
+        batch = batches.get(row["batchId"])
+        if not batch:
+            continue
+        sections.append(
+            {
+                "row": row,
+                "limit": batch["batchCount"] or 0,
+                "schedule_note": batch["batchName"],
+                "via": "batch",
+                "class": None,
+                "batch": batch,
+            }
+        )
+    return sections
+
+
+def _build_lab_sections(
+    lab_subj: dict | None,
+    sct_by_subject: Dict[int, List[dict]],
+    sbt_by_subject: Dict[int, List[dict]],
+    classes: dict,
+    batches: dict,
+) -> List[dict]:
+    if not lab_subj:
+        return []
+    sct_rows, sbt_rows = _mapping_rows(
+        lab_subj, sct_by_subject, sbt_by_subject, prefer_batch=True
+    )
+    sections: List[dict] = []
+    for row in sbt_rows:
+        batch = batches.get(row["batchId"])
+        if not batch:
+            continue
+        sections.append(
+            {
+                "row": row,
+                "limit": batch["batchCount"] or 0,
+                "schedule_note": batch["batchName"],
+                "via": "batch",
+                "class": None,
+                "batch": batch,
+            }
+        )
+    for row in sct_rows:
+        cls = classes.get(row["classId"])
+        if not cls:
+            continue
+        sections.append(
+            {
+                "row": row,
+                "limit": cls["classCount"] or 0,
+                "schedule_note": cls["classShortName"],
+                "via": "class",
+                "class": cls,
+                "batch": None,
+            }
+        )
+    return sections
 
 
 def _emit_class(
@@ -162,42 +284,32 @@ def main() -> None:
         if not info:
             continue
 
-        lec_subj: dict | None = primary if not primary.get("batches") else None
+        # A subject counts as "lab-only" (no lecture) only when it is batch-
+        # registered AND classifications.find_course_pairs could not find a
+        # lecture partner for it. Do NOT infer this from the raw ``batches``
+        # flag alone: elective lectures (DE/Honor/PSEC/MDM) are also batch-
+        # registered in Taasika, so a paired lecture (sid in lec_to_lab) must
+        # still be treated as the Lec subpart even though batches is set.
+        is_lab_only = bool(primary.get("batches")) and sid not in lec_to_lab
+        lec_subj: dict | None = None if is_lab_only else primary
         lab_subj: dict | None = None
         if sid in lec_to_lab:
             lab_subj = subj_by_id.get(lec_to_lab[sid])
-        elif primary.get("batches"):
+        elif is_lab_only:
             lab_subj = primary
-            lec_subj = None
 
-        lec_rows = sct_by_subject.get(lec_subj["subjectId"], []) if lec_subj else []
-        lab_rows = sbt_by_subject.get(lab_subj["subjectId"], []) if lab_subj else []
+        lec_sections = _build_lec_sections(
+            lec_subj, sct_by_subject, sbt_by_subject, classes, batches
+        )
+        lab_sections = _build_lab_sections(
+            lab_subj, sct_by_subject, sbt_by_subject, classes, batches
+        )
 
-        if not lec_rows and not lab_rows:
+        if not lec_sections and not lab_sections:
             skipped_no_mappings.append(f"{sid}:{primary['subjectShortName']}")
             continue
 
-        config_limit = 0
-        lec_sections: List[dict] = []
-        for row in lec_rows:
-            cls = classes.get(row["classId"])
-            if not cls:
-                continue
-            limit = cls["classCount"] or 0
-            config_limit += limit
-            lec_sections.append({"row": row, "class": cls, "limit": limit})
-
-        lab_sections: List[dict] = []
-        lab_limit_sum = 0
-        for row in lab_rows:
-            batch = batches.get(row["batchId"])
-            if not batch:
-                continue
-            limit = batch["batchCount"] or 0
-            lab_limit_sum += limit
-            lab_sections.append({"row": row, "batch": batch, "limit": limit})
-        if lab_limit_sum > config_limit:
-            config_limit = lab_limit_sum
+        config_limit = sum(entry["limit"] for entry in lec_sections + lab_sections)
         if config_limit == 0:
             config_limit = 30
 
@@ -206,27 +318,27 @@ def main() -> None:
         title = info["title"]
 
         lec_min_per_week = 0
-        if lec_subj:
+        if lec_subj and lec_sections:
             lec_min_per_week = (lec_subj.get("eachSlot") or 0) * (lec_subj.get("nSlots") or 0) * 60
         lab_min_per_week = 0
-        if lab_subj:
+        if lab_subj and lab_sections:
             lab_min_per_week = (lab_subj.get("eachSlot") or 0) * (lab_subj.get("nSlots") or 0) * 60
 
         used_offering_ids.append(sid)
-        lines.append(f'  <offering id="{sid}" offered="true" action="update">')
+        lines.append(f'  <offering id="{sid}" offered="true" action="{OFFERING_ACTION}">')
         lines.append(
             f'    <course id="{sid}" subject="{xml_escape(area)}" '
             f'courseNbr="{xml_escape(course_nbr)}" controlling="true" '
-            f'title="{xml_escape(title)}" scheduleBookNote=""/>'
+            f'title="{xml_escape(title)}" '
+            f'scheduleBookNote="{xml_escape(course_nbr)}"/>'
         )
         lines.append(f'    <config name="1" limit="{config_limit}">')
-        if lec_min_per_week > 0:
+        if lec_min_per_week > 0 and lec_sections:
             lines.append(f'      <subpart type="Lec" suffix="" minPerWeek="{lec_min_per_week}"/>')
-        if lab_min_per_week > 0:
+        if lab_min_per_week > 0 and lab_sections:
             lines.append(f'      <subpart type="Lab" suffix="" minPerWeek="{lab_min_per_week}"/>')
 
         for idx, entry in enumerate(lec_sections, start=1):
-            cls = entry["class"]
             row = entry["row"]
             cid = _class_id(area, course_nbr, "Lec", idx)
             room_refs: List[dict] = []
@@ -234,24 +346,33 @@ def main() -> None:
                 room = rooms.get(sr["roomId"])
                 if room:
                     room_refs.append(room)
-            for cr in class_rooms_by_class.get(cls["classId"], [])[:1]:
-                room = rooms.get(cr["roomId"])
-                if room and (not room_refs or room["roomId"] != room_refs[0]["roomId"]):
-                    room_refs.append(room)
+            if entry["via"] == "class":
+                cls = entry["class"]
+                for cr in class_rooms_by_class.get(cls["classId"], [])[:1]:
+                    room = rooms.get(cr["roomId"])
+                    if room and (not room_refs or room["roomId"] != room_refs[0]["roomId"]):
+                        room_refs.append(room)
+                offset_key = (lec_subj["subjectId"], f"Lec-class-{cls['classId']}")
+            else:
+                batch = entry["batch"]
+                for br in batch_rooms_by_batch.get(batch["batchId"], [])[:1]:
+                    room = rooms.get(br["roomId"])
+                    if room and (not room_refs or room["roomId"] != room_refs[0]["roomId"]):
+                        room_refs.append(room)
+                offset_key = (lec_subj["subjectId"], f"Lec-batch-{batch['batchId']}")
             _emit_class(
                 lines,
                 cid,
                 "Lec",
                 idx,
                 entry["limit"],
-                cls["classShortName"],
+                entry["schedule_note"],
                 room_refs,
                 row.get("teacherId"),
             )
-            section_offset[(lec_subj["subjectId"], f"Lec-class-{cls['classId']}")] = idx
+            section_offset[offset_key] = idx
 
         for idx, entry in enumerate(lab_sections, start=1):
-            batch = entry["batch"]
             row = entry["row"]
             cid = _class_id(area, course_nbr, "Lab", idx)
             room_refs = []
@@ -259,21 +380,31 @@ def main() -> None:
                 room = rooms.get(sr["roomId"])
                 if room:
                     room_refs.append(room)
-            for br in batch_rooms_by_batch.get(batch["batchId"], [])[:1]:
-                room = rooms.get(br["roomId"])
-                if room and (not room_refs or room["roomId"] != room_refs[0]["roomId"]):
-                    room_refs.append(room)
+            if entry["via"] == "batch":
+                batch = entry["batch"]
+                for br in batch_rooms_by_batch.get(batch["batchId"], [])[:1]:
+                    room = rooms.get(br["roomId"])
+                    if room and (not room_refs or room["roomId"] != room_refs[0]["roomId"]):
+                        room_refs.append(room)
+                offset_key = (lab_subj["subjectId"], f"Lab-batch-{batch['batchId']}")
+            else:
+                cls = entry["class"]
+                for cr in class_rooms_by_class.get(cls["classId"], [])[:1]:
+                    room = rooms.get(cr["roomId"])
+                    if room and (not room_refs or room["roomId"] != room_refs[0]["roomId"]):
+                        room_refs.append(room)
+                offset_key = (lab_subj["subjectId"], f"Lab-class-{cls['classId']}")
             _emit_class(
                 lines,
                 cid,
                 "Lab",
                 idx,
                 entry["limit"],
-                batch["batchName"],
+                entry["schedule_note"],
                 room_refs,
                 row.get("teacherId"),
             )
-            section_offset[(lab_subj["subjectId"], f"Lab-batch-{batch['batchId']}")] = idx
+            section_offset[offset_key] = idx
 
         lines.append("    </config>")
         lines.append("  </offering>")

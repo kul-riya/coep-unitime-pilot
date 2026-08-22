@@ -51,13 +51,17 @@ defined by an earlier file:
    CSED and the New CSE Building.  Override after import if needed.
 10. `staff.xml`                 - 113 instructors with `positionType`
     derived from each teacher's `minHrs`/`maxHrs` envelope.
-11. `courseCatalog.xml`         - 184 courses across 3 subject areas (`CS`,
+11. `courseCatalog.xml`         - 165 courses across 3 subject areas (`CS`,
     `MT`, `IFC`).  Lec subjects and their matching Lab / Tut subjects in
-    Taasika (e.g. `CN` + `CN-Lab`, `SIC` + `SIC-Lab`, `OOPD` + `OOPD-Lab`) are
+    Taasika (e.g. `CN` + `CN-Lab`, `SIC` + `SIC-Lab`, `OOPD` + `OOPD-Lab`,
+    and batch-registered electives like `DE2-BCT` + `DE2-BCT-Lab`) are
     merged into a single UniTime course.  Credits follow the Indian formula
     `1 cr / lec hr + 0.5 cr / lab hr`, so a 3-hr Lec + 2-hr Lab subject pair
-    becomes a 4-credit course.
-12. `courseOffering.xml`        - 63 offerings.  Each merged Lec+Lab course
+    becomes a 4-credit course.  Pairing uses `classifications.find_course_pairs()`,
+    which matches on the `-Lab`/`-Tut` shortName suffix regardless of the
+    Taasika `batches` flag on either side (batch-registered elective lectures
+    have `batches=1` too, same as labs — see `solutions/HANDOFF.md`).
+12. `courseOffering.xml`        - 58 offerings.  Each merged Lec+Lab course
     has one `<config>` with two `<subpart>`s (`Lec` and `Lab`); the offering
     holds one `<class type="Lec">` per Taasika class
     (subjectClassTeacher) and one `<class type="Lab">` per Taasika batch

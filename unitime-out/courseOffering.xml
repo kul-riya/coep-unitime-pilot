@@ -6,7 +6,7 @@
 -->
 
 <offerings campus="COEP" year="2026" term="Spr" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from Taasika snapshot 240" includeExams="none">
-  <offering id="32529" offered="true" action="update">
+  <offering id="32529" offered="true" action="insert">
     <course id="32529" subject="CS" courseNbr="CoI" controlling="true" title="Constitution of India" scheduleBookNote="CoI"/>
     <config name="1" limit="160">
       <subpart type="Lec" suffix="" minPerWeek="120"/>
@@ -22,7 +22,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32534" offered="true" action="update">
+  <offering id="32534" offered="true" action="insert">
     <course id="32534" subject="CS" courseNbr="CO" controlling="true" title="Computer Organization" scheduleBookNote="CO"/>
     <config name="1" limit="160">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
@@ -38,11 +38,10 @@
       </class>
     </config>
   </offering>
-  <offering id="32537" offered="true" action="update">
+  <offering id="32537" offered="true" action="insert">
     <course id="32537" subject="CS" courseNbr="AI" controlling="true" title="Artificial Intelligence" scheduleBookNote="AI"/>
     <config name="1" limit="160">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
-      <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="AI Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="TY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
         <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
@@ -55,9 +54,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32539" offered="true" action="update">
+  <offering id="32539" offered="true" action="insert">
     <course id="32539" subject="CS" courseNbr="CN" controlling="true" title="Computer Networks" scheduleBookNote="CN"/>
-    <config name="1" limit="220">
+    <config name="1" limit="380">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="CN Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="TY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -126,7 +125,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32572" offered="true" action="update">
+  <offering id="32572" offered="true" action="insert">
     <course id="32572" subject="CS" courseNbr="MDM-DSFA" controlling="true" title="MDM-Data Structures, Files and Algorithms" scheduleBookNote="MDM-DSFA"/>
     <config name="1" limit="160">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
@@ -142,10 +141,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32590" offered="true" action="update">
+  <offering id="32590" offered="true" action="insert">
     <course id="32590" subject="CS" courseNbr="DTL" controlling="true" title="Development Tools Labrotary" scheduleBookNote="DTL"/>
     <config name="1" limit="220">
-      <subpart type="Lec" suffix="" minPerWeek="60"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="DTL Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="SY1-S1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
@@ -202,9 +200,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32640" offered="true" action="update">
+  <offering id="32640" offered="true" action="insert">
     <course id="32640" subject="CS" courseNbr="DAA" controlling="true" title="Design and Analysis of Algorithm" scheduleBookNote="DAA"/>
-    <config name="1" limit="220">
+    <config name="1" limit="380">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="DAA Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="TY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -271,32 +269,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32646" offered="true" action="update">
-    <course id="32646" subject="CS" courseNbr="DE4-GPU-Lab" controlling="true" title="DE4: GPU Computing" scheduleBookNote="DE4-GPU-Lab"/>
-    <config name="1" limit="80">
-      <subpart type="Lab" suffix="" minPerWeek="120"/>
-      <class id="DE4-GPU-Lab Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-B4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
-        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
-        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
-        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
-      </class>
-      <class id="DE4-GPU-Lab Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT1-B5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
-        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
-        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
-        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
-      </class>
-      <class id="DE4-GPU-Lab Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="BT2-B6" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
-        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
-        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
-        <instructor id="taasika-teacher-18836" share="100" lead="true"/>
-      </class>
-      <class id="DE4-GPU-Lab Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="BT2-B5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
-        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
-        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
-      </class>
-    </config>
-  </offering>
-  <offering id="32648" offered="true" action="update">
+  <offering id="32648" offered="true" action="insert">
     <course id="32648" subject="CS" courseNbr="Minor4-DS" controlling="true" title="Minor4-Data Science" scheduleBookNote="Minor4-DS"/>
     <config name="1" limit="80">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
@@ -306,9 +279,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32661" offered="true" action="update">
+  <offering id="32661" offered="true" action="insert">
     <course id="32661" subject="CS" courseNbr="TOC" controlling="true" title="Theory of Computation" scheduleBookNote="TOC"/>
-    <config name="1" limit="220">
+    <config name="1" limit="380">
       <subpart type="Lec" suffix="" minPerWeek="120"/>
       <subpart type="Lab" suffix="" minPerWeek="60"/>
       <class id="TOC Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -377,7 +350,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32673" offered="true" action="update">
+  <offering id="32673" offered="true" action="insert">
     <course id="32673" subject="MT" courseNbr="PSEC3-DL" controlling="true" title="PSEC3-Deep Learning" scheduleBookNote="PSEC3-DL"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -387,9 +360,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32675" offered="true" action="update">
+  <offering id="32675" offered="true" action="insert">
     <course id="32675" subject="CS" courseNbr="DMML" controlling="true" title="Data Mining and Machine Learning" scheduleBookNote="DMML"/>
-    <config name="1" limit="40">
+    <config name="1" limit="60">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="DMML Lec 1" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -408,9 +381,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32676" offered="true" action="update">
+  <offering id="32676" offered="true" action="insert">
     <course id="32676" subject="CS" courseNbr="SIC" controlling="true" title="Security in Computing" scheduleBookNote="SIC"/>
-    <config name="1" limit="40">
+    <config name="1" limit="60">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="SIC Lec 1" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -429,9 +402,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32677" offered="true" action="update">
+  <offering id="32677" offered="true" action="insert">
     <course id="32677" subject="CS" courseNbr="ES" controlling="true" title="Embedded Systems" scheduleBookNote="ES"/>
-    <config name="1" limit="40">
+    <config name="1" limit="60">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="ES Lec 1" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -450,7 +423,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32678" offered="true" action="update">
+  <offering id="32678" offered="true" action="insert">
     <course id="32678" subject="MT" courseNbr="PSEC2-CCV" controlling="true" title="PSEC2-Cloud Computing and Virtualization" scheduleBookNote="PSEC2-CCV"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -460,7 +433,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32679" offered="true" action="update">
+  <offering id="32679" offered="true" action="insert">
     <course id="32679" subject="MT" courseNbr="PSEC2-NLP" controlling="true" title="PSEC2-Natural Language Processing" scheduleBookNote="PSEC2-NLP"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -471,7 +444,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32680" offered="true" action="update">
+  <offering id="32680" offered="true" action="insert">
     <course id="32680" subject="MT" courseNbr="PSEC3-MT" controlling="true" title="PSEC3-Multicore Technology" scheduleBookNote="PSEC3-MT"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -482,9 +455,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32681" offered="true" action="update">
+  <offering id="32681" offered="true" action="insert">
     <course id="32681" subject="MT" courseNbr="MT-NS" controlling="true" title="MTech Network Security" scheduleBookNote="MT-NS"/>
-    <config name="1" limit="40">
+    <config name="1" limit="65">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="MT-NS Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -503,9 +476,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32682" offered="true" action="update">
+  <offering id="32682" offered="true" action="insert">
     <course id="32682" subject="MT" courseNbr="MT-WNS" controlling="true" title="MTech Wireless Networks" scheduleBookNote="MT-WNS"/>
-    <config name="1" limit="40">
+    <config name="1" limit="65">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="MT-WNS Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -524,9 +497,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32683" offered="true" action="update">
+  <offering id="32683" offered="true" action="insert">
     <course id="32683" subject="MT" courseNbr="MT-DFDR" controlling="true" title="MTech Digital Forensics and Data Recovery" scheduleBookNote="MT-DFDR"/>
-    <config name="1" limit="40">
+    <config name="1" limit="65">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="MT-DFDR Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -545,7 +518,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32684" offered="true" action="update">
+  <offering id="32684" offered="true" action="insert">
     <course id="32684" subject="MT" courseNbr="PSEC2-CCS" controlling="true" title="PSEC2- Cloud Computing and Security" scheduleBookNote="PSEC2-CCS"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -555,7 +528,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32685" offered="true" action="update">
+  <offering id="32685" offered="true" action="insert">
     <course id="32685" subject="MT" courseNbr="PSEC3-WS" controlling="true" title="PSEC3- Web Security" scheduleBookNote="PSEC3-WS"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -566,9 +539,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32699" offered="true" action="update">
+  <offering id="32699" offered="true" action="insert">
     <course id="32699" subject="CS" courseNbr="OOPD" controlling="true" title="Object Oriented Programming and Design" scheduleBookNote="OOPD"/>
-    <config name="1" limit="220">
+    <config name="1" limit="380">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="OOPD Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -636,7 +609,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32701" offered="true" action="update">
+  <offering id="32701" offered="true" action="insert">
     <course id="32701" subject="CS" courseNbr="OE-FOS" controlling="true" title="OE Fundamentals of Operating Systems" scheduleBookNote="OE-FOS"/>
     <config name="1" limit="200">
       <subpart type="Lec" suffix="" minPerWeek="120"/>
@@ -651,126 +624,111 @@
       </class>
     </config>
   </offering>
-  <offering id="32703" offered="true" action="update">
-    <course id="32703" subject="CS" courseNbr="DE2-ASP-Lab" controlling="true" title="DE II -  Advanced System Programming" scheduleBookNote="DE2-ASP-Lab"/>
-    <config name="1" limit="60">
-      <subpart type="Lab" suffix="" minPerWeek="120"/>
-      <class id="DE2-ASP-Lab Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
-        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
-        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
-        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
-      </class>
-      <class id="DE2-ASP-Lab Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY2-T5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
-        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
-        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
-        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
-      </class>
-      <class id="DE2-ASP-Lab Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY2-T6" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
-        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
-        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
-        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
-      </class>
-    </config>
-  </offering>
-  <offering id="32704" offered="true" action="update">
+  <offering id="32704" offered="true" action="insert">
     <course id="32704" subject="CS" courseNbr="DE2-BCT" controlling="true" title="DE II - BlockChain Technologies" scheduleBookNote="DE2-BCT"/>
-    <config name="1" limit="80">
-      <subpart type="Lab" suffix="" minPerWeek="180"/>
-      <class id="DE2-BCT Lab 1" type="Lab" suffix="1" limit="40" scheduleNote="TY1-BCT" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+    <config name="1" limit="160">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="DE2-BCT Lec 1" type="Lec" suffix="1" limit="40" scheduleNote="TY1-BCT" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
         <instructor id="taasika-teacher-18923" share="100" lead="true"/>
       </class>
-      <class id="DE2-BCT Lab 2" type="Lab" suffix="2" limit="40" scheduleNote="TY2-BCT" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-BCT Lec 2" type="Lec" suffix="2" limit="40" scheduleNote="TY2-BCT" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
         <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
         <instructor id="taasika-teacher-18923" share="100" lead="true"/>
       </class>
-    </config>
-  </offering>
-  <offering id="32705" offered="true" action="update">
-    <course id="32705" subject="CS" courseNbr="DE2-BCT-Lab" controlling="true" title="DE II- BlockChain Technologies" scheduleBookNote="DE2-BCT-Lab"/>
-    <config name="1" limit="80">
-      <subpart type="Lab" suffix="" minPerWeek="120"/>
-      <class id="DE2-BCT-Lab Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-BCT Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
         <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
         <instructor id="taasika-teacher-18923" share="100" lead="true"/>
       </class>
-      <class id="DE2-BCT-Lab Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY1-T2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-BCT Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY1-T2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
         <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
         <instructor id="taasika-teacher-18923" share="100" lead="true"/>
       </class>
-      <class id="DE2-BCT-Lab Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY2-T1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-BCT Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY2-T1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
         <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
         <instructor id="taasika-teacher-18923" share="100" lead="true"/>
       </class>
-      <class id="DE2-BCT-Lab Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="TY2-T2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-BCT Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="TY2-T2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
         <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
         <instructor id="taasika-teacher-18923" share="100" lead="true"/>
       </class>
     </config>
   </offering>
-  <offering id="32706" offered="true" action="update">
+  <offering id="32706" offered="true" action="insert">
     <course id="32706" subject="CS" courseNbr="DE2-DSci" controlling="true" title="DE II - Data Science" scheduleBookNote="DE2-DSci"/>
-    <config name="1" limit="80">
-      <subpart type="Lab" suffix="" minPerWeek="180"/>
-      <class id="DE2-DSci Lab 1" type="Lab" suffix="1" limit="40" scheduleNote="TY1-DSci" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+    <config name="1" limit="160">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="DE2-DSci Lec 1" type="Lec" suffix="1" limit="40" scheduleNote="TY1-DSci" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
         <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
         <instructor id="taasika-teacher-18847" share="100" lead="true"/>
       </class>
-      <class id="DE2-DSci Lab 2" type="Lab" suffix="2" limit="40" scheduleNote="TY2-DSci" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-DSci Lec 2" type="Lec" suffix="2" limit="40" scheduleNote="TY2-DSci" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
         <instructor id="taasika-teacher-18847" share="100" lead="true"/>
       </class>
-    </config>
-  </offering>
-  <offering id="32707" offered="true" action="update">
-    <course id="32707" subject="CS" courseNbr="DE2-DSci-Lab" controlling="true" title="DE II - Data Science" scheduleBookNote="DE2-DSci-Lab"/>
-    <config name="1" limit="80">
-      <subpart type="Lab" suffix="" minPerWeek="120"/>
-      <class id="DE2-DSci-Lab Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-DSci Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
         <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
         <instructor id="taasika-teacher-18847" share="100" lead="true"/>
       </class>
-      <class id="DE2-DSci-Lab Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY1-T4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-DSci Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY1-T4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
         <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
         <instructor id="taasika-teacher-18847" share="100" lead="true"/>
       </class>
-      <class id="DE2-DSci-Lab Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY2-T3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-DSci Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY2-T3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
         <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
         <instructor id="taasika-teacher-18847" share="100" lead="true"/>
       </class>
-      <class id="DE2-DSci-Lab Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="TY2-T4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-DSci Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="TY2-T4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
         <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
         <instructor id="taasika-teacher-18847" share="100" lead="true"/>
       </class>
     </config>
   </offering>
-  <offering id="32712" offered="true" action="update">
+  <offering id="32712" offered="true" action="insert">
     <course id="32712" subject="CS" courseNbr="DE2-ASP" controlling="true" title="DE II - Advanced System Programming" scheduleBookNote="DE2-ASP"/>
-    <config name="1" limit="80">
-      <subpart type="Lab" suffix="" minPerWeek="180"/>
-      <class id="DE2-ASP Lab 1" type="Lab" suffix="1" limit="40" scheduleNote="TY1-ASP" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+    <config name="1" limit="140">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="DE2-ASP Lec 1" type="Lec" suffix="1" limit="40" scheduleNote="TY1-ASP" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
         <instructor id="taasika-teacher-18837" share="100" lead="true"/>
       </class>
-      <class id="DE2-ASP Lab 2" type="Lab" suffix="2" limit="40" scheduleNote="TY2-ASP" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE2-ASP Lec 2" type="Lec" suffix="2" limit="40" scheduleNote="TY2-ASP" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+      <class id="DE2-ASP Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="TY1-T5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+      <class id="DE2-ASP Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="TY2-T5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+        <instructor id="taasika-teacher-18837" share="100" lead="true"/>
+      </class>
+      <class id="DE2-ASP Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="TY2-T6" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+        <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
         <instructor id="taasika-teacher-18837" share="100" lead="true"/>
       </class>
     </config>
   </offering>
-  <offering id="32713" offered="true" action="update">
+  <offering id="32713" offered="true" action="insert">
     <course id="32713" subject="CS" courseNbr="MDM-FDMS" controlling="true" title="MDM - CS - Fundamentals of Database Management Systems" scheduleBookNote="MDM-FDMS"/>
-    <config name="1" limit="160">
+    <config name="1" limit="280">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="MDM-FDMS Lec 1" type="Lec" suffix="1" limit="80" scheduleNote="TY-MDM1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -811,7 +769,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32714" offered="true" action="update">
+  <offering id="32714" offered="true" action="insert">
     <course id="32714" subject="CS" courseNbr="DE4-IBCS" controlling="true" title="Introduction of Blockchains Cryptocurrencies and Smart Contracts" scheduleBookNote="DE4-IBCS"/>
     <config name="1" limit="80">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -825,7 +783,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32715" offered="true" action="update">
+  <offering id="32715" offered="true" action="insert">
     <course id="32715" subject="CS" courseNbr="DE4-IBC-Lab" controlling="true" title="DE4: Introduction of Blockchains CSC" scheduleBookNote="DE4-IBC-Lab"/>
     <config name="1" limit="60">
       <subpart type="Lab" suffix="" minPerWeek="120"/>
@@ -844,61 +802,76 @@
       </class>
     </config>
   </offering>
-  <offering id="32716" offered="true" action="update">
+  <offering id="32716" offered="true" action="insert">
     <course id="32716" subject="CS" courseNbr="DE4-GIS" controlling="true" title="DE4-GIS: Geographical Information Systems" scheduleBookNote="DE4-GIS"/>
-    <config name="1" limit="40">
-      <subpart type="Lab" suffix="" minPerWeek="180"/>
-      <class id="DE4-GIS Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-GIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+    <config name="1" limit="120">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="DE4-GIS Lec 1" type="Lec" suffix="1" limit="20" scheduleNote="BT1-GIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
         <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
         <instructor id="taasika-teacher-18849" share="100" lead="true"/>
       </class>
-      <class id="DE4-GIS Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT2-GIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE4-GIS Lec 2" type="Lec" suffix="2" limit="20" scheduleNote="BT2-GIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
         <room id="taasika-room-8968" building="CSED" roomNbr="Cogni-5"/>
         <instructor id="taasika-teacher-18849" share="100" lead="true"/>
       </class>
-    </config>
-  </offering>
-  <offering id="32717" offered="true" action="update">
-    <course id="32717" subject="CS" courseNbr="DE4-GIS-Lab" controlling="true" title="DE4-GIS: Geographical Information Systems" scheduleBookNote="DE4-GIS-Lab"/>
-    <config name="1" limit="80">
-      <subpart type="Lab" suffix="" minPerWeek="120"/>
-      <class id="DE4-GIS-Lab Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-B2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE4-GIS Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-B2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
         <instructor id="taasika-teacher-18849" share="100" lead="true"/>
       </class>
-      <class id="DE4-GIS-Lab Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT1-B3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE4-GIS Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT1-B3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
         <instructor id="taasika-teacher-18849" share="100" lead="true"/>
       </class>
-      <class id="DE4-GIS-Lab Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="BT2-B4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE4-GIS Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="BT2-B4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
         <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
         <instructor id="taasika-teacher-18928" share="100" lead="true"/>
       </class>
-      <class id="DE4-GIS-Lab Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="BT2-B3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE4-GIS Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="BT2-B3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
         <instructor id="taasika-teacher-18928" share="100" lead="true"/>
       </class>
     </config>
   </offering>
-  <offering id="32718" offered="true" action="update">
+  <offering id="32718" offered="true" action="insert">
     <course id="32718" subject="CS" courseNbr="DE4-GPU" controlling="true" title="DE4: GPU Computing" scheduleBookNote="DE4-GPU"/>
-    <config name="1" limit="40">
-      <subpart type="Lab" suffix="" minPerWeek="180"/>
-      <class id="DE4-GPU Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-GPU" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+    <config name="1" limit="120">
+      <subpart type="Lec" suffix="" minPerWeek="180"/>
+      <subpart type="Lab" suffix="" minPerWeek="120"/>
+      <class id="DE4-GPU Lec 1" type="Lec" suffix="1" limit="20" scheduleNote="BT1-GPU" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
         <instructor id="taasika-teacher-18840" share="100" lead="true"/>
       </class>
-      <class id="DE4-GPU Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT2-GPU" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="DE4-GPU Lec 2" type="Lec" suffix="2" limit="20" scheduleNote="BT2-GPU" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
+      </class>
+      <class id="DE4-GPU Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="BT1-B4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
+      </class>
+      <class id="DE4-GPU Lab 2" type="Lab" suffix="2" limit="20" scheduleNote="BT1-B5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+        <instructor id="taasika-teacher-18840" share="100" lead="true"/>
+      </class>
+      <class id="DE4-GPU Lab 3" type="Lab" suffix="3" limit="20" scheduleNote="BT2-B6" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <instructor id="taasika-teacher-18836" share="100" lead="true"/>
+      </class>
+      <class id="DE4-GPU Lab 4" type="Lab" suffix="4" limit="20" scheduleNote="BT2-B5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
         <instructor id="taasika-teacher-18840" share="100" lead="true"/>
       </class>
     </config>
   </offering>
-  <offering id="32719" offered="true" action="update">
+  <offering id="32719" offered="true" action="insert">
     <course id="32719" subject="CS" courseNbr="Honor4-IOT" controlling="true" title="Honor4-IOT Security" scheduleBookNote="Honor4-IOT"/>
     <config name="1" limit="60">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -913,7 +886,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32720" offered="true" action="update">
+  <offering id="32720" offered="true" action="insert">
     <course id="32720" subject="CS" courseNbr="Honor4-RL" controlling="true" title="Honor4-Reinforcement Learning" scheduleBookNote="Honor4-RL"/>
     <config name="1" limit="60">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -927,7 +900,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32721" offered="true" action="update">
+  <offering id="32721" offered="true" action="insert">
     <course id="32721" subject="CS" courseNbr="OE-DS" controlling="true" title="OE:Data Structures" scheduleBookNote="OE-DS"/>
     <config name="1" limit="80">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
@@ -937,7 +910,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32722" offered="true" action="update">
+  <offering id="32722" offered="true" action="insert">
     <course id="32722" subject="MT" courseNbr="PSEC2-BT" controlling="true" title="PSEC2- Blockchain Technology" scheduleBookNote="PSEC2-BT"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -947,7 +920,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32723" offered="true" action="update">
+  <offering id="32723" offered="true" action="insert">
     <course id="32723" subject="MT" courseNbr="PSEC3-ITS" controlling="true" title="PSEC3- Internet of Things and Security" scheduleBookNote="PSEC3-ITS"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -957,7 +930,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32724" offered="true" action="update">
+  <offering id="32724" offered="true" action="insert">
     <course id="32724" subject="MT" courseNbr="MT-DL" controlling="true" title="Deep Learning" scheduleBookNote="MT-DL"/>
     <config name="1" limit="25">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
@@ -967,7 +940,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32725" offered="true" action="update">
+  <offering id="32725" offered="true" action="insert">
     <course id="32725" subject="MT" courseNbr="MTDL-Lab" controlling="true" title="Deep Learning" scheduleBookNote="MTDL-Lab"/>
     <config name="1" limit="25">
       <subpart type="Lec" suffix="" minPerWeek="120"/>
@@ -978,29 +951,39 @@
       </class>
     </config>
   </offering>
-  <offering id="32726" offered="true" action="update">
+  <offering id="32726" offered="true" action="insert">
     <course id="32726" subject="MT" courseNbr="MT-GAN" controlling="true" title="Generative Adversarial Network" scheduleBookNote="MT-GAN"/>
-    <config name="1" limit="25">
+    <config name="1" limit="50">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="MT-GAN Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
         <instructor id="taasika-teacher-18931" share="100" lead="true"/>
       </class>
+      <class id="MT-GAN Lab 1" type="Lab" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18865" share="100" lead="true"/>
+      </class>
     </config>
   </offering>
-  <offering id="32728" offered="true" action="update">
+  <offering id="32728" offered="true" action="insert">
     <course id="32728" subject="MT" courseNbr="MT-OT" controlling="true" title="Optimization Techniques" scheduleBookNote="MT-OT"/>
-    <config name="1" limit="25">
+    <config name="1" limit="50">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="MT-OT Lec 1" type="Lec" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
         <instructor id="taasika-teacher-18928" share="100" lead="true"/>
       </class>
+      <class id="MT-OT Lab 1" type="Lab" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18928" share="100" lead="true"/>
+      </class>
     </config>
   </offering>
-  <offering id="32730" offered="true" action="update">
+  <offering id="32730" offered="true" action="insert">
     <course id="32730" subject="MT" courseNbr="PSEC2-EAI" controlling="true" title="PSEC2- Explainable Artificial Intelligence" scheduleBookNote="PSEC2-EAI"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -1010,7 +993,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32731" offered="true" action="update">
+  <offering id="32731" offered="true" action="insert">
     <course id="32731" subject="MT" courseNbr="PSEC2-MLPS" controlling="true" title="PSEC2- ML-OPS" scheduleBookNote="PSEC2-MLPS"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -1020,7 +1003,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32732" offered="true" action="update">
+  <offering id="32732" offered="true" action="insert">
     <course id="32732" subject="MT" courseNbr="PSEC3-GNN" controlling="true" title="PSEC3- Graph Neural Network" scheduleBookNote="PSEC3-GNN"/>
     <config name="1" limit="20">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -1030,7 +1013,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32733" offered="true" action="update">
+  <offering id="32733" offered="true" action="insert">
     <course id="32733" subject="MT" courseNbr="MT-NLP" controlling="true" title="PSEC3- Natural Language Processing" scheduleBookNote="MT-NLP"/>
     <config name="1" limit="60">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -1044,9 +1027,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32734" offered="true" action="update">
+  <offering id="32734" offered="true" action="insert">
     <course id="32734" subject="MT" courseNbr="MT-BDAAS" controlling="true" title="Big Data Analytics with Apache Spark" scheduleBookNote="MT-BDAAS"/>
-    <config name="1" limit="80">
+    <config name="1" limit="140">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="MT-BDAAS Lec 1" type="Lec" suffix="1" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -1072,9 +1055,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32736" offered="true" action="update">
+  <offering id="32736" offered="true" action="insert">
     <course id="32736" subject="MT" courseNbr="MT-AMLD" controlling="true" title="Advanced Machine Learning and Deep" scheduleBookNote="MT-AMLD"/>
-    <config name="1" limit="80">
+    <config name="1" limit="140">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="MT-AMLD Lec 1" type="Lec" suffix="1" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -1104,9 +1087,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32738" offered="true" action="update">
+  <offering id="32738" offered="true" action="insert">
     <course id="32738" subject="MT" courseNbr="MT-MLOS" controlling="true" title="ML Ops and Systems" scheduleBookNote="MT-MLOS"/>
-    <config name="1" limit="80">
+    <config name="1" limit="140">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="MT-MLOS Lec 1" type="Lec" suffix="1" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -1136,7 +1119,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32740" offered="true" action="update">
+  <offering id="32740" offered="true" action="insert">
     <course id="32740" subject="MT" courseNbr="PSEC2-CV" controlling="true" title="PSEC2- Computer Vision" scheduleBookNote="PSEC2-CV"/>
     <config name="1" limit="40">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -1146,7 +1129,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32741" offered="true" action="update">
+  <offering id="32741" offered="true" action="insert">
     <course id="32741" subject="MT" courseNbr="PSEC2-MTRP" controlling="true" title="PSEC2- R Programming" scheduleBookNote="PSEC2-MTRP"/>
     <config name="1" limit="40">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -1156,7 +1139,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32742" offered="true" action="update">
+  <offering id="32742" offered="true" action="insert">
     <course id="32742" subject="MT" courseNbr="PSEC3-GAN" controlling="true" title="PSEC3- Generative Adversarial Network" scheduleBookNote="PSEC3-GAN"/>
     <config name="1" limit="40">
       <subpart type="Lab" suffix="" minPerWeek="180"/>
@@ -1166,9 +1149,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32743" offered="true" action="update">
+  <offering id="32743" offered="true" action="insert">
     <course id="32743" subject="MT" courseNbr="MT-ETCSA" controlling="true" title="MTech Effective Technical Communication Skills" scheduleBookNote="MT-ETCSA"/>
-    <config name="1" limit="20">
+    <config name="1" limit="150">
       <subpart type="Lec" suffix="" minPerWeek="60"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="MT-ETCSA Lec 1" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -1176,9 +1159,29 @@
         <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
         <instructor id="taasika-teacher-18857" share="100" lead="true"/>
       </class>
+      <class id="MT-ETCSA Lab 1" type="Lab" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8981" building="BHAU" roomNbr="Bhau1"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18857" share="100" lead="true"/>
+      </class>
+      <class id="MT-ETCSA Lab 2" type="Lab" suffix="2" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8981" building="BHAU" roomNbr="Bhau1"/>
+        <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+        <instructor id="taasika-teacher-18857" share="100" lead="true"/>
+      </class>
+      <class id="MT-ETCSA Lab 3" type="Lab" suffix="3" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8981" building="BHAU" roomNbr="Bhau1"/>
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18857" share="100" lead="true"/>
+      </class>
+      <class id="MT-ETCSA Lab 4" type="Lab" suffix="4" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <room id="taasika-room-8981" building="BHAU" roomNbr="Bhau1"/>
+        <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+        <instructor id="taasika-teacher-18857" share="100" lead="true"/>
+      </class>
     </config>
   </offering>
-  <offering id="32745" offered="true" action="update">
+  <offering id="32745" offered="true" action="insert">
     <course id="32745" subject="CS" courseNbr="FY-Reserved" controlling="true" title="FY Reserved Subject" scheduleBookNote="FY-Reserved"/>
     <config name="1" limit="300">
       <subpart type="Lec" suffix="" minPerWeek="300"/>
@@ -1198,9 +1201,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32747" offered="true" action="update">
+  <offering id="32747" offered="true" action="insert">
     <course id="32747" subject="CS" courseNbr="DS-FY" controlling="true" title="Discrete Structures(FY)" scheduleBookNote="DS-FY"/>
-    <config name="1" limit="500">
+    <config name="1" limit="1000">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
       <subpart type="Lab" suffix="" minPerWeek="60"/>
       <class id="DS-FY Lec 1" type="Lec" suffix="1" limit="100" scheduleNote="FY-CSE4" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -1322,7 +1325,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32749" offered="true" action="update">
+  <offering id="32749" offered="true" action="insert">
     <course id="32749" subject="CS" courseNbr="AIMA" controlling="true" title="AI for Multidisciplinary Applications(FY)" scheduleBookNote="AIMA"/>
     <config name="1" limit="300">
       <subpart type="Lec" suffix="" minPerWeek="180"/>
@@ -1342,9 +1345,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32750" offered="true" action="update">
+  <offering id="32750" offered="true" action="insert">
     <course id="32750" subject="CS" courseNbr="PP-FY" controlling="true" title="Python Programming (FY)" scheduleBookNote="PP-FY"/>
-    <config name="1" limit="600">
+    <config name="1" limit="1100">
       <subpart type="Lec" suffix="" minPerWeek="60"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="PP-FY Lec 1" type="Lec" suffix="1" limit="200" scheduleNote="FY-PP4n5" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -1479,9 +1482,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32752" offered="true" action="update">
+  <offering id="32752" offered="true" action="insert">
     <course id="32752" subject="CS" courseNbr="WD-FY" controlling="true" title="Web Design(FY)" scheduleBookNote="WD-FY"/>
-    <config name="1" limit="200">
+    <config name="1" limit="375">
       <subpart type="Lec" suffix="" minPerWeek="60"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="WD-FY Lec 1" type="Lec" suffix="1" limit="100" scheduleNote="FY-WD1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -1527,9 +1530,9 @@
       </class>
     </config>
   </offering>
-  <offering id="32754" offered="true" action="update">
+  <offering id="32754" offered="true" action="insert">
     <course id="32754" subject="CS" courseNbr="PPS-FY" controlling="true" title="Programming for Problem Solving (FY)" scheduleBookNote="PPS-FY"/>
-    <config name="1" limit="200">
+    <config name="1" limit="400">
       <subpart type="Lec" suffix="" minPerWeek="60"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
       <class id="PPS-FY Lec 1" type="Lec" suffix="1" limit="200" scheduleNote="FY-PPS1n2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
@@ -1574,7 +1577,7 @@
       </class>
     </config>
   </offering>
-  <offering id="32758" offered="true" action="update">
+  <offering id="32758" offered="true" action="insert">
     <course id="32758" subject="CS" courseNbr="Eco" controlling="true" title="Economics (SY)" scheduleBookNote="Eco"/>
     <config name="1" limit="160">
       <subpart type="Lec" suffix="" minPerWeek="120"/>

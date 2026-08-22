@@ -42,6 +42,26 @@ N_PER_BTECH_YEAR = 500
 N_CSE = 400
 N_AIML = 100
 N_OE_MDM_OPTIONS = 5  # 1 CSE (if any) + other-dept placeholders
+N_FY_DIVISIONS = 10  # Taasika FY1..FY10 cohorts within 500 simulated students
+
+
+def fy_division(seq: int) -> int:
+    """0-based division index for FY student seq (1..500)."""
+    return min((seq - 1) * N_FY_DIVISIONS // N_PER_BTECH_YEAR, N_FY_DIVISIONS - 1)
+
+
+def sy_ty_division(seq: int) -> int:
+    """0 = Div1 (seq 1-250), 1 = Div2 (seq 251-500) for SY/TY lec pairing."""
+    return 0 if seq <= N_PER_BTECH_YEAR // 2 else 1
+
+
+def section_index_for_division(div: int, n_sections: int, n_divisions: int = N_FY_DIVISIONS) -> int:
+    """Map cohort division to a 0-based section index (stable, equal split)."""
+    if n_sections <= 0:
+        return 0
+    if n_sections >= n_divisions:
+        return min(div, n_sections - 1)
+    return min(div * n_sections // n_divisions, n_sections - 1)
 
 
 def student_id(year_key: str, seq: int) -> str:
@@ -203,6 +223,8 @@ def class_tags_for_short(
     lec_suf: dict[int, list[int]],
     lab_suf: dict[int, list[int]],
     rr: int,
+    *,
+    section_pick: int | None = None,
 ) -> list[tuple[str, str, str, int]]:
     """Return list of (subjectArea, courseNbr, type, suffix) for one shortName."""
     if short not in by_short:
@@ -213,15 +235,15 @@ def class_tags_for_short(
     tags: list[tuple[str, str, str, int]] = []
 
     lecs = lec_suf.get(sid) or []
-    # Some lab companion rows inherit lec list via primary in probe; only emit Lec
-    # when this subject actually has Lec offsets (or is the primary non-lab).
     if lecs and not info.get("isLab"):
-        suf = lecs[rr % len(lecs)]
+        pick = section_pick if section_pick is not None else (rr % len(lecs))
+        suf = lecs[pick % len(lecs)]
         tags.append((area, nbr, "Lec", suf))
 
     labs = lab_suf.get(sid) or []
     if labs:
-        suf = labs[rr % len(labs)]
+        pick = section_pick if section_pick is not None else (rr % len(labs))
+        suf = labs[pick % len(labs)]
         tags.append((area, nbr, "Lab", suf))
     elif info.get("isLab"):
         # lab short with sections stored under its own sid only — already handled
@@ -237,7 +259,8 @@ def class_tags_for_short(
                     # Only auto-add if caller didn't list lab short separately
                     # and course numbers match (merged offering)
                     if oinfo["courseNumber"] == nbr and not any(t[2] == "Lab" for t in tags):
-                        suf = olabs[rr % len(olabs)]
+                        pick = section_pick if section_pick is not None else (rr % len(olabs))
+                        suf = olabs[pick % len(olabs)]
                         tags.append((area, nbr, "Lab", suf))
                 break
 
@@ -250,19 +273,40 @@ def enroll_shorts(
     lec_suf: dict,
     lab_suf: dict,
     rr: int,
+    *,
+    year_key: str | None = None,
+    seq: int | None = None,
 ) -> list[tuple[str, str, str, int]]:
     seen: set[tuple[str, str, str, int]] = set()
     out: list[tuple[str, str, str, int]] = []
     shorts_list = list(shorts)
-    # When both primary and lab short are listed, prefer explicit; avoid double lab
     explicit_labs = {s for s in shorts_list if s in by_short and by_short[s][1].get("isLab")}
+
+    def section_pick_for(short: str) -> int | None:
+        if year_key is None or seq is None or short not in by_short:
+            return None
+        sid, info = by_short[short]
+        lecs = lec_suf.get(sid) or []
+        labs = lab_suf.get(sid) or []
+        n = len(labs) if info.get("isLab") else (len(lecs) or len(labs) or 1)
+        if year_key == "FY":
+            return section_index_for_division(fy_division(seq), n)
+        if year_key in ("SY", "TY"):
+            if n <= 2 and lecs and not info.get("isLab"):
+                return sy_ty_division(seq)
+            div = (seq - 1) * N_FY_DIVISIONS // N_PER_BTECH_YEAR
+            return section_index_for_division(div, n)
+        return None
+
     for short in shorts_list:
         if short not in by_short:
             continue
         sid, info = by_short[short]
+        pick = section_pick_for(short)
         if not info.get("isLab"):
-            # lec (+ auto lab only if lab short not also listed)
-            tags = class_tags_for_short(short, by_short, lec_suf, lab_suf, rr)
+            tags = class_tags_for_short(
+                short, by_short, lec_suf, lab_suf, rr, section_pick=pick
+            )
             if explicit_labs:
                 tags = [t for t in tags if t[2] != "Lab"]
             for t in tags:
@@ -270,7 +314,9 @@ def enroll_shorts(
                     seen.add(t)
                     out.append(t)
         else:
-            tags = class_tags_for_short(short, by_short, lec_suf, lab_suf, rr)
+            tags = class_tags_for_short(
+                short, by_short, lec_suf, lab_suf, rr, section_pick=pick
+            )
             for t in tags:
                 if t not in seen:
                     seen.add(t)
@@ -325,8 +371,17 @@ def main() -> None:
                 out.append(s)
         return out
 
-    info_lines = [LICENSE_HEADER, f'<students campus="{CAMPUS}" year="{YEAR}" term="{TERM}">']
-    req_lines = [LICENSE_HEADER, f'<request campus="{CAMPUS}" year="{YEAR}" term="{TERM}">']
+    # incremental=true: only create/update students in this file (safer re-import).
+    # Omit studentGroups here: UniTime StudentImport merge()s groups before flush and
+    # can throw TransientObjectException on large cohorts (see StudentImport.java).
+    info_lines = [
+        LICENSE_HEADER,
+        f'<students campus="{CAMPUS}" year="{YEAR}" term="{TERM}" incremental="true">',
+    ]
+    req_lines = [
+        LICENSE_HEADER,
+        f'<request campus="{CAMPUS}" year="{YEAR}" term="{TERM}" incremental="true">',
+    ]
     enr_lines = [
         LICENSE_HEADER,
         f'<studentEnrollments campus="{CAMPUS}" year="{YEAR}" term="{TERM}">',
@@ -345,6 +400,7 @@ def main() -> None:
         group: str,
         shorts: list[str],
         rr: int,
+        year_key: str | None = None,
     ) -> None:
         nonlocal total
         total += 1
@@ -366,12 +422,19 @@ def main() -> None:
             f'      <major academicArea="{area}" academicClass="{class_code}" code="{major}"/>'
         )
         info_lines.append("    </studentMajors>")
-        info_lines.append("    <studentGroups>")
-        info_lines.append(f'      <studentGroup group="{xml_escape(group)}"/>')
-        info_lines.append("    </studentGroups>")
+        # group kept for logging only; not written to XML (see header comment)
+        _ = group
         info_lines.append("  </student>")
 
-        tags = enroll_shorts(shorts, by_short, lec_suf, lab_suf, rr)
+        tags = enroll_shorts(
+            shorts,
+            by_short,
+            lec_suf,
+            lab_suf,
+            rr,
+            year_key=year_key or class_code,
+            seq=seq_for_name,
+        )
         for s in shorts:
             if s not in by_short:
                 missing_shorts.add(s)
@@ -416,6 +479,7 @@ def main() -> None:
                 group=group,
                 shorts=shorts,
                 rr=seq - 1,
+                year_key=year_key,
             )
 
     # ---- M.Tech ----
@@ -448,33 +512,6 @@ def main() -> None:
     (OUT_DIR / "studentRequest.xml").write_text("\n".join(req_lines), encoding="utf-8")
     (OUT_DIR / "studentenrollments.xml").write_text("\n".join(enr_lines), encoding="utf-8")
 
-    # Ensure year-major groups exist for import
-    sg_path = OUT_DIR / "studentGroup.xml"
-    sg = sg_path.read_text(encoding="utf-8")
-    extra_groups = []
-    for y in ("FY", "SY", "TY", "BT"):
-        for m in ("CE", "AIML"):
-            code = f"{y}-{m}"
-            if f'code="{code}"' not in sg:
-                extra_groups.append(
-                    f'  <studentGroup externalId="sim-{code}" '
-                    f'code="{code}" name="{y} {m} cohort (simulated)"/>'
-                )
-    for prog, *_rest in MT_PROGRAMS:
-        code = f"MT-{prog}"
-        if f'code="{code}"' not in sg and f'code="MT-{prog}"' not in sg:
-            # MT-CE already exists as class short name
-            if code == "MT-CE" and 'code="MT-CE"' in sg:
-                continue
-            if f'code="{code}"' not in sg:
-                extra_groups.append(
-                    f'  <studentGroup externalId="sim-{code}" '
-                    f'code="{code}" name="M.Tech {prog} cohort (simulated)"/>'
-                )
-    if extra_groups:
-        sg = sg.replace("</studentGroups>", "\n".join(extra_groups) + "\n</studentGroups>")
-        sg_path.write_text(sg, encoding="utf-8")
-
     summary = {
         "total_students": total,
         "btech_per_year": N_PER_BTECH_YEAR,
@@ -486,7 +523,7 @@ def main() -> None:
         json.dumps(summary, indent=2), encoding="utf-8"
     )
 
-    for name in ("studentInfo.xml", "studentRequest.xml", "studentenrollments.xml", "studentGroup.xml"):
+    for name in ("studentInfo.xml", "studentRequest.xml", "studentenrollments.xml"):
         p = OUT_DIR / name
         print(f"wrote {p.relative_to(OUT_DIR.parent)} ({p.stat().st_size:,} bytes)")
     print(f"total students: {total} (B.Tech {4 * N_PER_BTECH_YEAR} + MT {mt_seq})")

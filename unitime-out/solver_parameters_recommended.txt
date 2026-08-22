@@ -1,0 +1,43 @@
+# Recommended UniTime Course Timetabling Solver parameters
+# Apply in: Administration → Course Timetabling → Solver → Parameters
+# (or import/adjust from an exported solver configuration XML)
+#
+# Goal: honor studentenrollments.xml conflicts and improve room preference hit rate.
+
+# --- Student conflicts (hard) ---
+General.JenrlMaxConflicts=0.0
+General.JenrlMaxConflictsWeaken=0.0
+General.CommittedStudentConflicts=Load
+General.SaveStudentEnrollments=true
+General.WeightStudents=true
+General.IgnoreCommittedStudentConflicts=false
+
+Lecture.HardStudentConflictWeight=1.0
+Lecture.StudentConflictWeight=0.8
+Lecture.DistStudentConflictWeight=0.2
+Lecture.CommitedStudentConflictWeight=1.0
+
+Comparator.HardStudentConflictWeight=1.0
+Comparator.StudentConflictWeight=0.8
+Comparator.CommitedStudentConflictWeight=1.0
+
+Placement.NrHardStudConfsWeight1=1.0
+Placement.NrHardStudConfsWeight2=2.0
+Placement.NrCommitedStudConfsWeight1=0.5
+Placement.NrCommitedStudConfsWeight2=1.0
+
+# --- Room preferences ---
+Lecture.RoomPreferenceWeight=2.0
+Comparator.RoomPreferenceWeight=2.0
+
+# --- Time pattern fidelity ---
+Lecture.TimePreferenceWeight=1.0
+Placement.TimePreferenceWeight2=0.5
+
+# --- Optional: student group demands from Taasika cohorts ---
+# General.StudentGroupCourseDemands=false
+
+# --- Import order reminder (before starting solver) ---
+# 1. courseCatalog.xml → courseOffering.xml → preferences.xml
+# 2. studentInfo.xml → studentRequest.xml → studentenrollments.xml
+# 3. Solver → Reload (do NOT reload old saved timetable) → Solve → Commit

@@ -171,8 +171,13 @@ def find_course_pairs(subjects: list[dict]) -> dict:
         match = by_short.get(base)
         if not match:
             continue
-        if bool(match.get("batches")):
-            continue
+        # NOTE: do not exclude matches with ``batches`` set here. Elective
+        # lectures (DE/Honor/PSEC/MDM) are also batch-registered in Taasika
+        # (students self-select), so the lecture side can legitimately have
+        # ``batches=1`` too. The suffix-stripping above already guarantees
+        # ``match`` is not itself a "-Lab"/"-Tut" companion (its shortName
+        # equals ``base``, which had any such suffix removed), so this is a
+        # safe pairing regardless of the ``batches`` flag on either side.
         lec_id = match["subjectId"]
         pair_of[sid] = lec_id
         pair_of[lec_id] = sid

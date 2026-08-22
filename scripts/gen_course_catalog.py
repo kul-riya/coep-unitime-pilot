@@ -9,6 +9,7 @@ offering, see gen_course_offering.py).
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 from taasika_loader import load
@@ -28,6 +29,34 @@ OUT_DIR = Path(__file__).resolve().parent.parent / "unitime-out"
 SCRIPTS_DIR = Path(__file__).resolve().parent
 
 
+def course_number_from_short(short_name: str, subject_id: int, used: set[str]) -> str:
+    """Map Taasika shortName to a UniTime courseNbr shown on the timetable.
+
+    UniTime displays ``subject + courseNbr`` (e.g. ``CS CN``). Keep the short
+    code readable; replace characters that break XML/IDs.
+    """
+    raw = (short_name or "").strip() or f"X{subject_id}"
+    # DS(FY) -> DS-FY ; PP(FY)-Lab already absorbed into primary PP(FY)
+    cleaned = (
+        raw.replace("(", "-")
+        .replace(")", "")
+        .replace(" ", "")
+        .replace("/", "-")
+        .replace("_", "-")
+    )
+    cleaned = re.sub(r"-+", "-", cleaned).strip("-") or f"X{subject_id}"
+    # UniTime courseNbr length is limited in practice; keep a generous cap
+    cleaned = cleaned[:32]
+    base = cleaned
+    n = 2
+    while cleaned.upper() in used:
+        suffix = f"-{n}"
+        cleaned = (base[: 32 - len(suffix)] + suffix)
+        n += 1
+    used.add(cleaned.upper())
+    return cleaned
+
+
 def main() -> None:
     data = load(snapshot_id=240, tables=["subject"])
     subjects = sorted(data.filtered("subject"), key=lambda s: s["subjectId"])
@@ -38,7 +67,7 @@ def main() -> None:
     lab_to_lec: dict[int, int] = pairs["lab_to_lec"]
     subj_by_id = {s["subjectId"]: s for s in subjects}
 
-    counters: dict[str, int] = {}
+    used_nbrs: set[str] = set()
     course_for_primary: dict[int, dict[str, object]] = {}
     rows: list[str] = []
 
@@ -47,9 +76,7 @@ def main() -> None:
         if sid in lab_to_lec:
             continue
         area = subject_area(s["subjectShortName"], s["subjectName"])
-        counters.setdefault(area, 100)
-        counters[area] += 1
-        course_nbr = str(counters[area])
+        course_nbr = course_number_from_short(s["subjectShortName"] or "", sid, used_nbrs)
 
         partner = subj_by_id.get(lec_to_lab.get(sid)) if sid in lec_to_lab else None
         is_paired = partner is not None
@@ -68,7 +95,7 @@ def main() -> None:
 
         rows.append(
             f'  <course externalId="{external_id}" subject="{area}" '
-            f'courseNumber="{course_nbr}" title="{xml_escape(title)}" '
+            f'courseNumber="{xml_escape(course_nbr)}" title="{xml_escape(title)}" '
             f'permanentId="{permanent_id}">'
         )
         rows.append(
@@ -98,7 +125,12 @@ def main() -> None:
             "courseNumber": course["courseNumber"],
             "title": course["title"],
             "shortName": s["subjectShortName"],
-            "isLab": bool(s.get("batches")),
+            # A subject is a "lab" only if it's the paired companion
+            # (sid in lab_to_lec) or a genuinely unpaired batch-registered
+            # subject (no lecture partner found). Raw ``batches`` alone is
+            # not sufficient: batch-registered elective lectures (DE/Honor/
+            # PSEC/MDM) also have batches=1 but are the Lec side of a pair.
+            "isLab": sid in lab_to_lec or (bool(s.get("batches")) and sid not in lec_to_lab),
             "eachSlot": s.get("eachSlot") or 0,
             "nSlots": s.get("nSlots") or 0,
             "credits": course["credits"],
