@@ -573,7 +573,7 @@ def evaluate(
                     f"{len(a.meetings)}x{a.duration}min ({a.day_code} {_fmt_mins(a.start)}-{_fmt_mins(a.end)})",
                 )
         else:
-            pattern.record(False, f"{class_id}: no required pattern in preferences.xml")
+            pattern.record(False, f"{class_id}: no required pattern in 13preferences.xml")
 
         # Instructor identity
         if off.instructor_id:
@@ -918,15 +918,15 @@ def main(argv: list[str] | None = None) -> int:
         print(f"ERROR: solution CSV not found: {csv_path}", file=sys.stderr)
         return 1
 
-    patterns = load_preferences(data_dir / "preferences.xml")
-    room_prefs = load_room_preferences(data_dir / "preferences.xml")
+    patterns = load_preferences(data_dir / "13preferences.xml")
+    room_prefs = load_room_preferences(data_dir / "13preferences.xml")
     offerings = load_offerings(
-        data_dir / "courseOffering.xml", patterns, room_prefs=room_prefs
+        data_dir / "12courseOffering.xml", patterns, room_prefs=room_prefs
     )
-    rooms = load_rooms_from_buildings(data_dir / "buildingRoomImport.xml")
-    by_id, by_label = load_staff_indexes(data_dir / "staff.xml")
-    travel = load_travel(data_dir / "travelTimes.xml")
-    enrollments = load_enrollments(data_dir / "studentenrollments.xml")
+    rooms = load_rooms_from_buildings(data_dir / "7buildingRoomImport.xml")
+    by_id, by_label = load_staff_indexes(data_dir / "10staff.xml")
+    travel = load_travel(data_dir / "9travelTimes.xml")
+    enrollments = load_enrollments(data_dir / "16studentenrollments.xml")
     id_index = ClassIdIndex.from_offerings(offerings)
     assignments = load_assignments(csv_path, id_index, by_label, by_id)
 

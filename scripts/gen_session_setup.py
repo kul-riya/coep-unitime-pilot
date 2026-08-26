@@ -52,14 +52,14 @@ def _slot_starts(num_slots: int = SLOTS_PER_DAY) -> list[str]:
 # Day codes UniTime may assign; each pattern only gets codes whose
 # meeting count equals nbrMeetings (e.g. "2 x 60" → MW, TTh, never MWF).
 _DAY_CODE_CATALOG: list[str] = [
-    "M", "T", "W", "Th", "F", "S", "Su",
-    "MW", "MF", "WF", "TTh", "MT", "MTh", "TF", "WTh", "ThF", "WS", "FS",
-    "MWF", "MThF", "TThS", "MTW", "MTF", "MWTh", "WThF",
+    "M", "T", "W", "Th", "F",
+    "MW", "MF", "WF", "TTh", "MT", "MTh", "TF", "WTh", "ThF",
+    "MWF", "MThF", "MTW", "MTF", "MWTh", "WThF",
     "MTWTh", "MTWF", "MTThF", "MWThF", "TWThF",
     "MTWThF",
-    "MTWThFS",
 ]
-_DAY_PARSE_TOKENS = ("Th", "Su", "M", "T", "W", "F", "S")
+_DAY_PARSE_TOKENS = ("Th", "M", "T", "W", "F")
+_WEEKEND_TOKENS = {"S", "Su"}
 
 
 def _meeting_count(code: str) -> int:
@@ -76,8 +76,28 @@ def _meeting_count(code: str) -> int:
     return count
 
 
+def _has_weekend(code: str) -> bool:
+    remaining = code
+    while remaining:
+        matched = False
+        for tok in ("Th", "Su", "M", "T", "W", "F", "S"):
+            if remaining.startswith(tok):
+                if tok in _WEEKEND_TOKENS:
+                    return True
+                remaining = remaining[len(tok) :]
+                matched = True
+                break
+        if not matched:
+            break
+    return False
+
+
 def _day_codes_for_meetings(nbr_meetings: int) -> list[str]:
-    return [c for c in _DAY_CODE_CATALOG if _meeting_count(c) == nbr_meetings]
+    return [
+        c
+        for c in _DAY_CODE_CATALOG
+        if _meeting_count(c) == nbr_meetings and not _has_weekend(c)
+    ]
 
 
 def _header() -> str:
@@ -274,6 +294,8 @@ def main() -> None:
     target = Path(__file__).resolve().parent.parent / "unitime-out" / "sessionSetup.xml"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text("".join(out), encoding="utf-8")
+    numbered = Path(__file__).resolve().parent.parent / "unitime-out" / "1sessionSetup.xml"
+    numbered.write_text("".join(out), encoding="utf-8")
     print(f"wrote {target} ({target.stat().st_size:,} bytes)")
 
 

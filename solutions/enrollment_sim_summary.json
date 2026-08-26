@@ -1,7 +1,23 @@
 {
-  "total_students": 2130,
-  "btech_per_year": 500,
+  "total_students": 1290,
+  "btech_by_year": {
+    "FY": 260,
+    "SY": 300,
+    "TY": 300,
+    "BT": 300
+  },
+  "cse_by_year": {
+    "FY": 160,
+    "SY": 200,
+    "TY": 200,
+    "BT": 200
+  },
+  "aiml_per_year": 100,
   "mt_students": 130,
   "missing_shorts": [],
-  "id_format": "61yy03aaa (yy=01FY..05MT)"
+  "id_format": "61yy03aaa (yy=01FY..05MT)",
+  "overflow_unplaced": {
+    "MT PSEC2-EAI Lab": 2
+  },
+  "note": "CSE FY=160; CSE SY/TY/BT=200 (2 divisions of 100, DSY join in SY). AIML=100 extra per year on the same basket. MDM/OE are other-dept room blocks (no enrollments). BT has no minor; every BT student takes one DE4."
 }

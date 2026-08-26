@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<roomSharing campus="COEP" year="2026" term="Spr" created="Generated from Taasika snapshot 240" timeFormat="HHmm">
+<roomSharing campus="COEP" year="2026" term="Spr3" created="Generated from Taasika snapshot 240" timeFormat="HHmm">
   <!-- LUNCH window derived from 51 fixedEntry rows -->
   <location id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06">
     <department code="0101" control="true"/>

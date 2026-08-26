@@ -16,8 +16,17 @@ YEAR = 2026
 OUT_DIR = Path(__file__).resolve().parent.parent / "unitime-out"
 
 
-def _position_type(min_hrs: int | None, max_hrs: int | None) -> str:
-    """Pick a UniTime ``positionType`` from a teacher's load envelope."""
+_ADJUNCT_NAME_RE = re.compile(r"\s*\(?\s*Adjunct\s*\)?\s*$", re.I)
+
+
+def _position_type(min_hrs: int | None, max_hrs: int | None, forced: str | None = None) -> str:
+    """Pick a UniTime ``positionType`` from a teacher's load envelope.
+
+    ``ADJUNCT`` is the UniTime code whose UI label is **Adjunct Faculty**.
+    Do not put that phrase in the instructor's name.
+    """
+    if forced:
+        return forced
     if (min_hrs or 0) == 0 and (max_hrs or 0) == 0:
         return "ADJUNCT"
     if (min_hrs or 0) == 0 and (max_hrs or 0) >= 24:
@@ -29,6 +38,19 @@ def _position_type(min_hrs: int | None, max_hrs: int | None) -> str:
     if (min_hrs or 0) <= 14:
         return "ASST_PROF"
     return "ASST_PROF"
+
+
+def _clean_display_name(full_name: str) -> tuple[str, str | None]:
+    """Strip position markers from the name; return (name, forced positionType)."""
+    name = (full_name or "").strip()
+    forced: str | None = None
+    if _ADJUNCT_NAME_RE.search(name):
+        name = _ADJUNCT_NAME_RE.sub("", name).strip()
+        forced = "ADJUNCT"
+    if name.lower().startswith("visiting "):
+        name = name[9:].strip()
+        forced = forced or "VISITOR"
+    return name, forced
 
 
 def _split_name(full_name: str) -> tuple[str, str, str]:
@@ -49,11 +71,12 @@ def main() -> None:
     lines: list[str] = [LICENSE_HEADER]
     lines.append(f'<staff campus="{CAMPUS}" term="{TERM}" year="{YEAR}">')
     for t in teachers:
-        first, middle, last = _split_name(t["teacherName"])
+        display, forced_pos = _clean_display_name(t["teacherName"] or "")
+        first, middle, last = _split_name(display)
         if not last:
             last = first
             first = t["teacherShortName"] or first
-        pos = _position_type(t.get("minHrs"), t.get("maxHrs"))
+        pos = _position_type(t.get("minHrs"), t.get("maxHrs"), forced_pos)
         dept = department_code(t.get("deptId"))
         short = t["teacherShortName"] or first
         email = f"{re.sub(r'[^A-Za-z0-9]+', '.', short).strip('.').lower()}@unitime.local"
@@ -71,7 +94,9 @@ def main() -> None:
     lines.append('</staff>\n')
 
     out = OUT_DIR / "staff.xml"
-    out.write_text("\n".join(lines), encoding="utf-8")
+    body = "\n".join(lines)
+    out.write_text(body, encoding="utf-8")
+    (OUT_DIR / "10staff.xml").write_text(body, encoding="utf-8")
     print(f"wrote {out.relative_to(OUT_DIR.parent)} ({out.stat().st_size:,} bytes, {len(teachers)} staff members)")
 
 

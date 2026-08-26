@@ -516,50 +516,6 @@
     "credits": 3.0,
     "primarySubjectId": 32573
   },
-  "32574": {
-    "subjectArea": "CS",
-    "courseNumber": "Honor1-FICT",
-    "title": "Honor1-Fundamentals of Information and CT",
-    "shortName": "Honor1-FICT",
-    "isLab": true,
-    "eachSlot": 1,
-    "nSlots": 3,
-    "credits": 1.5,
-    "primarySubjectId": 32574
-  },
-  "32575": {
-    "subjectArea": "CS",
-    "courseNumber": "Honor3-DL",
-    "title": "Honor3-Deep Learning",
-    "shortName": "Honor3-DL",
-    "isLab": true,
-    "eachSlot": 1,
-    "nSlots": 3,
-    "credits": 1.5,
-    "primarySubjectId": 32575
-  },
-  "32576": {
-    "subjectArea": "CS",
-    "courseNumber": "Honor3-MA",
-    "title": "Honor3-Malware Analysis",
-    "shortName": "Honor3-MA",
-    "isLab": true,
-    "eachSlot": 1,
-    "nSlots": 3,
-    "credits": 1.5,
-    "primarySubjectId": 32576
-  },
-  "32577": {
-    "subjectArea": "CS",
-    "courseNumber": "Honor1-MSD",
-    "title": "Honor1-Making Sense of Data",
-    "shortName": "Honor1-MSD",
-    "isLab": true,
-    "eachSlot": 1,
-    "nSlots": 3,
-    "credits": 1.5,
-    "primarySubjectId": 32577
-  },
   "32578": {
     "subjectArea": "CS",
     "courseNumber": "DSGT",
@@ -1341,28 +1297,6 @@
     "credits": 3.0,
     "primarySubjectId": 32648
   },
-  "32649": {
-    "subjectArea": "CS",
-    "courseNumber": "Honor2-BDA",
-    "title": "Honor2-Big Data Analytics",
-    "shortName": "Honor2-BDA",
-    "isLab": true,
-    "eachSlot": 1,
-    "nSlots": 3,
-    "credits": 1.5,
-    "primarySubjectId": 32649
-  },
-  "32650": {
-    "subjectArea": "CS",
-    "courseNumber": "Honor2-EH",
-    "title": "Honor2-Ethical Hacking",
-    "shortName": "Honor2-EH",
-    "isLab": true,
-    "eachSlot": 1,
-    "nSlots": 3,
-    "credits": 1.5,
-    "primarySubjectId": 32650
-  },
   "32651": {
     "subjectArea": "CS",
     "courseNumber": "MOOC-1",
@@ -2061,22 +1995,22 @@
     "courseNumber": "DE4-IBCS",
     "title": "Introduction of Blockchains Cryptocurrencies and Smart Contracts",
     "shortName": "DE4-IBCS",
-    "isLab": true,
+    "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 1.5,
+    "credits": 4.0,
     "primarySubjectId": 32714
   },
   "32715": {
     "subjectArea": "CS",
-    "courseNumber": "DE4-IBC-Lab",
-    "title": "DE4: Introduction of Blockchains CSC",
+    "courseNumber": "DE4-IBCS",
+    "title": "Introduction of Blockchains Cryptocurrencies and Smart Contracts",
     "shortName": "DE4-IBC-Lab",
     "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 1.0,
-    "primarySubjectId": 32715
+    "credits": 4.0,
+    "primarySubjectId": 32714
   },
   "32716": {
     "subjectArea": "CS",
@@ -2110,28 +2044,6 @@
     "nSlots": 3,
     "credits": 4.0,
     "primarySubjectId": 32718
-  },
-  "32719": {
-    "subjectArea": "CS",
-    "courseNumber": "Honor4-IOT",
-    "title": "Honor4-IOT Security",
-    "shortName": "Honor4-IOT",
-    "isLab": true,
-    "eachSlot": 1,
-    "nSlots": 3,
-    "credits": 1.5,
-    "primarySubjectId": 32719
-  },
-  "32720": {
-    "subjectArea": "CS",
-    "courseNumber": "Honor4-RL",
-    "title": "Honor4-Reinforcement Learning",
-    "shortName": "Honor4-RL",
-    "isLab": true,
-    "eachSlot": 1,
-    "nSlots": 3,
-    "credits": 1.5,
-    "primarySubjectId": 32720
   },
   "32721": {
     "subjectArea": "CS",
@@ -2174,19 +2086,19 @@
     "isLab": false,
     "eachSlot": 1,
     "nSlots": 3,
-    "credits": 3.0,
+    "credits": 4.0,
     "primarySubjectId": 32724
   },
   "32725": {
     "subjectArea": "MT",
-    "courseNumber": "MTDL-Lab",
+    "courseNumber": "MT-DL",
     "title": "Deep Learning",
     "shortName": "MTDL-Lab",
-    "isLab": false,
+    "isLab": true,
     "eachSlot": 2,
     "nSlots": 1,
-    "credits": 2.0,
-    "primarySubjectId": 32725
+    "credits": 4.0,
+    "primarySubjectId": 32724
   },
   "32726": {
     "subjectArea": "MT",

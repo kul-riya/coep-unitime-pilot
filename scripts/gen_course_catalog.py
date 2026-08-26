@@ -18,6 +18,7 @@ from classifications import (
     clean_course_title,
     combined_credits,
     find_course_pairs,
+    is_honor_subject,
     subject_area,
 )
 
@@ -74,6 +75,8 @@ def main() -> None:
     for s in subjects:
         sid = s["subjectId"]
         if sid in lab_to_lec:
+            continue
+        if is_honor_subject(s.get("subjectShortName") or ""):
             continue
         area = subject_area(s["subjectShortName"], s["subjectName"])
         course_nbr = course_number_from_short(s["subjectShortName"] or "", sid, used_nbrs)
@@ -144,6 +147,7 @@ def main() -> None:
 
     catalog_path = OUT_DIR / "courseCatalog.xml"
     catalog_path.write_text("\n".join(out_lines), encoding="utf-8")
+    (OUT_DIR / "11courseCatalog.xml").write_text("\n".join(out_lines), encoding="utf-8")
 
     index_path = SCRIPTS_DIR / "subject_index.json"
     index_path.write_text(json.dumps(index, indent=2), encoding="utf-8")

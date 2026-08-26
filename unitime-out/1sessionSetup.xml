@@ -4,7 +4,7 @@
   Template reference: samplexml/ (UniTime XML interface)
   See: https://www.unitime.org/uct_interfaces.php
 -->
-<sessionSetup term="Spr" year="2026" campus="COEP" dateFormat="yyyy/M/d" created="Generated from Taasika snapshot 240">
+<sessionSetup term="Spr3" year="2026" campus="COEP" dateFormat="yyyy/M/d" created="Generated from Taasika snapshot 240">
   <session startDate="2026/1/19" endDate="2026/5/22" classEndDate="2026/4/30" examStartDate="2026/5/4" eventStartDate="2026/1/1" eventEndDate="2026/6/15">
   <holidays>
     <holiday date="2026/1/26"/>

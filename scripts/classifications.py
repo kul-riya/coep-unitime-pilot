@@ -137,9 +137,44 @@ def major_for_class(short_name: str, full_name: str) -> tuple[str, str]:
 
 _PAIR_SUFFIX_RE = re.compile(r"(\s*-?\s*Lab(oratory)?|\s+Lab(oratory)?|\s*-?\s*Tut(orial)?|\s+Tut(orial)?)\s*$", re.I)
 
+# Taasika shortName mismatches that suffix-stripping cannot resolve.
+MANUAL_PAIRS: Dict[str, str] = {
+    "DE4-IBCS": "DE4-IBC-Lab",  # lecture is IBCS, lab shortName is IBC-Lab
+    "AI": "AI-Lab",
+    "MT-DL": "MTDL-Lab",
+}
+
 
 def _strip_pair_suffix(short_name: str) -> str:
     return _PAIR_SUFFIX_RE.sub("", short_name or "").strip()
+
+
+def companion_itype(short_name: str) -> str:
+    """UniTime instructional type for a Lab/Tut companion subject.
+
+    Tutorials map to UniTime's stock ``Rec`` (Recitation) itype. ``Tut`` is not
+    a default ItypeDesc abbreviation and makes OfferingsImport throw
+    ``SchedulingSubpart.itype`` null.
+    """
+    sn = (short_name or "").lower()
+    if "tut" in sn:
+        return "Rec"
+    return "Lab"
+
+
+def is_honor_subject(short_name: str) -> bool:
+    """Honor electives are not scheduled in this UniTime session."""
+    return (short_name or "").lower().startswith("honor")
+
+
+def is_minor_subject(short_name: str) -> bool:
+    """BT Minor-of-CSE (Minor4-DS, …) is not offered; BT students take DE4 instead."""
+    return "minor" in (short_name or "").lower()
+
+
+def skip_offering(short_name: str) -> bool:
+    """Offerings that must not appear in courseOffering.xml."""
+    return is_honor_subject(short_name) or is_minor_subject(short_name)
 
 
 def find_course_pairs(subjects: list[dict]) -> dict:
@@ -184,6 +219,22 @@ def find_course_pairs(subjects: list[dict]) -> dict:
         lec_to_lab[lec_id] = sid
         lab_to_lec[sid] = lec_id
         primary_of[sid] = lec_id
+        primary_of[lec_id] = lec_id
+
+    by_short = {s["subjectShortName"]: s for s in subjects}
+    for lec_short, lab_short in MANUAL_PAIRS.items():
+        lec = by_short.get(lec_short)
+        lab = by_short.get(lab_short)
+        if not lec or not lab:
+            continue
+        lec_id, lab_id = lec["subjectId"], lab["subjectId"]
+        if lec_id in lec_to_lab or lab_id in lab_to_lec:
+            continue
+        pair_of[lab_id] = lec_id
+        pair_of[lec_id] = lab_id
+        lec_to_lab[lec_id] = lab_id
+        lab_to_lec[lab_id] = lec_id
+        primary_of[lab_id] = lec_id
         primary_of[lec_id] = lec_id
 
     for s in subjects:

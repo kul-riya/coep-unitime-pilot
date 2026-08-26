@@ -15,9 +15,20 @@ import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
 
-from classifications import find_course_pairs
-from gen_course_offering import _build_lab_sections, _build_lec_sections
+from classifications import companion_itype, find_course_pairs, skip_offering
+from gen_course_offering import (
+    SYNTHETIC_LAB_DONOR,
+    _build_lab_sections,
+    _build_lec_sections,
+    _synthesize_lab_sections,
+)
 from gen_preferences import _time_pattern
+from intake import (
+    MDM_LEC_MIN_PER_WEEK,
+    OE_LEC_MIN_PER_WEEK,
+    is_mdm_subject,
+    is_oe_subject,
+)
 from taasika_loader import load
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -51,6 +62,9 @@ def expected_patterns(snapshot_id: int = 240) -> dict[tuple[str, str, str], str]
         sid = primary["subjectId"]
         if sid in lab_to_lec:
             continue
+        short = primary.get("subjectShortName") or ""
+        if skip_offering(short):
+            continue
         info = idx.get(str(sid))
         if not info:
             continue
@@ -72,6 +86,24 @@ def expected_patterns(snapshot_id: int = 240) -> dict[tuple[str, str, str], str]
         lab_sections = _build_lab_sections(
             lab_subj, sct_by_subject, sbt_by_subject, classes, batches
         )
+        if lab_subj and not lab_sections:
+            donor_short = SYNTHETIC_LAB_DONOR.get(lab_subj.get("subjectShortName") or "")
+            donor = subj_by_id.get(
+                next(
+                    (s["subjectId"] for s in subjects if s.get("subjectShortName") == donor_short),
+                    0,
+                )
+            ) if donor_short else None
+            if donor:
+                lab_sections = _synthesize_lab_sections(
+                    lab_subj,
+                    donor,
+                    sct_by_subject,
+                    sbt_by_subject,
+                    classes,
+                    batches,
+                    lec_sections,
+                )
         if not lec_sections and not lab_sections:
             continue
 
@@ -79,12 +111,17 @@ def expected_patterns(snapshot_id: int = 240) -> dict[tuple[str, str, str], str]
         course_nbr = info["courseNumber"]
         if lec_subj and lec_sections:
             mins = (lec_subj.get("eachSlot") or 0) * (lec_subj.get("nSlots") or 0) * 60
+            if is_mdm_subject(short):
+                mins = MDM_LEC_MIN_PER_WEEK
+            elif is_oe_subject(short):
+                mins = OE_LEC_MIN_PER_WEEK
             if mins > 0:
                 out[(area, course_nbr, "Lec")] = _time_pattern("Lec", mins)
-        if lab_subj and lab_sections:
+        if lab_subj and lab_sections and not is_mdm_subject(short):
             mins = (lab_subj.get("eachSlot") or 0) * (lab_subj.get("nSlots") or 0) * 60
             if mins > 0:
-                out[(area, course_nbr, "Lab")] = _time_pattern("Lab", mins)
+                kind = companion_itype(lab_subj.get("subjectShortName") or "Lab")
+                out[(area, course_nbr, kind)] = _time_pattern(kind, mins)
     return out
 
 

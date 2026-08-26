@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<offerings campus="COEP" year="2026" term="Spr" incremental="true" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from Taasika snapshot 240" includeExams="none">
+<offerings campus="COEP" year="2026" term="Spr3" incremental="true" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from Taasika snapshot 240" includeExams="none">
   <offering id="taasika-io-32529" offered="true" action="insert">
     <course id="taasika-subject-32529" subject="CS" courseNbr="CoI" controlling="true" title="Constitution of India" scheduleBookNote="CoI">
       <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>

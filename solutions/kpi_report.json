@@ -1,96 +1,94 @@
 {
   "summary": {
-    "classes_in_offerings": 244,
-    "classes_in_solution": 254,
-    "hard_feasibility_score": 88.28,
-    "hard_checks": 3822,
-    "hard_failures": 1524,
-    "preference_score": 54.68,
-    "unav_onl_assignments": 45,
-    "unav_onl_pct": 17.72,
-    "instructor_conflicts": 0,
+    "classes_in_offerings": 260,
+    "classes_in_solution": 259,
+    "hard_feasibility_score": 72.8,
+    "hard_checks": 3944,
+    "hard_failures": 1861,
+    "preference_score": 100.0,
+    "unav_onl_assignments": 1,
+    "unav_onl_pct": 0.39,
+    "instructor_conflicts": 1640,
     "room_conflicts": 0,
-    "student_conflict_pairs": 3814,
-    "students_with_conflict": 1465,
+    "student_conflict_pairs": 2978,
+    "students_with_conflict": 1477,
     "students_total": 2130,
-    "travel_violations": 0,
-    "back_to_back_pct": 13.16
+    "travel_violations": 24,
+    "back_to_back_pct": 100.0
   },
   "hard": {
     "coverage": {
       "name": "coverage",
-      "checked": 244,
-      "passed": 235,
-      "failed": 9,
-      "rate_pct": 96.31,
+      "checked": 260,
+      "passed": 259,
+      "failed": 1,
+      "rate_pct": 99.62,
       "examples": [
-        "missing assignment for DE2-BCT Lab 3",
-        "missing assignment for DE2-BCT Lab 4",
-        "missing assignment for DE2-DSci Lab 3",
-        "missing assignment for DE2-DSci Lab 4",
-        "missing assignment for DE2-ASP Lab 3",
-        "missing assignment for DE4-GIS Lab 3",
-        "missing assignment for DE4-GIS Lab 4",
-        "missing assignment for DE4-GPU Lab 3"
+        "missing assignment for MTDL-Lab Lec 1"
       ]
     },
     "time_pattern_fidelity": {
       "name": "time_pattern_fidelity",
-      "checked": 235,
-      "passed": 188,
-      "failed": 47,
-      "rate_pct": 80.0,
-      "examples": [
-        "CoI Lec 1: need 2 x 60, got 5x60min (MTWThF 3:30p-4:30p)",
-        "CoI Lec 2: need 2 x 60, got 3x60min (MWF 8:30a-9:30a)",
-        "CO Lec 1: need 3 x 60, got 2x60min (TTh 4:30p-5:30p)",
-        "CO Lec 2: need 3 x 60, got 2x60min (TTh 5:30p-6:30p)",
-        "CN Lec 1: need 3 x 60, got 2x60min (TTh 5:30p-6:30p)",
-        "CN Lec 2: need 3 x 60, got 5x60min (MTWThF 10:30a-11:30a)",
-        "MDM-DSFA Lec 1: need 3 x 60, got 2x60min (TTh 4:30p-5:30p)",
-        "MDM-DSFA Lec 2: need 3 x 60, got 2x60min (TTh 2:30p-3:30p)"
-      ]
+      "checked": 259,
+      "passed": 259,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
     },
     "date_pattern": {
       "name": "date_pattern",
-      "checked": 235,
-      "passed": 235,
+      "checked": 259,
+      "passed": 259,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
     "room_capacity": {
       "name": "room_capacity",
-      "checked": 235,
-      "passed": 235,
+      "checked": 259,
+      "passed": 259,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
     "lunch_weekend": {
       "name": "lunch_weekend",
-      "checked": 235,
-      "passed": 232,
-      "failed": 3,
-      "rate_pct": 98.72,
+      "checked": 259,
+      "passed": 135,
+      "failed": 124,
+      "rate_pct": 52.12,
       "examples": [
-        "MT-GAN Lec 1: weekend meeting on S",
-        "MT-MLOS Lec 1: weekend meeting on S",
-        "DS-FY Lab 19: weekend meeting on S"
+        "CO Lec 2: weekend meeting on S",
+        "AI Lec 1: overlaps lunch 12:30p-1:30p",
+        "AI Lec 2: weekend meeting on S",
+        "CN Lab 3: overlaps lunch 12:30p-2:30p",
+        "CN Lab 5: weekend meeting on Su",
+        "CN Lab 6: weekend meeting on S",
+        "MDM-DSFA Lec 2: weekend meeting on S",
+        "DTL Lab 3: overlaps lunch 11:30a-1:30p"
       ]
     },
     "instructor_double_booking": {
       "name": "instructor_double_booking",
-      "checked": 254,
-      "passed": 254,
-      "failed": 0,
-      "rate_pct": 100.0,
-      "examples": []
+      "checked": 259,
+      "passed": 0,
+      "failed": 259,
+      "rate_pct": 0.0,
+      "examples": [
+        "instructor raw:: DAA Lab 6 overlaps DE4-GIS Lec 1",
+        "instructor raw:: DAA Lab 6 overlaps MDM-FDMS Lec 1",
+        "instructor raw:: DAA Lab 6 overlaps PP-FY Lab 23",
+        "instructor raw:: DAA Lab 6 overlaps TOC Lab 11",
+        "instructor raw:: DAA Lab 6 overlaps PSEC2-MTRP Lab 1",
+        "instructor raw:: DAA Lab 6 overlaps CN Lab 2",
+        "instructor raw:: DAA Lab 6 overlaps DS-FY Lab 19",
+        "instructor raw:: DAA Lab 6 overlaps FY-Reserved Lec 2"
+      ]
     },
     "room_double_booking": {
       "name": "room_double_booking",
-      "checked": 254,
-      "passed": 254,
+      "checked": 259,
+      "passed": 259,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
@@ -98,78 +96,78 @@
     "student_conflicts": {
       "name": "student_conflicts",
       "checked": 2130,
-      "passed": 665,
-      "failed": 1465,
-      "rate_pct": 31.22,
+      "passed": 653,
+      "failed": 1477,
+      "rate_pct": 30.66,
       "examples": [
-        "610103001 on M: CS DS-FY Lec 1 overlaps CS PP-FY Lab 1",
-        "610103002 on M: CS DS-FY Lec 1 overlaps CS PP-FY Lab 1",
-        "610103003 on M: CS DS-FY Lec 1 overlaps CS PP-FY Lab 1",
-        "610103004 on M: CS DS-FY Lec 1 overlaps CS PP-FY Lab 1",
-        "610103005 on M: CS DS-FY Lec 1 overlaps CS PP-FY Lab 1",
-        "610103006 on M: CS DS-FY Lec 1 overlaps CS PP-FY Lab 1",
-        "610103007 on M: CS DS-FY Lec 1 overlaps CS PP-FY Lab 1",
-        "610103008 on M: CS DS-FY Lec 1 overlaps CS PP-FY Lab 1"
+        "610103001 on T: CS PPS-FY Lab 1 overlaps CS FY-Reserved Lec 1",
+        "610103001 on Th: CS WD-FY Lab 1 overlaps CS FY-Reserved Lec 1",
+        "610103002 on T: CS PPS-FY Lab 1 overlaps CS FY-Reserved Lec 1",
+        "610103002 on Th: CS WD-FY Lab 1 overlaps CS FY-Reserved Lec 1",
+        "610103003 on T: CS PPS-FY Lab 1 overlaps CS FY-Reserved Lec 1",
+        "610103003 on Th: CS WD-FY Lab 1 overlaps CS FY-Reserved Lec 1",
+        "610103004 on T: CS PPS-FY Lab 1 overlaps CS FY-Reserved Lec 1",
+        "610103004 on Th: CS WD-FY Lab 1 overlaps CS FY-Reserved Lec 1"
       ]
     }
   },
   "preference": {
     "room_preference": {
       "name": "room_preference",
-      "checked": 235,
-      "passed": 22,
-      "failed": 213,
-      "rate_pct": 9.36,
-      "examples": [
-        "CoI Lec 1: NCSE NC27 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
-        "CoI Lec 2: BHAU Bhau1 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
-        "CO Lec 1: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
-        "CO Lec 2: ENTCX SH not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
-        "CN Lec 1: AC NC-14 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
-        "CN Lec 2: AC AC-201NC-05 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
-        "CN Lab 1: UNAV Unavail-C not in preferred ['CSED FOSS1', 'CSED PL']",
-        "CN Lab 2: CSED Cogni-2 not in preferred ['CSED FOSS1', 'CSED PL']"
-      ]
+      "checked": 243,
+      "passed": 243,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
     },
     "instructor_identity": {
       "name": "instructor_identity",
-      "checked": 235,
-      "passed": 235,
+      "checked": 0,
+      "passed": 0,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
     "unav_onl": {
-      "count": 45,
-      "pct": 17.72,
-      "total_assignments": 254
+      "count": 1,
+      "pct": 0.39,
+      "total_assignments": 259
     }
   },
   "efficiency": {
     "instructor_load": {
-      "instructors": 46,
-      "mean_minutes": 708.3,
-      "stdev_minutes": 294.4,
-      "max_minutes": 1200,
-      "min_minutes": 60
+      "instructors": 1,
+      "mean_minutes": 33360,
+      "stdev_minutes": 0.0,
+      "max_minutes": 33360,
+      "min_minutes": 33360
     },
-    "travel_violations": 0,
-    "travel_examples": [],
-    "back_to_back_pct": 13.16,
-    "consecutive_pairs": 152,
-    "adjacent_pairs": 20,
+    "travel_violations": 24,
+    "travel_examples": [
+      "raw: on T: OE-FOS Lec 1@NCSE \u2192 CO Lec 2@AC gap=0min need\u22655",
+      "raw: on T: MT-AMLD Lec 1@ENTCX \u2192 DE4-GIS Lec 2@CSED gap=0min need\u22655",
+      "raw: on T: TOC Lab 3@CSED \u2192 DAA Lec 2@AC gap=0min need\u22655",
+      "raw: on T: MT-BDAAS Lec 1@ENTCX \u2192 CoI Lec 1@AC gap=0min need\u22655",
+      "raw: on T: MT-GAN Lec 1@NCSE \u2192 CN Lec 1@AC gap=0min need\u22655",
+      "raw: on T: SIC Lec 1@ENTCX \u2192 AIMA Lec 2@AC gap=0min need\u22655",
+      "raw: on Th: OE-FOS Lec 1@NCSE \u2192 CO Lec 2@AC gap=0min need\u22655",
+      "raw: on Th: MT-AMLD Lec 1@ENTCX \u2192 DE4-GIS Lec 2@CSED gap=0min need\u22655"
+    ],
+    "back_to_back_pct": 100.0,
+    "consecutive_pairs": 29,
+    "adjacent_pairs": 29,
     "slot_spread": {
-      "early_pct": 17.15,
-      "mid_pct": 50.87,
-      "late_pct": 31.98,
-      "early": 59,
-      "mid": 175,
-      "late": 110,
-      "total_meetings": 344
+      "early_pct": 14.56,
+      "mid_pct": 61.99,
+      "late_pct": 23.45,
+      "early": 54,
+      "mid": 230,
+      "late": 87,
+      "total_meetings": 371
     }
   },
   "meta": {
-    "csv": "D:\\Riya\\College\\btech\\solutions\\COEPSpr2026_v4.csv",
+    "csv": "solutions\\COEPSpr2_2026_v1.csv",
     "data_dir": "D:\\Riya\\College\\btech\\unitime-out",
     "rooms_indexed": 45,
     "staff": 113,

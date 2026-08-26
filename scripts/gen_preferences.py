@@ -19,8 +19,8 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-from classifications import find_course_pairs
-from gen_course_offering import _building_for, _room_number
+from classifications import companion_itype, find_course_pairs, is_honor_subject
+from gen_course_offering import SYNTHETIC_LAB_DONOR, _building_for, _room_number
 from taasika_loader import load
 from xml_common import LICENSE_HEADER, xml_escape
 
@@ -37,12 +37,13 @@ RoomKey = Tuple[str, str]  # (building, roomNbr)
 
 def _time_pattern(subpart_type: str, min_per_week: int) -> str:
     """Map subpart duration to a sessionSetup time pattern name."""
+    block = subpart_type in ("Lab", "Tut", "Rec")
     if min_per_week == 60:
         return "1 x 60"
     if min_per_week == 120:
-        return "1 x 120" if subpart_type == "Lab" else "2 x 60"
+        return "1 x 120" if block else "2 x 60"
     if min_per_week == 180:
-        return "1 x 180" if subpart_type == "Lab" else "3 x 60"
+        return "1 x 180" if block else "3 x 60"
     if min_per_week == 300:
         return "5 x 60"
     raise ValueError(
@@ -126,19 +127,42 @@ def _collect_class_rooms(snapshot_id: int = 240) -> dict[tuple[str, str, str, st
         sid = primary["subjectId"]
         if sid in lab_to_lec:
             continue
+        if is_honor_subject(primary.get("subjectShortName") or ""):
+            continue
         info = subject_idx.get(str(sid))
         if not info:
             continue
 
-        lec_subj = primary if not primary.get("batches") else None
+        is_lab_only = bool(primary.get("batches")) and sid not in lec_to_lab
+        lec_subj = None if is_lab_only else primary
         lab_subj = None
         if sid in lec_to_lab:
             lab_subj = subj_by_id.get(lec_to_lab[sid])
-        elif primary.get("batches"):
+        elif is_lab_only:
             lab_subj = primary
 
         lec_rows = sct_by_subject.get(lec_subj["subjectId"], []) if lec_subj else []
+        if lec_subj and not lec_rows:
+            lec_rows = sbt_by_subject.get(lec_subj["subjectId"], [])
         lab_rows = sbt_by_subject.get(lab_subj["subjectId"], []) if lab_subj else []
+        if lab_subj and not lab_rows:
+            lab_rows = sct_by_subject.get(lab_subj["subjectId"], [])
+        companion_kind = companion_itype((lab_subj or {}).get("subjectShortName") or "Lab")
+        if not lec_rows and not lab_rows and lab_subj:
+            # Synthetic AI labs: still emit room prefs from the lab subject's rooms.
+            lab_room_ids = [sr["roomId"] for sr in subject_rooms.get(lab_subj["subjectId"], [])]
+            if lab_room_ids:
+                donor_short = SYNTHETIC_LAB_DONOR.get(lab_subj.get("subjectShortName") or "")
+                donor = next(
+                    (s for s in subjects if s.get("subjectShortName") == donor_short),
+                    None,
+                )
+                donor_rows = sbt_by_subject.get(donor["subjectId"], []) if donor else []
+                area = info["subjectArea"]
+                course_nbr = info["courseNumber"]
+                for idx, _row in enumerate(donor_rows or [None], start=1):
+                    add_rooms((area, course_nbr, companion_kind, str(idx)), lab_room_ids)
+            continue
         if not lec_rows and not lab_rows:
             continue
 
@@ -146,21 +170,19 @@ def _collect_class_rooms(snapshot_id: int = 240) -> dict[tuple[str, str, str, st
         course_nbr = info["courseNumber"]
 
         for idx, row in enumerate(lec_rows, start=1):
-            cls = classes.get(row["classId"])
-            if not cls:
-                continue
+            cls = classes.get(row.get("classId"))
             key = (area, course_nbr, "Lec", str(idx))
             ids: List[int] = [sr["roomId"] for sr in subject_rooms.get(lec_subj["subjectId"], [])]
-            ids.extend(cr["roomId"] for cr in class_rooms_by_class.get(cls["classId"], []))
+            if cls:
+                ids.extend(cr["roomId"] for cr in class_rooms_by_class.get(cls["classId"], []))
             add_rooms(key, ids)
 
         for idx, row in enumerate(lab_rows, start=1):
-            batch = batches.get(row["batchId"])
-            if not batch:
-                continue
-            key = (area, course_nbr, "Lab", str(idx))
+            batch = batches.get(row.get("batchId"))
+            key = (area, course_nbr, companion_kind, str(idx))
             ids = [sr["roomId"] for sr in subject_rooms.get(lab_subj["subjectId"], [])]
-            ids.extend(br["roomId"] for br in batch_rooms_by_batch.get(batch["batchId"], []))
+            if batch:
+                ids.extend(br["roomId"] for br in batch_rooms_by_batch.get(batch["batchId"], []))
             add_rooms(key, ids)
 
     return out
@@ -259,6 +281,7 @@ def main() -> None:
 
     out = OUT_DIR / "preferences.xml"
     out.write_text("\n".join(lines), encoding="utf-8")
+    (OUT_DIR / "13preferences.xml").write_text("\n".join(lines), encoding="utf-8")
     print(
         f"wrote {out.relative_to(OUT_DIR.parent)} "
         f"({out.stat().st_size:,} bytes, {subpart_count} subparts, "

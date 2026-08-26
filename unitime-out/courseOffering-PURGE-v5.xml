@@ -17,7 +17,7 @@
     3. Confirm all 5 offerings are deleted (log should say "deleted" for each)
     4. Upload courseCatalog.xml, then the real courseOffering.xml -> "Update Data"
 -->
-<offerings campus="COEP" year="2026" term="Spr">
+<offerings campus="COEP" year="2026" term="Spr3" incremental="true">
   <offering id="32646" offered="false" action="delete">
     <course id="32646" subject="CS" courseNbr="DE4-GPU-Lab" controlling="true" title=""/>
   </offering>

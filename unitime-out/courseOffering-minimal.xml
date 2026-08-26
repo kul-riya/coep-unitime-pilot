@@ -1,0 +1,23 @@
+<!--
+  Generated from the Taasika SQL dump (snapshot 240, 'published-19jan26').
+  Source schema: taasika2-foss-26jan26.sql
+  Template reference: samplexml/ (UniTime XML interface)
+  See: https://www.unitime.org/uct_interfaces.php
+-->
+
+<offerings campus="COEP" year="2026" term="Spr" incremental="true" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from Taasika snapshot 240" includeExams="none">
+  <offering id="taasika-io-32529" offered="true" action="insert">
+    <course id="taasika-subject-32529" subject="CS" courseNbr="CoI" controlling="true" title="Constitution of India" scheduleBookNote="CoI">
+      <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
+    </course>
+    <config name="1" limit="300">
+      <subpart type="Lec" suffix="" minPerWeek="120"/>
+      <class id="CoI Lec 1" type="Lec" suffix="1" limit="150" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <instructor id="taasika-teacher-18944" share="100" lead="true"/>
+      </class>
+      <class id="CoI Lec 2" type="Lec" suffix="2" limit="150" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+        <instructor id="taasika-teacher-18944" share="100" lead="true"/>
+      </class>
+    </config>
+  </offering>
+</offerings>

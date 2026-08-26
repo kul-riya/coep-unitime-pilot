@@ -21,11 +21,35 @@ Administration → Academic Sessions → Data Exchange (session **COEP / Spr / 2
 | After import | Required UI step |
 |--------------|------------------|
 | Step 7 `buildingRoomImport.xml` | **Administration → Academic Sessions → Buildings → Update Data** (rooms are not usable until this) |
-| Step 10 `staff.xml` | **Courses → Input Data → Instructors → Manage Instructor List** (pull staff into instructors; otherwise `<instructor>` refs in `courseOffering.xml` can trigger Hibernate errors) |
+| Step 10 `staff.xml` | **Courses → Input Data → Instructors → Manage Instructor List** (pull staff into instructors; required before `preferences.xml` if it lists instructors) |
+
+> **courseOffering.xml import tips (Hibernate `TransientObjectException`):**
+> - **Stack trace reading:** if the failure is in
+>   `deleteUnmatchedInstructionalOfferings` → `deleteInstructionalOffering` →
+>   `flush`, CS CoI was **inserted successfully**; UniTime then tried to delete
+>   *other* session offerings not listed in your file (default non-incremental
+>   mode). That cleanup flush hit a Hibernate bug when mixed with the new insert.
+> - **Fix:** all generated offering files now set **`incremental="true"`** on the
+>   root `<offerings>` element. Re-import with the regenerated XML. Incremental
+>   mode only creates/updates offerings listed in the file — it does **not** mass-
+>   delete everything else in the session.
+> - Use `<offering id="taasika-io-…">` / `<course id="taasika-subject-…">`
+>   (different ids, matching `courseCatalog.xml`), `<courseCredit …/>` on each
+> - Class-level `<instructor id="taasika-teacher-…"/>` is **on** each class again
+>   (needed for UniTime to show instructors on the exported timetable). Re-import
+>   `staff.xml`, run **Manage Instructor List**, then re-import `courseOffering.xml`.
+>   Adjuncts use `positionType="ADJUNCT"` (UI label **Adjunct Faculty**); `(Adjunct)`
+>   is stripped from the person name.
+> - To remove stale offerings explicitly, import a **purge** file first
+>   (`courseOffering-PURGE-all.xml` or `courseOffering-PURGE-v5.xml` — both also
+>   use `incremental="true"`), then import the real `courseOffering.xml`.
+> - **Debug:** `courseOffering-minimal.xml` (CS CoI only) on a session that already
+>   has other offerings requires `incremental="true"` (included in regenerated file).
 
 | Step | File | Notes |
 |------|------|-------|
-| 10a | `unitime-out/courseOffering-PURGE-v5.xml` | **New this round** — deletes 5 stale standalone `-Lab` offerings before re-import |
+| 10a | `unitime-out/courseOffering-PURGE-all.xml` | After any failed offering import — clears partial/legacy offerings |
+| 10b | `unitime-out/courseOffering-PURGE-v5.xml` | If upgrading from pre-v5 merge fix — deletes 5 stale standalone `-Lab` offerings |
 | 11 | `unitime-out/courseCatalog.xml` | **Required this round** — elective Lec+Lab merge fix changed course numbers |
 | 12 | `unitime-out/courseOffering.xml` | 58 offerings, 260 classes (`action="insert"` for fresh session) |
 | 13 | **`unitime-out/preferences.xml`** | **Required** — time + room prefs on every subpart/class |

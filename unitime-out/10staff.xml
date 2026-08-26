@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<staff campus="COEP" term="Spr" year="2026">
+<staff campus="COEP" term="Spr3" year="2026">
   <staffMember externalId="taasika-teacher-18832" firstName="Jibi" lastName="Abraham" positionType="ASSOC_PROF" department="0101" email="jibi@unitime.local"/>
   <staffMember externalId="taasika-teacher-18833" firstName="Abhijit" lastName="A.M." positionType="ASST_PROF" department="0101" email="abhijit@unitime.local"/>
   <staffMember externalId="taasika-teacher-18834" firstName="Vahida" lastName="Attar" positionType="ASSOC_PROF" department="0101" email="vahida@unitime.local"/>

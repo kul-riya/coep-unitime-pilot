@@ -4,7 +4,7 @@
   Template reference: samplexml/ (UniTime XML interface)
   See: https://www.unitime.org/uct_interfaces.php
 -->
-<studentGroups campus="COEP" term="Spr" year="2026">
+<studentGroups campus="COEP" term="Spr3" year="2026">
   <studentGroup externalId="taasika-class-6432" code="MT-CE" name="FY M Tech Computer Engineering"/>
   <studentGroup externalId="taasika-class-6433" code="SY-Div1" name="SY Computer Engineering Div 1"/>
   <studentGroup externalId="taasika-class-6434" code="SY-Div2" name="SY Computer Engineering Div 2"/>
@@ -213,11 +213,4 @@
   <studentGroup externalId="taasika-batch-30791" code="FY-PP5-A_" name="FY-PP5-A_ (Lab Batch, size 25)"/>
   <studentGroup externalId="taasika-batch-30792" code="FY-PP4-A_" name="FY-PP4-A_ (Lab Batch, size 25)"/>
   <studentGroup externalId="taasika-batch-30793" code="FY-PP3-A_" name="FY-PP3-A_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="sim-FY-CE" code="FY-CE" name="FY CE cohort (simulated)"/>
-  <studentGroup externalId="sim-SY-CE" code="SY-CE" name="SY CE cohort (simulated)"/>
-  <studentGroup externalId="sim-SY-AIML" code="SY-AIML" name="SY AIML cohort (simulated)"/>
-  <studentGroup externalId="sim-TY-CE" code="TY-CE" name="TY CE cohort (simulated)"/>
-  <studentGroup externalId="sim-TY-AIML" code="TY-AIML" name="TY AIML cohort (simulated)"/>
-  <studentGroup externalId="sim-BT-CE" code="BT-CE" name="BT CE cohort (simulated)"/>
-  <studentGroup externalId="sim-BT-AIML" code="BT-AIML" name="BT AIML cohort (simulated)"/>
 </studentGroups>
