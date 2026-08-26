@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<buildingsRooms campus="COEP" term="Spr3" year="2026">
+<buildingsRooms campus="COEP" term="Spr4" year="2026">
   <building externalId="taasika-bldg-AC" abbreviation="AC" locationX="100" locationY="100" name="Academic Complex">
     <room externalId="taasika-room-8952" locationX="100" locationY="100" roomNumber="AC-202NC-06" displayName="AC-202 (NC-06)" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
       <roomDepartments>

@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<preferences campus="COEP" term="Spr3" year="2026" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from courseOffering.xml + Taasika room prefs">
+<preferences campus="COEP" term="Spr" year="2026" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from courseOffering.xml + Taasika room prefs">
   <subpart subject="CS" course="CoI" config="1" type="Lec">
     <timePref pattern="2 x 60" level="R"/>
     <datePref pattern="Full Term" level="R"/>
