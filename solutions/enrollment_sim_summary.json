@@ -17,6 +17,7 @@
   "missing_shorts": [],
   "id_format": "61yy03aaa (yy=01FY..05MT)",
   "overflow_unplaced": {
+    "CS PPS-FY Lec": 60,
     "MT PSEC2-EAI Lab": 2
   },
   "note": "CSE FY=160; CSE SY/TY/BT=200 (2 divisions of 100, DSY join in SY). AIML=100 extra per year on the same basket. MDM/OE are other-dept room blocks (no enrollments). BT has no minor; every BT student takes one DE4."

@@ -942,18 +942,18 @@
     </config>
   </offering>
   <offering id="taasika-io-32745" offered="true" action="insert">
-    <course id="taasika-subject-32745" subject="CS" courseNbr="FY-Reserved" controlling="true" title="FY Reserved Subject" scheduleBookNote="FY-Reserved">
+    <course id="taasika-subject-32745" subject="CS" courseNbr="FY-Reserve" controlling="true" title="FY Reserved Subject" scheduleBookNote="FY-Reserve">
       <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="5.0"/>
     </course>
     <config name="1" limit="300">
       <subpart type="Lec" suffix="" minPerWeek="300"/>
-      <class id="FY-Reserved Lec 1" type="Lec" suffix="1" limit="100" scheduleNote="FY-Reserved1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="FY-Reserve Lec 1" type="Lec" suffix="1" limit="100" scheduleNote="FY-Reserved1" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <instructor id="taasika-teacher-18941" share="100" lead="true"/>
       </class>
-      <class id="FY-Reserved Lec 2" type="Lec" suffix="2" limit="100" scheduleNote="FY-Reserved2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="FY-Reserve Lec 2" type="Lec" suffix="2" limit="100" scheduleNote="FY-Reserved2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <instructor id="taasika-teacher-18942" share="100" lead="true"/>
       </class>
-      <class id="FY-Reserved Lec 3" type="Lec" suffix="3" limit="100" scheduleNote="FY-Reserved3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="FY-Reserve Lec 3" type="Lec" suffix="3" limit="100" scheduleNote="FY-Reserved3" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <instructor id="taasika-teacher-18943" share="100" lead="true"/>
       </class>
     </config>
@@ -1192,10 +1192,10 @@
     <course id="taasika-subject-32754" subject="CS" courseNbr="PPS-FY" controlling="true" title="Programming for Problem Solving (FY)" scheduleBookNote="PPS-FY">
       <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
     </course>
-    <config name="1" limit="524">
+    <config name="1" limit="464">
       <subpart type="Lec" suffix="" minPerWeek="60"/>
       <subpart type="Lab" suffix="" minPerWeek="120"/>
-      <class id="PPS-FY Lec 1" type="Lec" suffix="1" limit="260" scheduleNote="FY-PPS1n2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      <class id="PPS-FY Lec 1" type="Lec" suffix="1" limit="200" scheduleNote="FY-PPS1n2" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
         <instructor id="taasika-teacher-18874" share="100" lead="true"/>
       </class>
       <class id="PPS-FY Lab 1" type="Lab" suffix="1" limit="33" scheduleNote="FY-PPS1-A" studentScheduling="true" displayInScheduleBook="true" cancelled="false">

@@ -141,7 +141,7 @@
   <course externalId="taasika-subject-32593" subject="CS" courseNumber="LAUC-DSY" title="DSY Div 2 Linear algebra and Univariate Calculus" permanentId="taasika-32593">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32594" subject="CS" courseNumber="LAUC-Tut-DSY" title="Linear algebra and Univariate Calculus" permanentId="taasika-32594">
+  <course externalId="taasika-subject-32594" subject="CS" courseNumber="LAUC-T-DSY" title="Linear algebra and Univariate Calculus" permanentId="taasika-32594">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
   <course externalId="taasika-subject-32595" subject="CS" courseNumber="FOP" title="Foundation of Physics" permanentId="taasika-32595">
@@ -180,13 +180,13 @@
   <course externalId="taasika-subject-32609" subject="CS" courseNumber="ACT" title="Algorithms and Complexity Theory" permanentId="taasika-32609">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32610" subject="MT" courseNumber="MTCE-DE-DOS" title="MTCE-Distributed Operating System" permanentId="taasika-32610">
+  <course externalId="taasika-subject-32610" subject="MT" courseNumber="MTCE-DEDOS" title="MTCE-Distributed Operating System" permanentId="taasika-32610">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
   <course externalId="taasika-subject-32611" subject="MT" courseNumber="MTCE-DE-AI" title="MTCE-Artificial Intelligence" permanentId="taasika-32611">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32612" subject="MT" courseNumber="MTCE-DE-AGT" title="MTCE-Advanced Graph Theory" permanentId="taasika-32612">
+  <course externalId="taasika-subject-32612" subject="MT" courseNumber="MTCE-DEAGT" title="MTCE-Advanced Graph Theory" permanentId="taasika-32612">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
   <course externalId="taasika-subject-32613" subject="MT" courseNumber="MTCE-TDB" title="MTCE-Topics in Databases" permanentId="taasika-32613">
@@ -249,7 +249,7 @@
   <course externalId="taasika-subject-32645" subject="CS" courseNumber="SA" title="DE4-SA: System Administration" permanentId="taasika-32645">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32647" subject="CS" courseNumber="Minor2-OOPD" title="Minor2-Object Oriented Programming and Design" permanentId="taasika-32647">
+  <course externalId="taasika-subject-32647" subject="CS" courseNumber="Min2-OOPD" title="Minor2-Object Oriented Programming and Design" permanentId="taasika-32647">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
   <course externalId="taasika-subject-32648" subject="CS" courseNumber="Minor4-DS" title="Minor4-Data Science" permanentId="taasika-32648">
@@ -447,7 +447,7 @@
   <course externalId="taasika-subject-32744" subject="MT" courseNumber="MT-LL" title="MTech Liberal Learning Course" permanentId="taasika-32744">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32745" subject="CS" courseNumber="FY-Reserved" title="FY Reserved Subject" permanentId="taasika-32745">
+  <course externalId="taasika-subject-32745" subject="CS" courseNumber="FY-Reserve" title="FY Reserved Subject" permanentId="taasika-32745">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="5.0"/>
   </course>
   <course externalId="taasika-subject-32746" subject="CS" courseNumber="OE-FA" title="OE Fundamentals of Algorithms" permanentId="taasika-32746">

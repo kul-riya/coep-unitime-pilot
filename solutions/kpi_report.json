@@ -1,77 +1,70 @@
 {
   "summary": {
     "classes_in_offerings": 261,
-    "classes_in_solution": 254,
-    "hard_feasibility_score": 89.8,
-    "hard_checks": 3394,
-    "hard_failures": 266,
-    "preference_score": 100.0,
-    "unav_onl_assignments": 45,
-    "unav_onl_pct": 17.72,
-    "instructor_conflicts": 5,
+    "classes_in_solution": 260,
+    "hard_feasibility_score": 94.98,
+    "hard_checks": 4448,
+    "hard_failures": 644,
+    "preference_score": 25.2,
+    "unav_onl_assignments": 8,
+    "unav_onl_pct": 3.08,
+    "instructor_conflicts": 0,
     "instructor_lunch_violations": 0,
     "room_conflicts": 0,
-    "student_conflict_pairs": 0,
-    "students_with_conflict": 0,
-    "students_with_lunch_conflict": 0,
+    "student_conflict_pairs": 1485,
+    "students_with_conflict": 587,
+    "students_with_lunch_conflict": 56,
     "students_total": 1290,
-    "travel_violations": 2,
-    "back_to_back_pct": 14.0
+    "travel_violations": 0,
+    "back_to_back_pct": 29.34
   },
   "hard": {
     "coverage": {
       "name": "coverage",
       "checked": 261,
-      "passed": 0,
-      "failed": 261,
-      "rate_pct": 0.0,
+      "passed": 260,
+      "failed": 1,
+      "rate_pct": 99.62,
       "examples": [
-        "missing assignment for CoI Lec 1",
-        "missing assignment for CoI Lec 2",
-        "missing assignment for CO Lec 1",
-        "missing assignment for CO Lec 2",
-        "missing assignment for AI Lec 1",
-        "missing assignment for AI Lec 2",
-        "missing assignment for AI Lab 1",
-        "missing assignment for AI Lab 2"
+        "missing assignment for PPS-FY Lec 1"
       ]
     },
     "time_pattern_fidelity": {
       "name": "time_pattern_fidelity",
-      "checked": 0,
-      "passed": 0,
+      "checked": 260,
+      "passed": 260,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
     "date_pattern": {
       "name": "date_pattern",
-      "checked": 0,
-      "passed": 0,
+      "checked": 260,
+      "passed": 260,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
     "room_capacity": {
       "name": "room_capacity",
-      "checked": 0,
-      "passed": 0,
+      "checked": 260,
+      "passed": 260,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
     "lunch_weekend": {
       "name": "lunch_weekend",
-      "checked": 0,
-      "passed": 0,
+      "checked": 260,
+      "passed": 260,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
     "instructor_lunch_breaks": {
       "name": "instructor_lunch_breaks",
-      "checked": 45,
-      "passed": 45,
+      "checked": 47,
+      "passed": 47,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
@@ -79,29 +72,32 @@
     "student_lunch_breaks": {
       "name": "student_lunch_breaks",
       "checked": 1290,
-      "passed": 1290,
+      "passed": 1234,
+      "failed": 56,
+      "rate_pct": 95.66,
+      "examples": [
+        "610203029 on T: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203030 on T: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203031 on T: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203032 on T: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203033 on T: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203034 on T: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203035 on T: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203036 on T: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)"
+      ]
+    },
+    "instructor_double_booking": {
+      "name": "instructor_double_booking",
+      "checked": 260,
+      "passed": 260,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
     },
-    "instructor_double_booking": {
-      "name": "instructor_double_booking",
-      "checked": 254,
-      "passed": 249,
-      "failed": 5,
-      "rate_pct": 98.03,
-      "examples": [
-        "instructor raw:(Adjunct), A M: CS 171 Lab 10 overlaps CS 225 Lab 17",
-        "instructor raw:(Adjunct), A M: CS 179 Lec 1 overlaps CS 225 Lec 4",
-        "instructor raw:(Adjunct), A M: CS 171 Lab 11 overlaps CS 225 Lab 16",
-        "instructor raw:(Adjunct), A M: MT 131 Lab 1 overlaps CS 216 Lab 3",
-        "instructor raw:(Adjunct), A M: CS 179 Lec 1 overlaps CS 226 Lab 3"
-      ]
-    },
     "room_double_booking": {
       "name": "room_double_booking",
-      "checked": 254,
-      "passed": 254,
+      "checked": 260,
+      "passed": 260,
       "failed": 0,
       "rate_pct": 100.0,
       "examples": []
@@ -109,63 +105,87 @@
     "student_conflicts": {
       "name": "student_conflicts",
       "checked": 1290,
-      "passed": 1290,
-      "failed": 0,
-      "rate_pct": 100.0,
-      "examples": []
+      "passed": 703,
+      "failed": 587,
+      "rate_pct": 54.5,
+      "examples": [
+        "610103001 on F: CS PP-FY Lab 1 overlaps CS FY-Reserve Lec 1",
+        "610103002 on T: CS AIMA Lec 2 overlaps CS FY-Reserve Lec 2",
+        "610103002 on W: CS AIMA Lec 2 overlaps CS FY-Reserve Lec 2",
+        "610103002 on Th: CS AIMA Lec 2 overlaps CS FY-Reserve Lec 2",
+        "610103002 on F: CS WD-FY Lab 1 overlaps CS FY-Reserve Lec 2",
+        "610103002 on M: CS PPS-FY Lab 1 overlaps CS WD-FY Lec 2",
+        "610103003 on T: CS AIMA Lec 3 overlaps CS FY-Reserve Lec 3",
+        "610103003 on Th: CS AIMA Lec 3 overlaps CS FY-Reserve Lec 3"
+      ]
     }
   },
   "preference": {
     "room_preference": {
       "name": "room_preference",
-      "checked": 0,
-      "passed": 0,
-      "failed": 0,
-      "rate_pct": 100.0,
-      "examples": []
+      "checked": 248,
+      "passed": 125,
+      "failed": 123,
+      "rate_pct": 50.4,
+      "examples": [
+        "CoI Lec 1: AC NC-10 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CoI Lec 2: AC NC-10 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CO Lec 1: AC NC-09 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CO Lec 2: AC NC-10 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "AI Lec 1: AC NC-10 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "AI Lec 2: AC NC-09 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "CN Lec 1: AC NC-10 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "CN Lec 2: AC NC-09 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']"
+      ]
     },
     "instructor_identity": {
       "name": "instructor_identity",
-      "checked": 0,
+      "checked": 259,
       "passed": 0,
-      "failed": 0,
-      "rate_pct": 100.0,
-      "examples": []
+      "failed": 259,
+      "rate_pct": 0.0,
+      "examples": [
+        "CoI Lec 1: expected Teacher1, C (taasika-teacher-18944), got Constitution Teacher1",
+        "CoI Lec 2: expected Teacher1, C (taasika-teacher-18944), got Constitution Teacher1",
+        "CO Lec 1: expected Joshi, A (taasika-teacher-18840), got Amit Joshi",
+        "CO Lec 2: expected Joshi, A (taasika-teacher-18840), got Amit Joshi",
+        "AI Lec 1: expected Attar, V (taasika-teacher-18834), got Vahida Attar",
+        "AI Lec 2: expected Khobragade, A (taasika-teacher-18865), got Anish Khobragade",
+        "AI Lab 1: expected Attar, V (taasika-teacher-18834), got Vahida Attar",
+        "AI Lab 2: expected Attar, V (taasika-teacher-18834), got Vahida Attar"
+      ]
     },
     "unav_onl": {
-      "count": 45,
-      "pct": 17.72,
-      "total_assignments": 254
+      "count": 8,
+      "pct": 3.08,
+      "total_assignments": 260
     }
   },
   "efficiency": {
     "instructor_load": {
-      "instructors": 45,
-      "mean_minutes": 724,
-      "stdev_minutes": 326.0,
-      "max_minutes": 1620,
-      "min_minutes": 60
+      "instructors": 47,
+      "mean_minutes": 713.6,
+      "stdev_minutes": 302.2,
+      "max_minutes": 1380,
+      "min_minutes": 180
     },
-    "travel_violations": 2,
-    "travel_examples": [
-      "raw:(Adjunct), A M on W: CS 225 Lab 18@UNAV \u2192 CS 179 Lec 1@AC gap=0min need\u22655",
-      "raw:(Adjunct), A M on M: CS 225 Lab 9@ENTCX \u2192 CS 179 Lec 1@AC gap=0min need\u22655"
-    ],
-    "back_to_back_pct": 14.0,
-    "consecutive_pairs": 150,
-    "adjacent_pairs": 21,
+    "travel_violations": 0,
+    "travel_examples": [],
+    "back_to_back_pct": 29.34,
+    "consecutive_pairs": 167,
+    "adjacent_pairs": 49,
     "slot_spread": {
-      "early_pct": 17.15,
-      "mid_pct": 50.87,
-      "late_pct": 31.98,
-      "early": 59,
-      "mid": 175,
-      "late": 110,
-      "total_meetings": 344
+      "early_pct": 22.16,
+      "mid_pct": 65.41,
+      "late_pct": 12.43,
+      "early": 82,
+      "mid": 242,
+      "late": 46,
+      "total_meetings": 370
     }
   },
   "meta": {
-    "csv": "solutions/COEPSpr2026_v2.csv",
+    "csv": "../solutions/COEPSpr62026_v2.csv",
     "data_dir": "/Users/mihir/Developer/COEP/coep-unitime-pilot/unitime-out",
     "rooms_indexed": 45,
     "staff": 113,

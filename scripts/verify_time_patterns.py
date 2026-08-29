@@ -164,9 +164,9 @@ def main() -> int:
     print(f"  prefs subparts    : {len(actual)}")
     print(f"  pattern counts    : {dict(Counter(actual.values()))}")
 
-    fy = expected.get(("CS", "FY-Reserved", "Lec"))
+    fy = expected.get(("CS", "FY-Reserve", "Lec"))
     if fy:
-        print(f"  FY-Reserved Lec   : {fy} (eachSlot=1, nSlots=5 -> 300 min/wk)")
+        print(f"  FY-Reserve Lec    : {fy} (eachSlot=1, nSlots=5 -> 300 min/wk)")
 
     ok = not missing_in_prefs and not mismatches
     if missing_in_prefs:

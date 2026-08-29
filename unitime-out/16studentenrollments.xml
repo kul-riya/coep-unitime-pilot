@@ -16,7 +16,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103002">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -28,7 +28,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103003">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -40,7 +40,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103004">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -52,7 +52,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103005">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -64,7 +64,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103006">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -76,7 +76,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103007">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -88,7 +88,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103008">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -100,7 +100,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103009">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -112,7 +112,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103010">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -124,7 +124,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103011">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -136,7 +136,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103012">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -148,7 +148,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103013">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -160,7 +160,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103014">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -172,7 +172,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103015">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -184,7 +184,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103016">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -196,7 +196,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103017">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -208,7 +208,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103018">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -220,7 +220,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103019">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -232,7 +232,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103020">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -244,7 +244,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103021">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -256,7 +256,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103022">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -268,7 +268,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103023">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -280,7 +280,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103024">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -292,7 +292,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103025">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -304,7 +304,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103026">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -316,7 +316,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103027">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -328,7 +328,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103028">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -340,7 +340,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103029">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -352,7 +352,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103030">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -364,7 +364,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103031">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -376,7 +376,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103032">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -388,7 +388,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103033">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -400,7 +400,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103034">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -412,7 +412,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103035">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -424,7 +424,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103036">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -436,7 +436,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103037">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -448,7 +448,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103038">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -460,7 +460,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="1"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103039">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -472,7 +472,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103040">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -484,7 +484,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103041">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -496,7 +496,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103042">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -508,7 +508,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103043">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -520,7 +520,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103044">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -532,7 +532,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103045">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -544,7 +544,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103046">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -556,7 +556,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103047">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -568,7 +568,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103048">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -580,7 +580,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103049">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -592,7 +592,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103050">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -604,7 +604,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103051">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -616,7 +616,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103052">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -628,7 +628,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103053">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -640,7 +640,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103054">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -652,7 +652,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103055">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -664,7 +664,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103056">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -676,7 +676,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103057">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -688,7 +688,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103058">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -700,7 +700,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103059">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -712,7 +712,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103060">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -724,7 +724,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103061">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -736,7 +736,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103062">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -748,7 +748,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103063">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -760,7 +760,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103064">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -772,7 +772,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103065">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -784,7 +784,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103066">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -796,7 +796,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103067">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -808,7 +808,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103068">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -820,7 +820,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103069">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -832,7 +832,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103070">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -844,7 +844,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103071">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -856,7 +856,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103072">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -868,7 +868,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103073">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -880,7 +880,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103074">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -892,7 +892,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103075">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -904,7 +904,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103076">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -916,7 +916,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="2"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103077">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -928,7 +928,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103078">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -940,7 +940,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103079">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -952,7 +952,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103080">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -964,7 +964,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103081">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -976,7 +976,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103082">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -988,7 +988,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103083">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1000,7 +1000,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103084">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1012,7 +1012,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103085">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1024,7 +1024,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103086">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1036,7 +1036,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103087">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1048,7 +1048,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103088">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1060,7 +1060,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103089">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1072,7 +1072,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103090">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1084,7 +1084,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103091">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1096,7 +1096,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103092">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1108,7 +1108,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103093">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1120,7 +1120,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103094">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1132,7 +1132,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103095">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1144,7 +1144,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103096">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1156,7 +1156,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103097">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1168,7 +1168,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103098">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1180,7 +1180,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103099">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1192,7 +1192,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103100">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1204,7 +1204,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103101">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1216,7 +1216,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103102">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1228,7 +1228,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103103">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1240,7 +1240,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103104">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1252,7 +1252,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103105">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1264,7 +1264,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103106">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1276,7 +1276,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103107">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1288,7 +1288,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103108">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1300,7 +1300,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103109">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1312,7 +1312,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103110">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1324,7 +1324,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103111">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1336,7 +1336,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103112">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1348,7 +1348,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103113">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1360,7 +1360,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103114">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1372,7 +1372,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="3"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103115">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1384,7 +1384,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103116">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1396,7 +1396,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103117">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1408,7 +1408,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103118">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1420,7 +1420,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103119">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1432,7 +1432,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103120">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1444,7 +1444,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103121">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1456,7 +1456,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103122">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1468,7 +1468,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103123">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1480,7 +1480,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103124">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1492,7 +1492,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103125">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1504,7 +1504,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103126">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1516,7 +1516,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103127">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1528,7 +1528,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103128">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1540,7 +1540,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103129">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1552,7 +1552,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103130">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1564,7 +1564,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103131">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1576,7 +1576,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103132">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1588,7 +1588,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103133">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1600,7 +1600,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103134">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1612,7 +1612,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103135">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1624,7 +1624,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103136">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1636,7 +1636,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103137">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1648,7 +1648,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103138">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1660,7 +1660,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103139">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1672,7 +1672,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103140">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1684,7 +1684,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103141">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1696,7 +1696,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103142">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1708,7 +1708,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103143">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1720,7 +1720,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103144">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1732,7 +1732,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103145">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1744,7 +1744,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103146">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1756,7 +1756,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103147">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1768,7 +1768,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103148">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1780,7 +1780,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103149">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1792,7 +1792,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103150">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1804,7 +1804,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103151">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1816,7 +1816,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103152">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1828,7 +1828,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="4"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103153">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1840,7 +1840,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103154">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1852,7 +1852,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103155">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1864,7 +1864,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103156">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1876,7 +1876,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103157">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1888,7 +1888,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103158">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1900,7 +1900,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103159">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1912,7 +1912,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103160">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1924,7 +1924,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103161">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1936,7 +1936,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103162">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1948,7 +1948,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103163">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1960,7 +1960,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103164">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -1972,7 +1972,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103165">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -1984,7 +1984,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103166">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -1996,7 +1996,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103167">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2008,7 +2008,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103168">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2020,7 +2020,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103169">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2032,7 +2032,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103170">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2044,7 +2044,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103171">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2056,7 +2056,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103172">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2068,7 +2068,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103173">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2080,7 +2080,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103174">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2092,7 +2092,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103175">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2104,7 +2104,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103176">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2116,7 +2116,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103177">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2128,7 +2128,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103178">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2140,7 +2140,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103179">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2152,7 +2152,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103180">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2164,7 +2164,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103181">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2176,7 +2176,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103182">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2188,7 +2188,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103183">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2200,7 +2200,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103184">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2212,7 +2212,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103185">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2224,7 +2224,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103186">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2236,7 +2236,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103187">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2248,7 +2248,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103188">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2260,7 +2260,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103189">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2272,7 +2272,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103190">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2284,7 +2284,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103191">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2296,7 +2296,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103192">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2308,7 +2308,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103193">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2320,7 +2320,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103194">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2332,7 +2332,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103195">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2344,7 +2344,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103196">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2356,7 +2356,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103197">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2368,7 +2368,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103198">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2380,7 +2380,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="7"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103199">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2392,7 +2392,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103200">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2404,7 +2404,7 @@
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103201">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2412,11 +2412,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103202">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2424,11 +2423,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103203">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2436,11 +2434,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103204">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2448,11 +2445,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103205">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2460,11 +2456,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103206">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2472,11 +2467,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103207">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2484,11 +2478,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103208">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2496,11 +2489,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103209">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2508,11 +2500,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103210">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2520,11 +2511,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103211">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2532,11 +2522,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103212">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2544,11 +2533,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103213">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2556,11 +2544,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103214">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2568,11 +2555,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103215">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2580,11 +2566,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103216">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2592,11 +2577,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103217">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2604,11 +2588,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103218">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2616,11 +2599,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103219">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2628,11 +2610,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103220">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2640,11 +2621,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103221">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2652,11 +2632,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103222">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2664,11 +2643,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103223">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2676,11 +2654,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103224">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2688,11 +2665,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103225">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2700,11 +2676,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="8"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="8"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103226">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2712,11 +2687,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103227">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2724,11 +2698,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103228">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2736,11 +2709,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="5"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103229">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2748,11 +2720,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103230">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2760,11 +2731,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103231">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2772,11 +2742,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103232">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2784,11 +2753,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103233">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2796,11 +2764,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103234">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2808,11 +2775,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103235">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2820,11 +2786,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103236">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2832,11 +2797,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103237">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2844,11 +2808,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103238">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2856,11 +2819,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103239">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2868,11 +2830,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103240">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2880,11 +2841,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103241">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2892,11 +2852,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103242">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2904,11 +2863,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103243">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2916,11 +2874,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103244">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2928,11 +2885,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103245">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2940,11 +2896,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103246">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2952,11 +2907,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103247">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -2964,11 +2918,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103248">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -2976,11 +2929,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103249">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -2988,11 +2940,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103250">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -3000,11 +2951,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="9"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="9"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103251">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -3012,11 +2962,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="10"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="10"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103252">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -3024,11 +2973,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="10"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="10"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103253">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -3036,11 +2984,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="10"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="10"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103254">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -3048,11 +2995,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="10"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="10"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103255">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -3060,11 +3006,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="10"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="10"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103256">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -3072,11 +3017,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="10"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="10"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103257">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -3084,11 +3028,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="10"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="10"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610103258">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="3"/>
@@ -3096,11 +3039,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="10"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="10"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="3"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3"/>
   </student>
   <student externalId="610103259">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
@@ -3108,11 +3050,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="10"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="3"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="10"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1"/>
   </student>
   <student externalId="610103260">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="2"/>
@@ -3120,11 +3061,10 @@
     <class subject="CS" courseNbr="DS-FY" type="Rec" suffix="10"/>
     <class subject="CS" courseNbr="PP-FY" type="Lec" suffix="4"/>
     <class subject="CS" courseNbr="PP-FY" type="Lab" suffix="10"/>
-    <class subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="WD-FY" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="WD-FY" type="Lab" suffix="6"/>
-    <class subject="CS" courseNbr="FY-Reserved" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2"/>
   </student>
   <student externalId="610203001">
     <class subject="CS" courseNbr="CO" type="Lec" suffix="1"/>

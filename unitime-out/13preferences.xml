@@ -12,14 +12,14 @@
       <pref level="P" days="MT" time="1730"/>
       <pref level="P" days="MW" time="1630"/>
       <pref level="P" days="MW" time="1730"/>
-      <pref level="P" days="MTh" time="1630"/>
-      <pref level="P" days="MTh" time="1730"/>
+      <pref level="P" days="MR" time="1630"/>
+      <pref level="P" days="MR" time="1730"/>
       <pref level="P" days="MF" time="1630"/>
       <pref level="P" days="MF" time="1730"/>
       <pref level="P" days="TW" time="1630"/>
       <pref level="P" days="TW" time="1730"/>
-      <pref level="P" days="TTh" time="1630"/>
-      <pref level="P" days="TTh" time="1730"/>
+      <pref level="P" days="TR" time="1630"/>
+      <pref level="P" days="TR" time="1730"/>
       <pref level="P" days="TF" time="1630"/>
       <pref level="P" days="TF" time="1730"/>
     </timePref>
@@ -37,22 +37,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -68,22 +68,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -130,22 +130,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -278,22 +278,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -361,14 +361,14 @@
       <pref level="P" days="MT" time="1730"/>
       <pref level="P" days="MW" time="1630"/>
       <pref level="P" days="MW" time="1730"/>
-      <pref level="P" days="MTh" time="1630"/>
-      <pref level="P" days="MTh" time="1730"/>
+      <pref level="P" days="MR" time="1630"/>
+      <pref level="P" days="MR" time="1730"/>
       <pref level="P" days="MF" time="1630"/>
       <pref level="P" days="MF" time="1730"/>
       <pref level="P" days="TW" time="1630"/>
       <pref level="P" days="TW" time="1730"/>
-      <pref level="P" days="TTh" time="1630"/>
-      <pref level="P" days="TTh" time="1730"/>
+      <pref level="P" days="TR" time="1630"/>
+      <pref level="P" days="TR" time="1730"/>
       <pref level="P" days="TF" time="1630"/>
       <pref level="P" days="TF" time="1730"/>
     </timePref>
@@ -450,22 +450,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -493,22 +493,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -536,22 +536,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -617,22 +617,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -660,22 +660,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -703,22 +703,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -771,22 +771,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -855,14 +855,14 @@
       <pref level="P" days="MT" time="1730"/>
       <pref level="P" days="MW" time="1630"/>
       <pref level="P" days="MW" time="1730"/>
-      <pref level="P" days="MTh" time="1630"/>
-      <pref level="P" days="MTh" time="1730"/>
+      <pref level="P" days="MR" time="1630"/>
+      <pref level="P" days="MR" time="1730"/>
       <pref level="P" days="MF" time="1630"/>
       <pref level="P" days="MF" time="1730"/>
       <pref level="P" days="TW" time="1630"/>
       <pref level="P" days="TW" time="1730"/>
-      <pref level="P" days="TTh" time="1630"/>
-      <pref level="P" days="TTh" time="1730"/>
+      <pref level="P" days="TR" time="1630"/>
+      <pref level="P" days="TR" time="1730"/>
       <pref level="P" days="TF" time="1630"/>
       <pref level="P" days="TF" time="1730"/>
     </timePref>
@@ -879,22 +879,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -933,22 +933,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -987,22 +987,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1050,22 +1050,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1098,22 +1098,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1149,22 +1149,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1204,14 +1204,14 @@
       <pref level="P" days="MT" time="1730"/>
       <pref level="P" days="MW" time="1630"/>
       <pref level="P" days="MW" time="1730"/>
-      <pref level="P" days="MTh" time="1630"/>
-      <pref level="P" days="MTh" time="1730"/>
+      <pref level="P" days="MR" time="1630"/>
+      <pref level="P" days="MR" time="1730"/>
       <pref level="P" days="MF" time="1630"/>
       <pref level="P" days="MF" time="1730"/>
       <pref level="P" days="TW" time="1630"/>
       <pref level="P" days="TW" time="1730"/>
-      <pref level="P" days="TTh" time="1630"/>
-      <pref level="P" days="TTh" time="1730"/>
+      <pref level="P" days="TR" time="1630"/>
+      <pref level="P" days="TR" time="1730"/>
       <pref level="P" days="TF" time="1630"/>
       <pref level="P" days="TF" time="1730"/>
     </timePref>
@@ -1248,22 +1248,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1286,22 +1286,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1324,22 +1324,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1413,22 +1413,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1461,22 +1461,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1513,22 +1513,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1631,21 +1631,21 @@
   <class subject="MT" course="MT-ETCSA" type="Lab" suffix="4">
     <roomPref building="BHAU" room="Bhau1" level="-1"/>
   </class>
-  <subpart subject="CS" course="FY-Reserved" config="1" type="Lec">
+  <subpart subject="CS" course="FY-Reserve" config="1" type="Lec">
     <timePref pattern="5 x 60" level="R">
-      <pref level="P" days="MTWThF" time="1630"/>
-      <pref level="P" days="MTWThF" time="1730"/>
+      <pref level="P" days="MTWRF" time="1630"/>
+      <pref level="P" days="MTWRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
-  <class subject="CS" course="FY-Reserved" type="Lec" suffix="1">
+  <class subject="CS" course="FY-Reserve" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-201NC-05" level="-1"/>
   </class>
-  <class subject="CS" course="FY-Reserved" type="Lec" suffix="2">
+  <class subject="CS" course="FY-Reserve" type="Lec" suffix="2">
     <roomPref building="AC" room="AC-201NC-05" level="-1"/>
     <roomPref building="AC" room="AC-202NC-06" level="1"/>
   </class>
-  <class subject="CS" course="FY-Reserved" type="Lec" suffix="3">
+  <class subject="CS" course="FY-Reserve" type="Lec" suffix="3">
     <roomPref building="AC" room="AC-201NC-05" level="-1"/>
     <roomPref building="AC" room="AC-203NC-07" level="1"/>
   </class>
@@ -1653,22 +1653,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -1777,22 +1777,22 @@
     <timePref pattern="3 x 60" level="R">
       <pref level="P" days="MTW" time="1630"/>
       <pref level="P" days="MTW" time="1730"/>
-      <pref level="P" days="MTTh" time="1630"/>
-      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTR" time="1630"/>
+      <pref level="P" days="MTR" time="1730"/>
       <pref level="P" days="MTF" time="1630"/>
       <pref level="P" days="MTF" time="1730"/>
-      <pref level="P" days="MWTh" time="1630"/>
-      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWR" time="1630"/>
+      <pref level="P" days="MWR" time="1730"/>
       <pref level="P" days="MWF" time="1630"/>
       <pref level="P" days="MWF" time="1730"/>
-      <pref level="P" days="MThF" time="1630"/>
-      <pref level="P" days="MThF" time="1730"/>
-      <pref level="P" days="TWTh" time="1630"/>
-      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="MRF" time="1630"/>
+      <pref level="P" days="MRF" time="1730"/>
+      <pref level="P" days="TWR" time="1630"/>
+      <pref level="P" days="TWR" time="1730"/>
       <pref level="P" days="TWF" time="1630"/>
       <pref level="P" days="TWF" time="1730"/>
-      <pref level="P" days="TThF" time="1630"/>
-      <pref level="P" days="TThF" time="1730"/>
+      <pref level="P" days="TRF" time="1630"/>
+      <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
@@ -2032,14 +2032,14 @@
       <pref level="P" days="MT" time="1730"/>
       <pref level="P" days="MW" time="1630"/>
       <pref level="P" days="MW" time="1730"/>
-      <pref level="P" days="MTh" time="1630"/>
-      <pref level="P" days="MTh" time="1730"/>
+      <pref level="P" days="MR" time="1630"/>
+      <pref level="P" days="MR" time="1730"/>
       <pref level="P" days="MF" time="1630"/>
       <pref level="P" days="MF" time="1730"/>
       <pref level="P" days="TW" time="1630"/>
       <pref level="P" days="TW" time="1730"/>
-      <pref level="P" days="TTh" time="1630"/>
-      <pref level="P" days="TTh" time="1730"/>
+      <pref level="P" days="TR" time="1630"/>
+      <pref level="P" days="TR" time="1730"/>
       <pref level="P" days="TF" time="1630"/>
       <pref level="P" days="TF" time="1730"/>
     </timePref>

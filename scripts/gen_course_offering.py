@@ -318,6 +318,9 @@ def _apply_intake_limits(
             len(lec_sections), demand, [entry["limit"] for entry in lec_sections]
         )
         for entry, lim in zip(lec_sections, limits):
+            # No room on campus exceeds 200 capacity (NC-09, NC-10)
+            if len(lec_sections) == 1 and lim > 200:
+                lim = 200
             entry["limit"] = lim
     if lab_sections:
         limits = spread_demand(

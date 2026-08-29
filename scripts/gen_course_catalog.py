@@ -30,13 +30,24 @@ OUT_DIR = Path(__file__).resolve().parent.parent / "unitime-out"
 SCRIPTS_DIR = Path(__file__).resolve().parent
 
 
+COURSE_NBR_ABBREVIATIONS = {
+    "LAUC-Tut-DSY": "LAUC-T-DSY",
+    "LAUC-Tut(DSY)": "LAUC-T-DSY",
+    "MTCE-DE-DOS": "MTCE-DEDOS",
+    "MTCE-DE-AGT": "MTCE-DEAGT",
+    "Minor2-OOPD": "Min2-OOPD",
+    "FY-Reserved": "FY-Reserve",
+}
+
+
 def course_number_from_short(short_name: str, subject_id: int, used: set[str]) -> str:
     """Map Taasika shortName to a UniTime courseNbr shown on the timetable.
 
-    UniTime displays ``subject + courseNbr`` (e.g. ``CS CN``). Keep the short
-    code readable; replace characters that break XML/IDs.
+    UniTime displays ``subject + courseNbr`` (e.g. ``CS CN``).
+    UniTime's course_catalog.course_nbr column is VARCHAR(10), so length must be <= 10.
     """
     raw = (short_name or "").strip() or f"X{subject_id}"
+    raw = COURSE_NBR_ABBREVIATIONS.get(raw, raw)
     # DS(FY) -> DS-FY ; PP(FY)-Lab already absorbed into primary PP(FY)
     cleaned = (
         raw.replace("(", "-")
@@ -45,14 +56,15 @@ def course_number_from_short(short_name: str, subject_id: int, used: set[str]) -
         .replace("/", "-")
         .replace("_", "-")
     )
+    cleaned = COURSE_NBR_ABBREVIATIONS.get(cleaned, cleaned)
     cleaned = re.sub(r"-+", "-", cleaned).strip("-") or f"X{subject_id}"
-    # UniTime courseNbr length is limited in practice; keep a generous cap
-    cleaned = cleaned[:32]
+    # UniTime course_catalog.course_nbr DB column is VARCHAR(10)
+    cleaned = cleaned[:10]
     base = cleaned
     n = 2
     while cleaned.upper() in used:
         suffix = f"-{n}"
-        cleaned = (base[: 32 - len(suffix)] + suffix)
+        cleaned = (base[: 10 - len(suffix)] + suffix)
         n += 1
     used.add(cleaned.upper())
     return cleaned

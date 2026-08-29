@@ -184,7 +184,7 @@ def _get_time_pref_lines(course_nbr: str, pattern_name: str) -> list[str]:
     prefs: list[tuple[str, str, str]] = []  # (level, dcode, start)
 
     if active_entry:
-        target_days = set(active_entry["days"])
+        target_days = {d.replace("Th", "R").upper() for d in active_entry["days"]}
         e_start = int(active_entry["start"])
         e_end = int(active_entry["end"])
         lvl = str(active_entry.get("level", "P"))
@@ -192,7 +192,7 @@ def _get_time_pref_lines(course_nbr: str, pattern_name: str) -> list[str]:
         if lvl in ("1", "R", "0", "2"):
             # Required / Preferred rule: emit only the matching slot(s)
             for dcode in day_codes:
-                d_set = set(_expand_days_list(dcode))
+                d_set = {d.replace("Th", "R").upper() for d in _expand_days_list(dcode)}
                 for start in valid_starts:
                     start_min = int(start[:2]) * 60 + int(start[2:])
                     end_min = start_min + mins_per_meeting
@@ -201,7 +201,7 @@ def _get_time_pref_lines(course_nbr: str, pattern_name: str) -> list[str]:
         else:
             # Prohibited rule (level="P"): any slot overlapping the window is prohibited
             for dcode in day_codes:
-                d_set = set(_expand_days_list(dcode))
+                d_set = {d.replace("Th", "R").upper() for d in _expand_days_list(dcode)}
                 day_overlaps = bool(d_set & target_days)
                 if not day_overlaps:
                     continue
@@ -217,7 +217,9 @@ def _get_time_pref_lines(course_nbr: str, pattern_name: str) -> list[str]:
 
     lines = [f'    <timePref pattern="{xml_escape(pattern_name)}" level="R">']
     for lvl, dcode, start in prefs:
-        lines.append(f'      <pref level="{lvl}" days="{dcode}" time="{start}"/>')
+        # UniTime preferences XML uses single-character day abbreviations (R for Thursday, U for Sunday)
+        xml_days = dcode.replace("Th", "R").replace("Su", "U")
+        lines.append(f'      <pref level="{lvl}" days="{xml_days}" time="{start}"/>')
     lines.append('    </timePref>')
     return lines
 

@@ -694,7 +694,7 @@
   },
   "32594": {
     "subjectArea": "CS",
-    "courseNumber": "LAUC-Tut-DSY",
+    "courseNumber": "LAUC-T-DSY",
     "title": "Linear algebra and Univariate Calculus",
     "shortName": "LAUC-Tut(DSY)",
     "isLab": true,
@@ -870,7 +870,7 @@
   },
   "32610": {
     "subjectArea": "MT",
-    "courseNumber": "MTCE-DE-DOS",
+    "courseNumber": "MTCE-DEDOS",
     "title": "MTCE-Distributed Operating System",
     "shortName": "MTCE-DE-DOS",
     "isLab": false,
@@ -892,7 +892,7 @@
   },
   "32612": {
     "subjectArea": "MT",
-    "courseNumber": "MTCE-DE-AGT",
+    "courseNumber": "MTCE-DEAGT",
     "title": "MTCE-Advanced Graph Theory",
     "shortName": "MTCE-DE-AGT",
     "isLab": false,
@@ -1277,7 +1277,7 @@
   },
   "32647": {
     "subjectArea": "CS",
-    "courseNumber": "Minor2-OOPD",
+    "courseNumber": "Min2-OOPD",
     "title": "Minor2-Object Oriented Programming and Design",
     "shortName": "Minor2-OOPD",
     "isLab": false,
@@ -2311,7 +2311,7 @@
   },
   "32745": {
     "subjectArea": "CS",
-    "courseNumber": "FY-Reserved",
+    "courseNumber": "FY-Reserve",
     "title": "FY Reserved Subject",
     "shortName": "FY-Reserved",
     "isLab": false,
