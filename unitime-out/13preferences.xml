@@ -1258,4 +1258,6 @@
     <timePref pattern="2 x 120">PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP1PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP</timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
+  <class subject="CS" course="MDM-BLOCK" type="Lec" suffix="1">
+  </class>
 </preferences>

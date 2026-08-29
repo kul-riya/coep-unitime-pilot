@@ -138,7 +138,7 @@ def actual_patterns(path: Path) -> dict[tuple[str, str, str], str]:
 
 
 def main() -> int:
-    prefs_path = OUT_DIR / "preferences.xml"
+    prefs_path = OUT_DIR / "13preferences.xml" if (OUT_DIR / "13preferences.xml").is_file() else OUT_DIR / "preferences.xml"
     if not prefs_path.is_file():
         print(f"ERROR: {prefs_path} not found", file=sys.stderr)
         return 1

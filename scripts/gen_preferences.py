@@ -266,14 +266,14 @@ def _room_pref_lines(rooms: list[RoomKey]) -> list[str]:
     return lines
 
 
-def main() -> None:
-    src = OUT_DIR / "courseOffering.xml"
+def main(term: str = TERM) -> None:
+    src = OUT_DIR / "12courseOffering.xml" if (OUT_DIR / "12courseOffering.xml").is_file() else OUT_DIR / "courseOffering.xml"
     root = ET.parse(src).getroot()
     class_rooms = _collect_class_rooms()
 
     lines: list[str] = [
         LICENSE_HEADER,
-        f'<preferences campus="{CAMPUS}" term="{TERM}" year="{YEAR}" '
+        f'<preferences campus="{CAMPUS}" term="{term}" year="{YEAR}" '
         f'dateFormat="yyyy/M/d" timeFormat="HHmm" '
         f'created="Generated from courseOffering.xml + Taasika room prefs">',
     ]
@@ -350,9 +350,8 @@ def main() -> None:
 
     lines.append("</preferences>\n")
 
-    out = OUT_DIR / "preferences.xml"
+    out = OUT_DIR / "13preferences.xml"
     out.write_text("\n".join(lines), encoding="utf-8")
-    (OUT_DIR / "13preferences.xml").write_text("\n".join(lines), encoding="utf-8")
     print(
         f"wrote {out.relative_to(OUT_DIR.parent)} "
         f"({out.stat().st_size:,} bytes, {subpart_count} subparts, "
@@ -361,4 +360,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate 13preferences.xml")
+    parser.add_argument("--term", default=TERM, help="UniTime academic term (default: %(default)s)")
+    args = parser.parse_args()
+    main(term=args.term)

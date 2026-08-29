@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<traveltimes campus="COEP" year="2026" term="Spr5" created="Generated from Taasika snapshot 240">
+<traveltimes campus="COEP" year="2026" term="Spr" created="Generated from Taasika snapshot 240">
   <from building="AC" roomNbr="AC-202NC-06">
     <to building="ENTCX" roomNbr="SH">5</to>
     <to building="CSED" roomNbr="DBMSL">5</to>

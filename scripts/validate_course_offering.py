@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OFF = ROOT / "unitime-out" / "courseOffering.xml"
+OFF = ROOT / "unitime-out" / "12courseOffering.xml" if (ROOT / "unitime-out" / "12courseOffering.xml").is_file() else ROOT / "unitime-out" / "courseOffering.xml"
 
 
 def main() -> int:

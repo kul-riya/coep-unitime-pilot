@@ -354,7 +354,7 @@ def assign_within_limits(
     return assigned
 
 
-def main() -> None:
+def main(term: str = TERM) -> None:
     subject_idx, by_short, lec_suf, lab_suf, companion_type, class_limits = load_indexes()
 
     def resolve_btech(year_key: str, seq: int) -> list[str]:
@@ -385,15 +385,15 @@ def main() -> None:
     # can throw TransientObjectException on large cohorts (see StudentImport.java).
     info_lines = [
         LICENSE_HEADER,
-        f'<students campus="{CAMPUS}" year="{YEAR}" term="{TERM}" incremental="true">',
+        f'<students campus="{CAMPUS}" year="{YEAR}" term="{term}" incremental="true">',
     ]
     req_lines = [
         LICENSE_HEADER,
-        f'<request campus="{CAMPUS}" year="{YEAR}" term="{TERM}" incremental="true">',
+        f'<request campus="{CAMPUS}" year="{YEAR}" term="{term}" incremental="true">',
     ]
     enr_lines = [
         LICENSE_HEADER,
-        f'<studentEnrollments campus="{CAMPUS}" year="{YEAR}" term="{TERM}">',
+        f'<studentEnrollments campus="{CAMPUS}" year="{YEAR}" term="{term}">',
     ]
 
     stats: dict[str, int] = defaultdict(int)
@@ -523,9 +523,6 @@ def main() -> None:
     req_lines.append("</request>\n")
     enr_lines.append("</studentEnrollments>\n")
 
-    (OUT_DIR / "studentInfo.xml").write_text("\n".join(info_lines), encoding="utf-8")
-    (OUT_DIR / "studentRequest.xml").write_text("\n".join(req_lines), encoding="utf-8")
-    (OUT_DIR / "studentenrollments.xml").write_text("\n".join(enr_lines), encoding="utf-8")
     (OUT_DIR / "14studentInfo.xml").write_text("\n".join(info_lines), encoding="utf-8")
     (OUT_DIR / "15studentRequest.xml").write_text("\n".join(req_lines), encoding="utf-8")
     (OUT_DIR / "16studentenrollments.xml").write_text("\n".join(enr_lines), encoding="utf-8")
@@ -550,7 +547,7 @@ def main() -> None:
         json.dumps(summary, indent=2), encoding="utf-8"
     )
 
-    for name in ("studentInfo.xml", "studentRequest.xml", "studentenrollments.xml"):
+    for name in ("14studentInfo.xml", "15studentRequest.xml", "16studentenrollments.xml"):
         p = OUT_DIR / name
         print(f"wrote {p.relative_to(OUT_DIR.parent)} ({p.stat().st_size:,} bytes)")
     print(f"total students: {total} (B.Tech {sum(year_headcount(y) for y in ('FY','SY','TY','BT'))} + MT {mt_seq})")
@@ -572,4 +569,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate 14studentInfo.xml through 16studentenrollments.xml")
+    parser.add_argument("--term", default=TERM, help="UniTime academic term (default: %(default)s)")
+    args = parser.parse_args()
+    main(term=args.term)

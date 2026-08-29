@@ -100,9 +100,9 @@ def _day_codes_for_meetings(nbr_meetings: int) -> list[str]:
     ]
 
 
-def _header() -> str:
+def _header(term: str = TERM) -> str:
     return (
-        f'<sessionSetup term="{TERM}" year="{YEAR}" campus="{CAMPUS}" '
+        f'<sessionSetup term="{term}" year="{YEAR}" campus="{CAMPUS}" '
         f'dateFormat="yyyy/M/d" created="Generated from Taasika snapshot 240">\n'
     )
 
@@ -275,12 +275,12 @@ def _exam_periods_block() -> str:
     return "\n".join(lines)
 
 
-def main() -> None:
+def main(term: str = TERM) -> None:
     data = load(snapshot_id=240, tables=["dept", "subject", "config"])
     depts = sorted(data.rows("dept"), key=lambda d: d["deptId"])
     subjects = data.filtered("subject")
 
-    out: list[str] = [LICENSE_HEADER, _header()]
+    out: list[str] = [LICENSE_HEADER, _header(term=term)]
     out.append(_session_block())
     out.append(_managers_block())
     out.append(_departments_block(depts))
@@ -291,13 +291,15 @@ def main() -> None:
     out.append(_exam_periods_block())
     out.append("</sessionSetup>\n")
 
-    target = Path(__file__).resolve().parent.parent / "unitime-out" / "sessionSetup.xml"
+    target = Path(__file__).resolve().parent.parent / "unitime-out" / "1sessionSetup.xml"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text("".join(out), encoding="utf-8")
-    numbered = Path(__file__).resolve().parent.parent / "unitime-out" / "1sessionSetup.xml"
-    numbered.write_text("".join(out), encoding="utf-8")
-    print(f"wrote {target} ({target.stat().st_size:,} bytes)")
+    print(f"wrote {target.relative_to(target.parent.parent)} ({target.stat().st_size:,} bytes)")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate 1sessionSetup.xml")
+    parser.add_argument("--term", default=TERM, help="UniTime academic term (default: %(default)s)")
+    args = parser.parse_args()
+    main(term=args.term)

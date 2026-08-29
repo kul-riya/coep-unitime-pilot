@@ -64,12 +64,12 @@ def _split_name(full_name: str) -> tuple[str, str, str]:
     return (parts[0], " ".join(parts[1:-1]), parts[-1])
 
 
-def main() -> None:
+def main(term: str = TERM) -> None:
     data = load(snapshot_id=240, tables=["teacher"])
     teachers = sorted(data.filtered("teacher"), key=lambda t: t["teacherId"])
 
     lines: list[str] = [LICENSE_HEADER]
-    lines.append(f'<staff campus="{CAMPUS}" term="{TERM}" year="{YEAR}">')
+    lines.append(f'<staff campus="{CAMPUS}" term="{term}" year="{YEAR}">')
     for t in teachers:
         display, forced_pos = _clean_display_name(t["teacherName"] or "")
         first, middle, last = _split_name(display)
@@ -93,12 +93,15 @@ def main() -> None:
         lines.append(f'  <staffMember {" ".join(attrs)}/>')
     lines.append('</staff>\n')
 
-    out = OUT_DIR / "staff.xml"
+    out = OUT_DIR / "10staff.xml"
     body = "\n".join(lines)
     out.write_text(body, encoding="utf-8")
-    (OUT_DIR / "10staff.xml").write_text(body, encoding="utf-8")
     print(f"wrote {out.relative_to(OUT_DIR.parent)} ({out.stat().st_size:,} bytes, {len(teachers)} staff members)")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate 10staff.xml")
+    parser.add_argument("--term", default=TERM, help="UniTime academic term (default: %(default)s)")
+    args = parser.parse_args()
+    main(term=args.term)

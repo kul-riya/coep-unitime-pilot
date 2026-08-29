@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<courseCatalog campus="COEP" term="Spr5" year="2026">
+<courseCatalog campus="COEP" term="Spr" year="2026">
   <course externalId="taasika-subject-32527" subject="CS" courseNumber="PSE" title="Probability and Statistics for Engineers" permanentId="taasika-32527">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.5"/>
   </course>

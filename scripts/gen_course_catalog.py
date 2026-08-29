@@ -58,7 +58,7 @@ def course_number_from_short(short_name: str, subject_id: int, used: set[str]) -
     return cleaned
 
 
-def main() -> None:
+def main(term: str = TERM) -> None:
     data = load(snapshot_id=240, tables=["subject"])
     subjects = sorted(data.filtered("subject"), key=lambda s: s["subjectId"])
 
@@ -166,13 +166,12 @@ def main() -> None:
     }
 
     out_lines: list[str] = [LICENSE_HEADER]
-    out_lines.append(f'<courseCatalog campus="{CAMPUS}" term="{TERM}" year="{YEAR}">')
+    out_lines.append(f'<courseCatalog campus="{CAMPUS}" term="{term}" year="{YEAR}">')
     out_lines.extend(rows)
     out_lines.append("</courseCatalog>\n")
 
-    catalog_path = OUT_DIR / "courseCatalog.xml"
+    catalog_path = OUT_DIR / "11courseCatalog.xml"
     catalog_path.write_text("\n".join(out_lines), encoding="utf-8")
-    (OUT_DIR / "11courseCatalog.xml").write_text("\n".join(out_lines), encoding="utf-8")
 
     index_path = SCRIPTS_DIR / "subject_index.json"
     index_path.write_text(json.dumps(index, indent=2), encoding="utf-8")
@@ -187,4 +186,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate 11courseCatalog.xml")
+    parser.add_argument("--term", default=TERM, help="UniTime academic term (default: %(default)s)")
+    args = parser.parse_args()
+    main(term=args.term)

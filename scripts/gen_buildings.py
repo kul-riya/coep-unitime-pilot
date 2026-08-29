@@ -110,14 +110,14 @@ def _wrap(root_attrs: str, body: str) -> str:
     return LICENSE_HEADER + f"{root_attrs}\n{body}"
 
 
-def _gen_buildings(rooms: List[dict]) -> None:
+def _gen_buildings(rooms: List[dict], term: str = TERM) -> None:
     by_building: Dict[str, List[dict]] = defaultdict(list)
     for r in rooms:
         b = _building_for(r["roomName"], r["roomShortName"])
         by_building[b].append(r)
 
     lines: List[str] = [
-        f'<buildingsRooms campus="{CAMPUS}" term="{TERM}" year="{YEAR}">'
+        f'<buildingsRooms campus="{CAMPUS}" term="{term}" year="{YEAR}">'
     ]
     for code, rooms_in in by_building.items():
         meta = BUILDINGS[code]
@@ -165,12 +165,12 @@ def _gen_buildings(rooms: List[dict]) -> None:
             lines.append('    </room>')
         lines.append('  </building>')
     lines.append('</buildingsRooms>\n')
-    (OUT_DIR / "buildingRoomImport.xml").write_text(
+    (OUT_DIR / "7buildingRoomImport.xml").write_text(
         _wrap("", "\n".join(lines)), encoding="utf-8"
     )
 
 
-def _gen_room_sharing(rooms: List[dict], fixed_entries: List[dict]) -> None:
+def _gen_room_sharing(rooms: List[dict], fixed_entries: List[dict], term: str = TERM) -> None:
     """Mark a daily LUNCH window (12:30 - 13:30) as unavailable on every room.
 
     Taasika's ``fixedEntry`` table marks LUNCH slots per class/room/teacher;
@@ -180,7 +180,7 @@ def _gen_room_sharing(rooms: List[dict], fixed_entries: List[dict]) -> None:
     lunch_count = sum(1 for f in fixed_entries if (f.get("fixedText") or "").upper() == "LUNCH")
 
     lines: List[str] = [
-        f'<roomSharing campus="{CAMPUS}" year="{YEAR}" term="{TERM}" '
+        f'<roomSharing campus="{CAMPUS}" year="{YEAR}" term="{term}" '
         f'created="Generated from Taasika snapshot 240" timeFormat="HHmm">'
     ]
     lines.append(f'  <!-- LUNCH window derived from {lunch_count} fixedEntry rows -->')
@@ -203,18 +203,18 @@ def _gen_room_sharing(rooms: List[dict], fixed_entries: List[dict]) -> None:
         lines.append('    </sharing>')
         lines.append('  </location>')
     lines.append('</roomSharing>\n')
-    (OUT_DIR / "roomSharing.xml").write_text(
+    (OUT_DIR / "8roomSharing.xml").write_text(
         _wrap("", "\n".join(lines)), encoding="utf-8"
     )
 
 
-def _gen_travel_times(rooms: List[dict]) -> None:
+def _gen_travel_times(rooms: List[dict], term: str = TERM) -> None:
     by_building: Dict[str, List[dict]] = defaultdict(list)
     for r in rooms:
         by_building[_building_for(r["roomName"], r["roomShortName"])].append(r)
 
     lines: List[str] = [
-        f'<traveltimes campus="{CAMPUS}" year="{YEAR}" term="{TERM}" '
+        f'<traveltimes campus="{CAMPUS}" year="{YEAR}" term="{term}" '
         f'created="Generated from Taasika snapshot 240">'
     ]
     buildings_used = list(by_building.keys())
@@ -233,24 +233,28 @@ def _gen_travel_times(rooms: List[dict]) -> None:
                     )
             lines.append('  </from>')
     lines.append('</traveltimes>\n')
-    (OUT_DIR / "travelTimes.xml").write_text(
+    (OUT_DIR / "9travelTimes.xml").write_text(
         _wrap("", "\n".join(lines)), encoding="utf-8"
     )
 
 
-def main() -> None:
+def main(term: str = TERM) -> None:
     data = load(snapshot_id=240, tables=["room", "fixedEntry"])
     rooms = sorted(data.filtered("room"), key=lambda r: r["roomId"])
     fes = data.filtered("fixedEntry")
 
-    _gen_buildings(rooms)
-    _gen_room_sharing(rooms, fes)
-    _gen_travel_times(rooms)
+    _gen_buildings(rooms, term=term)
+    _gen_room_sharing(rooms, fes, term=term)
+    _gen_travel_times(rooms, term=term)
 
-    for name in ("buildingRoomImport.xml", "roomSharing.xml", "travelTimes.xml"):
+    for name in ("7buildingRoomImport.xml", "8roomSharing.xml", "9travelTimes.xml"):
         p = OUT_DIR / name
         print(f"wrote {p.relative_to(OUT_DIR.parent)} ({p.stat().st_size:,} bytes)")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate 7buildingRoomImport.xml through 9travelTimes.xml")
+    parser.add_argument("--term", default=TERM, help="UniTime academic term (default: %(default)s)")
+    args = parser.parse_args()
+    main(term=args.term)

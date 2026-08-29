@@ -151,6 +151,12 @@ Hard failures and preference misses include up to 8 example rows each for debugg
 The full pipeline is reproducible from the SQL.  From the repo root:
 
 ```powershell
+python scripts\gen_all.py
+```
+
+Or step-by-step:
+
+```powershell
 python scripts\gen_session_setup.py
 python scripts\gen_academic.py
 python scripts\gen_buildings.py

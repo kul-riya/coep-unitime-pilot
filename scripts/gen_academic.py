@@ -29,28 +29,28 @@ def area_for_class(short_name: str) -> str:
     return "BT"
 
 
-def _wrap(root: str, body: str) -> str:
+def _wrap(root: str, body: str, term: str = TERM) -> str:
     return (
         LICENSE_HEADER
-        + f'<{root} campus="{CAMPUS}" term="{TERM}" year="{YEAR}">\n'
+        + f'<{root} campus="{CAMPUS}" term="{term}" year="{YEAR}">\n'
         + body
         + f'</{root}>\n'
     )
 
 
-def _academic_areas() -> None:
+def _academic_areas(term: str = TERM) -> None:
     lines: list[str] = []
     for code, name in ACADEMIC_AREAS:
         lines.append(
             f'  <academicArea externalId="taasika-area-{code}" '
             f'abbreviation="{code}" title="{xml_escape(name)}"/>\n'
         )
-    (OUT_DIR / "academicArea.xml").write_text(
-        _wrap("academicAreas", "".join(lines)), encoding="utf-8"
+    (OUT_DIR / "2academicArea.xml").write_text(
+        _wrap("academicAreas", "".join(lines), term=term), encoding="utf-8"
     )
 
 
-def _classifications(classes) -> None:
+def _classifications(classes, term: str = TERM) -> None:
     seen: dict[str, str] = {}
     for c in classes:
         code, name = year_classification(c["classShortName"], c["semester"])
@@ -61,12 +61,12 @@ def _classifications(classes) -> None:
             f'  <academicClassification externalId="taasika-class-{code}" '
             f'code="{code}" name="{xml_escape(name)}"/>\n'
         )
-    (OUT_DIR / "academicClassification.xml").write_text(
-        _wrap("academicClassifications", "".join(lines)), encoding="utf-8"
+    (OUT_DIR / "3academicClassification.xml").write_text(
+        _wrap("academicClassifications", "".join(lines), term=term), encoding="utf-8"
     )
 
 
-def _majors(classes) -> None:
+def _majors(classes, term: str = TERM) -> None:
     seen: dict[tuple[str, str], str] = {}
     for c in classes:
         area = area_for_class(c["classShortName"])
@@ -78,19 +78,19 @@ def _majors(classes) -> None:
             f'  <posMajor externalId="taasika-maj-{area}-{code}" '
             f'code="{code}" name="{xml_escape(name)}" academicArea="{area}"/>\n'
         )
-    (OUT_DIR / "Major.xml").write_text(
-        _wrap("posMajors", "".join(lines)), encoding="utf-8"
+    (OUT_DIR / "4Major.xml").write_text(
+        _wrap("posMajors", "".join(lines), term=term), encoding="utf-8"
     )
 
 
-def _minors() -> None:
+def _minors(term: str = TERM) -> None:
     body = "  <!-- No minors used; Minor-of-CSE programs are modelled as posMajors. -->\n"
-    (OUT_DIR / "Minor.xml").write_text(
-        _wrap("posMinors", body), encoding="utf-8"
+    (OUT_DIR / "5Minor.xml").write_text(
+        _wrap("posMinors", body, term=term), encoding="utf-8"
     )
 
 
-def _student_groups(classes, batches) -> None:
+def _student_groups(classes, batches, term: str = TERM) -> None:
     lines: list[str] = []
     for c in classes:
         code = c["classShortName"]
@@ -104,32 +104,36 @@ def _student_groups(classes, batches) -> None:
             f'code="{xml_escape(b["batchName"])}" '
             f'name="{xml_escape(b["batchName"])} (Lab Batch, size {b.get("batchCount")})"/>\n'
         )
-    (OUT_DIR / "studentGroup.xml").write_text(
-        _wrap("studentGroups", "".join(lines)), encoding="utf-8"
+    (OUT_DIR / "6studentGroup.xml").write_text(
+        _wrap("studentGroups", "".join(lines), term=term), encoding="utf-8"
     )
 
 
-def main() -> None:
+def main(term: str = TERM) -> None:
     data = load(snapshot_id=240, tables=["class", "batch"])
     classes = sorted(data.filtered("class"), key=lambda r: r["classId"])
     batches = sorted(data.filtered("batch"), key=lambda r: r["batchId"])
 
-    _academic_areas()
-    _classifications(classes)
-    _majors(classes)
-    _minors()
-    _student_groups(classes, batches)
+    _academic_areas(term=term)
+    _classifications(classes, term=term)
+    _majors(classes, term=term)
+    _minors(term=term)
+    _student_groups(classes, batches, term=term)
 
     for name in (
-        "academicArea.xml",
-        "academicClassification.xml",
-        "Major.xml",
-        "Minor.xml",
-        "studentGroup.xml",
+        "2academicArea.xml",
+        "3academicClassification.xml",
+        "4Major.xml",
+        "5Minor.xml",
+        "6studentGroup.xml",
     ):
         p = OUT_DIR / name
         print(f"wrote {p.relative_to(OUT_DIR.parent)} ({p.stat().st_size:,} bytes)")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate 2academicArea.xml through 6studentGroup.xml")
+    parser.add_argument("--term", default=TERM, help="UniTime academic term (default: %(default)s)")
+    args = parser.parse_args()
+    main(term=args.term)

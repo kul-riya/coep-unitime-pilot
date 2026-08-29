@@ -357,7 +357,7 @@ def _emit_class(
     lines.append("      </class>")
 
 
-def main() -> None:
+def main(term: str = TERM) -> None:
     data = load(
         snapshot_id=240,
         tables=[
@@ -410,7 +410,7 @@ def main() -> None:
     lines: List[str] = [LICENSE_HEADER]
     incremental_attr = ' incremental="true"' if OFFERING_INCREMENTAL else ""
     lines.append(
-        f'<offerings campus="{CAMPUS}" year="{YEAR}" term="{TERM}"{incremental_attr} '
+        f'<offerings campus="{CAMPUS}" year="{YEAR}" term="{term}"{incremental_attr} '
         f'dateFormat="yyyy/M/d" timeFormat="HHmm" '
         f'created="Generated from Taasika snapshot 240" includeExams="none">'
     )
@@ -605,20 +605,30 @@ def main() -> None:
     # Synthesize MDM Block offering
     mdm_block_id = 999000
     lines.append(
-        f'  <offering externalId="taasika-offering-{mdm_block_id}" '
-        f'offered="true" action="insert">'
+        f'  <offering id="taasika-offering-{mdm_block_id}" '
+        f'offered="true" action="{OFFERING_ACTION}">'
     )
     lines.append(
-        f'    <course subject="CS" courseNbr="MDM-BLOCK" '
-        f'controlling="true"/>'
+        f'    <course id="taasika-course-{mdm_block_id}" subject="CS" courseNbr="MDM-BLOCK" '
+        f'controlling="true" title="Multi-Disciplinary Minor Room Block">'
     )
+    lines.append(
+        f'      <courseCredit creditType="collegiate" creditUnitType="semesterHours" '
+        f'creditFormat="fixedUnit" fixedCredit="4.0"/>'
+    )
+    lines.append('    </course>')
     lines.append(f'    <config name="1" limit="{MDM_BLOCK_SEATS}">')
-    lines.append(f'      <subpart type="Lec" minPerWeek="{MDM_LEC_MIN_PER_WEEK}">')
-    lines.append(
-        f'        <class externalId="taasika-class-{mdm_block_id}-Lec-1" '
-        f'type="Lec" suffix="1" expectedCapacity="{MDM_BLOCK_SEATS}"/>'
+    lines.append(f'      <subpart type="Lec" suffix="" minPerWeek="{MDM_LEC_MIN_PER_WEEK}"/>')
+    _emit_class(
+        lines,
+        _class_id("CS", "MDM-BLOCK", "Lec", 1),
+        "Lec",
+        1,
+        MDM_BLOCK_SEATS,
+        "",
+        [],
+        None,
     )
-    lines.append('      </subpart>')
     lines.append('    </config>')
     lines.append('  </offering>')
     offering_records.append((mdm_block_id, None))
@@ -627,7 +637,7 @@ def main() -> None:
     lines.append("</offerings>\n")
 
     body = "\n".join(lines)
-    out = OUT_DIR / "courseOffering.xml"
+    out = OUT_DIR / "12courseOffering.xml"
     out.write_text(body, encoding="utf-8")
     print(
         f"wrote {out.relative_to(OUT_DIR.parent)} ({out.stat().st_size:,} bytes, "
@@ -658,7 +668,7 @@ def main() -> None:
         "  action=update (python scripts/import_unitime.py).",
         "  Only taasika-io-* external ids are listed (numeric uniqueIds are not ours).",
         "-->",
-        f'<offerings campus="{CAMPUS}" year="{YEAR}" term="{TERM}" incremental="true">',
+        f'<offerings campus="{CAMPUS}" year="{YEAR}" term="{term}" incremental="true">',
     ]
     purge_sids: list[int] = []
     seen_purge: set[int] = set()
@@ -700,9 +710,11 @@ def main() -> None:
         "class_notes": class_notes,
     }
     (SCRIPTS_DIR / "offering_index.json").write_text(json.dumps(extra), encoding="utf-8")
-    numbered = OUT_DIR / "12courseOffering.xml"
-    numbered.write_text(body, encoding="utf-8")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate 12courseOffering.xml")
+    parser.add_argument("--term", default=TERM, help="UniTime academic term (default: %(default)s)")
+    args = parser.parse_args()
+    main(term=args.term)

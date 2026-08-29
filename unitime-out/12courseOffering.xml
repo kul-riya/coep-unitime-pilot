@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<offerings campus="COEP" year="2026" term="Spr5" incremental="true" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from Taasika snapshot 240" includeExams="none">
+<offerings campus="COEP" year="2026" term="Spr" incremental="true" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from Taasika snapshot 240" includeExams="none">
   <offering id="taasika-io-32529" offered="true" action="insert">
     <course id="taasika-subject-32529" subject="CS" courseNbr="CoI" controlling="true" title="Constitution of India" scheduleBookNote="CoI">
       <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
@@ -1238,12 +1238,14 @@
       </class>
     </config>
   </offering>
-  <offering externalId="taasika-offering-999000" offered="true" action="insert">
-    <course subject="CS" courseNbr="MDM-BLOCK" controlling="true"/>
+  <offering id="taasika-offering-999000" offered="true" action="insert">
+    <course id="taasika-course-999000" subject="CS" courseNbr="MDM-BLOCK" controlling="true" title="Multi-Disciplinary Minor Room Block">
+      <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
+    </course>
     <config name="1" limit="100">
-      <subpart type="Lec" minPerWeek="240">
-        <class externalId="taasika-class-999000-Lec-1" type="Lec" suffix="1" expectedCapacity="100"/>
-      </subpart>
+      <subpart type="Lec" suffix="" minPerWeek="240"/>
+      <class id="MDM-BLOCK Lec 1" type="Lec" suffix="1" limit="100" scheduleNote="" studentScheduling="true" displayInScheduleBook="true" cancelled="false">
+      </class>
     </config>
   </offering>
 </offerings>
