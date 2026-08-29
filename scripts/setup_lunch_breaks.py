@@ -6,26 +6,68 @@ Upload this file in Administration > Utilities > Scripts and execute it.
 from org.unitime.timetable.model import SolverParameterGroup, SolverParameterDef
 from org.unitime.timetable.model.dao import SolverParameterGroupDAO, SolverParameterDefDAO
 
+def _save_or_update(entity):
+    if hasattr(hibSession, "saveOrUpdate"):
+        hibSession.saveOrUpdate(entity)
+    elif hasattr(hibSession, "persist"):
+        try:
+            hibSession.persist(entity)
+        except Exception:
+            hibSession.merge(entity)
+    elif hasattr(hibSession, "save"):
+        hibSession.save(entity)
+
+def _set_solver_type(group):
+    # Set SolverType enum (COURSE = course timetabling)
+    try:
+        if hasattr(SolverParameterGroup, "SolverType"):
+            group.setSolverType(SolverParameterGroup.SolverType.COURSE)
+    except Exception:
+        pass
+    
+    # Set integer type fallback (0 = COURSE)
+    try:
+        group.setType(0)
+    except Exception:
+        pass
+
+def fix_null_solver_types():
+    """Repair any existing groups where solverType is null (e.g. from previous script run)."""
+    try:
+        groups = hibSession.createQuery("from SolverParameterGroup").list()
+        for g in groups:
+            if g.getSolverType() is None:
+                _set_solver_type(g)
+                _save_or_update(g)
+                log.info("Fixed missing solverType for group: " + str(g.getName()))
+    except Exception as e:
+        log.warn("Note during solver type check: " + str(e))
+
 def get_or_create_group(name, description, order):
     # Find existing group
-    groups = hibSession.createQuery("from SolverParameterGroup where name = :name").setString("name", name).list()
+    groups = hibSession.createQuery("from SolverParameterGroup where name = :name").setParameter("name", name).list()
     if groups:
-        return groups[0]
+        g = groups[0]
+        if g.getSolverType() is None:
+            _set_solver_type(g)
+            _save_or_update(g)
+        return g
     
     # Create new group
     group = SolverParameterGroup()
     group.setName(name)
     group.setDescription(description)
     group.setOrder(order)
-    hibSession.save(group)
+    _set_solver_type(group)
+    _save_or_update(group)
     return group
 
 def get_or_create_param(group, name, default_value, description, p_type, order):
-    params = hibSession.createQuery("from SolverParameterDef where name = :name").setString("name", name).list()
+    params = hibSession.createQuery("from SolverParameterDef where name = :name").setParameter("name", name).list()
     if params:
         param = params[0]
         param.setDefault(default_value)
-        hibSession.update(param)
+        _save_or_update(param)
         return param
     
     param = SolverParameterDef()
@@ -36,7 +78,7 @@ def get_or_create_param(group, name, default_value, description, p_type, order):
     param.setOrder(order)
     param.setGroup(group)
     param.setVisible(True)
-    hibSession.save(param)
+    _save_or_update(param)
     return param
 
 def append_to_additional_criteria(criterion_class):
@@ -53,7 +95,7 @@ def append_to_additional_criteria(criterion_class):
                 new_default += ";"
             new_default += criterion_class
             param.setDefault(new_default)
-            hibSession.update(param)
+            _save_or_update(param)
             log.info("Appended " + criterion_class + " to General.AdditionalCriteria")
         else:
             log.info(criterion_class + " is already in General.AdditionalCriteria")
@@ -61,6 +103,9 @@ def append_to_additional_criteria(criterion_class):
 def execute():
     log.info("Starting Lunch Breaks configuration...")
     
+    # 0. Fix any groups with null solverType from prior runs
+    fix_null_solver_types()
+
     # 1. Enable Student Lunch Break in Additional Criteria
     append_to_additional_criteria("org.cpsolver.coursett.criteria.additional.StudentLuchBreak")
     # Enable Instructor Lunch Break
