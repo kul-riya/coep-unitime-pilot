@@ -171,19 +171,11 @@ def _gen_buildings(rooms: List[dict], term: str = TERM) -> None:
 
 
 def _gen_room_sharing(rooms: List[dict], fixed_entries: List[dict], term: str = TERM) -> None:
-    """Mark a daily LUNCH window (12:30 - 13:30) as unavailable on every room.
-
-    Taasika's ``fixedEntry`` table marks LUNCH slots per class/room/teacher;
-    in UniTime we encode it as a campus-wide room unavailability so the
-    solver never schedules a class during lunch.
-    """
-    lunch_count = sum(1 for f in fixed_entries if (f.get("fixedText") or "").upper() == "LUNCH")
-
+    """Mark weekends (08:30 - 18:30) as unavailable on every room."""
     lines: List[str] = [
         f'<roomSharing campus="{CAMPUS}" year="{YEAR}" term="{term}" '
         f'created="Generated from Taasika snapshot 240" timeFormat="HHmm">'
     ]
-    lines.append(f'  <!-- LUNCH window derived from {lunch_count} fixedEntry rows -->')
     seen_sharing: set[str] = set()
     for r in rooms:
         room_nbr = _room_number(r["roomShortName"], r["roomName"], "")
@@ -198,7 +190,6 @@ def _gen_room_sharing(rooms: List[dict], fixed_entries: List[dict], term: str = 
         )
         lines.append('    <department code="0101" control="true"/>')
         lines.append('    <sharing>')
-        # lines.append('      <unavailable days="MTWThF" start="1230" end="1330"/>')
         lines.append('      <unavailable days="SSu" start="0830" end="1830"/>')
         lines.append('    </sharing>')
         lines.append('  </location>')

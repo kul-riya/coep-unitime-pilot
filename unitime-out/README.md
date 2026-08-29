@@ -45,8 +45,8 @@ defined by an earlier file:
    `NCSE` (New CSE Building), `BHAU` (Bhau Institute), `ONL` (Online), and
    `UNAV` (Unavailable lab pool).
 8. `roomSharing.xml`            - assigns every room to dept `0101` and marks
-   weekday 12:30-13:30 as **LUNCH** (derived from 51 `fixedEntry` LUNCH rows
-   in the snapshot) plus the weekend as unavailable by default.
+   the weekend as unavailable by default. Individual lunch breaks (11:30 - 15:30)
+   are managed dynamically via the solver criteria (`setup_lunch_breaks.py`).
 9. `travelTimes.xml`            - 5 min between buildings, 3 min between
    CSED and the New CSE Building.  Override after import if needed.
 10. `staff.xml`                 - 113 instructors with `positionType`
@@ -103,7 +103,7 @@ different values:
 | Building inference | Heuristic on `roomName` and `roomShortName`. Online classrooms get a virtual building, "Unavailable" labs go into their own pool. |
 | Room departments | All 49 rooms 100% assigned to `0101` (the CSE-centric snapshot has no ENTC/INSTRU teachers). |
 | Instructor position | Mapped from `minHrs`: `<=6` PROF, `<=12` ASSOC_PROF, `<=14` ASST_PROF, else ASST_PROF; (`min=0`, `max=0`) -> ADJUNCT; (`min=0`, `max=24`) -> VISITOR. |
-| LUNCH block | Hard unavailability on every room, MTWThF 12:30-13:30 (matches the 51 LUNCH fixedEntry rows in snapshot 240). |
+| Lunch Breaks | Dynamic 1-hour breaks for students and instructors between 11:30 and 15:30 via solver criteria (`setup_lunch_breaks.py`); rooms remain available all day on weekdays. |
 | Subjects skipped | 121 of 184 controlling (lec) subjects have no `subjectClassTeacher` and no `subjectBatchTeacher` row in snapshot 240, so they were intentionally omitted from `courseOffering.xml` while still appearing in `courseCatalog.xml`. |
 | Mock student naming | `externalId = <classShortName>-S<index>`, first name from a fixed 30-name list, last name from a 15-surname list. |
 

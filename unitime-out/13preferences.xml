@@ -7,43 +7,101 @@
 
 <preferences campus="COEP" term="Spr" year="2026" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Generated from courseOffering.xml + Taasika room prefs">
   <subpart subject="CS" course="CoI" config="1" type="Lec">
-    <timePref pattern="2 x 60">22222222PP22222222PP222222222222222222PP22222222PP22222222PP22222222PP22222222222222222222</timePref>
+    <timePref pattern="2 x 60" level="R">
+      <pref level="P" days="MT" time="1630"/>
+      <pref level="P" days="MT" time="1730"/>
+      <pref level="P" days="MW" time="1630"/>
+      <pref level="P" days="MW" time="1730"/>
+      <pref level="P" days="MTh" time="1630"/>
+      <pref level="P" days="MTh" time="1730"/>
+      <pref level="P" days="MF" time="1630"/>
+      <pref level="P" days="MF" time="1730"/>
+      <pref level="P" days="TW" time="1630"/>
+      <pref level="P" days="TW" time="1730"/>
+      <pref level="P" days="TTh" time="1630"/>
+      <pref level="P" days="TTh" time="1730"/>
+      <pref level="P" days="TF" time="1630"/>
+      <pref level="P" days="TF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="CoI" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="1"/>
   </class>
   <class subject="CS" course="CoI" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="1"/>
   </class>
   <subpart subject="CS" course="CO" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="CO" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="1"/>
   </class>
   <class subject="CS" course="CO" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="1"/>
   </class>
   <subpart subject="CS" course="AI" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="AI" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="1"/>
   </class>
   <class subject="CS" course="AI" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="1"/>
   </class>
   <subpart subject="CS" course="AI" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="AI" type="Lab" suffix="1">
@@ -69,1193 +127,2201 @@
   <class subject="CS" course="AI" type="Lab" suffix="11">
   </class>
   <subpart subject="CS" course="CN" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="CN" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="1"/>
   </class>
   <subpart subject="CS" course="CN" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="CN" type="Lab" suffix="1">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lab" suffix="2">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lab" suffix="3">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lab" suffix="4">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lab" suffix="5">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lab" suffix="6">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
-    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lab" suffix="7">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
-    <roomPref building="AC" room="NC-01" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="AC" room="NC-01" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lab" suffix="8">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lab" suffix="9">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
-    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="GML" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lab" suffix="10">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
-    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="GML" level="1"/>
   </class>
   <class subject="CS" course="CN" type="Lab" suffix="11">
-    <roomPref building="CSED" room="FOSS1" level="1"/>
+    <roomPref building="CSED" room="FOSS1" level="-1"/>
   </class>
   <subpart subject="CS" course="MDM-DSFA" config="1" type="Lec">
-    <timePref pattern="2 x 120">PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP1PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP</timePref>
+    <timePref pattern="2 x 120" level="R">
+      <pref level="P" days="MT" time="0830"/>
+      <pref level="P" days="MT" time="0930"/>
+      <pref level="P" days="MT" time="1030"/>
+      <pref level="P" days="MT" time="1130"/>
+      <pref level="P" days="MT" time="1230"/>
+      <pref level="P" days="MT" time="1330"/>
+      <pref level="P" days="MT" time="1430"/>
+      <pref level="P" days="MT" time="1530"/>
+      <pref level="R" days="MT" time="1630"/>
+      <pref level="P" days="MW" time="0830"/>
+      <pref level="P" days="MW" time="0930"/>
+      <pref level="P" days="MW" time="1030"/>
+      <pref level="P" days="MW" time="1130"/>
+      <pref level="P" days="MW" time="1230"/>
+      <pref level="P" days="MW" time="1330"/>
+      <pref level="P" days="MW" time="1430"/>
+      <pref level="P" days="MW" time="1530"/>
+      <pref level="P" days="MW" time="1630"/>
+      <pref level="P" days="MTh" time="0830"/>
+      <pref level="P" days="MTh" time="0930"/>
+      <pref level="P" days="MTh" time="1030"/>
+      <pref level="P" days="MTh" time="1130"/>
+      <pref level="P" days="MTh" time="1230"/>
+      <pref level="P" days="MTh" time="1330"/>
+      <pref level="P" days="MTh" time="1430"/>
+      <pref level="P" days="MTh" time="1530"/>
+      <pref level="P" days="MTh" time="1630"/>
+      <pref level="P" days="MF" time="0830"/>
+      <pref level="P" days="MF" time="0930"/>
+      <pref level="P" days="MF" time="1030"/>
+      <pref level="P" days="MF" time="1130"/>
+      <pref level="P" days="MF" time="1230"/>
+      <pref level="P" days="MF" time="1330"/>
+      <pref level="P" days="MF" time="1430"/>
+      <pref level="P" days="MF" time="1530"/>
+      <pref level="P" days="MF" time="1630"/>
+      <pref level="P" days="TW" time="0830"/>
+      <pref level="P" days="TW" time="0930"/>
+      <pref level="P" days="TW" time="1030"/>
+      <pref level="P" days="TW" time="1130"/>
+      <pref level="P" days="TW" time="1230"/>
+      <pref level="P" days="TW" time="1330"/>
+      <pref level="P" days="TW" time="1430"/>
+      <pref level="P" days="TW" time="1530"/>
+      <pref level="P" days="TW" time="1630"/>
+      <pref level="P" days="TTh" time="0830"/>
+      <pref level="P" days="TTh" time="0930"/>
+      <pref level="P" days="TTh" time="1030"/>
+      <pref level="P" days="TTh" time="1130"/>
+      <pref level="P" days="TTh" time="1230"/>
+      <pref level="P" days="TTh" time="1330"/>
+      <pref level="P" days="TTh" time="1430"/>
+      <pref level="P" days="TTh" time="1530"/>
+      <pref level="P" days="TTh" time="1630"/>
+      <pref level="P" days="TF" time="0830"/>
+      <pref level="P" days="TF" time="0930"/>
+      <pref level="P" days="TF" time="1030"/>
+      <pref level="P" days="TF" time="1130"/>
+      <pref level="P" days="TF" time="1230"/>
+      <pref level="P" days="TF" time="1330"/>
+      <pref level="P" days="TF" time="1430"/>
+      <pref level="P" days="TF" time="1530"/>
+      <pref level="P" days="TF" time="1630"/>
+      <pref level="P" days="WTh" time="0830"/>
+      <pref level="P" days="WTh" time="0930"/>
+      <pref level="P" days="WTh" time="1030"/>
+      <pref level="P" days="WTh" time="1130"/>
+      <pref level="P" days="WTh" time="1230"/>
+      <pref level="P" days="WTh" time="1330"/>
+      <pref level="P" days="WTh" time="1430"/>
+      <pref level="P" days="WTh" time="1530"/>
+      <pref level="P" days="WTh" time="1630"/>
+      <pref level="P" days="WF" time="0830"/>
+      <pref level="P" days="WF" time="0930"/>
+      <pref level="P" days="WF" time="1030"/>
+      <pref level="P" days="WF" time="1130"/>
+      <pref level="P" days="WF" time="1230"/>
+      <pref level="P" days="WF" time="1330"/>
+      <pref level="P" days="WF" time="1430"/>
+      <pref level="P" days="WF" time="1530"/>
+      <pref level="P" days="WF" time="1630"/>
+      <pref level="P" days="ThF" time="0830"/>
+      <pref level="P" days="ThF" time="0930"/>
+      <pref level="P" days="ThF" time="1030"/>
+      <pref level="P" days="ThF" time="1130"/>
+      <pref level="P" days="ThF" time="1230"/>
+      <pref level="P" days="ThF" time="1330"/>
+      <pref level="P" days="ThF" time="1430"/>
+      <pref level="P" days="ThF" time="1530"/>
+      <pref level="P" days="ThF" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="MDM-DSFA" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="1"/>
   </class>
   <class subject="CS" course="MDM-DSFA" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="1"/>
   </class>
   <subpart subject="CS" course="DTL" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DTL" type="Lab" suffix="1">
-    <roomPref building="CSED" room="GML" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="DTL" type="Lab" suffix="2">
-    <roomPref building="CSED" room="GML" level="1"/>
-    <roomPref building="CSED" room="ISL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="ISL" level="1"/>
   </class>
   <class subject="CS" course="DTL" type="Lab" suffix="3">
-    <roomPref building="CSED" room="GML" level="1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
   </class>
   <class subject="CS" course="DTL" type="Lab" suffix="4">
-    <roomPref building="CSED" room="GML" level="1"/>
-    <roomPref building="CSED" room="Cogni-5" level="-1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="Cogni-5" level="1"/>
   </class>
   <class subject="CS" course="DTL" type="Lab" suffix="5">
-    <roomPref building="CSED" room="GML" level="1"/>
-    <roomPref building="CSED" room="Cogni-5" level="-1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="Cogni-5" level="1"/>
   </class>
   <class subject="CS" course="DTL" type="Lab" suffix="6">
-    <roomPref building="CSED" room="GML" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="DTL" type="Lab" suffix="7">
-    <roomPref building="CSED" room="GML" level="1"/>
-    <roomPref building="CSED" room="Cogni-34" level="-1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="Cogni-34" level="1"/>
   </class>
   <class subject="CS" course="DTL" type="Lab" suffix="8">
-    <roomPref building="CSED" room="GML" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DTL" type="Lab" suffix="9">
-    <roomPref building="CSED" room="GML" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="DTL" type="Lab" suffix="10">
-    <roomPref building="CSED" room="GML" level="1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
   </class>
   <class subject="CS" course="DTL" type="Lab" suffix="11">
-    <roomPref building="CSED" room="GML" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <subpart subject="CS" course="DAA" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DAA" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-202NC-06" level="1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
   </class>
   <class subject="CS" course="DAA" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-202NC-06" level="1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
   </class>
   <subpart subject="CS" course="DAA" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DAA" type="Lab" suffix="1">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DAA" type="Lab" suffix="2">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DAA" type="Lab" suffix="3">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DAA" type="Lab" suffix="4">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DAA" type="Lab" suffix="5">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DAA" type="Lab" suffix="6">
-    <roomPref building="CSED" room="ASL" level="1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
   </class>
   <class subject="CS" course="DAA" type="Lab" suffix="7">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="AC" room="NC-01" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="AC" room="NC-01" level="1"/>
   </class>
   <class subject="CS" course="DAA" type="Lab" suffix="8">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <class subject="CS" course="DAA" type="Lab" suffix="9">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="1"/>
   </class>
   <class subject="CS" course="DAA" type="Lab" suffix="10">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="1"/>
   </class>
   <class subject="CS" course="DAA" type="Lab" suffix="11">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="1"/>
   </class>
   <subpart subject="CS" course="TOC" config="1" type="Lec">
-    <timePref pattern="2 x 60">22222222PP22222222PP222222222222222222PP22222222PP22222222PP22222222PP22222222222222222222</timePref>
+    <timePref pattern="2 x 60" level="R">
+      <pref level="P" days="MT" time="1630"/>
+      <pref level="P" days="MT" time="1730"/>
+      <pref level="P" days="MW" time="1630"/>
+      <pref level="P" days="MW" time="1730"/>
+      <pref level="P" days="MTh" time="1630"/>
+      <pref level="P" days="MTh" time="1730"/>
+      <pref level="P" days="MF" time="1630"/>
+      <pref level="P" days="MF" time="1730"/>
+      <pref level="P" days="TW" time="1630"/>
+      <pref level="P" days="TW" time="1730"/>
+      <pref level="P" days="TTh" time="1630"/>
+      <pref level="P" days="TTh" time="1730"/>
+      <pref level="P" days="TF" time="1630"/>
+      <pref level="P" days="TF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="TOC" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="1"/>
   </class>
   <class subject="CS" course="TOC" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="1"/>
   </class>
   <subpart subject="CS" course="TOC" config="1" type="Rec">
-    <timePref pattern="1 x 60">22222222PP22222222PP222222222222222222222222222222</timePref>
+    <timePref pattern="1 x 60" level="R">
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="M" time="1730"/>
+      <pref level="P" days="T" time="1630"/>
+      <pref level="P" days="T" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="TOC" type="Rec" suffix="1">
-    <roomPref building="CSED" room="PL" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="TOC" type="Rec" suffix="2">
-    <roomPref building="CSED" room="PL" level="1"/>
-    <roomPref building="CSED" room="ISL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="ISL" level="1"/>
   </class>
   <class subject="CS" course="TOC" type="Rec" suffix="3">
-    <roomPref building="CSED" room="PL" level="1"/>
-    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="1"/>
   </class>
   <class subject="CS" course="TOC" type="Rec" suffix="4">
-    <roomPref building="CSED" room="PL" level="1"/>
-    <roomPref building="CSED" room="Cogni-5" level="-1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-5" level="1"/>
   </class>
   <class subject="CS" course="TOC" type="Rec" suffix="5">
-    <roomPref building="CSED" room="PL" level="1"/>
-    <roomPref building="CSED" room="Cogni-5" level="-1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-5" level="1"/>
   </class>
   <class subject="CS" course="TOC" type="Rec" suffix="6">
-    <roomPref building="CSED" room="PL" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="TOC" type="Rec" suffix="7">
-    <roomPref building="CSED" room="PL" level="1"/>
-    <roomPref building="CSED" room="Cogni-34" level="-1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-34" level="1"/>
   </class>
   <class subject="CS" course="TOC" type="Rec" suffix="8">
-    <roomPref building="CSED" room="PL" level="1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
   </class>
   <class subject="CS" course="TOC" type="Rec" suffix="9">
-    <roomPref building="CSED" room="PL" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="TOC" type="Rec" suffix="10">
-    <roomPref building="CSED" room="PL" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="TOC" type="Rec" suffix="11">
-    <roomPref building="CSED" room="PL" level="1"/>
-    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="1"/>
   </class>
   <subpart subject="MT" course="PSEC3-DL" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC3-DL" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="CS" course="DMML" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DMML" type="Lec" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="CS" course="DMML" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DMML" type="Lab" suffix="1">
-    <roomPref building="CSED" room="DML" level="1"/>
-    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="CSED" room="DML" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="1"/>
   </class>
   <class subject="CS" course="DMML" type="Lab" suffix="2">
-    <roomPref building="CSED" room="DML" level="1"/>
-    <roomPref building="NCSE" room="NC28" level="-1"/>
+    <roomPref building="CSED" room="DML" level="-1"/>
+    <roomPref building="NCSE" room="NC28" level="1"/>
   </class>
   <subpart subject="CS" course="SIC" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="SIC" type="Lec" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="CS" course="SIC" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="SIC" type="Lab" suffix="1">
-    <roomPref building="CSED" room="DML" level="1"/>
-    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="CSED" room="DML" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="1"/>
   </class>
   <class subject="CS" course="SIC" type="Lab" suffix="2">
-    <roomPref building="CSED" room="DML" level="1"/>
-    <roomPref building="NCSE" room="NC28" level="-1"/>
+    <roomPref building="CSED" room="DML" level="-1"/>
+    <roomPref building="NCSE" room="NC28" level="1"/>
   </class>
   <subpart subject="CS" course="ES" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="ES" type="Lec" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="CS" course="ES" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="ES" type="Lab" suffix="1">
-    <roomPref building="CSED" room="DML" level="1"/>
-    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="CSED" room="DML" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="1"/>
   </class>
   <class subject="CS" course="ES" type="Lab" suffix="2">
-    <roomPref building="CSED" room="DML" level="1"/>
-    <roomPref building="NCSE" room="NC28" level="-1"/>
+    <roomPref building="CSED" room="DML" level="-1"/>
+    <roomPref building="NCSE" room="NC28" level="1"/>
   </class>
   <subpart subject="MT" course="PSEC2-CCV" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC2-CCV" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="MT" course="PSEC2-NLP" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC2-NLP" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
-    <roomPref building="NCSE" room="NC28" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="NCSE" room="NC28" level="1"/>
   </class>
   <subpart subject="MT" course="PSEC3-MT" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC3-MT" type="Lab" suffix="1">
-    <roomPref building="CSED" room="ASL" level="1"/>
-    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="1"/>
   </class>
   <subpart subject="MT" course="MT-NS" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-NS" type="Lec" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-NS" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-NS" type="Lab" suffix="1">
-    <roomPref building="CSED" room="DML" level="1"/>
-    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="CSED" room="DML" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="1"/>
   </class>
   <class subject="MT" course="MT-NS" type="Lab" suffix="2">
-    <roomPref building="CSED" room="DML" level="1"/>
-    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="CSED" room="DML" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="1"/>
   </class>
   <subpart subject="MT" course="MT-WNS" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-WNS" type="Lec" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-WNS" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-WNS" type="Lab" suffix="1">
-    <roomPref building="CSED" room="Cogni-3" level="1"/>
-    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="CSED" room="Cogni-3" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="1"/>
   </class>
   <class subject="MT" course="MT-WNS" type="Lab" suffix="2">
-    <roomPref building="CSED" room="Cogni-3" level="1"/>
-    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="CSED" room="Cogni-3" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="1"/>
   </class>
   <subpart subject="MT" course="MT-DFDR" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-DFDR" type="Lec" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-DFDR" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-DFDR" type="Lab" suffix="1">
-    <roomPref building="CSED" room="DML" level="1"/>
-    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="CSED" room="DML" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="1"/>
   </class>
   <class subject="MT" course="MT-DFDR" type="Lab" suffix="2">
-    <roomPref building="CSED" room="DML" level="1"/>
-    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="CSED" room="DML" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="1"/>
   </class>
   <subpart subject="MT" course="PSEC2-CCS" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC2-CCS" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="MT" course="PSEC3-WS" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC3-WS" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
-    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="1"/>
   </class>
   <subpart subject="CS" course="OOPD" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="OOPD" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-201NC-05" level="1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-201NC-05" level="1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
   </class>
   <subpart subject="CS" course="OOPD" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="OOPD" type="Lab" suffix="1">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lab" suffix="2">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="ISL" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="ISL" level="1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lab" suffix="3">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lab" suffix="4">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="Cogni-5" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-5" level="1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lab" suffix="5">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="Cogni-5" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-5" level="1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lab" suffix="6">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lab" suffix="7">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="Cogni-34" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-34" level="1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lab" suffix="8">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lab" suffix="9">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lab" suffix="10">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="DSL" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="DSL" level="1"/>
   </class>
   <class subject="CS" course="OOPD" type="Lab" suffix="11">
-    <roomPref building="CSED" room="DBMSL" level="1"/>
-    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="CSED" room="GML" level="1"/>
   </class>
   <subpart subject="CS" course="OE-FOS" config="1" type="Lec">
-    <timePref pattern="2 x 60">22222222PP22222222PP222222222222222222PP22222222PP22222222PP22222222PP22222222222222222222</timePref>
+    <timePref pattern="2 x 60" level="R">
+      <pref level="P" days="MT" time="1630"/>
+      <pref level="P" days="MT" time="1730"/>
+      <pref level="P" days="MW" time="1630"/>
+      <pref level="P" days="MW" time="1730"/>
+      <pref level="P" days="MTh" time="1630"/>
+      <pref level="P" days="MTh" time="1730"/>
+      <pref level="P" days="MF" time="1630"/>
+      <pref level="P" days="MF" time="1730"/>
+      <pref level="P" days="TW" time="1630"/>
+      <pref level="P" days="TW" time="1730"/>
+      <pref level="P" days="TTh" time="1630"/>
+      <pref level="P" days="TTh" time="1730"/>
+      <pref level="P" days="TF" time="1630"/>
+      <pref level="P" days="TF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="OE-FOS" type="Lec" suffix="1">
-    <roomPref building="NCSE" room="NC27" level="1"/>
+    <roomPref building="NCSE" room="NC27" level="-1"/>
   </class>
   <class subject="CS" course="OE-FOS" type="Lec" suffix="2">
-    <roomPref building="NCSE" room="NC27" level="1"/>
-    <roomPref building="NCSE" room="NC28" level="-1"/>
+    <roomPref building="NCSE" room="NC27" level="-1"/>
+    <roomPref building="NCSE" room="NC28" level="1"/>
   </class>
   <subpart subject="CS" course="DE2-BCT" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE2-BCT" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-201NC-05" level="1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
   </class>
   <class subject="CS" course="DE2-BCT" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-201NC-05" level="1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
   </class>
   <subpart subject="CS" course="DE2-BCT" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE2-BCT" type="Lab" suffix="1">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DE2-BCT" type="Lab" suffix="2">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DE2-BCT" type="Lab" suffix="3">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="CSED" room="ASL" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="CSED" room="ASL" level="1"/>
   </class>
   <class subject="CS" course="DE2-BCT" type="Lab" suffix="4">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="AC" room="NC-01" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="AC" room="NC-01" level="1"/>
   </class>
   <subpart subject="CS" course="DE2-DSci" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE2-DSci" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-202NC-06" level="1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
   </class>
   <class subject="CS" course="DE2-DSci" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-202NC-06" level="1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
   </class>
   <subpart subject="CS" course="DE2-DSci" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE2-DSci" type="Lab" suffix="1">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DE2-DSci" type="Lab" suffix="2">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DE2-DSci" type="Lab" suffix="3">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <class subject="CS" course="DE2-DSci" type="Lab" suffix="4">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="CSED" room="GML" level="1"/>
   </class>
   <subpart subject="CS" course="DE2-ASP" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE2-ASP" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-202NC-06" level="1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
   </class>
   <class subject="CS" course="DE2-ASP" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-202NC-06" level="1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
   </class>
   <subpart subject="CS" course="DE2-ASP" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE2-ASP" type="Lab" suffix="1">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="CSED" room="PL" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="CSED" room="PL" level="1"/>
   </class>
   <class subject="CS" course="DE2-ASP" type="Lab" suffix="2">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="CSED" room="GML" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="CSED" room="GML" level="1"/>
   </class>
   <class subject="CS" course="DE2-ASP" type="Lab" suffix="3">
-    <roomPref building="CSED" room="FOSS2" level="1"/>
-    <roomPref building="CSED" room="FOSS1" level="-1"/>
+    <roomPref building="CSED" room="FOSS2" level="-1"/>
+    <roomPref building="CSED" room="FOSS1" level="1"/>
   </class>
   <subpart subject="CS" course="MDM-FDMS" config="1" type="Lec">
-    <timePref pattern="2 x 120">PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP1PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP</timePref>
+    <timePref pattern="2 x 120" level="R">
+      <pref level="P" days="MT" time="0830"/>
+      <pref level="P" days="MT" time="0930"/>
+      <pref level="P" days="MT" time="1030"/>
+      <pref level="P" days="MT" time="1130"/>
+      <pref level="P" days="MT" time="1230"/>
+      <pref level="P" days="MT" time="1330"/>
+      <pref level="P" days="MT" time="1430"/>
+      <pref level="P" days="MT" time="1530"/>
+      <pref level="R" days="MT" time="1630"/>
+      <pref level="P" days="MW" time="0830"/>
+      <pref level="P" days="MW" time="0930"/>
+      <pref level="P" days="MW" time="1030"/>
+      <pref level="P" days="MW" time="1130"/>
+      <pref level="P" days="MW" time="1230"/>
+      <pref level="P" days="MW" time="1330"/>
+      <pref level="P" days="MW" time="1430"/>
+      <pref level="P" days="MW" time="1530"/>
+      <pref level="P" days="MW" time="1630"/>
+      <pref level="P" days="MTh" time="0830"/>
+      <pref level="P" days="MTh" time="0930"/>
+      <pref level="P" days="MTh" time="1030"/>
+      <pref level="P" days="MTh" time="1130"/>
+      <pref level="P" days="MTh" time="1230"/>
+      <pref level="P" days="MTh" time="1330"/>
+      <pref level="P" days="MTh" time="1430"/>
+      <pref level="P" days="MTh" time="1530"/>
+      <pref level="P" days="MTh" time="1630"/>
+      <pref level="P" days="MF" time="0830"/>
+      <pref level="P" days="MF" time="0930"/>
+      <pref level="P" days="MF" time="1030"/>
+      <pref level="P" days="MF" time="1130"/>
+      <pref level="P" days="MF" time="1230"/>
+      <pref level="P" days="MF" time="1330"/>
+      <pref level="P" days="MF" time="1430"/>
+      <pref level="P" days="MF" time="1530"/>
+      <pref level="P" days="MF" time="1630"/>
+      <pref level="P" days="TW" time="0830"/>
+      <pref level="P" days="TW" time="0930"/>
+      <pref level="P" days="TW" time="1030"/>
+      <pref level="P" days="TW" time="1130"/>
+      <pref level="P" days="TW" time="1230"/>
+      <pref level="P" days="TW" time="1330"/>
+      <pref level="P" days="TW" time="1430"/>
+      <pref level="P" days="TW" time="1530"/>
+      <pref level="P" days="TW" time="1630"/>
+      <pref level="P" days="TTh" time="0830"/>
+      <pref level="P" days="TTh" time="0930"/>
+      <pref level="P" days="TTh" time="1030"/>
+      <pref level="P" days="TTh" time="1130"/>
+      <pref level="P" days="TTh" time="1230"/>
+      <pref level="P" days="TTh" time="1330"/>
+      <pref level="P" days="TTh" time="1430"/>
+      <pref level="P" days="TTh" time="1530"/>
+      <pref level="P" days="TTh" time="1630"/>
+      <pref level="P" days="TF" time="0830"/>
+      <pref level="P" days="TF" time="0930"/>
+      <pref level="P" days="TF" time="1030"/>
+      <pref level="P" days="TF" time="1130"/>
+      <pref level="P" days="TF" time="1230"/>
+      <pref level="P" days="TF" time="1330"/>
+      <pref level="P" days="TF" time="1430"/>
+      <pref level="P" days="TF" time="1530"/>
+      <pref level="P" days="TF" time="1630"/>
+      <pref level="P" days="WTh" time="0830"/>
+      <pref level="P" days="WTh" time="0930"/>
+      <pref level="P" days="WTh" time="1030"/>
+      <pref level="P" days="WTh" time="1130"/>
+      <pref level="P" days="WTh" time="1230"/>
+      <pref level="P" days="WTh" time="1330"/>
+      <pref level="P" days="WTh" time="1430"/>
+      <pref level="P" days="WTh" time="1530"/>
+      <pref level="P" days="WTh" time="1630"/>
+      <pref level="P" days="WF" time="0830"/>
+      <pref level="P" days="WF" time="0930"/>
+      <pref level="P" days="WF" time="1030"/>
+      <pref level="P" days="WF" time="1130"/>
+      <pref level="P" days="WF" time="1230"/>
+      <pref level="P" days="WF" time="1330"/>
+      <pref level="P" days="WF" time="1430"/>
+      <pref level="P" days="WF" time="1530"/>
+      <pref level="P" days="WF" time="1630"/>
+      <pref level="P" days="ThF" time="0830"/>
+      <pref level="P" days="ThF" time="0930"/>
+      <pref level="P" days="ThF" time="1030"/>
+      <pref level="P" days="ThF" time="1130"/>
+      <pref level="P" days="ThF" time="1230"/>
+      <pref level="P" days="ThF" time="1330"/>
+      <pref level="P" days="ThF" time="1430"/>
+      <pref level="P" days="ThF" time="1530"/>
+      <pref level="P" days="ThF" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="MDM-FDMS" type="Lec" suffix="1">
-    <roomPref building="NCSE" room="NC27" level="1"/>
+    <roomPref building="NCSE" room="NC27" level="-1"/>
   </class>
   <class subject="CS" course="MDM-FDMS" type="Lec" suffix="2">
-    <roomPref building="NCSE" room="NC27" level="1"/>
-    <roomPref building="NCSE" room="NC28" level="-1"/>
+    <roomPref building="NCSE" room="NC27" level="-1"/>
+    <roomPref building="NCSE" room="NC28" level="1"/>
   </class>
   <subpart subject="CS" course="DE4-IBCS" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE4-IBCS" type="Lec" suffix="1">
-    <roomPref building="NCSE" room="NC28" level="1"/>
+    <roomPref building="NCSE" room="NC28" level="-1"/>
   </class>
   <class subject="CS" course="DE4-IBCS" type="Lec" suffix="2">
-    <roomPref building="NCSE" room="NC28" level="1"/>
+    <roomPref building="NCSE" room="NC28" level="-1"/>
   </class>
   <subpart subject="CS" course="DE4-IBCS" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE4-IBCS" type="Lab" suffix="1">
-    <roomPref building="CSED" room="Cogni-2" level="1"/>
+    <roomPref building="CSED" room="Cogni-2" level="-1"/>
   </class>
   <class subject="CS" course="DE4-IBCS" type="Lab" suffix="2">
-    <roomPref building="CSED" room="Cogni-2" level="1"/>
+    <roomPref building="CSED" room="Cogni-2" level="-1"/>
   </class>
   <class subject="CS" course="DE4-IBCS" type="Lab" suffix="3">
-    <roomPref building="CSED" room="Cogni-2" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="Cogni-2" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <subpart subject="CS" course="DE4-GIS" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE4-GIS" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
   </class>
   <class subject="CS" course="DE4-GIS" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
   </class>
   <subpart subject="CS" course="DE4-GIS" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE4-GIS" type="Lab" suffix="1">
-    <roomPref building="CSED" room="Cogni-3" level="1"/>
+    <roomPref building="CSED" room="Cogni-3" level="-1"/>
   </class>
   <class subject="CS" course="DE4-GIS" type="Lab" suffix="2">
-    <roomPref building="CSED" room="Cogni-3" level="1"/>
+    <roomPref building="CSED" room="Cogni-3" level="-1"/>
   </class>
   <class subject="CS" course="DE4-GIS" type="Lab" suffix="3">
-    <roomPref building="CSED" room="Cogni-3" level="1"/>
-    <roomPref building="CSED" room="Cogni-4" level="-1"/>
+    <roomPref building="CSED" room="Cogni-3" level="-1"/>
+    <roomPref building="CSED" room="Cogni-4" level="1"/>
   </class>
   <class subject="CS" course="DE4-GIS" type="Lab" suffix="4">
-    <roomPref building="CSED" room="Cogni-3" level="1"/>
+    <roomPref building="CSED" room="Cogni-3" level="-1"/>
   </class>
   <subpart subject="CS" course="DE4-GPU" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE4-GPU" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
   </class>
   <class subject="CS" course="DE4-GPU" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
   </class>
   <subpart subject="CS" course="DE4-GPU" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DE4-GPU" type="Lab" suffix="1">
-    <roomPref building="CSED" room="Cogni-2" level="1"/>
-    <roomPref building="CSED" room="Cogni-4" level="-1"/>
+    <roomPref building="CSED" room="Cogni-2" level="-1"/>
+    <roomPref building="CSED" room="Cogni-4" level="1"/>
   </class>
   <class subject="CS" course="DE4-GPU" type="Lab" suffix="2">
-    <roomPref building="CSED" room="Cogni-2" level="1"/>
-    <roomPref building="CSED" room="Cogni-4" level="-1"/>
+    <roomPref building="CSED" room="Cogni-2" level="-1"/>
+    <roomPref building="CSED" room="Cogni-4" level="1"/>
   </class>
   <class subject="CS" course="DE4-GPU" type="Lab" suffix="3">
-    <roomPref building="CSED" room="Cogni-2" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="Cogni-2" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <class subject="CS" course="DE4-GPU" type="Lab" suffix="4">
-    <roomPref building="CSED" room="Cogni-2" level="1"/>
+    <roomPref building="CSED" room="Cogni-2" level="-1"/>
   </class>
   <subpart subject="CS" course="OE-DS" config="1" type="Lec">
-    <timePref pattern="2 x 60">22222222PP22222222PP222222222222222222PP22222222PP22222222PP22222222PP22222222222222222222</timePref>
+    <timePref pattern="2 x 60" level="R">
+      <pref level="P" days="MT" time="1630"/>
+      <pref level="P" days="MT" time="1730"/>
+      <pref level="P" days="MW" time="1630"/>
+      <pref level="P" days="MW" time="1730"/>
+      <pref level="P" days="MTh" time="1630"/>
+      <pref level="P" days="MTh" time="1730"/>
+      <pref level="P" days="MF" time="1630"/>
+      <pref level="P" days="MF" time="1730"/>
+      <pref level="P" days="TW" time="1630"/>
+      <pref level="P" days="TW" time="1730"/>
+      <pref level="P" days="TTh" time="1630"/>
+      <pref level="P" days="TTh" time="1730"/>
+      <pref level="P" days="TF" time="1630"/>
+      <pref level="P" days="TF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="OE-DS" type="Lec" suffix="1">
-    <roomPref building="NCSE" room="NC28" level="1"/>
+    <roomPref building="NCSE" room="NC28" level="-1"/>
   </class>
   <subpart subject="MT" course="PSEC2-BT" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC2-BT" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="MT" course="PSEC3-ITS" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC3-ITS" type="Lab" suffix="1">
-    <roomPref building="CSED" room="PL" level="1"/>
+    <roomPref building="CSED" room="PL" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-DL" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-DL" type="Lec" suffix="1">
-    <roomPref building="NCSE" room="NC27" level="1"/>
+    <roomPref building="NCSE" room="NC27" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-DL" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-DL" type="Lab" suffix="1">
-    <roomPref building="CSED" room="Cogni-1" level="1"/>
+    <roomPref building="CSED" room="Cogni-1" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-GAN" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-GAN" type="Lec" suffix="1">
-    <roomPref building="NCSE" room="NC27" level="1"/>
+    <roomPref building="NCSE" room="NC27" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-GAN" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-GAN" type="Lab" suffix="1">
-    <roomPref building="CSED" room="Cogni-1" level="1"/>
+    <roomPref building="CSED" room="Cogni-1" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-OT" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-OT" type="Lec" suffix="1">
-    <roomPref building="NCSE" room="NC27" level="1"/>
+    <roomPref building="NCSE" room="NC27" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-OT" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-OT" type="Lab" suffix="1">
-    <roomPref building="CSED" room="Cogni-2" level="1"/>
+    <roomPref building="CSED" room="Cogni-2" level="-1"/>
   </class>
   <subpart subject="MT" course="PSEC2-EAI" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC2-EAI" type="Lab" suffix="1">
-    <roomPref building="NCSE" room="NC27" level="1"/>
+    <roomPref building="NCSE" room="NC27" level="-1"/>
   </class>
   <subpart subject="MT" course="PSEC2-MLPS" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC2-MLPS" type="Lab" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
   </class>
   <subpart subject="MT" course="PSEC3-GNN" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC3-GNN" type="Lab" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-NLP" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-NLP" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <class subject="MT" course="MT-NLP" type="Lab" suffix="2">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-BDAAS" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-BDAAS" type="Lec" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
-    <roomPref building="NCSE" room="NC27" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="NCSE" room="NC27" level="1"/>
   </class>
   <subpart subject="MT" course="MT-BDAAS" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-BDAAS" type="Lab" suffix="1">
-    <roomPref building="CSED" room="Cogni-1" level="1"/>
+    <roomPref building="CSED" room="Cogni-1" level="-1"/>
   </class>
   <class subject="MT" course="MT-BDAAS" type="Lab" suffix="2">
-    <roomPref building="CSED" room="Cogni-1" level="1"/>
+    <roomPref building="CSED" room="Cogni-1" level="-1"/>
   </class>
   <class subject="MT" course="MT-BDAAS" type="Lab" suffix="3">
-    <roomPref building="CSED" room="Cogni-1" level="1"/>
+    <roomPref building="CSED" room="Cogni-1" level="-1"/>
   </class>
   <class subject="MT" course="MT-BDAAS" type="Lab" suffix="4">
-    <roomPref building="CSED" room="Cogni-1" level="1"/>
+    <roomPref building="CSED" room="Cogni-1" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-AMLD" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-AMLD" type="Lec" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
-    <roomPref building="NCSE" room="NC27" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="NCSE" room="NC27" level="1"/>
   </class>
   <subpart subject="MT" course="MT-AMLD" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-AMLD" type="Lab" suffix="1">
-    <roomPref building="CSED" room="ISL" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="ISL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <class subject="MT" course="MT-AMLD" type="Lab" suffix="2">
-    <roomPref building="CSED" room="ISL" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="ISL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <class subject="MT" course="MT-AMLD" type="Lab" suffix="3">
-    <roomPref building="CSED" room="ISL" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="ISL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <class subject="MT" course="MT-AMLD" type="Lab" suffix="4">
-    <roomPref building="CSED" room="ISL" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="ISL" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <subpart subject="MT" course="MT-MLOS" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-MLOS" type="Lec" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
-    <roomPref building="NCSE" room="NC27" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="NCSE" room="NC27" level="1"/>
   </class>
   <subpart subject="MT" course="MT-MLOS" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-MLOS" type="Lab" suffix="1">
-    <roomPref building="CSED" room="Cogni-4" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="Cogni-4" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <class subject="MT" course="MT-MLOS" type="Lab" suffix="2">
-    <roomPref building="CSED" room="Cogni-4" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="Cogni-4" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <class subject="MT" course="MT-MLOS" type="Lab" suffix="3">
-    <roomPref building="CSED" room="Cogni-4" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="Cogni-4" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <class subject="MT" course="MT-MLOS" type="Lab" suffix="4">
-    <roomPref building="CSED" room="Cogni-4" level="1"/>
-    <roomPref building="CSED" room="Cogni-1" level="-1"/>
+    <roomPref building="CSED" room="Cogni-4" level="-1"/>
+    <roomPref building="CSED" room="Cogni-1" level="1"/>
   </class>
   <subpart subject="MT" course="PSEC2-CV" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC2-CV" type="Lab" suffix="1">
-    <roomPref building="AC" room="AC-202NC-06" level="1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
   </class>
   <subpart subject="MT" course="PSEC2-MTRP" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC2-MTRP" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="SH" level="1"/>
+    <roomPref building="ENTCX" room="SH" level="-1"/>
   </class>
   <subpart subject="MT" course="PSEC3-GAN" config="1" type="Lab">
-    <timePref pattern="1 x 180">222222PP222222PP222222222222222222222222</timePref>
+    <timePref pattern="1 x 180" level="R">
+      <pref level="P" days="M" time="1430"/>
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="T" time="1430"/>
+      <pref level="P" days="T" time="1530"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="PSEC3-GAN" type="Lab" suffix="1">
-    <roomPref building="AC" room="AC-202NC-06" level="1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
   </class>
   <subpart subject="MT" course="MT-ETCSA" config="1" type="Lec">
-    <timePref pattern="1 x 60">22222222PP22222222PP222222222222222222222222222222</timePref>
+    <timePref pattern="1 x 60" level="R">
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="M" time="1730"/>
+      <pref level="P" days="T" time="1630"/>
+      <pref level="P" days="T" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-ETCSA" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-203NC-07" level="1"/>
-    <roomPref building="ENTCX" room="SH" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="ENTCX" room="SH" level="1"/>
   </class>
   <subpart subject="MT" course="MT-ETCSA" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="MT" course="MT-ETCSA" type="Lab" suffix="1">
-    <roomPref building="BHAU" room="Bhau1" level="1"/>
+    <roomPref building="BHAU" room="Bhau1" level="-1"/>
   </class>
   <class subject="MT" course="MT-ETCSA" type="Lab" suffix="2">
-    <roomPref building="BHAU" room="Bhau1" level="1"/>
+    <roomPref building="BHAU" room="Bhau1" level="-1"/>
   </class>
   <class subject="MT" course="MT-ETCSA" type="Lab" suffix="3">
-    <roomPref building="BHAU" room="Bhau1" level="1"/>
+    <roomPref building="BHAU" room="Bhau1" level="-1"/>
   </class>
   <class subject="MT" course="MT-ETCSA" type="Lab" suffix="4">
-    <roomPref building="BHAU" room="Bhau1" level="1"/>
+    <roomPref building="BHAU" room="Bhau1" level="-1"/>
   </class>
   <subpart subject="CS" course="FY-Reserved" config="1" type="Lec">
-    <timePref pattern="5 x 60">22222222PP</timePref>
+    <timePref pattern="5 x 60" level="R">
+      <pref level="P" days="MTWThF" time="1630"/>
+      <pref level="P" days="MTWThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="FY-Reserved" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-201NC-05" level="1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
   </class>
   <class subject="CS" course="FY-Reserved" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-201NC-05" level="1"/>
-    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="1"/>
   </class>
   <class subject="CS" course="FY-Reserved" type="Lec" suffix="3">
-    <roomPref building="AC" room="AC-201NC-05" level="1"/>
-    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="1"/>
   </class>
   <subpart subject="CS" course="DS-FY" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DS-FY" type="Lec" suffix="1">
-    <roomPref building="AC" room="NC-01" level="1"/>
-    <roomPref building="AC" room="NC-02" level="-1"/>
+    <roomPref building="AC" room="NC-01" level="-1"/>
+    <roomPref building="AC" room="NC-02" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Lec" suffix="2">
-    <roomPref building="AC" room="NC-01" level="1"/>
+    <roomPref building="AC" room="NC-01" level="-1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Lec" suffix="3">
-    <roomPref building="AC" room="NC-01" level="1"/>
+    <roomPref building="AC" room="NC-01" level="-1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Lec" suffix="4">
-    <roomPref building="AC" room="NC-01" level="1"/>
-    <roomPref building="AC" room="NC-02" level="-1"/>
+    <roomPref building="AC" room="NC-01" level="-1"/>
+    <roomPref building="AC" room="NC-02" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Lec" suffix="5">
-    <roomPref building="AC" room="NC-01" level="1"/>
-    <roomPref building="AC" room="NC-03" level="-1"/>
+    <roomPref building="AC" room="NC-01" level="-1"/>
+    <roomPref building="AC" room="NC-03" level="1"/>
   </class>
   <subpart subject="CS" course="DS-FY" config="1" type="Rec">
-    <timePref pattern="1 x 60">22222222PP22222222PP222222222222222222222222222222</timePref>
+    <timePref pattern="1 x 60" level="R">
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="M" time="1730"/>
+      <pref level="P" days="T" time="1630"/>
+      <pref level="P" days="T" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="DS-FY" type="Rec" suffix="1">
-    <roomPref building="AC" room="NC-13" level="1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="2">
-    <roomPref building="AC" room="NC-13" level="1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="3">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-14" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-14" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="4">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-14" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-14" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="5">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="AC-202NC-06" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="AC-202NC-06" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="6">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="7">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-14" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-14" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="8">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-03" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-03" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="9">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="10">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-04" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-04" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="11">
-    <roomPref building="AC" room="NC-13" level="1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="12">
-    <roomPref building="AC" room="NC-13" level="1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="13">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-14" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-14" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="14">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-14" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-14" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="15">
-    <roomPref building="AC" room="NC-13" level="1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="16">
-    <roomPref building="AC" room="NC-13" level="1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="17">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-02" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-02" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="18">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-01" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-01" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="19">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-12" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-12" level="1"/>
   </class>
   <class subject="CS" course="DS-FY" type="Rec" suffix="20">
-    <roomPref building="AC" room="NC-13" level="1"/>
-    <roomPref building="AC" room="NC-14" level="-1"/>
+    <roomPref building="AC" room="NC-13" level="-1"/>
+    <roomPref building="AC" room="NC-14" level="1"/>
   </class>
   <subpart subject="CS" course="AIMA" config="1" type="Lec">
-    <timePref pattern="3 x 60">22222222PP22222222PP22222222PP22222222PP22222222PP2222222222</timePref>
+    <timePref pattern="3 x 60" level="R">
+      <pref level="P" days="MTW" time="1630"/>
+      <pref level="P" days="MTW" time="1730"/>
+      <pref level="P" days="MTTh" time="1630"/>
+      <pref level="P" days="MTTh" time="1730"/>
+      <pref level="P" days="MTF" time="1630"/>
+      <pref level="P" days="MTF" time="1730"/>
+      <pref level="P" days="MWTh" time="1630"/>
+      <pref level="P" days="MWTh" time="1730"/>
+      <pref level="P" days="MWF" time="1630"/>
+      <pref level="P" days="MWF" time="1730"/>
+      <pref level="P" days="MThF" time="1630"/>
+      <pref level="P" days="MThF" time="1730"/>
+      <pref level="P" days="TWTh" time="1630"/>
+      <pref level="P" days="TWTh" time="1730"/>
+      <pref level="P" days="TWF" time="1630"/>
+      <pref level="P" days="TWF" time="1730"/>
+      <pref level="P" days="TThF" time="1630"/>
+      <pref level="P" days="TThF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="AIMA" type="Lec" suffix="1">
-    <roomPref building="AC" room="NC-02" level="1"/>
+    <roomPref building="AC" room="NC-02" level="-1"/>
   </class>
   <class subject="CS" course="AIMA" type="Lec" suffix="2">
-    <roomPref building="AC" room="NC-02" level="1"/>
-    <roomPref building="AC" room="NC-03" level="-1"/>
+    <roomPref building="AC" room="NC-02" level="-1"/>
+    <roomPref building="AC" room="NC-03" level="1"/>
   </class>
   <class subject="CS" course="AIMA" type="Lec" suffix="3">
-    <roomPref building="AC" room="NC-02" level="1"/>
-    <roomPref building="AC" room="NC-04" level="-1"/>
+    <roomPref building="AC" room="NC-02" level="-1"/>
+    <roomPref building="AC" room="NC-04" level="1"/>
   </class>
   <subpart subject="CS" course="PP-FY" config="1" type="Lec">
-    <timePref pattern="1 x 60">22222222PP22222222PP222222222222222222222222222222</timePref>
+    <timePref pattern="1 x 60" level="R">
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="M" time="1730"/>
+      <pref level="P" days="T" time="1630"/>
+      <pref level="P" days="T" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="PP-FY" type="Lec" suffix="1">
-    <roomPref building="AC" room="NC-10" level="1"/>
+    <roomPref building="AC" room="NC-10" level="-1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lec" suffix="2">
-    <roomPref building="AC" room="NC-10" level="1"/>
-    <roomPref building="AC" room="NC-08" level="-1"/>
+    <roomPref building="AC" room="NC-10" level="-1"/>
+    <roomPref building="AC" room="NC-08" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lec" suffix="3">
-    <roomPref building="AC" room="NC-10" level="1"/>
-    <roomPref building="AC" room="AC-203NC-07" level="-1"/>
+    <roomPref building="AC" room="NC-10" level="-1"/>
+    <roomPref building="AC" room="AC-203NC-07" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lec" suffix="4">
-    <roomPref building="AC" room="NC-10" level="1"/>
-    <roomPref building="AC" room="NC-09" level="-1"/>
+    <roomPref building="AC" room="NC-10" level="-1"/>
+    <roomPref building="AC" room="NC-09" level="1"/>
   </class>
   <subpart subject="CS" course="PP-FY" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="PP-FY" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="2">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="3">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="4">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="5">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="6">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-B" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-B" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="7">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-B" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-B" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="8">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-B" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-B" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="9">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-B" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-B" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="10">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-B" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-B" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="11">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-C" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-C" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="12">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-C" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-C" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="13">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-C" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-C" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="14">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-B" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-B" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="15">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-C" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-C" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="16">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-D" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-D" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="17">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-D" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-D" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="18">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-D" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-D" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="19">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="20">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-B" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-B" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="21">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-C" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-C" level="1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="22">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="23">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PP-FY" type="Lab" suffix="24">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <subpart subject="CS" course="WD-FY" config="1" type="Lec">
-    <timePref pattern="1 x 60">22222222PP22222222PP222222222222222222222222222222</timePref>
+    <timePref pattern="1 x 60" level="R">
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="M" time="1730"/>
+      <pref level="P" days="T" time="1630"/>
+      <pref level="P" days="T" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="WD-FY" type="Lec" suffix="1">
-    <roomPref building="AC" room="NC-03" level="1"/>
+    <roomPref building="AC" room="NC-03" level="-1"/>
   </class>
   <class subject="CS" course="WD-FY" type="Lec" suffix="2">
-    <roomPref building="AC" room="NC-03" level="1"/>
-    <roomPref building="AC" room="NC-04" level="-1"/>
+    <roomPref building="AC" room="NC-03" level="-1"/>
+    <roomPref building="AC" room="NC-04" level="1"/>
   </class>
   <subpart subject="CS" course="WD-FY" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="WD-FY" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="CET-C" level="1"/>
-    <roomPref building="CSED" room="Cogni-2" level="-1"/>
+    <roomPref building="ENTCX" room="CET-C" level="-1"/>
+    <roomPref building="CSED" room="Cogni-2" level="1"/>
   </class>
   <class subject="CS" course="WD-FY" type="Lab" suffix="2">
-    <roomPref building="ENTCX" room="CET-C" level="1"/>
+    <roomPref building="ENTCX" room="CET-C" level="-1"/>
   </class>
   <class subject="CS" course="WD-FY" type="Lab" suffix="3">
-    <roomPref building="ENTCX" room="CET-C" level="1"/>
-    <roomPref building="CSED" room="Cogni-5" level="-1"/>
+    <roomPref building="ENTCX" room="CET-C" level="-1"/>
+    <roomPref building="CSED" room="Cogni-5" level="1"/>
   </class>
   <class subject="CS" course="WD-FY" type="Lab" suffix="4">
-    <roomPref building="ENTCX" room="CET-C" level="1"/>
+    <roomPref building="ENTCX" room="CET-C" level="-1"/>
   </class>
   <class subject="CS" course="WD-FY" type="Lab" suffix="5">
-    <roomPref building="ENTCX" room="CET-C" level="1"/>
-    <roomPref building="CSED" room="Cogni-5" level="-1"/>
+    <roomPref building="ENTCX" room="CET-C" level="-1"/>
+    <roomPref building="CSED" room="Cogni-5" level="1"/>
   </class>
   <class subject="CS" course="WD-FY" type="Lab" suffix="6">
-    <roomPref building="ENTCX" room="CET-C" level="1"/>
-    <roomPref building="CSED" room="DBMSL" level="-1"/>
+    <roomPref building="ENTCX" room="CET-C" level="-1"/>
+    <roomPref building="CSED" room="DBMSL" level="1"/>
   </class>
   <class subject="CS" course="WD-FY" type="Lab" suffix="7">
-    <roomPref building="ENTCX" room="CET-C" level="1"/>
+    <roomPref building="ENTCX" room="CET-C" level="-1"/>
   </class>
   <subpart subject="CS" course="PPS-FY" config="1" type="Lec">
-    <timePref pattern="1 x 60">22222222PP22222222PP222222222222222222222222222222</timePref>
+    <timePref pattern="1 x 60" level="R">
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="M" time="1730"/>
+      <pref level="P" days="T" time="1630"/>
+      <pref level="P" days="T" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="PPS-FY" type="Lec" suffix="1">
-    <roomPref building="AC" room="NC-09" level="1"/>
+    <roomPref building="AC" room="NC-09" level="-1"/>
   </class>
   <subpart subject="CS" course="PPS-FY" config="1" type="Lab">
-    <timePref pattern="1 x 120">2222222PP2222222PP222222222222222222222222222</timePref>
+    <timePref pattern="1 x 120" level="R">
+      <pref level="P" days="M" time="1530"/>
+      <pref level="P" days="M" time="1630"/>
+      <pref level="P" days="T" time="1530"/>
+      <pref level="P" days="T" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="PPS-FY" type="Lab" suffix="1">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PPS-FY" type="Lab" suffix="2">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PPS-FY" type="Lab" suffix="3">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <class subject="CS" course="PPS-FY" type="Lab" suffix="4">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-B" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-B" level="1"/>
   </class>
   <class subject="CS" course="PPS-FY" type="Lab" suffix="5">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-B" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-B" level="1"/>
   </class>
   <class subject="CS" course="PPS-FY" type="Lab" suffix="6">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-D" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-D" level="1"/>
   </class>
   <class subject="CS" course="PPS-FY" type="Lab" suffix="7">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
-    <roomPref building="ENTCX" room="CET-C" level="-1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
+    <roomPref building="ENTCX" room="CET-C" level="1"/>
   </class>
   <class subject="CS" course="PPS-FY" type="Lab" suffix="8">
-    <roomPref building="ENTCX" room="CET-A" level="1"/>
+    <roomPref building="ENTCX" room="CET-A" level="-1"/>
   </class>
   <subpart subject="CS" course="Eco" config="1" type="Lec">
-    <timePref pattern="2 x 60">22222222PP22222222PP222222222222222222PP22222222PP22222222PP22222222PP22222222222222222222</timePref>
+    <timePref pattern="2 x 60" level="R">
+      <pref level="P" days="MT" time="1630"/>
+      <pref level="P" days="MT" time="1730"/>
+      <pref level="P" days="MW" time="1630"/>
+      <pref level="P" days="MW" time="1730"/>
+      <pref level="P" days="MTh" time="1630"/>
+      <pref level="P" days="MTh" time="1730"/>
+      <pref level="P" days="MF" time="1630"/>
+      <pref level="P" days="MF" time="1730"/>
+      <pref level="P" days="TW" time="1630"/>
+      <pref level="P" days="TW" time="1730"/>
+      <pref level="P" days="TTh" time="1630"/>
+      <pref level="P" days="TTh" time="1730"/>
+      <pref level="P" days="TF" time="1630"/>
+      <pref level="P" days="TF" time="1730"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="Eco" type="Lec" suffix="1">
-    <roomPref building="AC" room="AC-201NC-05" level="1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
   </class>
   <class subject="CS" course="Eco" type="Lec" suffix="2">
-    <roomPref building="AC" room="AC-201NC-05" level="1"/>
+    <roomPref building="AC" room="AC-201NC-05" level="-1"/>
   </class>
   <subpart subject="CS" course="MDM-BLOCK" config="1" type="Lec">
-    <timePref pattern="2 x 120">PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP1PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP</timePref>
+    <timePref pattern="2 x 120" level="R">
+      <pref level="P" days="MT" time="0830"/>
+      <pref level="P" days="MT" time="0930"/>
+      <pref level="P" days="MT" time="1030"/>
+      <pref level="P" days="MT" time="1130"/>
+      <pref level="P" days="MT" time="1230"/>
+      <pref level="P" days="MT" time="1330"/>
+      <pref level="P" days="MT" time="1430"/>
+      <pref level="P" days="MT" time="1530"/>
+      <pref level="R" days="MT" time="1630"/>
+      <pref level="P" days="MW" time="0830"/>
+      <pref level="P" days="MW" time="0930"/>
+      <pref level="P" days="MW" time="1030"/>
+      <pref level="P" days="MW" time="1130"/>
+      <pref level="P" days="MW" time="1230"/>
+      <pref level="P" days="MW" time="1330"/>
+      <pref level="P" days="MW" time="1430"/>
+      <pref level="P" days="MW" time="1530"/>
+      <pref level="P" days="MW" time="1630"/>
+      <pref level="P" days="MTh" time="0830"/>
+      <pref level="P" days="MTh" time="0930"/>
+      <pref level="P" days="MTh" time="1030"/>
+      <pref level="P" days="MTh" time="1130"/>
+      <pref level="P" days="MTh" time="1230"/>
+      <pref level="P" days="MTh" time="1330"/>
+      <pref level="P" days="MTh" time="1430"/>
+      <pref level="P" days="MTh" time="1530"/>
+      <pref level="P" days="MTh" time="1630"/>
+      <pref level="P" days="MF" time="0830"/>
+      <pref level="P" days="MF" time="0930"/>
+      <pref level="P" days="MF" time="1030"/>
+      <pref level="P" days="MF" time="1130"/>
+      <pref level="P" days="MF" time="1230"/>
+      <pref level="P" days="MF" time="1330"/>
+      <pref level="P" days="MF" time="1430"/>
+      <pref level="P" days="MF" time="1530"/>
+      <pref level="P" days="MF" time="1630"/>
+      <pref level="P" days="TW" time="0830"/>
+      <pref level="P" days="TW" time="0930"/>
+      <pref level="P" days="TW" time="1030"/>
+      <pref level="P" days="TW" time="1130"/>
+      <pref level="P" days="TW" time="1230"/>
+      <pref level="P" days="TW" time="1330"/>
+      <pref level="P" days="TW" time="1430"/>
+      <pref level="P" days="TW" time="1530"/>
+      <pref level="P" days="TW" time="1630"/>
+      <pref level="P" days="TTh" time="0830"/>
+      <pref level="P" days="TTh" time="0930"/>
+      <pref level="P" days="TTh" time="1030"/>
+      <pref level="P" days="TTh" time="1130"/>
+      <pref level="P" days="TTh" time="1230"/>
+      <pref level="P" days="TTh" time="1330"/>
+      <pref level="P" days="TTh" time="1430"/>
+      <pref level="P" days="TTh" time="1530"/>
+      <pref level="P" days="TTh" time="1630"/>
+      <pref level="P" days="TF" time="0830"/>
+      <pref level="P" days="TF" time="0930"/>
+      <pref level="P" days="TF" time="1030"/>
+      <pref level="P" days="TF" time="1130"/>
+      <pref level="P" days="TF" time="1230"/>
+      <pref level="P" days="TF" time="1330"/>
+      <pref level="P" days="TF" time="1430"/>
+      <pref level="P" days="TF" time="1530"/>
+      <pref level="P" days="TF" time="1630"/>
+      <pref level="P" days="WTh" time="0830"/>
+      <pref level="P" days="WTh" time="0930"/>
+      <pref level="P" days="WTh" time="1030"/>
+      <pref level="P" days="WTh" time="1130"/>
+      <pref level="P" days="WTh" time="1230"/>
+      <pref level="P" days="WTh" time="1330"/>
+      <pref level="P" days="WTh" time="1430"/>
+      <pref level="P" days="WTh" time="1530"/>
+      <pref level="P" days="WTh" time="1630"/>
+      <pref level="P" days="WF" time="0830"/>
+      <pref level="P" days="WF" time="0930"/>
+      <pref level="P" days="WF" time="1030"/>
+      <pref level="P" days="WF" time="1130"/>
+      <pref level="P" days="WF" time="1230"/>
+      <pref level="P" days="WF" time="1330"/>
+      <pref level="P" days="WF" time="1430"/>
+      <pref level="P" days="WF" time="1530"/>
+      <pref level="P" days="WF" time="1630"/>
+      <pref level="P" days="ThF" time="0830"/>
+      <pref level="P" days="ThF" time="0930"/>
+      <pref level="P" days="ThF" time="1030"/>
+      <pref level="P" days="ThF" time="1130"/>
+      <pref level="P" days="ThF" time="1230"/>
+      <pref level="P" days="ThF" time="1330"/>
+      <pref level="P" days="ThF" time="1430"/>
+      <pref level="P" days="ThF" time="1530"/>
+      <pref level="P" days="ThF" time="1630"/>
+    </timePref>
     <datePref pattern="Full Term" level="R"/>
   </subpart>
   <class subject="CS" course="MDM-BLOCK" type="Lec" suffix="1">

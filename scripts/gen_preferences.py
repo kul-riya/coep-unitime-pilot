@@ -13,6 +13,7 @@ Reference: https://www.unitime.org/interface/preferences.xml
 
 from __future__ import annotations
 
+import fnmatch
 import json
 import xml.etree.ElementTree as ET
 from collections import defaultdict
@@ -64,56 +65,166 @@ def _time_pattern(sp_type: str, min_per_week: int) -> str:
     return "Exact Time"
 
 
-def _get_time_pref_string(pattern_name: str, is_mdm: bool) -> str | None:
+# =============================================================================
+# FIXED_ENTRIES_MAP (Time Blocking & Fixed Pattern Constraints)
+# =============================================================================
+# Purpose:
+#   Defines time preferences (e.g. required or prohibited time blocks) for courses
+#   in 13preferences.xml based on subject/course naming patterns, day combinations,
+#   and time windows.
+#
+# Schema Fields:
+#   - name (str, optional):
+#       Descriptive identifier for the rule (e.g. "MDM_Required", "Non_MDM_Prohibited").
+#   - course_pattern (str | list[str]):
+#       Matching criteria for course numbers / short names:
+#         * Wildcard string: fnmatch pattern (e.g. "MDM*", "OE*", "*").
+#         * List of strings: Exact case-insensitive names (e.g. ["MDM-BLOCK", "MDM-1"]).
+#   - exclude_pattern (str | list[str], optional):
+#       Negative matching pattern to exclude specific courses from this rule
+#       (e.g. "MDM*" when course_pattern is "*").
+#   - days (list[str]):
+#       Day tokens participating in the block.
+#       Supported tokens: ["M", "T", "W", "Th", "F", "S", "Su"].
+#       Example: ["M", "T"] for Monday and Tuesday.
+#   - start (int):
+#       Window start time in minutes from midnight (00:00).
+#       Formula: hour * 60 + min (e.g. 16 * 60 + 30 = 990 for 16:30 / 4:30 PM).
+#   - end (int):
+#       Window end time in minutes from midnight (00:00).
+#       Formula: hour * 60 + min (e.g. 18 * 60 + 30 = 1110 for 18:30 / 6:30 PM).
+#   - level (str):
+#       UniTime preference level applied to matching slots:
+#         * "R"        : Required (exact matching slot is required, all other candidate
+#                        slots for the pattern are prohibited "P").
+#         * "P"        : Prohibited (any candidate slot overlapping the days and time
+#                        window is marked with level="P").
+#         * "0"        : Strongly Preferred.
+#         * "1"        : Preferred.
+#         * "-1"       : Discouraged,
+#         * "2" / "-2" : Strongly Preferred / Strongly Discouraged.
+#
+# How It Works:
+#   1. When generating <timePref> for a subpart in 13preferences.xml, the subpart's
+#      course number (e.g. "MDM-BLOCK" or "CO") is matched sequentially against
+#      rules in FIXED_ENTRIES_MAP.
+#   2. The first rule where course_pattern matches AND exclude_pattern does NOT match
+#      is selected as active_entry.
+#   3. If active_entry has level="R" or "1":
+#        - The candidate slot matching the exact target days and fitting inside [start, end]
+#          receives level="R" / "1" (e.g. <pref level="R" days="MT" time="1630"/>).
+#        - All other slots in the time pattern are marked with level="P" (Prohibited).
+#   4. If active_entry has level="P":
+#        - Any candidate slot whose days overlap target days and whose time interval
+#          overlaps [start, end] is marked with level="P" (Prohibited).
+#   5. Resulting <pref level="..." days="..." time="..."/> elements are nested within
+#      the <timePref pattern="..." level="R"> tag for the subpart.
+# =============================================================================
+FIXED_ENTRIES_MAP: list[dict] = [
+    {
+        "name": "MDM_Required",
+        "course_pattern": "MDM*",
+        "days": ["M", "T"],
+        "start": 16 * 60 + 30,  # 990 mins (4:30 PM)
+        "end": 18 * 60 + 30,    # 1110 mins (6:30 PM)
+        "level": "R",           # Required
+    },
+    {
+        "name": "Non_MDM_Prohibited",
+        "course_pattern": "*",
+        "exclude_pattern": "MDM*",
+        "days": ["M", "T"],
+        "start": 16 * 60 + 30,  # 990 mins (4:30 PM)
+        "end": 18 * 60 + 30,    # 1110 mins (6:30 PM)
+        "level": "P",           # Prohibited
+    },
+]
+
+
+def _matches_course_pattern(course_nbr: str, pattern_spec: str | list[str] | tuple[str, ...]) -> bool:
+    if isinstance(pattern_spec, (list, tuple, set)):
+        return course_nbr in pattern_spec or course_nbr.upper() in [p.upper() for p in pattern_spec]
+    elif isinstance(pattern_spec, str):
+        return fnmatch.fnmatch(course_nbr.upper(), pattern_spec.upper())
+    return False
+
+
+def _expand_days_list(dcode: str) -> list[str]:
+    d_list = []
+    rem = dcode
+    while rem:
+        for tok in ("Th", "Su", "M", "T", "W", "F", "S"):
+            if rem.startswith(tok):
+                d_list.append(tok)
+                rem = rem[len(tok):]
+                break
+    return d_list
+
+
+def _get_time_pref_lines(course_nbr: str, pattern_name: str) -> list[str]:
     if " x " not in pattern_name:
-        return None
+        return [f'    <timePref pattern="{xml_escape(pattern_name)}" level="R"/>']
+
     parts = pattern_name.split(" x ")
     nbr_meetings = int(parts[0])
-    mins_per_meeting = int(parts[1].split()[0]) # e.g. "60", "120", "480"
-    
+    mins_per_meeting = int(parts[1].split()[0])  # e.g. 60, 120, 180
+
     day_codes = _day_codes_for_meetings(nbr_meetings)
     starts = _slot_starts(SLOTS_PER_DAY)
-    
+
     max_start_idx = max(0, SLOTS_PER_DAY - (mins_per_meeting // SLOT_MIN))
-    valid_starts = starts[:max_start_idx + 1]
-    
-    pref_chars = []
-    for dcode in day_codes:
-        d_list = []
-        rem = dcode
-        while rem:
-            for tok in ("Th", "Su", "M", "T", "W", "F", "S"):
-                if rem.startswith(tok):
-                    d_list.append(tok)
-                    rem = rem[len(tok):]
-                    break
-        
-        for start in valid_starts:
-            start_min = int(start[:2]) * 60 + int(start[2:])
-            end_min = start_min + mins_per_meeting
-            
-            # MDM block is exactly Mon & Tue, 16:30 to 18:30
-            mdm_start = 16 * 60 + 30
-            mdm_end = 18 * 60 + 30
-            
-            time_overlaps = (start_min < mdm_end) and (end_min > mdm_start)
-            day_overlaps = bool(set(d_list) & {'M', 'T'})
-            intersects = time_overlaps and day_overlaps
-            
-            if is_mdm:
-                # Require exactly MT starting at 16:30 (pattern must be 2 x 120, so dcode MT and start 1630)
-                if dcode == "MT" and start == "1630":
-                    pref_chars.append("1")
-                else:
-                    pref_chars.append("P")
-            else:
-                # Prevent overlapping with MDM block
-                if intersects:
-                    pref_chars.append("P")
-                else:
-                    pref_chars.append("2")
-                    
-    return "".join(pref_chars)
+    valid_starts = starts[: max_start_idx + 1]
+
+    # Find the matching fixed entry rule
+    active_entry = None
+    for entry in FIXED_ENTRIES_MAP:
+        if _matches_course_pattern(course_nbr, entry["course_pattern"]):
+            if entry.get("exclude_pattern") and _matches_course_pattern(course_nbr, entry["exclude_pattern"]):
+                continue
+            active_entry = entry
+            break
+
+    prefs: list[tuple[str, str, str]] = []  # (level, dcode, start)
+
+    if active_entry:
+        target_days = set(active_entry["days"])
+        e_start = int(active_entry["start"])
+        e_end = int(active_entry["end"])
+        lvl = str(active_entry.get("level", "P"))
+
+        if lvl in ("1", "R", "0"):
+            # Required / Preferred rule: exact slot required, all other slots prohibited
+            for dcode in day_codes:
+                d_set = set(_expand_days_list(dcode))
+                for start in valid_starts:
+                    start_min = int(start[:2]) * 60 + int(start[2:])
+                    end_min = start_min + mins_per_meeting
+                    if d_set == target_days and start_min >= e_start and end_min <= e_end:
+                        prefs.append((lvl, dcode, start))
+                    else:
+                        prefs.append(("P", dcode, start))
+        else:
+            # Prohibited rule (level="P"): any slot overlapping the window is prohibited
+            for dcode in day_codes:
+                d_set = set(_expand_days_list(dcode))
+                day_overlaps = bool(d_set & target_days)
+                if not day_overlaps:
+                    continue
+                for start in valid_starts:
+                    start_min = int(start[:2]) * 60 + int(start[2:])
+                    end_min = start_min + mins_per_meeting
+                    time_overlaps = (start_min < e_end) and (end_min > e_start)
+                    if time_overlaps:
+                        prefs.append(("P", dcode, start))
+
+    if not prefs:
+        return [f'    <timePref pattern="{xml_escape(pattern_name)}" level="R"/>']
+
+    lines = [f'    <timePref pattern="{xml_escape(pattern_name)}" level="R">']
+    for lvl, dcode, start in prefs:
+        lines.append(f'      <pref level="{lvl}" days="{dcode}" time="{start}"/>')
+    lines.append('    </timePref>')
+    return lines
 
 
 def _room_key(room: dict) -> RoomKey:
@@ -258,7 +369,7 @@ def _room_pref_lines(rooms: list[RoomKey]) -> list[str]:
         return []
     lines: list[str] = []
     for i, (building, nbr) in enumerate(rooms):
-        level = "1" if i == 0 else "-1"
+        level = "-1" if i == 0 else "1"
         lines.append(
             f'    <roomPref building="{xml_escape(building)}" '
             f'room="{xml_escape(nbr)}" level="{level}"/>'
@@ -316,13 +427,8 @@ def main(term: str = TERM) -> None:
                     + (f' suffix="{xml_escape(suffix)}"' if suffix else "")
                     + ">"
                 )
-                is_mdm = is_mdm_subject(course_nbr)
-                pref_string = _get_time_pref_string(pattern, is_mdm)
-                if pref_string:
-                    lines.append(f'    <timePref pattern="{pattern}">{pref_string}</timePref>')
-                else:
-                    lines.append(f'    <timePref pattern="{pattern}" level="R"/>')
-                
+                time_pref_lines = _get_time_pref_lines(course_nbr, pattern)
+                lines.extend(time_pref_lines)
                 lines.append(f'    <datePref pattern="{DATE_PATTERN}" level="R"/>')
                 lines.append("  </subpart>")
 

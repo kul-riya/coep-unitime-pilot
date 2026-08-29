@@ -52,10 +52,15 @@ def _slot_starts(num_slots: int = SLOTS_PER_DAY) -> list[str]:
 # Day codes UniTime may assign; each pattern only gets codes whose
 # meeting count equals nbrMeetings (e.g. "2 x 60" → MW, TTh, never MWF).
 _DAY_CODE_CATALOG: list[str] = [
+    # 1-day (5)
     "M", "T", "W", "Th", "F",
-    "MW", "MF", "WF", "TTh", "MT", "MTh", "TF", "WTh", "ThF",
-    "MWF", "MThF", "MTW", "MTF", "MWTh", "WThF",
+    # 2-day (10)
+    "MT", "MW", "MTh", "MF", "TW", "TTh", "TF", "WTh", "WF", "ThF",
+    # 3-day (10)
+    "MTW", "MTTh", "MTF", "MWTh", "MWF", "MThF", "TWTh", "TWF", "TThF", "WThF",
+    # 4-day (5)
     "MTWTh", "MTWF", "MTThF", "MWThF", "TWThF",
+    # 5-day (1)
     "MTWThF",
 ]
 _DAY_PARSE_TOKENS = ("Th", "M", "T", "W", "F")

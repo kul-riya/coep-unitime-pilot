@@ -30,8 +30,11 @@ DEFAULT_OUT = ROOT / "solutions" / "kpi_report.json"
 
 # UniTime day-code tokens, longest-first so "Th" / "Su" beat "T" / "S".
 _DAY_TOKENS = ("MTWThFS", "MTWThF", "TThS", "MWF", "TTh", "SSu", "Th", "Su", "M", "T", "W", "F", "S")
-_LUNCH_START = 12 * 60 + 30
-_LUNCH_END = 13 * 60 + 30
+# Lunch break configuration matching setup_lunch_breaks.py:
+# Window: 11:30 AM (slot 138 = 690m) to 3:30 PM (slot 186 = 930m), min break length: 1 hour (12 slots = 60m)
+_LUNCH_WINDOW_START = 11 * 60 + 30
+_LUNCH_WINDOW_END = 15 * 60 + 30
+_LUNCH_MIN_LENGTH = 60
 _EARLY_END = 10 * 60 + 30
 _LATE_START = 16 * 60 + 30
 _EXAMPLE_LIMIT = 8
@@ -192,8 +195,51 @@ def _parse_hhmm(text: str) -> int:
     return int(text[:2]) * 60 + int(text[2:])
 
 
-def _overlaps(a0: int, a1: int, b0: int, b1: int) -> bool:
-    return a0 < b1 and b0 < a1
+def _has_lunch_break(
+    meetings_on_day: list[Meeting],
+    window_start: int = _LUNCH_WINDOW_START,
+    window_end: int = _LUNCH_WINDOW_END,
+    min_break: int = _LUNCH_MIN_LENGTH,
+) -> tuple[bool, str]:
+    """Check if there is at least one continuous free window of >= min_break in [window_start, window_end]."""
+    intervals: list[tuple[int, int]] = []
+    for m in meetings_on_day:
+        s = max(m.start, window_start)
+        e = min(m.end, window_end)
+        if s < e:
+            intervals.append((s, e))
+
+    if not intervals:
+        return True, ""
+
+    intervals.sort()
+    merged: list[list[int]] = []
+    for s, e in intervals:
+        if not merged:
+            merged.append([s, e])
+        else:
+            if s <= merged[-1][1]:
+                merged[-1][1] = max(merged[-1][1], e)
+            else:
+                merged.append([s, e])
+
+    # 1. Gap before first meeting
+    if merged[0][0] - window_start >= min_break:
+        return True, ""
+    # 2. Gaps between consecutive meetings
+    for i in range(len(merged) - 1):
+        if merged[i + 1][0] - merged[i][1] >= min_break:
+            return True, ""
+    # 3. Gap after last meeting
+    if window_end - merged[-1][1] >= min_break:
+        return True, ""
+
+    busy_str = ", ".join(f"{_fmt_mins(s)}-{_fmt_mins(e)}" for s, e in merged)
+    return False, f"no {min_break}m lunch break in {_fmt_mins(window_start)}-{_fmt_mins(window_end)} (busy: {busy_str})"
+
+
+def _overlaps(a_start: int, a_end: int, b_start: int, b_end: int) -> bool:
+    return a_start < b_end and b_start < a_end
 
 
 def _parse_pattern(pattern: str) -> tuple[int, int]:
@@ -599,19 +645,13 @@ def evaluate(
                 f"{class_id}: limit {off.limit} > capacity {room.capacity} ({a.room_key})",
             )
 
-        # Lunch / weekend
+        # Weekend check
         lunch_ok = True
         lunch_reason = ""
         for m in a.meetings:
             if m.weekday in ("S", "Su"):
                 lunch_ok = False
                 lunch_reason = f"{class_id}: weekend meeting on {m.weekday}"
-                break
-            if _overlaps(m.start, m.end, _LUNCH_START, _LUNCH_END):
-                lunch_ok = False
-                lunch_reason = (
-                    f"{class_id}: overlaps lunch {_fmt_mins(m.start)}-{_fmt_mins(m.end)}"
-                )
                 break
         lunch.record(lunch_ok, lunch_reason)
 
@@ -652,10 +692,36 @@ def evaluate(
     for key, a, b in room_conflicts[:_EXAMPLE_LIMIT]:
         room_conflict_bucket.examples.append(f"room {key}: {a} overlaps {b}")
 
-    # Student conflicts
+    # Instructor Lunch Breaks (11:30 to 15:30, >= 60 min break)
+    instr_meetings_by_day: dict[str, dict[str, list[Meeting]]] = defaultdict(lambda: defaultdict(list))
+    for a in assignments:
+        key_i = a.instructor_id or f"raw:{a.instructor_raw}"
+        for m in a.meetings:
+            instr_meetings_by_day[key_i][m.weekday].append(m)
+
+    instr_lunch_bucket = KpiBucket("instructor_lunch_breaks")
+    instr_lunch_violations = 0
+    for ikey, days in sorted(instr_meetings_by_day.items()):
+        ok = True
+        reason = ""
+        for day, m_list in sorted(days.items()):
+            if day in ("S", "Su"):
+                continue
+            has_break, msg = _has_lunch_break(m_list)
+            if not has_break:
+                ok = False
+                reason = f"instructor {ikey} on {day}: {msg}"
+                break
+        if not ok:
+            instr_lunch_violations += 1
+        instr_lunch_bucket.record(ok, reason)
+
+    # Student conflicts & Student Lunch Breaks
     student_conflict_count = 0
     students_with_conflict = 0
     student_examples: list[str] = []
+    student_lunch_bucket = KpiBucket("student_lunch_breaks")
+    students_with_lunch_conflict = 0
     id_index = ClassIdIndex.from_offerings(offerings)
 
     for sid, class_ids in enrollments.items():
@@ -671,7 +737,15 @@ def evaluate(
         for m, cid in meetings:
             by_day[m.weekday].append((m, cid))
         conflicted = False
+        lunch_conflict = False
+        lunch_reason = ""
         for day, slots in by_day.items():
+            if day not in ("S", "Su"):
+                m_only = [m for m, _ in slots]
+                has_break, msg = _has_lunch_break(m_only)
+                if not has_break and not lunch_conflict:
+                    lunch_conflict = True
+                    lunch_reason = f"{sid} on {day}: {msg}"
             slots.sort(key=lambda x: x[0].start)
             for i in range(len(slots)):
                 for j in range(i + 1, len(slots)):
@@ -688,6 +762,9 @@ def evaluate(
                             )
         if conflicted:
             students_with_conflict += 1
+        if lunch_conflict:
+            students_with_lunch_conflict += 1
+        student_lunch_bucket.record(not lunch_conflict, lunch_reason)
 
     n_students = len(enrollments) or 1
     student_bucket = KpiBucket("student_conflicts")
@@ -780,6 +857,8 @@ def evaluate(
         date_pat,
         capacity,
         lunch,
+        instr_lunch_bucket,
+        student_lunch_bucket,
         instr_conflict_bucket,
         room_conflict_bucket,
         student_bucket,
@@ -802,9 +881,11 @@ def evaluate(
             "unav_onl_assignments": unav_onl,
             "unav_onl_pct": round(unav_rate, 2),
             "instructor_conflicts": len(instr_conflicts),
+            "instructor_lunch_violations": instr_lunch_violations,
             "room_conflicts": len(room_conflicts),
             "student_conflict_pairs": student_conflict_count,
             "students_with_conflict": students_with_conflict,
+            "students_with_lunch_conflict": students_with_lunch_conflict,
             "students_total": len(enrollments),
             "travel_violations": travel_violations,
             "back_to_back_pct": round(back_to_back_pct, 2),
@@ -863,6 +944,10 @@ def print_report(report: dict[str, Any]) -> None:
         f"room={s['room_conflicts']}  "
         f"students={s['students_with_conflict']}/{s['students_total']} "
         f"({s['student_conflict_pairs']} pairs)"
+    )
+    print(
+        f"Lunch breaks: instructor_violations={s.get('instructor_lunch_violations', 0)}  "
+        f"student_violations={s.get('students_with_lunch_conflict', 0)}/{s['students_total']}"
     )
     print(f"UNAV/ONL usage         : {s['unav_onl_assignments']} ({s['unav_onl_pct']:.1f}%)")
     print(f"Travel violations      : {s['travel_violations']}")
