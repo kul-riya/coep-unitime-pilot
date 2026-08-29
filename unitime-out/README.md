@@ -107,14 +107,19 @@ different values:
 | Subjects skipped | 121 of 184 controlling (lec) subjects have no `subjectClassTeacher` and no `subjectBatchTeacher` row in snapshot 240, so they were intentionally omitted from `courseOffering.xml` while still appearing in `courseCatalog.xml`. |
 | Mock student naming | `externalId = <classShortName>-S<index>`, first name from a fixed 30-name list, last name from a 15-surname list. |
 
-## Solver Configurations (Lunch Breaks)
+## UniTime Utilities & Scripts (`scripts/unitime_scripts/`)
 
-A Jython script (`scripts/setup_lunch_breaks.py`) is provided to automate solver configuration for 1-hour Student and Instructor lunch breaks between 11:30 AM and 3:30 PM. 
+Jython scripts are provided in `scripts/unitime_scripts/` to be uploaded and run in UniTime (**Administration > Utilities > Scripts**):
 
-To apply this configuration in UniTime:
-1. Go to **Administration > Utilities > Scripts**.
-2. Upload `scripts/setup_lunch_breaks.py`.
-3. Execute the script.
+1. **`setup_lunch_breaks.py`**:
+   - Automates solver configuration for 1-hour dynamic Student and Instructor lunch breaks between 11:30 AM and 3:30 PM.
+
+2. **`purge_uploaded_data.py`**:
+   - Accepts an input parameter `steps` (e.g. `"16"`, `"12, 13"`, `"14-16"`).
+   - Purges only the specified step numbers (1 to 16) in reverse dependency order for the active session.
+   - Example: `steps = "16"` removes only Student Class Enrollments; `steps = "12, 13"` removes Course Offerings and Preferences.
+
+---
 
 ## Evaluate a solution
 

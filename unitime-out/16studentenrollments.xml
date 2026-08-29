@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<studentEnrollments campus="COEP" year="2026" term="Spr">
+<studentEnrollments campus="COEP" year="2026" term="Spr6">
   <student externalId="610103001">
     <class subject="CS" courseNbr="AIMA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DS-FY" type="Lec" suffix="1"/>
