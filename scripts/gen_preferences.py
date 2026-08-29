@@ -95,14 +95,12 @@ def _time_pattern(sp_type: str, min_per_week: int) -> str:
 #       Formula: hour * 60 + min (e.g. 18 * 60 + 30 = 1110 for 18:30 / 6:30 PM).
 #   - level (str):
 #       UniTime preference level applied to matching slots:
-#         * "R"        : Required (exact matching slot is required, all other candidate
-#                        slots for the pattern are prohibited "P").
+#         * "R"        : Required (matching slot is emitted as required).
 #         * "P"        : Prohibited (any candidate slot overlapping the days and time
 #                        window is marked with level="P").
-#         * "0"        : Strongly Preferred.
-#         * "1"        : Preferred.
-#         * "-1"       : Discouraged,
-#         * "2" / "-2" : Strongly Preferred / Strongly Discouraged.
+#         * "0"        : Neutral.
+#         * "1" / "2"  : Preferred / Strongly Preferred.
+#         * "-1" / "-2": Discouraged / Strongly Discouraged.
 #
 # How It Works:
 #   1. When generating <timePref> for a subpart in 13preferences.xml, the subpart's
@@ -110,10 +108,9 @@ def _time_pattern(sp_type: str, min_per_week: int) -> str:
 #      rules in FIXED_ENTRIES_MAP.
 #   2. The first rule where course_pattern matches AND exclude_pattern does NOT match
 #      is selected as active_entry.
-#   3. If active_entry has level="R" or "1":
+#   3. If active_entry has level in ("R", "1", "0", "2"):
 #        - The candidate slot matching the exact target days and fitting inside [start, end]
-#          receives level="R" / "1" (e.g. <pref level="R" days="MT" time="1630"/>).
-#        - All other slots in the time pattern are marked with level="P" (Prohibited).
+#          receives the level (e.g. <pref level="R" days="MT" time="1630"/>).
 #   4. If active_entry has level="P":
 #        - Any candidate slot whose days overlap target days and whose time interval
 #          overlaps [start, end] is marked with level="P" (Prohibited).
@@ -192,8 +189,8 @@ def _get_time_pref_lines(course_nbr: str, pattern_name: str) -> list[str]:
         e_end = int(active_entry["end"])
         lvl = str(active_entry.get("level", "P"))
 
-        if lvl in ("1", "R", "0"):
-            # Required / Preferred rule: exact slot required, all other slots prohibited
+        if lvl in ("1", "R", "0", "2"):
+            # Required / Preferred rule: emit only the matching slot(s)
             for dcode in day_codes:
                 d_set = set(_expand_days_list(dcode))
                 for start in valid_starts:
@@ -201,8 +198,6 @@ def _get_time_pref_lines(course_nbr: str, pattern_name: str) -> list[str]:
                     end_min = start_min + mins_per_meeting
                     if d_set == target_days and start_min >= e_start and end_min <= e_end:
                         prefs.append((lvl, dcode, start))
-                    else:
-                        prefs.append(("P", dcode, start))
         else:
             # Prohibited rule (level="P"): any slot overlapping the window is prohibited
             for dcode in day_codes:
