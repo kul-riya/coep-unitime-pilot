@@ -31,6 +31,8 @@ YEAR = 2026
 OUT_DIR = Path(__file__).resolve().parent.parent / "unitime-out"
 SCRIPTS_DIR = Path(__file__).resolve().parent
 DATE_PATTERN = "Full Term"
+# Numbered offerings file is what Data Exchange actually imported.
+OFFERING_CANDIDATES = ("12courseOffering.xml", "courseOffering.xml")
 
 RoomKey = Tuple[str, str]  # (building, roomNbr)
 
@@ -193,7 +195,7 @@ def _room_pref_lines(rooms: list[RoomKey]) -> list[str]:
         return []
     lines: list[str] = []
     for i, (building, nbr) in enumerate(rooms):
-        level = "R" if i == 0 else "P"
+        level = "-1" if i == 0 else "1"
         lines.append(
             f'    <roomPref building="{xml_escape(building)}" '
             f'room="{xml_escape(nbr)}" level="{level}"/>'
@@ -201,16 +203,27 @@ def _room_pref_lines(rooms: list[RoomKey]) -> list[str]:
     return lines
 
 
+def _offering_source() -> Path:
+    for name in OFFERING_CANDIDATES:
+        path = OUT_DIR / name
+        if path.is_file():
+            return path
+    raise FileNotFoundError("no courseOffering XML found in unitime-out")
+
+
 def main() -> None:
-    src = OUT_DIR / "courseOffering.xml"
+    src = _offering_source()
     root = ET.parse(src).getroot()
+    campus = root.get("campus") or CAMPUS
+    term = root.get("term") or TERM
+    year = root.get("year") or str(YEAR)
     class_rooms = _collect_class_rooms()
 
     lines: list[str] = [
         LICENSE_HEADER,
-        f'<preferences campus="{CAMPUS}" term="{TERM}" year="{YEAR}" '
-        f'dateFormat="yyyy/M/d" timeFormat="HHmm" '
-        f'created="Generated from courseOffering.xml + Taasika room prefs">',
+        f'<preferences campus="{xml_escape(campus)}" term="{xml_escape(term)}" '
+        f'year="{xml_escape(year)}" dateFormat="yyyy/M/d" timeFormat="HHmm" '
+        f'created="Generated from {src.name} + Taasika room prefs">',
     ]
 
     subpart_count = 0
@@ -266,11 +279,17 @@ def main() -> None:
                     if not rooms:
                         for r in cls.findall("room"):
                             rooms.append((r.get("building", ""), r.get("roomNbr", "")))
+                    class_id = cls.get("id") or ""
+                    ext = (
+                        f' externalId="{xml_escape(class_id)}"'
+                        if class_id
+                        else ""
+                    )
                     lines.append(
                         f'  <class subject="{xml_escape(subject)}" '
                         f'course="{xml_escape(course_nbr)}" '
                         f'type="{xml_escape(sp_type)}" '
-                        f'suffix="{xml_escape(cls_suffix)}">'
+                        f'suffix="{xml_escape(cls_suffix)}"{ext}>'
                     )
                     rp = _room_pref_lines(rooms)
                     room_pref_count += len(rp)
@@ -284,8 +303,9 @@ def main() -> None:
     (OUT_DIR / "13preferences.xml").write_text("\n".join(lines), encoding="utf-8")
     print(
         f"wrote {out.relative_to(OUT_DIR.parent)} "
-        f"({out.stat().st_size:,} bytes, {subpart_count} subparts, "
-        f"{class_count} classes, {room_pref_count} room prefs)"
+        f"({out.stat().st_size:,} bytes, session {campus}/{term}/{year}, "
+        f"{subpart_count} subparts, {class_count} classes, "
+        f"{room_pref_count} room prefs, source {src.name})"
     )
 
 

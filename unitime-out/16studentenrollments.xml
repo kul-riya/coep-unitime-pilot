@@ -6133,6 +6133,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303002">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6141,6 +6143,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303003">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6149,6 +6153,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303004">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6157,6 +6163,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303005">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6165,6 +6173,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303006">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6173,6 +6183,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303007">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6181,6 +6193,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303008">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6189,6 +6203,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303009">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6197,6 +6213,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303010">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6205,6 +6223,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303011">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6213,6 +6233,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303012">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6221,6 +6243,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303013">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6229,6 +6253,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303014">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6237,6 +6263,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303015">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6245,6 +6273,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303016">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6253,6 +6283,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303017">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6261,6 +6293,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303018">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6269,6 +6303,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303019">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6277,6 +6313,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303020">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6285,6 +6323,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303021">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6293,6 +6333,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303022">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6301,6 +6343,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303023">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6309,6 +6353,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303024">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6317,6 +6363,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303025">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6325,6 +6373,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303026">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6333,6 +6383,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303027">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6341,6 +6393,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303028">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6349,6 +6403,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303029">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6357,6 +6413,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303030">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6365,6 +6423,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303031">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6373,6 +6433,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303032">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6381,6 +6443,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303033">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6389,6 +6453,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303034">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6397,6 +6463,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303035">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6405,6 +6473,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303036">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6413,6 +6483,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303037">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6421,6 +6493,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303038">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6429,6 +6503,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303039">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6437,6 +6513,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303040">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6445,6 +6523,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303041">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6453,6 +6533,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303042">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6461,6 +6543,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303043">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6469,6 +6553,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303044">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6477,6 +6563,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303045">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6485,6 +6573,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303046">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6493,6 +6583,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303047">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6501,6 +6593,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303048">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6509,6 +6603,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303049">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6517,6 +6613,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303050">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6525,6 +6623,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303051">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6533,6 +6633,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303052">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6541,6 +6643,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303053">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6549,6 +6653,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303054">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6557,6 +6663,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303055">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6565,6 +6673,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303056">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6573,6 +6683,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303057">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6581,6 +6693,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303058">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6589,6 +6703,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303059">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6597,6 +6713,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303060">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6605,6 +6723,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303061">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6613,6 +6733,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303062">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6621,6 +6743,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303063">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6629,6 +6753,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303064">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6637,6 +6763,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303065">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6645,6 +6773,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303066">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6653,6 +6783,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303067">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6661,6 +6793,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303068">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6669,6 +6803,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303069">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6677,6 +6813,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303070">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6685,6 +6823,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303071">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6693,6 +6833,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303072">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6701,6 +6843,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303073">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6709,6 +6853,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303074">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6717,6 +6863,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303075">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6725,6 +6873,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303076">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6733,6 +6883,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303077">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6741,6 +6893,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303078">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6749,6 +6903,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303079">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6757,6 +6913,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303080">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6765,6 +6923,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303081">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6773,6 +6933,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303082">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6781,6 +6943,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303083">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6789,6 +6953,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303084">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6797,6 +6963,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="3"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="3"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303085">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6805,6 +6973,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303086">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6813,6 +6983,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303087">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6821,6 +6993,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303088">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6829,6 +7003,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303089">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6837,6 +7013,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303090">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6845,6 +7023,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303091">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6853,6 +7033,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303092">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6861,6 +7043,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303093">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6869,6 +7053,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303094">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6877,6 +7063,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303095">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6885,6 +7073,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303096">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6893,6 +7083,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303097">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6901,6 +7093,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303098">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6909,6 +7103,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303099">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6917,6 +7113,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303100">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -6925,6 +7123,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1"/>
   </student>
   <student externalId="610303101">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -6933,6 +7133,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303102">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -6941,6 +7143,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303103">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -6949,6 +7153,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303104">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -6957,6 +7163,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303105">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -6965,6 +7173,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303106">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -6973,6 +7183,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303107">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -6981,6 +7193,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303108">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -6989,6 +7203,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303109">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -6997,6 +7213,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303110">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7005,6 +7223,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303111">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7013,6 +7233,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303112">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7021,6 +7243,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="4"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="4"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303113">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7029,6 +7253,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303114">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7037,6 +7263,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303115">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7045,6 +7273,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303116">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7053,6 +7283,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303117">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7061,6 +7293,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303118">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7069,6 +7303,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303119">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7077,6 +7313,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303120">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7085,6 +7323,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303121">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7093,6 +7333,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303122">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7101,6 +7343,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303123">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7109,6 +7353,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303124">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7117,6 +7363,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303125">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7125,6 +7373,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303126">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7133,6 +7383,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303127">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7141,6 +7393,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303128">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7149,6 +7403,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303129">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7157,6 +7413,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303130">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7165,6 +7423,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303131">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7173,6 +7433,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303132">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7181,6 +7443,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303133">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7189,6 +7453,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303134">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7197,6 +7463,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303135">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7205,6 +7473,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303136">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7213,6 +7483,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303137">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7221,6 +7493,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303138">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7229,6 +7503,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303139">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7237,6 +7513,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303140">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7245,6 +7523,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="5"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="5"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303141">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7253,6 +7533,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303142">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7261,6 +7543,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303143">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7269,6 +7553,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303144">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7277,6 +7563,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303145">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7285,6 +7573,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303146">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7293,6 +7583,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303147">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7301,6 +7593,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303148">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7309,6 +7603,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303149">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7317,6 +7613,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303150">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7325,6 +7623,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303151">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7333,6 +7633,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303152">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7341,6 +7643,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303153">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7349,6 +7653,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303154">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7357,6 +7663,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303155">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7365,6 +7673,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303156">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7373,6 +7683,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303157">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7381,6 +7693,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303158">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7389,6 +7703,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303159">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7397,6 +7713,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303160">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7405,6 +7723,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303161">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7413,6 +7733,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303162">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7421,6 +7743,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303163">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7429,6 +7753,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303164">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7437,6 +7763,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303165">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7445,6 +7773,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303166">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7453,6 +7783,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303167">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7461,6 +7793,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303168">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7469,6 +7803,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="6"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="6"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303169">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7477,6 +7813,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303170">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7485,6 +7823,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303171">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7493,6 +7833,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303172">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7501,6 +7843,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303173">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7509,6 +7853,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303174">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7517,6 +7863,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303175">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7525,6 +7873,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303176">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7533,6 +7883,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303177">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7541,6 +7893,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303178">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7549,6 +7903,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303179">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7557,6 +7913,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303180">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7565,6 +7923,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303181">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7573,6 +7933,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303182">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7581,6 +7943,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303183">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7589,6 +7953,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303184">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7597,6 +7963,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303185">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7605,6 +7973,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303186">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7613,6 +7983,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303187">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7621,6 +7993,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303188">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7629,6 +8003,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303189">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7637,6 +8013,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303190">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7645,6 +8023,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303191">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7653,6 +8033,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303192">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7661,6 +8043,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303193">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7669,6 +8053,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303194">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7677,6 +8063,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303195">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7685,6 +8073,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303196">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7693,6 +8083,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="7"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="7"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303197">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7701,6 +8093,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303198">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7709,6 +8103,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303199">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7717,6 +8113,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303200">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -7725,6 +8123,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303201">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7733,6 +8133,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303202">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7741,6 +8143,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2"/>
   </student>
   <student externalId="610303203">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7749,6 +8153,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303204">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7757,6 +8163,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303205">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7765,6 +8173,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303206">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7773,6 +8183,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303207">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7781,6 +8193,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303208">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7789,6 +8203,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303209">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7797,6 +8213,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303210">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7805,6 +8223,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303211">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7813,6 +8233,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303212">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7821,6 +8243,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303213">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7829,6 +8253,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303214">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7837,6 +8263,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303215">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7845,6 +8273,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303216">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7853,6 +8283,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303217">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7861,6 +8293,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303218">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7869,6 +8303,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303219">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7877,6 +8313,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303220">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7885,6 +8323,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303221">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7893,6 +8333,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303222">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7901,6 +8343,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303223">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7909,6 +8353,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303224">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7917,6 +8363,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="8"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="8"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303225">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7925,6 +8373,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303226">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7933,6 +8383,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303227">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7941,6 +8393,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303228">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7949,6 +8403,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303229">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7957,6 +8413,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303230">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7965,6 +8423,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303231">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7973,6 +8433,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303232">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7981,6 +8443,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303233">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7989,6 +8453,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303234">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -7997,6 +8463,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303235">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8005,6 +8473,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303236">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8013,6 +8483,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303237">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8021,6 +8493,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303238">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8029,6 +8503,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303239">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8037,6 +8513,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303240">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8045,6 +8523,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303241">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8053,6 +8533,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303242">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8061,6 +8543,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303243">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8069,6 +8553,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303244">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8077,6 +8563,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303245">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8085,6 +8573,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303246">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8093,6 +8583,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303247">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8101,6 +8593,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303248">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8109,6 +8603,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303249">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8117,6 +8613,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303250">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="1"/>
@@ -8125,6 +8623,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="1"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303251">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8133,6 +8633,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303252">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8141,6 +8643,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="9"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="9"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303253">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8149,6 +8653,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303254">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8157,6 +8663,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303255">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8165,6 +8673,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303256">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8173,6 +8683,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303257">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8181,6 +8693,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303258">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8189,6 +8703,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303259">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8197,6 +8713,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303260">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8205,6 +8723,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303261">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8213,6 +8733,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303262">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8221,6 +8743,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303263">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8229,6 +8753,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303264">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8237,6 +8763,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303265">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8245,6 +8773,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303266">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8253,6 +8783,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303267">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8261,6 +8793,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303268">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8269,6 +8803,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303269">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8277,6 +8813,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303270">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8285,6 +8823,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303271">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8293,6 +8833,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303272">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8301,6 +8843,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303273">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8309,6 +8853,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303274">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8317,6 +8863,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303275">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8325,6 +8873,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303276">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8333,6 +8883,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303277">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8341,6 +8893,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303278">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8349,6 +8903,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303279">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8357,6 +8913,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303280">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8365,6 +8923,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="10"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="10"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303281">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8373,6 +8933,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303282">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8381,6 +8943,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303283">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8389,6 +8953,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303284">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8397,6 +8963,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303285">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8405,6 +8973,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303286">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8413,6 +8983,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303287">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8421,6 +8993,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303288">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8429,6 +9003,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303289">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8437,6 +9013,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303290">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8445,6 +9023,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303291">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8453,6 +9033,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303292">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8461,6 +9043,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303293">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8469,6 +9053,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303294">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8477,6 +9063,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303295">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8485,6 +9073,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303296">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8493,6 +9083,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303297">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8501,6 +9093,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303298">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8509,6 +9103,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3"/>
   </student>
   <student externalId="610303299">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8517,6 +9113,8 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4"/>
   </student>
   <student externalId="610303300">
     <class subject="CS" courseNbr="AI" type="Lec" suffix="2"/>
@@ -8525,606 +9123,1208 @@
     <class subject="CS" courseNbr="CN" type="Lab" suffix="11"/>
     <class subject="CS" courseNbr="DAA" type="Lec" suffix="2"/>
     <class subject="CS" courseNbr="DAA" type="Lab" suffix="11"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403001">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403002">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403003">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403004">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403005">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403006">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403007">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403008">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403009">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403010">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403011">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403012">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403013">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403014">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403015">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403016">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403017">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403018">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403019">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403020">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403021">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403022">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403023">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403024">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403025">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403026">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403027">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403028">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403029">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403030">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403031">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403032">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403033">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403034">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403035">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403036">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403037">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403038">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403039">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403040">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403041">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403042">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403043">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403044">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403045">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403046">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403047">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403048">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403049">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403050">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403051">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403052">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403053">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403054">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403055">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403056">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403057">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403058">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403059">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403060">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403061">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403062">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403063">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403064">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403065">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403066">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403067">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403068">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403069">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403070">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403071">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403072">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403073">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403074">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403075">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403076">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403077">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403078">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403079">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403080">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403081">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403082">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403083">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403084">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403085">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403086">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403087">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403088">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403089">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403090">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403091">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403092">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403093">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403094">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403095">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403096">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403097">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403098">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403099">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403100">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403101">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403102">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403103">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403104">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403105">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403106">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403107">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403108">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403109">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403110">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403111">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403112">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403113">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403114">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403115">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403116">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403117">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403118">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403119">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403120">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403121">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403122">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403123">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403124">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403125">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403126">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403127">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403128">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403129">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403130">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403131">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403132">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403133">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403134">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403135">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403136">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403137">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403138">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403139">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403140">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403141">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403142">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403143">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403144">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403145">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403146">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403147">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403148">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403149">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403150">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403151">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403152">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403153">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403154">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403155">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403156">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403157">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403158">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403159">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403160">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403161">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403162">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403163">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403164">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403165">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403166">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403167">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403168">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403169">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403170">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403171">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403172">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403173">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403174">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403175">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403176">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403177">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403178">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403179">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403180">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403181">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403182">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403183">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403184">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403185">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403186">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403187">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403188">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403189">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403190">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403191">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403192">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403193">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403194">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403195">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403196">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403197">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403198">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403199">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403200">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403201">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1"/>
   </student>
   <student externalId="610403202">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403203">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403204">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2"/>
   </student>
   <student externalId="610403205">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403206">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403207">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403208">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403209">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403210">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403211">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403212">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403213">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403214">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403215">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403216">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403217">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403218">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403219">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403220">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403221">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403222">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403223">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403224">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403225">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403226">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403227">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403228">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403229">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403230">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403231">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403232">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403233">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403234">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403235">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403236">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403237">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403238">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403239">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403240">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403241">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403242">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403243">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403244">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403245">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403246">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403247">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403248">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403249">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403250">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403251">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403252">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403253">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403254">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403255">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403256">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403257">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403258">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403259">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403260">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403261">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403262">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403263">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403264">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403265">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403266">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403267">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403268">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403269">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403270">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403271">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403272">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403273">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403274">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403275">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403276">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403277">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403278">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403279">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403280">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403281">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403282">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403283">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403284">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403285">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403286">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403287">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403288">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403289">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403290">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403291">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403292">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403293">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403294">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403295">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403296">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403297">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610403298">
+    <class subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403299">
+    <class subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1"/>
+    <class subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4"/>
   </student>
   <student externalId="610403300">
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2"/>
+    <class subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3"/>
   </student>
   <student externalId="610503001">
     <class subject="CS" courseNbr="DMML" type="Lec" suffix="1"/>

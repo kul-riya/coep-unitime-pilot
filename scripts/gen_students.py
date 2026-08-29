@@ -19,6 +19,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 from typing import Iterable
+from xml.etree import ElementTree as ET
 
 from classifications import companion_itype
 from intake import N_AIML, N_CSE, N_DIVISIONS, year_headcount
@@ -84,6 +85,90 @@ def equal_pick(seq: int, n_options: int) -> int:
     if n_options <= 0:
         return 0
     return (seq - 1) % n_options
+
+
+def _session_from_xml() -> tuple[str, str, str]:
+    """Campus/term/year from the numbered offerings file (live UniTime session)."""
+    for name in ("12courseOffering.xml", "6studentGroup.xml", "courseOffering.xml"):
+        path = OUT_DIR / name
+        if not path.is_file():
+            continue
+        root = ET.parse(path).getroot()
+        campus = root.get("campus") or CAMPUS
+        term = root.get("term") or TERM
+        year = root.get("year") or str(YEAR)
+        return campus, term, year
+    return CAMPUS, TERM, str(YEAR)
+
+
+def load_known_groups() -> set[str]:
+    for name in ("6studentGroup.xml", "studentGroup.xml"):
+        path = OUT_DIR / name
+        if not path.is_file():
+            continue
+        root = ET.parse(path).getroot()
+        return {
+            (el.get("code") or "").strip()
+            for el in root.findall("studentGroup")
+            if (el.get("code") or "").strip()
+        }
+    return set()
+
+
+def cohort_groups(
+    year_key: str,
+    seq: int,
+    *,
+    mt_prog: str | None = None,
+) -> list[str]:
+    """Division / program groups that exist in studentGroup.xml."""
+    n_cse = N_CSE.get(year_key, 0)
+    if year_key == "FY":
+        if seq > n_cse:
+            return ["FY-AIML"]
+        return [f"FY-CSE{fy_cse_division(seq) + 1}"]
+    if year_key in ("SY", "TY", "BT"):
+        return [f"{year_key}-Div{sy_ty_bt_division(seq, n_cse) + 1}"]
+    if year_key == "MT" and mt_prog:
+        return [f"MT-{mt_prog}", "MT-All"]
+    return []
+
+
+def _cohort_family(year_key: str) -> set[str]:
+    """Sibling division codes; a student should belong to only one of these."""
+    if year_key == "FY":
+        return {f"FY-CSE{i}" for i in range(1, 5)} | {"FY-AIML"}
+    if year_key in ("SY", "TY", "BT"):
+        return {f"{year_key}-Div1", f"{year_key}-Div2"}
+    if year_key == "MT":
+        return {"MT-CE", "MT-CSIS", "MT-AI", "MT-DS"}
+    return set()
+
+
+def groups_from_enrollments(
+    tags: list[tuple[str, str, str, int]],
+    class_notes: dict[tuple[str, str, str, int], str],
+    known: set[str],
+) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    for area, nbr, typ, suf in tags:
+        note = (class_notes.get((area, nbr, typ, int(suf))) or "").strip()
+        if note in known and note not in seen:
+            seen.add(note)
+            out.append(note)
+    return out
+
+
+def merge_groups(*chunks: Iterable[str], known: set[str]) -> list[str]:
+    seen: set[str] = set()
+    out: list[str] = []
+    for chunk in chunks:
+        for code in chunk:
+            if code in known and code not in seen:
+                seen.add(code)
+                out.append(code)
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -179,7 +264,15 @@ MT_PROGRAMS: list[tuple[str, int, list[str], list[str]]] = [
 ]
 
 
-def load_indexes() -> tuple[dict, dict[str, tuple[int, dict]], dict[int, list[int]], dict[int, list[int]], dict[int, str], dict[tuple[str, str, str, int], int]]:
+def load_indexes() -> tuple[
+    dict,
+    dict[str, tuple[int, dict]],
+    dict[int, list[int]],
+    dict[int, list[int]],
+    dict[int, str],
+    dict[tuple[str, str, str, int], int],
+    dict[tuple[str, str, str, int], str],
+]:
     subject_idx = json.loads((SCRIPTS_DIR / "subject_index.json").read_text(encoding="utf-8"))
     offering = json.loads((SCRIPTS_DIR / "offering_index.json").read_text(encoding="utf-8"))
     by_short: dict[str, tuple[int, dict]] = {}
@@ -209,7 +302,14 @@ def load_indexes() -> tuple[dict, dict[str, tuple[int, dict]], dict[int, list[in
             continue
         area, nbr, typ, suf = parts
         class_limits[(area, nbr, typ, int(suf))] = int(lim)
-    return subject_idx, by_short, lec_suf, lab_suf, companion_type, class_limits
+    class_notes: dict[tuple[str, str, str, int], str] = {}
+    for raw, note in (offering.get("class_notes") or {}).items():
+        parts = str(raw).split("|")
+        if len(parts) != 4:
+            continue
+        area, nbr, typ, suf = parts
+        class_notes[(area, nbr, typ, int(suf))] = str(note or "").strip()
+    return subject_idx, by_short, lec_suf, lab_suf, companion_type, class_limits, class_notes
 
 
 def class_tags_for_short(
@@ -355,7 +455,9 @@ def assign_within_limits(
 
 
 def main() -> None:
-    subject_idx, by_short, lec_suf, lab_suf, companion_type, class_limits = load_indexes()
+    subject_idx, by_short, lec_suf, lab_suf, companion_type, class_limits, class_notes = load_indexes()
+    known_groups = load_known_groups()
+    campus, term, year = _session_from_xml()
 
     def resolve_btech(year_key: str, seq: int) -> list[str]:
         cfg = CURRICULUM[year_key]
@@ -365,10 +467,10 @@ def main() -> None:
             choice = options[idx]
             if choice is None:
                 continue
-                if isinstance(choice, list):
-                    shorts.extend(choice)
-                else:
-                    shorts.append(choice)
+            if isinstance(choice, list):
+                shorts.extend(choice)
+            else:
+                shorts.append(choice)
         # dedupe preserving order
         seen: set[str] = set()
         out: list[str] = []
@@ -381,26 +483,32 @@ def main() -> None:
         return out
 
     # incremental=true: only create/update students in this file (safer re-import).
-    # Omit studentGroups here: UniTime StudentImport merge()s groups before flush and
-    # can throw TransientObjectException on large cohorts (see StudentImport.java).
+    # Student groups: UniTime looks up group@group against StudentGroup.abbreviation
+    # from 6studentGroup.xml. Students already in the session can take a groups
+    # re-import; StudentImport persist()s the student before attaching groups.
     info_lines = [
         LICENSE_HEADER,
-        f'<students campus="{CAMPUS}" year="{YEAR}" term="{TERM}" incremental="true">',
+        f'<students campus="{xml_escape(campus)}" year="{xml_escape(year)}" '
+        f'term="{xml_escape(term)}" incremental="true">',
     ]
     req_lines = [
         LICENSE_HEADER,
-        f'<request campus="{CAMPUS}" year="{YEAR}" term="{TERM}" incremental="true">',
+        f'<request campus="{xml_escape(campus)}" year="{xml_escape(year)}" '
+        f'term="{xml_escape(term)}" incremental="true">',
     ]
     enr_lines = [
         LICENSE_HEADER,
-        f'<studentEnrollments campus="{CAMPUS}" year="{YEAR}" term="{TERM}">',
+        f'<studentEnrollments campus="{xml_escape(campus)}" year="{xml_escape(year)}" '
+        f'term="{xml_escape(term)}">',
     ]
 
     stats: dict[str, int] = defaultdict(int)
+    group_counts: dict[str, int] = defaultdict(int)
     missing_shorts: set[str] = set()
     overflow: dict[str, int] = defaultdict(int)
     class_fill: dict[tuple[str, str, str, int], int] = defaultdict(int)
     total = 0
+    students_without_groups = 0
 
     def emit_student(
         ext_id: str,
@@ -408,15 +516,49 @@ def main() -> None:
         area: str,
         class_code: str,
         major: str,
-        group: str,
         shorts: list[str],
         rr: int,
         year_key: str | None = None,
+        mt_prog: str | None = None,
     ) -> None:
-        nonlocal total
+        nonlocal total, students_without_groups
         total += 1
         first, last = student_name(seq_for_name)
         email = f"{ext_id.lower()}@students.unitime.local"
+
+        tags = enroll_shorts(
+            shorts,
+            by_short,
+            lec_suf,
+            lab_suf,
+            companion_type,
+            rr,
+            year_key=year_key or class_code,
+            seq=seq_for_name,
+        )
+        tags = assign_within_limits(tags, class_fill, class_limits, overflow)
+        for s in shorts:
+            if s not in by_short:
+                missing_shorts.add(s)
+
+        from_enr = groups_from_enrollments(tags, class_notes, known_groups)
+        cohort = cohort_groups(
+            year_key or class_code,
+            seq_for_name,
+            mt_prog=mt_prog,
+        )
+        family = _cohort_family(year_key or class_code)
+        if family & set(from_enr):
+            chunks: list[Iterable[str]] = [from_enr]
+            if mt_prog and "MT-All" in known_groups:
+                chunks.append(["MT-All"])
+            groups = merge_groups(*chunks, known=known_groups)
+        else:
+            groups = merge_groups(cohort, from_enr, known=known_groups)
+        if not groups:
+            students_without_groups += 1
+        for g in groups:
+            group_counts[g] += 1
 
         info_lines.append(
             f'  <student externalId="{xml_escape(ext_id)}" '
@@ -433,24 +575,12 @@ def main() -> None:
             f'      <major academicArea="{area}" academicClass="{class_code}" code="{major}"/>'
         )
         info_lines.append("    </studentMajors>")
-        # group kept for logging only; not written to XML (see header comment)
-        _ = group
+        if groups:
+            info_lines.append("    <studentGroups>")
+            for g in groups:
+                info_lines.append(f'      <studentGroup group="{xml_escape(g)}"/>')
+            info_lines.append("    </studentGroups>")
         info_lines.append("  </student>")
-
-        tags = enroll_shorts(
-            shorts,
-            by_short,
-            lec_suf,
-            lab_suf,
-            companion_type,
-            rr,
-            year_key=year_key or class_code,
-            seq=seq_for_name,
-        )
-        tags = assign_within_limits(tags, class_fill, class_limits, overflow)
-        for s in shorts:
-            if s not in by_short:
-                missing_shorts.add(s)
 
         # course requests = unique offerings
         req_lines.append(f'  <student key="{xml_escape(ext_id)}">')
@@ -482,7 +612,6 @@ def main() -> None:
         n_year = year_headcount(year_key)
         for seq in range(1, n_year + 1):
             major = "CE" if seq <= n_cse else "AIML"
-            group = f"{year_key}-{major}"
             ext = student_id(year_key, seq)
             shorts = resolve_btech(year_key, seq)
             emit_student(
@@ -491,7 +620,6 @@ def main() -> None:
                 area="BT",
                 class_code=year_key,
                 major=major,
-                group=group,
                 shorts=shorts,
                 rr=seq - 1,
                 year_key=year_key,
@@ -514,9 +642,10 @@ def main() -> None:
                 area="MT",
                 class_code="MT",
                 major={"CE": "CE", "CSIS": "IS", "AI": "AI", "DS": "DS"}[prog],
-                group=f"MT-{prog}",
                 shorts=shorts,
                 rr=i,
+                year_key="MT",
+                mt_prog=prog,
             )
 
     info_lines.append("</students>\n")
@@ -539,11 +668,14 @@ def main() -> None:
         "missing_shorts": sorted(missing_shorts),
         "id_format": "61yy03aaa (yy=01FY..05MT)",
         "overflow_unplaced": dict(overflow),
+        "students_without_groups": students_without_groups,
+        "group_counts": dict(sorted(group_counts.items())),
         "note": (
             "CSE FY=160; CSE SY/TY/BT=200 (2 divisions of 100, DSY join in SY). "
             "AIML=100 extra per year on the same basket. "
             "MDM/OE are other-dept room blocks (no enrollments). "
-            "BT has no minor; every BT student takes one DE4."
+            "BT has no minor; every BT student takes one DE4. "
+            "Students are assigned UniTime studentGroups (division + class schedule notes)."
         ),
     }
     (OUT_DIR.parent / "solutions" / "enrollment_sim_summary.json").write_text(
@@ -554,6 +686,11 @@ def main() -> None:
         p = OUT_DIR / name
         print(f"wrote {p.relative_to(OUT_DIR.parent)} ({p.stat().st_size:,} bytes)")
     print(f"total students: {total} (B.Tech {sum(year_headcount(y) for y in ('FY','SY','TY','BT'))} + MT {mt_seq})")
+    print(f"student groups: {len(group_counts)} codes, {sum(group_counts.values())} memberships")
+    if students_without_groups:
+        print(f"WARNING {students_without_groups} students have no studentGroup")
+    for g, n in sorted(group_counts.items(), key=lambda kv: kv[0]):
+        print(f"  {g}: {n}")
     if overflow:
         print("WARNING students not placed (class at limit):")
         for k, n in sorted(overflow.items(), key=lambda kv: -kv[1])[:20]:

@@ -222,6 +222,8 @@ def _staff_csv_label(first: str, middle: str, last: str) -> str:
 
 def _split_room(room_field: str) -> tuple[str, str]:
     parts = room_field.strip().split(None, 1)
+    if not parts:
+        return "", ""
     if len(parts) != 2:
         raise ValueError(f"bad ROOM field: {room_field!r}")
     return parts[0], parts[1]
@@ -466,11 +468,15 @@ def load_assignments(
         subject = parts[0] if parts else ""
         course_nbr = parts[1] if len(parts) > 1 else ""
         building, room_nbr = _split_room(row["ROOM"])
-        start = _parse_clock(row["START_TIME"])
-        end = _parse_clock(row["END_TIME"])
         day_code = row["DAY"].strip()
-        days = _expand_days(day_code)
+        start_raw = row["START_TIME"].strip()
+        end_raw = row["END_TIME"].strip()
+        placed = bool(day_code and start_raw and end_raw)
+        start = _parse_clock(start_raw) if placed else 0
+        end = _parse_clock(end_raw) if placed else 0
+        days = _expand_days(day_code) if placed else []
         meetings = [Meeting(d, start, end) for d in days]
+        room_key = f"{building} {room_nbr}".strip()
         off = id_index.offering_for(raw_class_id)
         expected = off.instructor_id if off else None
         raw_instr = row["INSTRUCTOR"].strip()
@@ -486,7 +492,7 @@ def load_assignments(
                 start=start,
                 end=end,
                 duration=end - start,
-                room_key=f"{building} {room_nbr}",
+                room_key=room_key,
                 building=building,
                 room_nbr=room_nbr,
                 instructor_raw=raw_instr,
