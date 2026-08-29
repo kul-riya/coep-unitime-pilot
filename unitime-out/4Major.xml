@@ -4,7 +4,7 @@
   Template reference: samplexml/ (UniTime XML interface)
   See: https://www.unitime.org/uct_interfaces.php
 -->
-<posMajors campus="COEP" term="Spr4" year="2026">
+<posMajors campus="COEP" term="Spr5" year="2026">
   <posMajor externalId="taasika-maj-MT-CE" code="CE" name="Computer Engineering" academicArea="MT"/>
   <posMajor externalId="taasika-maj-BT-CE" code="CE" name="Computer Engineering" academicArea="BT"/>
   <posMajor externalId="taasika-maj-BT-MIN" code="MIN" name="Minor of CSE" academicArea="BT"/>

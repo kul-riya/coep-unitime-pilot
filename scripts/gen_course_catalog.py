@@ -140,6 +140,31 @@ def main() -> None:
             "primarySubjectId": primary,
         }
 
+    # Synthesize MDM Block
+    mdm_block_id = "999000"
+    rows.append(
+        f'  <course externalId="synthetic-mdm-block" subject="CS" '
+        f'courseNumber="MDM-BLOCK" title="Multi-Disciplinary Minor Room Block" '
+        f'permanentId="synthetic-mdm-block">'
+    )
+    rows.append(
+        f'    <courseCredit creditType="collegiate" creditUnitType="semesterHours" '
+        f'creditFormat="fixedUnit" fixedCredit="4.0"/>'
+    )
+    rows.append("  </course>")
+
+    index[mdm_block_id] = {
+        "subjectArea": "CS",
+        "courseNumber": "MDM-BLOCK",
+        "title": "Multi-Disciplinary Minor Room Block",
+        "shortName": "MDM-BLOCK",
+        "isLab": False,
+        "eachSlot": 1,
+        "nSlots": 3,
+        "credits": 4.0,
+        "primarySubjectId": int(mdm_block_id),
+    }
+
     out_lines: list[str] = [LICENSE_HEADER]
     out_lines.append(f'<courseCatalog campus="{CAMPUS}" term="{TERM}" year="{YEAR}">')
     out_lines.extend(rows)

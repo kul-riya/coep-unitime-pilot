@@ -23,6 +23,8 @@ from classifications import companion_itype, find_course_pairs, is_honor_subject
 from gen_course_offering import SYNTHETIC_LAB_DONOR, _building_for, _room_number
 from taasika_loader import load
 from xml_common import LICENSE_HEADER, xml_escape
+from intake import is_mdm_subject
+from gen_session_setup import _day_codes_for_meetings, _slot_starts, SLOTS_PER_DAY, SLOT_MIN
 
 
 CAMPUS = "COEP"
@@ -35,20 +37,83 @@ DATE_PATTERN = "Full Term"
 RoomKey = Tuple[str, str]  # (building, roomNbr)
 
 
-def _time_pattern(subpart_type: str, min_per_week: int) -> str:
-    """Map subpart duration to a sessionSetup time pattern name."""
-    block = subpart_type in ("Lab", "Tut", "Rec")
-    if min_per_week == 60:
-        return "1 x 60"
-    if min_per_week == 120:
-        return "1 x 120" if block else "2 x 60"
-    if min_per_week == 180:
-        return "1 x 180" if block else "3 x 60"
-    if min_per_week == 300:
-        return "5 x 60"
-    raise ValueError(
-        f"no time pattern for {subpart_type} with minPerWeek={min_per_week}"
-    )
+def _time_pattern(sp_type: str, min_per_week: int) -> str:
+    """Map subpart type + minutes/week to a standard UniTime time pattern.
+    
+    Valid session setup patterns include: 1 x 60, 2 x 60, 3 x 60, 4 x 60, 5 x 60,
+    1 x 120, 2 x 120, 1 x 180, 1 x 480 Project, Exact Time.
+    """
+    if sp_type == "Lec":
+        if min_per_week == 240:
+            return "2 x 120"
+        if min_per_week == 180:
+            return "3 x 60"
+        elif min_per_week == 120:
+            return "2 x 60"
+        else:
+            return f"{min_per_week // 60} x 60"
+    elif sp_type in ("Lab", "Rec"):
+        if min_per_week == 480:
+            return "1 x 480 Project"
+        elif min_per_week == 180:
+            return "1 x 180"
+        elif min_per_week == 120:
+            return "1 x 120"
+        elif min_per_week == 60:
+            return "1 x 60"
+    return "Exact Time"
+
+
+def _get_time_pref_string(pattern_name: str, is_mdm: bool) -> str | None:
+    if " x " not in pattern_name:
+        return None
+    parts = pattern_name.split(" x ")
+    nbr_meetings = int(parts[0])
+    mins_per_meeting = int(parts[1].split()[0]) # e.g. "60", "120", "480"
+    
+    day_codes = _day_codes_for_meetings(nbr_meetings)
+    starts = _slot_starts(SLOTS_PER_DAY)
+    
+    max_start_idx = max(0, SLOTS_PER_DAY - (mins_per_meeting // SLOT_MIN))
+    valid_starts = starts[:max_start_idx + 1]
+    
+    pref_chars = []
+    for dcode in day_codes:
+        d_list = []
+        rem = dcode
+        while rem:
+            for tok in ("Th", "Su", "M", "T", "W", "F", "S"):
+                if rem.startswith(tok):
+                    d_list.append(tok)
+                    rem = rem[len(tok):]
+                    break
+        
+        for start in valid_starts:
+            start_min = int(start[:2]) * 60 + int(start[2:])
+            end_min = start_min + mins_per_meeting
+            
+            # MDM block is exactly Mon & Tue, 16:30 to 18:30
+            mdm_start = 16 * 60 + 30
+            mdm_end = 18 * 60 + 30
+            
+            time_overlaps = (start_min < mdm_end) and (end_min > mdm_start)
+            day_overlaps = bool(set(d_list) & {'M', 'T'})
+            intersects = time_overlaps and day_overlaps
+            
+            if is_mdm:
+                # Require exactly MT starting at 16:30 (pattern must be 2 x 120, so dcode MT and start 1630)
+                if dcode == "MT" and start == "1630":
+                    pref_chars.append("1")
+                else:
+                    pref_chars.append("P")
+            else:
+                # Prevent overlapping with MDM block
+                if intersects:
+                    pref_chars.append("P")
+                else:
+                    pref_chars.append("2")
+                    
+    return "".join(pref_chars)
 
 
 def _room_key(room: dict) -> RoomKey:
@@ -193,7 +258,7 @@ def _room_pref_lines(rooms: list[RoomKey]) -> list[str]:
         return []
     lines: list[str] = []
     for i, (building, nbr) in enumerate(rooms):
-        level = "R" if i == 0 else "P"
+        level = "1" if i == 0 else "-1"
         lines.append(
             f'    <roomPref building="{xml_escape(building)}" '
             f'room="{xml_escape(nbr)}" level="{level}"/>'
@@ -251,7 +316,13 @@ def main() -> None:
                     + (f' suffix="{xml_escape(suffix)}"' if suffix else "")
                     + ">"
                 )
-                lines.append(f'    <timePref pattern="{pattern}" level="R"/>')
+                is_mdm = is_mdm_subject(course_nbr)
+                pref_string = _get_time_pref_string(pattern, is_mdm)
+                if pref_string:
+                    lines.append(f'    <timePref pattern="{pattern}">{pref_string}</timePref>')
+                else:
+                    lines.append(f'    <timePref pattern="{pattern}" level="R"/>')
+                
                 lines.append(f'    <datePref pattern="{DATE_PATTERN}" level="R"/>')
                 lines.append("  </subpart>")
 

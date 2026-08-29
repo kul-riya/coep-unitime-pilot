@@ -4,7 +4,7 @@
   Template reference: samplexml/ (UniTime XML interface)
   See: https://www.unitime.org/uct_interfaces.php
 -->
-<academicAreas campus="COEP" term="Spr4" year="2026">
+<academicAreas campus="COEP" term="Spr5" year="2026">
   <academicArea externalId="taasika-area-BT" abbreviation="BT" title="Bachelor of Technology"/>
   <academicArea externalId="taasika-area-MT" abbreviation="MT" title="Master of Technology"/>
 </academicAreas>

@@ -41,3 +41,8 @@ Placement.TimePreferenceWeight2=0.5
 # 1. courseCatalog.xml → courseOffering.xml → preferences.xml
 # 2. studentInfo.xml → studentRequest.xml → studentenrollments.xml
 # 3. Solver → Reload (do NOT reload old saved timetable) → Solve → Commit
+
+# --- Lunch Breaks ---
+# To automate Student and Instructor 1-hour lunch breaks between 11:30 AM and 3:30 PM:
+# Upload and execute scripts/setup_lunch_breaks.py via Administration > Utilities > Scripts
+

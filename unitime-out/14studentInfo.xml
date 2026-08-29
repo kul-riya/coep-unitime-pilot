@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<students campus="COEP" year="2026" term="Spr4" incremental="true">
+<students campus="COEP" year="2026" term="Spr5" incremental="true">
   <student externalId="610103001" firstName="Aarav" lastName="Patil" email="610103001@students.unitime.local">
     <studentAcadAreaClass>
       <acadAreaClass academicArea="BT" academicClass="FY"/>

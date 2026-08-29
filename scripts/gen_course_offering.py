@@ -602,6 +602,28 @@ def main() -> None:
         lines.append("  </offering>")
         offering_records.append((sid, lab_subj["subjectId"] if lab_subj else None))
 
+    # Synthesize MDM Block offering
+    mdm_block_id = 999000
+    lines.append(
+        f'  <offering externalId="taasika-offering-{mdm_block_id}" '
+        f'offered="true" action="insert">'
+    )
+    lines.append(
+        f'    <course subject="CS" courseNbr="MDM-BLOCK" '
+        f'controlling="true"/>'
+    )
+    lines.append(f'    <config name="1" limit="{MDM_BLOCK_SEATS}">')
+    lines.append(f'      <subpart type="Lec" minPerWeek="{MDM_LEC_MIN_PER_WEEK}">')
+    lines.append(
+        f'        <class externalId="taasika-class-{mdm_block_id}-Lec-1" '
+        f'type="Lec" suffix="1" expectedCapacity="{MDM_BLOCK_SEATS}"/>'
+    )
+    lines.append('      </subpart>')
+    lines.append('    </config>')
+    lines.append('  </offering>')
+    offering_records.append((mdm_block_id, None))
+    class_limits["CS|MDM-BLOCK|Lec|1"] = MDM_BLOCK_SEATS
+
     lines.append("</offerings>\n")
 
     body = "\n".join(lines)
@@ -633,7 +655,7 @@ def main() -> None:
         "  Optional purge. Do NOT import this while a timetable is saved/committed —",
         "  Hibernate throws TransientObjectException (CourseOffering still referenced).",
         "  Uncommit+delete the saved solution first, or skip purge and re-import with",
-        "  action=update (python scripts/import_unitime.py --from 11).",
+        "  action=update (python scripts/import_unitime.py).",
         "  Only taasika-io-* external ids are listed (numeric uniqueIds are not ours).",
         "-->",
         f'<offerings campus="{CAMPUS}" year="{YEAR}" term="{TERM}" incremental="true">',

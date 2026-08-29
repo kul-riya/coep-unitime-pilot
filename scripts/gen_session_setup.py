@@ -36,7 +36,7 @@ HOLIDAYS: list[date] = [
 ]
 
 DAY_BEGIN_MIN = 8 * 60 + 30
-SLOTS_PER_DAY = 11
+SLOTS_PER_DAY = 10  # 08:30 to 18:30 (10 x 60-minute slots)
 SLOT_MIN = 60
 
 

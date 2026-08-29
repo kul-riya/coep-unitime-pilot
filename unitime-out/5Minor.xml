@@ -4,6 +4,6 @@
   Template reference: samplexml/ (UniTime XML interface)
   See: https://www.unitime.org/uct_interfaces.php
 -->
-<posMinors campus="COEP" term="Spr4" year="2026">
+<posMinors campus="COEP" term="Spr5" year="2026">
   <!-- No minors used; Minor-of-CSE programs are modelled as posMajors. -->
 </posMinors>

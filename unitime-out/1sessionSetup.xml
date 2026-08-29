@@ -4,7 +4,7 @@
   Template reference: samplexml/ (UniTime XML interface)
   See: https://www.unitime.org/uct_interfaces.php
 -->
-<sessionSetup term="Spr4" year="2026" campus="COEP" dateFormat="yyyy/M/d" created="Generated from Taasika snapshot 240">
+<sessionSetup term="Spr5" year="2026" campus="COEP" dateFormat="yyyy/M/d" created="Generated from Taasika snapshot 240">
   <session startDate="2026/1/19" endDate="2026/5/22" classEndDate="2026/4/30" examStartDate="2026/5/4" eventStartDate="2026/1/1" eventEndDate="2026/6/15">
   <holidays>
     <holiday date="2026/1/26"/>
@@ -119,7 +119,6 @@
       <time start="1530"/>
       <time start="1630"/>
       <time start="1730"/>
-      <time start="1830"/>
     </timePattern>
     <timePattern name="2 x 60" nbrMeetings="2" minsPerMeeting="60" type="Standard" visible="true" nbrSlotsPerMeeting="12" breakTime="0">
       <days code="MW"/>
@@ -141,7 +140,6 @@
       <time start="1530"/>
       <time start="1630"/>
       <time start="1730"/>
-      <time start="1830"/>
     </timePattern>
     <timePattern name="3 x 60" nbrMeetings="3" minsPerMeeting="60" type="Standard" visible="true" nbrSlotsPerMeeting="12" breakTime="0">
       <days code="MWF"/>
@@ -160,7 +158,6 @@
       <time start="1530"/>
       <time start="1630"/>
       <time start="1730"/>
-      <time start="1830"/>
     </timePattern>
     <timePattern name="4 x 60" nbrMeetings="4" minsPerMeeting="60" type="Standard" visible="true" nbrSlotsPerMeeting="12" breakTime="0">
       <days code="MTWTh"/>
@@ -178,7 +175,6 @@
       <time start="1530"/>
       <time start="1630"/>
       <time start="1730"/>
-      <time start="1830"/>
     </timePattern>
     <timePattern name="5 x 60" nbrMeetings="5" minsPerMeeting="60" type="Standard" visible="true" nbrSlotsPerMeeting="12" breakTime="0">
       <days code="MTWThF"/>
@@ -192,7 +188,6 @@
       <time start="1530"/>
       <time start="1630"/>
       <time start="1730"/>
-      <time start="1830"/>
     </timePattern>
     <timePattern name="1 x 120" nbrMeetings="1" minsPerMeeting="120" type="Standard" visible="true" nbrSlotsPerMeeting="24" breakTime="0">
       <days code="M"/>
@@ -209,7 +204,6 @@
       <time start="1430"/>
       <time start="1530"/>
       <time start="1630"/>
-      <time start="1730"/>
     </timePattern>
     <timePattern name="2 x 120" nbrMeetings="2" minsPerMeeting="120" type="Standard" visible="true" nbrSlotsPerMeeting="24" breakTime="0">
       <days code="MW"/>
@@ -230,7 +224,6 @@
       <time start="1430"/>
       <time start="1530"/>
       <time start="1630"/>
-      <time start="1730"/>
     </timePattern>
     <timePattern name="1 x 180" nbrMeetings="1" minsPerMeeting="180" type="Standard" visible="true" nbrSlotsPerMeeting="36" breakTime="0">
       <days code="M"/>
@@ -246,7 +239,6 @@
       <time start="1330"/>
       <time start="1430"/>
       <time start="1530"/>
-      <time start="1630"/>
     </timePattern>
     <timePattern name="1 x 480 Project" nbrMeetings="1" minsPerMeeting="480" type="Standard" visible="true" nbrSlotsPerMeeting="96" breakTime="0">
       <days code="M"/>
@@ -257,7 +249,6 @@
       <time start="0830"/>
       <time start="0930"/>
       <time start="1030"/>
-      <time start="1130"/>
     </timePattern>
     <timePattern name="Exact Time" nbrMeetings="1" minsPerMeeting="0" type="Exact Time" visible="true" nbrSlotsPerMeeting="6" breakTime="0"/>
   </timePatterns>

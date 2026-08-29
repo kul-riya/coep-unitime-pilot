@@ -24,7 +24,7 @@ N_DIVISIONS = 2  # SY / TY / BT lecture divisions
 
 # Other-department room blocks (no CSE/AIML enrollments).
 MDM_BLOCK_SEATS = 100
-MDM_LEC_MIN_PER_WEEK = 120  # 2 x 60
+MDM_LEC_MIN_PER_WEEK = 240  # 2 x 120
 OE_BLOCK_SEATS = 100
 OE_LEC_MIN_PER_WEEK = 120  # 2-credit OE: 2 hours on any 2 weekdays
 

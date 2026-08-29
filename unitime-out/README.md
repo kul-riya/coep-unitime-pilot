@@ -17,7 +17,7 @@ All files are ready to be loaded via UniTime's
 | Source snapshot | `240 - 'published-19jan26'` |
 | Source SQL | `taasika2-foss-26jan26.sql/taasika2-foss-26jan26.sql` |
 | Working week | Monday-Sunday (M, T, W, Th, F, S, Su) |
-| Day | 08:30 - 19:30, 11 x 60-minute slots |
+| Day | 08:30 - 18:30, 10 x 60-minute slots |
 | Session start | 2026-01-19 |
 | Class end | 2026-04-30 |
 | Exam start | 2026-05-04 |
@@ -106,6 +106,15 @@ different values:
 | LUNCH block | Hard unavailability on every room, MTWThF 12:30-13:30 (matches the 51 LUNCH fixedEntry rows in snapshot 240). |
 | Subjects skipped | 121 of 184 controlling (lec) subjects have no `subjectClassTeacher` and no `subjectBatchTeacher` row in snapshot 240, so they were intentionally omitted from `courseOffering.xml` while still appearing in `courseCatalog.xml`. |
 | Mock student naming | `externalId = <classShortName>-S<index>`, first name from a fixed 30-name list, last name from a 15-surname list. |
+
+## Solver Configurations (Lunch Breaks)
+
+A Jython script (`scripts/setup_lunch_breaks.py`) is provided to automate solver configuration for 1-hour Student and Instructor lunch breaks between 11:30 AM and 3:30 PM. 
+
+To apply this configuration in UniTime:
+1. Go to **Administration > Utilities > Scripts**.
+2. Upload `scripts/setup_lunch_breaks.py`.
+3. Execute the script.
 
 ## Evaluate a solution
 

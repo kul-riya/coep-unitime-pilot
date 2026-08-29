@@ -4,7 +4,7 @@
   Template reference: samplexml/ (UniTime XML interface)
   See: https://www.unitime.org/uct_interfaces.php
 -->
-<academicClassifications campus="COEP" term="Spr4" year="2026">
+<academicClassifications campus="COEP" term="Spr5" year="2026">
   <academicClassification externalId="taasika-class-MT" code="MT" name="M.Tech."/>
   <academicClassification externalId="taasika-class-SY" code="SY" name="Second Year B.Tech."/>
   <academicClassification externalId="taasika-class-TY" code="TY" name="Third Year B.Tech."/>

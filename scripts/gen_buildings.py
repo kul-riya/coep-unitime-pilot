@@ -198,7 +198,7 @@ def _gen_room_sharing(rooms: List[dict], fixed_entries: List[dict]) -> None:
         )
         lines.append('    <department code="0101" control="true"/>')
         lines.append('    <sharing>')
-        lines.append('      <unavailable days="MTWThF" start="1230" end="1330"/>')
+        # lines.append('      <unavailable days="MTWThF" start="1230" end="1330"/>')
         lines.append('      <unavailable days="SSu" start="0830" end="1830"/>')
         lines.append('    </sharing>')
         lines.append('  </location>')

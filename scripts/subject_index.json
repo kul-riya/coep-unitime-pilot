@@ -2462,5 +2462,16 @@
     "nSlots": 2,
     "credits": 2.0,
     "primarySubjectId": 32758
+  },
+  "999000": {
+    "subjectArea": "CS",
+    "courseNumber": "MDM-BLOCK",
+    "title": "Multi-Disciplinary Minor Room Block",
+    "shortName": "MDM-BLOCK",
+    "isLab": false,
+    "eachSlot": 1,
+    "nSlots": 3,
+    "credits": 4.0,
+    "primarySubjectId": 999000
   }
 }
