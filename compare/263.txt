@@ -1,0 +1,176 @@
+Inspecting snapshot 263 from taasika3.sql...
+
+=== Departments (snapshot-independent) ===
+  deptId=1  short=CEIT     name=COEP Technological University, Dept of CSE: Timetable-v3, Odd Sem 26-27, Effective 20 Jul 26
+  deptId=2  short=ENTC     name=Electronics and Telecommunication Engineering
+  deptId=3  short=INSTRU   name=Instrumentationn Engineering
+  deptId=4  short=CEIT     name=Computer Engineering and I.T.
+
+=== Config (snapshot-independent) ===
+  {'configId': 1, 'configName': 'defaultConfig', 'dayBegin': '08:30:00', 'slotDuration': 3600, 'nSlots': 11, 'deptId': 1, 'incharge': 1, 'daysInWeek': 7}
+  {'configId': 2, 'configName': 'defaultConfigNew', 'dayBegin': '08:30:00', 'slotDuration': 3600, 'nSlots': 14, 'deptId': 4, 'incharge': 1, 'daysInWeek': None}
+  {'configId': 3, 'configName': 'new', 'dayBegin': '08:30:00', 'slotDuration': 3600, 'nSlots': 14, 'deptId': 1, 'incharge': 1, 'daysInWeek': None}
+
+=== Snapshot row(s) for id=263 (informational) ===
+  {'snapshotId': 263, 'snapshotName': 'Published-13july26-v2', 'snapshotCreator': 1, 'createTime': '18:33:45', 'modifyTime': '10:04:45', 'configId': 1}
+
+=== Classes (32) ===
+  classId=7176  short=SY-Div1      sem=3  count=80  name=SY CSE Div 1
+  classId=7177  short=SY-Div2      sem=3  count=80  name=SY CSE Div 2
+  classId=7178  short=SY-Div3      sem=3  count=80  name=SY CSE Div 3
+  classId=7179  short=SY-Div4      sem=3  count=80  name=SY CSE Div 4
+  classId=7180  short=SY-AIML-Div1 sem=3  count=80  name=SY AIML Div 1
+  classId=7181  short=TY-Div1      sem=5  count=80  name=TY CSE Div 1
+  classId=7182  short=TY-Div2      sem=5  count=80  name=TY CSE Div 2
+  classId=7183  short=BT-Div1      sem=7  count=80  name=BT CSE Div 1
+  classId=7184  short=BT-Div2      sem=7  count=80  name=BT CSE Div 2
+  classId=7185  short=MT-CE        sem=1  count=20  name=F.Y. M.Tech. Computer Engineering
+  classId=7186  short=MT-CSIS      sem=1  count=40  name=F.Y. M.Tech. Cyber Security Information Security
+  classId=7187  short=MT-DS        sem=1  count=60  name=F.Y. M.Tech. Data Science
+  classId=7188  short=MT-AIML      sem=1  count=20  name=F.Y. M.Tech. Artificial Intelligence 
+  classId=7189  short=SY-OE1       sem=3  count=80  name=SY OE1
+  classId=7190  short=SY-OE2       sem=3  count=80  name=SY OE2
+  classId=7191  short=SY-OE3       sem=3  count=80  name=SY OE3
+  classId=7192  short=SY-OE4       sem=3  count=80  name=SY OE4
+  classId=7193  short=SY-OE5       sem=3  count=80  name=SY OE5
+  classId=7194  short=SYHM         sem=3  count=80  name=SY Hon/Minor1
+  classId=7195  short=SY-IDP1      sem=3  count=80  name=SY IDP1
+  classId=7196  short=SY-Hon-AIML  sem=3  count=80  name=SY Hon
+  classId=7197  short=SY-IPD-AIML  sem=3  count=80  name=SY IPD AIML 1
+  classId=7198  short=SY-IPD-AIML-2 sem=3  count=80  name=SY IPD AIML 2
+  classId=7199  short=SY-IPD-AIML-3 sem=3  count=80  name=SY IPD AIML 3
+  classId=7200  short=SY-IPD-AIML-4 sem=3  count=80  name=SY-IPD-AIML-4
+  classId=7201  short=TY-OE1       sem=5  count=80  name=TY OE1
+  classId=7202  short=TY-OE2       sem=5  count=80  name=TY OE2
+  classId=7203  short=TY-OE3       sem=5  count=80  name=TY OE3
+  classId=7204  short=BT-Div1 MDM  sem=5  count=80  name=BT MDM Div 1
+  classId=7205  short=BT-Div1 MDM2 sem=5  count=80  name=BT MDM Div 2
+  classId=7206  short=TY-Div1-MDM  sem=5  count=80  name=TY MDM Div 1
+  classId=7207  short=TY-Div1-MDM2 sem=5  count=80  name=TY MDM Div 2
+
+=== Batches (128) ===
+  batchId=33779 name=SY1-S1         count=20
+  batchId=33780 name=SY1-S2         count=20
+  batchId=33781 name=SY1-S3         count=20
+  batchId=33782 name=SY1-S4         count=20
+  batchId=33783 name=SY1-S5         count=20
+  batchId=33784 name=SY2-S1         count=20
+  batchId=33785 name=SY2-S2         count=20
+  batchId=33786 name=SY2-S3         count=20
+  batchId=33787 name=SY2-S4         count=20
+  batchId=33788 name=SY2-S5         count=20
+  batchId=33789 name=SY3-S1         count=20
+  batchId=33790 name=SY3-S2         count=20
+  batchId=33791 name=SY3-S3         count=20
+  batchId=33792 name=SY3-S4         count=20
+  batchId=33793 name=SY3-S5         count=20
+  batchId=33794 name=SY4-S1         count=20
+  batchId=33795 name=SY4-S2         count=20
+  batchId=33796 name=SY4-S3         count=20
+  batchId=33797 name=SY4-S4         count=20
+  batchId=33798 name=SY4-S5         count=20
+  batchId=33799 name=SY3-S6(DSY)    count=20
+  batchId=33800 name=SY4-S6(DSY)    count=20
+  batchId=33801 name=AIML-SY1-S1    count=20
+  batchId=33802 name=AIML-SY1-S2    count=20
+  batchId=33803 name=AIML-SY1-S3    count=20
+  batchId=33804 name=AIML-SY1-S4    count=20
+  batchId=33805 name=AIML-SY1-S5    count=20
+  batchId=33806 name=TY1-CC         count=40
+  batchId=33807 name=TY2-CC         count=40
+  batchId=33808 name=TY1-DV         count=40
+  ... +98 more
+
+=== Rooms (29) ===
+  roomId=9874  short=FOSS2          cap=25   name=FOSS Lab, Column 2, 3rd Floor, ENTC Extension Building
+  roomId=9875  short=FOSS1          cap=25   name=FOSS Lab, Column 1, 3rd Floor, ENTC Extension Building
+  roomId=9876  short=NC-07          cap=100  name=NC07, 2nd Floor, Academic Compex
+  roomId=9877  short=NC-08          cap=100  name=NC08, 2nd Floor, Academic Compex
+  roomId=9878  short=ASL            cap=25   name=Advanced Software Lab, 2nd Floor, CSE Dept
+  roomId=9879  short=DBMSL          cap=25   name=DBMS Lab, 2nd Floor, CSE Dept
+  roomId=9880  short=DML            cap=25   name=Data Mining Lab, 1st Floor, ENTC Extension Building
+  roomId=9881  short=DSL            cap=20   name=Digital Systems Lab, 2nd Floor, CSE Dept
+  roomId=9882  short=GML            cap=20   name=Graphics and Multimedia Lab, 1st Floor, CSE Dept
+  roomId=9883  short=ISL            cap=22   name=Information Security Lab, 3rd Floor, ENTC Extension Building
+  roomId=9884  short=PL             cap=25   name=Programming Lab, 1st Floor, CSE Dept
+  roomId=9885  short=SH             cap=80   name=Seminar Hall, 1st Floor, ENTC Extension Building
+  roomId=9886  short=NC-01          cap=100  name=NC01, 1st Floor, Academic Compex
+  roomId=9887  short=NC-02          cap=100  name=NC02, 1st Floor, Academic Compex
+  roomId=9888  short=NC-27          cap=100  name=NC-27, 4th Floor, New CSE Dept Building
+  roomId=9889  short=NC-28          cap=100  name=NC-28, 4th Floor, New CSE Dept Building
+  roomId=9890  short=NC-05          cap=100  name=NC05, 2nd Floor, Academic Compex
+  roomId=9891  short=NC-06          cap=100  name=NC06, 2nd Floor, Academic Compex
+  roomId=9892  short=Lab-1          cap=20   name=Lab 1, 4th Floor, New CSE Dept, Passage 2
+  roomId=9893  short=Lab-2          cap=20   name=Lab 2, 4th Floor, New CSE Dept, Passage 2
+  roomId=9894  short=Lab-3          cap=20   name=Lab 3, 4th Floor, New CSE Dept, Passage 1
+  roomId=9895  short=Lab-4          cap=20   name=Lab 4, 4th Floor, New CSE Dept, Passage 2
+  roomId=9896  short=Lab-5          cap=20   name=Lab 5, 4th Floor, New CSE Dept, Passage 2
+  roomId=9897  short=NC-03          cap=100  name=NC03, 1st Floor, Academic Compex
+  roomId=9898  short=NC-04          cap=100  name=NC04, 1st Floor, Academic Compex
+  roomId=9899  short=R1             cap=80   name=ROOM 1
+  roomId=9900  short=R2             cap=80   name=ROOM 2
+  roomId=9901  short=NC-14          cap=100  name=NC14, 4th Floor, Academic Compex
+  roomId=9902  short=NC-14-         cap=100  name=NC14-, 4th Floor, Academic Compex
+
+=== Teachers (67) ===
+  by deptId: {1: 67}
+  (minHrs,maxHrs) distribution: {(16, 24): 66, (16, 20): 1}
+  teacherId=20695 short=Afsha          min=16  max=24  dept=1
+  teacherId=20696 short=Jibi           min=16  max=24  dept=1
+  teacherId=20697 short=Manish         min=16  max=24  dept=1
+  teacherId=20698 short=Sneha S        min=16  max=24  dept=1
+  teacherId=20699 short=Pradeep        min=16  max=24  dept=1
+  teacherId=20700 short=Sneha C        min=16  max=24  dept=1
+  teacherId=20701 short=Vahida         min=16  max=24  dept=1
+  teacherId=20702 short=Ankita         min=16  max=24  dept=1
+  teacherId=20703 short=Ashwini G      min=16  max=24  dept=1
+  teacherId=20704 short=Vinod          min=16  max=24  dept=1
+  teacherId=20705 short=Priti          min=16  max=24  dept=1
+  teacherId=20706 short=Yashodhara     min=16  max=24  dept=1
+  teacherId=20707 short=Riti           min=16  max=24  dept=1
+  teacherId=20708 short=Sunil          min=16  max=24  dept=1
+  teacherId=20709 short=Abhiraj        min=16  max=24  dept=1
+  ... +52 more
+
+=== Subjects (111) ===
+  batches flag distribution: {0: 53, 1: 58}
+  (eachSlot,nSlots,batches) distribution: {(1, 3, 0): 46, (2, 1, 1): 36, (1, 2, 0): 6, (1, 1, 1): 2, (1, 2, 1): 3, (1, 3, 1): 16, (1, 1, 0): 1, (1, 4, 1): 1}
+  subjectId=35984  short=MP               each=1  n=3  batches=0 name=Microprocessors
+  subjectId=35985  short=MP Lab           each=2  n=1  batches=1 name=Microprocessors Lab
+  subjectId=35986  short=PPL              each=1  n=2  batches=0 name=Principles of Programming Languages
+  subjectId=35987  short=PPL Lab          each=2  n=1  batches=1 name=Principles of Programming Languages Lab
+  subjectId=35988  short=DSA              each=1  n=3  batches=0 name=Data Structures and Algorithms
+  subjectId=35989  short=DSA Lab          each=2  n=1  batches=1 name=Data Structures and Algorithms Lab
+  subjectId=35990  short=MTDS-DE          each=1  n=3  batches=0 name=MTDS- Data Engineering
+  subjectId=35991  short=OE-DA            each=1  n=2  batches=0 name=Data Analytics(Open Elective)
+  subjectId=35992  short=MTDS-ML          each=1  n=3  batches=0 name=MTDS- Machine Learning
+  subjectId=35993  short=MTDS-SPP         each=1  n=3  batches=0 name=MTDS- SQL and Python Programming
+  subjectId=35994  short=MTDS- ACTL       each=2  n=1  batches=1 name=MTDS- Algorithms and Complexity Theory Lab
+  subjectId=35995  short=MTDS-ACT         each=1  n=2  batches=0 name=MTDS- Algorithms and Complexity Theory
+  subjectId=35996  short=DE               each=1  n=2  batches=0 name=Data Engineering
+  subjectId=35997  short=MTDS-PSF-Tut     each=1  n=1  batches=1 name=MTDS- Probability and Statistics foundation -Tutorial 
+  subjectId=35998  short=MTDS-PSF         each=1  n=3  batches=0 name=MTDS- Probability and Statistics foundation 
+  subjectId=35999  short=DE Lab           each=2  n=1  batches=1 name=Data Engineering Lab
+  subjectId=36000  short=PLP              each=1  n=3  batches=0 name=Programming Language Paradigms
+  subjectId=36001  short=PLP Lab          each=2  n=1  batches=1 name=Programming Language Paradigms Lab
+  subjectId=36002  short=DSCT             each=1  n=3  batches=0 name=Data Structures and Complexity Theory
+  subjectId=36003  short=DSCT Lab         each=2  n=1  batches=1 name=Data Structures and Complexity Theory Lab
+  subjectId=36004  short=MTCE-DE1- CAI    each=1  n=3  batches=0 name=MTCE-DE I- Courses in association with Industry
+  subjectId=36005  short=MTCE-DE1-AGT     each=1  n=3  batches=0 name=MTCE- DE 1- Advanced Graph Theory
+  subjectId=36006  short=MTCE-DE1-AI      each=1  n=3  batches=0 name=MTCE-DE 1- Artificial Intellegence
+  subjectId=36007  short=SE               each=1  n=3  batches=0 name=Software Engineering
+  subjectId=36008  short=MTCE-DE1-DOS     each=1  n=3  batches=0 name=MTCE-DE 1-Distributed Operating Systems
+  ... +86 more
+
+=== fixedEntry texts (108) ===
+{
+  "LUNCH": 43,
+  "HONOUR/MINOR": 8,
+  "EXPERT LECTURE": 2,
+  "Honour/Minor": 23,
+  "Expert Lecture": 2,
+  "MDM Lab": 1,
+  "MDM LAB": 1,
+  "Open Elective": 14,
+  "MDM": 14
+}

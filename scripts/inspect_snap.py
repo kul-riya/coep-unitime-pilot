@@ -2,16 +2,24 @@
 
 from __future__ import annotations
 
+import argparse
 import json
-import sys
 from collections import Counter
+from pathlib import Path
 
-from taasika_loader import load
+from taasika_loader import SQL_PATH_DEFAULT, load
 
 
 def main() -> None:
-    snap = int(sys.argv[1]) if len(sys.argv) > 1 else 240
-    data = load(snapshot_id=snap)
+    parser = argparse.ArgumentParser(description="Print a human-readable summary of a Taasika snapshot.")
+    parser.add_argument("snapshot", nargs="?", type=int, default=240, help="Snapshot ID (default: %(default)s)")
+    parser.add_argument("--sql", type=str, default=None, help="Path to Taasika SQL file (default: %(default)s)")
+    args = parser.parse_args()
+
+    sql_path = Path(args.sql).resolve() if args.sql else SQL_PATH_DEFAULT
+    snap = args.snapshot
+    print(f"Inspecting snapshot {snap} from {sql_path.name}...\n")
+    data = load(sql_path=sql_path, snapshot_id=snap)
 
     print("=== Departments (snapshot-independent) ===")
     for d in data.rows("dept"):

@@ -20,6 +20,8 @@ SCRIPTS_DIR = Path(__file__).resolve().parent
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
+import taasika_loader
+
 import gen_session_setup
 import gen_academic
 import gen_buildings
@@ -96,7 +98,79 @@ def main() -> int:
         default=DEFAULT_TERM,
         help="UniTime academic term name (e.g. Spr, Spr6). Default: %(default)s",
     )
+    parser.add_argument(
+        "--sql",
+        help="Path to the Taasika SQL dump file to use",
+    )
+    parser.add_argument(
+        "--snapshot",
+        type=int,
+        help="Snapshot ID to generate XMLs for",
+    )
     args = parser.parse_args()
+
+    sql_path = None
+    if args.sql:
+        sql_path = Path(args.sql).resolve()
+    else:
+        db_dir = SCRIPTS_DIR.parent / "taasika-db"
+        sql_files = list(db_dir.glob("*.sql")) if db_dir.exists() else []
+        if not sql_files:
+            print("No SQL files found in taasika-db/ directory.")
+            sql_path_str = input("Enter path to SQL dump: ").strip()
+            if not sql_path_str:
+                print("No SQL file provided. Exiting.")
+                return 1
+            sql_path = Path(sql_path_str).resolve()
+        elif len(sql_files) == 1:
+            sql_path = sql_files[0]
+            print(f"Using only available SQL file: {sql_path.name}")
+        else:
+            print("Available SQL files:")
+            for i, f in enumerate(sql_files, start=1):
+                print(f"  [{i}] {f.name}")
+            choice = input(f"Select SQL file [1-{len(sql_files)}]: ").strip()
+            try:
+                idx = int(choice) - 1
+                if 0 <= idx < len(sql_files):
+                    sql_path = sql_files[idx]
+                else:
+                    raise ValueError()
+            except ValueError:
+                print("Invalid choice. Exiting.")
+                return 1
+
+    snapshot_id = args.snapshot
+    if not snapshot_id:
+        print(f"Loading snapshots from {sql_path.name}...")
+        try:
+            snap_data = taasika_loader.load(sql_path=sql_path, tables=["snapshot"])
+            snapshots = snap_data.rows("snapshot")
+        except Exception as e:
+            print(f"Error reading snapshots: {e}")
+            return 1
+            
+        if not snapshots:
+            print("No snapshots found in the database.")
+            snap_str = input("Enter Snapshot ID manually: ").strip()
+            if not snap_str:
+                return 1
+            snapshot_id = int(snap_str)
+        else:
+            print("Available Snapshots:")
+            for s in snapshots:
+                print(f"  ID: {s.get('snapshotId')} | Name: {s.get('snapshotName')} | Date: {s.get('createTime')}")
+            
+            snap_choice = input("Enter Snapshot ID to use: ").strip()
+            try:
+                snapshot_id = int(snap_choice)
+            except ValueError:
+                print("Invalid Snapshot ID. Exiting.")
+                return 1
+
+    print(f"\nConfiguring generator to use {sql_path.name} (Snapshot {snapshot_id})")
+    taasika_loader.set_global_config(sql_path, snapshot_id)
+
     return run_pipeline(term=args.term)
 
 

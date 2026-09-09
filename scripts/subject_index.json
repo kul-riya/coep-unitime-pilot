@@ -1,5 +1,5 @@
 {
-  "32527": {
+  "33703": {
     "subjectArea": "CS",
     "courseNumber": "PSE",
     "title": "Probability and Statistics for Engineers",
@@ -8,9 +8,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.5,
-    "primarySubjectId": 32527
+    "primarySubjectId": 33703
   },
-  "32528": {
+  "33704": {
     "subjectArea": "CS",
     "courseNumber": "PSE",
     "title": "Probability and Statistics for Engineers",
@@ -19,20 +19,20 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.5,
-    "primarySubjectId": 32527
+    "primarySubjectId": 33703
   },
-  "32529": {
+  "33705": {
     "subjectArea": "CS",
     "courseNumber": "CoI",
     "title": "Constitution of India",
     "shortName": "CoI",
     "isLab": false,
     "eachSlot": 1,
-    "nSlots": 2,
-    "credits": 2.0,
-    "primarySubjectId": 32529
+    "nSlots": 1,
+    "credits": 1.0,
+    "primarySubjectId": 33705
   },
-  "32530": {
+  "33706": {
     "subjectArea": "CS",
     "courseNumber": "EPP",
     "title": "Entrepreneurship Principles andProcess",
@@ -41,9 +41,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32530
+    "primarySubjectId": 33706
   },
-  "32531": {
+  "33707": {
     "subjectArea": "CS",
     "courseNumber": "HOC-I",
     "title": "Humanities Open Course - I",
@@ -52,9 +52,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32531
+    "primarySubjectId": 33707
   },
-  "32532": {
+  "33708": {
     "subjectArea": "CS",
     "courseNumber": "SE-I",
     "title": "Software Engineering: Mini Project-1",
@@ -63,9 +63,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.5,
-    "primarySubjectId": 32533
+    "primarySubjectId": 33709
   },
-  "32533": {
+  "33709": {
     "subjectArea": "CS",
     "courseNumber": "SE-I",
     "title": "Software Engineering: Mini Project-1",
@@ -74,9 +74,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 2.5,
-    "primarySubjectId": 32533
+    "primarySubjectId": 33709
   },
-  "32534": {
+  "33710": {
     "subjectArea": "CS",
     "courseNumber": "CO",
     "title": "Computer Organization",
@@ -85,9 +85,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32534
+    "primarySubjectId": 33710
   },
-  "32535": {
+  "33711": {
     "subjectArea": "CS",
     "courseNumber": "DBMS",
     "title": "Database Management Systems",
@@ -96,9 +96,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32535
+    "primarySubjectId": 33711
   },
-  "32536": {
+  "33712": {
     "subjectArea": "CS",
     "courseNumber": "DBMS",
     "title": "Database Management Systems",
@@ -107,9 +107,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32535
+    "primarySubjectId": 33711
   },
-  "32537": {
+  "33713": {
     "subjectArea": "CS",
     "courseNumber": "AI",
     "title": "Artificial Intelligence",
@@ -118,9 +118,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32537
+    "primarySubjectId": 33713
   },
-  "32538": {
+  "33714": {
     "subjectArea": "CS",
     "courseNumber": "AI",
     "title": "Artificial Intelligence",
@@ -129,9 +129,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32537
+    "primarySubjectId": 33713
   },
-  "32539": {
+  "33715": {
     "subjectArea": "CS",
     "courseNumber": "CN",
     "title": "Computer Networks",
@@ -140,9 +140,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32539
+    "primarySubjectId": 33715
   },
-  "32540": {
+  "33716": {
     "subjectArea": "CS",
     "courseNumber": "CN",
     "title": "Computer Networks",
@@ -151,9 +151,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32539
+    "primarySubjectId": 33715
   },
-  "32541": {
+  "33717": {
     "subjectArea": "IFC",
     "courseNumber": "IFC-DA",
     "title": "TYME1 IFC Data Analytics",
@@ -162,9 +162,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32541
+    "primarySubjectId": 33717
   },
-  "32542": {
+  "33718": {
     "subjectArea": "IFC",
     "courseNumber": "D2DA",
     "title": "TYME2 IFC Data Analytics",
@@ -173,9 +173,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32542
+    "primarySubjectId": 33718
   },
-  "32543": {
+  "33719": {
     "subjectArea": "IFC",
     "courseNumber": "IFC-DA",
     "title": "TYME1 IFC Data Analytics",
@@ -184,9 +184,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32541
+    "primarySubjectId": 33717
   },
-  "32544": {
+  "33720": {
     "subjectArea": "IFC",
     "courseNumber": "D2DAL",
     "title": "TYME2 IFC Data Analytics",
@@ -195,9 +195,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32544
+    "primarySubjectId": 33720
   },
-  "32545": {
+  "33721": {
     "subjectArea": "IFC",
     "courseNumber": "EnTC-DA",
     "title": "TYENTC IFC Data Analytics",
@@ -206,9 +206,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32545
+    "primarySubjectId": 33721
   },
-  "32546": {
+  "33722": {
     "subjectArea": "IFC",
     "courseNumber": "EnTC-DAL",
     "title": "TYENTC IFC Data Analytics",
@@ -217,9 +217,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32546
+    "primarySubjectId": 33722
   },
-  "32547": {
+  "33723": {
     "subjectArea": "IFC",
     "courseNumber": "MnE-DA",
     "title": "TYMnE IFC Data Analytics",
@@ -228,9 +228,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32547
+    "primarySubjectId": 33723
   },
-  "32548": {
+  "33724": {
     "subjectArea": "IFC",
     "courseNumber": "MnE-DAL",
     "title": "TYMnE IFC Data Analytics",
@@ -239,9 +239,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32548
+    "primarySubjectId": 33724
   },
-  "32549": {
+  "33725": {
     "subjectArea": "IFC",
     "courseNumber": "EE-FOS",
     "title": "TYEE IFC Fundamentals of Operating Systems",
@@ -250,9 +250,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32549
+    "primarySubjectId": 33725
   },
-  "32550": {
+  "33726": {
     "subjectArea": "IFC",
     "courseNumber": "IE-FML",
     "title": "TYIE IFC Fundamentals of Machine Learning",
@@ -261,9 +261,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32550
+    "primarySubjectId": 33726
   },
-  "32551": {
+  "33727": {
     "subjectArea": "IFC",
     "courseNumber": "IE-FMLL",
     "title": "TYIE IFC Fundamentals of Machine Learning",
@@ -272,9 +272,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32551
+    "primarySubjectId": 33727
   },
-  "32552": {
+  "33728": {
     "subjectArea": "CS",
     "courseNumber": "IPR",
     "title": "Intellectual Property Rights",
@@ -283,9 +283,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32552
+    "primarySubjectId": 33728
   },
-  "32553": {
+  "33729": {
     "subjectArea": "CS",
     "courseNumber": "LLC",
     "title": "Liberal Learning Course",
@@ -294,9 +294,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32553
+    "primarySubjectId": 33729
   },
-  "32554": {
+  "33730": {
     "subjectArea": "IFC",
     "courseNumber": "IOC-II",
     "title": "Interdisciplinary Open Course-II",
@@ -305,9 +305,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32554
+    "primarySubjectId": 33730
   },
-  "32555": {
+  "33731": {
     "subjectArea": "CS",
     "courseNumber": "CC",
     "title": "Compiler Construction",
@@ -316,9 +316,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32555
+    "primarySubjectId": 33731
   },
-  "32556": {
+  "33732": {
     "subjectArea": "CS",
     "courseNumber": "CC",
     "title": "Compiler Construction",
@@ -327,9 +327,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32555
+    "primarySubjectId": 33731
   },
-  "32557": {
+  "33733": {
     "subjectArea": "CS",
     "courseNumber": "CNS",
     "title": "Cryptography and Network Security",
@@ -338,9 +338,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32557
+    "primarySubjectId": 33733
   },
-  "32558": {
+  "33734": {
     "subjectArea": "CS",
     "courseNumber": "CNS",
     "title": "Cryptography and Network Security",
@@ -349,9 +349,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32557
+    "primarySubjectId": 33733
   },
-  "32559": {
+  "33735": {
     "subjectArea": "CS",
     "courseNumber": "DE2-CBD",
     "title": "DE-II CBD: Cloud and Big Data",
@@ -360,9 +360,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32559
+    "primarySubjectId": 33735
   },
-  "32560": {
+  "33736": {
     "subjectArea": "CS",
     "courseNumber": "DE2-DS",
     "title": "DE-II DS: Distributed Systems",
@@ -371,9 +371,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32560
+    "primarySubjectId": 33736
   },
-  "32561": {
+  "33737": {
     "subjectArea": "CS",
     "courseNumber": "DE2-IR",
     "title": "DE-II IR: Information Retrieval",
@@ -382,9 +382,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32561
+    "primarySubjectId": 33737
   },
-  "32562": {
+  "33738": {
     "subjectArea": "CS",
     "courseNumber": "DE3-OOMD",
     "title": "DE-III OOMD: Object Oriented Modelling and Design",
@@ -393,9 +393,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32562
+    "primarySubjectId": 33738
   },
-  "32563": {
+  "33739": {
     "subjectArea": "CS",
     "courseNumber": "DE3-NLP",
     "title": "DE-III NLP: Natural Language Processing",
@@ -404,9 +404,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32563
+    "primarySubjectId": 33739
   },
-  "32564": {
+  "33740": {
     "subjectArea": "CS",
     "courseNumber": "DE3-IOT",
     "title": "DE-III IOT: Internet of Things",
@@ -415,9 +415,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32564
+    "primarySubjectId": 33740
   },
-  "32565": {
+  "33741": {
     "subjectArea": "CS",
     "courseNumber": "DE3-Devops",
     "title": "DE-III Devops",
@@ -426,9 +426,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32565
+    "primarySubjectId": 33741
   },
-  "32566": {
+  "33742": {
     "subjectArea": "CS",
     "courseNumber": "DE3-CS",
     "title": "DE-III CS: Cyber Security",
@@ -437,9 +437,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32566
+    "primarySubjectId": 33742
   },
-  "32567": {
+  "33743": {
     "subjectArea": "CS",
     "courseNumber": "DE3-CS",
     "title": "DE-III CS: Cyber Security",
@@ -448,9 +448,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32566
+    "primarySubjectId": 33742
   },
-  "32568": {
+  "33744": {
     "subjectArea": "CS",
     "courseNumber": "DE3-Devops",
     "title": "DE-III Devops",
@@ -459,9 +459,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32565
+    "primarySubjectId": 33741
   },
-  "32569": {
+  "33745": {
     "subjectArea": "CS",
     "courseNumber": "DE3-IOT",
     "title": "DE-III IOT: Internet of Things",
@@ -470,9 +470,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32564
+    "primarySubjectId": 33740
   },
-  "32570": {
+  "33746": {
     "subjectArea": "CS",
     "courseNumber": "DE3-NLP",
     "title": "DE-III NLP: Natural Language Processing",
@@ -481,9 +481,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32563
+    "primarySubjectId": 33739
   },
-  "32571": {
+  "33747": {
     "subjectArea": "CS",
     "courseNumber": "EE-CA",
     "title": "BTEE DE1 Computer Algorithms",
@@ -492,9 +492,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32571
+    "primarySubjectId": 33747
   },
-  "32572": {
+  "33748": {
     "subjectArea": "CS",
     "courseNumber": "MDM-DSFA",
     "title": "MDM-Data Structures, Files and Algorithms",
@@ -503,9 +503,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32572
+    "primarySubjectId": 33748
   },
-  "32573": {
+  "33749": {
     "subjectArea": "CS",
     "courseNumber": "Minor3-IT",
     "title": "Minor3-Internet Technologies",
@@ -514,9 +514,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32573
+    "primarySubjectId": 33749
   },
-  "32578": {
+  "33754": {
     "subjectArea": "CS",
     "courseNumber": "DSGT",
     "title": "Discrete Structures and Graph Theory",
@@ -525,9 +525,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.5,
-    "primarySubjectId": 32578
+    "primarySubjectId": 33754
   },
-  "32579": {
+  "33755": {
     "subjectArea": "CS",
     "courseNumber": "DSGT",
     "title": "Discrete Structures and Graph Theory",
@@ -536,9 +536,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.5,
-    "primarySubjectId": 32578
+    "primarySubjectId": 33754
   },
-  "32580": {
+  "33756": {
     "subjectArea": "CS",
     "courseNumber": "DSA-I",
     "title": "Data Structures and Algorithms I",
@@ -547,9 +547,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 3.0,
-    "primarySubjectId": 32580
+    "primarySubjectId": 33756
   },
-  "32581": {
+  "33757": {
     "subjectArea": "CS",
     "courseNumber": "DLD",
     "title": "Digital Logic Design",
@@ -558,9 +558,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32581
+    "primarySubjectId": 33757
   },
-  "32582": {
+  "33758": {
     "subjectArea": "CS",
     "courseNumber": "PPL",
     "title": "Principles of Programming Languages",
@@ -569,9 +569,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32582
+    "primarySubjectId": 33758
   },
-  "32583": {
+  "33759": {
     "subjectArea": "CS",
     "courseNumber": "DLD",
     "title": "Digital Logic Design",
@@ -580,9 +580,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32581
+    "primarySubjectId": 33757
   },
-  "32584": {
+  "33760": {
     "subjectArea": "CS",
     "courseNumber": "DTL",
     "title": "Development Tools Labrotary",
@@ -591,9 +591,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32590
+    "primarySubjectId": 33766
   },
-  "32585": {
+  "33761": {
     "subjectArea": "CS",
     "courseNumber": "FCS",
     "title": "Feedback Control System",
@@ -602,9 +602,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.5,
-    "primarySubjectId": 32585
+    "primarySubjectId": 33761
   },
-  "32586": {
+  "33762": {
     "subjectArea": "CS",
     "courseNumber": "FCS",
     "title": "Feedback Control System",
@@ -613,9 +613,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.5,
-    "primarySubjectId": 32585
+    "primarySubjectId": 33761
   },
-  "32587": {
+  "33763": {
     "subjectArea": "CS",
     "courseNumber": "ODEMC",
     "title": "Ordinary Differential Equations & MC",
@@ -624,9 +624,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32587
+    "primarySubjectId": 33763
   },
-  "32588": {
+  "33764": {
     "subjectArea": "CS",
     "courseNumber": "ODEMC-Tut",
     "title": "Ordinary Differential Equations",
@@ -635,9 +635,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32588
+    "primarySubjectId": 33764
   },
-  "32589": {
+  "33765": {
     "subjectArea": "CS",
     "courseNumber": "PLEVH",
     "title": "Professional Laws Ethics and Values",
@@ -646,9 +646,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32589
+    "primarySubjectId": 33765
   },
-  "32590": {
+  "33766": {
     "subjectArea": "CS",
     "courseNumber": "DTL",
     "title": "Development Tools Labrotary",
@@ -657,9 +657,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32590
+    "primarySubjectId": 33766
   },
-  "32591": {
+  "33767": {
     "subjectArea": "CS",
     "courseNumber": "DSA-I",
     "title": "Data Structures and Algorithms I",
@@ -668,9 +668,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 3.0,
-    "primarySubjectId": 32580
+    "primarySubjectId": 33756
   },
-  "32592": {
+  "33768": {
     "subjectArea": "CS",
     "courseNumber": "PPL",
     "title": "Principles of Programming Languages",
@@ -679,9 +679,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32582
+    "primarySubjectId": 33758
   },
-  "32593": {
+  "33769": {
     "subjectArea": "CS",
     "courseNumber": "LAUC-DSY",
     "title": "DSY Div 2 Linear algebra and Univariate Calculus",
@@ -690,9 +690,9 @@
     "eachSlot": 1,
     "nSlots": 4,
     "credits": 4.0,
-    "primarySubjectId": 32593
+    "primarySubjectId": 33769
   },
-  "32594": {
+  "33770": {
     "subjectArea": "CS",
     "courseNumber": "LAUC-T-DSY",
     "title": "Linear algebra and Univariate Calculus",
@@ -701,9 +701,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32594
+    "primarySubjectId": 33770
   },
-  "32595": {
+  "33771": {
     "subjectArea": "CS",
     "courseNumber": "FOP",
     "title": "Foundation of Physics",
@@ -712,9 +712,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32595
+    "primarySubjectId": 33771
   },
-  "32596": {
+  "33772": {
     "subjectArea": "CS",
     "courseNumber": "InC",
     "title": "Innovation and Creativity",
@@ -723,9 +723,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32596
+    "primarySubjectId": 33772
   },
-  "32597": {
+  "33773": {
     "subjectArea": "CS",
     "courseNumber": "FOC",
     "title": "Foundation of Cryptography",
@@ -734,9 +734,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32597
+    "primarySubjectId": 33773
   },
-  "32598": {
+  "33774": {
     "subjectArea": "MT",
     "courseNumber": "MTIS-DE-AN",
     "title": "Advancement in Networking",
@@ -745,9 +745,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32598
+    "primarySubjectId": 33774
   },
-  "32599": {
+  "33775": {
     "subjectArea": "MT",
     "courseNumber": "MTIS-DE-ML",
     "title": "Machine Learning",
@@ -756,9 +756,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32599
+    "primarySubjectId": 33775
   },
-  "32600": {
+  "33776": {
     "subjectArea": "MT",
     "courseNumber": "MTIS-DE-BA",
     "title": "Business Analytics",
@@ -767,20 +767,20 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32600
+    "primarySubjectId": 33776
   },
-  "32601": {
+  "33777": {
     "subjectArea": "CS",
     "courseNumber": "RM",
-    "title": "Research Methodology and Intellectual Property Rights",
+    "title": "Research Methodology",
     "shortName": "RM",
     "isLab": false,
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32601
+    "primarySubjectId": 33777
   },
-  "32602": {
+  "33778": {
     "subjectArea": "CS",
     "courseNumber": "ETC",
     "title": "Effective Technical Communication",
@@ -789,9 +789,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32602
+    "primarySubjectId": 33778
   },
-  "32603": {
+  "33779": {
     "subjectArea": "CS",
     "courseNumber": "AOS",
     "title": "Advanced Operating System",
@@ -800,9 +800,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32603
+    "primarySubjectId": 33779
   },
-  "32604": {
+  "33780": {
     "subjectArea": "CS",
     "courseNumber": "ITC",
     "title": "Information Theory and Coding",
@@ -811,9 +811,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32604
+    "primarySubjectId": 33780
   },
-  "32605": {
+  "33781": {
     "subjectArea": "CS",
     "courseNumber": "CSS",
     "title": "Computer Systems Security",
@@ -822,9 +822,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32605
+    "primarySubjectId": 33781
   },
-  "32606": {
+  "33782": {
     "subjectArea": "CS",
     "courseNumber": "AOS",
     "title": "Advanced Operating System",
@@ -833,9 +833,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32603
+    "primarySubjectId": 33779
   },
-  "32607": {
+  "33783": {
     "subjectArea": "CS",
     "courseNumber": "ITC",
     "title": "Information Theory and Coding",
@@ -844,9 +844,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32604
+    "primarySubjectId": 33780
   },
-  "32608": {
+  "33784": {
     "subjectArea": "CS",
     "courseNumber": "CSS",
     "title": "Computer Systems Security",
@@ -855,9 +855,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32605
+    "primarySubjectId": 33781
   },
-  "32609": {
+  "33785": {
     "subjectArea": "CS",
     "courseNumber": "ACT",
     "title": "Algorithms and Complexity Theory",
@@ -866,9 +866,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32609
+    "primarySubjectId": 33785
   },
-  "32610": {
+  "33786": {
     "subjectArea": "MT",
     "courseNumber": "MTCE-DEDOS",
     "title": "MTCE-Distributed Operating System",
@@ -877,9 +877,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32610
+    "primarySubjectId": 33786
   },
-  "32611": {
+  "33787": {
     "subjectArea": "MT",
     "courseNumber": "MTCE-DE-AI",
     "title": "MTCE-Artificial Intelligence",
@@ -888,9 +888,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32611
+    "primarySubjectId": 33787
   },
-  "32612": {
+  "33788": {
     "subjectArea": "MT",
     "courseNumber": "MTCE-DEAGT",
     "title": "MTCE-Advanced Graph Theory",
@@ -899,9 +899,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32612
+    "primarySubjectId": 33788
   },
-  "32613": {
+  "33789": {
     "subjectArea": "MT",
     "courseNumber": "MTCE-TDB",
     "title": "MTCE-Topics in Databases",
@@ -910,9 +910,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32613
+    "primarySubjectId": 33789
   },
-  "32614": {
+  "33790": {
     "subjectArea": "MT",
     "courseNumber": "MTCE-ACN",
     "title": "MTCE-Advanced Computer Networks",
@@ -921,9 +921,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32614
+    "primarySubjectId": 33790
   },
-  "32615": {
+  "33791": {
     "subjectArea": "MT",
     "courseNumber": "MTCE-ACA",
     "title": "MTCE-Advanced Computer Architecture",
@@ -932,9 +932,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32615
+    "primarySubjectId": 33791
   },
-  "32616": {
+  "33792": {
     "subjectArea": "MT",
     "courseNumber": "MTCE-TDB",
     "title": "MTCE-Topics in Databases",
@@ -943,9 +943,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32613
+    "primarySubjectId": 33789
   },
-  "32617": {
+  "33793": {
     "subjectArea": "MT",
     "courseNumber": "MTCE-ACN",
     "title": "MTCE-Advanced Computer Networks",
@@ -954,9 +954,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32614
+    "primarySubjectId": 33790
   },
-  "32618": {
+  "33794": {
     "subjectArea": "MT",
     "courseNumber": "MTCE-ACA",
     "title": "MTCE-Advanced Computer Architecture",
@@ -965,9 +965,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32615
+    "primarySubjectId": 33791
   },
-  "32619": {
+  "33795": {
     "subjectArea": "CS",
     "courseNumber": "PSQT",
     "title": "Probability Statistics and Queuing Theory",
@@ -976,9 +976,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 3.5,
-    "primarySubjectId": 32620
+    "primarySubjectId": 33796
   },
-  "32620": {
+  "33796": {
     "subjectArea": "CS",
     "courseNumber": "PSQT",
     "title": "Probability Statistics and Queuing Theory",
@@ -987,9 +987,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.5,
-    "primarySubjectId": 32620
+    "primarySubjectId": 33796
   },
-  "32621": {
+  "33797": {
     "subjectArea": "CS",
     "courseNumber": "AINN",
     "title": "Artificial Intelligence and Neural Networks",
@@ -998,9 +998,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.5,
-    "primarySubjectId": 32621
+    "primarySubjectId": 33797
   },
-  "32622": {
+  "33798": {
     "subjectArea": "CS",
     "courseNumber": "AINN",
     "title": "Artificial Intelligence and Neural Networks",
@@ -1009,9 +1009,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.5,
-    "primarySubjectId": 32621
+    "primarySubjectId": 33797
   },
-  "32623": {
+  "33799": {
     "subjectArea": "CS",
     "courseNumber": "AIPT-Lab",
     "title": "AI Based Programming Tool",
@@ -1020,9 +1020,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32623
+    "primarySubjectId": 33799
   },
-  "32624": {
+  "33800": {
     "subjectArea": "CS",
     "courseNumber": "KEES",
     "title": "Knowledge Engineering and Expert System",
@@ -1031,9 +1031,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32624
+    "primarySubjectId": 33800
   },
-  "32625": {
+  "33801": {
     "subjectArea": "CS",
     "courseNumber": "Env",
     "title": "Environmental Studies",
@@ -1042,9 +1042,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32625
+    "primarySubjectId": 33801
   },
-  "32626": {
+  "33802": {
     "subjectArea": "CS",
     "courseNumber": "HOC-II",
     "title": "Humanities Open Course - II",
@@ -1053,9 +1053,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32626
+    "primarySubjectId": 33802
   },
-  "32627": {
+  "33803": {
     "subjectArea": "CS",
     "courseNumber": "SE-II",
     "title": "Software Engineering Mini project - II",
@@ -1064,9 +1064,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 3.0,
-    "primarySubjectId": 32627
+    "primarySubjectId": 33803
   },
-  "32628": {
+  "33804": {
     "subjectArea": "CS",
     "courseNumber": "SE-II",
     "title": "Software Engineering Mini project - II",
@@ -1075,9 +1075,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 3.0,
-    "primarySubjectId": 32627
+    "primarySubjectId": 33803
   },
-  "32629": {
+  "33805": {
     "subjectArea": "IFC",
     "courseNumber": "IOC-I",
     "title": "Interdisciplinary Open Course-I",
@@ -1086,9 +1086,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32629
+    "primarySubjectId": 33805
   },
-  "32630": {
+  "33806": {
     "subjectArea": "CS",
     "courseNumber": "DE1-ADS",
     "title": "DE1 Advanced Data Structures",
@@ -1097,9 +1097,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32630
+    "primarySubjectId": 33806
   },
-  "32631": {
+  "33807": {
     "subjectArea": "CS",
     "courseNumber": "DE1-ADS",
     "title": "DE1 Advanced Data Structures",
@@ -1108,9 +1108,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32630
+    "primarySubjectId": 33806
   },
-  "32632": {
+  "33808": {
     "subjectArea": "CS",
     "courseNumber": "DE1-WST",
     "title": "DE1 Web Systems and Technologies",
@@ -1119,9 +1119,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32632
+    "primarySubjectId": 33808
   },
-  "32633": {
+  "33809": {
     "subjectArea": "CS",
     "courseNumber": "DE1-WST",
     "title": "DE1 Web Systems and Technologies",
@@ -1130,9 +1130,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32632
+    "primarySubjectId": 33808
   },
-  "32634": {
+  "33810": {
     "subjectArea": "CS",
     "courseNumber": "DE1-RTCN",
     "title": "DE1 Recent Trends in Computer Networks",
@@ -1141,9 +1141,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32634
+    "primarySubjectId": 33810
   },
-  "32635": {
+  "33811": {
     "subjectArea": "CS",
     "courseNumber": "DE1-RTCN",
     "title": "DE1 Recent Trends in Computer Networks",
@@ -1152,9 +1152,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32634
+    "primarySubjectId": 33810
   },
-  "32636": {
+  "33812": {
     "subjectArea": "CS",
     "courseNumber": "DE1-SP",
     "title": "DE1 System Programming",
@@ -1163,9 +1163,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32636
+    "primarySubjectId": 33812
   },
-  "32637": {
+  "33813": {
     "subjectArea": "CS",
     "courseNumber": "DE1-SP",
     "title": "DE1 System Programming",
@@ -1174,9 +1174,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32636
+    "primarySubjectId": 33812
   },
-  "32638": {
+  "33814": {
     "subjectArea": "CS",
     "courseNumber": "OS",
     "title": "Operating Systems",
@@ -1185,9 +1185,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32638
+    "primarySubjectId": 33814
   },
-  "32639": {
+  "33815": {
     "subjectArea": "CS",
     "courseNumber": "OS",
     "title": "Operating Systems",
@@ -1196,9 +1196,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32638
+    "primarySubjectId": 33814
   },
-  "32640": {
+  "33816": {
     "subjectArea": "CS",
     "courseNumber": "DAA",
     "title": "Design and Analysis of Algorithm",
@@ -1207,9 +1207,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32640
+    "primarySubjectId": 33816
   },
-  "32641": {
+  "33817": {
     "subjectArea": "CS",
     "courseNumber": "DSci",
     "title": "Data Science",
@@ -1218,9 +1218,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32641
+    "primarySubjectId": 33817
   },
-  "32642": {
+  "33818": {
     "subjectArea": "CS",
     "courseNumber": "DSc-iLab",
     "title": "Data Science",
@@ -1229,9 +1229,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32642
+    "primarySubjectId": 33818
   },
-  "32643": {
+  "33819": {
     "subjectArea": "CS",
     "courseNumber": "DE4-SA",
     "title": "BT: DE-IV System Administration",
@@ -1240,9 +1240,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32653
+    "primarySubjectId": 33829
   },
-  "32644": {
+  "33820": {
     "subjectArea": "CS",
     "courseNumber": "DE4-MAN",
     "title": "BT: DE-IV Mobile and Ad-Hoc Networks",
@@ -1251,9 +1251,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32654
+    "primarySubjectId": 33830
   },
-  "32645": {
+  "33821": {
     "subjectArea": "CS",
     "courseNumber": "SA",
     "title": "DE4-SA: System Administration",
@@ -1262,9 +1262,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32645
+    "primarySubjectId": 33821
   },
-  "32646": {
+  "33822": {
     "subjectArea": "CS",
     "courseNumber": "DE4-GPU",
     "title": "DE4: GPU Computing",
@@ -1273,9 +1273,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32718
+    "primarySubjectId": 33894
   },
-  "32647": {
+  "33823": {
     "subjectArea": "CS",
     "courseNumber": "Min2-OOPD",
     "title": "Minor2-Object Oriented Programming and Design",
@@ -1284,9 +1284,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32647
+    "primarySubjectId": 33823
   },
-  "32648": {
+  "33824": {
     "subjectArea": "CS",
     "courseNumber": "Minor4-DS",
     "title": "Minor4-Data Science",
@@ -1295,9 +1295,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32648
+    "primarySubjectId": 33824
   },
-  "32651": {
+  "33827": {
     "subjectArea": "CS",
     "courseNumber": "MOOC-1",
     "title": "MOOC-1",
@@ -1306,9 +1306,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32651
+    "primarySubjectId": 33827
   },
-  "32652": {
+  "33828": {
     "subjectArea": "CS",
     "courseNumber": "MOOC-2",
     "title": "MOOC-2",
@@ -1317,9 +1317,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32652
+    "primarySubjectId": 33828
   },
-  "32653": {
+  "33829": {
     "subjectArea": "CS",
     "courseNumber": "DE4-SA",
     "title": "BT: DE-IV System Administration",
@@ -1328,9 +1328,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32653
+    "primarySubjectId": 33829
   },
-  "32654": {
+  "33830": {
     "subjectArea": "CS",
     "courseNumber": "DE4-MAN",
     "title": "BT: DE-IV Mobile and Ad-Hoc Networks",
@@ -1339,9 +1339,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32654
+    "primarySubjectId": 33830
   },
-  "32655": {
+  "33831": {
     "subjectArea": "CS",
     "courseNumber": "BTP",
     "title": "BT: Project",
@@ -1350,9 +1350,9 @@
     "eachSlot": 2,
     "nSlots": 8,
     "credits": 16.0,
-    "primarySubjectId": 32655
+    "primarySubjectId": 33831
   },
-  "32656": {
+  "33832": {
     "subjectArea": "IFC",
     "courseNumber": "IOC-AI",
     "title": "IOC-Artificial Intelligence",
@@ -1361,9 +1361,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32656
+    "primarySubjectId": 33832
   },
-  "32657": {
+  "33833": {
     "subjectArea": "IFC",
     "courseNumber": "IOC-AI-Lab",
     "title": "IOC-Artificial Intelligence",
@@ -1372,9 +1372,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32657
+    "primarySubjectId": 33833
   },
-  "32658": {
+  "33834": {
     "subjectArea": "CS",
     "courseNumber": "VCPDE",
     "title": "Vector Calculus and Partial Differential Equations",
@@ -1383,9 +1383,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.5,
-    "primarySubjectId": 32658
+    "primarySubjectId": 33834
   },
-  "32659": {
+  "33835": {
     "subjectArea": "CS",
     "courseNumber": "BE",
     "title": "Biology for Engineers",
@@ -1394,9 +1394,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32659
+    "primarySubjectId": 33835
   },
-  "32660": {
+  "33836": {
     "subjectArea": "CS",
     "courseNumber": "RPPOOP",
     "title": "Rapid Prototyping Practice Using Object Oriented Programming",
@@ -1405,9 +1405,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32660
+    "primarySubjectId": 33836
   },
-  "32661": {
+  "33837": {
     "subjectArea": "CS",
     "courseNumber": "TOC",
     "title": "Theory of Computation",
@@ -1416,9 +1416,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.5,
-    "primarySubjectId": 32661
+    "primarySubjectId": 33837
   },
-  "32662": {
+  "33838": {
     "subjectArea": "MT",
     "courseNumber": "MT",
     "title": "Microprocessor Techniques",
@@ -1427,9 +1427,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32662
+    "primarySubjectId": 33838
   },
-  "32663": {
+  "33839": {
     "subjectArea": "CS",
     "courseNumber": "DSA-II",
     "title": "Data Structures and Algorithms  II",
@@ -1438,9 +1438,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 3.0,
-    "primarySubjectId": 32663
+    "primarySubjectId": 33839
   },
-  "32664": {
+  "33840": {
     "subjectArea": "CS",
     "courseNumber": "DC",
     "title": "Data Communication",
@@ -1449,9 +1449,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32664
+    "primarySubjectId": 33840
   },
-  "32665": {
+  "33841": {
     "subjectArea": "CS",
     "courseNumber": "VCPDE",
     "title": "Vector Calculus and Partial Differential Equations",
@@ -1460,9 +1460,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.5,
-    "primarySubjectId": 32658
+    "primarySubjectId": 33834
   },
-  "32666": {
+  "33842": {
     "subjectArea": "CS",
     "courseNumber": "TOC",
     "title": "Theory of Computation",
@@ -1471,9 +1471,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.5,
-    "primarySubjectId": 32661
+    "primarySubjectId": 33837
   },
-  "32667": {
+  "33843": {
     "subjectArea": "CS",
     "courseNumber": "RPPOOP",
     "title": "Rapid Prototyping Practice Using Object Oriented Programming",
@@ -1482,9 +1482,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32660
+    "primarySubjectId": 33836
   },
-  "32668": {
+  "33844": {
     "subjectArea": "MT",
     "courseNumber": "MT",
     "title": "Microprocessor Techniques",
@@ -1493,9 +1493,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32662
+    "primarySubjectId": 33838
   },
-  "32669": {
+  "33845": {
     "subjectArea": "CS",
     "courseNumber": "DSA-II",
     "title": "Data Structures and Algorithms  II",
@@ -1504,9 +1504,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 3.0,
-    "primarySubjectId": 32663
+    "primarySubjectId": 33839
   },
-  "32670": {
+  "33846": {
     "subjectArea": "CS",
     "courseNumber": "MVCDE",
     "title": "Multivariate Calculus and Differential  Equations",
@@ -1515,9 +1515,9 @@
     "eachSlot": 1,
     "nSlots": 5,
     "credits": 5.5,
-    "primarySubjectId": 32670
+    "primarySubjectId": 33846
   },
-  "32671": {
+  "33847": {
     "subjectArea": "CS",
     "courseNumber": "MVCDE",
     "title": "Multivariate Calculus and Differential  Equations",
@@ -1526,9 +1526,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 5.5,
-    "primarySubjectId": 32670
+    "primarySubjectId": 33846
   },
-  "32672": {
+  "33848": {
     "subjectArea": "CS",
     "courseNumber": "AAI",
     "title": "Advanced Artificial Intelligence",
@@ -1537,9 +1537,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32672
+    "primarySubjectId": 33848
   },
-  "32673": {
+  "33849": {
     "subjectArea": "MT",
     "courseNumber": "PSEC3-DL",
     "title": "PSEC3-Deep Learning",
@@ -1548,9 +1548,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32673
+    "primarySubjectId": 33849
   },
-  "32674": {
+  "33850": {
     "subjectArea": "IFC",
     "courseNumber": "IOC-DS",
     "title": "IOC-Data Structures",
@@ -1559,9 +1559,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32674
+    "primarySubjectId": 33850
   },
-  "32675": {
+  "33851": {
     "subjectArea": "CS",
     "courseNumber": "DMML",
     "title": "Data Mining and Machine Learning",
@@ -1570,9 +1570,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32675
+    "primarySubjectId": 33851
   },
-  "32676": {
+  "33852": {
     "subjectArea": "CS",
     "courseNumber": "SIC",
     "title": "Security in Computing",
@@ -1581,9 +1581,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32676
+    "primarySubjectId": 33852
   },
-  "32677": {
+  "33853": {
     "subjectArea": "CS",
     "courseNumber": "ES",
     "title": "Embedded Systems",
@@ -1592,9 +1592,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32677
+    "primarySubjectId": 33853
   },
-  "32678": {
+  "33854": {
     "subjectArea": "MT",
     "courseNumber": "PSEC2-CCV",
     "title": "PSEC2-Cloud Computing and Virtualization",
@@ -1603,9 +1603,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32678
+    "primarySubjectId": 33854
   },
-  "32679": {
+  "33855": {
     "subjectArea": "MT",
     "courseNumber": "PSEC2-NLP",
     "title": "PSEC2-Natural Language Processing",
@@ -1614,9 +1614,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32679
+    "primarySubjectId": 33855
   },
-  "32680": {
+  "33856": {
     "subjectArea": "MT",
     "courseNumber": "PSEC3-MT",
     "title": "PSEC3-Multicore Technology",
@@ -1625,9 +1625,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32680
+    "primarySubjectId": 33856
   },
-  "32681": {
+  "33857": {
     "subjectArea": "MT",
     "courseNumber": "MT-NS",
     "title": "MTech Network Security",
@@ -1636,9 +1636,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32681
+    "primarySubjectId": 33857
   },
-  "32682": {
+  "33858": {
     "subjectArea": "MT",
     "courseNumber": "MT-WNS",
     "title": "MTech Wireless Networks",
@@ -1647,9 +1647,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32682
+    "primarySubjectId": 33858
   },
-  "32683": {
+  "33859": {
     "subjectArea": "MT",
     "courseNumber": "MT-DFDR",
     "title": "MTech Digital Forensics and Data Recovery",
@@ -1658,9 +1658,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32683
+    "primarySubjectId": 33859
   },
-  "32684": {
+  "33860": {
     "subjectArea": "MT",
     "courseNumber": "PSEC2-CCS",
     "title": "PSEC2- Cloud Computing and Security",
@@ -1669,9 +1669,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32684
+    "primarySubjectId": 33860
   },
-  "32685": {
+  "33861": {
     "subjectArea": "MT",
     "courseNumber": "PSEC3-WS",
     "title": "PSEC3- Web Security",
@@ -1680,9 +1680,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32685
+    "primarySubjectId": 33861
   },
-  "32686": {
+  "33862": {
     "subjectArea": "CS",
     "courseNumber": "MLBDA",
     "title": "Machine Learning and Big Data Analytics",
@@ -1691,9 +1691,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.5,
-    "primarySubjectId": 32686
+    "primarySubjectId": 33862
   },
-  "32687": {
+  "33863": {
     "subjectArea": "CS",
     "courseNumber": "DMML",
     "title": "Data Mining and Machine Learning",
@@ -1702,9 +1702,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32675
+    "primarySubjectId": 33851
   },
-  "32688": {
+  "33864": {
     "subjectArea": "CS",
     "courseNumber": "SIC",
     "title": "Security in Computing",
@@ -1713,9 +1713,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32676
+    "primarySubjectId": 33852
   },
-  "32689": {
+  "33865": {
     "subjectArea": "CS",
     "courseNumber": "ES",
     "title": "Embedded Systems",
@@ -1724,9 +1724,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32677
+    "primarySubjectId": 33853
   },
-  "32690": {
+  "33866": {
     "subjectArea": "MT",
     "courseNumber": "MT-NS",
     "title": "MTech Network Security",
@@ -1735,9 +1735,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32681
+    "primarySubjectId": 33857
   },
-  "32691": {
+  "33867": {
     "subjectArea": "MT",
     "courseNumber": "MT-WNS",
     "title": "MTech Wireless Networks",
@@ -1746,9 +1746,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32682
+    "primarySubjectId": 33858
   },
-  "32692": {
+  "33868": {
     "subjectArea": "MT",
     "courseNumber": "MT-DFDR",
     "title": "MTech Digital Forensics and Data Recovery",
@@ -1757,9 +1757,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32683
+    "primarySubjectId": 33859
   },
-  "32693": {
+  "33869": {
     "subjectArea": "CS",
     "courseNumber": "DS",
     "title": "Data Structures",
@@ -1768,9 +1768,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32693
+    "primarySubjectId": 33869
   },
-  "32694": {
+  "33870": {
     "subjectArea": "CS",
     "courseNumber": "MLBDA",
     "title": "Machine Learning and Big Data Analytics",
@@ -1779,9 +1779,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.5,
-    "primarySubjectId": 32686
+    "primarySubjectId": 33862
   },
-  "32695": {
+  "33871": {
     "subjectArea": "MT",
     "courseNumber": "MTDE2-AA",
     "title": "MTDE2-Advanced Algorithms",
@@ -1790,9 +1790,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32695
+    "primarySubjectId": 33871
   },
-  "32696": {
+  "33872": {
     "subjectArea": "MT",
     "courseNumber": "MTDE2-DA",
     "title": "MTDE2-Data Analytics",
@@ -1801,9 +1801,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32696
+    "primarySubjectId": 33872
   },
-  "32697": {
+  "33873": {
     "subjectArea": "MT",
     "courseNumber": "MTDE3-BI",
     "title": "MTDE3-BIoinformatics",
@@ -1812,9 +1812,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32697
+    "primarySubjectId": 33873
   },
-  "32698": {
+  "33874": {
     "subjectArea": "MT",
     "courseNumber": "MTDE3-CC",
     "title": "MTDE3-Advanced Compiler Construction",
@@ -1823,9 +1823,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32698
+    "primarySubjectId": 33874
   },
-  "32699": {
+  "33875": {
     "subjectArea": "CS",
     "courseNumber": "OOPD",
     "title": "Object Oriented Programming and Design",
@@ -1834,9 +1834,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32699
+    "primarySubjectId": 33875
   },
-  "32700": {
+  "33876": {
     "subjectArea": "CS",
     "courseNumber": "OOPD",
     "title": "Object Oriented Programming and Design",
@@ -1845,9 +1845,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32699
+    "primarySubjectId": 33875
   },
-  "32701": {
+  "33877": {
     "subjectArea": "CS",
     "courseNumber": "OE-FOS",
     "title": "OE Fundamentals of Operating Systems",
@@ -1856,9 +1856,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32701
+    "primarySubjectId": 33877
   },
-  "32702": {
+  "33878": {
     "subjectArea": "CS",
     "courseNumber": "DAA",
     "title": "Design and Analysis of Algorithm",
@@ -1867,9 +1867,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32640
+    "primarySubjectId": 33816
   },
-  "32703": {
+  "33879": {
     "subjectArea": "CS",
     "courseNumber": "DE2-ASP",
     "title": "DE II - Advanced System Programming",
@@ -1878,9 +1878,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32712
+    "primarySubjectId": 33888
   },
-  "32704": {
+  "33880": {
     "subjectArea": "CS",
     "courseNumber": "DE2-BCT",
     "title": "DE II - BlockChain Technologies",
@@ -1889,9 +1889,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32704
+    "primarySubjectId": 33880
   },
-  "32705": {
+  "33881": {
     "subjectArea": "CS",
     "courseNumber": "DE2-BCT",
     "title": "DE II - BlockChain Technologies",
@@ -1900,9 +1900,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32704
+    "primarySubjectId": 33880
   },
-  "32706": {
+  "33882": {
     "subjectArea": "CS",
     "courseNumber": "DE2-DSci",
     "title": "DE II - Data Science",
@@ -1911,9 +1911,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32706
+    "primarySubjectId": 33882
   },
-  "32707": {
+  "33883": {
     "subjectArea": "CS",
     "courseNumber": "DE2-DSci",
     "title": "DE II - Data Science",
@@ -1922,9 +1922,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32706
+    "primarySubjectId": 33882
   },
-  "32708": {
+  "33884": {
     "subjectArea": "CS",
     "courseNumber": "DE2-PP",
     "title": "DE II - POSIX Programming",
@@ -1933,9 +1933,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32708
+    "primarySubjectId": 33884
   },
-  "32709": {
+  "33885": {
     "subjectArea": "CS",
     "courseNumber": "DE2-PP",
     "title": "DE II - POSIX Programming",
@@ -1944,9 +1944,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32708
+    "primarySubjectId": 33884
   },
-  "32710": {
+  "33886": {
     "subjectArea": "CS",
     "courseNumber": "DE2-FSD",
     "title": "DE II - Full stack Development",
@@ -1955,9 +1955,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32710
+    "primarySubjectId": 33886
   },
-  "32711": {
+  "33887": {
     "subjectArea": "CS",
     "courseNumber": "DE2-FSD",
     "title": "DE II - Full stack Development",
@@ -1966,9 +1966,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32710
+    "primarySubjectId": 33886
   },
-  "32712": {
+  "33888": {
     "subjectArea": "CS",
     "courseNumber": "DE2-ASP",
     "title": "DE II - Advanced System Programming",
@@ -1977,9 +1977,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32712
+    "primarySubjectId": 33888
   },
-  "32713": {
+  "33889": {
     "subjectArea": "CS",
     "courseNumber": "MDM-FDMS",
     "title": "MDM - CS - Fundamentals of Database Management Systems",
@@ -1988,9 +1988,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32713
+    "primarySubjectId": 33889
   },
-  "32714": {
+  "33890": {
     "subjectArea": "CS",
     "courseNumber": "DE4-IBCS",
     "title": "Introduction of Blockchains Cryptocurrencies and Smart Contracts",
@@ -1999,9 +1999,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32714
+    "primarySubjectId": 33890
   },
-  "32715": {
+  "33891": {
     "subjectArea": "CS",
     "courseNumber": "DE4-IBCS",
     "title": "Introduction of Blockchains Cryptocurrencies and Smart Contracts",
@@ -2010,9 +2010,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32714
+    "primarySubjectId": 33890
   },
-  "32716": {
+  "33892": {
     "subjectArea": "CS",
     "courseNumber": "DE4-GIS",
     "title": "DE4-GIS: Geographical Information Systems",
@@ -2021,9 +2021,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32716
+    "primarySubjectId": 33892
   },
-  "32717": {
+  "33893": {
     "subjectArea": "CS",
     "courseNumber": "DE4-GIS",
     "title": "DE4-GIS: Geographical Information Systems",
@@ -2032,9 +2032,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32716
+    "primarySubjectId": 33892
   },
-  "32718": {
+  "33894": {
     "subjectArea": "CS",
     "courseNumber": "DE4-GPU",
     "title": "DE4: GPU Computing",
@@ -2043,9 +2043,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32718
+    "primarySubjectId": 33894
   },
-  "32721": {
+  "33897": {
     "subjectArea": "CS",
     "courseNumber": "OE-DS",
     "title": "OE:Data Structures",
@@ -2054,9 +2054,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32721
+    "primarySubjectId": 33897
   },
-  "32722": {
+  "33898": {
     "subjectArea": "MT",
     "courseNumber": "PSEC2-BT",
     "title": "PSEC2- Blockchain Technology",
@@ -2065,9 +2065,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32722
+    "primarySubjectId": 33898
   },
-  "32723": {
+  "33899": {
     "subjectArea": "MT",
     "courseNumber": "PSEC3-ITS",
     "title": "PSEC3- Internet of Things and Security",
@@ -2076,9 +2076,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32723
+    "primarySubjectId": 33899
   },
-  "32724": {
+  "33900": {
     "subjectArea": "MT",
     "courseNumber": "MT-DL",
     "title": "Deep Learning",
@@ -2087,9 +2087,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32724
+    "primarySubjectId": 33900
   },
-  "32725": {
+  "33901": {
     "subjectArea": "MT",
     "courseNumber": "MT-DL",
     "title": "Deep Learning",
@@ -2098,9 +2098,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32724
+    "primarySubjectId": 33900
   },
-  "32726": {
+  "33902": {
     "subjectArea": "MT",
     "courseNumber": "MT-GAN",
     "title": "Generative Adversarial Network",
@@ -2109,9 +2109,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32726
+    "primarySubjectId": 33902
   },
-  "32727": {
+  "33903": {
     "subjectArea": "MT",
     "courseNumber": "MT-GAN",
     "title": "Generative Adversarial Network",
@@ -2120,9 +2120,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32726
+    "primarySubjectId": 33902
   },
-  "32728": {
+  "33904": {
     "subjectArea": "MT",
     "courseNumber": "MT-OT",
     "title": "Optimization Techniques",
@@ -2131,9 +2131,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32728
+    "primarySubjectId": 33904
   },
-  "32729": {
+  "33905": {
     "subjectArea": "MT",
     "courseNumber": "MT-OT",
     "title": "Optimization Techniques",
@@ -2142,9 +2142,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32728
+    "primarySubjectId": 33904
   },
-  "32730": {
+  "33906": {
     "subjectArea": "MT",
     "courseNumber": "PSEC2-EAI",
     "title": "PSEC2- Explainable Artificial Intelligence",
@@ -2153,9 +2153,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32730
+    "primarySubjectId": 33906
   },
-  "32731": {
+  "33907": {
     "subjectArea": "MT",
     "courseNumber": "PSEC2-MLPS",
     "title": "PSEC2- ML-OPS",
@@ -2164,9 +2164,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32731
+    "primarySubjectId": 33907
   },
-  "32732": {
+  "33908": {
     "subjectArea": "MT",
     "courseNumber": "PSEC3-GNN",
     "title": "PSEC3- Graph Neural Network",
@@ -2175,9 +2175,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32732
+    "primarySubjectId": 33908
   },
-  "32733": {
+  "33909": {
     "subjectArea": "MT",
     "courseNumber": "MT-NLP",
     "title": "PSEC3- Natural Language Processing",
@@ -2186,9 +2186,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32733
+    "primarySubjectId": 33909
   },
-  "32734": {
+  "33910": {
     "subjectArea": "MT",
     "courseNumber": "MT-BDAAS",
     "title": "Big Data Analytics with Apache Spark",
@@ -2197,9 +2197,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32734
+    "primarySubjectId": 33910
   },
-  "32735": {
+  "33911": {
     "subjectArea": "MT",
     "courseNumber": "MT-BDAAS",
     "title": "Big Data Analytics with Apache Spark",
@@ -2208,9 +2208,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32734
+    "primarySubjectId": 33910
   },
-  "32736": {
+  "33912": {
     "subjectArea": "MT",
     "courseNumber": "MT-AMLD",
     "title": "Advanced Machine Learning and Deep",
@@ -2219,9 +2219,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32736
+    "primarySubjectId": 33912
   },
-  "32737": {
+  "33913": {
     "subjectArea": "MT",
     "courseNumber": "MT-AMLD",
     "title": "Advanced Machine Learning and Deep",
@@ -2230,9 +2230,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32736
+    "primarySubjectId": 33912
   },
-  "32738": {
+  "33914": {
     "subjectArea": "MT",
     "courseNumber": "MT-MLOS",
     "title": "ML Ops and Systems",
@@ -2241,9 +2241,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 4.0,
-    "primarySubjectId": 32738
+    "primarySubjectId": 33914
   },
-  "32739": {
+  "33915": {
     "subjectArea": "MT",
     "courseNumber": "MT-MLOS",
     "title": "ML Ops and Systems",
@@ -2252,9 +2252,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32738
+    "primarySubjectId": 33914
   },
-  "32740": {
+  "33916": {
     "subjectArea": "MT",
     "courseNumber": "PSEC2-CV",
     "title": "PSEC2- Computer Vision",
@@ -2263,9 +2263,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32740
+    "primarySubjectId": 33916
   },
-  "32741": {
+  "33917": {
     "subjectArea": "MT",
     "courseNumber": "PSEC2-MTRP",
     "title": "PSEC2- R Programming",
@@ -2274,9 +2274,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32741
+    "primarySubjectId": 33917
   },
-  "32742": {
+  "33918": {
     "subjectArea": "MT",
     "courseNumber": "PSEC3-GAN",
     "title": "PSEC3- Generative Adversarial Network",
@@ -2285,9 +2285,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 1.5,
-    "primarySubjectId": 32742
+    "primarySubjectId": 33918
   },
-  "32743": {
+  "33919": {
     "subjectArea": "MT",
     "courseNumber": "MT-ETCSA",
     "title": "MTech Effective Technical Communication Skills",
@@ -2296,9 +2296,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32743
+    "primarySubjectId": 33919
   },
-  "32744": {
+  "33920": {
     "subjectArea": "MT",
     "courseNumber": "MT-LL",
     "title": "MTech Liberal Learning Course",
@@ -2307,9 +2307,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 1.0,
-    "primarySubjectId": 32744
+    "primarySubjectId": 33920
   },
-  "32745": {
+  "33921": {
     "subjectArea": "CS",
     "courseNumber": "FY-Reserve",
     "title": "FY Reserved Subject",
@@ -2318,9 +2318,9 @@
     "eachSlot": 1,
     "nSlots": 5,
     "credits": 5.0,
-    "primarySubjectId": 32745
+    "primarySubjectId": 33921
   },
-  "32746": {
+  "33922": {
     "subjectArea": "CS",
     "courseNumber": "OE-FA",
     "title": "OE Fundamentals of Algorithms",
@@ -2329,9 +2329,9 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32746
+    "primarySubjectId": 33922
   },
-  "32747": {
+  "33923": {
     "subjectArea": "CS",
     "courseNumber": "DS-FY",
     "title": "Discrete Structures(FY)",
@@ -2340,9 +2340,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.5,
-    "primarySubjectId": 32747
+    "primarySubjectId": 33923
   },
-  "32748": {
+  "33924": {
     "subjectArea": "CS",
     "courseNumber": "DS-FY",
     "title": "Discrete Structures(FY)",
@@ -2351,9 +2351,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 3.5,
-    "primarySubjectId": 32747
+    "primarySubjectId": 33923
   },
-  "32749": {
+  "33925": {
     "subjectArea": "CS",
     "courseNumber": "AIMA",
     "title": "AI for Multidisciplinary Applications(FY)",
@@ -2362,9 +2362,9 @@
     "eachSlot": 1,
     "nSlots": 3,
     "credits": 3.0,
-    "primarySubjectId": 32749
+    "primarySubjectId": 33925
   },
-  "32750": {
+  "33926": {
     "subjectArea": "CS",
     "courseNumber": "PP-FY",
     "title": "Python Programming (FY)",
@@ -2373,9 +2373,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32750
+    "primarySubjectId": 33926
   },
-  "32751": {
+  "33927": {
     "subjectArea": "CS",
     "courseNumber": "PP-FY",
     "title": "Python Programming (FY)",
@@ -2384,9 +2384,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32750
+    "primarySubjectId": 33926
   },
-  "32752": {
+  "33928": {
     "subjectArea": "CS",
     "courseNumber": "WD-FY",
     "title": "Web Design(FY)",
@@ -2395,9 +2395,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32752
+    "primarySubjectId": 33928
   },
-  "32753": {
+  "33929": {
     "subjectArea": "CS",
     "courseNumber": "WD-FY",
     "title": "Web Design(FY)",
@@ -2406,9 +2406,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32752
+    "primarySubjectId": 33928
   },
-  "32754": {
+  "33930": {
     "subjectArea": "CS",
     "courseNumber": "PPS-FY",
     "title": "Programming for Problem Solving (FY)",
@@ -2417,9 +2417,9 @@
     "eachSlot": 1,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32754
+    "primarySubjectId": 33930
   },
-  "32755": {
+  "33931": {
     "subjectArea": "CS",
     "courseNumber": "PPS-FY",
     "title": "Programming for Problem Solving (FY)",
@@ -2428,9 +2428,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32754
+    "primarySubjectId": 33930
   },
-  "32756": {
+  "33932": {
     "subjectArea": "CS",
     "courseNumber": "MDM-FDMS",
     "title": "MDM - CS - Fundamentals of Database Management Systems",
@@ -2439,9 +2439,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 4.0,
-    "primarySubjectId": 32713
+    "primarySubjectId": 33889
   },
-  "32757": {
+  "33933": {
     "subjectArea": "MT",
     "courseNumber": "MT-ETCSA",
     "title": "MTech Effective Technical Communication Skills",
@@ -2450,9 +2450,9 @@
     "eachSlot": 2,
     "nSlots": 1,
     "credits": 2.0,
-    "primarySubjectId": 32743
+    "primarySubjectId": 33919
   },
-  "32758": {
+  "33934": {
     "subjectArea": "CS",
     "courseNumber": "Eco",
     "title": "Economics (SY)",
@@ -2461,7 +2461,84 @@
     "eachSlot": 1,
     "nSlots": 2,
     "credits": 2.0,
-    "primarySubjectId": 32758
+    "primarySubjectId": 33934
+  },
+  "33935": {
+    "subjectArea": "CS",
+    "courseNumber": "CS-DSY",
+    "title": "Communication Skills (DSY)",
+    "shortName": "CS(DSY",
+    "isLab": true,
+    "eachSlot": 1,
+    "nSlots": 2,
+    "credits": 1.0,
+    "primarySubjectId": 33935
+  },
+  "33936": {
+    "subjectArea": "CS",
+    "courseNumber": "MDM-FAIML",
+    "title": "MDM-Foundations in AI and ML",
+    "shortName": "MDM-FAIML",
+    "isLab": false,
+    "eachSlot": 1,
+    "nSlots": 3,
+    "credits": 3.0,
+    "primarySubjectId": 33936
+  },
+  "33937": {
+    "subjectArea": "CS",
+    "courseNumber": "MDM-MQM",
+    "title": "MDM-Mathematics of Quantum Mechanics",
+    "shortName": "MDM-MQM",
+    "isLab": false,
+    "eachSlot": 1,
+    "nSlots": 3,
+    "credits": 3.0,
+    "primarySubjectId": 33937
+  },
+  "33938": {
+    "subjectArea": "CS",
+    "courseNumber": "DT",
+    "title": "Design Thinking",
+    "shortName": "DT",
+    "isLab": false,
+    "eachSlot": 1,
+    "nSlots": 1,
+    "credits": 1.0,
+    "primarySubjectId": 33938
+  },
+  "33939": {
+    "subjectArea": "CS",
+    "courseNumber": "DS-SY",
+    "title": "Discrete Structures(SY)",
+    "shortName": "DS(SY)",
+    "isLab": false,
+    "eachSlot": 1,
+    "nSlots": 2,
+    "credits": 2.0,
+    "primarySubjectId": 33939
+  },
+  "33940": {
+    "subjectArea": "CS",
+    "courseNumber": "DS-TY",
+    "title": "Discrete Structures(TY)",
+    "shortName": "DS(TY)",
+    "isLab": false,
+    "eachSlot": 1,
+    "nSlots": 2,
+    "credits": 2.0,
+    "primarySubjectId": 33940
+  },
+  "33941": {
+    "subjectArea": "CS",
+    "courseNumber": "DS-DSY",
+    "title": "Discrete Structures (DSY)",
+    "shortName": "DS(DSY)",
+    "isLab": true,
+    "eachSlot": 1,
+    "nSlots": 3,
+    "credits": 1.5,
+    "primarySubjectId": 33941
   },
   "999000": {
     "subjectArea": "CS",

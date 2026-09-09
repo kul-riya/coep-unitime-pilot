@@ -5,471 +5,492 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<courseCatalog campus="COEP" term="Spr6" year="2026">
-  <course externalId="taasika-subject-32527" subject="CS" courseNumber="PSE" title="Probability and Statistics for Engineers" permanentId="taasika-32527">
+<courseCatalog campus="COEP" term="Spr7" year="2026">
+  <course externalId="taasika-subject-33703" subject="CS" courseNumber="PSE" title="Probability and Statistics for Engineers" permanentId="taasika-33703">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.5"/>
   </course>
-  <course externalId="taasika-subject-32529" subject="CS" courseNumber="CoI" title="Constitution of India" permanentId="taasika-32529">
-    <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
-  </course>
-  <course externalId="taasika-subject-32530" subject="CS" courseNumber="EPP" title="Entrepreneurship Principles andProcess" permanentId="taasika-32530">
+  <course externalId="taasika-subject-33705" subject="CS" courseNumber="CoI" title="Constitution of India" permanentId="taasika-33705">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32531" subject="CS" courseNumber="HOC-I" title="Humanities Open Course - I" permanentId="taasika-32531">
+  <course externalId="taasika-subject-33706" subject="CS" courseNumber="EPP" title="Entrepreneurship Principles andProcess" permanentId="taasika-33706">
+    <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
+  </course>
+  <course externalId="taasika-subject-33707" subject="CS" courseNumber="HOC-I" title="Humanities Open Course - I" permanentId="taasika-33707">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32533" subject="CS" courseNumber="SE-I" title="Software Engineering: Mini Project-1" permanentId="taasika-32533">
+  <course externalId="taasika-subject-33709" subject="CS" courseNumber="SE-I" title="Software Engineering: Mini Project-1" permanentId="taasika-33709">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.5"/>
   </course>
-  <course externalId="taasika-subject-32534" subject="CS" courseNumber="CO" title="Computer Organization" permanentId="taasika-32534">
+  <course externalId="taasika-subject-33710" subject="CS" courseNumber="CO" title="Computer Organization" permanentId="taasika-33710">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32535" subject="CS" courseNumber="DBMS" title="Database Management Systems" permanentId="taasika-32535">
+  <course externalId="taasika-subject-33711" subject="CS" courseNumber="DBMS" title="Database Management Systems" permanentId="taasika-33711">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32537" subject="CS" courseNumber="AI" title="Artificial Intelligence" permanentId="taasika-32537">
+  <course externalId="taasika-subject-33713" subject="CS" courseNumber="AI" title="Artificial Intelligence" permanentId="taasika-33713">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32539" subject="CS" courseNumber="CN" title="Computer Networks" permanentId="taasika-32539">
+  <course externalId="taasika-subject-33715" subject="CS" courseNumber="CN" title="Computer Networks" permanentId="taasika-33715">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32541" subject="IFC" courseNumber="IFC-DA" title="TYME1 IFC Data Analytics" permanentId="taasika-32541">
+  <course externalId="taasika-subject-33717" subject="IFC" courseNumber="IFC-DA" title="TYME1 IFC Data Analytics" permanentId="taasika-33717">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32542" subject="IFC" courseNumber="D2DA" title="TYME2 IFC Data Analytics" permanentId="taasika-32542">
+  <course externalId="taasika-subject-33718" subject="IFC" courseNumber="D2DA" title="TYME2 IFC Data Analytics" permanentId="taasika-33718">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32544" subject="IFC" courseNumber="D2DAL" title="TYME2 IFC Data Analytics" permanentId="taasika-32544">
+  <course externalId="taasika-subject-33720" subject="IFC" courseNumber="D2DAL" title="TYME2 IFC Data Analytics" permanentId="taasika-33720">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32545" subject="IFC" courseNumber="EnTC-DA" title="TYENTC IFC Data Analytics" permanentId="taasika-32545">
+  <course externalId="taasika-subject-33721" subject="IFC" courseNumber="EnTC-DA" title="TYENTC IFC Data Analytics" permanentId="taasika-33721">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32546" subject="IFC" courseNumber="EnTC-DAL" title="TYENTC IFC Data Analytics" permanentId="taasika-32546">
+  <course externalId="taasika-subject-33722" subject="IFC" courseNumber="EnTC-DAL" title="TYENTC IFC Data Analytics" permanentId="taasika-33722">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32547" subject="IFC" courseNumber="MnE-DA" title="TYMnE IFC Data Analytics" permanentId="taasika-32547">
+  <course externalId="taasika-subject-33723" subject="IFC" courseNumber="MnE-DA" title="TYMnE IFC Data Analytics" permanentId="taasika-33723">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32548" subject="IFC" courseNumber="MnE-DAL" title="TYMnE IFC Data Analytics" permanentId="taasika-32548">
+  <course externalId="taasika-subject-33724" subject="IFC" courseNumber="MnE-DAL" title="TYMnE IFC Data Analytics" permanentId="taasika-33724">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32549" subject="IFC" courseNumber="EE-FOS" title="TYEE IFC Fundamentals of Operating Systems" permanentId="taasika-32549">
+  <course externalId="taasika-subject-33725" subject="IFC" courseNumber="EE-FOS" title="TYEE IFC Fundamentals of Operating Systems" permanentId="taasika-33725">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32550" subject="IFC" courseNumber="IE-FML" title="TYIE IFC Fundamentals of Machine Learning" permanentId="taasika-32550">
+  <course externalId="taasika-subject-33726" subject="IFC" courseNumber="IE-FML" title="TYIE IFC Fundamentals of Machine Learning" permanentId="taasika-33726">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32551" subject="IFC" courseNumber="IE-FMLL" title="TYIE IFC Fundamentals of Machine Learning" permanentId="taasika-32551">
+  <course externalId="taasika-subject-33727" subject="IFC" courseNumber="IE-FMLL" title="TYIE IFC Fundamentals of Machine Learning" permanentId="taasika-33727">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32552" subject="CS" courseNumber="IPR" title="Intellectual Property Rights" permanentId="taasika-32552">
+  <course externalId="taasika-subject-33728" subject="CS" courseNumber="IPR" title="Intellectual Property Rights" permanentId="taasika-33728">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32553" subject="CS" courseNumber="LLC" title="Liberal Learning Course" permanentId="taasika-32553">
+  <course externalId="taasika-subject-33729" subject="CS" courseNumber="LLC" title="Liberal Learning Course" permanentId="taasika-33729">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32554" subject="IFC" courseNumber="IOC-II" title="Interdisciplinary Open Course-II" permanentId="taasika-32554">
+  <course externalId="taasika-subject-33730" subject="IFC" courseNumber="IOC-II" title="Interdisciplinary Open Course-II" permanentId="taasika-33730">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32555" subject="CS" courseNumber="CC" title="Compiler Construction" permanentId="taasika-32555">
+  <course externalId="taasika-subject-33731" subject="CS" courseNumber="CC" title="Compiler Construction" permanentId="taasika-33731">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32557" subject="CS" courseNumber="CNS" title="Cryptography and Network Security" permanentId="taasika-32557">
+  <course externalId="taasika-subject-33733" subject="CS" courseNumber="CNS" title="Cryptography and Network Security" permanentId="taasika-33733">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32559" subject="CS" courseNumber="DE2-CBD" title="DE-II CBD: Cloud and Big Data" permanentId="taasika-32559">
+  <course externalId="taasika-subject-33735" subject="CS" courseNumber="DE2-CBD" title="DE-II CBD: Cloud and Big Data" permanentId="taasika-33735">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32560" subject="CS" courseNumber="DE2-DS" title="DE-II DS: Distributed Systems" permanentId="taasika-32560">
+  <course externalId="taasika-subject-33736" subject="CS" courseNumber="DE2-DS" title="DE-II DS: Distributed Systems" permanentId="taasika-33736">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32561" subject="CS" courseNumber="DE2-IR" title="DE-II IR: Information Retrieval" permanentId="taasika-32561">
+  <course externalId="taasika-subject-33737" subject="CS" courseNumber="DE2-IR" title="DE-II IR: Information Retrieval" permanentId="taasika-33737">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32562" subject="CS" courseNumber="DE3-OOMD" title="DE-III OOMD: Object Oriented Modelling and Design" permanentId="taasika-32562">
+  <course externalId="taasika-subject-33738" subject="CS" courseNumber="DE3-OOMD" title="DE-III OOMD: Object Oriented Modelling and Design" permanentId="taasika-33738">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32563" subject="CS" courseNumber="DE3-NLP" title="DE-III NLP: Natural Language Processing" permanentId="taasika-32563">
+  <course externalId="taasika-subject-33739" subject="CS" courseNumber="DE3-NLP" title="DE-III NLP: Natural Language Processing" permanentId="taasika-33739">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32564" subject="CS" courseNumber="DE3-IOT" title="DE-III IOT: Internet of Things" permanentId="taasika-32564">
+  <course externalId="taasika-subject-33740" subject="CS" courseNumber="DE3-IOT" title="DE-III IOT: Internet of Things" permanentId="taasika-33740">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32565" subject="CS" courseNumber="DE3-Devops" title="DE-III Devops" permanentId="taasika-32565">
+  <course externalId="taasika-subject-33741" subject="CS" courseNumber="DE3-Devops" title="DE-III Devops" permanentId="taasika-33741">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32566" subject="CS" courseNumber="DE3-CS" title="DE-III CS: Cyber Security" permanentId="taasika-32566">
+  <course externalId="taasika-subject-33742" subject="CS" courseNumber="DE3-CS" title="DE-III CS: Cyber Security" permanentId="taasika-33742">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32571" subject="CS" courseNumber="EE-CA" title="BTEE DE1 Computer Algorithms" permanentId="taasika-32571">
+  <course externalId="taasika-subject-33747" subject="CS" courseNumber="EE-CA" title="BTEE DE1 Computer Algorithms" permanentId="taasika-33747">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32572" subject="CS" courseNumber="MDM-DSFA" title="MDM-Data Structures, Files and Algorithms" permanentId="taasika-32572">
+  <course externalId="taasika-subject-33748" subject="CS" courseNumber="MDM-DSFA" title="MDM-Data Structures, Files and Algorithms" permanentId="taasika-33748">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32573" subject="CS" courseNumber="Minor3-IT" title="Minor3-Internet Technologies" permanentId="taasika-32573">
+  <course externalId="taasika-subject-33749" subject="CS" courseNumber="Minor3-IT" title="Minor3-Internet Technologies" permanentId="taasika-33749">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32578" subject="CS" courseNumber="DSGT" title="Discrete Structures and Graph Theory" permanentId="taasika-32578">
+  <course externalId="taasika-subject-33754" subject="CS" courseNumber="DSGT" title="Discrete Structures and Graph Theory" permanentId="taasika-33754">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.5"/>
   </course>
-  <course externalId="taasika-subject-32580" subject="CS" courseNumber="DSA-I" title="Data Structures and Algorithms I" permanentId="taasika-32580">
+  <course externalId="taasika-subject-33756" subject="CS" courseNumber="DSA-I" title="Data Structures and Algorithms I" permanentId="taasika-33756">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32581" subject="CS" courseNumber="DLD" title="Digital Logic Design" permanentId="taasika-32581">
+  <course externalId="taasika-subject-33757" subject="CS" courseNumber="DLD" title="Digital Logic Design" permanentId="taasika-33757">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32582" subject="CS" courseNumber="PPL" title="Principles of Programming Languages" permanentId="taasika-32582">
+  <course externalId="taasika-subject-33758" subject="CS" courseNumber="PPL" title="Principles of Programming Languages" permanentId="taasika-33758">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32585" subject="CS" courseNumber="FCS" title="Feedback Control System" permanentId="taasika-32585">
+  <course externalId="taasika-subject-33761" subject="CS" courseNumber="FCS" title="Feedback Control System" permanentId="taasika-33761">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32587" subject="CS" courseNumber="ODEMC" title="Ordinary Differential Equations &amp; MC" permanentId="taasika-32587">
+  <course externalId="taasika-subject-33763" subject="CS" courseNumber="ODEMC" title="Ordinary Differential Equations &amp; MC" permanentId="taasika-33763">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32588" subject="CS" courseNumber="ODEMC-Tut" title="Ordinary Differential Equations" permanentId="taasika-32588">
+  <course externalId="taasika-subject-33764" subject="CS" courseNumber="ODEMC-Tut" title="Ordinary Differential Equations" permanentId="taasika-33764">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32589" subject="CS" courseNumber="PLEVH" title="Professional Laws Ethics and Values" permanentId="taasika-32589">
+  <course externalId="taasika-subject-33765" subject="CS" courseNumber="PLEVH" title="Professional Laws Ethics and Values" permanentId="taasika-33765">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32590" subject="CS" courseNumber="DTL" title="Development Tools Labrotary" permanentId="taasika-32590">
+  <course externalId="taasika-subject-33766" subject="CS" courseNumber="DTL" title="Development Tools Labrotary" permanentId="taasika-33766">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32593" subject="CS" courseNumber="LAUC-DSY" title="DSY Div 2 Linear algebra and Univariate Calculus" permanentId="taasika-32593">
+  <course externalId="taasika-subject-33769" subject="CS" courseNumber="LAUC-DSY" title="DSY Div 2 Linear algebra and Univariate Calculus" permanentId="taasika-33769">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32594" subject="CS" courseNumber="LAUC-T-DSY" title="Linear algebra and Univariate Calculus" permanentId="taasika-32594">
+  <course externalId="taasika-subject-33770" subject="CS" courseNumber="LAUC-T-DSY" title="Linear algebra and Univariate Calculus" permanentId="taasika-33770">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32595" subject="CS" courseNumber="FOP" title="Foundation of Physics" permanentId="taasika-32595">
+  <course externalId="taasika-subject-33771" subject="CS" courseNumber="FOP" title="Foundation of Physics" permanentId="taasika-33771">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32596" subject="CS" courseNumber="InC" title="Innovation and Creativity" permanentId="taasika-32596">
+  <course externalId="taasika-subject-33772" subject="CS" courseNumber="InC" title="Innovation and Creativity" permanentId="taasika-33772">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32597" subject="CS" courseNumber="FOC" title="Foundation of Cryptography" permanentId="taasika-32597">
+  <course externalId="taasika-subject-33773" subject="CS" courseNumber="FOC" title="Foundation of Cryptography" permanentId="taasika-33773">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32598" subject="MT" courseNumber="MTIS-DE-AN" title="Advancement in Networking" permanentId="taasika-32598">
+  <course externalId="taasika-subject-33774" subject="MT" courseNumber="MTIS-DE-AN" title="Advancement in Networking" permanentId="taasika-33774">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32599" subject="MT" courseNumber="MTIS-DE-ML" title="Machine Learning" permanentId="taasika-32599">
+  <course externalId="taasika-subject-33775" subject="MT" courseNumber="MTIS-DE-ML" title="Machine Learning" permanentId="taasika-33775">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32600" subject="MT" courseNumber="MTIS-DE-BA" title="Business Analytics" permanentId="taasika-32600">
+  <course externalId="taasika-subject-33776" subject="MT" courseNumber="MTIS-DE-BA" title="Business Analytics" permanentId="taasika-33776">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32601" subject="CS" courseNumber="RM" title="Research Methodology and Intellectual Property Rights" permanentId="taasika-32601">
+  <course externalId="taasika-subject-33777" subject="CS" courseNumber="RM" title="Research Methodology" permanentId="taasika-33777">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32602" subject="CS" courseNumber="ETC" title="Effective Technical Communication" permanentId="taasika-32602">
+  <course externalId="taasika-subject-33778" subject="CS" courseNumber="ETC" title="Effective Technical Communication" permanentId="taasika-33778">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32603" subject="CS" courseNumber="AOS" title="Advanced Operating System" permanentId="taasika-32603">
+  <course externalId="taasika-subject-33779" subject="CS" courseNumber="AOS" title="Advanced Operating System" permanentId="taasika-33779">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32604" subject="CS" courseNumber="ITC" title="Information Theory and Coding" permanentId="taasika-32604">
+  <course externalId="taasika-subject-33780" subject="CS" courseNumber="ITC" title="Information Theory and Coding" permanentId="taasika-33780">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32605" subject="CS" courseNumber="CSS" title="Computer Systems Security" permanentId="taasika-32605">
+  <course externalId="taasika-subject-33781" subject="CS" courseNumber="CSS" title="Computer Systems Security" permanentId="taasika-33781">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32609" subject="CS" courseNumber="ACT" title="Algorithms and Complexity Theory" permanentId="taasika-32609">
+  <course externalId="taasika-subject-33785" subject="CS" courseNumber="ACT" title="Algorithms and Complexity Theory" permanentId="taasika-33785">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32610" subject="MT" courseNumber="MTCE-DEDOS" title="MTCE-Distributed Operating System" permanentId="taasika-32610">
+  <course externalId="taasika-subject-33786" subject="MT" courseNumber="MTCE-DEDOS" title="MTCE-Distributed Operating System" permanentId="taasika-33786">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32611" subject="MT" courseNumber="MTCE-DE-AI" title="MTCE-Artificial Intelligence" permanentId="taasika-32611">
+  <course externalId="taasika-subject-33787" subject="MT" courseNumber="MTCE-DE-AI" title="MTCE-Artificial Intelligence" permanentId="taasika-33787">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32612" subject="MT" courseNumber="MTCE-DEAGT" title="MTCE-Advanced Graph Theory" permanentId="taasika-32612">
+  <course externalId="taasika-subject-33788" subject="MT" courseNumber="MTCE-DEAGT" title="MTCE-Advanced Graph Theory" permanentId="taasika-33788">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32613" subject="MT" courseNumber="MTCE-TDB" title="MTCE-Topics in Databases" permanentId="taasika-32613">
+  <course externalId="taasika-subject-33789" subject="MT" courseNumber="MTCE-TDB" title="MTCE-Topics in Databases" permanentId="taasika-33789">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32614" subject="MT" courseNumber="MTCE-ACN" title="MTCE-Advanced Computer Networks" permanentId="taasika-32614">
+  <course externalId="taasika-subject-33790" subject="MT" courseNumber="MTCE-ACN" title="MTCE-Advanced Computer Networks" permanentId="taasika-33790">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32615" subject="MT" courseNumber="MTCE-ACA" title="MTCE-Advanced Computer Architecture" permanentId="taasika-32615">
+  <course externalId="taasika-subject-33791" subject="MT" courseNumber="MTCE-ACA" title="MTCE-Advanced Computer Architecture" permanentId="taasika-33791">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32620" subject="CS" courseNumber="PSQT" title="Probability Statistics and Queuing Theory" permanentId="taasika-32620">
+  <course externalId="taasika-subject-33796" subject="CS" courseNumber="PSQT" title="Probability Statistics and Queuing Theory" permanentId="taasika-33796">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.5"/>
   </course>
-  <course externalId="taasika-subject-32621" subject="CS" courseNumber="AINN" title="Artificial Intelligence and Neural Networks" permanentId="taasika-32621">
+  <course externalId="taasika-subject-33797" subject="CS" courseNumber="AINN" title="Artificial Intelligence and Neural Networks" permanentId="taasika-33797">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.5"/>
   </course>
-  <course externalId="taasika-subject-32623" subject="CS" courseNumber="AIPT-Lab" title="AI Based Programming Tool" permanentId="taasika-32623">
+  <course externalId="taasika-subject-33799" subject="CS" courseNumber="AIPT-Lab" title="AI Based Programming Tool" permanentId="taasika-33799">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32624" subject="CS" courseNumber="KEES" title="Knowledge Engineering and Expert System" permanentId="taasika-32624">
+  <course externalId="taasika-subject-33800" subject="CS" courseNumber="KEES" title="Knowledge Engineering and Expert System" permanentId="taasika-33800">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32625" subject="CS" courseNumber="Env" title="Environmental Studies" permanentId="taasika-32625">
+  <course externalId="taasika-subject-33801" subject="CS" courseNumber="Env" title="Environmental Studies" permanentId="taasika-33801">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32626" subject="CS" courseNumber="HOC-II" title="Humanities Open Course - II" permanentId="taasika-32626">
+  <course externalId="taasika-subject-33802" subject="CS" courseNumber="HOC-II" title="Humanities Open Course - II" permanentId="taasika-33802">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32627" subject="CS" courseNumber="SE-II" title="Software Engineering Mini project - II" permanentId="taasika-32627">
+  <course externalId="taasika-subject-33803" subject="CS" courseNumber="SE-II" title="Software Engineering Mini project - II" permanentId="taasika-33803">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32629" subject="IFC" courseNumber="IOC-I" title="Interdisciplinary Open Course-I" permanentId="taasika-32629">
+  <course externalId="taasika-subject-33805" subject="IFC" courseNumber="IOC-I" title="Interdisciplinary Open Course-I" permanentId="taasika-33805">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32630" subject="CS" courseNumber="DE1-ADS" title="DE1 Advanced Data Structures" permanentId="taasika-32630">
+  <course externalId="taasika-subject-33806" subject="CS" courseNumber="DE1-ADS" title="DE1 Advanced Data Structures" permanentId="taasika-33806">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32632" subject="CS" courseNumber="DE1-WST" title="DE1 Web Systems and Technologies" permanentId="taasika-32632">
+  <course externalId="taasika-subject-33808" subject="CS" courseNumber="DE1-WST" title="DE1 Web Systems and Technologies" permanentId="taasika-33808">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32634" subject="CS" courseNumber="DE1-RTCN" title="DE1 Recent Trends in Computer Networks" permanentId="taasika-32634">
+  <course externalId="taasika-subject-33810" subject="CS" courseNumber="DE1-RTCN" title="DE1 Recent Trends in Computer Networks" permanentId="taasika-33810">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32636" subject="CS" courseNumber="DE1-SP" title="DE1 System Programming" permanentId="taasika-32636">
+  <course externalId="taasika-subject-33812" subject="CS" courseNumber="DE1-SP" title="DE1 System Programming" permanentId="taasika-33812">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32638" subject="CS" courseNumber="OS" title="Operating Systems" permanentId="taasika-32638">
+  <course externalId="taasika-subject-33814" subject="CS" courseNumber="OS" title="Operating Systems" permanentId="taasika-33814">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32640" subject="CS" courseNumber="DAA" title="Design and Analysis of Algorithm" permanentId="taasika-32640">
+  <course externalId="taasika-subject-33816" subject="CS" courseNumber="DAA" title="Design and Analysis of Algorithm" permanentId="taasika-33816">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32641" subject="CS" courseNumber="DSci" title="Data Science" permanentId="taasika-32641">
+  <course externalId="taasika-subject-33817" subject="CS" courseNumber="DSci" title="Data Science" permanentId="taasika-33817">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32642" subject="CS" courseNumber="DSc-iLab" title="Data Science" permanentId="taasika-32642">
+  <course externalId="taasika-subject-33818" subject="CS" courseNumber="DSc-iLab" title="Data Science" permanentId="taasika-33818">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32645" subject="CS" courseNumber="SA" title="DE4-SA: System Administration" permanentId="taasika-32645">
+  <course externalId="taasika-subject-33821" subject="CS" courseNumber="SA" title="DE4-SA: System Administration" permanentId="taasika-33821">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32647" subject="CS" courseNumber="Min2-OOPD" title="Minor2-Object Oriented Programming and Design" permanentId="taasika-32647">
+  <course externalId="taasika-subject-33823" subject="CS" courseNumber="Min2-OOPD" title="Minor2-Object Oriented Programming and Design" permanentId="taasika-33823">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32648" subject="CS" courseNumber="Minor4-DS" title="Minor4-Data Science" permanentId="taasika-32648">
+  <course externalId="taasika-subject-33824" subject="CS" courseNumber="Minor4-DS" title="Minor4-Data Science" permanentId="taasika-33824">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32651" subject="CS" courseNumber="MOOC-1" title="MOOC-1" permanentId="taasika-32651">
+  <course externalId="taasika-subject-33827" subject="CS" courseNumber="MOOC-1" title="MOOC-1" permanentId="taasika-33827">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32652" subject="CS" courseNumber="MOOC-2" title="MOOC-2" permanentId="taasika-32652">
+  <course externalId="taasika-subject-33828" subject="CS" courseNumber="MOOC-2" title="MOOC-2" permanentId="taasika-33828">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32653" subject="CS" courseNumber="DE4-SA" title="BT: DE-IV System Administration" permanentId="taasika-32653">
+  <course externalId="taasika-subject-33829" subject="CS" courseNumber="DE4-SA" title="BT: DE-IV System Administration" permanentId="taasika-33829">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32654" subject="CS" courseNumber="DE4-MAN" title="BT: DE-IV Mobile and Ad-Hoc Networks" permanentId="taasika-32654">
+  <course externalId="taasika-subject-33830" subject="CS" courseNumber="DE4-MAN" title="BT: DE-IV Mobile and Ad-Hoc Networks" permanentId="taasika-33830">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32655" subject="CS" courseNumber="BTP" title="BT: Project" permanentId="taasika-32655">
+  <course externalId="taasika-subject-33831" subject="CS" courseNumber="BTP" title="BT: Project" permanentId="taasika-33831">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="16.0"/>
   </course>
-  <course externalId="taasika-subject-32656" subject="IFC" courseNumber="IOC-AI" title="IOC-Artificial Intelligence" permanentId="taasika-32656">
+  <course externalId="taasika-subject-33832" subject="IFC" courseNumber="IOC-AI" title="IOC-Artificial Intelligence" permanentId="taasika-33832">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32657" subject="IFC" courseNumber="IOC-AI-Lab" title="IOC-Artificial Intelligence" permanentId="taasika-32657">
+  <course externalId="taasika-subject-33833" subject="IFC" courseNumber="IOC-AI-Lab" title="IOC-Artificial Intelligence" permanentId="taasika-33833">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32658" subject="CS" courseNumber="VCPDE" title="Vector Calculus and Partial Differential Equations" permanentId="taasika-32658">
+  <course externalId="taasika-subject-33834" subject="CS" courseNumber="VCPDE" title="Vector Calculus and Partial Differential Equations" permanentId="taasika-33834">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.5"/>
   </course>
-  <course externalId="taasika-subject-32659" subject="CS" courseNumber="BE" title="Biology for Engineers" permanentId="taasika-32659">
+  <course externalId="taasika-subject-33835" subject="CS" courseNumber="BE" title="Biology for Engineers" permanentId="taasika-33835">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32660" subject="CS" courseNumber="RPPOOP" title="Rapid Prototyping Practice Using Object Oriented Programming" permanentId="taasika-32660">
+  <course externalId="taasika-subject-33836" subject="CS" courseNumber="RPPOOP" title="Rapid Prototyping Practice Using Object Oriented Programming" permanentId="taasika-33836">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32661" subject="CS" courseNumber="TOC" title="Theory of Computation" permanentId="taasika-32661">
+  <course externalId="taasika-subject-33837" subject="CS" courseNumber="TOC" title="Theory of Computation" permanentId="taasika-33837">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.5"/>
   </course>
-  <course externalId="taasika-subject-32662" subject="MT" courseNumber="MT" title="Microprocessor Techniques" permanentId="taasika-32662">
+  <course externalId="taasika-subject-33838" subject="MT" courseNumber="MT" title="Microprocessor Techniques" permanentId="taasika-33838">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32663" subject="CS" courseNumber="DSA-II" title="Data Structures and Algorithms  II" permanentId="taasika-32663">
+  <course externalId="taasika-subject-33839" subject="CS" courseNumber="DSA-II" title="Data Structures and Algorithms  II" permanentId="taasika-33839">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32664" subject="CS" courseNumber="DC" title="Data Communication" permanentId="taasika-32664">
+  <course externalId="taasika-subject-33840" subject="CS" courseNumber="DC" title="Data Communication" permanentId="taasika-33840">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32670" subject="CS" courseNumber="MVCDE" title="Multivariate Calculus and Differential  Equations" permanentId="taasika-32670">
+  <course externalId="taasika-subject-33846" subject="CS" courseNumber="MVCDE" title="Multivariate Calculus and Differential  Equations" permanentId="taasika-33846">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="5.5"/>
   </course>
-  <course externalId="taasika-subject-32672" subject="CS" courseNumber="AAI" title="Advanced Artificial Intelligence" permanentId="taasika-32672">
+  <course externalId="taasika-subject-33848" subject="CS" courseNumber="AAI" title="Advanced Artificial Intelligence" permanentId="taasika-33848">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32673" subject="MT" courseNumber="PSEC3-DL" title="PSEC3-Deep Learning" permanentId="taasika-32673">
+  <course externalId="taasika-subject-33849" subject="MT" courseNumber="PSEC3-DL" title="PSEC3-Deep Learning" permanentId="taasika-33849">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32674" subject="IFC" courseNumber="IOC-DS" title="IOC-Data Structures" permanentId="taasika-32674">
+  <course externalId="taasika-subject-33850" subject="IFC" courseNumber="IOC-DS" title="IOC-Data Structures" permanentId="taasika-33850">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32675" subject="CS" courseNumber="DMML" title="Data Mining and Machine Learning" permanentId="taasika-32675">
+  <course externalId="taasika-subject-33851" subject="CS" courseNumber="DMML" title="Data Mining and Machine Learning" permanentId="taasika-33851">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32676" subject="CS" courseNumber="SIC" title="Security in Computing" permanentId="taasika-32676">
+  <course externalId="taasika-subject-33852" subject="CS" courseNumber="SIC" title="Security in Computing" permanentId="taasika-33852">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32677" subject="CS" courseNumber="ES" title="Embedded Systems" permanentId="taasika-32677">
+  <course externalId="taasika-subject-33853" subject="CS" courseNumber="ES" title="Embedded Systems" permanentId="taasika-33853">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32678" subject="MT" courseNumber="PSEC2-CCV" title="PSEC2-Cloud Computing and Virtualization" permanentId="taasika-32678">
+  <course externalId="taasika-subject-33854" subject="MT" courseNumber="PSEC2-CCV" title="PSEC2-Cloud Computing and Virtualization" permanentId="taasika-33854">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32679" subject="MT" courseNumber="PSEC2-NLP" title="PSEC2-Natural Language Processing" permanentId="taasika-32679">
+  <course externalId="taasika-subject-33855" subject="MT" courseNumber="PSEC2-NLP" title="PSEC2-Natural Language Processing" permanentId="taasika-33855">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32680" subject="MT" courseNumber="PSEC3-MT" title="PSEC3-Multicore Technology" permanentId="taasika-32680">
+  <course externalId="taasika-subject-33856" subject="MT" courseNumber="PSEC3-MT" title="PSEC3-Multicore Technology" permanentId="taasika-33856">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32681" subject="MT" courseNumber="MT-NS" title="MTech Network Security" permanentId="taasika-32681">
+  <course externalId="taasika-subject-33857" subject="MT" courseNumber="MT-NS" title="MTech Network Security" permanentId="taasika-33857">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32682" subject="MT" courseNumber="MT-WNS" title="MTech Wireless Networks" permanentId="taasika-32682">
+  <course externalId="taasika-subject-33858" subject="MT" courseNumber="MT-WNS" title="MTech Wireless Networks" permanentId="taasika-33858">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32683" subject="MT" courseNumber="MT-DFDR" title="MTech Digital Forensics and Data Recovery" permanentId="taasika-32683">
+  <course externalId="taasika-subject-33859" subject="MT" courseNumber="MT-DFDR" title="MTech Digital Forensics and Data Recovery" permanentId="taasika-33859">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32684" subject="MT" courseNumber="PSEC2-CCS" title="PSEC2- Cloud Computing and Security" permanentId="taasika-32684">
+  <course externalId="taasika-subject-33860" subject="MT" courseNumber="PSEC2-CCS" title="PSEC2- Cloud Computing and Security" permanentId="taasika-33860">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32685" subject="MT" courseNumber="PSEC3-WS" title="PSEC3- Web Security" permanentId="taasika-32685">
+  <course externalId="taasika-subject-33861" subject="MT" courseNumber="PSEC3-WS" title="PSEC3- Web Security" permanentId="taasika-33861">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32686" subject="CS" courseNumber="MLBDA" title="Machine Learning and Big Data Analytics" permanentId="taasika-32686">
+  <course externalId="taasika-subject-33862" subject="CS" courseNumber="MLBDA" title="Machine Learning and Big Data Analytics" permanentId="taasika-33862">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.5"/>
   </course>
-  <course externalId="taasika-subject-32693" subject="CS" courseNumber="DS" title="Data Structures" permanentId="taasika-32693">
+  <course externalId="taasika-subject-33869" subject="CS" courseNumber="DS" title="Data Structures" permanentId="taasika-33869">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32695" subject="MT" courseNumber="MTDE2-AA" title="MTDE2-Advanced Algorithms" permanentId="taasika-32695">
+  <course externalId="taasika-subject-33871" subject="MT" courseNumber="MTDE2-AA" title="MTDE2-Advanced Algorithms" permanentId="taasika-33871">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32696" subject="MT" courseNumber="MTDE2-DA" title="MTDE2-Data Analytics" permanentId="taasika-32696">
+  <course externalId="taasika-subject-33872" subject="MT" courseNumber="MTDE2-DA" title="MTDE2-Data Analytics" permanentId="taasika-33872">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32697" subject="MT" courseNumber="MTDE3-BI" title="MTDE3-BIoinformatics" permanentId="taasika-32697">
+  <course externalId="taasika-subject-33873" subject="MT" courseNumber="MTDE3-BI" title="MTDE3-BIoinformatics" permanentId="taasika-33873">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32698" subject="MT" courseNumber="MTDE3-CC" title="MTDE3-Advanced Compiler Construction" permanentId="taasika-32698">
+  <course externalId="taasika-subject-33874" subject="MT" courseNumber="MTDE3-CC" title="MTDE3-Advanced Compiler Construction" permanentId="taasika-33874">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32699" subject="CS" courseNumber="OOPD" title="Object Oriented Programming and Design" permanentId="taasika-32699">
+  <course externalId="taasika-subject-33875" subject="CS" courseNumber="OOPD" title="Object Oriented Programming and Design" permanentId="taasika-33875">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32701" subject="CS" courseNumber="OE-FOS" title="OE Fundamentals of Operating Systems" permanentId="taasika-32701">
+  <course externalId="taasika-subject-33877" subject="CS" courseNumber="OE-FOS" title="OE Fundamentals of Operating Systems" permanentId="taasika-33877">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32704" subject="CS" courseNumber="DE2-BCT" title="DE II - BlockChain Technologies" permanentId="taasika-32704">
+  <course externalId="taasika-subject-33880" subject="CS" courseNumber="DE2-BCT" title="DE II - BlockChain Technologies" permanentId="taasika-33880">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32706" subject="CS" courseNumber="DE2-DSci" title="DE II - Data Science" permanentId="taasika-32706">
+  <course externalId="taasika-subject-33882" subject="CS" courseNumber="DE2-DSci" title="DE II - Data Science" permanentId="taasika-33882">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32708" subject="CS" courseNumber="DE2-PP" title="DE II - POSIX Programming" permanentId="taasika-32708">
+  <course externalId="taasika-subject-33884" subject="CS" courseNumber="DE2-PP" title="DE II - POSIX Programming" permanentId="taasika-33884">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32710" subject="CS" courseNumber="DE2-FSD" title="DE II - Full stack Development" permanentId="taasika-32710">
+  <course externalId="taasika-subject-33886" subject="CS" courseNumber="DE2-FSD" title="DE II - Full stack Development" permanentId="taasika-33886">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32712" subject="CS" courseNumber="DE2-ASP" title="DE II - Advanced System Programming" permanentId="taasika-32712">
+  <course externalId="taasika-subject-33888" subject="CS" courseNumber="DE2-ASP" title="DE II - Advanced System Programming" permanentId="taasika-33888">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32713" subject="CS" courseNumber="MDM-FDMS" title="MDM - CS - Fundamentals of Database Management Systems" permanentId="taasika-32713">
+  <course externalId="taasika-subject-33889" subject="CS" courseNumber="MDM-FDMS" title="MDM - CS - Fundamentals of Database Management Systems" permanentId="taasika-33889">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32714" subject="CS" courseNumber="DE4-IBCS" title="Introduction of Blockchains Cryptocurrencies and Smart Contracts" permanentId="taasika-32714">
+  <course externalId="taasika-subject-33890" subject="CS" courseNumber="DE4-IBCS" title="Introduction of Blockchains Cryptocurrencies and Smart Contracts" permanentId="taasika-33890">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32716" subject="CS" courseNumber="DE4-GIS" title="DE4-GIS: Geographical Information Systems" permanentId="taasika-32716">
+  <course externalId="taasika-subject-33892" subject="CS" courseNumber="DE4-GIS" title="DE4-GIS: Geographical Information Systems" permanentId="taasika-33892">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32718" subject="CS" courseNumber="DE4-GPU" title="DE4: GPU Computing" permanentId="taasika-32718">
+  <course externalId="taasika-subject-33894" subject="CS" courseNumber="DE4-GPU" title="DE4: GPU Computing" permanentId="taasika-33894">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32721" subject="CS" courseNumber="OE-DS" title="OE:Data Structures" permanentId="taasika-32721">
+  <course externalId="taasika-subject-33897" subject="CS" courseNumber="OE-DS" title="OE:Data Structures" permanentId="taasika-33897">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32722" subject="MT" courseNumber="PSEC2-BT" title="PSEC2- Blockchain Technology" permanentId="taasika-32722">
+  <course externalId="taasika-subject-33898" subject="MT" courseNumber="PSEC2-BT" title="PSEC2- Blockchain Technology" permanentId="taasika-33898">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32723" subject="MT" courseNumber="PSEC3-ITS" title="PSEC3- Internet of Things and Security" permanentId="taasika-32723">
+  <course externalId="taasika-subject-33899" subject="MT" courseNumber="PSEC3-ITS" title="PSEC3- Internet of Things and Security" permanentId="taasika-33899">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32724" subject="MT" courseNumber="MT-DL" title="Deep Learning" permanentId="taasika-32724">
+  <course externalId="taasika-subject-33900" subject="MT" courseNumber="MT-DL" title="Deep Learning" permanentId="taasika-33900">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32726" subject="MT" courseNumber="MT-GAN" title="Generative Adversarial Network" permanentId="taasika-32726">
+  <course externalId="taasika-subject-33902" subject="MT" courseNumber="MT-GAN" title="Generative Adversarial Network" permanentId="taasika-33902">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32728" subject="MT" courseNumber="MT-OT" title="Optimization Techniques" permanentId="taasika-32728">
+  <course externalId="taasika-subject-33904" subject="MT" courseNumber="MT-OT" title="Optimization Techniques" permanentId="taasika-33904">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32730" subject="MT" courseNumber="PSEC2-EAI" title="PSEC2- Explainable Artificial Intelligence" permanentId="taasika-32730">
+  <course externalId="taasika-subject-33906" subject="MT" courseNumber="PSEC2-EAI" title="PSEC2- Explainable Artificial Intelligence" permanentId="taasika-33906">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32731" subject="MT" courseNumber="PSEC2-MLPS" title="PSEC2- ML-OPS" permanentId="taasika-32731">
+  <course externalId="taasika-subject-33907" subject="MT" courseNumber="PSEC2-MLPS" title="PSEC2- ML-OPS" permanentId="taasika-33907">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32732" subject="MT" courseNumber="PSEC3-GNN" title="PSEC3- Graph Neural Network" permanentId="taasika-32732">
+  <course externalId="taasika-subject-33908" subject="MT" courseNumber="PSEC3-GNN" title="PSEC3- Graph Neural Network" permanentId="taasika-33908">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32733" subject="MT" courseNumber="MT-NLP" title="PSEC3- Natural Language Processing" permanentId="taasika-32733">
+  <course externalId="taasika-subject-33909" subject="MT" courseNumber="MT-NLP" title="PSEC3- Natural Language Processing" permanentId="taasika-33909">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32734" subject="MT" courseNumber="MT-BDAAS" title="Big Data Analytics with Apache Spark" permanentId="taasika-32734">
+  <course externalId="taasika-subject-33910" subject="MT" courseNumber="MT-BDAAS" title="Big Data Analytics with Apache Spark" permanentId="taasika-33910">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32736" subject="MT" courseNumber="MT-AMLD" title="Advanced Machine Learning and Deep" permanentId="taasika-32736">
+  <course externalId="taasika-subject-33912" subject="MT" courseNumber="MT-AMLD" title="Advanced Machine Learning and Deep" permanentId="taasika-33912">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32738" subject="MT" courseNumber="MT-MLOS" title="ML Ops and Systems" permanentId="taasika-32738">
+  <course externalId="taasika-subject-33914" subject="MT" courseNumber="MT-MLOS" title="ML Ops and Systems" permanentId="taasika-33914">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
   </course>
-  <course externalId="taasika-subject-32740" subject="MT" courseNumber="PSEC2-CV" title="PSEC2- Computer Vision" permanentId="taasika-32740">
+  <course externalId="taasika-subject-33916" subject="MT" courseNumber="PSEC2-CV" title="PSEC2- Computer Vision" permanentId="taasika-33916">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32741" subject="MT" courseNumber="PSEC2-MTRP" title="PSEC2- R Programming" permanentId="taasika-32741">
+  <course externalId="taasika-subject-33917" subject="MT" courseNumber="PSEC2-MTRP" title="PSEC2- R Programming" permanentId="taasika-33917">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32742" subject="MT" courseNumber="PSEC3-GAN" title="PSEC3- Generative Adversarial Network" permanentId="taasika-32742">
+  <course externalId="taasika-subject-33918" subject="MT" courseNumber="PSEC3-GAN" title="PSEC3- Generative Adversarial Network" permanentId="taasika-33918">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
-  <course externalId="taasika-subject-32743" subject="MT" courseNumber="MT-ETCSA" title="MTech Effective Technical Communication Skills" permanentId="taasika-32743">
+  <course externalId="taasika-subject-33919" subject="MT" courseNumber="MT-ETCSA" title="MTech Effective Technical Communication Skills" permanentId="taasika-33919">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32744" subject="MT" courseNumber="MT-LL" title="MTech Liberal Learning Course" permanentId="taasika-32744">
+  <course externalId="taasika-subject-33920" subject="MT" courseNumber="MT-LL" title="MTech Liberal Learning Course" permanentId="taasika-33920">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
   </course>
-  <course externalId="taasika-subject-32745" subject="CS" courseNumber="FY-Reserve" title="FY Reserved Subject" permanentId="taasika-32745">
+  <course externalId="taasika-subject-33921" subject="CS" courseNumber="FY-Reserve" title="FY Reserved Subject" permanentId="taasika-33921">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="5.0"/>
   </course>
-  <course externalId="taasika-subject-32746" subject="CS" courseNumber="OE-FA" title="OE Fundamentals of Algorithms" permanentId="taasika-32746">
+  <course externalId="taasika-subject-33922" subject="CS" courseNumber="OE-FA" title="OE Fundamentals of Algorithms" permanentId="taasika-33922">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32747" subject="CS" courseNumber="DS-FY" title="Discrete Structures(FY)" permanentId="taasika-32747">
+  <course externalId="taasika-subject-33923" subject="CS" courseNumber="DS-FY" title="Discrete Structures(FY)" permanentId="taasika-33923">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.5"/>
   </course>
-  <course externalId="taasika-subject-32749" subject="CS" courseNumber="AIMA" title="AI for Multidisciplinary Applications(FY)" permanentId="taasika-32749">
+  <course externalId="taasika-subject-33925" subject="CS" courseNumber="AIMA" title="AI for Multidisciplinary Applications(FY)" permanentId="taasika-33925">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
   </course>
-  <course externalId="taasika-subject-32750" subject="CS" courseNumber="PP-FY" title="Python Programming (FY)" permanentId="taasika-32750">
+  <course externalId="taasika-subject-33926" subject="CS" courseNumber="PP-FY" title="Python Programming (FY)" permanentId="taasika-33926">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32752" subject="CS" courseNumber="WD-FY" title="Web Design(FY)" permanentId="taasika-32752">
+  <course externalId="taasika-subject-33928" subject="CS" courseNumber="WD-FY" title="Web Design(FY)" permanentId="taasika-33928">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32754" subject="CS" courseNumber="PPS-FY" title="Programming for Problem Solving (FY)" permanentId="taasika-32754">
+  <course externalId="taasika-subject-33930" subject="CS" courseNumber="PPS-FY" title="Programming for Problem Solving (FY)" permanentId="taasika-33930">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
-  <course externalId="taasika-subject-32758" subject="CS" courseNumber="Eco" title="Economics (SY)" permanentId="taasika-32758">
+  <course externalId="taasika-subject-33934" subject="CS" courseNumber="Eco" title="Economics (SY)" permanentId="taasika-33934">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
+  </course>
+  <course externalId="taasika-subject-33935" subject="CS" courseNumber="CS-DSY" title="Communication Skills (DSY)" permanentId="taasika-33935">
+    <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
+  </course>
+  <course externalId="taasika-subject-33936" subject="CS" courseNumber="MDM-FAIML" title="MDM-Foundations in AI and ML" permanentId="taasika-33936">
+    <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
+  </course>
+  <course externalId="taasika-subject-33937" subject="CS" courseNumber="MDM-MQM" title="MDM-Mathematics of Quantum Mechanics" permanentId="taasika-33937">
+    <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="3.0"/>
+  </course>
+  <course externalId="taasika-subject-33938" subject="CS" courseNumber="DT" title="Design Thinking" permanentId="taasika-33938">
+    <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.0"/>
+  </course>
+  <course externalId="taasika-subject-33939" subject="CS" courseNumber="DS-SY" title="Discrete Structures(SY)" permanentId="taasika-33939">
+    <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
+  </course>
+  <course externalId="taasika-subject-33940" subject="CS" courseNumber="DS-TY" title="Discrete Structures(TY)" permanentId="taasika-33940">
+    <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
+  </course>
+  <course externalId="taasika-subject-33941" subject="CS" courseNumber="DS-DSY" title="Discrete Structures (DSY)" permanentId="taasika-33941">
+    <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="1.5"/>
   </course>
   <course externalId="synthetic-mdm-block" subject="CS" courseNumber="MDM-BLOCK" title="Multi-Disciplinary Minor Room Block" permanentId="synthetic-mdm-block">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>

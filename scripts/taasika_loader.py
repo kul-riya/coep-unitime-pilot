@@ -13,11 +13,20 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Optional
 
 
+_DB_DIR = Path(__file__).resolve().parent.parent / "taasika-db"
 SQL_PATH_DEFAULT = (
-    Path(__file__).resolve().parent.parent
-    / "taasika2-foss-26jan26.sql"
-    / "taasika2-foss-26jan26.sql"
+    (_DB_DIR / "taasika3.sql")
+    if (_DB_DIR / "taasika3.sql").exists()
+    else (_DB_DIR / "taasika2-foss-26jan26.sql")
 )
+
+GLOBAL_SQL_PATH: Optional[Path] = None
+GLOBAL_SNAPSHOT_ID: Optional[int] = None
+
+def set_global_config(sql_path: Optional[Path], snapshot_id: Optional[int]) -> None:
+    global GLOBAL_SQL_PATH, GLOBAL_SNAPSHOT_ID
+    GLOBAL_SQL_PATH = sql_path
+    GLOBAL_SNAPSHOT_ID = snapshot_id
 
 
 TABLE_COLUMNS: Dict[str, List[str]] = {
@@ -156,11 +165,14 @@ class TaasikaData:
         return rows
 
 
-def load(sql_path: Path = SQL_PATH_DEFAULT, snapshot_id: int = 240, tables: Optional[Iterable[str]] = None) -> TaasikaData:
+def load(sql_path: Optional[Path] = None, snapshot_id: Optional[int] = None, tables: Optional[Iterable[str]] = None) -> TaasikaData:
+    actual_sql_path = GLOBAL_SQL_PATH if GLOBAL_SQL_PATH is not None else (sql_path if sql_path is not None else SQL_PATH_DEFAULT)
+    actual_snapshot_id = GLOBAL_SNAPSHOT_ID if GLOBAL_SNAPSHOT_ID is not None else (snapshot_id if snapshot_id is not None else 240)
+
     wanted = set(tables) if tables else set(TABLE_COLUMNS)
     parsed: Dict[str, List[dict]] = {t: [] for t in wanted}
 
-    with sql_path.open("r", encoding="utf-8", errors="replace") as f:
+    with actual_sql_path.open("r", encoding="utf-8", errors="replace") as f:
         buf: List[str] = []
         for line in f:
             if not buf and not line.startswith("INSERT INTO `"):
@@ -187,7 +199,7 @@ def load(sql_path: Path = SQL_PATH_DEFAULT, snapshot_id: int = 240, tables: Opti
                     row = {col: _coerce(val) for col, val in zip(cols, fields)}
                     parsed[table].append(row)
 
-    return TaasikaData(snapshot_id=snapshot_id, tables=parsed)
+    return TaasikaData(snapshot_id=actual_snapshot_id, tables=parsed)
 
 
 if __name__ == "__main__":

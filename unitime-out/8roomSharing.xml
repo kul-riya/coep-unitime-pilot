@@ -5,272 +5,278 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<roomSharing campus="COEP" year="2026" term="Spr6" created="Generated from Taasika snapshot 240" timeFormat="HHmm">
-  <location id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06">
+<roomSharing campus="COEP" year="2026" term="Spr7" created="Generated from Taasika snapshot 240" timeFormat="HHmm">
+  <location id="taasika-room-9199" building="AC" roomNbr="AC-202NC-06">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07">
+  <location id="taasika-room-9200" building="AC" roomNbr="AC-203NC-07">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8954" building="ENTCX" roomNbr="SH">
+  <location id="taasika-room-9201" building="ENTCX" roomNbr="SH">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8955" building="CSED" roomNbr="DBMSL">
+  <location id="taasika-room-9202" building="CSED" roomNbr="DBMSL">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8956" building="CSED" roomNbr="FOSS1">
+  <location id="taasika-room-9203" building="CSED" roomNbr="FOSS1">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8957" building="CSED" roomNbr="FOSS2">
+  <location id="taasika-room-9204" building="CSED" roomNbr="FOSS2">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8958" building="CSED" roomNbr="GML">
+  <location id="taasika-room-9205" building="CSED" roomNbr="GML">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8959" building="CSED" roomNbr="DSL">
+  <location id="taasika-room-9206" building="CSED" roomNbr="DSL">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8960" building="CSED" roomNbr="PL">
+  <location id="taasika-room-9207" building="CSED" roomNbr="PL">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8961" building="CSED" roomNbr="ASL">
+  <location id="taasika-room-9208" building="CSED" roomNbr="ASL">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8962" building="CSED" roomNbr="ISL">
+  <location id="taasika-room-9209" building="CSED" roomNbr="ISL">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8963" building="CSED" roomNbr="Cogni-1">
+  <location id="taasika-room-9210" building="CSED" roomNbr="Cogni-1">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8964" building="CSED" roomNbr="Cogni-2">
+  <location id="taasika-room-9211" building="CSED" roomNbr="Cogni-2">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8965" building="CSED" roomNbr="Cogni-3">
+  <location id="taasika-room-9212" building="CSED" roomNbr="Cogni-3">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8966" building="CSED" roomNbr="Cogni-34">
+  <location id="taasika-room-9213" building="CSED" roomNbr="Cogni-34">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8967" building="CSED" roomNbr="Cogni-4">
+  <location id="taasika-room-9214" building="CSED" roomNbr="Cogni-4">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8968" building="CSED" roomNbr="Cogni-5">
+  <location id="taasika-room-9215" building="CSED" roomNbr="Cogni-5">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8969" building="CSED" roomNbr="DML">
+  <location id="taasika-room-9216" building="CSED" roomNbr="DML">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8970" building="AC" roomNbr="NC-03">
+  <location id="taasika-room-9217" building="AC" roomNbr="NC-03">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05">
+  <location id="taasika-room-9218" building="AC" roomNbr="AC-201NC-05">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8972" building="AC" roomNbr="NC-08">
+  <location id="taasika-room-9219" building="AC" roomNbr="NC-08">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8973" building="AC" roomNbr="NC-04">
+  <location id="taasika-room-9220" building="AC" roomNbr="NC-04">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8974" building="AC" roomNbr="NC-01">
+  <location id="taasika-room-9221" building="AC" roomNbr="NC-01">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8975" building="AC" roomNbr="NC-02">
+  <location id="taasika-room-9222" building="AC" roomNbr="NC-02">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8976" building="ONL" roomNbr="online1">
+  <location id="taasika-room-9223" building="ONL" roomNbr="online1">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8977" building="ONL" roomNbr="online2">
+  <location id="taasika-room-9224" building="ONL" roomNbr="online2">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8978" building="ONL" roomNbr="Online3">
+  <location id="taasika-room-9225" building="ONL" roomNbr="Online3">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8979" building="NCSE" roomNbr="NC27">
+  <location id="taasika-room-9226" building="NCSE" roomNbr="NC27">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8980" building="NCSE" roomNbr="NC28">
+  <location id="taasika-room-9227" building="NCSE" roomNbr="NC28">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8981" building="BHAU" roomNbr="Bhau1">
+  <location id="taasika-room-9228" building="BHAU" roomNbr="Bhau1">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8982" building="BHAU" roomNbr="Bhau2">
+  <location id="taasika-room-9229" building="BHAU" roomNbr="Bhau2">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8983" building="AC" roomNbr="NC-09">
+  <location id="taasika-room-9230" building="AC" roomNbr="NC-09">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8984" building="AC" roomNbr="NC-10">
+  <location id="taasika-room-9231" building="AC" roomNbr="NC-10">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8985" building="AC" roomNbr="NC-11">
+  <location id="taasika-room-9232" building="AC" roomNbr="NC-11">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8986" building="AC" roomNbr="NC-12">
+  <location id="taasika-room-9233" building="AC" roomNbr="NC-12">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8987" building="AC" roomNbr="NC-13">
+  <location id="taasika-room-9234" building="AC" roomNbr="NC-13">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8988" building="AC" roomNbr="NC-14">
+  <location id="taasika-room-9235" building="AC" roomNbr="NC-14">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8989" building="ENTCX" roomNbr="CET-A">
+  <location id="taasika-room-9236" building="ENTCX" roomNbr="CET-A">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8990" building="ENTCX" roomNbr="CET-B">
+  <location id="taasika-room-9237" building="ENTCX" roomNbr="CET-B">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8991" building="ENTCX" roomNbr="CET-C">
+  <location id="taasika-room-9238" building="ENTCX" roomNbr="CET-C">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8992" building="ENTCX" roomNbr="CET-D">
+  <location id="taasika-room-9239" building="ENTCX" roomNbr="CET-D">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8993" building="UNAV" roomNbr="Unavail-A">
+  <location id="taasika-room-9240" building="UNAV" roomNbr="Unavail-A">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8994" building="UNAV" roomNbr="Unavail-B">
+  <location id="taasika-room-9241" building="UNAV" roomNbr="Unavail-B">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8995" building="UNAV" roomNbr="Unavail-C">
+  <location id="taasika-room-9242" building="UNAV" roomNbr="Unavail-C">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
     </sharing>
   </location>
-  <location id="taasika-room-8996" building="UNAV" roomNbr="Unavail-D">
+  <location id="taasika-room-9243" building="UNAV" roomNbr="Unavail-D">
+    <department code="0101" control="true"/>
+    <sharing>
+      <unavailable days="SSu" start="0830" end="1830"/>
+    </sharing>
+  </location>
+  <location id="taasika-room-9248" building="CSED" roomNbr="MiniAudi">
     <department code="0101" control="true"/>
     <sharing>
       <unavailable days="SSu" start="0830" end="1830"/>
