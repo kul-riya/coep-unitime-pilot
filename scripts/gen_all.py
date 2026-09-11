@@ -48,7 +48,7 @@ GENERATORS = [
 ]
 
 
-def run_pipeline(term: str = DEFAULT_TERM) -> int:
+def run_pipeline(term: str = DEFAULT_TERM, room_prefs: bool = True) -> int:
     start_time = time.time()
     print("=" * 70)
     print(f"  COEP UniTime XML Generation Pipeline (Files 1 to 16, Term: {term})")
@@ -57,7 +57,10 @@ def run_pipeline(term: str = DEFAULT_TERM) -> int:
     for step_num, (desc, func) in enumerate(GENERATORS, start=1):
         print(f"\n[{step_num}/{len(GENERATORS)}] Generating {desc} (term={term})...")
         try:
-            func(term=term)
+            if func == gen_preferences.main:
+                func(term=term, room_prefs=room_prefs)
+            else:
+                func(term=term)
         except Exception as e:
             print(f"ERROR during {desc}: {e}", file=sys.stderr)
             import traceback
@@ -97,6 +100,14 @@ def main() -> int:
         "--term",
         default=DEFAULT_TERM,
         help="UniTime academic term name (e.g. Spr, Spr6). Default: %(default)s",
+    )
+    parser.add_argument(
+        "--room-preference",
+        "--room-prefs",
+        dest="room_prefs",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Include room preferences in 13preferences.xml (default: %(default)s)",
     )
     parser.add_argument(
         "--sql",
@@ -171,7 +182,7 @@ def main() -> int:
     print(f"\nConfiguring generator to use {sql_path.name} (Snapshot {snapshot_id})")
     taasika_loader.set_global_config(sql_path, snapshot_id)
 
-    return run_pipeline(term=args.term)
+    return run_pipeline(term=args.term, room_prefs=args.room_prefs)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,204 @@
+{
+  "summary": {
+    "classes_in_offerings": 300,
+    "classes_in_solution": 261,
+    "hard_feasibility_score": 94.28,
+    "hard_checks": 4489,
+    "hard_failures": 598,
+    "preference_score": 22.97,
+    "unav_onl_assignments": 15,
+    "unav_onl_pct": 5.75,
+    "instructor_conflicts": 0,
+    "instructor_lunch_violations": 0,
+    "room_conflicts": 0,
+    "student_conflict_pairs": 1419,
+    "students_with_conflict": 500,
+    "students_with_lunch_conflict": 56,
+    "students_total": 1290,
+    "travel_violations": 0,
+    "back_to_back_pct": 23.78
+  },
+  "hard": {
+    "coverage": {
+      "name": "coverage",
+      "checked": 300,
+      "passed": 260,
+      "failed": 40,
+      "rate_pct": 86.67,
+      "examples": [
+        "missing assignment for RM Lec 1",
+        "missing assignment for RM Lec 2",
+        "missing assignment for PP-FY Lab 25",
+        "missing assignment for PP-FY Lab 26",
+        "missing assignment for PP-FY Lab 27",
+        "missing assignment for PP-FY Lab 28",
+        "missing assignment for PP-FY Lab 29",
+        "missing assignment for PP-FY Lab 30"
+      ]
+    },
+    "time_pattern_fidelity": {
+      "name": "time_pattern_fidelity",
+      "checked": 260,
+      "passed": 258,
+      "failed": 2,
+      "rate_pct": 99.23,
+      "examples": [
+        "CoI Lec 1: need 1 x 60, got 2x60min (ThF 9:30a-10:30a)",
+        "CoI Lec 2: need 1 x 60, got 2x60min (TTh 12:30p-1:30p)"
+      ]
+    },
+    "date_pattern": {
+      "name": "date_pattern",
+      "checked": 260,
+      "passed": 260,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "room_capacity": {
+      "name": "room_capacity",
+      "checked": 260,
+      "passed": 260,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "lunch_weekend": {
+      "name": "lunch_weekend",
+      "checked": 260,
+      "passed": 260,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "instructor_lunch_breaks": {
+      "name": "instructor_lunch_breaks",
+      "checked": 47,
+      "passed": 47,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "student_lunch_breaks": {
+      "name": "student_lunch_breaks",
+      "checked": 1290,
+      "passed": 1234,
+      "failed": 56,
+      "rate_pct": 95.66,
+      "examples": [
+        "610203085 on Th: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203086 on Th: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203087 on Th: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203088 on Th: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203089 on Th: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203090 on Th: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203091 on Th: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)",
+        "610203092 on Th: no 60m lunch break in 11:30a-3:30p (busy: 11:30a-3:30p)"
+      ]
+    },
+    "instructor_double_booking": {
+      "name": "instructor_double_booking",
+      "checked": 261,
+      "passed": 261,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "room_double_booking": {
+      "name": "room_double_booking",
+      "checked": 261,
+      "passed": 261,
+      "failed": 0,
+      "rate_pct": 100.0,
+      "examples": []
+    },
+    "student_conflicts": {
+      "name": "student_conflicts",
+      "checked": 1290,
+      "passed": 790,
+      "failed": 500,
+      "rate_pct": 61.24,
+      "examples": [
+        "610103001 on W: CS WD-FY Lab 1 overlaps CS DS-FY Rec 1",
+        "610103001 on F: CS PP-FY Lab 1 overlaps CS FY-Reserve Lec 1",
+        "610103002 on M: CS DS-FY Lec 1 overlaps CS FY-Reserve Lec 2",
+        "610103002 on T: CS DS-FY Lec 1 overlaps CS FY-Reserve Lec 2",
+        "610103002 on Th: CS DS-FY Lec 1 overlaps CS FY-Reserve Lec 2",
+        "610103002 on W: CS WD-FY Lab 1 overlaps CS DS-FY Rec 1",
+        "610103003 on M: CS AIMA Lec 3 overlaps CS FY-Reserve Lec 3",
+        "610103003 on T: CS AIMA Lec 3 overlaps CS FY-Reserve Lec 3"
+      ]
+    }
+  },
+  "preference": {
+    "room_preference": {
+      "name": "room_preference",
+      "checked": 259,
+      "passed": 119,
+      "failed": 140,
+      "rate_pct": 45.95,
+      "examples": [
+        "CoI Lec 1: AC NC-10 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CoI Lec 2: AC NC-10 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CO Lec 1: AC NC-10 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "CO Lec 2: AC NC-10 not in preferred ['AC AC-203NC-07', 'AC AC-201NC-05']",
+        "AI Lec 1: AC NC-10 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "AI Lec 2: AC NC-09 not in preferred ['AC AC-203NC-07', 'AC AC-202NC-06']",
+        "AI Lab 1: AC AC-203NC-07 not in preferred ['CSED ISL', 'CSED PL']",
+        "AI Lab 2: AC NC-08 not in preferred ['CSED ISL', 'CSED PL']"
+      ]
+    },
+    "instructor_identity": {
+      "name": "instructor_identity",
+      "checked": 259,
+      "passed": 0,
+      "failed": 259,
+      "rate_pct": 0.0,
+      "examples": [
+        "CoI Lec 1: expected Teacher1, C (taasika-teacher-19525), got Constitution Teacher1",
+        "CoI Lec 2: expected Teacher1, C (taasika-teacher-19525), got Constitution Teacher1",
+        "CO Lec 1: expected Joshi, A (taasika-teacher-19421), got Amit Joshi",
+        "CO Lec 2: expected Joshi, A (taasika-teacher-19421), got Amit Joshi",
+        "AI Lec 1: expected Khobragade, A (taasika-teacher-19446), got Vahida Attar",
+        "AI Lec 2: expected Khobragade, A (taasika-teacher-19446), got Anish Khobragade",
+        "AI Lab 1: expected Khobragade, A (taasika-teacher-19446), got Vahida Attar",
+        "AI Lab 2: expected Mudhe, A (taasika-teacher-19520), got Vahida Attar"
+      ]
+    },
+    "unav_onl": {
+      "count": 15,
+      "pct": 5.75,
+      "total_assignments": 261
+    }
+  },
+  "efficiency": {
+    "instructor_load": {
+      "instructors": 47,
+      "mean_minutes": 713.6,
+      "stdev_minutes": 302.2,
+      "max_minutes": 1380,
+      "min_minutes": 180
+    },
+    "travel_violations": 0,
+    "travel_examples": [],
+    "back_to_back_pct": 23.78,
+    "consecutive_pairs": 164,
+    "adjacent_pairs": 39,
+    "slot_spread": {
+      "early_pct": 20.54,
+      "mid_pct": 68.92,
+      "late_pct": 10.54,
+      "early": 76,
+      "mid": 255,
+      "late": 39,
+      "total_meetings": 370
+    }
+  },
+  "meta": {
+    "csv": "solutions/MacMini_Spr6.csv",
+    "data_dir": "/Users/mihir/Developer/COEP/coep-unitime-pilot/unitime-out",
+    "rooms_indexed": 46,
+    "staff": 119,
+    "enrolled_students": 1290
+  }
+}

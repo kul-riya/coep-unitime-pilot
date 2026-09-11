@@ -131,6 +131,7 @@ FIXED_ENTRIES_MAP: list[dict] = [
         "course_pattern": "*",
         "exclude_pattern": "MDM*",
         "days": ["M", "T"],
+        
         "start": 16 * 60 + 30,  # 990 mins (4:30 PM)
         "end": 18 * 60 + 30,    # 1110 mins (6:30 PM)
         "level": "P",           # Prohibited
@@ -230,8 +231,27 @@ def _room_key(room: dict) -> RoomKey:
     return building, nbr
 
 
-def _collect_class_rooms(snapshot_id: int = 240) -> dict[tuple[str, str, str, str], list[RoomKey]]:
+def _collect_class_rooms(snapshot_id: int | None = None) -> dict[tuple[str, str, str, str], list[RoomKey]]:
     """(subject, courseNbr, type, suffix) → ordered unique room keys."""
+    if snapshot_id is None:
+        import taasika_loader
+        if taasika_loader.GLOBAL_SNAPSHOT_ID is not None:
+            snapshot_id = taasika_loader.GLOBAL_SNAPSHOT_ID
+        else:
+            try:
+                subject_idx = json.loads((SCRIPTS_DIR / "subject_index.json").read_text(encoding="utf-8"))
+                if subject_idx:
+                    first_sid = int(next(iter(subject_idx.keys())))
+                    data_probe = load(tables=["subject"])
+                    for s in data_probe.rows("subject"):
+                        if s["subjectId"] == first_sid:
+                            snapshot_id = s.get("snapshotId")
+                            break
+            except Exception:
+                pass
+            if snapshot_id is None:
+                snapshot_id = 240
+
     data = load(
         snapshot_id=snapshot_id,
         tables=[
@@ -361,11 +381,52 @@ def _collect_class_rooms(snapshot_id: int = 240) -> dict[tuple[str, str, str, st
     return out
 
 
-def _room_pref_lines(rooms: list[RoomKey]) -> list[str]:
+def _get_online_rooms() -> list[RoomKey]:
+    """Identify all rooms whose name, displayName, or roomNumber contains 'online'."""
+    online: set[RoomKey] = set()
+    bldg_xml = OUT_DIR / "7buildingRoomImport.xml"
+    if bldg_xml.is_file():
+        try:
+            tree = ET.parse(bldg_xml)
+            for bldg in tree.getroot().findall("building"):
+                b_code = bldg.get("abbreviation", "")
+                for r in bldg.findall("room"):
+                    nbr = r.get("roomNumber", "")
+                    disp = r.get("displayName", "")
+                    if "online" in nbr.lower() or "online" in disp.lower() or b_code.lower() == "onl":
+                        online.add((b_code, nbr))
+        except Exception:
+            pass
+
+    try:
+        data = load(tables=["room"])
+        for r in data.filtered("room"):
+            name = (r.get("roomName") or "").lower()
+            short = (r.get("roomShortName") or "").lower()
+            if "online" in name or "online" in short:
+                rk = _room_key(r)
+                online.add(rk)
+    except Exception:
+        pass
+
+    if not online:
+        online = {("ONL", "Online3"), ("ONL", "online1"), ("ONL", "online2")}
+
+    return sorted(online)
+
+
+def _room_pref_lines(rooms: list[RoomKey], blocked: set[RoomKey] | None = None) -> list[str]:
     if not rooms:
         return []
+    blocked_set = blocked or set()
+    valid_rooms = [
+        r for r in rooms
+        if r not in blocked_set and "online" not in r[1].lower() and "onl" not in r[0].lower()
+    ]
+    if not valid_rooms:
+        return []
     lines: list[str] = []
-    for i, (building, nbr) in enumerate(rooms):
+    for i, (building, nbr) in enumerate(valid_rooms):
         level = "-1" if i == 0 else "1"
         lines.append(
             f'    <roomPref building="{xml_escape(building)}" '
@@ -374,10 +435,16 @@ def _room_pref_lines(rooms: list[RoomKey]) -> list[str]:
     return lines
 
 
-def main(term: str = TERM) -> None:
+def main(
+    term: str = TERM,
+    room_prefs: bool = True,
+    block_online: bool = True,
+) -> None:
     src = OUT_DIR / "12courseOffering.xml" if (OUT_DIR / "12courseOffering.xml").is_file() else OUT_DIR / "courseOffering.xml"
     root = ET.parse(src).getroot()
-    class_rooms = _collect_class_rooms()
+    class_rooms = _collect_class_rooms() if room_prefs else {}
+    online_rooms = _get_online_rooms() if block_online else []
+    blocked_set = set(online_rooms)
 
     lines: list[str] = [
         LICENSE_HEADER,
@@ -389,6 +456,7 @@ def main(term: str = TERM) -> None:
     subpart_count = 0
     class_count = 0
     room_pref_count = 0
+    blocked_subparts = 0
 
     for offering in root.findall("offering"):
         course = offering.find("course")
@@ -427,44 +495,74 @@ def main(term: str = TERM) -> None:
                 time_pref_lines = _get_time_pref_lines(course_nbr, pattern)
                 lines.extend(time_pref_lines)
                 lines.append(f'    <datePref pattern="{DATE_PATTERN}" level="R"/>')
+
+                # Block all rooms containing 'online' with Prohibited (restricted) level="P"
+                if block_online:
+                    for bldg, nbr in online_rooms:
+                        lines.append(
+                            f'    <roomPref building="{xml_escape(bldg)}" '
+                            f'room="{xml_escape(nbr)}" level="P"/>'
+                        )
+                    blocked_subparts += 1
+
                 lines.append("  </subpart>")
 
-                for cls in classes_by_type.get(sp_type, []):
-                    cls_suffix = cls.get("suffix", "")
-                    if not cls_suffix:
-                        continue
-                    class_count += 1
-                    rk = (subject, course_nbr, sp_type, cls_suffix)
-                    rooms = class_rooms.get(rk, [])
-                    # Fallback: rooms already on the class in courseOffering.xml
-                    if not rooms:
-                        for r in cls.findall("room"):
-                            rooms.append((r.get("building", ""), r.get("roomNbr", "")))
-                    lines.append(
-                        f'  <class subject="{xml_escape(subject)}" '
-                        f'course="{xml_escape(course_nbr)}" '
-                        f'type="{xml_escape(sp_type)}" '
-                        f'suffix="{xml_escape(cls_suffix)}">'
-                    )
-                    rp = _room_pref_lines(rooms)
-                    room_pref_count += len(rp)
-                    lines.extend(rp)
-                    lines.append("  </class>")
+                if room_prefs:
+                    for cls in classes_by_type.get(sp_type, []):
+                        cls_suffix = cls.get("suffix", "")
+                        if not cls_suffix:
+                            continue
+                        rk = (subject, course_nbr, sp_type, cls_suffix)
+                        rooms = class_rooms.get(rk, [])
+                        # Fallback: rooms already on the class in courseOffering.xml
+                        if not rooms:
+                            for r in cls.findall("room"):
+                                rooms.append((r.get("building", ""), r.get("roomNbr", "")))
+                        rp = _room_pref_lines(rooms, blocked=blocked_set)
+                        if rp:
+                            class_count += 1
+                            lines.append(
+                                f'  <class subject="{xml_escape(subject)}" '
+                                f'course="{xml_escape(course_nbr)}" '
+                                f'type="{xml_escape(sp_type)}" '
+                                f'suffix="{xml_escape(cls_suffix)}">'
+                            )
+                            room_pref_count += len(rp)
+                            lines.extend(rp)
+                            lines.append("  </class>")
 
     lines.append("</preferences>\n")
 
     out = OUT_DIR / "13preferences.xml"
     out.write_text("\n".join(lines), encoding="utf-8")
-    print(
+    status_msg = (
         f"wrote {out.relative_to(OUT_DIR.parent)} "
         f"({out.stat().st_size:,} bytes, {subpart_count} subparts, "
-        f"{class_count} classes, {room_pref_count} room prefs)"
+        f"{class_count} classes, {room_pref_count} class room prefs"
     )
+    if block_online and online_rooms:
+        status_msg += f", {len(online_rooms)} online rooms blocked with level='P' across {blocked_subparts} subparts"
+    status_msg += ")"
+    print(status_msg)
 
 
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Generate 13preferences.xml")
     parser.add_argument("--term", default=TERM, help="UniTime academic term (default: %(default)s)")
+    parser.add_argument(
+        "--room-preference",
+        "--room-prefs",
+        dest="room_prefs",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Include room preferences on classes (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--block-online",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Block/prohibit rooms containing 'online' (level='P') (default: %(default)s)",
+    )
     args = parser.parse_args()
-    main(term=args.term)
+    main(term=args.term, room_prefs=args.room_prefs, block_online=args.block_online)

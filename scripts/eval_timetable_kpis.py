@@ -267,9 +267,12 @@ def _staff_csv_label(first: str, middle: str, last: str) -> str:
 
 
 def _split_room(room_field: str) -> tuple[str, str]:
-    parts = room_field.strip().split(None, 1)
-    if len(parts) != 2:
-        raise ValueError(f"bad ROOM field: {room_field!r}")
+    cleaned = room_field.strip()
+    if not cleaned:
+        return "", ""
+    parts = cleaned.split(None, 1)
+    if len(parts) == 1:
+        return parts[0], ""
     return parts[0], parts[1]
 
 
@@ -383,6 +386,8 @@ def load_room_preferences(path: Path) -> dict[tuple[str, str, str, str], list[st
             cls.get("suffix", ""),
         )
         for rp in cls.findall("roomPref"):
+            if rp.get("level") in ("P", "prohibited"):
+                continue
             room_key = f"{rp.get('building', '')} {rp.get('room', '')}".strip()
             if room_key and room_key not in out[key]:
                 out[key].append(room_key)
@@ -512,14 +517,17 @@ def load_assignments(
         subject = parts[0] if parts else ""
         course_nbr = parts[1] if len(parts) > 1 else ""
         building, room_nbr = _split_room(row["ROOM"])
-        start = _parse_clock(row["START_TIME"])
-        end = _parse_clock(row["END_TIME"])
+        start_raw = row["START_TIME"].strip()
+        end_raw = row["END_TIME"].strip()
+        start = _parse_clock(start_raw) if start_raw else 0
+        end = _parse_clock(end_raw) if end_raw else 0
         day_code = row["DAY"].strip()
-        days = _expand_days(day_code)
-        meetings = [Meeting(d, start, end) for d in days]
+        days = _expand_days(day_code) if day_code else []
+        meetings = [Meeting(d, start, end) for d in days] if (start < end) else []
         off = id_index.offering_for(raw_class_id)
         expected = off.instructor_id if off else None
         raw_instr = row["INSTRUCTOR"].strip()
+        room_key = f"{building} {room_nbr}".strip() if (building or room_nbr) else ""
         assignments.append(
             Assignment(
                 class_id=canonical,
@@ -531,8 +539,8 @@ def load_assignments(
                 day_code=day_code,
                 start=start,
                 end=end,
-                duration=end - start,
-                room_key=f"{building} {room_nbr}",
+                duration=max(end - start, 0),
+                room_key=room_key,
                 building=building,
                 room_nbr=room_nbr,
                 instructor_raw=raw_instr,

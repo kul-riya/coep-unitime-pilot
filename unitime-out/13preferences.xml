@@ -14,6 +14,9 @@
       <pref level="P" days="T" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="CoI" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -45,6 +48,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="CO" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -76,6 +82,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="AI" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -93,6 +102,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="AI" type="Lab" suffix="1">
     <roomPref building="CSED" room="ISL" level="-1"/>
@@ -160,6 +172,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="CN" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -177,6 +192,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="CN" type="Lab" suffix="1">
     <roomPref building="CSED" room="FOSS1" level="-1"/>
@@ -226,6 +244,9 @@
       <pref level="R" days="MT" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="MDM-DSFA" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -243,6 +264,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DTL" type="Lab" suffix="1">
     <roomPref building="CSED" room="GML" level="-1"/>
@@ -304,6 +328,9 @@
       <pref level="P" days="TF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="RM" type="Lec" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -335,6 +362,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DAA" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-202NC-06" level="-1"/>
@@ -350,6 +380,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DAA" type="Lab" suffix="1">
     <roomPref building="CSED" room="ASL" level="-1"/>
@@ -412,6 +445,9 @@
       <pref level="P" days="TF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="TOC" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -429,6 +465,9 @@
       <pref level="P" days="T" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="TOC" type="Rec" suffix="1">
     <roomPref building="CSED" room="PL" level="-1"/>
@@ -481,6 +520,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC3-DL" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -507,6 +549,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DMML" type="Lec" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -519,6 +564,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DMML" type="Lab" suffix="1">
     <roomPref building="CSED" room="DML" level="-1"/>
@@ -550,6 +598,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="SIC" type="Lec" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -562,6 +613,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="SIC" type="Lab" suffix="1">
     <roomPref building="CSED" room="DML" level="-1"/>
@@ -593,6 +647,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="ES" type="Lec" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -605,6 +662,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="ES" type="Lab" suffix="1">
     <roomPref building="CSED" room="DML" level="-1"/>
@@ -622,6 +682,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC2-CCV" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -634,6 +697,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC2-NLP" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -647,6 +713,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC3-MT" type="Lab" suffix="1">
     <roomPref building="CSED" room="ASL" level="-1"/>
@@ -674,6 +743,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-NS" type="Lec" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -686,6 +758,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-NS" type="Lab" suffix="1">
     <roomPref building="CSED" room="DML" level="-1"/>
@@ -717,6 +792,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-WNS" type="Lec" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -729,6 +807,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-WNS" type="Lab" suffix="1">
     <roomPref building="CSED" room="Cogni-3" level="-1"/>
@@ -760,6 +841,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-DFDR" type="Lec" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -772,6 +856,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-DFDR" type="Lab" suffix="1">
     <roomPref building="CSED" room="DML" level="-1"/>
@@ -789,6 +876,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC2-CCS" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -801,6 +891,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC3-WS" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -828,6 +921,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="OOPD" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-201NC-05" level="-1"/>
@@ -843,6 +939,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="OOPD" type="Lab" suffix="1">
     <roomPref building="CSED" room="DBMSL" level="-1"/>
@@ -906,6 +1005,9 @@
       <pref level="P" days="TF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="OE-FOS" type="Lec" suffix="1">
     <roomPref building="NCSE" room="NC27" level="-1"/>
@@ -936,6 +1038,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE2-BCT" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-201NC-05" level="-1"/>
@@ -951,6 +1056,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE2-BCT" type="Lab" suffix="1">
     <roomPref building="CSED" room="FOSS2" level="-1"/>
@@ -990,6 +1098,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE2-DSci" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-202NC-06" level="-1"/>
@@ -1005,6 +1116,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE2-DSci" type="Lab" suffix="1">
     <roomPref building="CSED" room="FOSS2" level="-1"/>
@@ -1044,6 +1158,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE2-ASP" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-202NC-06" level="-1"/>
@@ -1059,6 +1176,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE2-ASP" type="Lab" suffix="1">
     <roomPref building="CSED" room="FOSS2" level="-1"/>
@@ -1077,6 +1197,9 @@
       <pref level="R" days="MT" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="MDM-FDMS" type="Lec" suffix="1">
     <roomPref building="NCSE" room="NC27" level="-1"/>
@@ -1107,6 +1230,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE4-IBCS" type="Lec" suffix="1">
     <roomPref building="NCSE" room="NC28" level="-1"/>
@@ -1122,6 +1248,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE4-IBCS" type="Lab" suffix="1">
     <roomPref building="CSED" room="Cogni-2" level="-1"/>
@@ -1155,6 +1284,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE4-GIS" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -1170,6 +1302,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE4-GIS" type="Lab" suffix="1">
     <roomPref building="CSED" room="Cogni-3" level="-1"/>
@@ -1206,6 +1341,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE4-GPU" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -1221,6 +1359,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DE4-GPU" type="Lab" suffix="1">
     <roomPref building="CSED" room="Cogni-2" level="-1"/>
@@ -1255,6 +1396,9 @@
       <pref level="P" days="TF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="OE-DS" type="Lec" suffix="1">
     <roomPref building="NCSE" room="NC28" level="-1"/>
@@ -1267,6 +1411,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC2-BT" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -1279,6 +1426,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC3-ITS" type="Lab" suffix="1">
     <roomPref building="CSED" room="PL" level="-1"/>
@@ -1305,6 +1455,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-DL" type="Lec" suffix="1">
     <roomPref building="NCSE" room="NC27" level="-1"/>
@@ -1317,6 +1470,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-DL" type="Lab" suffix="1">
     <roomPref building="CSED" room="Cogni-1" level="-1"/>
@@ -1343,6 +1499,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-GAN" type="Lec" suffix="1">
     <roomPref building="NCSE" room="NC27" level="-1"/>
@@ -1355,6 +1514,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-GAN" type="Lab" suffix="1">
     <roomPref building="CSED" room="Cogni-1" level="-1"/>
@@ -1381,6 +1543,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-OT" type="Lec" suffix="1">
     <roomPref building="NCSE" room="NC27" level="-1"/>
@@ -1393,6 +1558,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-OT" type="Lab" suffix="1">
     <roomPref building="CSED" room="Cogni-2" level="-1"/>
@@ -1405,6 +1573,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC2-EAI" type="Lab" suffix="1">
     <roomPref building="NCSE" room="NC27" level="-1"/>
@@ -1417,6 +1588,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC2-MLPS" type="Lab" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -1429,6 +1603,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC3-GNN" type="Lab" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -1441,6 +1618,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-NLP" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -1470,6 +1650,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-BDAAS" type="Lec" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -1483,6 +1666,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-BDAAS" type="Lab" suffix="1">
     <roomPref building="CSED" room="Cogni-1" level="-1"/>
@@ -1518,6 +1704,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-AMLD" type="Lec" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -1531,6 +1720,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-AMLD" type="Lab" suffix="1">
     <roomPref building="CSED" room="ISL" level="-1"/>
@@ -1570,6 +1762,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-MLOS" type="Lec" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -1583,6 +1778,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-MLOS" type="Lab" suffix="1">
     <roomPref building="CSED" room="Cogni-4" level="-1"/>
@@ -1608,6 +1806,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC2-CV" type="Lab" suffix="1">
     <roomPref building="AC" room="AC-202NC-06" level="-1"/>
@@ -1620,6 +1821,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC2-MTRP" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="SH" level="-1"/>
@@ -1632,6 +1836,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="PSEC3-GAN" type="Lab" suffix="1">
     <roomPref building="AC" room="AC-202NC-06" level="-1"/>
@@ -1644,6 +1851,9 @@
       <pref level="P" days="T" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-ETCSA" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-203NC-07" level="-1"/>
@@ -1657,6 +1867,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="MT" course="MT-ETCSA" type="Lab" suffix="1">
     <roomPref building="BHAU" room="Bhau1" level="-1"/>
@@ -1676,6 +1889,9 @@
       <pref level="P" days="MTWRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="FY-Reserve" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-201NC-05" level="-1"/>
@@ -1710,6 +1926,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DS-FY" type="Lec" suffix="1">
     <roomPref building="AC" room="NC-01" level="-1"/>
@@ -1737,6 +1956,9 @@
       <pref level="P" days="T" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DS-FY" type="Rec" suffix="1">
     <roomPref building="AC" room="NC-13" level="-1"/>
@@ -1834,6 +2056,9 @@
       <pref level="P" days="TRF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="AIMA" type="Lec" suffix="1">
     <roomPref building="AC" room="NC-02" level="-1"/>
@@ -1854,6 +2079,9 @@
       <pref level="P" days="T" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="PP-FY" type="Lec" suffix="1">
     <roomPref building="AC" room="NC-10" level="-1"/>
@@ -1878,6 +2106,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="PP-FY" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="CET-A" level="-1"/>
@@ -2043,6 +2274,9 @@
       <pref level="P" days="T" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="WD-FY" type="Lec" suffix="1">
     <roomPref building="AC" room="NC-03" level="-1"/>
@@ -2059,6 +2293,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="WD-FY" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="CET-C" level="-1"/>
@@ -2099,6 +2336,9 @@
       <pref level="P" days="T" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="PPS-FY" type="Lec" suffix="1">
     <roomPref building="AC" room="NC-09" level="-1"/>
@@ -2111,6 +2351,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="PPS-FY" type="Lab" suffix="1">
     <roomPref building="ENTCX" room="CET-A" level="-1"/>
@@ -2178,6 +2421,9 @@
       <pref level="P" days="TF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="Eco" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-201NC-05" level="-1"/>
@@ -2193,6 +2439,9 @@
       <pref level="P" days="T" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="CS-DSY" type="Lab" suffix="1">
     <roomPref building="CSED" room="PL" level="-1"/>
@@ -2203,6 +2452,9 @@
       <pref level="R" days="MT" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="MDM-FAIML" type="Lec" suffix="1">
     <roomPref building="CSED" room="MiniAudi" level="-1"/>
@@ -2212,6 +2464,9 @@
       <pref level="R" days="MT" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="MDM-MQM" type="Lec" suffix="1">
     <roomPref building="AC" room="AC-201NC-05" level="-1"/>
@@ -2224,6 +2479,9 @@
       <pref level="P" days="T" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DT" type="Lec" suffix="1">
     <roomPref building="AC" room="NC-01" level="-1"/>
@@ -2259,6 +2517,9 @@
       <pref level="P" days="TF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DS-SY" type="Lec" suffix="1">
     <roomPref building="AC" room="NC-01" level="-1"/>
@@ -2281,6 +2542,9 @@
       <pref level="P" days="TF" time="1730"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DS-TY" type="Lec" suffix="1">
     <roomPref building="AC" room="NC-02" level="-1"/>
@@ -2293,6 +2557,9 @@
       <pref level="P" days="T" time="1530"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
   <class subject="CS" course="DS-DSY" type="Lab" suffix="1">
     <roomPref building="AC" room="AC-201NC-05" level="-1"/>
@@ -2307,7 +2574,8 @@
       <pref level="R" days="MT" time="1630"/>
     </timePref>
     <datePref pattern="Full Term" level="R"/>
+    <roomPref building="ONL" room="Online3" level="P"/>
+    <roomPref building="ONL" room="online1" level="P"/>
+    <roomPref building="ONL" room="online2" level="P"/>
   </subpart>
-  <class subject="CS" course="MDM-BLOCK" type="Lec" suffix="1">
-  </class>
 </preferences>
