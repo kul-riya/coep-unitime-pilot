@@ -52,12 +52,12 @@ def fy_cse_division(seq: int) -> int:
     return min((seq - 1) * 4 // max(n_cse, 1), 3)
 
 
-def sy_ty_bt_division(seq: int, n_cse: int) -> int:
+def sy_ty_bt_division(seq: int, n_cse: int, year_key: str) -> int:
     """0 = Div1, 1 = Div2. CSE 100+100; AIML 50+50 into the same two lectures."""
     if seq <= n_cse:
-        return 0 if seq <= n_cse // N_DIVISIONS else 1
+        return 0 if seq <= n_cse // max(1, N_DIVISIONS) else 1
     aiml_seq = seq - n_cse
-    return 0 if aiml_seq <= N_AIML // N_DIVISIONS else 1
+    return 0 if aiml_seq <= N_AIML.get(year_key, 0) // max(1, N_DIVISIONS) else 1
 
 
 def section_index_for_division(div: int, n_sections: int, n_divisions: int) -> int:
@@ -292,7 +292,7 @@ def enroll_shorts(
                 return fy_cse_division(seq)
             return (seq - 1) % n
         if year_key in ("SY", "TY", "BT"):
-            div = sy_ty_bt_division(seq, n_cse)
+            div = sy_ty_bt_division(seq, n_cse, year_key)
             if n <= 2 and lecs and not info.get("isLab"):
                 return div
             return section_index_for_division(div, n, N_DIVISIONS)
@@ -531,7 +531,7 @@ def main(term: str = TERM) -> None:
         "total_students": total,
         "btech_by_year": {y: year_headcount(y) for y in ("FY", "SY", "TY", "BT")},
         "cse_by_year": dict(N_CSE),
-        "aiml_per_year": N_AIML,
+        "aiml_by_year": dict(N_AIML),
         "mt_students": mt_seq,
         "missing_shorts": sorted(missing_shorts),
         "id_format": "61yy03aaa (yy=01FY..05MT)",

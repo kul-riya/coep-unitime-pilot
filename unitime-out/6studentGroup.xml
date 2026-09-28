@@ -5,250 +5,246 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 <studentGroups campus="COEP" term="Spr7" year="2026">
-  <studentGroup externalId="taasika-class-6655" code="MT-CE" name="FY M Tech Computer Engineering"/>
-  <studentGroup externalId="taasika-class-6656" code="SY-Div1" name="SY Computer Engineering Div 1"/>
-  <studentGroup externalId="taasika-class-6657" code="SY-Div2" name="SY Computer Engineering Div 2"/>
-  <studentGroup externalId="taasika-class-6658" code="TY-Div1" name="TY Computer Engineering Div 1"/>
-  <studentGroup externalId="taasika-class-6659" code="TY-Div2" name="TY Computer Engineering Div 2"/>
-  <studentGroup externalId="taasika-class-6660" code="BT-Div1" name="BT Computer Engineering Div 1"/>
-  <studentGroup externalId="taasika-class-6661" code="BT-Div2" name="BT Computer Engineering Div 2"/>
-  <studentGroup externalId="taasika-class-6662" code="BT-Minor" name="BT Minor of CSE"/>
-  <studentGroup externalId="taasika-class-6663" code="TY-Minor" name="TY Minor of CSE"/>
-  <studentGroup externalId="taasika-class-6664" code="MT-OE" name="FY M Tech Open Elective class"/>
-  <studentGroup externalId="taasika-class-6665" code="MT-CSIS" name="FY M Tech Computer Science and Information Security"/>
-  <studentGroup externalId="taasika-class-6666" code="MT-AI" name="FY M TechArtificial Intelligence"/>
-  <studentGroup externalId="taasika-class-6667" code="MT-DS" name="FY M Tech Data Sciecne"/>
-  <studentGroup externalId="taasika-class-6668" code="MT-All" name="FY M Tech (All CSE)"/>
-  <studentGroup externalId="taasika-class-6669" code="SY-MDM1" name="SY CSE-MDM Div1"/>
-  <studentGroup externalId="taasika-class-6670" code="SY-MDM2" name="SY CSE-MDM Div2"/>
-  <studentGroup externalId="taasika-class-6671" code="TY-MDM1" name="TY CSE MDM Div1"/>
-  <studentGroup externalId="taasika-class-6672" code="TY-MDM2" name="TY CSE MDM Div2"/>
-  <studentGroup externalId="taasika-class-6673" code="FY-Reserved1" name="FY Reserved classes1"/>
-  <studentGroup externalId="taasika-class-6674" code="FY-Reserved2" name="FY Reserved classes2"/>
-  <studentGroup externalId="taasika-class-6675" code="FY-Reserved3" name="FY Reserved classes3"/>
-  <studentGroup externalId="taasika-class-6676" code="SY-OE1" name="SY CSE Open Elective Div1"/>
-  <studentGroup externalId="taasika-class-6677" code="SY-OE2" name="SY CSE Open Elective Div2"/>
-  <studentGroup externalId="taasika-class-6678" code="FY-CSE1" name="FY CSE Div1"/>
-  <studentGroup externalId="taasika-class-6679" code="FY-CSE2" name="FY CSE Div2"/>
-  <studentGroup externalId="taasika-class-6680" code="FY-CSE3" name="FY CSE Div3"/>
-  <studentGroup externalId="taasika-class-6681" code="FY-AIMA1" name="FY ES AI For Interdisci. Appl Div1"/>
-  <studentGroup externalId="taasika-class-6682" code="FY-AIMA2" name="FY ES AI For Interdisci. Appl Div2"/>
-  <studentGroup externalId="taasika-class-6683" code="FY-AIMA3" name="FY ES AI for Interrdisci. Appl Div3"/>
-  <studentGroup externalId="taasika-class-6684" code="FY-PP1" name="FY VSEC Python Programming Div1"/>
-  <studentGroup externalId="taasika-class-6685" code="FY-PP2" name="FY VSEC Python Programming Div2"/>
-  <studentGroup externalId="taasika-class-6686" code="FY-PP3" name="FY VSEC Python Programming Div3"/>
-  <studentGroup externalId="taasika-class-6687" code="FY-PP4" name="FY VSEC Python Programming Div4"/>
-  <studentGroup externalId="taasika-class-6688" code="FY-PP5" name="FY VSEC Python Programming Div5"/>
-  <studentGroup externalId="taasika-class-6689" code="FY-PP6" name="FY VSEC Python Programming Div6"/>
-  <studentGroup externalId="taasika-class-6690" code="FY-WD1" name="FY VSEC Web Design Div1"/>
-  <studentGroup externalId="taasika-class-6691" code="FY-WD2" name="FY VSEC Web Design Div2"/>
-  <studentGroup externalId="taasika-class-6692" code="FY-PPS1" name="FY VSEC Programming for Problem Solving Div1"/>
-  <studentGroup externalId="taasika-class-6693" code="FY-PPS2" name="FY VSEC Programming for Problem Solving Div2"/>
-  <studentGroup externalId="taasika-class-6694" code="FY-CSE4" name="FY CSE Div4"/>
-  <studentGroup externalId="taasika-class-6695" code="FY-AIML" name="FY AIML Div1"/>
-  <studentGroup externalId="taasika-class-6696" code="FY-PPS1n2" name="FY VSEC Programming for Prob.Solving Div1,2 Combined"/>
-  <studentGroup externalId="taasika-class-6697" code="FY-PP4n5" name="FY VSEC Python Programming Div4,5 Combined"/>
-  <studentGroup externalId="taasika-class-6698" code="SY-MDM-AI" name="SY CSE MDM Artificial Intelligence"/>
-  <studentGroup externalId="taasika-class-6699" code="SY-MDM-Quantum" name="SY CSE MDM Quantum Computing"/>
-  <studentGroup externalId="taasika-class-6700" code="SY-LE" name="SY Lateral Entry"/>
-  <studentGroup externalId="taasika-class-6701" code="TY-LE" name="TY Lateral Entry"/>
-  <studentGroup externalId="taasika-batch-31590" code="SY1-S1" name="SY1-S1 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31591" code="SY1-S2" name="SY1-S2 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31592" code="SY1-S3" name="SY1-S3 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31593" code="SY1-S4" name="SY1-S4 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31594" code="SY1-S5" name="SY1-S5 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31595" code="SY2-S1" name="SY2-S1 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31596" code="SY2-S2" name="SY2-S2 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31597" code="SY2-S3" name="SY2-S3 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31598" code="SY2-S4" name="SY2-S4 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31599" code="TY1-T1" name="TY1-T1 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31600" code="TY1-T2" name="TY1-T2 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31601" code="TY1-T3" name="TY1-T3 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31602" code="TY1-T4" name="TY1-T4 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31603" code="TY1-T5" name="TY1-T5 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31604" code="TY2-T1" name="TY2-T1 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31605" code="TY2-T2" name="TY2-T2 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31606" code="TY2-T3" name="TY2-T3 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31607" code="TY2-T4" name="TY2-T4 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31608" code="TY2-T5" name="TY2-T5 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31609" code="IR Div 1" name="IR Div 1 (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31610" code="IR Div 2" name="IR Div 2 (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31611" code="IOT Div 1" name="IOT Div 1 (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31612" code="IOT Div 2" name="IOT Div 2 (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31613" code="OOMD Div 1" name="OOMD Div 1 (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31614" code="OOMD Div 2" name="OOMD Div 2 (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31615" code="NLP Div 1" name="NLP Div 1 (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31616" code="NLP Div 2" name="NLP Div 2 (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31617" code="BT1-MINOR-IT" name="BT1-MINOR-IT (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31618" code="BT2-MINOR-IT" name="BT2-MINOR-IT (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31619" code="BT1-HONORS-DL" name="BT1-HONORS-DL (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31620" code="BT2-HONORS-DL" name="BT2-HONORS-DL (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31621" code="BT1-HONORS-MA" name="BT1-HONORS-MA (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31622" code="BT2-HONORS-MA" name="BT2-HONORS-MA (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31623" code="SY2-S5" name="SY2-S5 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31624" code="TY1_EH(Hon)" name="TY1_EH(Hon) (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31625" code="TY2_EH(Hon)" name="TY2_EH(Hon) (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31626" code="TY1_BDA(Hon)" name="TY1_BDA(Hon) (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31627" code="TY2_BDA(Hon)" name="TY2_BDA(Hon) (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31628" code="BT1-HONORS-RL" name="BT1-HONORS-RL (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31629" code="BT2-HONORS-RL" name="BT2-HONORS-RL (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31630" code="BT1-HONORS-IOT" name="BT1-HONORS-IOT (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31631" code="BT2-HONORS-IOT" name="BT2-HONORS-IOT (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31632" code="BT1-MINOR-DS" name="BT1-MINOR-DS (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31633" code="BT2-MINOR-DS" name="BT2-MINOR-DS (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31634" code="TY_OOPD(Min)" name="TY_OOPD(Min) (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31635" code="OOPD(Min)" name="OOPD(Min) (Lab Batch, size 30)"/>
-  <studentGroup externalId="taasika-batch-31636" code="BT1-GPU" name="BT1-GPU (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31637" code="BT2-GPU" name="BT2-GPU (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31638" code="BT1-GIS" name="BT1-GIS (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31639" code="BT2-GIS" name="BT2-GIS (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31640" code="TY2-T6" name="TY2-T6 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31641" code="SY2-S6(DSY)" name="SY2-S6(DSY) (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31642" code="MTCSIS-A" name="MTCSIS-A (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31643" code="MTCSIS-B" name="MTCSIS-B (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31644" code="MTDS-A" name="MTDS-A (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31645" code="MTDS-B" name="MTDS-B (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31646" code="MTDS-C" name="MTDS-C (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31647" code="MTDS-D" name="MTDS-D (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31648" code="TY1-ASP" name="TY1-ASP (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31649" code="TY2-ASP" name="TY2-ASP (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31650" code="TY1-BCT" name="TY1-BCT (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31651" code="TY2-BCT" name="TY2-BCT (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31652" code="TY1-DSci" name="TY1-DSci (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31653" code="TY2-DSci" name="TY2-DSci (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31654" code="TY1-PP" name="TY1-PP (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31655" code="TY2-PP" name="TY2-PP (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31656" code="TY1-FSD" name="TY1-FSD (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31657" code="TY2-FSD" name="TY2-FSD (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31658" code="BT1-B1" name="BT1-B1 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31659" code="BT1-B2" name="BT1-B2 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31660" code="BT1-B3" name="BT1-B3 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31661" code="BT1-B4" name="BT1-B4 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31662" code="BT1-B5" name="BT1-B5 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31663" code="BT2-B1" name="BT2-B1 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31664" code="BT2-B2" name="BT2-B2 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31665" code="BT2-B3" name="BT2-B3 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31666" code="BT2-B4" name="BT2-B4 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31667" code="BT2-B5" name="BT2-B5 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31668" code="BT2-B6" name="BT2-B6 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31669" code="BT1-IBCSC" name="BT1-IBCSC (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31670" code="BT2-IBCSC" name="BT2-IBCSC (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31671" code="MTCSIS-DE3A" name="MTCSIS-DE3A (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31672" code="MTCSIS-DE3B" name="MTCSIS-DE3B (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31673" code="MTAI-DE2A" name="MTAI-DE2A (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31674" code="MTAI-DE2B" name="MTAI-DE2B (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31675" code="MTAI-DE3A" name="MTAI-DE3A (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31676" code="MTAI-DE3B" name="MTAI-DE3B (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31677" code="MTCE-A" name="MTCE-A (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31678" code="MTCE-B" name="MTCE-B (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31679" code="MTCE-DE3A" name="MTCE-DE3A (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31680" code="MTCE-DE3B" name="MTCE-DE3B (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31681" code="MTDS-C,D" name="MTDS-C,D (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31682" code="MTDS-A,B" name="MTDS-A,B (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31683" code="MTDS-DE3A" name="MTDS-DE3A (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31684" code="MTDS-DE3B" name="MTDS-DE3B (Lab Batch, size 40)"/>
-  <studentGroup externalId="taasika-batch-31685" code="FY-CSE1-A" name="FY-CSE1-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31686" code="FY-CSE1-B" name="FY-CSE1-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31687" code="FY-CSE1-C" name="FY-CSE1-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31688" code="FY-CSE1-D" name="FY-CSE1-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31689" code="FY-CSE2-A" name="FY-CSE2-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31690" code="FY-CSE2-B" name="FY-CSE2-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31691" code="FY-CSE2-C" name="FY-CSE2-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31692" code="FY-CSE2-D" name="FY-CSE2-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31693" code="FY-CSE3-A" name="FY-CSE3-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31694" code="FY-CSE3-B" name="FY-CSE3-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31695" code="FY-CSE3-C" name="FY-CSE3-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31696" code="FY-CSE3-D" name="FY-CSE3-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31697" code="FY-PP1-A" name="FY-PP1-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31698" code="FY-PP1-B" name="FY-PP1-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31699" code="FY-PP1-C" name="FY-PP1-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31700" code="FY-PP1-D" name="FY-PP1-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31701" code="FY-PP2-A" name="FY-PP2-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31702" code="FY-PP2-B" name="FY-PP2-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31703" code="FY-PP2-C" name="FY-PP2-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31704" code="FY-PP2-D" name="FY-PP2-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31705" code="FY-PP3-A" name="FY-PP3-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31706" code="FY-PP3-B" name="FY-PP3-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31707" code="FY-PP3-C" name="FY-PP3-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31708" code="FY-PP3-D" name="FY-PP3-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31709" code="FY-PP4-A" name="FY-PP4-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31710" code="FY-PP4-B" name="FY-PP4-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31711" code="FY-PP4-C" name="FY-PP4-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31712" code="FY-PP4-D" name="FY-PP4-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31713" code="FY-PP5-A" name="FY-PP5-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31714" code="FY-PP5-B" name="FY-PP5-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31715" code="FY-PP5-C" name="FY-PP5-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31716" code="FY-PP5-D" name="FY-PP5-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31717" code="FY-WD1-A" name="FY-WD1-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31718" code="FY-WD1-B" name="FY-WD1-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31719" code="FY-WD1-C" name="FY-WD1-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31720" code="FY-WD1-D" name="FY-WD1-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31721" code="FY-WD2-A" name="FY-WD2-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31722" code="FY-WD2-B" name="FY-WD2-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31723" code="FY-WD2-C" name="FY-WD2-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31724" code="FY-WD2-D" name="FY-WD2-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31725" code="FY-PPS1-A" name="FY-PPS1-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31726" code="FY-PPS1-B" name="FY-PPS1-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31727" code="FY-PPS1-C" name="FY-PPS1-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31728" code="FY-PPS1-D" name="FY-PPS1-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31729" code="FY-PPS2-A" name="FY-PPS2-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31730" code="FY-PPS2-C" name="FY-PPS2-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31731" code="FY-PPS2-D" name="FY-PPS2-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31732" code="FFY-PPS3-C" name="FFY-PPS3-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31733" code="TY-MDM1-B1" name="TY-MDM1-B1 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31734" code="TY-MDM1-B2" name="TY-MDM1-B2 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31735" code="TY-MDM1-B3" name="TY-MDM1-B3 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31736" code="TY-MDM1-B4" name="TY-MDM1-B4 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31737" code="TY-MDM2-B1" name="TY-MDM2-B1 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31738" code="TY-MDM2-B2" name="TY-MDM2-B2 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31739" code="TY-MDM2-B3" name="TY-MDM2-B3 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31740" code="TY-MDM2-B4" name="TY-MDM2-B4 (Lab Batch, size 20)"/>
-  <studentGroup externalId="taasika-batch-31741" code="FY-AIML-A" name="FY-AIML-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31742" code="FY-AIML-B" name="FY-AIML-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31743" code="FY-AIML-C" name="FY-AIML-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31744" code="FY-AIML-D" name="FY-AIML-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31745" code="FY-CSE4-A" name="FY-CSE4-A (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31746" code="FY-CSE4-B" name="FY-CSE4-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31747" code="FY-CSE4-C" name="FY-CSE4-C (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31748" code="FY-CSE4-D" name="FY-CSE4-D (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31749" code="FY-PP5-E" name="FY-PP5-E (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31750" code="FY-PP5-F" name="FY-PP5-F (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31751" code="FY-PPS2-B" name="FY-PPS2-B (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31752" code="FY-PP5-A_" name="FY-PP5-A_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31753" code="FY-PP4-A_" name="FY-PP4-A_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31754" code="FY-PP3-A_" name="FY-PP3-A_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31755" code="FY-PP1-A_" name="FY-PP1-A_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31756" code="FY-PP1-B_" name="FY-PP1-B_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31757" code="FY-PP1-C_" name="FY-PP1-C_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31758" code="FY-PP1-D_" name="FY-PP1-D_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31759" code="FY-PP2-A_" name="FY-PP2-A_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31760" code="FY-PP2-B_" name="FY-PP2-B_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31761" code="FY-PP2-C_" name="FY-PP2-C_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31762" code="FY-PP2-D_" name="FY-PP2-D_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31763" code="FY-PP3-B_" name="FY-PP3-B_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31764" code="FY-PP3-C_" name="FY-PP3-C_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31765" code="FY-PP3-D_" name="FY-PP3-D_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31766" code="FY-PP4-B_" name="FY-PP4-B_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31767" code="FY-PP4-C_" name="FY-PP4-C_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31768" code="FY-PP4-D_" name="FY-PP4-D_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31769" code="FY-PP5-B_" name="FY-PP5-B_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31770" code="FY-PP5-C_" name="FY-PP5-C_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31771" code="FY-PP5-D_" name="FY-PP5-D_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31772" code="FY-PP5-E_" name="FY-PP5-E_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31773" code="FY-PP5-F_" name="FY-PP5-F_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31774" code="FY-PPS1-A_" name="FY-PPS1-A_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31775" code="FY-PPS1-B_" name="FY-PPS1-B_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31776" code="FY-PPS1-C_" name="FY-PPS1-C_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31777" code="FY-PPS1-D_" name="FY-PPS1-D_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31778" code="FY-PPS2-A_" name="FY-PPS2-A_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31779" code="FY-PPS2-B_" name="FY-PPS2-B_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31780" code="FY-PPS2-C_" name="FY-PPS2-C_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31781" code="FY-PPS2-D_" name="FY-PPS2-D_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31782" code="FY-WD1-A_" name="FY-WD1-A_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31783" code="FY-WD1-B_" name="FY-WD1-B_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31784" code="FY-WD1-C_" name="FY-WD1-C_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31785" code="FY-WD1-D_" name="FY-WD1-D_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31786" code="FY-WD2-A_" name="FY-WD2-A_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31787" code="FY-WD2-B_" name="FY-WD2-B_ (Lab Batch, size 25)"/>
-  <studentGroup externalId="taasika-batch-31788" code="FY-WD2-C_" name="FY-WD2-C_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-class-6518" code="MT-CE" name="FY M Tech Computer Engineering"/>
+  <studentGroup externalId="taasika-class-6519" code="SY-Div1" name="SY Computer Engineering Div 1"/>
+  <studentGroup externalId="taasika-class-6520" code="SY-Div2" name="SY Computer Engineering Div 2"/>
+  <studentGroup externalId="taasika-class-6521" code="TY-Div1" name="TY Computer Engineering Div 1"/>
+  <studentGroup externalId="taasika-class-6522" code="TY-Div2" name="TY Computer Engineering Div 2"/>
+  <studentGroup externalId="taasika-class-6523" code="BT-Div1" name="BT Computer Engineering Div 1"/>
+  <studentGroup externalId="taasika-class-6524" code="BT-Div2" name="BT Computer Engineering Div 2"/>
+  <studentGroup externalId="taasika-class-6525" code="BT-Minor" name="BT Minor of CSE"/>
+  <studentGroup externalId="taasika-class-6526" code="TY-Minor" name="TY Minor of CSE"/>
+  <studentGroup externalId="taasika-class-6527" code="MT-OE" name="FY M Tech Open Elective class"/>
+  <studentGroup externalId="taasika-class-6528" code="MT-CSIS" name="FY M Tech Computer Science and Information Security"/>
+  <studentGroup externalId="taasika-class-6529" code="MT-AI" name="FY M TechArtificial Intelligence"/>
+  <studentGroup externalId="taasika-class-6530" code="MT-DS" name="FY M Tech Data Sciecne"/>
+  <studentGroup externalId="taasika-class-6531" code="MT-All" name="FY M Tech (All CSE)"/>
+  <studentGroup externalId="taasika-class-6532" code="SY-MDM1" name="SY CSE-MDM Div1"/>
+  <studentGroup externalId="taasika-class-6533" code="SY-MDM2" name="SY CSE-MDM Div2"/>
+  <studentGroup externalId="taasika-class-6534" code="TY-MDM1" name="TY CSE MDM Div1"/>
+  <studentGroup externalId="taasika-class-6535" code="TY-MDM2" name="TY CSE MDM Div2"/>
+  <studentGroup externalId="taasika-class-6536" code="FY-Reserved1" name="FY Reserved classes1"/>
+  <studentGroup externalId="taasika-class-6537" code="FY-Reserved2" name="FY Reserved classes2"/>
+  <studentGroup externalId="taasika-class-6538" code="FY-Reserved3" name="FY Reserved classes3"/>
+  <studentGroup externalId="taasika-class-6539" code="SY-OE1" name="SY CSE Open Elective Div1"/>
+  <studentGroup externalId="taasika-class-6540" code="SY-OE2" name="SY CSE Open Elective Div2"/>
+  <studentGroup externalId="taasika-class-6541" code="FY-CSE1" name="FY CSE Div1"/>
+  <studentGroup externalId="taasika-class-6542" code="FY-CSE2" name="FY CSE Div2"/>
+  <studentGroup externalId="taasika-class-6543" code="FY-CSE3" name="FY CSE Div3"/>
+  <studentGroup externalId="taasika-class-6544" code="FY-AIMA1" name="FY ES AI For Interdisci. Appl Div1"/>
+  <studentGroup externalId="taasika-class-6545" code="FY-AIMA2" name="FY ES AI For Interdisci. Appl Div2"/>
+  <studentGroup externalId="taasika-class-6546" code="FY-AIMA3" name="FY ES AI for Interrdisci. Appl Div3"/>
+  <studentGroup externalId="taasika-class-6547" code="FY-PP1" name="FY VSEC Python Programming Div1"/>
+  <studentGroup externalId="taasika-class-6548" code="FY-PP2" name="FY VSEC Python Programming Div2"/>
+  <studentGroup externalId="taasika-class-6549" code="FY-PP3" name="FY VSEC Python Programming Div3"/>
+  <studentGroup externalId="taasika-class-6550" code="FY-PP4" name="FY VSEC Python Programming Div4"/>
+  <studentGroup externalId="taasika-class-6551" code="FY-PP5" name="FY VSEC Python Programming Div5"/>
+  <studentGroup externalId="taasika-class-6552" code="FY-PP6" name="FY VSEC Python Programming Div6"/>
+  <studentGroup externalId="taasika-class-6553" code="FY-WD1" name="FY VSEC Web Design Div1"/>
+  <studentGroup externalId="taasika-class-6554" code="FY-WD2" name="FY VSEC Web Design Div2"/>
+  <studentGroup externalId="taasika-class-6555" code="FY-PPS1" name="FY VSEC Programming for Problem Solving Div1"/>
+  <studentGroup externalId="taasika-class-6556" code="FY-PPS2" name="FY VSEC Programming for Problem Solving Div2"/>
+  <studentGroup externalId="taasika-class-6557" code="FY-CSE4" name="FY CSE Div4"/>
+  <studentGroup externalId="taasika-class-6558" code="FY-AIML" name="FY AIML Div1"/>
+  <studentGroup externalId="taasika-class-6559" code="FY-PPS1n2" name="FY VSEC Programming for Prob.Solving Div1,2 Combined"/>
+  <studentGroup externalId="taasika-class-6560" code="FY-PP4n5" name="FY VSEC Python Programming Div4,5 Combined"/>
+  <studentGroup externalId="taasika-batch-30993" code="SY1-S1" name="SY1-S1 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-30994" code="SY1-S2" name="SY1-S2 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-30995" code="SY1-S3" name="SY1-S3 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-30996" code="SY1-S4" name="SY1-S4 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-30997" code="SY1-S5" name="SY1-S5 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-30998" code="SY2-S1" name="SY2-S1 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-30999" code="SY2-S2" name="SY2-S2 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31000" code="SY2-S3" name="SY2-S3 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31001" code="SY2-S4" name="SY2-S4 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31002" code="TY1-T1" name="TY1-T1 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31003" code="TY1-T2" name="TY1-T2 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31004" code="TY1-T3" name="TY1-T3 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31005" code="TY1-T4" name="TY1-T4 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31006" code="TY1-T5" name="TY1-T5 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31007" code="TY2-T1" name="TY2-T1 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31008" code="TY2-T2" name="TY2-T2 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31009" code="TY2-T3" name="TY2-T3 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31010" code="TY2-T4" name="TY2-T4 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31011" code="TY2-T5" name="TY2-T5 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31012" code="IR Div 1" name="IR Div 1 (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31013" code="IR Div 2" name="IR Div 2 (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31014" code="IOT Div 1" name="IOT Div 1 (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31015" code="IOT Div 2" name="IOT Div 2 (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31016" code="OOMD Div 1" name="OOMD Div 1 (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31017" code="OOMD Div 2" name="OOMD Div 2 (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31018" code="NLP Div 1" name="NLP Div 1 (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31019" code="NLP Div 2" name="NLP Div 2 (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31020" code="BT1-MINOR-IT" name="BT1-MINOR-IT (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31021" code="BT2-MINOR-IT" name="BT2-MINOR-IT (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31022" code="BT1-HONORS-DL" name="BT1-HONORS-DL (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31023" code="BT2-HONORS-DL" name="BT2-HONORS-DL (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31024" code="BT1-HONORS-MA" name="BT1-HONORS-MA (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31025" code="BT2-HONORS-MA" name="BT2-HONORS-MA (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31026" code="SY2-S5" name="SY2-S5 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31027" code="TY1_EH(Hon)" name="TY1_EH(Hon) (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31028" code="TY2_EH(Hon)" name="TY2_EH(Hon) (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31029" code="TY1_BDA(Hon)" name="TY1_BDA(Hon) (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31030" code="TY2_BDA(Hon)" name="TY2_BDA(Hon) (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31031" code="BT1-HONORS-RL" name="BT1-HONORS-RL (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31032" code="BT2-HONORS-RL" name="BT2-HONORS-RL (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31033" code="BT1-HONORS-IOT" name="BT1-HONORS-IOT (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31034" code="BT2-HONORS-IOT" name="BT2-HONORS-IOT (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31035" code="BT1-MINOR-DS" name="BT1-MINOR-DS (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31036" code="BT2-MINOR-DS" name="BT2-MINOR-DS (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31037" code="TY_OOPD(Min)" name="TY_OOPD(Min) (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31038" code="OOPD(Min)" name="OOPD(Min) (Lab Batch, size 30)"/>
+  <studentGroup externalId="taasika-batch-31039" code="BT1-GPU" name="BT1-GPU (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31040" code="BT2-GPU" name="BT2-GPU (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31041" code="BT1-GIS" name="BT1-GIS (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31042" code="BT2-GIS" name="BT2-GIS (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31043" code="TY2-T6" name="TY2-T6 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31044" code="SY2-S6(DSY)" name="SY2-S6(DSY) (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31045" code="MTCSIS-A" name="MTCSIS-A (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31046" code="MTCSIS-B" name="MTCSIS-B (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31047" code="MTDS-A" name="MTDS-A (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31048" code="MTDS-B" name="MTDS-B (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31049" code="MTDS-C" name="MTDS-C (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31050" code="MTDS-D" name="MTDS-D (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31051" code="TY1-ASP" name="TY1-ASP (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31052" code="TY2-ASP" name="TY2-ASP (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31053" code="TY1-BCT" name="TY1-BCT (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31054" code="TY2-BCT" name="TY2-BCT (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31055" code="TY1-DSci" name="TY1-DSci (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31056" code="TY2-DSci" name="TY2-DSci (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31057" code="TY1-PP" name="TY1-PP (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31058" code="TY2-PP" name="TY2-PP (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31059" code="TY1-FSD" name="TY1-FSD (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31060" code="TY2-FSD" name="TY2-FSD (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31061" code="BT1-B1" name="BT1-B1 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31062" code="BT1-B2" name="BT1-B2 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31063" code="BT1-B3" name="BT1-B3 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31064" code="BT1-B4" name="BT1-B4 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31065" code="BT1-B5" name="BT1-B5 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31066" code="BT2-B1" name="BT2-B1 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31067" code="BT2-B2" name="BT2-B2 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31068" code="BT2-B3" name="BT2-B3 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31069" code="BT2-B4" name="BT2-B4 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31070" code="BT2-B5" name="BT2-B5 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31071" code="BT2-B6" name="BT2-B6 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31072" code="BT1-IBCSC" name="BT1-IBCSC (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31073" code="BT2-IBCSC" name="BT2-IBCSC (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31074" code="MTCSIS-DE3A" name="MTCSIS-DE3A (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31075" code="MTCSIS-DE3B" name="MTCSIS-DE3B (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31076" code="MTAI-DE2A" name="MTAI-DE2A (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31077" code="MTAI-DE2B" name="MTAI-DE2B (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31078" code="MTAI-DE3A" name="MTAI-DE3A (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31079" code="MTAI-DE3B" name="MTAI-DE3B (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31080" code="MTCE-A" name="MTCE-A (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31081" code="MTCE-B" name="MTCE-B (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31082" code="MTCE-DE3A" name="MTCE-DE3A (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31083" code="MTCE-DE3B" name="MTCE-DE3B (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31084" code="MTDS-C,D" name="MTDS-C,D (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31085" code="MTDS-A,B" name="MTDS-A,B (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31086" code="MTDS-DE3A" name="MTDS-DE3A (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31087" code="MTDS-DE3B" name="MTDS-DE3B (Lab Batch, size 40)"/>
+  <studentGroup externalId="taasika-batch-31088" code="FY-CSE1-A" name="FY-CSE1-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31089" code="FY-CSE1-B" name="FY-CSE1-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31090" code="FY-CSE1-C" name="FY-CSE1-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31091" code="FY-CSE1-D" name="FY-CSE1-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31092" code="FY-CSE2-A" name="FY-CSE2-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31093" code="FY-CSE2-B" name="FY-CSE2-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31094" code="FY-CSE2-C" name="FY-CSE2-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31095" code="FY-CSE2-D" name="FY-CSE2-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31096" code="FY-CSE3-A" name="FY-CSE3-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31097" code="FY-CSE3-B" name="FY-CSE3-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31098" code="FY-CSE3-C" name="FY-CSE3-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31099" code="FY-CSE3-D" name="FY-CSE3-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31100" code="FY-PP1-A" name="FY-PP1-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31101" code="FY-PP1-B" name="FY-PP1-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31102" code="FY-PP1-C" name="FY-PP1-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31103" code="FY-PP1-D" name="FY-PP1-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31104" code="FY-PP2-A" name="FY-PP2-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31105" code="FY-PP2-B" name="FY-PP2-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31106" code="FY-PP2-C" name="FY-PP2-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31107" code="FY-PP2-D" name="FY-PP2-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31108" code="FY-PP3-A" name="FY-PP3-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31109" code="FY-PP3-B" name="FY-PP3-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31110" code="FY-PP3-C" name="FY-PP3-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31111" code="FY-PP3-D" name="FY-PP3-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31112" code="FY-PP4-A" name="FY-PP4-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31113" code="FY-PP4-B" name="FY-PP4-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31114" code="FY-PP4-C" name="FY-PP4-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31115" code="FY-PP4-D" name="FY-PP4-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31116" code="FY-PP5-A" name="FY-PP5-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31117" code="FY-PP5-B" name="FY-PP5-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31118" code="FY-PP5-C" name="FY-PP5-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31119" code="FY-PP5-D" name="FY-PP5-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31120" code="FY-WD1-A" name="FY-WD1-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31121" code="FY-WD1-B" name="FY-WD1-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31122" code="FY-WD1-C" name="FY-WD1-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31123" code="FY-WD1-D" name="FY-WD1-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31124" code="FY-WD2-A" name="FY-WD2-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31125" code="FY-WD2-B" name="FY-WD2-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31126" code="FY-WD2-C" name="FY-WD2-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31127" code="FY-WD2-D" name="FY-WD2-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31128" code="FY-PPS1-A" name="FY-PPS1-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31129" code="FY-PPS1-B" name="FY-PPS1-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31130" code="FY-PPS1-C" name="FY-PPS1-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31131" code="FY-PPS1-D" name="FY-PPS1-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31132" code="FY-PPS2-A" name="FY-PPS2-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31133" code="FY-PPS2-C" name="FY-PPS2-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31134" code="FY-PPS2-D" name="FY-PPS2-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31135" code="FFY-PPS3-C" name="FFY-PPS3-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31136" code="TY-MDM1-B1" name="TY-MDM1-B1 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31137" code="TY-MDM1-B2" name="TY-MDM1-B2 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31138" code="TY-MDM1-B3" name="TY-MDM1-B3 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31139" code="TY-MDM1-B4" name="TY-MDM1-B4 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31140" code="TY-MDM2-B1" name="TY-MDM2-B1 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31141" code="TY-MDM2-B2" name="TY-MDM2-B2 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31142" code="TY-MDM2-B3" name="TY-MDM2-B3 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31143" code="TY-MDM2-B4" name="TY-MDM2-B4 (Lab Batch, size 20)"/>
+  <studentGroup externalId="taasika-batch-31144" code="FY-AIML-A" name="FY-AIML-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31145" code="FY-AIML-B" name="FY-AIML-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31146" code="FY-AIML-C" name="FY-AIML-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31147" code="FY-AIML-D" name="FY-AIML-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31148" code="FY-CSE4-A" name="FY-CSE4-A (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31149" code="FY-CSE4-B" name="FY-CSE4-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31150" code="FY-CSE4-C" name="FY-CSE4-C (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31151" code="FY-CSE4-D" name="FY-CSE4-D (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31152" code="FY-PP5-E" name="FY-PP5-E (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31153" code="FY-PP5-F" name="FY-PP5-F (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31154" code="FY-PPS2-B" name="FY-PPS2-B (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31155" code="FY-PP5-A_" name="FY-PP5-A_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31156" code="FY-PP4-A_" name="FY-PP4-A_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31157" code="FY-PP3-A_" name="FY-PP3-A_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31158" code="FY-PP1-A_" name="FY-PP1-A_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31159" code="FY-PP1-B_" name="FY-PP1-B_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31160" code="FY-PP1-C_" name="FY-PP1-C_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31161" code="FY-PP1-D_" name="FY-PP1-D_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31162" code="FY-PP2-A_" name="FY-PP2-A_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31163" code="FY-PP2-B_" name="FY-PP2-B_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31164" code="FY-PP2-C_" name="FY-PP2-C_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31165" code="FY-PP2-D_" name="FY-PP2-D_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31166" code="FY-PP3-B_" name="FY-PP3-B_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31167" code="FY-PP3-C_" name="FY-PP3-C_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31168" code="FY-PP3-D_" name="FY-PP3-D_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31169" code="FY-PP4-B_" name="FY-PP4-B_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31170" code="FY-PP4-C_" name="FY-PP4-C_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31171" code="FY-PP4-D_" name="FY-PP4-D_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31172" code="FY-PP5-B_" name="FY-PP5-B_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31173" code="FY-PP5-C_" name="FY-PP5-C_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31174" code="FY-PP5-D_" name="FY-PP5-D_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31175" code="FY-PP5-E_" name="FY-PP5-E_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31176" code="FY-PP5-F_" name="FY-PP5-F_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31177" code="FY-PPS1-A_" name="FY-PPS1-A_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31178" code="FY-PPS1-B_" name="FY-PPS1-B_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31179" code="FY-PPS1-C_" name="FY-PPS1-C_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31180" code="FY-PPS1-D_" name="FY-PPS1-D_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31181" code="FY-PPS2-A_" name="FY-PPS2-A_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31182" code="FY-PPS2-B_" name="FY-PPS2-B_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31183" code="FY-PPS2-C_" name="FY-PPS2-C_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31184" code="FY-PPS2-D_" name="FY-PPS2-D_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31185" code="FY-WD1-A_" name="FY-WD1-A_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31186" code="FY-WD1-B_" name="FY-WD1-B_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31187" code="FY-WD1-C_" name="FY-WD1-C_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31188" code="FY-WD1-D_" name="FY-WD1-D_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31189" code="FY-WD2-A_" name="FY-WD2-A_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31190" code="FY-WD2-B_" name="FY-WD2-B_ (Lab Batch, size 25)"/>
+  <studentGroup externalId="taasika-batch-31191" code="FY-WD2-C_" name="FY-WD2-C_ (Lab Batch, size 25)"/>
 </studentGroups>

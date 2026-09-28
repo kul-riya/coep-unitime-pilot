@@ -14,12 +14,17 @@ from typing import Sequence
 
 # CSE headcount by year. FY is smaller because DSY students appear in SY.
 N_CSE: dict[str, int] = {
-    "FY": 160,
+    "FY": 400,
     "SY": 200,
     "TY": 200,
     "BT": 200,
 }
-N_AIML = 100
+N_AIML: dict[str, int] = {
+    "FY": 100,
+    "SY": 0,
+    "TY": 0,
+    "BT": 0,
+}
 N_DIVISIONS = 2  # SY / TY / BT lecture divisions
 
 # Other-department room blocks (no CSE/AIML enrollments).
@@ -35,7 +40,7 @@ N_DE4_OPTIONS = 3
 
 def year_headcount(year_key: str) -> int:
     """CSE + AIML students for a B.Tech year (M.Tech is separate)."""
-    return N_CSE.get(year_key, 0) + (N_AIML if year_key in N_CSE else 0)
+    return N_CSE.get(year_key, 0) + N_AIML.get(year_key, 0)
 
 
 def cse_count(year_key: str) -> int:
