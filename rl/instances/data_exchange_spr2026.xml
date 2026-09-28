@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE timetable PUBLIC "-//UniTime//DTD University Course Timetabling/EN" "http://www.unitime.org/interface/CourseTimetable.dtd">
+
+<timetable campus="COEP" year="2026" term="Spr6" action="update" dateFormat="yyyy/M/d" timeFormat="HHmm" created="Sun Sep 27 14:04:20 IST 2026">
+  <class id="4588054" subject="CS" courseNbr="AI" type="Lab" suffix="10" limit="28" scheduleNote="TY2-T5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1330" endTime="1530" timePattern="1 x 120"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588055" subject="CS" courseNbr="AI" type="Lab" suffix="11" limit="28" scheduleNote="TY2-T6" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588052" subject="CS" courseNbr="AI" type="Lab" suffix="8" limit="28" scheduleNote="TY2-T3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588053" subject="CS" courseNbr="AI" type="Lab" suffix="9" limit="28" scheduleNote="TY2-T4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588050" subject="CS" courseNbr="AI" type="Lab" suffix="6" limit="28" scheduleNote="TY2-T1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588051" subject="CS" courseNbr="AI" type="Lab" suffix="7" limit="28" scheduleNote="TY2-T2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588048" subject="CS" courseNbr="AI" type="Lab" suffix="4" limit="28" scheduleNote="TY1-T4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+    <instructor id="taasika-teacher-18834" fname="Vahida" lname="Attar" share="100" lead="true"/>
+  </class>
+  <class id="4588049" subject="CS" courseNbr="AI" type="Lab" suffix="5" limit="28" scheduleNote="TY1-T5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1530" endTime="1730" timePattern="1 x 120"/>
+    <room id="taasika-room-8985" building="AC" roomNbr="NC-11"/>
+    <instructor id="taasika-teacher-18834" fname="Vahida" lname="Attar" share="100" lead="true"/>
+  </class>
+  <class id="4588046" subject="CS" courseNbr="AI" type="Lab" suffix="2" limit="28" scheduleNote="TY1-T2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8972" building="AC" roomNbr="NC-08"/>
+    <instructor id="taasika-teacher-18834" fname="Vahida" lname="Attar" share="100" lead="true"/>
+  </class>
+  <class id="4588047" subject="CS" courseNbr="AI" type="Lab" suffix="3" limit="28" scheduleNote="TY1-T3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1330" endTime="1530" timePattern="1 x 120"/>
+    <room id="taasika-room-8988" building="AC" roomNbr="NC-14"/>
+    <instructor id="taasika-teacher-18834" fname="Vahida" lname="Attar" share="100" lead="true"/>
+  </class>
+  <class id="4588045" subject="CS" courseNbr="AI" type="Lab" suffix="1" limit="28" scheduleNote="TY1-T1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18834" fname="Vahida" lname="Attar" share="100" lead="true"/>
+  </class>
+  <class id="4588044" subject="CS" courseNbr="AI" type="Lec" suffix="2" limit="150" scheduleNote="TY-Div2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MWTh" startTime="1530" endTime="1630" timePattern="3 x 60"/>
+    <room id="taasika-room-8983" building="AC" roomNbr="NC-09"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588043" subject="CS" courseNbr="AI" type="Lec" suffix="1" limit="150" scheduleNote="TY-Div1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTTh" startTime="1030" endTime="1130" timePattern="3 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18834" fname="Vahida" lname="Attar" share="100" lead="true"/>
+  </class>
+  <class id="4588320" subject="CS" courseNbr="AIMA" type="Lec" suffix="3" limit="100" scheduleNote="FY-AIMA3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTTh" startTime="1530" endTime="1630" timePattern="3 x 60"/>
+    <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+    <instructor id="taasika-teacher-18937" fname="Pranoti" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588318" subject="CS" courseNbr="AIMA" type="Lec" suffix="1" limit="100" scheduleNote="FY-AIMA1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTTh" startTime="1330" endTime="1430" timePattern="3 x 60"/>
+    <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+    <instructor id="taasika-teacher-18926" fname="Ashwini" lname="Gavade" share="100" lead="true"/>
+  </class>
+  <class id="4588319" subject="CS" courseNbr="AIMA" type="Lec" suffix="2" limit="100" scheduleNote="FY-AIMA2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTTh" startTime="0930" endTime="1030" timePattern="3 x 60"/>
+    <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+    <instructor id="taasika-teacher-18935" fname="Swati" lname="Atone" share="100" lead="true"/>
+  </class>
+  <class id="4588058" subject="CS" courseNbr="CN" type="Lec" suffix="1" limit="150" scheduleNote="TY-Div1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MWF" startTime="1430" endTime="1530" timePattern="3 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18844" fname="Satish" lname="Kumbhar" share="100" lead="true"/>
+  </class>
+  <class id="4588059" subject="CS" courseNbr="CN" type="Lec" suffix="2" limit="150" scheduleNote="TY-Div2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TThF" startTime="0830" endTime="0930" timePattern="3 x 60"/>
+    <room id="taasika-room-8983" building="AC" roomNbr="NC-09"/>
+    <instructor id="taasika-teacher-18844" fname="Satish" lname="Kumbhar" share="100" lead="true"/>
+  </class>
+  <class id="4588070" subject="CS" courseNbr="CN" type="Lab" suffix="11" limit="28" scheduleNote="TY2-T6" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8982" building="BHAU" roomNbr="Bhau2"/>
+    <instructor id="taasika-teacher-18846" fname="Vinod" lname="Pachghare" share="100" lead="true"/>
+  </class>
+  <class id="4588068" subject="CS" courseNbr="CN" type="Lab" suffix="9" limit="28" scheduleNote="TY2-T4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18835" fname="Siddharth" lname="Gaikwad" share="100" lead="true"/>
+  </class>
+  <class id="4588069" subject="CS" courseNbr="CN" type="Lab" suffix="10" limit="28" scheduleNote="TY2-T5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8972" building="AC" roomNbr="NC-08"/>
+    <instructor id="taasika-teacher-18835" fname="Siddharth" lname="Gaikwad" share="100" lead="true"/>
+  </class>
+  <class id="4588066" subject="CS" courseNbr="CN" type="Lab" suffix="7" limit="28" scheduleNote="TY2-T2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18846" fname="Vinod" lname="Pachghare" share="100" lead="true"/>
+  </class>
+  <class id="4588067" subject="CS" courseNbr="CN" type="Lab" suffix="8" limit="28" scheduleNote="TY2-T3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8976" building="ONL" roomNbr="online1"/>
+    <instructor id="taasika-teacher-18835" fname="Siddharth" lname="Gaikwad" share="100" lead="true"/>
+  </class>
+  <class id="4588064" subject="CS" courseNbr="CN" type="Lab" suffix="5" limit="28" scheduleNote="TY1-T5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18936" fname="Riti" lname="Thakor" share="100" lead="true"/>
+  </class>
+  <class id="4588065" subject="CS" courseNbr="CN" type="Lab" suffix="6" limit="28" scheduleNote="TY2-T1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18835" fname="Siddharth" lname="Gaikwad" share="100" lead="true"/>
+  </class>
+  <class id="4588062" subject="CS" courseNbr="CN" type="Lab" suffix="3" limit="28" scheduleNote="TY1-T3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1530" endTime="1730" timePattern="1 x 120"/>
+    <room id="taasika-room-8988" building="AC" roomNbr="NC-14"/>
+    <instructor id="taasika-teacher-18844" fname="Satish" lname="Kumbhar" share="100" lead="true"/>
+  </class>
+  <class id="4588063" subject="CS" courseNbr="CN" type="Lab" suffix="4" limit="28" scheduleNote="TY1-T4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18844" fname="Satish" lname="Kumbhar" share="100" lead="true"/>
+  </class>
+  <class id="4588060" subject="CS" courseNbr="CN" type="Lab" suffix="1" limit="28" scheduleNote="TY1-T1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18844" fname="Satish" lname="Kumbhar" share="100" lead="true"/>
+  </class>
+  <class id="4588061" subject="CS" courseNbr="CN" type="Lab" suffix="2" limit="28" scheduleNote="TY1-T2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18844" fname="Satish" lname="Kumbhar" share="100" lead="true"/>
+  </class>
+  <class id="4588039" subject="CS" courseNbr="CO" type="Lec" suffix="1" limit="150" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1330" endTime="1430" timePattern="3 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18840" fname="Amit" lname="Joshi" share="100" lead="true"/>
+  </class>
+  <class id="4588040" subject="CS" courseNbr="CO" type="Lec" suffix="2" limit="150" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTW" startTime="1530" endTime="1630" timePattern="3 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18840" fname="Amit" lname="Joshi" share="100" lead="true"/>
+  </class>
+  <class id="4588036" subject="CS" courseNbr="CoI" type="Lec" suffix="1" limit="150" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="ThF" startTime="0930" endTime="1030" timePattern="2 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18944" fname="Constitution" lname="Teacher1" share="100" lead="true"/>
+  </class>
+  <class id="4588037" subject="CS" courseNbr="CoI" type="Lec" suffix="2" limit="150" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TTh" startTime="1230" endTime="1330" timePattern="2 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18944" fname="Constitution" lname="Teacher1" share="100" lead="true"/>
+  </class>
+  <class id="4588088" subject="CS" courseNbr="DAA" type="Lec" suffix="1" limit="150" scheduleNote="TY-Div1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTW" startTime="0830" endTime="0930" timePattern="3 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18930" fname="Sujata" lname="Sonawane" share="100" lead="true"/>
+  </class>
+  <class id="4588089" subject="CS" courseNbr="DAA" type="Lec" suffix="2" limit="150" scheduleNote="TY-Div2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTW" startTime="0930" endTime="1030" timePattern="3 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18940" fname="Aparna" lname="Biswas" share="100" lead="true"/>
+  </class>
+  <class id="4588100" subject="CS" courseNbr="DAA" type="Lab" suffix="11" limit="28" scheduleNote="TY2-T6" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+    <instructor id="taasika-teacher-18928" fname="Ankita" lname="Mali" share="100" lead="true"/>
+  </class>
+  <class id="4588098" subject="CS" courseNbr="DAA" type="Lab" suffix="9" limit="28" scheduleNote="TY2-T4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18940" fname="Aparna" lname="Biswas" share="100" lead="true"/>
+  </class>
+  <class id="4588099" subject="CS" courseNbr="DAA" type="Lab" suffix="10" limit="28" scheduleNote="TY2-T5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8988" building="AC" roomNbr="NC-14"/>
+    <instructor id="taasika-teacher-18928" fname="Ankita" lname="Mali" share="100" lead="true"/>
+  </class>
+  <class id="4588096" subject="CS" courseNbr="DAA" type="Lab" suffix="7" limit="28" scheduleNote="TY2-T2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+    <instructor id="taasika-teacher-18940" fname="Aparna" lname="Biswas" share="100" lead="true"/>
+  </class>
+  <class id="4588097" subject="CS" courseNbr="DAA" type="Lab" suffix="8" limit="28" scheduleNote="TY2-T3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1330" endTime="1530" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18940" fname="Aparna" lname="Biswas" share="100" lead="true"/>
+  </class>
+  <class id="4588094" subject="CS" courseNbr="DAA" type="Lab" suffix="5" limit="28" scheduleNote="TY1-T5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18930" fname="Sujata" lname="Sonawane" share="100" lead="true"/>
+  </class>
+  <class id="4588095" subject="CS" courseNbr="DAA" type="Lab" suffix="6" limit="28" scheduleNote="TY2-T1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18940" fname="Aparna" lname="Biswas" share="100" lead="true"/>
+  </class>
+  <class id="4588092" subject="CS" courseNbr="DAA" type="Lab" suffix="3" limit="28" scheduleNote="TY1-T3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8985" building="AC" roomNbr="NC-11"/>
+    <instructor id="taasika-teacher-18930" fname="Sujata" lname="Sonawane" share="100" lead="true"/>
+  </class>
+  <class id="4588093" subject="CS" courseNbr="DAA" type="Lab" suffix="4" limit="28" scheduleNote="TY1-T4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18930" fname="Sujata" lname="Sonawane" share="100" lead="true"/>
+  </class>
+  <class id="4588090" subject="CS" courseNbr="DAA" type="Lab" suffix="1" limit="28" scheduleNote="TY1-T1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1530" endTime="1730" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18930" fname="Sujata" lname="Sonawane" share="100" lead="true"/>
+  </class>
+  <class id="4588091" subject="CS" courseNbr="DAA" type="Lab" suffix="2" limit="28" scheduleNote="TY1-T2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18930" fname="Sujata" lname="Sonawane" share="100" lead="true"/>
+  </class>
+  <class id="4588194" subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="1" limit="50" scheduleNote="TY1-ASP" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTTh" startTime="1230" endTime="1330" timePattern="3 x 60"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18837" fname="Santosh" lname="Ghotkar" share="100" lead="true"/>
+  </class>
+  <class id="4588195" subject="CS" courseNbr="DE2-ASP" type="Lec" suffix="2" limit="50" scheduleNote="TY2-ASP" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1430" endTime="1530" timePattern="3 x 60"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18837" fname="Santosh" lname="Ghotkar" share="100" lead="true"/>
+  </class>
+  <class id="4588198" subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="3" limit="34" scheduleNote="TY2-T6" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8973" building="AC" roomNbr="NC-04"/>
+    <instructor id="taasika-teacher-18837" fname="Santosh" lname="Ghotkar" share="100" lead="true"/>
+  </class>
+  <class id="4588196" subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="1" limit="34" scheduleNote="TY1-T5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8972" building="AC" roomNbr="NC-08"/>
+    <instructor id="taasika-teacher-18837" fname="Santosh" lname="Ghotkar" share="100" lead="true"/>
+  </class>
+  <class id="4588197" subject="CS" courseNbr="DE2-ASP" type="Lab" suffix="2" limit="34" scheduleNote="TY2-T5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8978" building="ONL" roomNbr="Online3"/>
+    <instructor id="taasika-teacher-18837" fname="Santosh" lname="Ghotkar" share="100" lead="true"/>
+  </class>
+  <class id="4588178" subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="1" limit="50" scheduleNote="TY1-BCT" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MWTh" startTime="1230" endTime="1330" timePattern="3 x 60"/>
+    <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+    <instructor id="taasika-teacher-18923" fname="Afsha" lname="Akkalkot" share="100" lead="true"/>
+  </class>
+  <class id="4588179" subject="CS" courseNbr="DE2-BCT" type="Lec" suffix="2" limit="50" scheduleNote="TY2-BCT" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MWTh" startTime="1130" endTime="1230" timePattern="3 x 60"/>
+    <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+    <instructor id="taasika-teacher-18923" fname="Afsha" lname="Akkalkot" share="100" lead="true"/>
+  </class>
+  <class id="4588182" subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="3" limit="25" scheduleNote="TY2-T1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+    <instructor id="taasika-teacher-18923" fname="Afsha" lname="Akkalkot" share="100" lead="true"/>
+  </class>
+  <class id="4588183" subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="4" limit="25" scheduleNote="TY2-T2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+    <instructor id="taasika-teacher-18923" fname="Afsha" lname="Akkalkot" share="100" lead="true"/>
+  </class>
+  <class id="4588180" subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="1" limit="25" scheduleNote="TY1-T1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+    <instructor id="taasika-teacher-18923" fname="Afsha" lname="Akkalkot" share="100" lead="true"/>
+  </class>
+  <class id="4588181" subject="CS" courseNbr="DE2-BCT" type="Lab" suffix="2" limit="25" scheduleNote="TY1-T2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+    <instructor id="taasika-teacher-18923" fname="Afsha" lname="Akkalkot" share="100" lead="true"/>
+  </class>
+  <class id="4588186" subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="1" limit="50" scheduleNote="TY1-DSci" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MWF" startTime="0830" endTime="0930" timePattern="3 x 60"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18847" fname="Archana" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588187" subject="CS" courseNbr="DE2-DSci" type="Lec" suffix="2" limit="50" scheduleNote="TY2-DSci" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MWF" startTime="0930" endTime="1030" timePattern="3 x 60"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18847" fname="Archana" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588190" subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="3" limit="25" scheduleNote="TY2-T3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+    <instructor id="taasika-teacher-18847" fname="Archana" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588191" subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="4" limit="25" scheduleNote="TY2-T4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+    <instructor id="taasika-teacher-18847" fname="Archana" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588188" subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="1" limit="25" scheduleNote="TY1-T3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+    <instructor id="taasika-teacher-18847" fname="Archana" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588189" subject="CS" courseNbr="DE2-DSci" type="Lab" suffix="2" limit="25" scheduleNote="TY1-T4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+    <instructor id="taasika-teacher-18847" fname="Archana" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588214" subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="2" limit="25" scheduleNote="BT1-B3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8992" building="ENTCX" roomNbr="CET-D"/>
+    <instructor id="taasika-teacher-18849" fname="Suraj" lname="Sawant" share="100" lead="true"/>
+  </class>
+  <class id="4588215" subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="3" limit="25" scheduleNote="BT2-B4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8993" building="UNAV" roomNbr="Unavail-A"/>
+    <instructor id="taasika-teacher-18928" fname="Ankita" lname="Mali" share="100" lead="true"/>
+  </class>
+  <class id="4588213" subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="1" limit="25" scheduleNote="BT1-B2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8957" building="CSED" roomNbr="FOSS2"/>
+    <instructor id="taasika-teacher-18849" fname="Suraj" lname="Sawant" share="100" lead="true"/>
+  </class>
+  <class id="4588216" subject="CS" courseNbr="DE4-GIS" type="Lab" suffix="4" limit="25" scheduleNote="BT2-B3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8993" building="UNAV" roomNbr="Unavail-A"/>
+    <instructor id="taasika-teacher-18928" fname="Ankita" lname="Mali" share="100" lead="true"/>
+  </class>
+  <class id="4588212" subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="2" limit="50" scheduleNote="BT2-GIS" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTW" startTime="1130" endTime="1230" timePattern="3 x 60"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18849" fname="Suraj" lname="Sawant" share="100" lead="true"/>
+  </class>
+  <class id="4588211" subject="CS" courseNbr="DE4-GIS" type="Lec" suffix="1" limit="50" scheduleNote="BT1-GIS" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MWTh" startTime="0830" endTime="0930" timePattern="3 x 60"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18849" fname="Suraj" lname="Sawant" share="100" lead="true"/>
+  </class>
+  <class id="4588224" subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="4" limit="25" scheduleNote="BT2-B5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+    <instructor id="taasika-teacher-18840" fname="Amit" lname="Joshi" share="100" lead="true"/>
+  </class>
+  <class id="4588222" subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="2" limit="25" scheduleNote="BT1-B5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8994" building="UNAV" roomNbr="Unavail-B"/>
+    <instructor id="taasika-teacher-18840" fname="Amit" lname="Joshi" share="100" lead="true"/>
+  </class>
+  <class id="4588223" subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="3" limit="25" scheduleNote="BT2-B6" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8992" building="ENTCX" roomNbr="CET-D"/>
+    <instructor id="taasika-teacher-18836" fname="Soma" lname="Ghosh" share="100" lead="true"/>
+  </class>
+  <class id="4588221" subject="CS" courseNbr="DE4-GPU" type="Lab" suffix="1" limit="25" scheduleNote="BT1-B4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8995" building="UNAV" roomNbr="Unavail-C"/>
+    <instructor id="taasika-teacher-18840" fname="Amit" lname="Joshi" share="100" lead="true"/>
+  </class>
+  <class id="4588220" subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="2" limit="50" scheduleNote="BT2-GPU" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MWTh" startTime="1030" endTime="1130" timePattern="3 x 60"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18840" fname="Amit" lname="Joshi" share="100" lead="true"/>
+  </class>
+  <class id="4588219" subject="CS" courseNbr="DE4-GPU" type="Lec" suffix="1" limit="50" scheduleNote="BT1-GPU" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MWTh" startTime="0930" endTime="1030" timePattern="3 x 60"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18840" fname="Amit" lname="Joshi" share="100" lead="true"/>
+  </class>
+  <class id="4588204" subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="1" limit="50" scheduleNote="BT1-IBCSC" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTW" startTime="0830" endTime="0930" timePattern="3 x 60"/>
+    <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+    <instructor id="taasika-teacher-18843" fname="Deepak" lname="Kshirsagar" share="100" lead="true"/>
+  </class>
+  <class id="4588205" subject="CS" courseNbr="DE4-IBCS" type="Lec" suffix="2" limit="50" scheduleNote="BT2-IBCSC" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TThF" startTime="1130" endTime="1230" timePattern="3 x 60"/>
+    <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+    <instructor id="taasika-teacher-18843" fname="Deepak" lname="Kshirsagar" share="100" lead="true"/>
+  </class>
+  <class id="4588208" subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="3" limit="34" scheduleNote="BT2-B2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+    <instructor id="taasika-teacher-18843" fname="Deepak" lname="Kshirsagar" share="100" lead="true"/>
+  </class>
+  <class id="4588206" subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="1" limit="34" scheduleNote="BT1-B1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18843" fname="Deepak" lname="Kshirsagar" share="100" lead="true"/>
+  </class>
+  <class id="4588207" subject="CS" courseNbr="DE4-IBCS" type="Lab" suffix="2" limit="34" scheduleNote="BT2-B1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18843" fname="Deepak" lname="Kshirsagar" share="100" lead="true"/>
+  </class>
+  <class id="4588120" subject="CS" courseNbr="DMML" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTTh" startTime="1530" endTime="1630" timePattern="3 x 60"/>
+    <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+    <instructor id="taasika-teacher-18834" fname="Vahida" lname="Attar" share="100" lead="true"/>
+  </class>
+  <class id="4588122" subject="CS" courseNbr="DMML" type="Lab" suffix="2" limit="20" scheduleNote="MTCE-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8958" building="CSED" roomNbr="GML"/>
+    <instructor id="taasika-teacher-18834" fname="Vahida" lname="Attar" share="100" lead="true"/>
+  </class>
+  <class id="4588121" subject="CS" courseNbr="DMML" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+    <instructor id="taasika-teacher-18834" fname="Vahida" lname="Attar" share="100" lead="true"/>
+  </class>
+  <class id="4588294" subject="CS" courseNbr="DS-FY" type="Lec" suffix="3" limit="100" scheduleNote="FY-CSE3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1330" endTime="1430" timePattern="3 x 60"/>
+    <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588295" subject="CS" courseNbr="DS-FY" type="Lec" suffix="4" limit="100" scheduleNote="FY-CSE2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTW" startTime="0830" endTime="0930" timePattern="3 x 60"/>
+    <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+    <instructor id="taasika-teacher-18933" fname="Padmashree" lname="Shedbalkar" share="100" lead="true"/>
+  </class>
+  <class id="4588292" subject="CS" courseNbr="DS-FY" type="Lec" suffix="1" limit="100" scheduleNote="FY-CSE4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTTh" startTime="1430" endTime="1530" timePattern="3 x 60"/>
+    <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588293" subject="CS" courseNbr="DS-FY" type="Lec" suffix="2" limit="100" scheduleNote="FY-CSE1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTTh" startTime="1030" endTime="1130" timePattern="3 x 60"/>
+    <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588296" subject="CS" courseNbr="DS-FY" type="Lec" suffix="5" limit="100" scheduleNote="FY-AIML" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1530" endTime="1630" timePattern="3 x 60"/>
+    <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+    <instructor id="taasika-teacher-18932" fname="Vaishali" lname="Kosamkar" share="100" lead="true"/>
+  </class>
+  <class id="4588302" subject="CS" courseNbr="DS-FY" type="Rec" suffix="6" limit="25" scheduleNote="FY-CSE2-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1130" endTime="1230" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588303" subject="CS" courseNbr="DS-FY" type="Rec" suffix="7" limit="25" scheduleNote="FY-CSE1-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1230" endTime="1330" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18933" fname="Padmashree" lname="Shedbalkar" share="100" lead="true"/>
+  </class>
+  <class id="4588300" subject="CS" courseNbr="DS-FY" type="Rec" suffix="4" limit="25" scheduleNote="FY-CSE3-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1730" endTime="1830" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588301" subject="CS" courseNbr="DS-FY" type="Rec" suffix="5" limit="25" scheduleNote="FY-CSE2-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1130" endTime="1230" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18933" fname="Padmashree" lname="Shedbalkar" share="100" lead="true"/>
+  </class>
+  <class id="4588298" subject="CS" courseNbr="DS-FY" type="Rec" suffix="2" limit="25" scheduleNote="FY-CSE1-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1330" endTime="1430" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588299" subject="CS" courseNbr="DS-FY" type="Rec" suffix="3" limit="25" scheduleNote="FY-CSE3-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1330" endTime="1430" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588297" subject="CS" courseNbr="DS-FY" type="Rec" suffix="1" limit="25" scheduleNote="FY-CSE1-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1030" endTime="1130" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588310" subject="CS" courseNbr="DS-FY" type="Rec" suffix="14" limit="25" scheduleNote="FY-CSE1-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1430" endTime="1530" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18933" fname="Padmashree" lname="Shedbalkar" share="100" lead="true"/>
+  </class>
+  <class id="4588311" subject="CS" courseNbr="DS-FY" type="Rec" suffix="15" limit="25" scheduleNote="FY-CSE4-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0830" endTime="0930" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588308" subject="CS" courseNbr="DS-FY" type="Rec" suffix="12" limit="25" scheduleNote="FY-CSE3-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1230" endTime="1330" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588309" subject="CS" courseNbr="DS-FY" type="Rec" suffix="13" limit="25" scheduleNote="FY-CSE4-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1330" endTime="1430" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588306" subject="CS" courseNbr="DS-FY" type="Rec" suffix="10" limit="25" scheduleNote="FY-AIML-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1230" endTime="1330" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588307" subject="CS" courseNbr="DS-FY" type="Rec" suffix="11" limit="25" scheduleNote="FY-CSE3-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1430" endTime="1530" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588304" subject="CS" courseNbr="DS-FY" type="Rec" suffix="8" limit="25" scheduleNote="FY-AIML-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1230" endTime="1330" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18933" fname="Padmashree" lname="Shedbalkar" share="100" lead="true"/>
+  </class>
+  <class id="4588305" subject="CS" courseNbr="DS-FY" type="Rec" suffix="9" limit="25" scheduleNote="FY-CSE4-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1530" endTime="1630" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588316" subject="CS" courseNbr="DS-FY" type="Rec" suffix="20" limit="25" scheduleNote="FY-CSE2-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1230" endTime="1330" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18932" fname="Vaishali" lname="Kosamkar" share="100" lead="true"/>
+  </class>
+  <class id="4588314" subject="CS" courseNbr="DS-FY" type="Rec" suffix="18" limit="25" scheduleNote="FY-AIML-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1130" endTime="1230" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18932" fname="Vaishali" lname="Kosamkar" share="100" lead="true"/>
+  </class>
+  <class id="4588315" subject="CS" courseNbr="DS-FY" type="Rec" suffix="19" limit="25" scheduleNote="FY-CSE4-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1430" endTime="1530" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18932" fname="Vaishali" lname="Kosamkar" share="100" lead="true"/>
+  </class>
+  <class id="4588312" subject="CS" courseNbr="DS-FY" type="Rec" suffix="16" limit="25" scheduleNote="FY-CSE2-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1330" endTime="1430" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18933" fname="Padmashree" lname="Shedbalkar" share="100" lead="true"/>
+  </class>
+  <class id="4588313" subject="CS" courseNbr="DS-FY" type="Rec" suffix="17" limit="25" scheduleNote="FY-AIML-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1430" endTime="1530" timePattern="1 x 60"/>
+    <room id="taasika-room-8987" building="AC" roomNbr="NC-13"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588084" subject="CS" courseNbr="DTL" type="Lab" suffix="10" limit="28" scheduleNote="SY2-S6(DSY)" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18873" fname="Pratiksha" lname="Deshmukh" share="100" lead="true"/>
+  </class>
+  <class id="4588085" subject="CS" courseNbr="DTL" type="Lab" suffix="11" limit="28" scheduleNote="SY2-S5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+    <instructor id="taasika-teacher-18873" fname="Pratiksha" lname="Deshmukh" share="100" lead="true"/>
+  </class>
+  <class id="4588082" subject="CS" courseNbr="DTL" type="Lab" suffix="8" limit="28" scheduleNote="SY2-S3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1530" endTime="1730" timePattern="1 x 120"/>
+    <room id="taasika-room-8985" building="AC" roomNbr="NC-11"/>
+    <instructor id="taasika-teacher-18873" fname="Pratiksha" lname="Deshmukh" share="100" lead="true"/>
+  </class>
+  <class id="4588083" subject="CS" courseNbr="DTL" type="Lab" suffix="9" limit="28" scheduleNote="SY2-S4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8973" building="AC" roomNbr="NC-04"/>
+    <instructor id="taasika-teacher-18873" fname="Pratiksha" lname="Deshmukh" share="100" lead="true"/>
+  </class>
+  <class id="4588080" subject="CS" courseNbr="DTL" type="Lab" suffix="6" limit="28" scheduleNote="SY2-S1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8976" building="ONL" roomNbr="online1"/>
+    <instructor id="taasika-teacher-18873" fname="Pratiksha" lname="Deshmukh" share="100" lead="true"/>
+  </class>
+  <class id="4588081" subject="CS" courseNbr="DTL" type="Lab" suffix="7" limit="28" scheduleNote="SY2-S2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8977" building="ONL" roomNbr="online2"/>
+    <instructor id="taasika-teacher-18873" fname="Pratiksha" lname="Deshmukh" share="100" lead="true"/>
+  </class>
+  <class id="4588078" subject="CS" courseNbr="DTL" type="Lab" suffix="4" limit="28" scheduleNote="SY1-S4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18836" fname="Soma" lname="Ghosh" share="100" lead="true"/>
+  </class>
+  <class id="4588079" subject="CS" courseNbr="DTL" type="Lab" suffix="5" limit="28" scheduleNote="SY1-S5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+    <instructor id="taasika-teacher-18836" fname="Soma" lname="Ghosh" share="100" lead="true"/>
+  </class>
+  <class id="4588076" subject="CS" courseNbr="DTL" type="Lab" suffix="2" limit="28" scheduleNote="SY1-S2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8981" building="BHAU" roomNbr="Bhau1"/>
+    <instructor id="taasika-teacher-18836" fname="Soma" lname="Ghosh" share="100" lead="true"/>
+  </class>
+  <class id="4588077" subject="CS" courseNbr="DTL" type="Lab" suffix="3" limit="28" scheduleNote="SY1-S3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18836" fname="Soma" lname="Ghosh" share="100" lead="true"/>
+  </class>
+  <class id="4588075" subject="CS" courseNbr="DTL" type="Lab" suffix="1" limit="28" scheduleNote="SY1-S1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18836" fname="Soma" lname="Ghosh" share="100" lead="true"/>
+  </class>
+  <class id="4588374" subject="CS" courseNbr="Eco" type="Lec" suffix="1" limit="150" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TF" startTime="1530" endTime="1630" timePattern="2 x 60"/>
+    <room id="taasika-room-8983" building="AC" roomNbr="NC-09"/>
+    <instructor id="taasika-teacher-18880" fname="Applied" mname="Science" lname="Teacher2" share="100" lead="true"/>
+  </class>
+  <class id="4588375" subject="CS" courseNbr="Eco" type="Lec" suffix="2" limit="150" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TTh" startTime="1430" endTime="1530" timePattern="2 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18880" fname="Applied" mname="Science" lname="Teacher2" share="100" lead="true"/>
+  </class>
+  <class id="4588130" subject="CS" courseNbr="ES" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TThF" startTime="1330" endTime="1430" timePattern="3 x 60"/>
+    <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+    <instructor id="taasika-teacher-18925" fname="Prajwal" lname="Thakare" share="100" lead="true"/>
+  </class>
+  <class id="4588132" subject="CS" courseNbr="ES" type="Lab" suffix="2" limit="20" scheduleNote="MTCE-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1330" endTime="1530" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18929" fname="Tina" lname="Francis" share="100" lead="true"/>
+  </class>
+  <class id="4588131" subject="CS" courseNbr="ES" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+    <instructor id="taasika-teacher-18925" fname="Prajwal" lname="Thakare" share="100" lead="true"/>
+  </class>
+  <class id="4588288" subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="2" limit="100" scheduleNote="FY-Reserved2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTWThF" startTime="1430" endTime="1530" timePattern="5 x 60"/>
+    <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+    <instructor id="taasika-teacher-18942" fname="FY" mname="Reserved" lname="Teacher2" share="100" lead="true"/>
+  </class>
+  <class id="4588289" subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="3" limit="100" scheduleNote="FY-Reserved3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTWThF" startTime="1530" endTime="1630" timePattern="5 x 60"/>
+    <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+    <instructor id="taasika-teacher-18943" fname="FY" mname="Reserved" lname="Teacher3" share="100" lead="true"/>
+  </class>
+  <class id="4588287" subject="CS" courseNbr="FY-Reserve" type="Lec" suffix="1" limit="100" scheduleNote="FY-Reserved1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTWThF" startTime="0830" endTime="0930" timePattern="5 x 60"/>
+    <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+    <instructor id="taasika-teacher-18941" fname="FY" mname="Reserved" lname="Teacher1" share="100" lead="true"/>
+  </class>
+  <class id="4588377" subject="CS" courseNbr="MDM-BLOCK" type="Lec" suffix="1" limit="100" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MT" startTime="1630" endTime="1830" timePattern="2 x 120"/>
+    <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+  </class>
+  <class id="4588072" subject="CS" courseNbr="MDM-DSFA" type="Lec" suffix="1" limit="50" scheduleNote="SY-MDM1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MT" startTime="1630" endTime="1830" timePattern="2 x 120"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18874" fname="Harish" lname="Gadade" share="100" lead="true"/>
+  </class>
+  <class id="4588073" subject="CS" courseNbr="MDM-DSFA" type="Lec" suffix="2" limit="50" scheduleNote="SY-MDM2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MT" startTime="1630" endTime="1830" timePattern="2 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18938" fname="Manish" lname="Gaikwad" share="100" lead="true"/>
+  </class>
+  <class id="4588200" subject="CS" courseNbr="MDM-FDMS" type="Lec" suffix="1" limit="50" scheduleNote="TY-MDM1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MT" startTime="1630" endTime="1830" timePattern="2 x 120"/>
+    <room id="taasika-room-8985" building="AC" roomNbr="NC-11"/>
+    <instructor id="taasika-teacher-18841" fname="Vijay" lname="Khadse" share="100" lead="true"/>
+  </class>
+  <class id="4588201" subject="CS" courseNbr="MDM-FDMS" type="Lec" suffix="2" limit="50" scheduleNote="TY-MDM2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MT" startTime="1630" endTime="1830" timePattern="2 x 120"/>
+    <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+    <instructor id="taasika-teacher-18924" fname="Sneha" lname="Palimkar" share="100" lead="true"/>
+  </class>
+  <class id="4588226" subject="CS" courseNbr="OE-DS" type="Lec" suffix="1" limit="100" scheduleNote="MT-OE" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="ThF" startTime="0830" endTime="0930" timePattern="2 x 60"/>
+    <room id="taasika-room-8980" building="NCSE" roomNbr="NC28"/>
+    <instructor id="taasika-teacher-18930" fname="Sujata" lname="Sonawane" share="100" lead="true"/>
+  </class>
+  <class id="4588174" subject="CS" courseNbr="OE-FOS" type="Lec" suffix="1" limit="50" scheduleNote="SY-OE1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="WF" startTime="1730" endTime="1830" timePattern="2 x 60"/>
+    <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+    <instructor id="taasika-teacher-18837" fname="Santosh" lname="Ghotkar" share="100" lead="true"/>
+  </class>
+  <class id="4588175" subject="CS" courseNbr="OE-FOS" type="Lec" suffix="2" limit="50" scheduleNote="SY-OE2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TTh" startTime="0830" endTime="0930" timePattern="2 x 60"/>
+    <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+    <instructor id="taasika-teacher-18936" fname="Riti" lname="Thakor" share="100" lead="true"/>
+  </class>
+  <class id="4588160" subject="CS" courseNbr="OOPD" type="Lec" suffix="1" limit="150" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="WThF" startTime="1430" endTime="1530" timePattern="3 x 60"/>
+    <room id="taasika-room-8983" building="AC" roomNbr="NC-09"/>
+    <instructor id="taasika-teacher-18921" fname="Charulata" mname="Patil" lname="(Tenured)" share="100" lead="true"/>
+  </class>
+  <class id="4588161" subject="CS" courseNbr="OOPD" type="Lec" suffix="2" limit="150" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1330" endTime="1430" timePattern="3 x 60"/>
+    <room id="taasika-room-8983" building="AC" roomNbr="NC-09"/>
+    <instructor id="taasika-teacher-18881" fname="Trishna" lname="Ugale" share="100" lead="true"/>
+  </class>
+  <class id="4588166" subject="CS" courseNbr="OOPD" type="Lab" suffix="5" limit="28" scheduleNote="SY1-S5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588167" subject="CS" courseNbr="OOPD" type="Lab" suffix="6" limit="28" scheduleNote="SY2-S1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8986" building="AC" roomNbr="NC-12"/>
+    <instructor id="taasika-teacher-18881" fname="Trishna" lname="Ugale" share="100" lead="true"/>
+  </class>
+  <class id="4588164" subject="CS" courseNbr="OOPD" type="Lab" suffix="3" limit="28" scheduleNote="SY1-S3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1530" endTime="1730" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18921" fname="Charulata" mname="Patil" lname="(Tenured)" share="100" lead="true"/>
+  </class>
+  <class id="4588165" subject="CS" courseNbr="OOPD" type="Lab" suffix="4" limit="28" scheduleNote="SY1-S4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18921" fname="Charulata" mname="Patil" lname="(Tenured)" share="100" lead="true"/>
+  </class>
+  <class id="4588162" subject="CS" courseNbr="OOPD" type="Lab" suffix="1" limit="28" scheduleNote="SY1-S1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18921" fname="Charulata" mname="Patil" lname="(Tenured)" share="100" lead="true"/>
+  </class>
+  <class id="4588163" subject="CS" courseNbr="OOPD" type="Lab" suffix="2" limit="28" scheduleNote="SY1-S2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8975" building="AC" roomNbr="NC-02"/>
+    <instructor id="taasika-teacher-18921" fname="Charulata" mname="Patil" lname="(Tenured)" share="100" lead="true"/>
+  </class>
+  <class id="4588172" subject="CS" courseNbr="OOPD" type="Lab" suffix="11" limit="28" scheduleNote="SY2-S6(DSY)" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8982" building="BHAU" roomNbr="Bhau2"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588170" subject="CS" courseNbr="OOPD" type="Lab" suffix="9" limit="28" scheduleNote="SY2-S4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18881" fname="Trishna" lname="Ugale" share="100" lead="true"/>
+  </class>
+  <class id="4588171" subject="CS" courseNbr="OOPD" type="Lab" suffix="10" limit="28" scheduleNote="SY2-S5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588168" subject="CS" courseNbr="OOPD" type="Lab" suffix="7" limit="28" scheduleNote="SY2-S2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18881" fname="Trishna" lname="Ugale" share="100" lead="true"/>
+  </class>
+  <class id="4588169" subject="CS" courseNbr="OOPD" type="Lab" suffix="8" limit="28" scheduleNote="SY2-S3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18881" fname="Trishna" lname="Ugale" share="100" lead="true"/>
+  </class>
+  <class id="4588327" subject="CS" courseNbr="PP-FY" type="Lab" suffix="1" limit="25" scheduleNote="FY-PP1-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18935" fname="Swati" lname="Atone" share="100" lead="true"/>
+  </class>
+  <class id="4588334" subject="CS" courseNbr="PP-FY" type="Lab" suffix="8" limit="25" scheduleNote="FY-PP3-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18931" fname="Sneha" lname="Chavan" share="100" lead="true"/>
+  </class>
+  <class id="4588335" subject="CS" courseNbr="PP-FY" type="Lab" suffix="9" limit="25" scheduleNote="FY-PP4-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18939" fname="Akanksha" lname="Mudhe" share="100" lead="true"/>
+  </class>
+  <class id="4588332" subject="CS" courseNbr="PP-FY" type="Lab" suffix="6" limit="25" scheduleNote="FY-PP1-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18931" fname="Sneha" lname="Chavan" share="100" lead="true"/>
+  </class>
+  <class id="4588333" subject="CS" courseNbr="PP-FY" type="Lab" suffix="7" limit="25" scheduleNote="FY-PP2-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18932" fname="Vaishali" lname="Kosamkar" share="100" lead="true"/>
+  </class>
+  <class id="4588330" subject="CS" courseNbr="PP-FY" type="Lab" suffix="4" limit="25" scheduleNote="FY-PP4-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18927" fname="Priti" lname="Yadav" share="100" lead="true"/>
+  </class>
+  <class id="4588331" subject="CS" courseNbr="PP-FY" type="Lab" suffix="5" limit="25" scheduleNote="FY-PP5-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+    <instructor id="taasika-teacher-18927" fname="Priti" lname="Yadav" share="100" lead="true"/>
+  </class>
+  <class id="4588328" subject="CS" courseNbr="PP-FY" type="Lab" suffix="2" limit="25" scheduleNote="FY-PP2-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18927" fname="Priti" lname="Yadav" share="100" lead="true"/>
+  </class>
+  <class id="4588329" subject="CS" courseNbr="PP-FY" type="Lab" suffix="3" limit="25" scheduleNote="FY-PP3-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18927" fname="Priti" lname="Yadav" share="100" lead="true"/>
+  </class>
+  <class id="4588342" subject="CS" courseNbr="PP-FY" type="Lab" suffix="16" limit="25" scheduleNote="FY-PP1-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18939" fname="Akanksha" lname="Mudhe" share="100" lead="true"/>
+  </class>
+  <class id="4588343" subject="CS" courseNbr="PP-FY" type="Lab" suffix="17" limit="25" scheduleNote="FY-PP2-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8995" building="UNAV" roomNbr="Unavail-C"/>
+    <instructor id="taasika-teacher-18939" fname="Akanksha" lname="Mudhe" share="100" lead="true"/>
+  </class>
+  <class id="4588340" subject="CS" courseNbr="PP-FY" type="Lab" suffix="14" limit="25" scheduleNote="FY-PP4-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8991" building="ENTCX" roomNbr="CET-C"/>
+    <instructor id="taasika-teacher-18934" fname="Ashwini" lname="Choudhari" share="100" lead="true"/>
+  </class>
+  <class id="4588341" subject="CS" courseNbr="PP-FY" type="Lab" suffix="15" limit="25" scheduleNote="FY-PP5-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8995" building="UNAV" roomNbr="Unavail-C"/>
+    <instructor id="taasika-teacher-18934" fname="Ashwini" lname="Choudhari" share="100" lead="true"/>
+  </class>
+  <class id="4588338" subject="CS" courseNbr="PP-FY" type="Lab" suffix="12" limit="25" scheduleNote="FY-PP2-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18934" fname="Ashwini" lname="Choudhari" share="100" lead="true"/>
+  </class>
+  <class id="4588339" subject="CS" courseNbr="PP-FY" type="Lab" suffix="13" limit="25" scheduleNote="FY-PP3-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8956" building="CSED" roomNbr="FOSS1"/>
+    <instructor id="taasika-teacher-18934" fname="Ashwini" lname="Choudhari" share="100" lead="true"/>
+  </class>
+  <class id="4588336" subject="CS" courseNbr="PP-FY" type="Lab" suffix="10" limit="25" scheduleNote="FY-PP5-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8996" building="UNAV" roomNbr="Unavail-D"/>
+    <instructor id="taasika-teacher-18931" fname="Sneha" lname="Chavan" share="100" lead="true"/>
+  </class>
+  <class id="4588337" subject="CS" courseNbr="PP-FY" type="Lab" suffix="11" limit="25" scheduleNote="FY-PP1-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18937" fname="Pranoti" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588350" subject="CS" courseNbr="PP-FY" type="Lab" suffix="24" limit="25" scheduleNote="FY-PP3-A_" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8993" building="UNAV" roomNbr="Unavail-A"/>
+    <instructor id="taasika-teacher-18932" fname="Vaishali" lname="Kosamkar" share="100" lead="true"/>
+  </class>
+  <class id="4588348" subject="CS" courseNbr="PP-FY" type="Lab" suffix="22" limit="25" scheduleNote="FY-PP5-A_" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18932" fname="Vaishali" lname="Kosamkar" share="100" lead="true"/>
+  </class>
+  <class id="4588349" subject="CS" courseNbr="PP-FY" type="Lab" suffix="23" limit="25" scheduleNote="FY-PP4-A_" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18932" fname="Vaishali" lname="Kosamkar" share="100" lead="true"/>
+  </class>
+  <class id="4588346" subject="CS" courseNbr="PP-FY" type="Lab" suffix="20" limit="25" scheduleNote="FY-PP5-E" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18937" fname="Pranoti" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588347" subject="CS" courseNbr="PP-FY" type="Lab" suffix="21" limit="25" scheduleNote="FY-PP5-F" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18932" fname="Vaishali" lname="Kosamkar" share="100" lead="true"/>
+  </class>
+  <class id="4588344" subject="CS" courseNbr="PP-FY" type="Lab" suffix="18" limit="25" scheduleNote="FY-PP3-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18939" fname="Akanksha" lname="Mudhe" share="100" lead="true"/>
+  </class>
+  <class id="4588345" subject="CS" courseNbr="PP-FY" type="Lab" suffix="19" limit="25" scheduleNote="FY-PP5-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8989" building="ENTCX" roomNbr="CET-A"/>
+    <instructor id="taasika-teacher-18936" fname="Riti" lname="Thakor" share="100" lead="true"/>
+  </class>
+  <class id="4588326" subject="CS" courseNbr="PP-FY" type="Lec" suffix="4" limit="100" scheduleNote="FY-PP3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1130" endTime="1230" timePattern="1 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18939" fname="Akanksha" lname="Mudhe" share="100" lead="true"/>
+  </class>
+  <class id="4588324" subject="CS" courseNbr="PP-FY" type="Lec" suffix="2" limit="100" scheduleNote="FY-PP1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0830" endTime="0930" timePattern="1 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18927" fname="Priti" lname="Yadav" share="100" lead="true"/>
+  </class>
+  <class id="4588325" subject="CS" courseNbr="PP-FY" type="Lec" suffix="3" limit="100" scheduleNote="FY-PP2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="0830" endTime="0930" timePattern="1 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18934" fname="Ashwini" lname="Choudhari" share="100" lead="true"/>
+  </class>
+  <class id="4588323" subject="CS" courseNbr="PP-FY" type="Lec" suffix="1" limit="200" scheduleNote="FY-PP4n5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1630" endTime="1730" timePattern="1 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18931" fname="Sneha" lname="Chavan" share="100" lead="true"/>
+  </class>
+  <class id="6717440" subject="CS" courseNbr="PPS-FY" type="Lec" suffix="2" limit="130" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <arrangeTime minPerWeek="60"/>
+  </class>
+  <class id="4588364" subject="CS" courseNbr="PPS-FY" type="Lec" suffix="1" limit="130" scheduleNote="FY-PPS1n2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <arrangeTime minPerWeek="60"/>
+    <instructor id="taasika-teacher-18874" fname="Harish" lname="Gadade" share="100" lead="true"/>
+  </class>
+  <class id="4588372" subject="CS" courseNbr="PPS-FY" type="Lab" suffix="8" limit="33" scheduleNote="FY-PPS2-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1530" endTime="1730" timePattern="1 x 120"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18874" fname="Harish" lname="Gadade" share="100" lead="true"/>
+  </class>
+  <class id="4588370" subject="CS" courseNbr="PPS-FY" type="Lab" suffix="6" limit="33" scheduleNote="FY-PPS2-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+    <instructor id="taasika-teacher-18931" fname="Sneha" lname="Chavan" share="100" lead="true"/>
+  </class>
+  <class id="4588371" subject="CS" courseNbr="PPS-FY" type="Lab" suffix="7" limit="33" scheduleNote="FY-PPS2-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8971" building="AC" roomNbr="AC-201NC-05"/>
+    <instructor id="taasika-teacher-18934" fname="Ashwini" lname="Choudhari" share="100" lead="true"/>
+  </class>
+  <class id="4588368" subject="CS" courseNbr="PPS-FY" type="Lab" suffix="4" limit="33" scheduleNote="FY-PPS1-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8988" building="AC" roomNbr="NC-14"/>
+    <instructor id="taasika-teacher-18937" fname="Pranoti" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588369" subject="CS" courseNbr="PPS-FY" type="Lab" suffix="5" limit="33" scheduleNote="FY-PPS2-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8970" building="AC" roomNbr="NC-03"/>
+    <instructor id="taasika-teacher-18937" fname="Pranoti" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588366" subject="CS" courseNbr="PPS-FY" type="Lab" suffix="2" limit="33" scheduleNote="FY-PPS1-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1330" endTime="1530" timePattern="1 x 120"/>
+    <room id="taasika-room-8986" building="AC" roomNbr="NC-12"/>
+    <instructor id="taasika-teacher-18931" fname="Sneha" lname="Chavan" share="100" lead="true"/>
+  </class>
+  <class id="4588367" subject="CS" courseNbr="PPS-FY" type="Lab" suffix="3" limit="33" scheduleNote="FY-PPS1-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18874" fname="Harish" lname="Gadade" share="100" lead="true"/>
+  </class>
+  <class id="4588365" subject="CS" courseNbr="PPS-FY" type="Lab" suffix="1" limit="33" scheduleNote="FY-PPS1-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8972" building="AC" roomNbr="NC-08"/>
+    <instructor id="taasika-teacher-18874" fname="Harish" lname="Gadade" share="100" lead="true"/>
+  </class>
+  <class id="4588126" subject="CS" courseNbr="SIC" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18845" fname="S." mname="B." lname="Mane" share="100" lead="true"/>
+  </class>
+  <class id="4588127" subject="CS" courseNbr="SIC" type="Lab" suffix="2" limit="20" scheduleNote="MTCE-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+    <instructor id="taasika-teacher-18845" fname="S." mname="B." lname="Mane" share="100" lead="true"/>
+  </class>
+  <class id="4588125" subject="CS" courseNbr="SIC" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MWTh" startTime="0830" endTime="0930" timePattern="3 x 60"/>
+    <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+    <instructor id="taasika-teacher-18845" fname="S." mname="B." lname="Mane" share="100" lead="true"/>
+  </class>
+  <class id="4588114" subject="CS" courseNbr="TOC" type="Rec" suffix="10" limit="28" scheduleNote="SY2-S5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0830" endTime="0930" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588115" subject="CS" courseNbr="TOC" type="Rec" suffix="11" limit="28" scheduleNote="SY2-S6(DSY)" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1130" endTime="1230" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588112" subject="CS" courseNbr="TOC" type="Rec" suffix="8" limit="28" scheduleNote="SY2-S3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0930" endTime="1030" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588113" subject="CS" courseNbr="TOC" type="Rec" suffix="9" limit="28" scheduleNote="SY2-S4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1030" endTime="1130" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588110" subject="CS" courseNbr="TOC" type="Rec" suffix="6" limit="28" scheduleNote="SY2-S1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0830" endTime="0930" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588111" subject="CS" courseNbr="TOC" type="Rec" suffix="7" limit="28" scheduleNote="SY2-S2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1030" endTime="1130" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588108" subject="CS" courseNbr="TOC" type="Rec" suffix="4" limit="28" scheduleNote="SY1-S4" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1330" endTime="1430" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18832" fname="Jibi" lname="Abraham" share="100" lead="true"/>
+  </class>
+  <class id="4588109" subject="CS" courseNbr="TOC" type="Rec" suffix="5" limit="28" scheduleNote="SY1-S5" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1130" endTime="1230" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18832" fname="Jibi" lname="Abraham" share="100" lead="true"/>
+  </class>
+  <class id="4588106" subject="CS" courseNbr="TOC" type="Rec" suffix="2" limit="28" scheduleNote="SY1-S2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1030" endTime="1130" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18832" fname="Jibi" lname="Abraham" share="100" lead="true"/>
+  </class>
+  <class id="4588107" subject="CS" courseNbr="TOC" type="Rec" suffix="3" limit="28" scheduleNote="SY1-S3" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1230" endTime="1330" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18832" fname="Jibi" lname="Abraham" share="100" lead="true"/>
+  </class>
+  <class id="4588105" subject="CS" courseNbr="TOC" type="Rec" suffix="1" limit="28" scheduleNote="SY1-S1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0930" endTime="1030" timePattern="1 x 60"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18832" fname="Jibi" lname="Abraham" share="100" lead="true"/>
+  </class>
+  <class id="4588103" subject="CS" courseNbr="TOC" type="Lec" suffix="1" limit="150" scheduleNote="SY-Div1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MT" startTime="1430" endTime="1530" timePattern="2 x 60"/>
+    <room id="taasika-room-8983" building="AC" roomNbr="NC-09"/>
+    <instructor id="taasika-teacher-18832" fname="Jibi" lname="Abraham" share="100" lead="true"/>
+  </class>
+  <class id="4588104" subject="CS" courseNbr="TOC" type="Lec" suffix="2" limit="150" scheduleNote="SY-Div2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="ThF" startTime="1530" endTime="1630" timePattern="2 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18833" fname="Abhijit" lname="A.M." share="100" lead="true"/>
+  </class>
+  <class id="4588358" subject="CS" courseNbr="WD-FY" type="Lab" suffix="4" limit="38" scheduleNote="FY-WD1-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18927" fname="Priti" lname="Yadav" share="100" lead="true"/>
+  </class>
+  <class id="4588359" subject="CS" courseNbr="WD-FY" type="Lab" suffix="5" limit="38" scheduleNote="FY-WD2-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8985" building="AC" roomNbr="NC-11"/>
+    <instructor id="taasika-teacher-18938" fname="Manish" lname="Gaikwad" share="100" lead="true"/>
+  </class>
+  <class id="4588356" subject="CS" courseNbr="WD-FY" type="Lab" suffix="2" limit="38" scheduleNote="FY-WD1-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8974" building="AC" roomNbr="NC-01"/>
+    <instructor id="taasika-teacher-18936" fname="Riti" lname="Thakor" share="100" lead="true"/>
+  </class>
+  <class id="4588357" subject="CS" courseNbr="WD-FY" type="Lab" suffix="3" limit="38" scheduleNote="FY-WD1-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8977" building="ONL" roomNbr="online2"/>
+    <instructor id="taasika-teacher-18939" fname="Akanksha" lname="Mudhe" share="100" lead="true"/>
+  </class>
+  <class id="4588355" subject="CS" courseNbr="WD-FY" type="Lab" suffix="1" limit="38" scheduleNote="FY-WD1-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8970" building="AC" roomNbr="NC-03"/>
+    <instructor id="taasika-teacher-18924" fname="Sneha" lname="Palimkar" share="100" lead="true"/>
+  </class>
+  <class id="4588360" subject="CS" courseNbr="WD-FY" type="Lab" suffix="6" limit="38" scheduleNote="FY-WD2-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1330" endTime="1530" timePattern="1 x 120"/>
+    <room id="taasika-room-8976" building="ONL" roomNbr="online1"/>
+    <instructor id="taasika-teacher-18938" fname="Manish" lname="Gaikwad" share="100" lead="true"/>
+  </class>
+  <class id="4588361" subject="CS" courseNbr="WD-FY" type="Lab" suffix="7" limit="38" scheduleNote="FY-WD2-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8973" building="AC" roomNbr="NC-04"/>
+    <instructor id="taasika-teacher-18938" fname="Manish" lname="Gaikwad" share="100" lead="true"/>
+  </class>
+  <class id="4588354" subject="CS" courseNbr="WD-FY" type="Lec" suffix="2" limit="130" scheduleNote="FY-WD2" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1730" endTime="1830" timePattern="1 x 60"/>
+    <room id="taasika-room-8983" building="AC" roomNbr="NC-09"/>
+    <instructor id="taasika-teacher-18938" fname="Manish" lname="Gaikwad" share="100" lead="true"/>
+  </class>
+  <class id="4588353" subject="CS" courseNbr="WD-FY" type="Lec" suffix="1" limit="130" scheduleNote="FY-WD1" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1730" endTime="1830" timePattern="1 x 60"/>
+    <room id="taasika-room-8984" building="AC" roomNbr="NC-10"/>
+    <instructor id="taasika-teacher-18924" fname="Sneha" lname="Palimkar" share="100" lead="true"/>
+  </class>
+  <class id="4588262" subject="MT" courseNbr="MT-AMLD" type="Lab" suffix="1" limit="20" scheduleNote="MTDS-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+    <instructor id="taasika-teacher-18874" fname="Harish" lname="Gadade" share="100" lead="true"/>
+  </class>
+  <class id="4588263" subject="MT" courseNbr="MT-AMLD" type="Lab" suffix="2" limit="20" scheduleNote="MTDS-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+    <instructor id="taasika-teacher-18874" fname="Harish" lname="Gadade" share="100" lead="true"/>
+  </class>
+  <class id="4588264" subject="MT" courseNbr="MT-AMLD" type="Lab" suffix="3" limit="20" scheduleNote="MTDS-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+    <instructor id="taasika-teacher-18834" fname="Vahida" lname="Attar" share="100" lead="true"/>
+  </class>
+  <class id="4588265" subject="MT" courseNbr="MT-AMLD" type="Lab" suffix="4" limit="20" scheduleNote="MTDS-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8962" building="CSED" roomNbr="ISL"/>
+    <instructor id="taasika-teacher-18874" fname="Harish" lname="Gadade" share="100" lead="true"/>
+  </class>
+  <class id="4588261" subject="MT" courseNbr="MT-AMLD" type="Lec" suffix="1" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="WThF" startTime="1630" endTime="1730" timePattern="3 x 60"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18847" fname="Archana" lname="Patil" share="100" lead="true"/>
+  </class>
+  <class id="4588254" subject="MT" courseNbr="MT-BDAAS" type="Lec" suffix="1" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="WThF" startTime="1730" endTime="1830" timePattern="3 x 60"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18925" fname="Prajwal" lname="Thakare" share="100" lead="true"/>
+  </class>
+  <class id="4588258" subject="MT" courseNbr="MT-BDAAS" type="Lab" suffix="4" limit="20" scheduleNote="MTDS-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+    <instructor id="taasika-teacher-18925" fname="Prajwal" lname="Thakare" share="100" lead="true"/>
+  </class>
+  <class id="4588256" subject="MT" courseNbr="MT-BDAAS" type="Lab" suffix="2" limit="20" scheduleNote="MTDS-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+    <instructor id="taasika-teacher-18925" fname="Prajwal" lname="Thakare" share="100" lead="true"/>
+  </class>
+  <class id="4588257" subject="MT" courseNbr="MT-BDAAS" type="Lab" suffix="3" limit="20" scheduleNote="MTDS-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+    <instructor id="taasika-teacher-18925" fname="Prajwal" lname="Thakare" share="100" lead="true"/>
+  </class>
+  <class id="4588255" subject="MT" courseNbr="MT-BDAAS" type="Lab" suffix="1" limit="20" scheduleNote="MTDS-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+    <instructor id="taasika-teacher-18925" fname="Prajwal" lname="Thakare" share="100" lead="true"/>
+  </class>
+  <class id="4588152" subject="MT" courseNbr="MT-DFDR" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18846" fname="Vinod" lname="Pachghare" share="100" lead="true"/>
+  </class>
+  <class id="4588153" subject="MT" courseNbr="MT-DFDR" type="Lab" suffix="2" limit="20" scheduleNote="MTCSIS-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18846" fname="Vinod" lname="Pachghare" share="100" lead="true"/>
+  </class>
+  <class id="4588151" subject="MT" courseNbr="MT-DFDR" type="Lec" suffix="1" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1330" endTime="1430" timePattern="3 x 60"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18846" fname="Vinod" lname="Pachghare" share="100" lead="true"/>
+  </class>
+  <class id="4588233" subject="MT" courseNbr="MT-DL" type="Lec" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1330" endTime="1430" timePattern="3 x 60"/>
+    <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+    <instructor id="taasika-teacher-18849" fname="Suraj" lname="Sawant" share="100" lead="true"/>
+  </class>
+  <class id="4588234" subject="MT" courseNbr="MT-DL" type="Lab" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8996" building="UNAV" roomNbr="Unavail-D"/>
+    <instructor id="taasika-teacher-18849" fname="Suraj" lname="Sawant" share="100" lead="true"/>
+  </class>
+  <class id="4588281" subject="MT" courseNbr="MT-ETCSA" type="Lec" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="1730" endTime="1830" timePattern="1 x 60"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18857" fname="Applied" mname="Science" lname="Teacher1" share="100" lead="true"/>
+  </class>
+  <class id="4588284" subject="MT" courseNbr="MT-ETCSA" type="Lab" suffix="3" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1230" endTime="1430" timePattern="1 x 120"/>
+    <room id="taasika-room-8981" building="BHAU" roomNbr="Bhau1"/>
+    <instructor id="taasika-teacher-18857" fname="Applied" mname="Science" lname="Teacher1" share="100" lead="true"/>
+  </class>
+  <class id="4588285" subject="MT" courseNbr="MT-ETCSA" type="Lab" suffix="4" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1030" endTime="1230" timePattern="1 x 120"/>
+    <room id="taasika-room-8981" building="BHAU" roomNbr="Bhau1"/>
+    <instructor id="taasika-teacher-18857" fname="Applied" mname="Science" lname="Teacher1" share="100" lead="true"/>
+  </class>
+  <class id="4588282" subject="MT" courseNbr="MT-ETCSA" type="Lab" suffix="1" limit="20" scheduleNote="MT-CE" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8981" building="BHAU" roomNbr="Bhau1"/>
+    <instructor id="taasika-teacher-18857" fname="Applied" mname="Science" lname="Teacher1" share="100" lead="true"/>
+  </class>
+  <class id="4588283" subject="MT" courseNbr="MT-ETCSA" type="Lab" suffix="2" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8981" building="BHAU" roomNbr="Bhau1"/>
+    <instructor id="taasika-teacher-18857" fname="Applied" mname="Science" lname="Teacher1" share="100" lead="true"/>
+  </class>
+  <class id="4588238" subject="MT" courseNbr="MT-GAN" type="Lab" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8992" building="ENTCX" roomNbr="CET-D"/>
+    <instructor id="taasika-teacher-18865" fname="Anish" lname="Khobragade" share="100" lead="true"/>
+  </class>
+  <class id="4588237" subject="MT" courseNbr="MT-GAN" type="Lec" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="MTTh" startTime="1430" endTime="1530" timePattern="3 x 60"/>
+    <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+    <instructor id="taasika-teacher-18931" fname="Sneha" lname="Chavan" share="100" lead="true"/>
+  </class>
+  <class id="4588268" subject="MT" courseNbr="MT-MLOS" type="Lec" suffix="1" limit="60" scheduleNote="MT-DS" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1530" endTime="1630" timePattern="3 x 60"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18926" fname="Ashwini" lname="Gavade" share="100" lead="true"/>
+  </class>
+  <class id="4588272" subject="MT" courseNbr="MT-MLOS" type="Lab" suffix="4" limit="20" scheduleNote="MTDS-D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+    <instructor id="taasika-teacher-18926" fname="Ashwini" lname="Gavade" share="100" lead="true"/>
+  </class>
+  <class id="4588270" subject="MT" courseNbr="MT-MLOS" type="Lab" suffix="2" limit="20" scheduleNote="MTDS-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+    <instructor id="taasika-teacher-18926" fname="Ashwini" lname="Gavade" share="100" lead="true"/>
+  </class>
+  <class id="4588271" subject="MT" courseNbr="MT-MLOS" type="Lab" suffix="3" limit="20" scheduleNote="MTDS-C" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1130" endTime="1330" timePattern="1 x 120"/>
+    <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+    <instructor id="taasika-teacher-18926" fname="Ashwini" lname="Gavade" share="100" lead="true"/>
+  </class>
+  <class id="4588269" subject="MT" courseNbr="MT-MLOS" type="Lab" suffix="1" limit="20" scheduleNote="MTDS-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1330" endTime="1530" timePattern="1 x 120"/>
+    <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+    <instructor id="taasika-teacher-18926" fname="Ashwini" lname="Gavade" share="100" lead="true"/>
+  </class>
+  <class id="4588250" subject="MT" courseNbr="MT-NLP" type="Lab" suffix="1" limit="20" scheduleNote="MTAI-DE3A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="0830" endTime="1130" timePattern="1 x 180"/>
+    <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+    <instructor id="taasika-teacher-18839" fname="Yashodhara" lname="Haribhakta" share="100" lead="true"/>
+  </class>
+  <class id="4588251" subject="MT" courseNbr="MT-NLP" type="Lab" suffix="2" limit="40" scheduleNote="MTDS-DE3B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="0830" endTime="1130" timePattern="1 x 180"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18839" fname="Yashodhara" lname="Haribhakta" share="100" lead="true"/>
+  </class>
+  <class id="4588142" subject="MT" courseNbr="MT-NS" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="0930" endTime="1130" timePattern="1 x 120"/>
+    <room id="taasika-room-8967" building="CSED" roomNbr="Cogni-4"/>
+    <instructor id="taasika-teacher-18848" fname="Tanuja" lname="Pattanshetti" share="100" lead="true"/>
+  </class>
+  <class id="4588143" subject="MT" courseNbr="MT-NS" type="Lab" suffix="2" limit="20" scheduleNote="MTCSIS-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="Th" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8969" building="CSED" roomNbr="DML"/>
+    <instructor id="taasika-teacher-18848" fname="Tanuja" lname="Pattanshetti" share="100" lead="true"/>
+  </class>
+  <class id="4588141" subject="MT" courseNbr="MT-NS" type="Lec" suffix="1" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1230" endTime="1330" timePattern="3 x 60"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18832" fname="Jibi" lname="Abraham" share="100" lead="true"/>
+  </class>
+  <class id="4588242" subject="MT" courseNbr="MT-OT" type="Lab" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0830" endTime="1030" timePattern="1 x 120"/>
+    <room id="taasika-room-8992" building="ENTCX" roomNbr="CET-D"/>
+    <instructor id="taasika-teacher-18928" fname="Ankita" lname="Mali" share="100" lead="true"/>
+  </class>
+  <class id="4588241" subject="MT" courseNbr="MT-OT" type="Lec" suffix="1" limit="25" scheduleNote="MT-AI" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1530" endTime="1630" timePattern="3 x 60"/>
+    <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+    <instructor id="taasika-teacher-18928" fname="Ankita" lname="Mali" share="100" lead="true"/>
+  </class>
+  <class id="4588146" subject="MT" courseNbr="MT-WNS" type="Lec" suffix="1" limit="25" scheduleNote="MT-CSIS" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="TWTh" startTime="1430" endTime="1530" timePattern="3 x 60"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18843" fname="Deepak" lname="Kshirsagar" share="100" lead="true"/>
+  </class>
+  <class id="4588148" subject="MT" courseNbr="MT-WNS" type="Lab" suffix="2" limit="20" scheduleNote="MTCSIS-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1430" endTime="1630" timePattern="1 x 120"/>
+    <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+    <instructor id="taasika-teacher-18843" fname="Deepak" lname="Kshirsagar" share="100" lead="true"/>
+  </class>
+  <class id="4588147" subject="MT" courseNbr="MT-WNS" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1630" endTime="1830" timePattern="1 x 120"/>
+    <room id="taasika-room-8965" building="CSED" roomNbr="Cogni-3"/>
+    <instructor id="taasika-teacher-18843" fname="Deepak" lname="Kshirsagar" share="100" lead="true"/>
+  </class>
+  <class id="4588228" subject="MT" courseNbr="PSEC2-BT" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0830" endTime="1130" timePattern="1 x 180"/>
+    <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+    <instructor id="taasika-teacher-18923" fname="Afsha" lname="Akkalkot" share="100" lead="true"/>
+  </class>
+  <class id="4588155" subject="MT" courseNbr="PSEC2-CCS" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0830" endTime="1130" timePattern="1 x 180"/>
+    <room id="taasika-room-8955" building="CSED" roomNbr="DBMSL"/>
+    <instructor id="taasika-teacher-18848" fname="Tanuja" lname="Pattanshetti" share="100" lead="true"/>
+  </class>
+  <class id="4588134" subject="MT" courseNbr="PSEC2-CCV" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0830" endTime="1130" timePattern="1 x 180"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18848" fname="Tanuja" lname="Pattanshetti" share="100" lead="true"/>
+  </class>
+  <class id="4588274" subject="MT" courseNbr="PSEC2-CV" type="Lab" suffix="1" limit="40" scheduleNote="MTDS-A,B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1330" endTime="1630" timePattern="1 x 180"/>
+    <room id="taasika-room-8952" building="AC" roomNbr="AC-202NC-06"/>
+    <instructor id="taasika-teacher-18940" fname="Aparna" lname="Biswas" share="100" lead="true"/>
+  </class>
+  <class id="4588244" subject="MT" courseNbr="PSEC2-EAI" type="Lab" suffix="1" limit="20" scheduleNote="MTAI-DE2A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="0830" endTime="1130" timePattern="1 x 180"/>
+    <room id="taasika-room-8979" building="NCSE" roomNbr="NC27"/>
+    <instructor id="taasika-teacher-18921" fname="Charulata" mname="Patil" lname="(Tenured)" share="100" lead="true"/>
+  </class>
+  <class id="4588246" subject="MT" courseNbr="PSEC2-MLPS" type="Lab" suffix="1" limit="20" scheduleNote="MTAI-DE2B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="T" startTime="0830" endTime="1130" timePattern="1 x 180"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18939" fname="Akanksha" lname="Mudhe" share="100" lead="true"/>
+  </class>
+  <class id="4588276" subject="MT" courseNbr="PSEC2-MTRP" type="Lab" suffix="1" limit="40" scheduleNote="MTDS-C,D" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1330" endTime="1630" timePattern="1 x 180"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18922" fname="Abhiraj" lname="Ubale" share="100" lead="true"/>
+  </class>
+  <class id="4588136" subject="MT" courseNbr="PSEC2-NLP" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1530" endTime="1830" timePattern="1 x 180"/>
+    <room id="taasika-room-8964" building="CSED" roomNbr="Cogni-2"/>
+    <instructor id="taasika-teacher-18839" fname="Yashodhara" lname="Haribhakta" share="100" lead="true"/>
+  </class>
+  <class id="4588117" subject="MT" courseNbr="PSEC3-DL" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-DE3A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1530" endTime="1830" timePattern="1 x 180"/>
+    <room id="taasika-room-8966" building="CSED" roomNbr="Cogni-34"/>
+    <instructor id="taasika-teacher-18849" fname="Suraj" lname="Sawant" share="100" lead="true"/>
+  </class>
+  <class id="4588278" subject="MT" courseNbr="PSEC3-GAN" type="Lab" suffix="1" limit="40" scheduleNote="MTDS-DE3A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="M" startTime="1030" endTime="1330" timePattern="1 x 180"/>
+    <room id="taasika-room-8954" building="ENTCX" roomNbr="SH"/>
+    <instructor id="taasika-teacher-18931" fname="Sneha" lname="Chavan" share="100" lead="true"/>
+  </class>
+  <class id="4588248" subject="MT" courseNbr="PSEC3-GNN" type="Lab" suffix="1" limit="20" scheduleNote="MTAI-DE3B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1230" endTime="1530" timePattern="1 x 180"/>
+    <room id="taasika-room-8953" building="AC" roomNbr="AC-203NC-07"/>
+    <instructor id="taasika-teacher-18873" fname="Pratiksha" lname="Deshmukh" share="100" lead="true"/>
+  </class>
+  <class id="4588230" subject="MT" courseNbr="PSEC3-ITS" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-DE3B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="0830" endTime="1130" timePattern="1 x 180"/>
+    <room id="taasika-room-8960" building="CSED" roomNbr="PL"/>
+    <instructor id="taasika-teacher-18835" fname="Siddharth" lname="Gaikwad" share="100" lead="true"/>
+  </class>
+  <class id="4588138" subject="MT" courseNbr="PSEC3-MT" type="Lab" suffix="1" limit="20" scheduleNote="MTCE-DE3B" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="W" startTime="1530" endTime="1830" timePattern="1 x 180"/>
+    <room id="taasika-room-8961" building="CSED" roomNbr="ASL"/>
+    <instructor id="taasika-teacher-18836" fname="Soma" lname="Ghosh" share="100" lead="true"/>
+  </class>
+  <class id="4588157" subject="MT" courseNbr="PSEC3-WS" type="Lab" suffix="1" limit="20" scheduleNote="MTCSIS-DE3A" studentScheduling="true" displayInScheduleBook="true" controlling="true" cancelled="false" solver="CSE">
+    <time days="F" startTime="1530" endTime="1830" timePattern="1 x 180"/>
+    <room id="taasika-room-8963" building="CSED" roomNbr="Cogni-1"/>
+    <instructor id="taasika-teacher-18881" fname="Trishna" lname="Ugale" share="100" lead="true"/>
+  </class>
+</timetable>

@@ -1,0 +1,24 @@
+{
+  "targets": [
+    "localhost:50051",
+    "localhost:50052",
+    "localhost:50053"
+  ],
+  "instances": [
+    "spr2026"
+  ],
+  "prop": [],
+  "bc_init": "models/bc_policy.pt",
+  "resume": null,
+  "timesteps": 100000,
+  "n_steps": 256,
+  "batch_size": 256,
+  "lr": 0.0003,
+  "ent_coef": 0.01,
+  "gamma": 1.0,
+  "gae_lambda": 0.95,
+  "max_assigned_drop": 0.05,
+  "seed": 0,
+  "out": "models/ppo",
+  "subproc": true
+}
