@@ -13,6 +13,8 @@ from __future__ import annotations
 import argparse
 import sys
 import time
+import zipfile
+import re
 from pathlib import Path
 
 # Ensure scripts directory is in sys.path
@@ -83,7 +85,17 @@ def run_pipeline(term: str = DEFAULT_TERM, room_prefs: bool = True) -> int:
     elapsed = time.time() - start_time
     print("\n" + "=" * 70)
     if val_xml_code == 0 and val_off_code == 0 and ver_time_code == 0:
-        print(f"  ALL GENERATION & VALIDATION COMPLETED SUCCESSFULLY in {elapsed:.2f}s (term={term})")
+        out_dir = SCRIPTS_DIR.parent / "unitime-out"
+        zip_path = out_dir / "0gen_all.zip"
+        print(f"  Creating ZIP archive: {zip_path.name}...")
+        
+        with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+            pattern = re.compile(r"^(?:[1-9]|1[0-6])[a-zA-Z]+\.xml$")
+            for xml_file in sorted(out_dir.glob("*.xml")):
+                if pattern.match(xml_file.name):
+                    zf.write(xml_file, arcname=xml_file.name)
+                    
+        print(f"  ALL GENERATION, VALIDATION & ZIP COMPLETED SUCCESSFULLY in {elapsed:.2f}s (term={term})")
         print("=" * 70)
         return 0
     else:
