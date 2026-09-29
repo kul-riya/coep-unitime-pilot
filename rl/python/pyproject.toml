@@ -1,0 +1,31 @@
+[project]
+name = "unitime-rl"
+version = "0.1.0"
+description = "Learned operator selection for the UniTime/CPSolver course timetabling search: gym env over gRPC, behaviour cloning, Maskable PPO, ONNX export, bake-off analysis."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "torch",
+  "gymnasium>=1.0",
+  "stable-baselines3>=2.9",
+  "sb3-contrib>=2.9",
+  "grpcio",
+  "grpcio-tools",
+  "protobuf",
+  "onnx",
+  "onnxruntime",
+  "scipy",
+  "pandas",
+  "tabulate",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "tensorboard"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["unitime_rl*"]
