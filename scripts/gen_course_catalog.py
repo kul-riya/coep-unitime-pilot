@@ -177,6 +177,31 @@ def main(term: str = TERM) -> None:
         "primarySubjectId": int(mdm_block_id),
     }
 
+    # Synthesize OE Block
+    oe_block_id = "999001"
+    rows.append(
+        f'  <course externalId="synthetic-oe-block" subject="CS" '
+        f'courseNumber="OE-BLOCK" title="Open Elective Room Block" '
+        f'permanentId="synthetic-oe-block">'
+    )
+    rows.append(
+        f'    <courseCredit creditType="collegiate" creditUnitType="semesterHours" '
+        f'creditFormat="fixedUnit" fixedCredit="2.0"/>'
+    )
+    rows.append("  </course>")
+
+    index[oe_block_id] = {
+        "subjectArea": "CS",
+        "courseNumber": "OE-BLOCK",
+        "title": "Open Elective Room Block",
+        "shortName": "OE-BLOCK",
+        "isLab": False,
+        "eachSlot": 1,
+        "nSlots": 2,
+        "credits": 2.0,
+        "primarySubjectId": int(oe_block_id),
+    }
+
     out_lines: list[str] = [LICENSE_HEADER]
     out_lines.append(f'<courseCatalog campus="{CAMPUS}" term="{term}" year="{YEAR}">')
     out_lines.extend(rows)

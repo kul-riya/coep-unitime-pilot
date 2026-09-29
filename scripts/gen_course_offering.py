@@ -637,6 +637,35 @@ def main(term: str = TERM) -> None:
     offering_records.append((mdm_block_id, None))
     class_limits["CS|MDM-BLOCK|Lec|1"] = MDM_BLOCK_SEATS
 
+    # 4b. Synthetic OE Block (2 credits, ~200 seats)
+    oe_block_id = "999001"
+    lines.append(f'  <offering id="{oe_block_id}" offered="true" action="insert">')
+    lines.append(
+        f'    <course id="taasika-course-{oe_block_id}" subject="CS" courseNbr="OE-BLOCK" '
+        f'controlling="true" title="Open Elective Room Block">'
+    )
+    lines.append(
+        f'      <courseCredit creditType="collegiate" creditUnitType="semesterHours" '
+        f'creditFormat="fixedUnit" fixedCredit="2.0"/>'
+    )
+    lines.append('    </course>')
+    lines.append(f'    <config name="1" limit="{OE_BLOCK_SEATS}">')
+    lines.append(f'      <subpart type="Lec" suffix="" minPerWeek="{OE_LEC_MIN_PER_WEEK}"/>')
+    _emit_class(
+        lines,
+        _class_id("CS", "OE-BLOCK", "Lec", 1),
+        "Lec",
+        1,
+        OE_BLOCK_SEATS,
+        "",
+        [],
+        None,
+    )
+    lines.append('    </config>')
+    lines.append('  </offering>')
+    offering_records.append((oe_block_id, None))
+    class_limits["CS|OE-BLOCK|Lec|1"] = OE_BLOCK_SEATS
+
     lines.append("</offerings>\n")
 
     body = "\n".join(lines)

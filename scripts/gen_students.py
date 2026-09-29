@@ -118,8 +118,22 @@ CURRICULUM: dict[str, dict] = {
             "OOPD-Lab",
             "TOC",
             "TOC-Tut",
+            "OE-BLOCK",
         ],
-        "electives": {},
+        "electives": {
+            "OE": [
+                ["OE-FOS"],
+                ["OE-DS"],
+                None,
+                None,
+                None,
+                None,
+                None,
+                None,
+                None,
+                None,
+            ]
+        },
     },
     "TY": {
         "default": [
