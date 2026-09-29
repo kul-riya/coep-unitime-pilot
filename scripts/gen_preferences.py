@@ -121,7 +121,7 @@ FIXED_ENTRIES_MAP: list[dict] = [
     {
         "name": "MDM_Required",
         "course_pattern": "MDM*",
-        "days": ["M", "T"],
+        "days": ["W", "R", "F"],
         "start": 16 * 60 + 30,  # 990 mins (4:30 PM)
         "end": 18 * 60 + 30,    # 1110 mins (6:30 PM)
         "level": "R",           # Required
@@ -130,11 +130,28 @@ FIXED_ENTRIES_MAP: list[dict] = [
         "name": "Non_MDM_Prohibited",
         "course_pattern": "*",
         "exclude_pattern": "MDM*",
-        "days": ["M", "T"],
-        
+        "days": ["W", "R", "F"],
         "start": 16 * 60 + 30,  # 990 mins (4:30 PM)
         "end": 18 * 60 + 30,    # 1110 mins (6:30 PM)
         "level": "P",           # Prohibited
+    },
+    {
+        "name": "OE_Required",
+        "course_pattern": "OE*",
+        "days": ["M", "T"],
+        "start": 9 * 60 + 30,  # 570 mins (9:30 AM)
+        "end": 10 * 60 + 30,   # 630 mins (10:30 AM)
+        "level": "R",          # Required
+    },
+    {
+        "name": "SY_Non_OE_Prohibited",
+        "course_pattern": [
+            "CO", "CoI", "DTL-Lab", "Eco", "OOPD", "OOPD-Lab", "TOC", "TOC-Tut"
+        ],
+        "days": ["M", "T"],
+        "start": 9 * 60 + 30,  # 570 mins (9:30 AM)
+        "end": 10 * 60 + 30,   # 630 mins (10:30 AM)
+        "level": "P",          # Prohibited
     },
 ]
 
