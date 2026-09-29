@@ -14,7 +14,7 @@ from typing import Sequence
 
 # CSE headcount by year. FY is smaller because DSY students appear in SY.
 N_CSE: dict[str, int] = {
-    "FY": 400,
+    "FY": 300,
     "SY": 200,
     "TY": 200,
     "BT": 200,
