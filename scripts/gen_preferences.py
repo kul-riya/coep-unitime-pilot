@@ -455,7 +455,7 @@ def _room_pref_lines(rooms: list[RoomKey], blocked: set[RoomKey] | None = None) 
 def main(
     term: str = TERM,
     room_prefs: bool = True,
-    block_online: bool = True,
+    block_online: bool = False,
 ) -> None:
     src = OUT_DIR / "12courseOffering.xml" if (OUT_DIR / "12courseOffering.xml").is_file() else OUT_DIR / "courseOffering.xml"
     root = ET.parse(src).getroot()
@@ -578,7 +578,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--block-online",
         action=argparse.BooleanOptionalAction,
-        default=True,
+        default=False,
         help="Block/prohibit rooms containing 'online' (level='P') (default: %(default)s)",
     )
     args = parser.parse_args()

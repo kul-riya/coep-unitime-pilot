@@ -120,6 +120,8 @@ def _gen_buildings(rooms: List[dict], term: str = TERM) -> None:
         f'<buildingsRooms campus="{CAMPUS}" term="{term}" year="{YEAR}">'
     ]
     for code, rooms_in in by_building.items():
+        if code == "ONL":
+            continue
         meta = BUILDINGS[code]
         lines.append(
             f'  <building externalId="taasika-bldg-{code}" '
