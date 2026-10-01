@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<buildingsRooms campus="COEP" term="Spr7" year="2026">
+<buildingsRooms campus="COEP" term="Spr10" year="2026">
   <building externalId="taasika-bldg-AC" abbreviation="AC" locationX="100" locationY="100" name="Academic Complex">
     <room externalId="taasika-room-9050" locationX="100" locationY="100" roomNumber="AC-202NC-06" displayName="AC-202 (NC-06)" roomClassification="classroom" capacity="100" instructional="True" scheduledRoomType="genClassroom">
       <roomDepartments>
@@ -301,23 +301,6 @@
         <roomFeature feature="computerProjection" value="Computer Projection"/>
         <roomFeature feature="puccComputer" value="Computer"/>
       </roomFeatures>
-    </room>
-  </building>
-  <building externalId="taasika-bldg-ONL" abbreviation="ONL" locationX="0" locationY="0" name="Online (Virtual)">
-    <room externalId="taasika-room-9074" locationX="0" locationY="0" roomNumber="online1" displayName="online1" roomClassification="virtual" capacity="100" instructional="False" scheduledRoomType="genClassroom">
-      <roomDepartments>
-        <assigned departmentNumber="0101" percent="100"/>
-      </roomDepartments>
-    </room>
-    <room externalId="taasika-room-9075" locationX="0" locationY="0" roomNumber="online2" displayName="online2" roomClassification="virtual" capacity="100" instructional="False" scheduledRoomType="genClassroom">
-      <roomDepartments>
-        <assigned departmentNumber="0101" percent="100"/>
-      </roomDepartments>
-    </room>
-    <room externalId="taasika-room-9076" locationX="0" locationY="0" roomNumber="Online3" displayName="Online3" roomClassification="virtual" capacity="100" instructional="False" scheduledRoomType="genClassroom">
-      <roomDepartments>
-        <assigned departmentNumber="0101" percent="100"/>
-      </roomDepartments>
     </room>
   </building>
   <building externalId="taasika-bldg-NCSE" abbreviation="NCSE" locationX="175" locationY="175" name="New CSE Building">

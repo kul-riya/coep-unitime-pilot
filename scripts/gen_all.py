@@ -91,7 +91,12 @@ def run_pipeline(term: str = DEFAULT_TERM, room_prefs: bool = True) -> int:
         
         with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
             pattern = re.compile(r"^(?:[1-9]|1[0-6])[a-zA-Z]+\.xml$")
-            for xml_file in sorted(out_dir.glob("*.xml")):
+            
+            def sort_key(p):
+                match = re.match(r"^(\d+)", p.name)
+                return int(match.group(1)) if match else 999
+                
+            for xml_file in sorted(out_dir.glob("*.xml"), key=sort_key):
                 if pattern.match(xml_file.name):
                     zf.write(xml_file, arcname=xml_file.name)
                     

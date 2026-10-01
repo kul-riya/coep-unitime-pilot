@@ -27,10 +27,12 @@ from xml_common import LICENSE_HEADER, xml_escape
 from classifications import companion_itype, find_course_pairs, is_honor_subject, is_minor_subject, skip_offering
 from intake import (
     MDM_BLOCK_SEATS,
+    MDM_COURSE_SEATS,
     MDM_LEC_MIN_PER_WEEK,
     N_DE2_OPTIONS,
     N_DE4_OPTIONS,
     OE_BLOCK_SEATS,
+    OE_COURSE_SEATS,
     OE_LEC_MIN_PER_WEEK,
     even_split,
     is_de_subject,
@@ -294,14 +296,14 @@ def _apply_intake_limits(
 
     if is_mdm_subject(sn):
         if lec_sections:
-            for entry, lim in zip(lec_sections, even_split(len(lec_sections), MDM_BLOCK_SEATS)):
+            for entry, lim in zip(lec_sections, even_split(len(lec_sections), MDM_COURSE_SEATS)):
                 entry["limit"] = lim
         lab_sections.clear()
         return
 
     if is_oe_subject(sn):
         if lec_sections:
-            for entry, lim in zip(lec_sections, even_split(len(lec_sections), OE_BLOCK_SEATS)):
+            for entry, lim in zip(lec_sections, even_split(len(lec_sections), OE_COURSE_SEATS)):
                 entry["limit"] = lim
         return
 
@@ -636,6 +638,7 @@ def main(term: str = TERM) -> None:
     lines.append('  </offering>')
     offering_records.append((mdm_block_id, None))
     class_limits["CS|MDM-BLOCK|Lec|1"] = MDM_BLOCK_SEATS
+    section_offset[(int(mdm_block_id), "Lec-1")] = 1
 
     # 4b. Synthetic OE Block (2 credits, ~200 seats)
     oe_block_id = "999001"
@@ -665,6 +668,7 @@ def main(term: str = TERM) -> None:
     lines.append('  </offering>')
     offering_records.append((oe_block_id, None))
     class_limits["CS|OE-BLOCK|Lec|1"] = OE_BLOCK_SEATS
+    section_offset[(int(oe_block_id), "Lec-1")] = 1
 
     lines.append("</offerings>\n")
 

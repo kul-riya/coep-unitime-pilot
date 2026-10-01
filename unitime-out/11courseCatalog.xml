@@ -5,7 +5,7 @@
   See: https://www.unitime.org/uct_interfaces.php
 -->
 
-<courseCatalog campus="COEP" term="Spr7" year="2026">
+<courseCatalog campus="COEP" term="Spr10" year="2026">
   <course externalId="taasika-subject-32992" subject="CS" courseNumber="PSE" title="Probability and Statistics for Engineers" permanentId="taasika-32992">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.5"/>
   </course>
@@ -476,5 +476,8 @@
   </course>
   <course externalId="synthetic-mdm-block" subject="CS" courseNumber="MDM-BLOCK" title="Multi-Disciplinary Minor Room Block" permanentId="synthetic-mdm-block">
     <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="4.0"/>
+  </course>
+  <course externalId="synthetic-oe-block" subject="CS" courseNumber="OE-BLOCK" title="Open Elective Room Block" permanentId="synthetic-oe-block">
+    <courseCredit creditType="collegiate" creditUnitType="semesterHours" creditFormat="fixedUnit" fixedCredit="2.0"/>
   </course>
 </courseCatalog>

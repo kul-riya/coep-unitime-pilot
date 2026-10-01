@@ -119,21 +119,9 @@ CURRICULUM: dict[str, dict] = {
             "TOC",
             "TOC-Tut",
             "OE-BLOCK",
+            "MDM-BLOCK",
         ],
-        "electives": {
-            "OE": [
-                ["OE-FOS"],
-                ["OE-DS"],
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-                None,
-            ]
-        },
+        "electives": {},
     },
     "TY": {
         "default": [
@@ -143,6 +131,7 @@ CURRICULUM: dict[str, dict] = {
             "CN-Lab",
             "DAA",
             "DAA-Lab",
+            "MDM-BLOCK",
         ],
         "electives": {
             "DE": [
@@ -153,7 +142,9 @@ CURRICULUM: dict[str, dict] = {
         },
     },
     "BT": {
-        "default": [],
+        "default": [
+            "MDM-BLOCK",
+        ],
         "electives": {
             "DE": [
                 ["DE4-GIS", "DE4-GIS-Lab"],
@@ -379,10 +370,10 @@ def main(term: str = TERM) -> None:
             choice = options[idx]
             if choice is None:
                 continue
-                if isinstance(choice, list):
-                    shorts.extend(choice)
-                else:
-                    shorts.append(choice)
+            if isinstance(choice, list):
+                shorts.extend(choice)
+            else:
+                shorts.append(choice)
         # dedupe preserving order
         seen: set[str] = set()
         out: list[str] = []

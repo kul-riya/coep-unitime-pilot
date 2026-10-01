@@ -5,7 +5,7 @@
   action=update (python scripts/import_unitime.py).
   Only taasika-io-* external ids are listed (numeric uniqueIds are not ours).
 -->
-<offerings campus="COEP" year="2026" term="Spr7" incremental="true">
+<offerings campus="COEP" year="2026" term="Spr10" incremental="true">
   <offering id="taasika-io-32994" offered="false" action="delete"/>
   <offering id="taasika-io-32999" offered="false" action="delete"/>
   <offering id="taasika-io-33002" offered="false" action="delete"/>

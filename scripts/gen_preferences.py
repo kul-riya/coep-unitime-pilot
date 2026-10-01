@@ -121,19 +121,10 @@ FIXED_ENTRIES_MAP: list[dict] = [
     {
         "name": "MDM_Required",
         "course_pattern": "MDM*",
-        "days": ["W", "R", "F"],
+        "days": ["M", "T"],
         "start": 16 * 60 + 30,  # 990 mins (4:30 PM)
         "end": 18 * 60 + 30,    # 1110 mins (6:30 PM)
         "level": "R",           # Required
-    },
-    {
-        "name": "Non_MDM_Prohibited",
-        "course_pattern": "*",
-        "exclude_pattern": "MDM*",
-        "days": ["W", "R", "F"],
-        "start": 16 * 60 + 30,  # 990 mins (4:30 PM)
-        "end": 18 * 60 + 30,    # 1110 mins (6:30 PM)
-        "level": "P",           # Prohibited
     },
     {
         "name": "OE_Required",
@@ -144,9 +135,18 @@ FIXED_ENTRIES_MAP: list[dict] = [
         "level": "R",          # Required
     },
     {
+        "name": "Non_MDM_Prohibited",
+        "course_pattern": "*",
+        "exclude_pattern": ["MDM*", "OE*"],
+        "days": ["M", "T"],
+        "start": 16 * 60 + 30,  # 990 mins (4:30 PM)
+        "end": 18 * 60 + 30,    # 1110 mins (6:30 PM)
+        "level": "P",           # Prohibited
+    },
+    {
         "name": "SY_Non_OE_Prohibited",
         "course_pattern": [
-            "CO", "CoI", "DTL-Lab", "Eco", "OOPD", "OOPD-Lab", "TOC", "TOC-Tut"
+            "CO", "CoI", "DTL", "DTL-Lab", "Eco", "OOPD", "OOPD-Lab", "TOC", "TOC-Tut"
         ],
         "days": ["M", "T"],
         "start": 9 * 60 + 30,  # 570 mins (9:30 AM)
@@ -158,7 +158,7 @@ FIXED_ENTRIES_MAP: list[dict] = [
 
 def _matches_course_pattern(course_nbr: str, pattern_spec: str | list[str] | tuple[str, ...]) -> bool:
     if isinstance(pattern_spec, (list, tuple, set)):
-        return course_nbr in pattern_spec or course_nbr.upper() in [p.upper() for p in pattern_spec]
+        return any(_matches_course_pattern(course_nbr, p) for p in pattern_spec)
     elif isinstance(pattern_spec, str):
         return fnmatch.fnmatch(course_nbr.upper(), pattern_spec.upper())
     return False
@@ -190,22 +190,19 @@ def _get_time_pref_lines(course_nbr: str, pattern_name: str) -> list[str]:
     max_start_idx = max(0, SLOTS_PER_DAY - (mins_per_meeting // SLOT_MIN))
     valid_starts = starts[: max_start_idx + 1]
 
-    # Find the matching fixed entry rule
-    active_entry = None
+    req_prefs: list[tuple[str, str, str]] = []
+    proh_prefs: set[tuple[str, str, str]] = set()
+
     for entry in FIXED_ENTRIES_MAP:
-        if _matches_course_pattern(course_nbr, entry["course_pattern"]):
-            if entry.get("exclude_pattern") and _matches_course_pattern(course_nbr, entry["exclude_pattern"]):
-                continue
-            active_entry = entry
-            break
+        if not _matches_course_pattern(course_nbr, entry["course_pattern"]):
+            continue
+        if entry.get("exclude_pattern") and _matches_course_pattern(course_nbr, entry["exclude_pattern"]):
+            continue
 
-    prefs: list[tuple[str, str, str]] = []  # (level, dcode, start)
-
-    if active_entry:
-        target_days = {d.replace("Th", "R").upper() for d in active_entry["days"]}
-        e_start = int(active_entry["start"])
-        e_end = int(active_entry["end"])
-        lvl = str(active_entry.get("level", "P"))
+        target_days = {d.replace("Th", "R").upper() for d in entry["days"]}
+        e_start = int(entry["start"])
+        e_end = int(entry["end"])
+        lvl = str(entry.get("level", "P"))
 
         if lvl in ("1", "R", "0", "2"):
             # Required / Preferred rule: emit only the matching slot(s)
@@ -215,7 +212,7 @@ def _get_time_pref_lines(course_nbr: str, pattern_name: str) -> list[str]:
                     start_min = int(start[:2]) * 60 + int(start[2:])
                     end_min = start_min + mins_per_meeting
                     if d_set == target_days and start_min >= e_start and end_min <= e_end:
-                        prefs.append((lvl, dcode, start))
+                        req_prefs.append((lvl, dcode, start))
         else:
             # Prohibited rule (level="P"): any slot overlapping the window is prohibited
             for dcode in day_codes:
@@ -228,7 +225,15 @@ def _get_time_pref_lines(course_nbr: str, pattern_name: str) -> list[str]:
                     end_min = start_min + mins_per_meeting
                     time_overlaps = (start_min < e_end) and (end_min > e_start)
                     if time_overlaps:
-                        prefs.append(("P", dcode, start))
+                        proh_prefs.add(("P", dcode, start))
+
+    if req_prefs:
+        prefs = req_prefs
+    elif proh_prefs:
+        day_order = {dc: i for i, dc in enumerate(day_codes)}
+        prefs = sorted(list(proh_prefs), key=lambda p: (day_order.get(p[1], 99), p[2]))
+    else:
+        prefs = []
 
     if not prefs:
         return [f'    <timePref pattern="{xml_escape(pattern_name)}" level="R"/>']
@@ -551,7 +556,9 @@ def main(
     lines.append("</preferences>\n")
 
     out = OUT_DIR / "13preferences.xml"
-    out.write_text("\n".join(lines), encoding="utf-8")
+    content = "\n".join(lines)
+    out.write_text(content, encoding="utf-8")
+    (OUT_DIR / "preferences.xml").write_text(content, encoding="utf-8")
     status_msg = (
         f"wrote {out.relative_to(OUT_DIR.parent)} "
         f"({out.stat().st_size:,} bytes, {subpart_count} subparts, "

@@ -92,7 +92,7 @@ python/.venv/bin/python -m unitime_rl.weight_sweep \
   --config runs/B0/seed1/scales.properties \
   --instances instances/spr2026.xml \
   --weights 0.2 0.5 1 2 5 10 --seeds 3 --timeout 900 --with-b0 \
-  --out runs/sweep --parallel 3
+  --out runs/sweep --parallel 3 --save-solution
 ```
 Re-running the exact same command resumes it — any job whose `metrics.json` already exists is
 skipped. Read the picked weight when it finishes:

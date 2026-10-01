@@ -27,11 +27,17 @@ N_AIML: dict[str, int] = {
 }
 N_DIVISIONS = 2  # SY / TY / BT lecture divisions
 
-# Other-department room blocks (no CSE/AIML enrollments).
-MDM_BLOCK_SEATS = 100
+# Other-department room blocks (for CSE/AIML students going to other depts).
+# SY (200) + TY (200) + BT (200) = 600 for MDM
+MDM_BLOCK_SEATS = 600
 MDM_LEC_MIN_PER_WEEK = 240  # 2 x 120
-OE_BLOCK_SEATS = 100
+# SY (200) for OE
+OE_BLOCK_SEATS = 200
 OE_LEC_MIN_PER_WEEK = 120  # 2-credit OE: 2 hours on any 2 weekdays
+
+# Seats for CS-offered MDM and OE courses taken by other departments
+MDM_COURSE_SEATS = 100
+OE_COURSE_SEATS = 100
 
 # BT/TY departmental electives: equal split of the year across options.
 N_DE2_OPTIONS = 3
