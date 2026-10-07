@@ -217,6 +217,51 @@ def load_indexes() -> tuple[dict, dict[str, tuple[int, dict]], dict[int, list[in
     return subject_idx, by_short, lec_suf, lab_suf, companion_type, class_limits
 
 
+def load_class_notes() -> dict[tuple[str, str, str, int], str]:
+    """Map (subject, course, type, suffix) to the class schedule note."""
+    offering = json.loads((SCRIPTS_DIR / "offering_index.json").read_text(encoding="utf-8"))
+    notes: dict[tuple[str, str, str, int], str] = {}
+    for raw, note in (offering.get("class_notes") or {}).items():
+        if not note:
+            continue
+        parts = str(raw).split("|")
+        if len(parts) != 4:
+            continue
+        area, nbr, typ, suf = parts
+        notes[(area, nbr, typ, int(suf))] = str(note)
+    return notes
+
+
+def load_group_codes() -> set[str] | None:
+    """Codes from studentGroup.xml, if academic data was generated first."""
+    import xml.etree.ElementTree as ET
+
+    path = OUT_DIR / "6studentGroup.xml"
+    if not path.exists():
+        return None
+    root = ET.parse(path).getroot()
+    return {el.get("code") for el in root.findall("studentGroup") if el.get("code")}
+
+
+def groups_for_enrollments(
+    tags: list[tuple[str, str, str, int]],
+    class_notes: dict[tuple[str, str, str, int], str],
+    group_codes: set[str] | None,
+) -> list[str]:
+    """One group per enrolled class, named by that class's schedule note."""
+    codes: list[str] = []
+    seen: set[str] = set()
+    for area, nbr, typ, suf in tags:
+        code = class_notes.get((area, nbr, typ, int(suf)), "")
+        if not code or code in seen:
+            continue
+        if group_codes is not None and code not in group_codes:
+            continue
+        seen.add(code)
+        codes.append(code)
+    return codes
+
+
 def class_tags_for_short(
     short: str,
     by_short: dict[str, tuple[int, dict]],
@@ -386,8 +431,9 @@ def main(term: str = TERM) -> None:
         return out
 
     # incremental=true: only create/update students in this file (safer re-import).
-    # Omit studentGroups here: UniTime StudentImport merge()s groups before flush and
-    # can throw TransientObjectException on large cohorts (see StudentImport.java).
+    # Group membership is the schedule note of each enrolled class (SY-Div1, FY-PP1-A, …).
+    class_notes = load_class_notes()
+    group_codes = load_group_codes()
     info_lines = [
         LICENSE_HEADER,
         f'<students campus="{CAMPUS}" year="{YEAR}" term="{term}" incremental="true">',
@@ -438,9 +484,7 @@ def main(term: str = TERM) -> None:
             f'      <major academicArea="{area}" academicClass="{class_code}" code="{major}"/>'
         )
         info_lines.append("    </studentMajors>")
-        # group kept for logging only; not written to XML (see header comment)
         _ = group
-        info_lines.append("  </student>")
 
         tags = enroll_shorts(
             shorts,
@@ -453,6 +497,15 @@ def main(term: str = TERM) -> None:
             seq=seq_for_name,
         )
         tags = assign_within_limits(tags, class_fill, class_limits, overflow)
+        codes = groups_for_enrollments(tags, class_notes, group_codes)
+        if codes:
+            info_lines.append("    <studentGroups>")
+            for code in codes:
+                info_lines.append(
+                    f'      <studentGroup group="{xml_escape(code)}"/>'
+                )
+            info_lines.append("    </studentGroups>")
+        info_lines.append("  </student>")
         for s in shorts:
             if s not in by_short:
                 missing_shorts.add(s)

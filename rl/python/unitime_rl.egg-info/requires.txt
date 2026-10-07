@@ -1,0 +1,17 @@
+numpy
+torch
+gymnasium>=1.0
+stable-baselines3>=2.9
+sb3-contrib>=2.9
+grpcio
+grpcio-tools
+protobuf
+onnx
+onnxruntime
+scipy
+pandas
+tabulate
+
+[dev]
+pytest
+tensorboard

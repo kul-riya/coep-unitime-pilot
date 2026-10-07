@@ -1,0 +1,289 @@
+{
+  "arm": "B0",
+  "input": "instances/spr2026.xml",
+  "seed": 1,
+  "wall_clock_sec": 900.331112699,
+  "solver_time_sec": 900.3181950859998,
+  "iterations": 2549,
+  "committed": 2549,
+  "student_conflict_weight": 0.2,
+  "comparator": "org.cpsolver.coursett.heuristics.TimetableComparator",
+  "neighbour_class": "org.cpsolver.coursett.heuristics.FixCompleteSolutionNeighbourSelection",
+  "initial": {
+    "student_violation_rate": 0.5313131313131313,
+    "checker_violation_rate": 0.5313131313131313,
+    "pair_violation_rate": 0.04788732394366197,
+    "zero_conflict_fraction": 0.4686868686868687,
+    "conflicted_students": 526,
+    "students_two_plus": 990,
+    "students_total": 990,
+    "violated_student_pairs": 1147,
+    "pairs_violated": 68,
+    "pairs_total": 1420,
+    "intensity": 3.458174904942966,
+    "concentration": 0.6739319965126417,
+    "nr_variables": 262,
+    "nr_assigned": 262,
+    "assigned_ratio": 1.0,
+    "hard_violations": 0,
+    "time_pref": 0.0,
+    "room_pref": 24.0,
+    "dist_pref": 0.0,
+    "student_conflict_criterion": 1434.0,
+    "hard_student_conflict_criterion": 0.0,
+    "too_big_rooms": 329.0,
+    "useless_half_hours": 0.0,
+    "back_to_back_instructor": 0.0,
+    "broken_time_patterns": 6.0,
+    "total_value": 352.4044546339443,
+    "soft_penalty": 24.0,
+    "soft_penalty_norm": 0.35294117647058826,
+    "room_util_mean": 0.0,
+    "room_util_max": 0.0,
+    "room_util_std": 0.0,
+    "instr_util_mean": 0.24173913043478262,
+    "instr_util_max": 0.46,
+    "iteration": 0,
+    "time_sec": 0.0,
+    "potential": -0.5489601901366608
+  },
+  "final": {
+    "student_violation_rate": 0.04141414141414142,
+    "checker_violation_rate": 0.04141414141414142,
+    "pair_violation_rate": 0.004929577464788733,
+    "zero_conflict_fraction": 0.9585858585858585,
+    "conflicted_students": 41,
+    "students_two_plus": 990,
+    "students_total": 990,
+    "violated_student_pairs": 41,
+    "pairs_violated": 7,
+    "pairs_total": 1420,
+    "intensity": 2.0,
+    "concentration": 1.0,
+    "nr_variables": 262,
+    "nr_assigned": 262,
+    "assigned_ratio": 1.0,
+    "hard_violations": 0,
+    "time_pref": 0.0,
+    "room_pref": 60.0,
+    "dist_pref": 0.0,
+    "student_conflict_criterion": 46.0,
+    "hard_student_conflict_criterion": 0.0,
+    "too_big_rooms": 273.0,
+    "useless_half_hours": 0.0,
+    "back_to_back_instructor": 0.0,
+    "broken_time_patterns": 138.0,
+    "total_value": 117.57642257215879,
+    "soft_penalty": 60.0,
+    "soft_penalty_norm": 0.8823529411764706,
+    "room_util_mean": 0.0,
+    "room_util_max": 0.0,
+    "room_util_std": 0.0,
+    "instr_util_mean": 0.24173913043478262,
+    "instr_util_max": 0.46,
+    "iteration": 2549,
+    "time_sec": 900.3181950859998,
+    "potential": -0.08553178847296494
+  },
+  "best_iteration": 1531,
+  "best_time_sec": 543.5056886519997,
+  "thresholds": {
+    "first_reach_0.40": {
+      "iteration": 20,
+      "macro_step": 0,
+      "time_sec": 7.05773094199958
+    },
+    "first_reach_0.30": {
+      "iteration": 48,
+      "macro_step": 0,
+      "time_sec": 18.12868850199993
+    },
+    "first_reach_0.25": {
+      "iteration": 75,
+      "macro_step": 0,
+      "time_sec": 28.332126346999758
+    }
+  },
+  "c_history": [
+    { "iteration": 0, "time_sec": 0.0, "C": 0.5313131313131313 },
+    { "iteration": 3, "time_sec": 1.7471811019995585, "C": 0.503030303030303 },
+    {
+      "iteration": 6,
+      "time_sec": 2.3021149789992705,
+      "C": 0.48282828282828283
+    },
+    { "iteration": 8, "time_sec": 3.323033174999182, "C": 0.47878787878787876 },
+    { "iteration": 9, "time_sec": 3.8362330169993584, "C": 0.4666666666666667 },
+    {
+      "iteration": 10,
+      "time_sec": 4.350676377999662,
+      "C": 0.46464646464646464
+    },
+    { "iteration": 13, "time_sec": 4.8879943059992, "C": 0.43636363636363634 },
+    { "iteration": 15, "time_sec": 5.422916638999595, "C": 0.4303030303030303 },
+    {
+      "iteration": 19,
+      "time_sec": 6.544644412999332,
+      "C": 0.41818181818181815
+    },
+    { "iteration": 20, "time_sec": 7.05773094199958, "C": 0.3939393939393939 },
+    { "iteration": 22, "time_sec": 7.081488887999512, "C": 0.3888888888888889 },
+    {
+      "iteration": 42,
+      "time_sec": 15.467194273999667,
+      "C": 0.38484848484848483
+    },
+    { "iteration": 44, "time_sec": 16.00757323199923, "C": 0.3565656565656566 },
+    {
+      "iteration": 45,
+      "time_sec": 16.548975555999277,
+      "C": 0.3474747474747475
+    },
+    {
+      "iteration": 48,
+      "time_sec": 18.12868850199993,
+      "C": 0.29494949494949496
+    },
+    {
+      "iteration": 51,
+      "time_sec": 19.194081824999557,
+      "C": 0.28484848484848485
+    },
+    {
+      "iteration": 52,
+      "time_sec": 19.738241403999382,
+      "C": 0.26262626262626265
+    },
+    { "iteration": 60, "time_sec": 22.39366511999924, "C": 0.2606060606060606 },
+    {
+      "iteration": 67,
+      "time_sec": 25.54586580399973,
+      "C": 0.25757575757575757
+    },
+    {
+      "iteration": 75,
+      "time_sec": 28.332126346999758,
+      "C": 0.2494949494949495
+    },
+    {
+      "iteration": 78,
+      "time_sec": 29.961223735999738,
+      "C": 0.2404040404040404
+    },
+    {
+      "iteration": 81,
+      "time_sec": 30.511959865999415,
+      "C": 0.21212121212121213
+    },
+    { "iteration": 82, "time_sec": 31.01998425199963, "C": 0.2080808080808081 },
+    {
+      "iteration": 83,
+      "time_sec": 31.522815149999587,
+      "C": 0.19595959595959597
+    },
+    {
+      "iteration": 124,
+      "time_sec": 45.83017322899923,
+      "C": 0.1494949494949495
+    },
+    {
+      "iteration": 214,
+      "time_sec": 73.99069084499934,
+      "C": 0.14545454545454545
+    },
+    {
+      "iteration": 216,
+      "time_sec": 75.02161278399944,
+      "C": 0.13232323232323231
+    },
+    {
+      "iteration": 231,
+      "time_sec": 82.37089993899917,
+      "C": 0.1202020202020202
+    },
+    {
+      "iteration": 237,
+      "time_sec": 84.50594404000003,
+      "C": 0.1191919191919192
+    },
+    {
+      "iteration": 254,
+      "time_sec": 91.37579113899938,
+      "C": 0.10909090909090909
+    },
+    {
+      "iteration": 319,
+      "time_sec": 113.07839098799923,
+      "C": 0.10505050505050505
+    },
+    {
+      "iteration": 463,
+      "time_sec": 164.35175393099962,
+      "C": 0.10303030303030303
+    },
+    {
+      "iteration": 479,
+      "time_sec": 168.64041958399957,
+      "C": 0.09090909090909091
+    },
+    {
+      "iteration": 487,
+      "time_sec": 172.26988512499975,
+      "C": 0.08585858585858586
+    },
+    {
+      "iteration": 512,
+      "time_sec": 181.73845062500004,
+      "C": 0.08383838383838384
+    },
+    {
+      "iteration": 549,
+      "time_sec": 198.5698536279997,
+      "C": 0.06868686868686869
+    },
+    {
+      "iteration": 573,
+      "time_sec": 207.54344668299927,
+      "C": 0.06262626262626263
+    },
+    {
+      "iteration": 1309,
+      "time_sec": 461.8811868009998,
+      "C": 0.046464646464646465
+    },
+    {
+      "iteration": 1470,
+      "time_sec": 520.7739661699998,
+      "C": 0.04141414141414142
+    }
+  ],
+  "scales": {
+    "Rl.Scale.O": 68.0,
+    "Rl.Scale.Total": 112.26818640253695,
+    "Rl.Scale.Time": 1.0,
+    "Rl.Scale.Room": 68.0,
+    "Rl.Scale.Dist": 1.0,
+    "Rl.Scale.StudentConflict": 9.0,
+    "Rl.Scale.TooBigRooms": 243.0,
+    "Rl.Scale.UselessHalfHours": 1.0,
+    "Rl.Scale.BackToBack": 1.0,
+    "Rl.Scale.BrokenTimePatterns": 122.0
+  },
+  "solver_info": {
+    "Room Size Penalty": "23.71",
+    "Speed": "2.83 it/s",
+    "Overall solution value": "117.58",
+    "Useless half-hours": "0.13% (0 + 138)",
+    "Time": "15.01 min",
+    "Iteration": "2549",
+    "Room preferences": "72.35% (60)",
+    "Distribution preferences": "100.00% (0.00)",
+    "Too big rooms": "26.05% (273)",
+    "Time preferences": "100.00% (0.00)",
+    "Back-to-back instructor preferences": "100.00% (0)",
+    "Assigned variables": "100.00% (262/262)",
+    "Memory usage": "188.31M",
+    "Same subpart balancing penalty": "0.00",
+    "Student conflicts": "46 [committed:0, distance:5, hard:0]"
+  }
+}

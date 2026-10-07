@@ -1,0 +1,6 @@
+10:34:03.147 INFO  HeadlessSolve - Initial: C=0.2667 (160/600) checker=0.2667 pairs=4/270 intensity=2.00 conc=1.00 assigned=1.0
+10:34:03.415 INFO  OnnxPolicy - ONNX policy loaded from ../models/bc_policy.onnx (input=obs)
+10:34:03.421 INFO  RlNeighbourSelection - RL neighbour selection: mode=act policy=OnnxPolicy K=50 maxMacroSteps=-1
+10:34:18.436 INFO  OnnxPolicy - ONNX policy: 1929 calls, mean 0.134 ms, slow=0
+10:34:18.437 INFO  HeadlessSolve - Done: arm=R seed=1 C=0.2667 (checker 0.2667) assigned=1.0000 hard=0 soft=91.0 iters=96438 committed=96438 wall=15.3s
+{"arm":"R","seed":1,"C":0.26666666666666666,"C_checker":0.26666666666666666,"assigned_ratio":1.0,"hard":0,"soft_penalty":91.0,"iterations":96438,"committed":96438,"wall_clock_sec":15.273545697}

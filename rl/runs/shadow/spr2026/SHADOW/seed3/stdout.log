@@ -1,0 +1,2 @@
+15:38:15.229 INFO  HeadlessSolve - Initial: C=0.0000 (0/0) checker=0.0000 pairs=0/0 intensity=0.00 conc=0.00 assigned=1.0
+15:38:15.302 INFO  RlNeighbourSelection - RL neighbour selection: mode=shadow policy=none K=50 maxMacroSteps=-1

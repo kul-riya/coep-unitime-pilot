@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+package unitime.rl;
+
+option java_package = "org.unitime.timetable.solver.rl.proto";
+option java_outer_classname = "SolverEnvProto";
+option java_multiple_files = false;
+
+// One episode = one solve of a resident TimetableModel from its stored initial
+// solution until the solver's termination condition or Rl.MaxMacroSteps.
+
+message InstanceId {
+  // Name (file stem) of a timetable XML inside the server's instance directory,
+  // or an absolute path. Empty = keep the currently loaded instance.
+  string instance = 1;
+  // Solver seed (General.Seed). 0 = derive from wall clock.
+  int64 seed = 2;
+  // Per-episode solver property overrides (for example Comparator.StudentConflictWeight).
+  map<string, string> properties = 3;
+}
+
+message Metrics {
+  double student_violation_rate = 1;   // C: conflicted students / students with >= 2 assigned classes
+  double checker_violation_rate = 2;   // conflicted students / all students (scripts/eval_timetable_kpis.py denominator)
+  double pair_violation_rate = 3;      // violated joint-enrollment pairs / joint-enrollment pairs
+  double assigned_ratio = 4;
+  int32 hard_violations = 5;
+  double soft_penalty = 6;             // time + room + distribution penalty (raw)
+  double soft_penalty_norm = 7;        // O: soft_penalty / Rl.Scale.O, clipped
+  double total_value = 8;              // CPSolver weighted objective
+  double potential = 9;                // Phi of the incumbent
+  int64 iteration = 10;
+  int32 macro_step = 11;
+  double time_sec = 12;
+  int64 committed = 13;                // accepted neighbourhoods so far
+  map<string, double> extra = 14;      // criterion breakdown, utilisation moments, etc.
+}
+
+message Observation {
+  repeated float features = 1;         // StateEncoder.DIM floats
+  repeated bool action_mask = 2;       // Operators.COUNT booleans, true = allowed
+  Metrics metrics = 3;                 // metrics of the current incumbent
+}
+
+message Action {
+  int32 action = 1;
+}
+
+message StepResult {
+  Observation observation = 1;
+  double reward = 2;
+  bool terminated = 3;                 // solver finished (termination condition)
+  bool truncated = 4;                  // Rl.MaxMacroSteps reached or episode aborted
+  map<string, string> info = 5;
+}
+
+message Empty {}
+
+message SavePath {
+  string path = 1;
+}
+
+service SolverEnv {
+  rpc Reset(InstanceId) returns (Observation);
+  rpc Step(Action) returns (StepResult);
+  rpc Info(Empty) returns (Metrics);
+  rpc Save(SavePath) returns (Empty);
+  rpc Close(Empty) returns (Empty);
+}
+
+// Remote policy used by GrpcPolicy (Java asks Python for an action).
+service Policy {
+  rpc Act(Observation) returns (Action);
+}

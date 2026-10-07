@@ -1,0 +1,22 @@
+{
+  "targets": [
+    "localhost:50051"
+  ],
+  "instances": [
+    "synthetic-hard"
+  ],
+  "prop": [],
+  "bc_init": "../models/bc_policy.pt",
+  "resume": null,
+  "timesteps": 4000,
+  "n_steps": 200,
+  "batch_size": 100,
+  "lr": 0.0003,
+  "ent_coef": 0.01,
+  "gamma": 1.0,
+  "gae_lambda": 0.95,
+  "max_assigned_drop": 0.05,
+  "seed": 0,
+  "out": "../models/ppo_smoke",
+  "subproc": false
+}

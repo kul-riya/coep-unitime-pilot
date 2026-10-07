@@ -1,0 +1,4 @@
+10:33:47.226 INFO  HeadlessSolve - Initial: C=0.2667 (160/600) checker=0.2667 pairs=4/270 intensity=2.00 conc=1.00 assigned=1.0
+10:33:47.249 INFO  RlNeighbourSelection - RL neighbour selection: mode=act policy=LinUcbPolicy K=50 maxMacroSteps=-1
+10:34:02.265 INFO  HeadlessSolve - Done: arm=L seed=2 C=0.1333 (checker 0.1333) assigned=1.0000 hard=0 soft=126.0 iters=78069 committed=76866 wall=15.0s
+{"arm":"L","seed":2,"C":0.13333333333333333,"C_checker":0.13333333333333333,"assigned_ratio":1.0,"hard":0,"soft_penalty":126.0,"iterations":78069,"committed":76866,"wall_clock_sec":15.022535161}

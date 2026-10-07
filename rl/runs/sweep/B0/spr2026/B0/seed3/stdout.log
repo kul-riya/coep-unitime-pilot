@@ -1,0 +1,3 @@
+19:08:31.465 INFO  HeadlessSolve - Initial: C=0.5313 (526/990) checker=0.5313 pairs=68/1420 intensity=3.46 conc=0.67 assigned=1.0
+19:23:31.635 INFO  HeadlessSolve - Done: arm=B0 seed=3 C=0.0515 (checker 0.0515) assigned=1.0000 hard=0 soft=57.0 iters=2601 committed=2601 wall=900.1s
+{"arm":"B0","seed":3,"C":0.051515151515151514,"C_checker":0.051515151515151514,"students_total":990,"assigned_ratio":1.0,"hard":0,"soft_penalty":57.0,"iterations":2601,"committed":2601,"wall_clock_sec":900.116310634}

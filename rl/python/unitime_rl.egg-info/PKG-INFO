@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: unitime-rl
+Version: 0.1.0
+Summary: Learned operator selection for the UniTime/CPSolver course timetabling search: gym env over gRPC, behaviour cloning, Maskable PPO, ONNX export, bake-off analysis.
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: gymnasium>=1.0
+Requires-Dist: stable-baselines3>=2.9
+Requires-Dist: sb3-contrib>=2.9
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: protobuf
+Requires-Dist: onnx
+Requires-Dist: onnxruntime
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: tabulate
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: tensorboard; extra == "dev"
