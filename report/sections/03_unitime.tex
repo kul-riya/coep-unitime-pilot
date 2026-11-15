@@ -1,0 +1,130 @@
+\section{Overview of UniTime and CPSolver}
+\label{sec:unitime}
+
+\subsection{The UniTime system}
+
+UniTime is a comprehensive, open-source academic scheduling system released under the Apache
+License, Version 2.0, and maintained as a sponsored project of the Apereo Foundation. It is
+web-based, implemented in Java, and deployed at large institutions worldwide, including Purdue
+University~\cite{rudova2011complex}. Later accounts of the same system cover elective courses and
+multiple sections~\cite{muller2016curriculum}. The system comprises four integrated components: course timetabling, examination
+timetabling, student scheduling, and event management. Only the first is used in this project,
+although the data model shared by all four determines the structure of the import files described
+in Section~\ref{sec:pipeline}.
+
+Within UniTime a course is modelled hierarchically. A \emph{course offering} belongs to an
+\emph{instructional offering}, which carries one or more \emph{configurations}; a configuration
+contains \emph{scheduling subparts} (for example a lecture subpart and a laboratory subpart); and
+each subpart contains the individual \emph{classes} that are actually placed in the timetable. A
+class inherits its permitted meeting patterns from its subpart. This hierarchy is what allows a
+course with joint lectures and parallel laboratory batches to be represented as a single offering,
+and it is the reason the institution's division-and-batch structure maps onto UniTime without
+distortion~\cite{murray2007modeling}.
+
+\subsection{The constraint solver}
+
+The embedded solver is CPSolver~\cite{cpsolver}, a local-search framework with constraint-programming primitives,
+distributed under the GNU LGPL. It won two tracks of the International Timetabling Competition 2007
+and reached the final in all three~\cite{muller2009itc,muller2025itc}. In the course-timetabling model the variable is a class, the
+value is a placement of time and room, and the objective is a weighted sum of soft-constraint
+criteria.
+
+\subsection{Iterative Forward Search}
+
+The solver is built on Iterative Forward Search (IFS)~\cite{muller2004}. IFS belongs to the family
+of local-search methods, but differs from classical local search in that it operates over feasible
+yet potentially \emph{incomplete} solutions: some classes may remain unassigned, but every hard
+constraint holds for the classes that are assigned. Intermediate solutions are therefore always
+interpretable and actionable by a human scheduler, in contrast to complete-but-infeasible solutions
+produced by unconstrained search.
+
+From an initial timetable $\omega$, each iteration selects a class and a placement, removes the
+assignments that hard-conflict with it, and installs the new one. The best timetable seen,
+$\sigma$, is kept and returned at the end, so the search can be stopped and resumed from any
+feasible timetable. Listing~\ref{lst:ifs} states the algorithm; Figure~\ref{fig:solverloop} is the
+same loop as it actually runs, including the distinction between proposing a move and committing
+it. The learning layer of Section~\ref{sec:rl} replaces only the \emph{Propose move} box. That step
+draws one assignment from the neighbourhood of the current one~\cite{muller2005thesis}. Later
+changes to the competition solver's time changes, room changes and swaps are described
+in~\cite{muller2016evolution}.
+
+\begin{lstlisting}[style=plainlst,caption={Iterative Forward Search},label={lst:ifs}]
+function IFS(omega):
+    sigma = omega
+    while canContinue(omega) do:
+        v     = selectVariable(omega)            // select a class
+        d     = selectValue(omega, v)            // select a placement
+        gamma = hardConflicts(omega, v/d)        // conflicting assignments
+        omega = (omega \ gamma) union {v/d}      // remove conflicts, assign
+        if better(omega, sigma) then
+            sigma = omega                        // update best solution
+    end while
+    return sigma
+end function
+\end{lstlisting}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=5.2mm and 8mm,
+  box/.style={draw,rounded corners=2pt,align=center,font=\small,minimum height=8mm,inner xsep=5pt,fill=coepblue!5},
+  dec/.style={draw,diamond,aspect=2.1,align=center,font=\scriptsize,inner sep=1pt,fill=coepblue!10},
+  term/.style={draw,rounded corners=8pt,align=center,font=\small,fill=gray!12},
+  ar/.style={-{Stealth[length=2mm]}}
+]
+\node[term] (start) {Start / resume};
+\node[dec, below=of start] (stop) {Stop\\check};
+\node[box, below=of stop] (prop) {Propose move\\{\scriptsize(select class, select placement)}};
+\node[dec, below=of prop] (sel) {Move\\selected?};
+\node[box, below=of sel] (apply) {Apply move\\{\scriptsize remove hard conflicts, assign}};
+\node[box, below=of apply] (score) {Score solution\\{\scriptsize weighted soft criteria}};
+\node[dec, below=of score] (better) {Is better\\than best?};
+\node[box, below=of better] (save) {Save best $\sigma$};
+\node[term, right=22mm of stop] (end) {Return $\sigma$};
+\node[box, right=14mm of sel, text width=26mm] (adv) {Advance counter\\{\scriptsize (no commit)}};
+
+\draw[ar] (start) -- (stop);
+\draw[ar] (stop) -- node[left,font=\scriptsize]{continue} (prop);
+\draw[ar] (stop) -- node[above,font=\scriptsize]{timeout} (end);
+\draw[ar] (prop) -- (sel);
+\draw[ar] (sel) -- node[left,font=\scriptsize]{yes} (apply);
+\draw[ar] (sel) -- node[above,font=\scriptsize]{no} (adv);
+\draw[ar] (apply) -- (score);
+\draw[ar] (score) -- (better);
+\draw[ar] (better) -- node[left,font=\scriptsize]{yes} (save);
+
+% feedback edges
+\draw[ar] (adv.north) |- ($(prop.north)+(0,5mm)$) -| (prop.north);
+\draw[ar] (better.east) -- node[above,font=\scriptsize]{no} ++(34mm,0) |- ($(stop.south)+(0,-2.5mm)$);
+\draw[ar] (save.west) -- ++(-20mm,0) |- (stop.west);
+\end{tikzpicture}
+\caption{The CPSolver iteration loop. The incumbent $\sigma$ is updated only when the comparator
+judges the new solution better. Section~\ref{sec:rl} substitutes only the \emph{Propose move} step.}
+\label{fig:solverloop}
+\end{figure}
+
+\subsection{Conflict-based Statistics}
+
+To avoid cycling and to improve final quality, IFS is augmented with Conflict-based Statistics
+(CBS)~\cite{muller2004}. CBS records how often each assignment has historically caused a hard
+conflict with another:
+\[
+  \mathrm{CBS}\bigl[A/a \rightarrow \lnot B/b\bigr] = c_{ab},
+\]
+meaning that assigning class $A$ the placement $a$ has unassigned $B/b$ on $c_{ab}$ previous
+occasions. During value selection each candidate placement is penalised by the accumulated conflict
+frequency of the assignments it would displace, steering the search away from historically
+problematic regions. When no complete solution is found, the contents of the CBS structure identify
+the hard constraints responsible for the infeasibility, which can be presented to the user as
+guidance for relaxation. In the configuration used throughout this project CBS is enabled
+(\texttt{General.CBS=true}) with the conflict-statistics extension registered on the solver.
+
+\subsection{Constraint enforcement guarantees}
+
+The framework enforces the invariant that hard constraints are never violated by an assignment that
+persists in the current timetable; infeasible placements are removed rather than tolerated. Arc
+consistency can in principle be maintained throughout the search, and IFS can be made complete
+through dynamic backtracking, but maintaining full arc consistency is impractical at realistic
+instance sizes, so the heuristic form is used. In the configuration used here
+\texttt{Basic.DisobeyHard} is \texttt{false}, which means that every mechanism described in
+Section~\ref{sec:rl} inherits this guarantee without needing its own hard-constraint checking.

@@ -1,0 +1,183 @@
+% =====================================================================
+%  University Course Timetabling System
+%  Semester VII B.Tech. Project Report  --  Project "taasika-v3"
+%  Department of Computer Engineering, COEP Technological University, Pune
+% =====================================================================
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=1.85cm,bottom=1.85cm,left=1.9cm,right=1.9cm,headheight=13pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage[hidelinks]{hyperref}
+
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning,calc,fit,backgrounds,decorations.pathreplacing}
+\pgfplotsset{compat=1.18}
+
+% ---------------------------------------------------------------- styling
+\definecolor{coepblue}{RGB}{20,60,110}
+\definecolor{lstbg}{RGB}{247,247,247}
+\definecolor{lstkw}{RGB}{20,60,110}
+\definecolor{lstcm}{RGB}{110,110,110}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small COEP Technological University}
+\fancyhead[R]{\small University Course Timetabling System}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\captionsetup{font=small,labelfont=bf,width=0.92\textwidth,skip=4pt}
+
+% tighter vertical rhythm so the evidence tables fit without being cut
+\titlespacing*{\section}{0pt}{8pt plus 1pt minus 2pt}{3pt plus 1pt}
+\titlespacing*{\subsection}{0pt}{6pt plus 1pt minus 1pt}{2pt plus 1pt}
+\titlespacing*{\paragraph}{0pt}{4pt plus 1pt}{0.8em}
+\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\belowcaptionskip}{1pt}
+\setlength{\parskip}{1pt plus 1pt}
+\emergencystretch=3em
+\renewcommand{\arraystretch}{0.98}
+\setlist{itemsep=0.5pt,topsep=2pt,parsep=0pt}
+
+\lstset{
+  basicstyle=\ttfamily\scriptsize,
+  backgroundcolor=\color{lstbg},
+  keywordstyle=\color{lstkw}\bfseries,
+  commentstyle=\color{lstcm}\itshape,
+  stringstyle=\color{black},
+  frame=single,
+  framesep=4pt,
+  rulecolor=\color{gray!40},
+  breaklines=true,
+  breakatwhitespace=true,
+  columns=fullflexible,
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=7pt,
+  captionpos=b,
+  xleftmargin=16pt,
+}
+\lstdefinestyle{plainlst}{numbers=none,xleftmargin=4pt}
+
+% \todo{} -- visible placeholder for anything not yet verifiable
+\newcommand{\todo}[1]{\textcolor{red!80!black}{\textbf{[TODO:} #1\textbf{]}}}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\setlist[itemize]{topsep=2pt,itemsep=1pt,parsep=0pt,leftmargin=1.4em}
+\setlist[enumerate]{topsep=2pt,itemsep=1pt,parsep=0pt,leftmargin=1.6em}
+
+\title{University Course Timetabling System}
+\author{Mihir Shah \and Riya Kulkarni \and Ved Mundhada \and Akshay Sathaye}
+
+\begin{document}
+
+% ================================================================ COVER
+\begin{titlepage}
+\centering
+\vspace*{0.6cm}
+
+% COEP logo placeholder -- replace with the official crest when available
+\includegraphics[width=2.5cm]{figures/COEP_Tech_University_Logo.jpg}
+
+\vspace{0.8cm}
+{\Large\bfseries COEP Technological University, Pune\par}
+\vspace{0.3cm}
+{\large Department of Computer Engineering\par}
+
+\vspace{1.6cm}
+{\LARGE\bfseries University Course Timetabling System\par}
+\vspace{0.4cm}
+{\large Project \emph{taasika-v3}\par}
+
+\vspace{1.2cm}
+{\Large Semester VII B.Tech. Project Report\par}
+
+\vspace{1.8cm}
+\begin{tabular}{rl}
+  \textbf{Academic Year:} & 2026--2027 \\[4pt]
+  \textbf{Semester:}      & VII \\[4pt]
+  \textbf{Guide:}         & Abhijit A. M. \\
+\end{tabular}
+
+\vspace{1.4cm}
+{\large\bfseries Submitted by\par}
+\vspace{0.4cm}
+{\large
+\begin{tabular}{c}
+  Mihir Shah \\[3pt]
+  Riya Kulkarni \\[3pt]
+  Ved Mundhada \\[3pt]
+  Akshay Sathaye \\
+\end{tabular}\par}
+
+\vfill
+{\small Repository: \url{https://github.com/kul-riya/coep-unitime-pilot}\par}
+\end{titlepage}
+
+% ============================================================== ABSTRACT
+\input{sections/00_abstract}
+
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\vspace{1.2em}
+\listoftables
+\newpage
+
+% ============================================================== SECTIONS
+\input{sections/01_introduction}
+\input{sections/02_problem}
+\input{sections/03_unitime}
+\input{sections/04_setup}
+\input{sections/05_pipeline}
+\input{sections/06_constraints}
+\input{sections/07_datasets}
+\input{sections/08_simulation}
+\input{sections/09_evaluation}
+\input{sections/10_experiments}
+\input{sections/11_rl}
+\input{sections/12_history}
+\input{sections/13_limitations}
+\input{sections/14_future}
+\input{sections/15_conclusion}
+
+% ============================================================ REFERENCES
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+% ============================================================ APPENDICES
+\newpage
+\appendix
+\input{sections/A_imports}
+\input{sections/B_spr6}
+\input{sections/C_kpis}
+\input{sections/D_evidence}
+
+\end{document}

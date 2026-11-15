@@ -1,0 +1,62 @@
+\section{Introduction}
+\label{sec:intro}
+
+Course timetabling at a university requires assigning a large number of classes---each with its own
+room, instructor and duration requirements---to slots in a weekly grid, subject to a wide variety of
+hard and soft constraints. The problem is NP-hard: no polynomial-time exact algorithm is known, and
+practical systems rely on heuristic or metaheuristic search~\cite{schaerf1999survey,muller2007}.
+
+COEP Technological University presents a demanding instance of the problem. The Department of
+Computer Engineering alone runs four undergraduate years and a postgraduate programme, each split
+into lecture divisions and further into laboratory batches, overlaid with departmental electives,
+minor-degree courses taught by other departments, open electives, and reserved first-year blocks.
+Laboratory sections of a course run in parallel while its lectures run jointly, so the scheduling
+unit is neither the course nor the student but the section, and the relationships between sections
+are what make a timetable usable or useless.
+
+\subsection{What Semester VI established}
+
+The preceding phase of this project evaluated UniTime---an open-source, web-based academic
+scheduling system built on the CPSolver constraint library---as a candidate platform. It
+deployed the system locally, entered representative test data through both the web interface and
+the XML import mechanism, and mapped the institution's scheduling rules onto UniTime's constraint
+model. Its conclusion was that every constraint identified by the team was expressible within that
+model, with no constraint requiring relaxation or external post-processing.
+
+That conclusion was a statement about the \emph{platform}, not about a timetable. At the end of
+Semester~VI no institutional data had been loaded, no solution had been produced from real course
+structure, and no measurement of solution quality existed. The data pipeline, the student records
+and the instructor-facing interface were all described in the future tense.
+
+\subsection{What Semester VII contributes}
+
+The present phase, named \emph{taasika-v3}, closes that gap. The work is organised around five
+contributions, each of which is reported with the evidence that supports it:
+
+\begin{enumerate}
+  \item \textbf{A reproducible Taasika\,$\rightarrow$\,UniTime data pipeline.} Eight Python
+    generators read a snapshot of the university's existing Taasika scheduling database and emit
+    the sixteen ordered XML documents that UniTime's Data Exchange interface consumes, followed by
+    three validators and an archive step, behind a single command
+    (Section~\ref{sec:pipeline}).
+  \item \textbf{Institution-specific constraints encoded as data.} Minor-degree and open-elective
+    block times, division and batch structure, elective spread, and dynamic lunch breaks for
+    students and instructors are generated into the preference file and solver configuration rather
+    than entered by hand (Section~\ref{sec:constraints}).
+  \item \textbf{An independent evaluation framework.} A 1{,}044-line evaluator scores any exported
+    timetable against the same input XML using ten hard checks, three preference checks and a set of
+    efficiency metrics, because a solver cannot be audited with its own counters
+    (Section~\ref{sec:evaluation}).
+  \item \textbf{An honest account of solution quality.} Several configurations reported zero student
+    conflicts; each is shown to be an artefact. With student enrolments pinned, the final solution
+    schedules 290 of 291 classes with no instructor or room double-booking and 40 of 1{,}130
+    students conflicted (Section~\ref{sec:experiments}).
+  \item \textbf{A reinforcement-learning layer for solver search.} A policy selects among eight
+    stock CPSolver neighbourhood operators inside the existing search loop. The layer is implemented
+    and instrumented; its control experiment answered the research question in the negative
+    (Section~\ref{sec:rl}).
+\end{enumerate}
+
+The project is referred to throughout as \emph{taasika-v3}. The source repository retains an earlier
+name, \texttt{coep-unitime-pilot}, which should be read as a historical artefact rather than as a
+description of the current scope.

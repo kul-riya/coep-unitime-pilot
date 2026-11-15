@@ -1,0 +1,70 @@
+\section{Problem Definition}
+\label{sec:problem}
+
+The objective is to produce, automatically and reproducibly, a weekly timetable for the Department
+of Computer Engineering that satisfies every mandatory institutional rule and violates as few
+preferential rules as possible. A comprehensive review of the literature confirms that constraint
+programming is the predominant methodology for this class of problem, owing to its ability to model
+mandatory and preferential requirements in a single framework~\cite{schaerf1999survey,muller2007}.
+
+\subsection{Scheduling model}
+
+In the CPSolver course-timetabling model the decision variable is a \emph{class} (a single lecture,
+laboratory or tutorial section), and its value is a \emph{placement}: a starting time together with
+the room or rooms in which the class meets. Students are not decision variables. A student's
+timetable is a consequence of the placements chosen for the classes that student is enrolled in, and
+the cost of two classes overlapping for a shared cohort is priced through a joint-enrolment
+constraint between those two classes. This distinction matters for everything that follows: the
+solver can only improve a student's timetable by moving a class, or---if it is permitted to do
+so---by moving the student into a different section. Student sectioning is otherwise a problem in its own right~\cite{muller2010sectioning}.
+
+\subsection{Hard and soft constraints}
+
+Hard constraints must hold in any acceptable timetable:
+
+\begin{itemize}
+  \item no room hosts two classes at overlapping times;
+  \item no instructor teaches two classes at overlapping times;
+  \item a class is placed only in a room whose capacity meets its enrolment limit and whose type
+    and equipment suit the subpart;
+  \item every class respects the meeting pattern declared for its subpart (for example
+    $2\times120$ minutes) and the date pattern of the term;
+  \item rooms are used only when available, and weekends are excluded.
+\end{itemize}
+
+Soft constraints express quality rather than legality: preferred rooms and time windows, balanced
+instructor load, limited back-to-back teaching, minimised travel between buildings, a protected
+lunch window, and---the criterion this report treats as primary---the number of students whose
+personal timetable contains an overlap. Soft requirements enter as weighted criteria rather than as further hard constraints~\cite{rudova2003soft}.
+
+\subsection{Student conflicts and the measurement problem}
+
+Two classes conflict for a student if and only if they share a day, their slot intervals overlap,
+and, when both carry date patterns, they share at least one active week. Intervals that merely touch
+at an endpoint do not conflict, and room and instructor are irrelevant to the test. This rule is
+implemented identically in three places that were used during the project---CPSolver's own time
+representation, the Java conflict oracle written for the learning layer, and the Python evaluator
+described in Section~\ref{sec:evaluation}---and the agreement between them is reported in
+Section~\ref{sec:evaluation}.
+
+The central difficulty of this phase was not producing a feasible timetable; coverage, room and
+instructor feasibility were reached early. The difficulty was that student-conflict counts could not
+be trusted. Three mechanisms independently drive the reported figure to zero without improving any
+student's timetable:
+
+\begin{enumerate}
+  \item \textbf{Re-sectioning.} If student switching and initial sectioning are enabled, UniTime
+    moves students between parallel laboratory batches until the overlaps disappear. The timetable
+    is unchanged; the cohort structure of the institution is silently discarded.
+  \item \textbf{An empty student population.} Under the \emph{Projected Student Course Demands}
+    setting, and with no last-like enrolment data in the session, the solver loads zero students and
+    reports a conflict count of zero over an empty denominator.
+  \item \textbf{A denominator mismatch.} A conflict rate computed over the students who carry
+    enrolments in a solver export is not comparable to one computed over every simulated student in
+    the source data, and the two populations differed by several hundred students across the
+    instances used in this project.
+\end{enumerate}
+
+The problem addressed in Sections~\ref{sec:evaluation} and~\ref{sec:experiments} is therefore stated
+as two objectives rather than one: produce a feasible timetable, and establish a measurement of
+student conflicts that cannot be satisfied by any of the three mechanisms above.

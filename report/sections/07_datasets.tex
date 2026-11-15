@@ -1,0 +1,150 @@
+\section{Datasets Used}
+\label{sec:datasets}
+
+\subsection{The current dataset}
+
+The working dataset is \texttt{unitime-out/0gen\_all}, a complete set of the sixteen Data Exchange
+documents for a single academic session. Every file carries the term attribute \texttt{Spr12} and
+the year \texttt{2026}, giving the Data Exchange term identifier \texttt{Spr122026}. The session
+runs from 19 January 2026 to 22 May 2026, with classes ending on 30 April and the examination
+period beginning on 4 May. The weekly grid is seven days of ten hourly slots from 08:30 to 18:30,
+with the underlying solver resolution being five-minute slots.
+
+Table~\ref{tab:dataset} gives the inventory, recomputed directly from the files rather than quoted
+from documentation.
+
+\begin{table}[H]
+\centering
+\caption{Inventory of \texttt{unitime-out/0gen\_all} (term \texttt{Spr122026}).}
+\label{tab:dataset}
+\footnotesize
+\begin{tabular}{@{}rL{5.0cm}rL{6.6cm}@{}}
+\toprule
+\textbf{\#} & \textbf{File} & \textbf{Bytes} & \textbf{Contents} \\
+\midrule
+1  & \texttt{1sessionSetup.xml}            &  12{,}486 & session, departments, subject areas, date and time patterns \\
+2  & \texttt{2academicArea.xml}            &     496 & 2 areas (B.Tech, M.Tech) \\
+3  & \texttt{3academicClassification.xml}  &     786 & 5 year codes (FY, SY, TY, BT, MT) \\
+4  & \texttt{4Major.xml}                   &   1{,}832 & 15 majors \\
+5  & \texttt{5Minor.xml}                   &     374 & empty by design; Taasika models minors as majors \\
+6  & \texttt{6studentGroup.xml}            &  25{,}485 & \textbf{242 groups} (43 classes + 199 batches) \\
+7  & \texttt{7buildingRoomImport.xml}      &  21{,}604 & \textbf{6 buildings, 42 rooms} \\
+8  & \texttt{8roomSharing.xml}             &   9{,}916 & 45 sharing blocks; weekends unavailable \\
+9  & \texttt{9travelTimes.xml}             &   2{,}722 & 7 inter-building travel entries \\
+10 & \texttt{10staff.xml}                  &  19{,}618 & \textbf{115 instructors} \\
+11 & \texttt{11courseCatalog.xml}          &  44{,}081 & \textbf{158 courses} \\
+12 & \texttt{12courseOffering.xml}         & 100{,}340 & \textbf{56 offerings, 84 subparts, 291 classes} \\
+13 & \texttt{13preferences.xml}            &  95{,}146 & 362 preference blocks \\
+14 & \texttt{14studentInfo.xml}            & 657{,}518 & \textbf{1{,}130 students}, 5{,}767 group references \\
+15 & \texttt{15studentRequest.xml}         & 495{,}638 & course requests for 1{,}130 students \\
+16 & \texttt{16studentenrollments.xml}     & 661{,}230 & \textbf{9{,}148 section enrolments} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Source snapshot}
+
+Determining which Taasika snapshot produced this dataset required evidence rather than trust. Four
+of the files carry the attribute \texttt{created="Generated from Taasika snapshot 240"}, but that
+string is hard-coded in three of the generator scripts and is not updated when a different snapshot
+is selected, so it cannot be used as provenance. The snapshot was therefore identified by counting.
+
+\begin{table}[H]
+\centering
+\caption{Identifying the source snapshot by counting entities.}
+\label{tab:snapshot}
+\footnotesize
+\begin{tabular}{@{}L{4.6cm}rrrl@{}}
+\toprule
+\textbf{Quantity} & \textbf{Snap 240} & \textbf{Snap 242} & \textbf{Snap 263} & \textbf{\texttt{0gen\_all}} \\
+\midrule
+Classes + batches = groups & $43{+}165={}$208 & $43{+}199={}$\textbf{242} & $32{+}128={}$160 & \textbf{242} \\
+Teachers                   & 113 & \textbf{115} & 67 & \textbf{115} \\
+Rooms                      & 49  & 49  & 29 & 42 (see below) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The dataset was generated from snapshot \textbf{242}, named \texttt{published-v4-26jan26}, in
+\texttt{taasika-db/taasika3.sql}. Snapshot 240 is the Semester~VI dataset and is what
+\texttt{unitime-out/README.md} still documents; snapshot 263 is a later snapshot for the following
+academic year that was integrated into the loader but is not the source of these files. The stale
+provenance string is recorded as a known defect in Section~\ref{sec:limitations}.
+
+The room count differs from the snapshot because the pipeline no longer emits the virtual
+``Online'' building: 49 rooms in the snapshot less seven online rooms gives the 42 that are
+imported. The six buildings are the Academic Complex (14 rooms), the Computer Engineering and IT
+department (15), the ENTC Extension (5), the New CSE Building (2), the Bhau Institute (2), and a
+pool of four laboratories marked unavailable, which is retained deliberately so that any use of
+them remains visible in the evaluation report.
+
+\subsection{Student population}
+
+Institutional MIS data was not available, so the student body is simulated from headcounts
+confirmed with the department and recorded in \texttt{scripts/intake.py}.
+Table~\ref{tab:students} gives the composition. Identifiers follow the pattern \texttt{61yy03aaa},
+where \texttt{yy} encodes the year of study. No real student data appears anywhere in the
+repository or in this report.
+
+\begin{table}[H]
+\centering
+\caption{Simulated student population of the current dataset.}
+\label{tab:students}
+\footnotesize
+\begin{tabular}{@{}lrrrL{6.2cm}@{}}
+\toprule
+\textbf{Year} & \textbf{CSE} & \textbf{AI\,\&\,ML} & \textbf{Total} & \textbf{Structure} \\
+\midrule
+First year (FY)   & 300 & 100 & 400   & single cohort, reserved blocks \\
+Second year (SY)  & 200 & 0   & 200   & two lecture divisions; direct second-year entrants join here \\
+Third year (TY)   & 200 & 0   & 200   & two divisions, departmental electives \\
+Final year (BT)   & 200 & 0   & 200   & two divisions, one departmental elective each \\
+M.Tech (MT)       & \multicolumn{2}{c}{130} & 130 & specialisation streams \\
+\midrule
+\textbf{Total}    &     &     & \textbf{1{,}130} & all with enrolments \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Minor-degree and open-elective provision is modelled as room blocks rather than as enrolments,
+because those courses are taught by other departments: 600 seats are reserved for minor-degree
+teaching across the second, third and final years, and 200 for the second-year open elective.
+
+Two known imperfections in the simulation are recorded rather than hidden. Two hundred first-year
+students could not be placed in \texttt{CS PPS-FY Lec} because the declared section limits do not
+cover the cohort, and two M.Tech students overflow the \texttt{PSEC2-EAI} laboratory. The section
+filling routine assigns students to a preferred section up to its declared limit and then spills
+into later sections of the same course and type, which is also why a small number of laboratory
+batches contain students drawn from two different lecture divisions.
+
+\subsection{Other instances used in the experiments}
+
+Several earlier instances appear in Section~\ref{sec:experiments}, and their counts differ. The
+term labels are \emph{not} different semesters: \texttt{Spr6}, \texttt{Spr10}, \texttt{Spr11} and
+\texttt{Spr12} are successive UniTime academic sessions created for Spring 2026, each a clean
+re-import of an evolving dataset. Table~\ref{tab:instances} lists them so that no figure in this
+report appears without its denominator.
+
+\begin{table}[H]
+\centering
+\caption{Instances referenced in this report.}
+\label{tab:instances}
+\footnotesize
+\begin{tabular}{@{}L{4.4cm}lrrrL{4.0cm}@{}}
+\toprule
+\textbf{Instance} & \textbf{Session} & \textbf{Classes} & \textbf{Students} & \textbf{Rooms} & \textbf{Role} \\
+\midrule
+\texttt{rl/instances/spr2026.xml}        & Spr6  & 262 & 990   & 44 & solver export used for all headless experiments \\
+\texttt{spr2026\_10m\_w5.xml}            & Spr6  & 262 & 990   & 44 & already conflict-free; bake-off instance \\
+\texttt{spr2026\_10\_LE\_SS\_Enrolled}   & Spr10 & 290 & 1{,}130 & 41 & first pinned-enrolment run \\
+\texttt{spr2026\_11\_all\_flags.csv}     & Spr11 & 291 & 1{,}130 & 42 & final solution, scored in Section~\ref{sec:experiments} \\
+\texttt{unitime-out/0gen\_all}           & Spr12 & 291 & 1{,}130 & 42 & current input dataset \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The 990 figure recurring in the Spr6 rows is the number of students that the UniTime solver export
+carried enrolments for, out of a simulated roll of 1{,}290 in the dataset of that period. The gap
+is not attrition; it is the difference between the students the solver loaded and the students that
+existed in the source files, and it is the origin of the conflict-rate reconciliation in
+Section~\ref{sec:experiments}.

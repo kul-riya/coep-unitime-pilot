@@ -1,0 +1,98 @@
+\section{Future Scope}
+\label{sec:future}
+
+\subsection{Status of the items carried over from Semester VI}
+
+Table~\ref{tab:carryover} revisits every direction proposed in the previous report and records what
+the present phase did with it.
+
+\begin{table}[H]
+\centering
+\caption{Semester VI proposals and their current status.}
+\label{tab:carryover}
+\footnotesize
+\begin{tabular}{@{}L{4.4cm}L{2.2cm}L{8.3cm}@{}}
+\toprule
+\textbf{Proposal} & \textbf{Status} & \textbf{Position at the end of Semester VII} \\
+\midrule
+Examination scheduling & still open &
+  Examination periods are declared in \texttt{1sessionSetup.xml}, but no per-course examination
+  elements are emitted and the examination module has not been exercised. Taasika does not model
+  examinations, so the data would have to come from elsewhere. \\
+Calendar (\texttt{.ics}) integration & still open &
+  Not started. The exported CSV contains everything a calendar export needs, so this is now a
+  self-contained task rather than one blocked on the timetable. \\
+University-wide deployment & still open &
+  The pipeline is parameterised by snapshot and term and is not specific to one department, but
+  only Computer Engineering data has been loaded and solved. \\
+Automated change notification & still open & Not started. \\
+WhatsApp group automation & still open & Not started. \\
+Student data pipeline from the MIS portal & partly done &
+  The transformation and import path is built, validated and exercised end to end, producing
+  1{,}130 student records with 9{,}148 enrolments. Only the data source is missing: the generator
+  simulates students because MIS extracts were not available. Substituting the real source is a
+  change to one generator. \\
+Course definition interface for instructors & partly done &
+  Course, section and preference generation is fully automated from the Taasika snapshot, so no
+  manual data entry is required. The instructor-facing interface for submitting availability has
+  not been built. \\
+Constraint mapping onto UniTime & done &
+  Established in Semester VI and now implemented as generated data rather than as a mapping on
+  paper (Section~\ref{sec:constraints}). \\
+Handling of shared multi-instructor laboratories & partly done &
+  Multiple lead instructors on one class is supported by UniTime and used, but the stronger
+  requirement---two instructors blocked simultaneously for the same student set in the same
+  room---has no distribution constraints generated for it. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{New directions arising from this phase}
+
+\begin{enumerate}
+  \item \textbf{Resolve the residual first-year conflicts.} The 40 remaining conflicts are
+    concentrated in four laboratory placements against the reserved first-year lecture block.
+    Adding generated different-time distribution constraints between the programming laboratory
+    subpart and the reserved block would make the requirement explicit to the solver rather than
+    leaving it to the student-conflict weight. This is the smallest remaining step with a direct
+    effect on the headline metric.
+
+  \item \textbf{Student sectioning with pre-defined batches.} The institution assigns batches
+    administratively, which is why student switching had to be disabled. The principled alternative
+    is to express the batches as group reservations, so that UniTime may section students but only
+    within the batch they belong to. This would recover the solver's freedom to resolve conflicts
+    by sectioning without discarding the cohort structure.
+
+  \item \textbf{Soft-constraint optimisation.} The room preference hit rate of 12.59\,\% is the
+    weakest measured quantity. Work is needed on both sides: tightening the generated preferences,
+    which are currently permissive, and tuning the room-preference weight against the
+    student-conflict weight in the manner of the sweep in Section~\ref{sec:experiments}.
+
+  \item \textbf{Fix and extend the evaluator.} Normalising instructor names would repair the
+    identity check and make the preference score meaningful. Replacing the exact-slot matching in
+    \texttt{sectioning\_slot\_conflicts.py} with the interval test used elsewhere would remove a
+    tool that currently reports false negatives.
+
+  \item \textbf{One-command snapshot to solution.} Generating, importing, solving and evaluating
+    currently requires three scripts and several manual steps in the UniTime interface. Since the
+    headless solver can already load a solver XML and solve it outside the server, an end-to-end
+    command from a Taasika snapshot to a scored solution is achievable and would make the
+    refinement loop of Section~\ref{sec:evaluation} substantially faster.
+
+  \item \textbf{Write the solution back to Taasika.} The timetable is currently a dead end: it is
+    exported as CSV and XML but never returned to the system the institution actually uses. A
+    converter from a solved timetable into the Taasika snapshot format would close the loop and is
+    a precondition for the system being adopted operationally.
+
+  \item \textbf{Complete the learning-layer evaluation, or retire it.} Arms L and R should be run
+    against arm B1 on a held-out term, at equal wall-clock budget, on an instance that is not
+    already conflict-free. If a harder instance---a university-wide one, for example---proves
+    resistant to weight tuning, the layer is ready to be evaluated on it. If no such instance
+    appears, the honest conclusion of Section~\ref{sec:rl} stands and the layer should be kept as
+    instrumentation rather than as a solver component.
+
+  \item \textbf{Correct the dataset defects.} The unplaced first-year cohort, the over-subscribed
+    M.Tech laboratory, the cross-division batches, the empty groups and the obsolete laboratory
+    sections 16--41 are all input-data problems with known fixes, and each removes a source of
+    spurious conflicts.
+\end{enumerate}

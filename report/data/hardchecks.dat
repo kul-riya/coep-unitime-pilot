@@ -1,0 +1,11 @@
+idx rate label
+0 99.66 {Coverage}
+1 100.0 {Time pattern}
+2 100.0 {Date pattern}
+3 100.0 {Room capacity}
+4 100.0 {Lunch/weekend}
+5 97.92 {Instr. lunch}
+6 94.42 {Student lunch}
+7 100.0 {Instr. clash}
+8 100.0 {Room clash}
+9 96.46 {Student conflicts}

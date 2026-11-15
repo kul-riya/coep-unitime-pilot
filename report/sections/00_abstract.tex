@@ -1,0 +1,40 @@
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+University course timetabling is an NP-hard combinatorial optimisation problem in which classes,
+instructors, student cohorts and rooms must be assigned to time slots subject to a large set of
+hard and soft constraints. The Semester~VI phase of this project established that UniTime, an
+open-source constraint-driven academic scheduling system, is able to express every scheduling
+constraint identified at COEP Technological University without relaxation or external
+post-processing. That phase was a feasibility study: it configured a local deployment and entered
+representative test data, but it did not produce a timetable from institutional data.
+
+The present phase, carried out under the project name \emph{taasika-v3}, converted that feasibility
+result into a working system. A reproducible data pipeline was built that reads a snapshot of the
+university's existing Taasika scheduling database and emits the sixteen ordered XML documents that
+UniTime's Data Exchange interface requires, covering the academic session, curriculum structure,
+rooms, instructors, course offerings, scheduling preferences and a simulated student body of
+1{,}130 students with 9{,}148 section enrolments. Institution-specific rules---minor-degree and
+open-elective time blocks, division and batch structure, and dynamic lunch breaks for both students
+and instructors---were encoded as generated preference data rather than as manual edits. An
+independent evaluation framework was written to score any exported timetable against the same input
+data, because the solver's own quality report cannot be used to audit the solver.
+
+Using this framework, the project established a result that the solver's internal counters had been
+concealing. Several earlier runs reported zero student conflicts; each was traced to an artefact
+rather than to a better timetable, the most common being UniTime silently re-sectioning students
+between laboratory batches. Once student enrolments were pinned---by selecting
+\emph{Enrolled Student Course Demands} and disabling student switching and re-sectioning---the final
+solution scheduled 290 of 291 classes with no instructor and no room double-booking, a hard
+feasibility score of 98.85 out of 100, and 40 of 1{,}130 students (3.54\,\%) carrying a timetable
+clash, all of them first-year students in a single laboratory--lecture pairing.
+
+A reinforcement-learning layer was also implemented, in which a policy selects among eight stock
+CPSolver neighbourhood operators inside the existing search loop. The layer is complete and
+instrumented, comprising 25 Java classes and 11 Python modules, and it never writes a placement
+itself, so hard-constraint safety is unchanged. Its pre-registered control experiment, however,
+answered the project's own research question in the negative: simply raising the solver's
+student-conflict weight reduced the violation rate from 0.0414 to below 0.004 on the same instance,
+clearing the 25\,\% improvement threshold that the learned policy was intended to achieve. No claim
+is therefore made that the learned policy outperforms the baselines; the report states precisely
+what was implemented, what was measured, and what remains a hypothesis.

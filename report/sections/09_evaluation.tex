@@ -1,0 +1,130 @@
+\section{Evaluation Framework and Tools}
+\label{sec:evaluation}
+
+\subsection{Why an external evaluator was required}
+
+UniTime reports the quality of its own solutions: percentage of variables assigned, room and time
+preference satisfaction, and a student conflict count. These figures are computed from the solver's
+internal model, which is exactly the thing under test. If the model loads no students, the student
+conflict count is zero; if the model re-sections students, the count is also zero. Neither
+statement is false from the solver's point of view, and neither is useful to the institution.
+
+An independent evaluator was therefore written. It takes a timetable and the \emph{input} XML as
+two separate arguments and re-derives every quantity from first principles: which student is in
+which class comes from the enrolment file, when each class meets comes from the solution, and the
+two are joined by the evaluator rather than by the solver. A failure of the solver to load students
+cannot propagate into the score, because the evaluator never asks the solver anything.
+
+\subsection{Two modes, two denominators}
+
+\texttt{scripts/eval\_timetable\_kpis.py} runs in either of two modes, and the distinction is the
+single most important thing to understand about every number in Section~\ref{sec:experiments}.
+
+\begin{description}[leftmargin=1.6em,style=nextline]
+  \item[CSV mode] scores a timetable exported from UniTime's solver screen or saved-timetables
+    screen. A UniTime CSV has no student column, so the evaluator joins class times to an
+    enrolment XML in the dataset directory. The denominator is therefore every student in that
+    file.
+  \item[XML mode] scores a CPSolver solver-model XML directly. Such a file is self-contained: it
+    carries the rooms, classes, constraints, the current assignment \emph{and} the student block.
+    The denominator is the students the solver actually loaded.
+\end{description}
+
+The two denominators differ whenever the solver loaded fewer students than the dataset contains,
+which on the Spr6 instances meant 990 against 1{,}290. Mixing them produces rates that look
+contradictory but are simply measurements of different populations. Every figure in this report is
+reported with the mode and the denominator that produced it.
+
+\subsection{What is measured}
+
+The evaluator runs ten hard checks, three preference checks and a set of efficiency metrics;
+Appendix~\ref{app:kpis} gives the definition of each. The hard feasibility score is an
+equal-weight average of the hard check pass rates, and the preference score an average of the
+preference rates, both on a 0--100 scale. Reporting the aggregate alone would be misleading, so the
+evaluator always prints the component rates and up to eight example failures per check, which is
+what made the first-year conflict cluster of Section~\ref{sec:experiments} straightforward to
+localise.
+
+\subsection{The conflict rule and its cross-validation}
+
+Two classes conflict for a student when they share a day, their slot intervals overlap with
+touching endpoints excluded, and---when both carry date patterns---they share at least one active
+week. The same rule is implemented independently in the Python evaluator and in the Java conflict
+oracle written for the learning layer.
+
+That duplication turned out to be useful. Scoring the same solution file
+(\path{rl/runs/sweep/w5/spr2026/B1/seed1/solution.xml}), the Java oracle reports a student
+violation rate of $0.026262626$ and the Python evaluator reports $0.026263$, that is 26 conflicted
+students out of 990. The agreement is exact to the precision printed. Two implementations written
+against the same specification, in different languages, over different data structures, arriving at
+the same count is the strongest available evidence that the conflict definition used throughout
+this report is implemented correctly.
+
+The Java oracle is separately unit-tested against a full recompute over 200 batches of random
+moves, which checks its incremental update path rather than its definition.
+
+\subsection{Supporting tools}
+
+\begin{itemize}
+  \item \texttt{convert\_xml\_to\_csv.py} converts a solver XML into the flat CSV form, so that a
+    solution obtained headlessly can be scored by the same CSV path as a UniTime export.
+  \item \texttt{relabel\_timetable\_csv.py} rewrites the course column from UniTime's numeric
+    course numbers to Taasika short codes, turning \texttt{CS 102} into \texttt{CS CN}. Without
+    this a timetable is unreadable to the staff who must check it.
+  \item \texttt{generate\_timetable\_html.py} renders a weekly grid as HTML for visual inspection,
+    which is how structural errors such as an entire year scheduled into one afternoon were caught
+    before any metric was computed.
+  \item \texttt{verify\_time\_patterns.py} audits generated patterns against the source durations.
+  \item \texttt{validate\_xmls.py} and \texttt{validate\_course\_offering.py} check well-formedness
+    and offering structure before import.
+\end{itemize}
+
+\subsection{The refinement loop}
+
+These tools are used as a cycle rather than as a one-shot check. Figure~\ref{fig:loop} shows the
+workflow that the phase settled into: generate the dataset, import and solve, export, evaluate,
+diagnose the worst failing check, change the generator or the configuration, and regenerate. The
+important property is that the only manual step is the diagnosis; everything else is scripted, so a
+change to a constraint rule can be carried through to a scored timetable without hand editing.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=14mm,
+  stg/.style={draw,rounded corners=3pt,align=center,font=\small,minimum width=27mm,minimum height=9mm,fill=coepblue!8},
+  ar/.style={-{Stealth[length=2mm]},gray!75}
+]
+\node[stg] (gen) {Generate\\{\scriptsize \texttt{gen\_all.py}}};
+\node[stg, right=of gen] (sim) {Simulate\\{\scriptsize students, enrolments}};
+\node[stg, right=of sim] (solve) {Solve\\{\scriptsize UniTime / headless}};
+\node[stg, below=11mm of solve] (eval) {Evaluate KPIs\\{\scriptsize \texttt{eval\_timetable\_kpis}}};
+\node[stg, left=of eval] (analyse) {Analyse\\{\scriptsize failing checks, examples}};
+\node[stg, left=of analyse] (refine) {Refine\\{\scriptsize rules, limits, weights}};
+
+\draw[ar] (gen) -- (sim);
+\draw[ar] (sim) -- (solve);
+\draw[ar] (solve) -- (eval);
+\draw[ar] (eval) -- (analyse);
+\draw[ar] (analyse) -- (refine);
+\draw[ar] (refine) -- (gen);
+\end{tikzpicture}
+\caption{The iterative workflow adopted during the phase. Only the \emph{Analyse} step is manual;
+every other transition is a scripted command.}
+\label{fig:loop}
+\end{figure}
+
+\subsection{Known limitations of the evaluator}
+
+Two limitations are recorded so that its output is not over-read.
+
+The \textbf{instructor identity check} compares the instructor named in the solution against the
+instructor expected from the Taasika data, and scores 0\,\% on the current solution. This is a
+name-format artefact, not a scheduling failure: UniTime is configured to export names in
+last-initial form, so the check compares ``Joshi, A'' against ``Amit Joshi'' and finds no match for
+any class. The underlying assignment is correct. The check needs a normalisation step before its
+output means anything.
+
+A separate script, \texttt{sectioning\_slot\_conflicts.py}, keys on an exact
+\texttt{day start-end} string and therefore detects only identical time slots, missing partial
+overlaps entirely. It reports zero conflicts where real overlaps exist and is not used for any
+figure in this report.

@@ -1,0 +1,72 @@
+\section{Spr6 Instance Inventory}
+\label{app:spr6}
+
+The Spr6 session is the instance behind every headless experiment in Section~\ref{sec:experiments}
+and Section~\ref{sec:rl}. It is recorded separately from the current dataset because its counts
+differ, and because quoting a conflict rate without the instance it came from was the single
+largest source of confusion during the phase.
+
+\subsection{The solver instance}
+
+\begin{table}[H]
+\centering
+\caption{Properties of \texttt{rl/instances/spr2026.xml}.}
+\label{tab:spr6inst}
+\footnotesize
+\begin{tabular}{@{}L{5.6cm}L{8.6cm}@{}}
+\toprule
+\textbf{Property} & \textbf{Value} \\
+\midrule
+Format            & CPSolver solver-model XML, \texttt{<timetable version="2.5">} \\
+Origin            & \emph{Export XML} on the UniTime course timetabling solver screen \\
+Session           & Spr6, 2026 \\
+Classes (variables) & 262 \\
+Students          & 990, carrying 7{,}748 enrolments \\
+Rooms indexed     & 44 \\
+Initial conflict rate & $C = 0.5313$ (526 of 990 students) \\
+Self-contained    & Yes: rooms, instructors, time and room domains, distribution constraints,
+                    students and the current assignment are all inside the file \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This format is \emph{not} produced by Data Exchange, whose timetable export is the class-assignment
+interchange format and cannot be loaded by the solver. Two settings matter when producing it:
+\emph{Student Course Demands} must be \emph{Enrolled Student Course Demands}, or the student block
+is empty, and \texttt{unitime.solution.export.names} must be \texttt{true}, or class and room names
+are stripped.
+
+\subsection{Derived artefacts}
+
+\begin{table}[H]
+\centering
+\caption{Artefacts derived from the Spr6 session.}
+\label{tab:spr6art}
+\footnotesize
+\begin{tabular}{@{}L{5.4cm}L{2.0cm}L{7.0cm}@{}}
+\toprule
+\textbf{Artefact} & \textbf{Type} & \textbf{Role} \\
+\midrule
+\texttt{rl/instances/spr2026.xml}            & solver XML & the instance above; input to every sweep run \\
+\texttt{rl/instances/spr2026-nostudents.xml} & solver XML & the same export before student injection \\
+\texttt{rl/instances/spr2026v6\_mihir.xml},
+  \texttt{spr2026v8\_mihir.xml}              & solver XML & later exports of the same session \\
+\texttt{solutions/spr2026.kpi.json}          & KPI report & scores the instance: 526/990, hard feasibility 92.15 \\
+\texttt{solutions/COEPSpr62026\_v2.csv}      & CSV        & exported timetable, scored in \texttt{kpi\_report.json} \\
+\texttt{solutions/course-solution\_weight5.csv},
+  \texttt{\_weight20.csv}                    & CSV        & the UniTime weight experiments of Section~\ref{sec:experiments} \\
+\texttt{solutions/spr2026\_10m\_w5.csv}      & CSV        & ten-minute run at weight 5 \\
+\texttt{rl/runs/sweep/}                      & run tree   & the controlled weight sweep: 7 configurations $\times$ 3 seeds \\
+\texttt{rl/runs/bakeoff-spr2026\_10m\_w5/}   & run tree   & arms B0, B1, B2 $\times$ 10 seeds on an already-solved instance \\
+\texttt{rl/runs/sweep/w5/.../solution.xml}   & solver XML & scored independently in \texttt{solutions/solution.kpi.json} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Why 990 and not 1{,}290}
+
+The dataset of this period declared 1{,}290 simulated students. The solver export carries 990. The
+difference is not attrition: 990 is the number of students for whom the solver had loaded
+enrolments at the moment of export. A conflict rate computed over 990 and one computed over
+1{,}290 are therefore measurements of different populations, which is why
+Table~\ref{tab:crossrun} records the denominator for every run.

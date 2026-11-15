@@ -1,0 +1,124 @@
+\section{KPI Definitions}
+\label{app:kpis}
+
+All definitions below are as implemented in \texttt{scripts/eval\_timetable\_kpis.py}. Let $A$ be
+the set of assigned classes in the solution, $S$ the set of students in the enrolment data, and
+for a student $s$ let $E(s)$ be the set of assigned classes $s$ is enrolled in.
+
+\subsection{The overlap predicate}
+
+Two classes $c_1, c_2$ overlap, written $\mathrm{ov}(c_1,c_2)$, if and only if all three hold:
+
+\begin{enumerate}
+  \item they share at least one day: $\mathrm{days}(c_1) \land \mathrm{days}(c_2) \neq 0$, where
+    days are a seven-bit mask with index 0 = Monday;
+  \item their slot intervals intersect:
+    $\mathrm{start}(c_1) < \mathrm{end}(c_2) \;\wedge\; \mathrm{start}(c_2) < \mathrm{end}(c_1)$,
+    so intervals that merely touch at an endpoint do \emph{not} overlap;
+  \item if both carry date patterns, the patterns share at least one active week.
+\end{enumerate}
+
+Room and instructor play no part in the test. Slots are five minutes when the session declares 288
+slots per day.
+
+\subsection{Hard checks}
+
+Each check reports \emph{checked}, \emph{passed}, \emph{failed} and a pass rate, together with up
+to eight example failures.
+
+\begin{table}[H]
+\centering
+\caption{The ten hard checks.}
+\label{tab:hardkpi}
+\footnotesize
+\begin{tabular}{@{}L{3.5cm}L{11.4cm}@{}}
+\toprule
+\textbf{Check} & \textbf{Definition} \\
+\midrule
+\texttt{coverage} &
+  Fraction of classes declared in the offering file that carry an assignment in the solution. \\
+\texttt{time\_pattern\_fidelity} &
+  Fraction of assigned classes whose number of meetings and minutes per meeting match the time
+  pattern declared for their subpart. \\
+\texttt{date\_pattern} &
+  Fraction of assigned classes whose date pattern matches the one declared in the preference file. \\
+\texttt{room\_capacity} &
+  Fraction of assigned classes whose enrolment limit does not exceed the capacity of the assigned
+  room. \\
+\texttt{lunch\_weekend} &
+  Fraction of assigned classes that do not fall on a weekend or inside a blocked slot. \\
+\texttt{room\_unavailable} &
+  Fraction of assigned classes placed in a room that is available at that time (XML mode). \\
+\texttt{instructor\_lunch\_breaks} &
+  Fraction of instructors who retain at least one free 60-minute window within 11:30--15:30 on
+  every teaching day. \\
+\texttt{student\_lunch\_breaks} &
+  The same test applied to each student's combined timetable. \\
+\texttt{instructor\_double\_booking} &
+  Fraction of classes not overlapping another class with the same instructor. \\
+\texttt{room\_double\_booking} &
+  Fraction of classes not overlapping another class in the same room. \\
+\texttt{student\_conflicts} &
+  Fraction of students $s \in S$ for which no pair $c_1,c_2 \in E(s)$ satisfies
+  $\mathrm{ov}(c_1,c_2)$. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Student conflict quantities}
+
+Four related quantities are reported and must not be interchanged:
+
+\begin{align*}
+  \text{students\_with\_conflict} &= \bigl|\{\, s \in S \;:\; \exists\, c_1,c_2 \in E(s),\;
+      \mathrm{ov}(c_1,c_2) \,\}\bigr| \\[2pt]
+  \text{student\_conflict\_pairs} &= \bigl|\{\, (s,c_1,c_2) \;:\; c_1,c_2 \in E(s),\;
+      \mathrm{ov}(c_1,c_2) \,\}\bigr| \\[2pt]
+  C &= \frac{\text{students\_with\_conflict}}{\bigl|\{\, s : |E(s)| \ge 2 \,\}\bigr|}
+      \qquad\text{(violation rate, students at risk)} \\[2pt]
+  C_{\mathrm{checker}} &= \frac{\text{students\_with\_conflict}}{|S|}
+      \qquad\text{(violation rate over all students)}
+\end{align*}
+
+$C$ and $C_{\mathrm{checker}}$ coincide whenever every student is enrolled in at least two classes,
+which is true of the current dataset. Section~\ref{sec:experiments} reports $C$.
+
+\subsection{Preference checks}
+
+\begin{itemize}
+  \item \texttt{room\_preference}: fraction of assigned classes placed in a room that appears in
+    the class's preferred-room list.
+  \item \texttt{instructor\_identity}: fraction of assigned classes whose instructor matches the
+    one expected from the source data. \emph{This check is currently unreliable} because the two
+    sides use different name formats (Section~\ref{sec:evaluation}).
+  \item \texttt{unav\_onl}: count and percentage of assignments landing in the unavailable or
+    online room pools.
+\end{itemize}
+
+\subsection{Aggregate scores}
+
+Both aggregates are equal-weight means of the component pass rates, on a 0--100 scale:
+\[
+  \text{hard feasibility} = \frac{100}{|H|}\sum_{h \in H} r_h ,
+  \qquad
+  \text{preference score} = \frac{100}{|P|}\sum_{p \in P} r_p ,
+\]
+where $H$ is the set of hard checks and $P$ the set of preference checks, and $r$ is a pass rate in
+$[0,1]$. Because the weights are equal, a single broken check moves the aggregate substantially;
+the component rates should always be read alongside it.
+
+\subsection{Efficiency metrics}
+
+These are descriptive and carry no pass/fail threshold:
+
+\begin{itemize}
+  \item \textbf{Instructor weekly load}: mean, standard deviation, minimum and maximum of assigned
+    minutes per week per instructor.
+  \item \textbf{Travel violations}: consecutive classes for one student or instructor in buildings
+    further apart than the gap between them permits.
+  \item \textbf{Slot spread}: proportion of assignments in the early, middle and late thirds of the
+    teaching day.
+  \item \textbf{Back-to-back density}: proportion of assignments immediately adjacent to another
+    class for the same instructor or cohort.
+  \item \textbf{Unavailable/online usage}: share of assignments in those room pools.
+\end{itemize}

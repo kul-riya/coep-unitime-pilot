@@ -1,0 +1,41 @@
+\section{The Sixteen XML Imports}
+\label{app:imports}
+
+Each document references entities created by an earlier one, so the numbering is the import order.
+The archive must hold the files at its root, and the Data Exchange term is the academic term
+followed by the year (\texttt{Spr122026}).
+
+\begin{longtable}{@{}rL{4.7cm}L{10.0cm}@{}}
+\caption{The sixteen Data Exchange documents and their dependencies.}
+\label{tab:imports}\\
+\toprule
+\textbf{\#} & \textbf{File} & \textbf{Creates, and what it requires} \\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l}{\small\itshape Table~\thetable\ continued.}\\
+\toprule
+\textbf{\#} & \textbf{File} & \textbf{Creates, and what it requires} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+1  & \texttt{1sessionSetup.xml}           & Session, departments, subject areas, date and time patterns. Nothing can precede it. \\
+2  & \texttt{2academicArea.xml}           & Two areas, B.Tech and M.Tech. Requires the session. \\
+3  & \texttt{3academicClassification.xml} & Five year codes: FY, SY, TY, BT, MT. \\
+4  & \texttt{4Major.xml}                  & Fifteen majors. Requires file 2. \\
+5  & \texttt{5Minor.xml}                  & Empty: Taasika models minors as majors. Requires file 2. \\
+6  & \texttt{6studentGroup.xml}           & 242 groups, one per class and per batch. Must precede file 14. \\
+7  & \texttt{7buildingRoomImport.xml}     & Six buildings, 42 rooms. Buildings are global and must then be attached with \textbf{Buildings\,$\rightarrow$\,Update Data}. \\
+8  & \texttt{8roomSharing.xml}            & Department assignment; weekends unavailable. Requires file 7. \\
+9  & \texttt{9travelTimes.xml}            & Five minutes between buildings, three between the two CSE buildings. \\
+10 & \texttt{10staff.xml}                 & 115 instructors. Also needs \textbf{Manage Instructor List} before they attach to classes. \\
+11 & \texttt{11courseCatalog.xml}         & 158 courses; paired laboratories merged into their lecture. Requires file 1. \\
+12 & \texttt{12courseOffering.xml}        & 56 offerings, 84 subparts, 291 classes, times left blank. Requires files 10 and 11. \\
+13 & \texttt{13preferences.xml}           & Time pattern, date pattern and room preferences on every subpart. Without it classes do not load. Re-import whenever file 12 changes. \\
+14 & \texttt{14studentInfo.xml}           & 1{,}130 students and 5{,}767 group references. Requires files 2--4 and 6. \\
+15 & \texttt{15studentRequest.xml}        & Course requests for all 1{,}130 students. Requires files 11 and 14. \\
+16 & \texttt{16studentenrollments.xml}    & 9{,}148 section enrolments, the rows read under \emph{Enrolled Student Course Demands}. Requires files 12 and 14. \\
+\end{longtable}
+
+\noindent The Jython utility \texttt{purge\_uploaded\_data.py} deletes a chosen subset of these
+steps (\texttt{"16"}, \texttt{"12, 13"}, \texttt{"14-16"}) in reverse dependency order.

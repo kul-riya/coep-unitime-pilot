@@ -1,0 +1,303 @@
+\section{Experiments and Results}
+\label{sec:experiments}
+
+This section reports five experiments. The first three concern how student conflicts are measured
+and whether the solver's objective can be tuned to reduce them; the fourth shows why several
+apparently excellent results are not results at all; the fifth is the outcome of the phase.
+
+\subsection{Solver checker versus KPI evaluator}
+
+The first measurement to reconcile was a pair of figures that appeared to contradict each other on
+the same term.
+
+\begin{table}[H]
+\centering
+\caption{Two conflict rates for the Spr6 instance, and why they differ.}
+\label{tab:reconcile}
+\footnotesize
+\begin{tabular}{@{}L{3.2cm}L{5.6cm}L{5.6cm}@{}}
+\toprule
+ & \textbf{Solver checker (Java)} & \textbf{KPI evaluator (CSV mode)} \\
+\midrule
+Value          & 526 of 990 conflicted, $C = 0.5313$ & 587 of 1{,}290 conflicted (45.5\,\%) \\
+Instance       & \texttt{rl/instances/spr2026.xml} & \texttt{COEPSpr62026\_v2.csv} \\
+Denominator    & students the solver loaded (990)  & all students in the enrolment file (1{,}290) \\
+Membership     & the student block inside the solver file & re-derived by joining the CSV to file 16 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The two are not inconsistent; they measure different populations of a different artefact. The
+solver export carried enrolments for 990 of the 1{,}290 simulated students, and the CSV scored a
+different exported solution. As Section~\ref{sec:evaluation} established, the two implementations
+agree exactly when pointed at the same file. The lesson taken forward was procedural: every
+conflict figure in this report is stated with its instance and its denominator, and no two figures
+are compared unless both match.
+
+\subsection{Tuning the student-conflict weight in UniTime}
+
+CPSolver prices each student clash through \texttt{StudentConflictWeight}, and
+\texttt{HardStudentConflictWeight} adds a further charge when the student has no alternative
+section to move to. Raising the first should buy fewer conflicts at the cost of other soft
+criteria. Two runs were made in the UniTime interface and exported as CSV.
+
+\begin{table}[H]
+\centering
+\caption{Conflict weight raised in the UniTime solver, scored in CSV mode against the then-current
+dataset (1{,}290 students, 262 classes).}
+\label{tab:weightcsv}
+\footnotesize
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Weight} & \textbf{Students conflicted} & \textbf{Pairs} & \textbf{Hard feasibility} & \textbf{Preference score} \\
+\midrule
+5  & 676 of 1{,}290 & 1{,}076 & 90.97 & 25.00 \\
+20 & 894 of 1{,}290 & 2{,}126 & 88.96 & 24.19 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Read naively this says that raising the weight makes the timetable worse, which would be a strange
+property for an optimiser. The correct reading is that this is not a controlled experiment. The
+CSV join re-derives student membership from an enrolment file that the solver did not necessarily
+use, the two runs started from different states, and the instance itself was changing during this
+period. The experiment's real value was in motivating the controlled version that follows. The
+figure of 676 at weight 5 supersedes an earlier figure of 614 quoted in the project's presentation
+material, which no committed artefact reproduces.
+
+\subsection{A controlled weight sweep}
+
+To tune the weight properly the instance must be held fixed and the only variable must be the
+weight. This was done headlessly, outside the UniTime server, using the project's own solver
+runner. The instance was \texttt{rl/instances/spr2026.xml} (262 classes, 990 students, loaded with
+an initial conflict rate of $C = 0.5313$); each configuration was run for 900 seconds of
+wall-clock time with three random seeds; the reference arm B0 used the stock weight of 0.2.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.78\textwidth, height=6.2cm,
+  xmode=log, log basis x=10,
+  xlabel={\small \texttt{Comparator.StudentConflictWeight}},
+  ylabel={\small student violation rate $C$},
+  xtick={0.2,0.5,1,2,5,10}, xticklabels={0.2,0.5,1,2,5,10},
+  ymin=-0.004, ymax=0.085,
+  grid=major, grid style={gray!22},
+  legend style={font=\scriptsize,at={(0.98,0.97)},anchor=north east,draw=gray!40},
+  tick label style={font=\scriptsize}, label style={font=\small},
+]
+\addplot[only marks,mark=o,mark size=1.7pt,gray!65] table[x=weight,y=C] {data/sweep_points.dat};
+\addlegendentry{individual seeds}
+\addplot[coepblue,very thick,mark=*,mark size=2.2pt] table[x=weight,y=C] {data/sweep_median.dat};
+\addlegendentry{median of 3 seeds}
+\addplot[red!70!black,dashed,very thick,domain=0.18:11,samples=2] {0.04141};
+\addlegendentry{B0 reference ($C=0.0414$)}
+\end{axis}
+\end{tikzpicture}
+\caption{Student violation rate against the student-conflict weight, on a fixed instance with a
+900-second budget and three seeds per weight. Every weight at or above 0.5 improves on the stock
+B0 configuration, and seed-to-seed variance is comparable to the effect size.}
+\label{fig:sweep}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Weight sweep, median over three seeds (recorded in \texttt{rl/runs/sweep/summary.md}).}
+\label{tab:sweep}
+\footnotesize
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Arm} & \textbf{Weight} & \textbf{$C$ (median)} & \textbf{Assigned} & \textbf{Soft penalty} \\
+\midrule
+B0 & 0.2  & 0.0414 & 1.00 & 60 \\
+B1 & 0.2  & 0.0343 & 1.00 & 62 \\
+B1 & 0.5  & 0.0192 & 1.00 & 66 \\
+B1 & 1    & 0.0263 & 1.00 & 67 \\
+B1 & 2    & 0.0030 & 1.00 & 65 \\
+B1 & 5    & 0.0000 & 1.00 & 69 \\
+B1 & 10   & 0.0040 & 1.00 & 64 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two observations follow. First, the solver starts from $C = 0.5313$ and every configuration drives
+it below 0.06 within the budget while keeping all 262 classes assigned, so the overwhelming
+majority of the reduction comes from the search itself rather than from the weight. Second, the
+weight does matter at the margin: the best setting reduces the residual rate by roughly an order of
+magnitude relative to the stock value.
+
+One caveat must be attached to the weight-5 row. Recomputing the medians from the per-seed metric
+files currently on disk reproduces every row of Table~\ref{tab:sweep} except that one, for which
+the stored files give a median of 0.0263 and make weight 2 ($C = 0.0030$) the minimum instead. The
+discrepancy is confined to a single seed whose run appears to have been repeated after the summary
+was written. The choice between the two readings does not affect any conclusion: measured against
+B0's 0.0414, the best weight achieves a relative reduction of either 1.000 or 0.927, and both
+clear the 25\,\% threshold that had been fixed in advance. The honest statement is that weight
+tuning alone reduces the residual conflict rate by well over 25\,\%, not that it reaches exactly
+zero.
+
+\subsection{Why several ``zero conflict'' results are not results}
+
+Four artefacts in the repository report zero student conflicts. None of them represents a better
+timetable, and Table~\ref{tab:zeros} gives the mechanism in each case.
+
+\begin{table}[H]
+\centering
+\caption{Zero-conflict results and their actual causes.}
+\label{tab:zeros}
+\footnotesize
+\begin{tabular}{@{}L{4.6cm}L{3.0cm}L{6.8cm}@{}}
+\toprule
+\textbf{Artefact} & \textbf{Reported} & \textbf{Mechanism} \\
+\midrule
+\texttt{spr2026\_mihir.kpi.json}, \texttt{spr2026\_10m\_w5.kpi.json}
+  & 0 of 990
+  & Student switching and initial sectioning moved students between parallel laboratory batches
+    until the overlaps vanished. The placements did not change; the cohort structure did. \\
+\texttt{rl/runs/bakeoff-spr2026\_10m\_w5} (3 arms $\times$ 10 seeds, 900\,s)
+  & 0 for all arms
+  & The instance was \emph{already} conflict-free when loaded: the initial violation rate recorded
+    in every metrics file is 0.0. A 900-second run that begins and ends at zero measures nothing
+    about conflict reduction. \\
+\texttt{spr2026\_10\_LE\_90m\_w5.kpi.json}
+  & 0 of 0
+  & No students were loaded at all. The rate is zero over an empty denominator. \\
+\texttt{kpi\_report\_MacMini\_v1.json}
+  & 0 of 2{,}130
+  & A different and earlier instance with only 254 classes, and two instructor conflicts. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The first row is the mechanism that mattered. UniTime's final sectioning pass is permitted, by
+default, to move a student from one laboratory batch to another in order to resolve a clash. For a
+university that assigns batches administratively this is not a solution but a corruption of the
+input, and it makes the reported metric unfalsifiable: any timetable can be made conflict-free if
+the students are allowed to move. The remedy is the three settings of Section~\ref{sec:setup}, and
+applying them is what produced the final experiment.
+
+\subsection{The final solution under pinned enrolments}
+
+With \emph{Enrolled Student Course Demands} selected, \texttt{General.SwitchStudents} set to
+\texttt{false} and \texttt{Global.LoadStudentEnrlsFromSolution} set to \texttt{true}, the solver
+can no longer move students, and the conflict count becomes a property of the timetable alone. The
+exported solution \texttt{spr2026\_11\_all\_flags.csv} was scored against the current dataset:
+
+\begin{lstlisting}[style=plainlst,language=bash]
+python scripts/eval_timetable_kpis.py \
+    --csv unitime-out/spr2026_11_all_flags.csv \
+    --data-dir unitime-out/0gen_all
+\end{lstlisting}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.95\textwidth, height=6.4cm,
+  ybar, bar width=15pt,
+  ymin=85, ymax=101.5,
+  ylabel={\small pass rate (\%)},
+  symbolic x coords={Coverage,Time pattern,Date pattern,Room capacity,Lunch/weekend,Instr. lunch,Student lunch,Instr. clash,Room clash,Student conflicts},
+  xtick=data,
+  x tick label style={rotate=38,anchor=east,font=\scriptsize},
+  tick label style={font=\scriptsize}, label style={font=\small},
+  nodes near coords, every node near coord/.append style={font=\tiny,rotate=90,anchor=west},
+  grid=major, grid style={gray!20},
+  enlarge x limits=0.055,
+]
+\addplot[fill=coepblue!55,draw=coepblue] coordinates {
+ (Coverage,99.66) (Time pattern,100) (Date pattern,100) (Room capacity,100)
+ (Lunch/weekend,100) (Instr. lunch,97.92) (Student lunch,94.42)
+ (Instr. clash,100) (Room clash,100) (Student conflicts,96.46)};
+\end{axis}
+\end{tikzpicture}
+\caption{Hard-check pass rates of the final solution (term Spr11 solution scored against the
+Spr12 dataset). The vertical axis starts at 85\,\% to make the three non-perfect checks legible.}
+\label{fig:hardchecks}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Full evaluation of the final solution: 291 classes, 1{,}130 students, 42 rooms,
+115 staff.}
+\label{tab:final}
+\footnotesize
+\begin{tabular}{@{}L{6.6cm}L{4.0cm}r@{}}
+\toprule
+\textbf{Metric} & \textbf{Value} & \textbf{Rate} \\
+\midrule
+Classes in offerings / in solution    & 291 / 291        & --- \\
+Coverage                              & 290 of 291 assigned & 99.66\,\% \\
+Hard feasibility score                & \textbf{98.85} / 100 & --- \\
+Hard checks / failures                & 4{,}341 / 105    & --- \\
+Time-pattern fidelity                 & 290 of 290       & 100\,\% \\
+Date pattern                          & 290 of 290       & 100\,\% \\
+Room capacity                         & 290 of 290       & 100\,\% \\
+Lunch/weekend slot compliance         & 290 of 290       & 100\,\% \\
+Instructor double-booking             & 0 conflicts      & 100\,\% \\
+Room double-booking                   & 0 conflicts      & 100\,\% \\
+\textbf{Student conflicts}            & \textbf{40 of 1{,}130 students, 40 pairs} & \textbf{96.46\,\%} \\
+Student lunch breaks                  & 63 violations    & 94.42\,\% \\
+Instructor lunch breaks               & 1 violation      & 97.92\,\% \\
+Travel-time violations                & 0                & --- \\
+Back-to-back density                  & 31.96\,\%        & --- \\
+Unavailable/online room usage         & 17 of 291        & 5.84\,\% \\
+Preference score                      & 6.29 / 100       & --- \\
+\quad room preference                 & 35 of 278        & 12.59\,\% \\
+\quad instructor identity             & 0 of 289 (artefact) & 0\,\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Interpretation.} The timetable is hard-feasible in every respect that the institution
+treats as non-negotiable: no room is double-booked, no instructor is double-booked, every class
+respects its meeting pattern and its room capacity, and 290 of 291 classes are placed. The
+remaining student conflicts are a small and highly localised set. All 40 are first-year students,
+and all 40 arise from the same pair of courses: a first-year programming laboratory overlapping the
+first-year reserved lecture block, in four specific lab/lecture combinations---laboratory 1 against
+reserved lecture 3 on Tuesday, laboratory 2 against reserved lecture 3 on Friday, laboratory 7
+against reserved lecture 2 on Wednesday, and laboratory 9 against reserved lecture 1 or 2 on
+Friday. Because the conflicts are concentrated in four placements rather than spread across the
+cohort, they are addressable either by re-timing those four laboratories or by adding explicit
+different-time distribution constraints between the laboratory and the reserved block.
+
+Two results should not be over-read. The room preference rate of 12.59\,\% is genuinely poor and is
+the clearest remaining optimisation target; it reflects that room preferences were generated
+permissively from Taasika associations and that the solver traded them away cheaply. The
+instructor identity rate of 0\,\% is not a result at all, but the name-format artefact described in
+Section~\ref{sec:evaluation}.
+
+\subsection{Cross-run comparison}
+
+Table~\ref{tab:crossrun} collects every evaluated artefact so that no figure in this report
+circulates without its context. The progression from the top group to the bottom row is the
+substance of the phase: the apparent zeros disappear as the measurement is tightened, and what
+remains is a small, real, diagnosable number.
+
+\begin{table}[H]
+\centering
+\caption{All evaluated runs. CSV mode joins a timetable to an enrolment file; XML mode scores the
+student block inside a solver file.}
+\label{tab:crossrun}
+\footnotesize
+\begin{tabular}{@{}L{4.9cm}llrrr@{}}
+\toprule
+\textbf{Artefact} & \textbf{Mode} & \textbf{Instance} & \textbf{Classes} & \textbf{Conflicted} & \textbf{Hard feas.} \\
+\midrule
+\texttt{spr2026.kpi.json}               & XML & Spr6  & 262 & 526 / 990   & 92.15 \\
+\texttt{kpi\_report.json}               & CSV & Spr6  & 260 & 587 / 1{,}290 & 94.98 \\
+\texttt{kpi\_report\_2785.json}         & CSV & Spr6  & 262 & 507 / 1{,}290 & 92.66 \\
+\texttt{kpi\_weight5\_report.json}      & CSV & Spr6  & 262 & 676 / 1{,}290 & 90.97 \\
+\texttt{kpi\_weight20\_report.json}     & CSV & Spr6  & 262 & 894 / 1{,}290 & 88.96 \\
+\texttt{solution.kpi.json} (sweep, $w{=}5$) & XML & Spr6 & 262 & 26 / 990 & 97.42 \\
+\texttt{spr2026\_mihir.kpi.json}        & XML & Spr6  & 262 & 0 / 990 \textsuperscript{a} & 97.67 \\
+\texttt{spr2026\_10m\_w5.kpi.json}      & XML & Spr6  & 262 & 0 / 990 \textsuperscript{a} & 98.26 \\
+\texttt{spr2026\_10\_LE\_90m\_w5}       & XML & Spr10 & 290 & 0 / 0 \textsuperscript{b}   & 97.55 \\
+\texttt{spr2026\_10\_LE\_SS\_Enrolled}  & XML & Spr10 & 290 & 32 / 1{,}130 & 97.77 \\
+\textbf{\texttt{spr2026\_11\_all\_flags.csv}} & CSV & Spr11/12 & 291 & \textbf{40 / 1{,}130} & \textbf{98.85} \\
+\bottomrule
+\multicolumn{6}{@{}l@{}}{\footnotesize \textsuperscript{a} students re-sectioned;
+  \textsuperscript{b} no students loaded. Neither is a conflict-reduction result.}
+\end{tabular}
+\end{table}

@@ -1,0 +1,63 @@
+\section{Limitations}
+\label{sec:limitations}
+
+The results of Section~\ref{sec:experiments} hold under conditions that should be stated plainly.
+
+\paragraph{The student body is simulated.} No MIS data was available, so all 1{,}130 students are
+generated from confirmed headcounts and deterministic enrolment rules. The cohort sizes, division
+structure and batch sizes are realistic, but the individual course choices are not real choices.
+Elective demand in particular is modelled as an even split across options, whereas real elective
+demand is skewed, and a skewed distribution would place more students in the larger sections and
+change which overlaps matter.
+
+\paragraph{Known defects in the generated data.} Two hundred first-year students could not be
+placed in \texttt{CS PPS-FY Lec} because the declared section limits do not cover the cohort, and
+two M.Tech students overflow the \texttt{PSEC2-EAI} laboratory. Three final-year laboratory batches
+contain students from two different lecture divisions as a side effect of the section-filling
+order, creating joint enrolments the institution does not intend. The groups
+\texttt{BT-Div1}, \texttt{BT-Div2} and \texttt{FY-PP1-A\_} have no members. The offering file still
+carries first-year programming laboratory sections 16 to 41, which are no longer wanted; removing
+them requires re-importing file 12 after uncommitting any saved solution, because an incremental
+import still deletes unmatched classes within the offerings it mentions.
+
+\paragraph{Scope is one department and one term.} Everything reported here concerns the Department
+of Computer Engineering for Spring 2026. A university-wide instance would be several times larger
+and would introduce inter-departmental room contention that this dataset does not exercise.
+
+\paragraph{The residual conflicts are unresolved.} The 40 first-year conflicts were diagnosed and
+localised to four laboratory placements against the reserved lecture block, but not fixed. Two
+remedies were identified---re-timing those laboratories, or adding explicit different-time
+distribution constraints between the laboratory subpart and the reserved block---and neither has
+been implemented or measured.
+
+\paragraph{Soft-constraint quality is poor.} The room preference hit rate is 12.59\,\%, and 17 of
+291 assignments land in the unavailable-laboratory pool. The solver is satisfying the hard
+constraints and spending the soft budget elsewhere. No tuning of the room-preference weight was
+attempted.
+
+\paragraph{The evaluator has a broken check.} The instructor identity check scores 0\,\% because it
+compares differently formatted names, so that column of the preference score carries no
+information and drags the aggregate down. The aggregate preference score of 6.29 should therefore
+not be quoted on its own.
+
+\paragraph{The learning layer is untested on real data.} Arms L and R have never been run on a COEP
+instance; the only bake-off that ran on real data covered the three baselines and used an instance
+that was already conflict-free. There is no held-out term, and training used a single instance, so
+no statement about generalisation is possible. The performance figures quoted for the layer come
+from a 120-class synthetic instance.
+
+\paragraph{One experimental artefact is inconsistent.} In the weight sweep, the recorded summary
+and one of the fifteen stored per-seed metric files disagree for weight 5, apparently because that
+single run was repeated after the summary was written. Both readings are reported in
+Section~\ref{sec:experiments} and neither changes the conclusion, but the run was not repeated to
+settle the matter.
+
+\paragraph{Dataset provenance is recorded incorrectly in the files.} Four of the generated
+documents carry a hard-coded attribute naming snapshot 240, while the dataset was in fact generated
+from snapshot 242. The provenance had to be reconstructed by counting entities. The generators
+should write the snapshot they were actually given.
+
+\paragraph{No instructor-facing interface exists.} Instructor availability and preferences are read
+from the Taasika snapshot. The interface proposed in Semester~VI, through which staff would enter
+their own constraints, has not been built, so the preference data is only as current as the
+snapshot.

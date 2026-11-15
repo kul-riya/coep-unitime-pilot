@@ -1,0 +1,100 @@
+\section{Evidence Table}
+\label{app:evidence}
+
+Every numeric claim in this report is traceable to a file in the repository. ``Verified'' means the
+quantity was recomputed from the named file while preparing this report; ``file'' means it is
+quoted from a committed artefact without re-running the command that produced it.
+
+{\footnotesize
+\begin{longtable}{@{}L{6.2cm}L{6.4cm}L{2.2cm}@{}}
+\caption{Source for each claim made in this report.}
+\label{tab:evidence}\\
+\toprule
+\textbf{Claim} & \textbf{Source} & \textbf{Status} \\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l}{\small\itshape Table~\thetable\ continued from the previous page.}\\
+\toprule
+\textbf{Claim} & \textbf{Source} & \textbf{Status} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+
+\multicolumn{3}{@{}l}{\textbf{Dataset (Section~\ref{sec:datasets})}}\\
+56 offerings, 84 subparts, 291 classes & \texttt{0gen\_all/12courseOffering.xml} & verified \\
+158 courses & \texttt{0gen\_all/11courseCatalog.xml} & verified \\
+242 student groups & \texttt{0gen\_all/6studentGroup.xml} & verified \\
+6 buildings, 42 rooms & \texttt{0gen\_all/7buildingRoomImport.xml} & verified \\
+115 instructors & \texttt{0gen\_all/10staff.xml} & verified \\
+1{,}130 students, 5{,}767 group references & \texttt{0gen\_all/14studentInfo.xml} & verified \\
+9{,}148 section enrolments & \texttt{0gen\_all/16studentenrollments.xml} & verified \\
+Term \texttt{Spr122026} & \texttt{term}/\texttt{year} attributes of all 16 files & verified \\
+FY 400, SY/TY/BT 200, MT 130 & \texttt{solutions/enrollment\_sim\_summary.json} & file \\
+200 unplaced in \texttt{PPS-FY Lec}; 2 in \texttt{PSEC2-EAI Lab} & same & file \\
+Source snapshot 242 (\texttt{published-v4-26jan26}) & \texttt{compare/242.txt} vs.\ group and staff counts & verified \\
+Session 19 Jan -- 22 May 2026 & \texttt{0gen\_all/1sessionSetup.xml} & verified \\
+
+\multicolumn{3}{@{}l}{\textbf{Constraints (Section~\ref{sec:constraints})}}\\
+Four fixed time-block rules & \texttt{scripts/gen\_preferences.py}, \texttt{FIXED\_ENTRIES\_MAP} & verified \\
+Time-pattern mapping & \texttt{gen\_preferences.py}, \texttt{\_time\_pattern()} & verified \\
+Ten declared time patterns & \texttt{0gen\_all/1sessionSetup.xml} & verified \\
+Lunch break 11:30--15:30, dynamic & \texttt{unitime\_scripts/setup\_lunch\_breaks.py} & file \\
+Group code = class schedule note; 289 notes & \texttt{scripts/offering\_index.json} & verified \\
+Intake headcounts & \texttt{scripts/intake.py} & verified \\
+
+\multicolumn{3}{@{}l}{\textbf{Final solution (Section~\ref{sec:experiments})}}\\
+291 classes, 290 assigned, coverage 99.66\,\% & \texttt{eval\_timetable\_kpis.py} on \texttt{spr2026\_11\_all\_flags.csv} & verified \\
+Hard feasibility 98.85; 4{,}341 checks, 105 failures & same & verified \\
+0 instructor and 0 room double-bookings & same & verified \\
+\textbf{40 of 1{,}130 students, 40 pairs} & same & verified \\
+63 student and 1 instructor lunch violations & same & verified \\
+Room preference 12.59\,\%; 17 of 291 unavailable/online & same & verified \\
+Instructor identity 0\,\% is a name-format artefact & example rows in the same report & verified \\
+All 40 conflicts are \texttt{PPS-FY Lab} $\times$ \texttt{FY-Reserve Lec} & failure examples in the same report & verified \\
+
+\multicolumn{3}{@{}l}{\textbf{Weight experiments (Section~\ref{sec:experiments})}}\\
+Weight 5: 676 of 1{,}290; 1{,}076 pairs & \texttt{solutions/kpi\_weight5\_report.json} & file \\
+Weight 20: 894 of 1{,}290; 2{,}126 pairs & \texttt{solutions/kpi\_weight20\_report.json} & file \\
+Sweep medians (Table~\ref{tab:sweep}) & \texttt{rl/runs/sweep/summary.md}, \texttt{sweep\_results.csv} & file \\
+B0 median $C=0.0414$ (seeds 0.0414, 0.0263, 0.0515) & \texttt{rl/runs/sweep/B0/.../metrics.json} & verified \\
+Initial $C = 0.5313$ (526 of 990) & \texttt{initial.student\_violation\_rate} in all sweep runs & verified \\
+Weight-5 row inconsistency & \texttt{w5/.../seed1/metrics.json} vs.\ \texttt{sweep\_results.csv} & verified \\
+900\,s budget, 3 seeds, 262 variables assigned & \texttt{metrics.json} of each run & verified \\
+
+\multicolumn{3}{@{}l}{\textbf{Measurement reconciliation (Sections~\ref{sec:evaluation},~\ref{sec:experiments})}}\\
+Solver checker 526/990 = 53.1\,\% & \texttt{solutions/spr2026.kpi.json} & file \\
+KPI evaluator 587/1{,}290 = 45.5\,\% & \texttt{solutions/kpi\_report.json} & file \\
+Java oracle 0.026262626 vs.\ Python 0.026263 & \texttt{w5/.../seed1/metrics.json}, \texttt{solutions/solution.kpi.json} & verified \\
+Bake-off instance already at $C=0$ on load & \texttt{bakeoff-spr2026\_10m\_w5/.../metrics.json} & verified \\
+\texttt{spr2026\_10\_LE\_90m\_w5} loaded 0 students & \texttt{meta.enrolled\_students = 0} in its KPI report & verified \\
+Pinned Spr10 run: 32 of 1{,}130 & \texttt{solutions/spr2026\_10\_LE\_SS\_Enrolled.kpi.json} & file \\
+
+\multicolumn{3}{@{}l}{\textbf{Learning layer (Section~\ref{sec:rl})}}\\
+25 Java classes & \texttt{rl/src/main/java/.../rl/} & verified \\
+11 Python modules & \texttt{rl/python/unitime\_rl/} & verified \\
+48-dimensional state; feature names & \texttt{StateEncoder.java}, \texttt{DIM}, \texttt{NAMES} & verified \\
+Eight operators and their ids & \texttt{Operators.java} & verified \\
+$K = 50$; reward $\Phi$; masking rules & \texttt{rl/README.md}, \texttt{RlConfig.java} & file \\
+PPO: 100{,}000 timesteps, 3 workers, BC init & \texttt{rl/models/ppo/train\_args.json} & verified \\
+Synthetic smoke-test figures & \texttt{rl/README.md}, ``Smoke-test results'' & file \\
+Arms L and R absent from the real bake-off & \texttt{bakeoff-spr2026\_10m\_w5/summary.md} & verified \\
+``B1 alone clears 25\,\%'' & \texttt{rl/runs/sweep/summary.md} & file \\
+
+\multicolumn{3}{@{}l}{\textbf{Stack and history (Sections~\ref{sec:setup},~\ref{sec:history})}}\\
+\texttt{maven.compiler.release=17}; JDK 17+ & \texttt{rl/pom.xml}, \texttt{rl/SETUP.md} & verified \\
+gRPC 1.84.0, protobuf 4.36.2, ONNX Runtime 1.30.0 & \texttt{rl/pom.xml} & verified \\
+CPSolver 1.4-SNAPSHOT, 1.4.94 substitute & \texttt{rl/pom.xml}, \texttt{rl/SETUP.md} & verified \\
+Java 21, MySQL 8.4, Tomcat 9.0 & Semester VI report, Section 4 & prior report \\
+Solver weights (Table~\ref{tab:solverconf}) & \texttt{rl/config/unitime-coep-default.properties} & verified \\
+30 commits, 2 authors, 23 Jun -- 8 Oct 2026 & \texttt{git log} & verified \\
+v5 pairing fix: 63 $\rightarrow$ 58 offerings & \texttt{solutions/HANDOFF.md} & file \\
+
+\end{longtable}}
+
+\paragraph{Open items.} No \texttt{\textbackslash todo} placeholders remain in the body of this
+report. Two facts could not be sourced to a committed artefact and are therefore \emph{not}
+asserted anywhere in it: the figure of 614 conflicts at weight 5 quoted in the project's
+presentation material, which no file reproduces (the repository gives 676), and the identity of
+four screenshot images at the repository root, which were not opened and so are not used as
+figures.

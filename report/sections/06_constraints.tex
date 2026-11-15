@@ -1,0 +1,152 @@
+\section{Institution-Specific Constraints}
+\label{sec:constraints}
+
+\subsection{Inherited constraint mapping}
+
+The Semester~VI phase identified the institution's scheduling rules and established that each is
+expressible within UniTime's constraint model. Table~\ref{tab:inherited} reproduces that mapping,
+which remains valid and is the starting point for this section.
+
+\begin{table}[H]
+\centering
+\caption{Constraint mapping established in Semester VI.}
+\label{tab:inherited}
+\footnotesize
+\begin{tabular}{@{}L{5.0cm}L{9.9cm}@{}}
+\toprule
+\textbf{Constraint} & \textbf{Mechanism in UniTime} \\
+\midrule
+Distance between rooms & Distance check integrated into the room detail configuration. \\
+Preferred labs and lectures & Subparts within an instructional offering, each with its own time pattern. \\
+Evenly distributed working hours & Instructor preference settings; the solver favours consecutiveness. \\
+Minimisation of schedule holes & The \texttt{StudentMinimizeScheduleHoles} optimisation criterion. \\
+Consecutive lectures for a course & Distribution preferences favouring adjacent slots on the same day. \\
+Maximum slots per course per day & Distribution preferences imposing a per-day limit. \\
+Instructor load management & Distribution preferences limiting back-to-back classes. \\
+Departmental cohort conflicts & Distribution preferences preventing overlap for a shared cohort. \\
+Specialised laboratory allocation & Room groups encoding hardware and equipment requirements. \\
+Common university hours & Reserved slots excluded from the time-pattern configuration. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{From mapping to implementation}
+
+A mapping records that a rule \emph{can} be expressed; it does not schedule anything. The work of
+this phase was to generate the corresponding data for every class in the dataset, so that the rules
+are reproduced automatically each time the pipeline runs rather than re-entered by hand after each
+import. Table~\ref{tab:implemented} lists what is actually emitted, and where.
+
+\begin{table}[H]
+\centering
+\caption{Constraints as implemented in the generated data.}
+\label{tab:implemented}
+\footnotesize
+\begin{tabular}{@{}L{3.6cm}L{5.0cm}L{6.2cm}@{}}
+\toprule
+\textbf{Rule} & \textbf{Where it is produced} & \textbf{Form} \\
+\midrule
+Meeting patterns & \texttt{gen\_preferences.py} & a \texttt{<timePref>} naming one of the ten
+  session time patterns, on every subpart and class \\
+Date pattern & \texttt{gen\_preferences.py} & \texttt{Full Term} date preference at required level \\
+Minor-degree block & \texttt{FIXED\_ENTRIES\_MAP} & required Monday/Tuesday 16:30--18:30 window \\
+Open-elective block & \texttt{FIXED\_ENTRIES\_MAP} & required Monday/Tuesday 09:30--10:30 window \\
+Protection of both blocks & \texttt{FIXED\_ENTRIES\_MAP} & prohibited windows on all other courses \\
+Room preferences & \texttt{gen\_preferences.py} & \texttt{<roomPref>} lists derived from Taasika
+  room associations, never pre-assignments \\
+Specialised laboratories & \texttt{gen\_buildings.py} & building inference plus a separate pool for
+  unavailable laboratories \\
+Lunch breaks & \texttt{setup\_lunch\_breaks.py} & solver criteria, applied server-side \\
+Division and batch structure & \texttt{gen\_academic.py}, \texttt{gen\_students.py} & 242 student
+  groups; membership derived from enrolment \\
+Weekend exclusion & \texttt{gen\_buildings.py} & room sharing marks weekends unavailable \\
+Travel times & \texttt{gen\_buildings.py} & 5 minutes between buildings, 3 between the two CSE
+  buildings \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The modular time-block mechanism}
+
+The institution reserves fixed windows in the week for course categories that are taught across
+departments. Minor-degree courses meet on Monday and Tuesday evenings; open electives meet on
+Monday and Tuesday mornings. These are not preferences but hard institutional commitments, and
+they have a second half that is easy to overlook: if a window is reserved for one category, every
+\emph{other} course must be kept out of it, or the reservation achieves nothing.
+
+This was implemented as a small rule engine inside \texttt{gen\_preferences.py}. A rule table,
+\texttt{FIXED\_ENTRIES\_MAP}, is consulted for every subpart; the first rule whose course pattern
+matches, and whose exclusion pattern does not, becomes the active rule for that subpart.
+Table~\ref{tab:fixedentries} lists the four rules currently in force.
+
+\begin{table}[H]
+\centering
+\caption{The fixed time-block rules, in evaluation order.}
+\label{tab:fixedentries}
+\footnotesize
+\begin{tabular}{@{}L{3.1cm}L{5.2cm}L{1.9cm}L{2.3cm}L{1.9cm}@{}}
+\toprule
+\textbf{Rule} & \textbf{Courses matched} & \textbf{Days} & \textbf{Window} & \textbf{Level} \\
+\midrule
+\texttt{MDM\_Required}        & \texttt{MDM*}                                   & Mon, Tue & 16:30--18:30 & Required \\
+\texttt{OE\_Required}         & \texttt{OE*}                                    & Mon, Tue & 09:30--10:30 & Required \\
+\texttt{Non\_MDM\_Prohibited} & everything except \texttt{MDM*}, \texttt{OE*}   & Mon, Tue & 16:30--18:30 & Prohibited \\
+\texttt{SY\_Non\_OE\_Prohibited} & CO, CoI, DTL, DTL-Lab, Eco, OOPD, OOPD-Lab, TOC, TOC-Tut & Mon, Tue & 09:30--10:30 & Prohibited \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The two levels do different jobs. A required rule marks the one slot that matches the day set and
+fits the window; a prohibited rule marks every candidate whose days and interval overlap the
+window. The first pins a course into its block, the second clears the block for everyone else.
+The second-year rule lists courses by name rather than by wildcard, because only that year's core
+courses share the open-elective morning, and the list says so explicitly.
+
+\subsection{Meeting patterns}
+
+Each subpart's weekly contact minutes, read from the Taasika snapshot, determine its meeting
+pattern. Lectures of 240 minutes per week become \texttt{2 x 120}, 180 become \texttt{3 x 60} and
+120 become \texttt{2 x 60}; laboratories and recitations are single meetings, so 480 minutes becomes
+\texttt{1 x 480 Project}, 180 becomes \texttt{1 x 180} and 120 becomes \texttt{1 x 120}. Anything
+that does not match a declared pattern falls back to \texttt{Exact Time}, which
+\texttt{verify\_time\_patterns.py} reports as an audit finding rather than passing silently. The
+migration of lectures to the $2\times120$ pattern was a deliberate change made during this phase to
+reflect how the department actually teaches.
+
+\subsection{Lunch breaks}
+
+The Semester~VI report proposed implementing a universal lunch break by excluding slots from the
+assignable time patterns. That approach was rejected in implementation because it is too rigid: it
+removes the same hour from every day for every class, whereas the institution requires only that
+each student and each instructor have \emph{some} free hour within a window.
+
+The implemented mechanism is a dynamic one-hour break between 11:30 and 15:30, applied to students
+and to instructors, and installed as solver criteria by the Jython script
+\texttt{scripts/unitime\_scripts/setup\_lunch\_breaks.py}, which is uploaded and run inside UniTime
+through \textbf{Administration\,$\rightarrow$\,Utilities\,$\rightarrow$\,Scripts}. Rooms remain
+available for the whole weekday. Because this is a soft criterion rather than a blocked slot, the
+solver may violate it, and the evaluator of Section~\ref{sec:evaluation} therefore checks it
+explicitly: the final solution leaves 63 students and one instructor without a qualifying break.
+
+\subsection{Student groups and what they do not do}
+
+The dataset declares 242 student groups, one for each Taasika class and each batch. Since the
+pipeline's most recent change, every student is also made a member of the groups corresponding to
+the classes they are enrolled in: the group code is taken from the class's schedule note, so a
+student enrolled in the second-year division-one lecture is a member of \texttt{SY-Div1}, and a
+student enrolled in a particular laboratory batch is a member of that batch's group.
+
+Membership makes the cohort visible and is a prerequisite for a future group reservation. It does
+not constrain the timetable. A student's groups affect course sectioning in one place only, a
+distance computation used for students who are not yet enrolled, and the final sectioning pass does
+not read them. With student switching off, adding the memberships changed no placement and no
+conflict count. What actually pins a student to a section is file 16 together with the three
+settings of Section~\ref{sec:setup}.
+
+\subsection{Shared laboratory sessions}
+
+A laboratory supervised by two instructors, in the same room at the same time for the same batch,
+is represented through UniTime's support for multiple lead instructors on a single class. Courses
+with several lecture or laboratory sections taught by different instructors are modelled as
+separate classes under a common subpart, which is the same mechanism the pipeline uses to emit one
+lecture class per Taasika class record and one laboratory class per batch record.
