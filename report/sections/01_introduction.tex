@@ -1,37 +1,19 @@
 \section{Introduction}
 \label{sec:intro}
 
-Course timetabling at a university requires assigning a large number of classes---each with its own
-room, instructor and duration requirements---to slots in a weekly grid, subject to a wide variety of
-hard and soft constraints. The problem is NP-hard: no polynomial-time exact algorithm is known, and
-practical systems rely on heuristic or metaheuristic search~\cite{schaerf1999survey,muller2007}.
+The problem of Course Timetabling in a university is the problem of assigning many classes with a set of rooms, teachers and time constraints to a weekly timetable in a grid, under many different hard and soft constraints. The problem is NP-hard, which means that we do not know any polynomial time exact solution or have practical systems that use heuristic or metaheuristic search~\cite{schaerf1999survey,muller2007}.
 
-COEP Technological University presents a demanding instance of the problem. The Department of
-Computer Engineering alone runs four undergraduate years and a postgraduate programme, each split
-into lecture divisions and further into laboratory batches, overlaid with departmental electives,
-minor-degree courses taught by other departments, open electives, and reserved first-year blocks.
-Laboratory sections of a course run in parallel while its lectures run jointly, so the scheduling
-unit is neither the course nor the student but the section, and the relationships between sections
-are what make a timetable usable or useless.
+COEP Technological University offers a challenging example of this. The Department of Computer Engineering has four undergraduate years and a postgraduate programme that each consist of lecture divisions and then laboratory batches, with departmental electives, minor degree courses offered by other disciplines, open electives and reserved first-year batches. Laboratory sections are parallel courses, courses are parallel lectures, and a scheduling unit is not the course itself, but the section of it, to the extent that the scheduling unit is fit to be used, or not, depends on the relations between the sections, not the course itself.
 
-\subsection{What Semester VI established}
+\subsection{The school values that were set by Semester~VI}
 
-The preceding phase of this project evaluated UniTime---an open-source, web-based academic
-scheduling system built on the CPSolver constraint library---as a candidate platform. It
-deployed the system locally, entered representative test data through both the web interface and
-the XML import mechanism, and mapped the institution's scheduling rules onto UniTime's constraint
-model. Its conclusion was that every constraint identified by the team was expressible within that
-model, with no constraint requiring relaxation or external post-processing.
+The previous step in this project was to assess UniTime, an academic scheduling system developed as an open source, web-based platform using the CPSolver constraint library, for suitability as a platform. It installed the system in its own environment and loaded representative test data into it both via the web interface and via the XML import feature, and translated the institution's scheduling rules into UniTime's constraint model. The conclusion was that all the constraints found by the team were representable in that model and none of the constraints needed to be relaxed or post-processed externally.
 
-That conclusion was a statement about the \emph{platform}, not about a timetable. At the end of
-Semester~VI no institutional data had been loaded, no solution had been produced from real course
-structure, and no measurement of solution quality existed. The data pipeline, the student records
-and the instructor-facing interface were all described in the future tense.
+Upon completion of Semester~VI, there was no institutional data, no real solution found from the course structure, and no measure for the quality of the solution. All the data pipeline, student records, and the instructor-facing interface were all described in the future tense.
 
-\subsection{What Semester VII contributes}
+\subsection{There are 1.2 credits earned for Semester~VII}
 
-The present phase, named \emph{taasika-v3}, closes that gap. The work is organised around five
-contributions, each of which is reported with the evidence that supports it:
+The current phase is the \emph{taasika-v3}, which addresses that. The entire work is organized in five contributions, each of which is reported along with the evidence that supports it:
 
 \begin{enumerate}
   \item \textbf{A reproducible Taasika\,$\rightarrow$\,UniTime data pipeline.} Eight Python
@@ -43,18 +25,19 @@ contributions, each of which is reported with the evidence that supports it:
     block times, division and batch structure, elective spread, and dynamic lunch breaks for
     students and instructors are generated into the preference file and solver configuration rather
     than entered by hand (Section~\ref{sec:constraints}).
-  \item \textbf{An independent evaluation framework.} A 1{,}044-line evaluator scores any exported
-    timetable against the same input XML using ten hard checks, three preference checks and a set of
-    efficiency metrics, because a solver cannot be audited with its own counters
-    (Section~\ref{sec:evaluation}).
-  \item \textbf{An honest account of solution quality.} Several configurations reported zero student
-    conflicts; each is shown to be an artefact. With student enrolments pinned, the final solution
-    schedules 290 of 291 classes with no instructor or room double-booking and 40 of 1{,}130
-    students conflicted (Section~\ref{sec:experiments}).
-  \item \textbf{A reinforcement-learning layer for solver search.} A policy selects among eight
-    stock CPSolver neighbourhood operators inside the existing search loop. The layer is implemented
-    and instrumented; its control experiment answered the research question in the negative
-    (Section~\ref{sec:rl}).
+  \item \textbf{An unbiased assessment system.} Because a solver cannot be audited with its own
+    counters (Section~\ref{sec:evaluation}), a 1{,}044-line evaluator is used to score any exported
+    timetable against the same input XML with 10 hard checks, 3 preference checks and a set of
+    efficiency metrics.
+  \item \textbf{The accurate description of the solution quality.} A number of configurations
+    experienced no student conflict reported, all of which were found to be artefacts. For the last
+    30 weeks, student enrolments have been fixed, and double-bookings of instructors and rooms have
+    been avoided: 290 of 291 classes have been scheduled in a way that avoids instructor or room
+    double-booking; 40 of 1{,}130 students are in conflict (Section~\ref{sec:experiments}).
+  \item \textbf{Reinforcement learning for the solver search.} A policy is a choice from eight
+    neighbourhood operators for the CPSolver, which are implemented within the search loop. The
+    layer is implemented and instrumented, and is the result of a negative answer to the research
+    question (Section~\ref{sec:rl}).
 \end{enumerate}
 
 The project is referred to throughout as \emph{taasika-v3}. The source repository retains an earlier
