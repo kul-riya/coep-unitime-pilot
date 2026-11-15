@@ -1,40 +1,10 @@
 \section*{Abstract}
 \addcontentsline{toc}{section}{Abstract}
 
-University course timetabling is an NP-hard combinatorial optimisation problem in which classes,
-instructors, student cohorts and rooms must be assigned to time slots subject to a large set of
-hard and soft constraints. The Semester~VI phase of this project established that UniTime, an
-open-source constraint-driven academic scheduling system, is able to express every scheduling
-constraint identified at COEP Technological University without relaxation or external
-post-processing. That phase was a feasibility study: it configured a local deployment and entered
-representative test data, but it did not produce a timetable from institutional data.
+University course timetabling is an NP-hard combinatorial optimisation problemfor which classes, instructors, student cohorts and rooms are to be timetabled under a multitude of hard and soft constraints. The Semester~VI part of this project proved that UniTime, an open-source constraint-driven academic scheduling system, can represent all the scheduling constraints found in COEP Technological University without relaxation or further post-processing. That phase was a feasibility study: it was a local deployment and it was fed with representative test data but not with institutional data to generate a timetable.
 
-The present phase, carried out under the project name \emph{taasika-v3}, converted that feasibility
-result into a working system. A reproducible data pipeline was built that reads a snapshot of the
-university's existing Taasika scheduling database and emits the sixteen ordered XML documents that
-UniTime's Data Exchange interface requires, covering the academic session, curriculum structure,
-rooms, instructors, course offerings, scheduling preferences and a simulated student body of
-1{,}130 students with 9{,}148 section enrolments. Institution-specific rules---minor-degree and
-open-elective time blocks, division and batch structure, and dynamic lunch breaks for both students
-and instructors---were encoded as generated preference data rather than as manual edits. An
-independent evaluation framework was written to score any exported timetable against the same input
-data, because the solver's own quality report cannot be used to audit the solver.
+For this phase, as the project was called \emph{taasika-v3}, the feasibility result has been turned into a working system. A data pipeline was developed that loads a snapshot of the university's existing Taasika scheduling database and generates the sixteen ordered XML documents needed by the Data Exchange interface of UniTime, including the academic session, curriculum structure, a copy of the rooms, instructors, course offerings, and the preferences for scheduling, plus a test set of 1{,}130 students and 9{,}148 section enrolments. Institution-specific rules---minor-degree time blocks, open-elective time blocks, division and batch structure, and dynamic lunch blocks for students and instructors---were not manually edited, but rather generated as preference information. An independent evaluation framework was created to score any exported timetable, given the same input data, since the solver's quality report does not constitute an audit of the solver.
 
-Using this framework, the project established a result that the solver's internal counters had been
-concealing. Several earlier runs reported zero student conflicts; each was traced to an artefact
-rather than to a better timetable, the most common being UniTime silently re-sectioning students
-between laboratory batches. Once student enrolments were pinned---by selecting
-\emph{Enrolled Student Course Demands} and disabling student switching and re-sectioning---the final
-solution scheduled 290 of 291 classes with no instructor and no room double-booking, a hard
-feasibility score of 98.85 out of 100, and 40 of 1{,}130 students (3.54\,\%) carrying a timetable
-clash, all of them first-year students in a single laboratory--lecture pairing.
+The project formulated this result using this framework: some of the previous runs were those in which there were zero student conflicts, all of which can be traced back to an artefact and not a better timetable, most notably when UniTime would silently re-section students between laboratory batches. The final solution took 290 of 291 classes and assigned no instructor to them, and also ensured that there was no double booking, a hard feasibility score of 98.85 out of 100, and 40 of 1{,}130 students (3.54\,\%) had a timetable clash, all of which were first-year students in a single laboratory--lecture pairing.
 
-A reinforcement-learning layer was also implemented, in which a policy selects among eight stock
-CPSolver neighbourhood operators inside the existing search loop. The layer is complete and
-instrumented, comprising 25 Java classes and 11 Python modules, and it never writes a placement
-itself, so hard-constraint safety is unchanged. Its pre-registered control experiment, however,
-answered the project's own research question in the negative: simply raising the solver's
-student-conflict weight reduced the violation rate from 0.0414 to below 0.004 on the same instance,
-clearing the 25\,\% improvement threshold that the learned policy was intended to achieve. No claim
-is therefore made that the learned policy outperforms the baselines; the report states precisely
-what was implemented, what was measured, and what remains a hypothesis.
+In addition, a reinforcement-learning layer was added, where a policy chooses from eight stock CPSolver neighbourhood operators in the current search loop. It consists of 25 Java classes and 11 Python modules, and is complete and instrumented, but never writes a placement itself, therefore hard-constraint safety remains unaffected. This pre-registered control experiment, however, answered the project's own research question---whether simply increasing the weight of student conflict for a solver would reduce the violation rate---in the negative, by achieving a violation rate of below 0.004 on the same instance, which is below the 25\,\% improvement requirement that the learned policy was designed to meet. No statement is made for the learned policy to outperform the baselines, and the report explicitly states what was implemented, measured, and what is a hypothesis.
