@@ -3,8 +3,8 @@
 
 \subsection{The UniTime system}
 
-UniTime is a comprehensive, open-source academic scheduling system released under the Apache
-License, Version 2.0, and maintained as a sponsored project of the Apereo Foundation. It is
+UniTime is an open-source academic scheduling system released under the Apache
+License 2.0 and maintained as a sponsored project of the Apereo Foundation. It is
 web-based, implemented in Java, and deployed at large institutions worldwide, including Purdue
 University~\cite{rudova2011complex}. Later accounts of the same system cover elective courses and
 multiple sections~\cite{muller2016curriculum}. The system comprises four integrated components: course timetabling, examination
@@ -12,7 +12,7 @@ timetabling, student scheduling, and event management. Only the first is used in
 although the data model shared by all four determines the structure of the import files described
 in Section~\ref{sec:pipeline}.
 
-Within UniTime a course is modelled hierarchically. A \emph{course offering} belongs to an
+In UniTime, a course is modelled top-down. A \emph{course offering} belongs to an
 \emph{instructional offering}, which carries one or more \emph{configurations}; a configuration
 contains \emph{scheduling subparts} (for example a lecture subpart and a laboratory subpart); and
 each subpart contains the individual \emph{classes} that are actually placed in the timetable. A
@@ -34,8 +34,7 @@ criteria.
 The solver is built on Iterative Forward Search (IFS)~\cite{muller2004}. IFS belongs to the family
 of local-search methods, but differs from classical local search in that it operates over feasible
 yet potentially \emph{incomplete} solutions: some classes may remain unassigned, but every hard
-constraint holds for the classes that are assigned. Intermediate solutions are therefore always
-interpretable and actionable by a human scheduler, in contrast to complete-but-infeasible solutions
+constraint holds for the classes that are assigned. Intermediate solutions can always be taken over by a human scheduler, rather than the complete yet infeasible solutions
 produced by unconstrained search.
 
 From an initial timetable $\omega$, each iteration selects a class and a placement, removes the
@@ -112,19 +111,18 @@ conflict with another:
   \mathrm{CBS}\bigl[A/a \rightarrow \lnot B/b\bigr] = c_{ab},
 \]
 meaning that assigning class $A$ the placement $a$ has unassigned $B/b$ on $c_{ab}$ previous
-occasions. During value selection each candidate placement is penalised by the accumulated conflict
-frequency of the assignments it would displace, steering the search away from historically
-problematic regions. When no complete solution is found, the contents of the CBS structure identify
-the hard constraints responsible for the infeasibility, which can be presented to the user as
-guidance for relaxation. In the configuration used throughout this project CBS is enabled
+occasions. During value selection, each candidate is penalised by the total observed conflict
+frequency of the assignments it would displace. This leads the search away from historically
+problematic regions. If no complete solution is found, the contents of the CBS structure identify
+the concerned hard constraints, which can be presented to the user as
+guidance for relaxation. In the configuration used throughout this project, CBS is turned on
 (\texttt{General.CBS=true}) with the conflict-statistics extension registered on the solver.
 
 \subsection{Constraint enforcement guarantees}
 
-The framework enforces the invariant that hard constraints are never violated by an assignment that
-persists in the current timetable; infeasible placements are removed rather than tolerated. Arc
-consistency can in principle be maintained throughout the search, and IFS can be made complete
-through dynamic backtracking, but maintaining full arc consistency is impractical at realistic
-instance sizes, so the heuristic form is used. In the configuration used here
-\texttt{Basic.DisobeyHard} is \texttt{false}, which means that every mechanism described in
-Section~\ref{sec:rl} inherits this guarantee without needing its own hard-constraint checking.
+The framework makes sure that hard constraints are never violated by an assignment that
+persists in the current timetable; infeasible placements are completely deleted rather than ignored. Arc
+consistency can technically be maintained throughout the search, and IFS can be made complete
+through dynamic backtracking, but heuristics are used for practicality. In the configuration used here
+\texttt{Basic.DisobeyHard} is \texttt{false}. This means that every mechanism described in
+Section~\ref{sec:rl} has this guarantee without needing to check hard constraints again.
