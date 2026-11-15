@@ -1,66 +1,49 @@
 \section{Simulation, Testing and UniTime Debugging}
 \label{sec:simulation}
 
-\subsection{Why students had to be simulated}
+Students had to be simulated because of the following reasons:
 
-A course timetable can be produced without students: the solver needs classes, rooms, instructors
-and preferences. A timetable cannot be \emph{evaluated} without them, because the criterion that
-matters most to the institution---whether a student's own weekly schedule contains an
-overlap---has no meaning until each student is attached to a set of sections.
+A timetable can be created without students (only classes, rooms, instructors, preferences are needed).
+You cannot \emph{evaluate} it without them, though.
+The most important metric the institute cares about is whether there are any overlapping classes in a student's weekly schedule, but that isn't meaningful until students are put into sections.
 
-Institutional MIS data was not available during this phase, so the student body was simulated. The
-simulation is not random. It starts from confirmed headcounts per year, allocates students to
-lecture divisions, then to laboratory batches within a division, then issues a course request for
-every compulsory subject of that year and one request per elective group. Finally it enrols each
-student in a concrete lecture section and a concrete laboratory section, which is what produces
-the 9{,}148 enrolment rows of file 16.
+Because of the lack of data about students at the institute, we used simulated students.
+The simulation is not random, it is deterministic.
+It begins with the actual number of students in each year, partitions students into lecture groups, assigns students to lab groups within each lecture group, and generates course requests for all required courses and one elective course per group of students.
+Finally, it adds each student to a particular lecture section and lab section, creating the 9{,}148 enrolment rows in file 16.
 
-\subsection{Section filling and its consequences}
+The filling of the sections and the consequences thereof.
 
-Enrolment proceeds section by section. A student is placed in the preferred section for their
-division until that section reaches the limit declared in the offering file, after which the
-routine spills into later sections of the same course and type. This is faithful to how
-over-subscribed laboratories are handled in practice, and it has two visible consequences in the
-data.
+Enrolments are assigned one section at a time.
+Each student goes into their division's preferred section until it hits the limit in the offering file, then spills into later sections of the same course and type.
+This is similar to what is typically observed in over-subscribed labs, and it leaves two clear imprints on the data.
 
-First, a small number of laboratory batches end up mixed: a batch may contain students from two
-different lecture divisions, because the preferred batches of one division filled first. Three
-final-year laboratory batches are of this kind. Second, where the declared limits do not cover a
-cohort at all, students remain unplaced and the generator reports them rather than silently
-dropping them; this is the origin of the 200 unplaced first-year students and the two overflowing
-M.Tech laboratory places noted in Section~\ref{sec:datasets}.
+First, some lab batches are mixed, with students from two different lecture divisions being in the same batch as one division's preferred batches filled first.
+This is a combination of three final year lab batches.
+Second, if the section size is too small for a cohort, additional students remain unplaced and are not dropped silently from the generator, but rather logged.
+That's why 200 first-year students and two M.Overflow of tech lab in Section~\ref{sec:datasets}.
 
-Both effects are properties of the \emph{input data}, not of the solver. Recording them matters
-because a mixed batch creates joint enrolments between two divisions that the institution does not
-expect, and therefore creates conflict opportunities that a correct section structure would not
-have.
+These are both effects of the \emph{input data} and not the solver.
+They are tracked because they are a tie that binds two divisions together in an unusual way, which can cause conflict where it is not expected.
 
 \subsection{Conflict types encountered}
 
-Three distinct kinds of student conflict appeared over the course of the phase, and distinguishing
-them was necessary before any of them could be fixed:
+During this stage, three types of student conflict emerged and we needed to distinguish each type before we could do anything about it:
 
 \begin{itemize}
-  \item \textbf{Genuine timetable overlaps} between two classes a student is legitimately enrolled
-    in. These are the conflicts the solver is supposed to remove, and the 40 remaining in the final
-    solution are all of this kind.
-  \item \textbf{Artefacts of cross-division batches}, where the overlap exists only because the
-    section-filling routine put a student in a batch belonging to another division.
-  \item \textbf{Artefacts of measurement}, where the reported count reflects a changed student
-    population rather than a changed timetable. These are analysed in
-    Section~\ref{sec:experiments}.
+  True overlap of two classes that the student is truly enrolled in. These are the types of conflicts that the solver should delete, and all 40 remaining conflicts in the final solution are of this type.
+  Artefacts of cross-division batches, where a clash only occurs as a result of a student being placed in another division's batch by section filling.
+  Artefacts of measurement: where the number of students reported has changed due to changes in the student population, rather than the timetable. Section~\ref{sec:experiments} analyses these.
 \end{itemize}
 
 \subsection{UniTime debugging log}
 
-A substantial part of the phase was spent diagnosing failures of the import and solver
-configuration that produce no useful error message. Table~\ref{tab:debug} records each symptom with
-its cause and resolution, because this knowledge is not in the documentation and would otherwise
-have to be rediscovered.
+A significant amount of time was lost searching for import and solver failures that did not provide any useful error message.
+This is not documented in the UniTime docs, so each symptom is listed with its root cause and fix in Table~\ref{tab:debug}.
 
 \begin{table}[H]
 \centering
-\caption{Import and solver failures encountered, with causes and resolutions.}
+Table 1 shows the number of import and solver failures that were observed, along with the causes and resolutions.
 \label{tab:debug}
 \footnotesize
 \begin{tabular}{@{}L{4.0cm}L{5.4cm}L{5.4cm}@{}}
@@ -68,58 +51,51 @@ have to be rediscovered.
 \textbf{Symptom} & \textbf{Cause} & \textbf{Resolution} \\
 \midrule
 Every class reports \emph{``has no available room (class not loaded)''} although all rooms imported
-  & Buildings created by file 7 are global, not scoped to the session, so the session has no
-    buildings until it is told to pick them up
-  & \textbf{Administration\,$\rightarrow$\,Academic Sessions\,$\rightarrow$\,Buildings\,$\rightarrow$\,Update Data}, then reload the solver \\
-Solver loads a handful of variables instead of several hundred
-  & Without a time pattern on the subpart, UniTime treats a class as ``arrange hours'' and excludes
+  & Buildings, built by file 7, are global and not scoped to the session, thus no session has
+    Wait for the teacher to tell you to pick up the buildings.
+  Click & \textbf{Administration\,$\rightarrow$\,Academic Sessions\,$\rightarrow$\,Buildings\,$\rightarrow$\,Update Data} and then reload the solver.
+Solver loads a few variables rather than hundreds of variables.
+  If there is no time pattern on the subpart, UniTime assumes that a class is a ``arrange hours'' subpart and excludes
     it from the solver
   & Import \texttt{13preferences.xml}, and re-import it whenever offerings are reloaded \\
-Imported archive appears empty
-  & \texttt{zip -r} nests the documents inside a directory; Data Exchange looks at the archive root
-  & Write entries with a flattened name, as both archive scripts now do \\
-Instructors do not attach to classes
-  & Staff imported by file 10 are not yet in the session's instructor list
+The imported archive is empty.
+  Data Exchange reads the archive root; & \texttt{zip -r} puts the documents in a directory.
+  & Flatten the name of the entries, like the archive scripts do now.
+Teachers aren't attached to classes
+  The 10 imported & Staff are not yet in the session's instructor list.
   & \textbf{Courses\,$\rightarrow$\,Input Data\,$\rightarrow$\,Instructors\,$\rightarrow$\,Manage Instructor List} \\
-Solver reports \texttt{Student conflicts: 0} and exports an empty student block
+Solver reports no student conflicts \texttt{Student conflicts: 0} and exports an empty student block.
   & \emph{Projected Student Course Demands} reads last-like demand and curriculum projections, of
-    which the session has neither, so zero students load
+    where the session has neither, then 0 students load.
   & Set \emph{Student Course Demands} to \emph{Enrolled Student Course Demands} and reload \\
-Re-importing offerings deletes classes unexpectedly
-  & \texttt{incremental="true"} suppresses deletion of unmatched offerings but still deletes
-    unmatched \emph{classes} within offerings present in the file
-  & Treat file 12 as authoritative for the offerings it mentions; uncommit any saved solution first \\
-Exported solver XML has no class or room names
-  & The solution export is anonymised by default
+When re-importing offerings, classes are unexpectedly deleted.
+  & \texttt{incremental="true"} will not delete unmatched offerings, but will delete
+    Classes that are not matched in offerings in the file.
+  Uncommit any saved solution first; & Treat file 12 as authoritative for the offerings it mentions;
+The exported solver XML does not contain any class or room names.
+  By default, the solution export is anonymised.
   & Set \texttt{unitime.solution.export.names=true} in
     \textbf{Administration\,$\rightarrow$\,Defaults\,$\rightarrow$\,Configuration} \\
-Student group import aborts on a Hibernate \texttt{TransientObjectException}
-  & Merging very large groups in a single transaction
-  & Emit group membership inside the student records of file 14 rather than as bulk group updates \\
+The Student group import fails with a Hibernate \texttt{TransientObjectException}.
+  Combining two large groups into one transaction
+  Do not include & Emit group membership in the student records of file 14, but instead as bulk group updates \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Pinning students to their sections}
+The tendency to assign pupils to their sections.
 
-The most consequential of these findings concerns how UniTime treats imported enrolments. The
-database loader reads each \texttt{StudentClassEnrollment} row and attaches the student to the
-class only when the student already has the corresponding course offering and is permitted to
-enrol in that class. Initial sectioning still runs afterwards, but it skips students who are
-already enrolled, and the loader merely logs a warning if a student has left the class that was
-loaded for them. The effect is that imported enrolments are respected---provided the solver was
-told to read them in the first place.
+The most significant thing we've discovered is how UniTime deals with imported enrolments.
+The database loader loads each \texttt{StudentClassEnrollment} row, and attaches the student to the class provided that the student has already been attached to that course offering, and that the student is permitted to be attached to that class.
+The initial sectioning still continues after the sectioning, but it does not include students who are already in the class, and the loader will only log a warning if a student left their loaded class.
+To summarize: UniTime respects imported enrolments, if you tell the solver to do so.
 
-Three settings together achieve this, and all three are required:
+All three are required:
 
 \begin{enumerate}
-  \item \emph{Student Course Demands} set to \emph{Enrolled Student Course Demands}, so the
-    enrolments are read at all;
-  \item \texttt{General.SwitchStudents=false}, so the final sectioning pass does not move students
-    between parallel sections to reduce the conflict count;
-  \item \texttt{Global.LoadStudentEnrlsFromSolution=true}, so a student's sections come from the
-    stored enrolments rather than being recomputed.
+  Enrolments are read at all, with \emph{Student Course Demands} being replaced by \emph{Enrolled Student Course Demands};
+  \item \texttt{General.SwitchStudents=false, which means that the last pass of the sectioning does not allow for switching students between parallel sections to hide conflicts;
+  \item \texttt{Global.The loadStudentEnrlsFromSolution=true option is used, which means that sections are loaded from the stored enrolments and not recomputed.
 \end{enumerate}
 
-Section~\ref{sec:experiments} shows what happens to the measured conflict count when these are
-applied: it rises, from an apparent zero to a real 40, and that rise is the point of the exercise.
+With these enabled, the conflict count rises from an apparent zero to a real 40, exactly what we wanted to see: see Section~\ref{sec:experiments}.

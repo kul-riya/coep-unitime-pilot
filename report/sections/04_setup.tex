@@ -3,26 +3,24 @@
 
 \subsection{Software stack}
 
-There are two different runtimes and mixing them up has been a frequent problem.
-The UniTime web application is a Java servlet application with a relational database backend;
-The tools created in this step are the generators, the evaluator and the learning layer, which are executed.
-outside the server as standalone Java and Python processes. Table~\ref{tab:stack} lists each
-Component along with the location where it is used and the file where the version is contained.
+This project runs on two separate runtimes, and mixing them up has caused frequent issues.
+UniTime itself is a Java servlet web app backed by a relational database.
+Meanwhile, our generators, evaluator, and learning layer run outside the server as standalone Java and Python processes.
+Table~\ref{tab:stack} lists each component, where it runs, and where its version is recorded.
 
 \begin{table}[H]
 \centering
-Software stack, component each version applies to.
+\caption{Software stack and where each version applies.}
 \label{tab:stack}
 \footnotesize
 \begin{tabular}{@{}L{3.2cm}L{2.7cm}L{5.0cm}L{4.0cm}@{}}
 \toprule
-Component & Version & Used for & Recorded in \\
+\textbf{Component} & \textbf{Version} & \textbf{Used for} & \textbf{Recorded in} \\
 \midrule
 Java (JRE)        & 21              & UniTime web application                     & Semester VI report \\
 Apache Tomcat     & 9.0             & servlet container for UniTime               & Semester VI report \\
 MySQL             & 8.4             & UniTime persistent storage                  & Semester VI report \\
-MySQL JDBC driver & --- & Tomcat,$\leftrightarrow$ & MySQL connector  & Semester VI report \\
-The following is a list of the modules you will need to install to run the program.The following is a list of the modules that will need to be installed to run the program:
+MySQL JDBC driver & ---             & Tomcat\,$\leftrightarrow$\,MySQL connector  & Semester VI report \\
 Maven             & 3.9+            & builds \texttt{unitime-rl}                  & \texttt{rl/SETUP.md} \\
 Python            & 3.10+           & data pipeline, evaluator, training code     & \texttt{rl/SETUP.md} \\
 CPSolver          & 1.4-SNAPSHOT \newline (or 1.4.94) & constraint solver library   & \texttt{rl/pom.xml}, \texttt{rl/SETUP.md} \\
@@ -32,37 +30,30 @@ ONNX Runtime      & 1.30.0          & in-process inference of the frozen policy 
 \end{tabular}
 \end{table}
 
-Solving the Java version issue
+\subsection{Solving the Java version issue}
 
-The project's own presentation material states that it is running on Java~21; and the Semester~VI report lists the runtime as being Java.The project's own presentation material says it is running on Java~21 and the Semester~VI report says Java.
-Records Java~17 for the pipeline and learning elements. These are not in conflict, and the
-The answer to this question is clearly given by repository. The Maven module declares
-\texttt{<maven.compiler.release>17</maven.compiler.release>}, and both \texttt{rl/README.md} and
-The prerequisite is given by ``JDK~17+'' in \texttt{rl/SETUP.md}. Therefore, Java~17 is the \emph{compile
-Not a restriction on the runtime, but rather targeting of the project's own Java code.
-release~17 is compatible with Java~21. The UniTime server is still running on Java~21 and
-The headless solver and the training environment are built against Tomcat~9.0 and MySQL~8.4.
-May be executed on 17 and. There are no components that need to be downgraded.
+Our presentation slides say the project runs on Java~21, while the Semester~VI report lists Java~17 for the pipeline and learning code.
+There is no actual conflict here.
+The Maven config specifies \texttt{<maven.compiler.release>17</maven.compiler.release>}, and both \texttt{rl/README.md} and \texttt{rl/SETUP.md} list ``JDK~17+'' as the requirement.
+So Java~17 is just the compile target for our Java code, not a hard cap on the runtime.
+Bytecode built for release~17 runs fine on Java~21.
+The UniTime server stays on Java~21 with Tomcat~9.0 and MySQL~8.4, and the headless solver and training tools run on either 17 or 21 without downgrading anything.
 
 \subsection{CPSolver dependency}
 
-By default, the module's \texttt{pom.xml} requires a local build of \texttt{1.4-SNAPSHOT}
-The build is of CPSolver, which is a sibling clone of the upstream repository, hence the name.
-used during development. For a machine that doesn't have that clone, \texttt{rl/SETUP.md} is documented.
-The local version is installed in the system.The local version is installed in the system, as an alternative to downloading from Maven Central with -Dcpsolver.version=1.4.94.
-snapshot is one commit ahead of the published release---a change to an XML-parser security default,
-with no API difference.
+By default, \texttt{pom.xml} points to a local \texttt{1.4-SNAPSHOT} build of CPSolver from a sibling clone used during development.
+If a machine does not have that clone, \texttt{rl/SETUP.md} explains how to pull the published release from Maven Central using \texttt{-Dcpsolver.version=1.4.94}.
+The snapshot is only one commit ahead of 1.4.94 (a small XML-parser security default change) and has no API differences.
 
 \subsection{Solver configuration}
 
-The solver configuration for the pilot was exported from the running UniTime instance and is
-kept in the repository as \texttt{rl/config/unitime-coep-default.properties} so that the headless
-The weights used for runs of Section~\ref{sec:experiments} are the same as the server's weights. The values that count
-The results presented in this paper are given in Table~\ref{tab:solverconf}.
+We exported the pilot's solver settings from the running UniTime server and saved them in \texttt{rl/config/unitime-coep-default.properties}.
+This keeps the headless runs in Section~\ref{sec:experiments} aligned with the server's weights.
+Table~\ref{tab:solverconf} shows the values that affect the reported results.
 
 \begin{table}[H]
 \centering
-Caption: Solver parameters used for the results reported.
+\caption{Solver parameters used for the reported results.}
 \label{tab:solverconf}
 \footnotesize
 \begin{tabular}{@{}L{7.4cm}L{2.6cm}L{5.4cm}@{}}
@@ -71,7 +62,7 @@ Caption: Solver parameters used for the results reported.
 \midrule
 \texttt{Basic.Mode}                               & \texttt{Initial} & build a new timetable from scratch \\
 \texttt{Basic.DisobeyHard}                        & \texttt{false}   & hard constraints are never violated \\
-\texttt{Comparator.The price of each student clash (swept in Section~\ref{sec:experiments}) & \texttt{StudentConflictWeight} \\
+\texttt{Comparator.StudentConflictWeight}         & \texttt{0.2}     & price of each student clash (swept in Section~\ref{sec:experiments}) \\
 \texttt{Comparator.HardStudentConflictWeight}     & \texttt{0.8}     & additional price if there is no other section for the student \\
 \texttt{Comparator.RoomPreferenceWeight}          & \texttt{1.0}     & weight of room preference violations \\
 \texttt{Comparator.TimePreferenceWeight}          & \texttt{0.3}     & weight of time preference violations \\
@@ -84,23 +75,18 @@ Caption: Solver parameters used for the results reported.
 \end{tabular}
 \end{table}
 
-In this phase, three additional settings were modified and are required for all the results.
-Section~\ref{sec:experiments}. The purpose is to prevent re-sectioning of students by UniTime,
-that the number of conflicts measured is not a result of a shift of cohorts, but a result of the time period:
+We also changed three more settings for all runs in Section~\ref{sec:experiments}.
+These stop UniTime from moving students between sections, so our conflict counts reflect actual timetable clashes rather than shifted cohorts:
 
 \begin{enumerate}
-  The Student Course Demands are set to Enrolled Student Course Demands, so that the
-    solver reads the imported rows of \texttt{StudentClassEnrollment} instead of projecting demand from
-    curricula. This is a configuration that was done in
-    Not stored in Administration\,$\rightarrow$\,Solver\,$\rightarrow$\,Configurations
-    in the exported properties file, the previous value is still there.
-  \item \texttt{General.SwitchStudents=false - which turns off the last student switch pass.
-  \item \texttt{Global.LoadStudentEnrlsFromSolution=true", loads each student's sections from
-    Instead of re-calculating the enrolments.
+  \item \emph{Student Course Demands} is set to \emph{Enrolled Student Course Demands}.
+    This tells the solver to read \texttt{StudentClassEnrollment} rows instead of projecting demand from curricula.
+    We set this in \textbf{Administration\,$\rightarrow$\,Solver\,$\rightarrow$\,Configurations}; it is not saved in the exported properties file, which still shows the old value.
+  \item \texttt{General.SwitchStudents=false}, which turns off the final student-switching pass.
+  \item \texttt{Global.LoadStudentEnrlsFromSolution=true}, which loads each student's sections from the stored enrolments instead of recomputing them.
 \end{enumerate}
 
-This is the first setting, which is set to the default \emph{Projected Student Course Demands}, and with no
-If the solver does not load students for the session, it is because of last-like enrolment data, report
-Exports an empty student block, and prints out student conflicts: 0. This failure is undetected,
-A significant amount of the debugging described was due to the diagnosis of it.
-Section~\ref{sec:simulation}.
+Without the first setting, UniTime defaults to \emph{Projected Student Course Demands}.
+Since our session has no last-like enrolment data, the solver loads zero students, exports an empty student block, and prints \texttt{Student conflicts: 0}.
+This failure happens silently.
+Tracking it down took a large part of the debugging work in Section~\ref{sec:simulation}.

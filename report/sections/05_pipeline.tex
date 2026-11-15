@@ -1,33 +1,31 @@
-\section{Data Pipeline: Taasika to UniTime}
+Data Pipeline: Taasika to UniTime
 \label{sec:pipeline}
 
 \subsection{The source system}
 
-Taasika is the scheduling database already in use at the institution. The project mentor provided a
-SQL dump of it, two versions of which are kept in the repository
-(\texttt{taasika2-foss-26jan26.sql} and \texttt{taasika3.sql}). The dump stores the data as a series
-of numbered \emph{snapshots}, each a complete picture of the departmental schedule at a point in
-time. Figure~\ref{fig:taasikaschema} shows the Taasika schema. The corresponding UniTime diagram
-is in the repository as \texttt{unitime-schema.png}; reproduced at page size its several hundred
-tables are not legible, so it is omitted here. The pipeline is a translation between the two.
+The institute already uses the scheduling database called Taasika.
+We have a SQL dump of it from our project mentor, and have two versions in the repo: \texttt{taasika2-foss-26jan26.sql} and \texttt{taasika3.sql}.
+The dump saves the data in the form of numbered \emph{snapshots} that are complete copies of the department's schedule at a particular point in time.
+Taasika schema is displayed in figure~\ref{fig:taasikaschema}.
+We didn't include the hundreds of tables that make up UniTime's schema diagram, but it's available in the repo as \texttt{unitime-schema.png}.
+We are using our pipeline to convert data from Taasika to UniTime.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.62\textwidth]{figures/taasika-schema.png}
-\caption{Schema of the Taasika scheduling database, the source of the pipeline.}
+The schema of the scheduling database that provides the pipeline:
 \label{fig:taasikaschema}
 \end{figure}
 
-A deliberate design decision was to parse the SQL dump textually rather than restore it into a
-MySQL server. The loader (\texttt{scripts/taasika\_loader.py}) reads the dump and exposes each table
-as a list of Python dictionaries filtered to a chosen snapshot. The pipeline therefore has no
-database dependency, runs on any machine with Python, and treats the dump as an immutable input.
+Since we didn't want to restore the SQL dump to a MySQL server, we decided to parse it as text.
+The loader (\texttt{scripts/taasika\_loader.py}) reads the dump and returns a list of Python dicts for a selected snapshot for each table.
+This ensures that there is no dependency on any database.
+It is written to be run on any machine with Python, and assumes the dump is read-only.
 
 \subsection{Pipeline structure}
 
-Figure~\ref{fig:pipeline} shows the complete path from the SQL dump to a scored timetable. Eight
-generator modules run in dependency order, three validators check the result, and an archive step
-produces the ZIP file that UniTime's Data Exchange page accepts.
+The entire process from SQL dump to scored timetable is illustrated in Figure~\ref{fig:pipeline}.
+There are eight generator modules, three validators validate the output, and an archive step creates the ZIP file for UniTime's Data Exchange page.
 
 \begin{figure}[H]
 \centering
@@ -41,12 +39,12 @@ produces the ZIP file that UniTime's Data Exchange page accepts.
   ev/.style={draw,rounded corners=2pt,fill=red!8,align=center,font=\scriptsize,minimum height=7mm},
   ar/.style={-{Stealth[length=1.8mm]},gray!70}
 ]
-\node[src] (sql) {\texttt{taasika3.sql}\\{\tiny snapshot 242}};
+\node[src] (sql) {taasika3.sql\\{\tiny snapshot 242}};
 \node[src, right=of sql] (load) {\texttt{taasika\_loader}\\{\tiny textual SQL parse}};
-\node[gen, right=of load, text width=30mm] (gens) {8 generators\\{\tiny session, academic, buildings,\\staff, catalog, offerings,\\preferences, students}};
+\node[gen, right=of load, text width=30mm] (gens) {8 generators\\{\tiny session, academic, buildings,\\staff, catalog, offerings, preferences, students}};
 \node[xml, right=of gens, text width=20mm] (xmls) {16 XML files\\{\tiny \texttt{1sessionSetup}\\$\dots$\\\texttt{16studentenrollments}}};
 
-\node[val, below=9mm of gens, text width=34mm] (vals) {validators\\{\tiny \texttt{validate\_xmls},
+\node[val, below=9mm of gens, text width=34mm] (val) {validate\_xmls} (validators\\{\tiny \texttt{validate\_xmls}).
 \texttt{validate\_course\_offering}, \texttt{verify\_time\_patterns}}};
 \node[ut, below=9mm of xmls, text width=20mm] (zip) {\texttt{0gen\_all.zip}\\{\tiny flat archive}};
 
@@ -65,48 +63,37 @@ produces the ZIP file that UniTime's Data Exchange page accepts.
 \draw[ar] (out) -- (kpi);
 \draw[ar] (kpi.north) -- ++(0,6mm) -| node[pos=0.25,above,font=\tiny]{refine} (gens.south west);
 \end{tikzpicture}
-\caption{The taasika-v3 pipeline. Data flows left to right and top to bottom; the dashed return
-path is the refinement loop described in Section~\ref{sec:evaluation}.}
+\caption{The taasika-v3 pipeline. Data moves left to right and top to bottom; dashed return marks the end of the data.
+The refinement loop described in Section~\ref{sec:evaluation} is called path.
 \label{fig:pipeline}
 \end{figure}
 
-\subsection{The sixteen imports and why their order matters}
+\subsection{The sixteen imports and the importance of order}
 
-UniTime's Data Exchange interface accepts one document per entity type, and each document
-references entities created by an earlier one. The files are numbered so that the import order is
-unambiguous; Appendix~\ref{app:imports} lists all sixteen with the dependency that fixes each
-position. Three positions are worth highlighting:
+UniTime's Data Exchange uses one XML file for each entity type and later files refer to entities created by earlier files.
+We have numbered the files to make it easy to see the order of import; Appendix~\ref{app:imports} provides a list of all sixteen and their dependences.
+There are three points to note:
 
 \begin{itemize}
-  \item \textbf{File 1 is absolute.} \texttt{1sessionSetup.xml} creates the academic session,
-    departments, subject areas, solver groups, date patterns and time patterns. Nothing can be
-    imported before it exists.
-  \item \textbf{File 13 is not optional.} \texttt{13preferences.xml} attaches a time pattern and a
-    date pattern to every scheduling subpart. Without it UniTime treats the classes as
-    ``arrange hours'' and does not load them into the solver at all, which presents as a solver
-    reporting a handful of variables instead of several hundred.
-  \item \textbf{Files 14--16 must follow 12.} Student records, course requests and section
-    enrolments all reference classes by the identifiers established in
-    \texttt{12courseOffering.xml}.
+  The academic session is set up in \texttt{1sessionSetup.xml} which has the following items: \item \textbf{File 1 comes first.} It is the first thing to load.
+  Each scheduling subpart is associated with a time pattern and date pattern through \texttt{13preferences.xml} file. If you don't include it, UniTime will consider classes as ``arrange hours'' and ignore them in the solver, yielding a few solver variables rather than hundreds.
+  Student records, course requests, and section enrolments all refer to class IDs defined in \texttt{12courseOffering.xml} which follow \texttt{12}.
 \end{itemize}
 
-Two operational details cost significant time and are recorded here because neither is obvious from
-the documentation. First, the term identifier used by the Data Exchange API is the academic term
-followed by the year with no separator---\texttt{Spr122026}, not \texttt{2026Spr12}. Second, the
-archive must contain the sixteen documents at its \emph{root}; building it with
-\texttt{zip -r 0gen\_all.zip 0gen\_all} nests them inside a directory and the import silently fails
-to find them. Both the pipeline's own archive step and the standalone
-\texttt{scripts/zip\_0gen\_all.py} write entries with a flattened name for this reason.
+There are two quirks that took us a lot of time and it is worth noting since the docs don't mention them.
+First, the Data Exchange API does not accept the term followed by the year (no space or separator): 2026Spr122026, not Spr122026.
+Second, the sixteen files should be located at the root of the ZIP file.
+If you run \texttt{zip -r 0gen\_all.zip 0gen\_all} they will be in a subfolder which the import will ignore silently.
+We flatten the paths in our pipeline and in \texttt{scripts/zip\_0gen\_all.py} to prevent this.
 
 \subsection{Design decisions}
 
-The Taasika dump does not carry every field UniTime requires, and several structural differences
-between the two models had to be resolved by rule rather than by lookup. Table~\ref{tab:decisions}
-records the decisions actually implemented in the generators.
+Taasika does not have all the fields that UniTime requires, so we needed to make a few explicit rules to address some of the differences between the models.
+The rules that are implemented in the generators are shown in Table~\ref{tab:decisions}.
 
 \begin{table}[H]
 \centering
-\caption{Mapping decisions implemented in the generator scripts.}
+\caption{The decisions made in the generator scripts.}
 \label{tab:decisions}
 \footnotesize
 \begin{tabular}{@{}L{3.5cm}L{11.4cm}@{}}
@@ -114,58 +101,37 @@ records the decisions actually implemented in the generators.
 \textbf{Decision} & \textbf{Rule implemented} \\
 \midrule
 Lecture\,+\,laboratory merging &
-  A laboratory or tutorial subject is merged into its lecture partner when its short name is the
-  lecture's short name plus one of \texttt{-Lab}, \texttt{Lab}, \texttt{-Tut}, \texttt{Tut} or
-  \texttt{-Tutorial}. The merged course becomes one offering with one configuration and two
-  subparts, so joint lectures and parallel batches live under a single course. \\
+  A lab or tutorial becomes a part of its lecture partner when its short name includes \texttt{-Lab}, \texttt{Lab}, \texttt{-Tut}, \texttt{Tut} or \texttt{-Tutorial}. The combined course is one course with one configuration and two subparts, with joint lectures and parallel batches included in one course.
 Course credits &
-  The Indian engineering convention: one credit per lecture hour and half a credit per laboratory
-  hour, so a three-hour lecture paired with a two-hour laboratory yields four credits. Unpaired
-  subjects use the lecture-only or laboratory-only half of the same formula, with a floor of one. \\
+  Follows Indian engineering rules: 1 credit per lecture hour and 0.5 per lab hour. A three hour lecture and a two hour lab equals four credits. Unpaired subjects are used in the lecture or lab half, at least 1.
 Class identifiers &
-  Human-readable and stable: \texttt{"<area> <courseNbr> <type> <suffix>"}, for example
-  \texttt{CS 110 Lab 3}. These identifiers are what files 15 and 16 reference. \\
+  Readable and stable: \texttt{"<area> <courseNbr> <type> <suffix>"} e.g. CS 110 Lab 3. These IDs are referred to in files 15 and 16.
 Building inference &
-  Taasika stores room names but not buildings. A heuristic on the room name and short name assigns
-  each room to one of six inferred buildings; unavailable laboratories are collected into their own
-  pool so that their use remains visible in the KPI report. \\
+  Rooms that do not have buildings are listed in Taasika. A heuristic on room names assigns each room to one of six inferred buildings; rooms that are not available are placed in a separate pool, and any use of these rooms appears in the KPI report.
 Instructor position &
-  Derived from each teacher's \texttt{minHrs}/\texttt{maxHrs} envelope: at most 6 hours maps to
-  professor, at most 12 to associate professor, otherwise assistant professor, with
-  $(0,0)$ mapped to adjunct and $(0,24)$ to visitor. \\
+  The \texttt{minHrs}/\texttt{maxHrs} are: $\le 6$ hours is professor, $\le 12$ is associate professor, and higher is assistant professor, while $(0,0)$ is adjunct and $(0,24)$ is visitor.
 Times left unsolved &
-  No class carries a \texttt{<time>} element. The existing Taasika timetable rows are deliberately
-  not imported as preferences, because the object of the exercise is for UniTime to solve the
-  timetable rather than to reproduce the manual one. \\
+  No class has a \texttt{<time>} element. We are not importing the existing slots from Taasika as preferences since we want UniTime to solve the schedule, not copy the manual one.
 Rooms as preferences &
-  Room associations from Taasika are emitted as preferences, not as pre-assignments, leaving the
-  solver free to choose. \\
+  The taasika room links are emitted as preferences, not assignments, which means that the solver can still choose rooms.
 Student simulation &
-  The institution's MIS data was not available, so students are generated from confirmed headcounts
-  (Section~\ref{sec:datasets}) with synthetic identifiers of the form \texttt{61yy03aaa}. \\
+  Because of the lack of institute MIS data, we create students from confirmed headcounts (Section~\ref{sec:datasets}) with IDs such as \texttt{61yy03aaa}.
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Entry point and validation}
+The entry point and validation are discussed.Entry point and validation are discussed.
 
-The whole pipeline is driven by one command, which selects the SQL dump and snapshot, runs the
-eight generators in order, runs the three validators, and writes the archive only if all three
-pass:
+A single command executes the entire pipeline. It selects the SQL dump and snapshot and executes the eight generators sequentially, then the three validators and finally the ZIP if all the checks are successful:
 
-\begin{lstlisting}[style=plainlst,language=bash,caption={Regenerating the complete dataset.}]
-python scripts/gen_all.py --term Spr12 --sql taasika-db/taasika3.sql --snapshot 242
+To regenerate the full dataset, use the following command:To regenerate the full dataset, the following command can be used:
+To generate all the python files, use the script gen_all.py, with the following arguments: python scripts/gen_all.py --term Spr12 --sql taasika-db/taasika3.sql --snapshot 242
 \end{lstlisting}
 
-The validators check three different properties. \texttt{validate\_xmls.py} confirms that every
-generated document is well-formed XML. \texttt{validate\_course\_offering.py} checks the structural
-invariants of file 12---that every class belongs to a subpart, every subpart to a configuration,
-and every configuration to an offering---before UniTime is given the chance to reject it.
-\texttt{verify\_time\_patterns.py} re-derives each subject's weekly minutes from the Taasika
-snapshot and confirms that the time pattern emitted in file 13 matches, which catches the class of
-error where a course silently becomes unschedulable because its duration has no matching pattern.
+Different properties are checked by each validator.
+validate\_xmls.py checks the validity of all output files as XML.
+\texttt{validate\_course\_offering.py} checks file 12's structure---every class must belong to a subpart, every subpart to a configuration, and every configuration to an offering---before UniTime can reject it.
+The script \texttt{verify\_time\_patterns.py} calculates the weekly minutes for each subject from Taasika, and verifies that the time pattern in file 13 is equal. This will pick up when a course is not schedulable because its length does not match a pattern.
 
-A separate script, \texttt{scripts/zip\_0gen\_all.py}, re-targets an existing dataset to a new term
-and rebuilds the archive without regenerating from SQL. This exists because a fresh UniTime
-academic session is often the fastest way to recover from a bad import, and creating one requires
-only that the term attribute change.
+A helper script, \texttt{scripts/zip\_0gen\_all.py} retargets an existing dataset to a new term and rebuilds the ZIP without changing SQL.
+A new UniTime session is often the fastest and easiest solution to a bad import, and it requires only a new term attribute.
