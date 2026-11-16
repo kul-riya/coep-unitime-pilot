@@ -1,54 +1,52 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-The Semester~VI phase of this project established that UniTime's constraint model is expressive
-enough to represent every scheduling rule in use at COEP Technological University. That was a
-statement about the platform. The present phase, carried out under the name \emph{taasika-v3},
-turned it into a working system and, in doing so, produced a measured timetable rather than a
-feasibility argument.
+In the Semester~VI part of this project, it was concluded that it is possible to represent any
+scheduling rule used at COEP Technological University within UniTime's constraint model. This is a
+statement concerning the platform. The current phase (in the name of the project
+\emph{taasika-v3}) made it a functional system and in the process created a quantified time plan
+rather than a feasibility case.
 
-Three things were built. A reproducible pipeline reads a snapshot of the institution's existing
-Taasika database and emits the sixteen ordered documents UniTime requires, covering the session,
-curriculum, 42 rooms across 6 buildings, 115 instructors, 56 offerings comprising 291 classes, and
-a simulated body of 1{,}130 students with 9{,}148 section enrolments---all behind a single command
-with three validators that refuse to produce an archive from inconsistent data. The
-institution's own rules, including the minor-degree and open-elective block times and the dynamic
-lunch window for students and instructors, are generated as data rather than re-entered after each
-import. An independent evaluator scores any exported timetable against the same input files, using
-a conflict definition that was cross-validated against a separate implementation to exact
+Three objects were constructed. Behind three validators, and a single command, a reproducible
+pipeline reads a snapshot of the institution's existing Taasika database and generates the sixteen
+ordered documents that UniTime requires: the session, the curriculum, 42 rooms (across 6
+buildings), 115 instructors, 56 offerings (291 classes), and a simulated body of 1{,}130 students
+(9{,}148 section enrolments). The minor-degree and open-elective block times are also produced as
+data and the dynamic lunch window for students and teachers is also generated as data---the
+institution's own rules are generated as data not re-entered after every import. Any exported
+timetable is independently scored by an evaluator working with the same input files against a
+definition of a conflict which was cross-validated with another implementation to obtain exact
 agreement.
 
-The substantive result of the phase concerns measurement as much as optimisation. Several
-configurations reported zero student conflicts, and each was traced to an artefact: students
-silently re-sectioned between laboratory batches, an instance that was already conflict-free, or a
-solver that had loaded no students at all. Pinning the enrolments---selecting \emph{Enrolled
-Student Course Demands}, disabling student switching and loading enrolments from the stored
-solution---removed the solver's ability to improve the number by moving students, and the reported
-count rose from an apparent zero to a real 40. That rise was the objective. The final solution
-places 290 of 291 classes with no instructor and no room double-booking, a hard feasibility score
-of 98.85 out of 100, and 40 of 1{,}130 students conflicted, all of them first-year students in
-four laboratory placements against a single reserved lecture block. Because the residue is
-concentrated rather than diffuse, it is a scheduling problem with a known shape rather than a
-quality ceiling.
+The substantive outcome of the phase is more about measurement than optimisation. A number of
+configurations reported no conflicts among students, and each of these was traced to either a
+``no student'' situation, meaning that the solver loaded no students, or a ``no student'' being
+re-sectioned between student batches, which is already ``no conflict''. They found that when they
+pin the enrolments (\emph{Enrolled Student Course Demands}, disable student switching, and load
+enrolments from the stored solution), the solver can no longer improve the number and the number
+reported actually increased from what they thought was zero to 40. That was the goal they set for
+themselves. The final solution has 290 of 291 classes with no instructor, no room double booking,
+which is a hard feasibility score of 98.85 out of 100 and 40 of 1{,}130 students conflicted, all
+of which were first year students in four laboratory placements with one reserved lecture block.
+The residue is not diffuse, it is concentrated and thus a scheduling problem rather than a ceiling
+on quality.
 
-The reinforcement-learning layer was implemented in full---25 Java classes and 11 Python modules,
-a 48-feature state, eight neighbourhood operators, a potential-based reward, a gRPC training
-environment and an ONNX inference path inside the solver's own JVM---and designed so that it can
-never produce an illegal timetable, since every move it selects is generated and accepted by stock
-CPSolver machinery. Its pre-registered control experiment then answered the project's own research
-question in the negative. Raising the student-conflict weight on a fixed instance reduced the
-median violation rate from 0.0414 to 0.0030 or below, clearing by a wide margin the 25\,\%
-improvement the learned policy had been set to achieve. No claim is made that the learned policy
-beats the baselines; arms L and R were never run on institutional data, and no held-out term
-exists. The useful conclusion is narrower and more durable: for an instance of this size, the
-residual student conflicts were a consequence of how the objective was priced, not of how the
-search explored, and a correctly configured stock solver is sufficient. The layer's conflict
-oracle, state encoder and headless runner remain valuable as the instrumentation that made the
-controlled comparison possible.
+The reinforcement-learning layer is not entirely inside the solver JVM. Training is the 11 Python
+modules and the gRPC environment. Production inference is the 25 Java classes and the ONNX path
+inside the JVM. The layer never returns an illegal timetable, because the stock CPSolver generates
+and accepts every move. The weight sweep lowered the median violation rate on a fixed instance
+from 0.0414 to 0.0030 at weight 2, the best weight on disk. That is not the pre-registered
+comparison: the 25\,\% bar was a learned policy against a tuned baseline on a held-out instance,
+and that comparison was not run. It is not claimed that the learned policy performs better than
+the baselines, as arms L and R were not run on institutional data, and there is no held-out term. The helpful ending is much more restrictive: in this case, the
+leftover student conflicts were the result of the pricing of the objective rather than of the
+search's exploration, and a properly configured stock solver will do the job. The layer's conflict
+oracle, state encoder and headless runner remain useful as instrumentation for that comparison,
+which has not been run.
 
-What the institution now has is a path from its live scheduling database to a scored timetable
-that can be re-run on demand, and an honest number attached to the result. What it does not yet
-have is a return path: the solution is exported but never written back to Taasika, the student
-data is simulated rather than drawn from the MIS portal, and the scope remains one department for
-one term. Those are the three steps that separate the present system from operational use, and
-each is now a well-defined task rather than an open question.
+So the institution now has a way to get from their live scheduling database to a scored timetable
+that can be re-run whenever they want, and their scored number is honest. It doesn't yet have a
+return route: the solution is exported but not written back to Taasika, the student data is
+simulated and not pulled from the MIS portal, the scope is one department for one term. Those are
+the three steps between the present system and its use as an operating system, and they are now
+statements of fact and not questions.

@@ -8,23 +8,23 @@ As can be seen in Table~\ref{tab:inherited} this is still the case, and it is th
 
 \begin{table}[H]
 \centering
-\caption{Constraint mapping done in Semester VI.
+\caption{Constraint mapping done in Semester VI.}
 \label{tab:inherited}
 \footnotesize
 \begin{tabular}{@{}L{5.0cm}L{9.9cm}@{}}
 \toprule
-Constraint & \textbf{Mechanism in UniTime}
+Constraint & \textbf{Mechanism in UniTime} \\
 \midrule
-Distance between rooms & Distance check in room detail configuration.
-Labs & Subparts of an instructional offering (all with their own time pattern) and preferred labs.
+Distance between rooms & Distance check in room detail configuration. \\
+Labs & Subparts of an instructional offering (all with their own time pattern) and preferred labs. \\
 Evenly distributed working hours & Instructor preference settings; the solver favours consecutiveness. \\
-Minimisation of schedule holes & The \texttt{StudentMinimizeScheduleHoles} optimisation criterion.
-Course & Distribution preferences for consecutive lectures on the same day.
-Maximum slots per course per day & Distribution preferences setting a per day limit.
-Limited back-to-back classes in Instructor load management & Distribution preferences.
-Departmental cohort conflicts & Distribution preferences preventing overlap for a shared cohort.
-Specialised laboratory allocation & Room groups encoding hardware and equipment requirements.
-Common university hours & Reserved slots not included in the time-pattern configuration.
+Minimisation of schedule holes & The \texttt{StudentMinimizeScheduleHoles} optimisation criterion. \\
+Course & Distribution preferences for consecutive lectures on the same day. \\
+Maximum slots per course per day & Distribution preferences setting a per day limit. \\
+Limited back-to-back classes in Instructor load management & Distribution preferences. \\
+Departmental cohort conflicts & Distribution preferences preventing overlap for a shared cohort. \\
+Specialised laboratory allocation & Room groups encoding hardware and equipment requirements. \\
+Common university hours & Reserved slots not included in the time-pattern configuration. \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -37,7 +37,7 @@ The pipeline emits what and where is shown in Table~\ref{tab:implemented}.
 
 \begin{table}[H]
 \centering
-\caption{Constraints in the generated data.
+\caption{Constraints in the generated data.}
 \label{tab:implemented}
 \footnotesize
 \begin{tabular}{@{}L{3.6cm}L{5.0cm}L{6.2cm}@{}}
@@ -48,15 +48,15 @@ Meeting patterns & \texttt{gen\_preferences.py} & a \texttt{<timePref>} naming o
   on each subpart and class, session time patterns\\
 Date pattern & \texttt{gen\_preferences.py} & \texttt{Full Term} date preference at required level \\
 Minor-degree block & required window for Monday/Tuesday 16:30--18:30 \\
-Open-elective block & required Monday/Tuesday 09:30--10:30 window
-Protection of all other courses except blocks & \texttt{FIXED\_ENTRIES\_MAP} windows.
+Open-elective block & required Monday/Tuesday 09:30--10:30 window \\
+Protection of all other courses except blocks & \texttt{FIXED\_ENTRIES\_MAP} windows. \\
 Room preferences & \texttt{gen\_preferences.py} & \texttt{<roomPref>} lists derived from Taasika
-  Never pre-assignments, room associations
+  Never pre-assignments, room associations \\
 Specialised laboratories & \texttt{gen\_buildings.py} & building inference plus a separate pool for
   unavailable laboratories \\
 Lunch breaks & \texttt{setup\_lunch\_breaks.py} & solver criteria, applied server-side \\
 Structure & \texttt{gen\_academic.py} & 242 student
-  groups, membership based on enrolment;
+  groups, membership based on enrolment \\
 Weekend exclusion & \texttt{gen\_buildings.py} & room sharing marks weekends unavailable \\
 Travel times & \texttt{gen\_buildings.py} & 5 minutes between buildings, 3 between the two CSE
   buildings \\
@@ -77,7 +77,7 @@ The four rules that are in use are shown in Table~\ref{tab:fixedentries}.
 
 \begin{table}[H]
 \centering
-The fixed time-block rules, in order of evaluation.
+\caption{The fixed time-block rules, in order of evaluation.}
 \label{tab:fixedentries}
 \footnotesize
 \begin{tabular}{@{}L{3.1cm}L{5.2cm}L{1.9cm}L{2.3cm}L{1.9cm}@{}}

@@ -28,7 +28,8 @@ to eight example failures.
 
 \begin{table}[H]
 \centering
-\caption{The ten hard checks.}
+\caption{Hard checks. The feasibility score averages the ten checks used in both modes.
+\texttt{room\_unavailable} applies to XML mode only and is not part of that average.}
 \label{tab:hardkpi}
 \footnotesize
 \begin{tabular}{@{}L{3.5cm}L{11.4cm}@{}}
@@ -48,7 +49,8 @@ to eight example failures.
 \texttt{lunch\_weekend} &
   Fraction of assigned classes that do not fall on a weekend or inside a blocked slot. \\
 \texttt{room\_unavailable} &
-  Fraction of assigned classes placed in a room that is available at that time (XML mode). \\
+  XML mode only, and not included in the hard-feasibility average. Fraction of assigned classes
+  placed in a room that is available at that time. \\
 \texttt{instructor\_lunch\_breaks} &
   Fraction of instructors who retain at least one free 60-minute window within 11:30--15:30 on
   every teaching day. \\

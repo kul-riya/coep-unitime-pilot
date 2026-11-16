@@ -1,11 +1,15 @@
 % =====================================================================
 %  University Course Timetabling System
 %  Semester VII B.Tech. Project Report  --  Project "taasika-v3"
-%  Department of Computer Engineering, COEP Technological University, Pune
+%  COEP Technological University, Pune
+%
+%  Formatting follows BTechProjectCSE_Latex_Template_2026-27
+%  (report class, 12 pt, one column, 1.5 line spacing, template margins,
+%  template title page, certificate, plagiarism page, front-matter order,
+%  plain bibliography after the appendices).
 % =====================================================================
-\documentclass[10pt,a4paper]{article}
+\documentclass[a4paper,12pt,onecolumn]{report}
 
-\usepackage[a4paper,top=1.85cm,bottom=1.85cm,left=1.9cm,right=1.9cm,headheight=13pt]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -19,8 +23,8 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{enumitem}
-\usepackage{fancyhdr}
 \usepackage{titlesec}
+\usepackage{etoolbox}
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -30,36 +34,72 @@
 \usepackage{pgfplotstable}
 \usepackage[hidelinks]{hyperref}
 
-\usetikzlibrary{shapes.geometric,arrows.meta,positioning,calc,fit,backgrounds,decorations.pathreplacing}
-\pgfplotsset{compat=1.18}
+% ------------------------------------------------------- page layout
+% Template margins: left 2.5 cm, top 2 cm, right 2 cm, bottom 2 cm,
+% 0.5 cm binding offset.
+\usepackage[a4paper,left=2.5cm,top=2cm,right=2cm,bottom=2cm,bindingoffset=0.5cm]{geometry}
 
-% ---------------------------------------------------------------- styling
+% ------------------------------------------------------- body text
+% Template: Computer Modern, 12 pt, line spacing 1.5.
+\linespread{1.5}
+
+% The body is 12 pt as the template requires. Footnote-size and smaller
+% text (tables, captions, listings, figure labels) keeps the absolute sizes
+% the tables and figures were drawn for.
+\makeatletter
+\renewcommand\small{\@setfontsize\small\@ixpt{11}}
+\renewcommand\footnotesize{\@setfontsize\footnotesize\@viiipt{9.5}}
+\renewcommand\scriptsize{\@setfontsize\scriptsize\@viipt\@viiipt}
+\renewcommand\tiny{\@setfontsize\tiny\@vpt\@vipt}
+
+% 1.5 spacing applies to running text only. Tables, listings and
+% drawings are set single-spaced so they keep their designed height.
+\newcommand{\singlespacedblock}{\def\baselinestretch{1}\@currsize}
+\AtBeginEnvironment{tabular}{\singlespacedblock}
+\AtBeginEnvironment{tabularx}{\singlespacedblock}
+\AtBeginEnvironment{longtable}{\singlespacedblock\small}
+\AtBeginEnvironment{lstlisting}{\singlespacedblock}
+\AtBeginEnvironment{tikzpicture}{\singlespacedblock}
+\makeatother
+
+% At 12 pt, long file names and paths in \texttt no longer fit on a line.
+% Allow line breaks after "/" and "_" inside \texttt (formatting only).
+\makeatletter
+{\catcode`\/=\active \catcode`\-=\active \catcode`\.=\active
+ \gdef\texttt@breaks{\catcode`\/=\active \catcode`\-=\active \catcode`\.=\active
+   \def/{\char`\/\allowbreak}\def-{\char`\-\allowbreak}\def.{\char`\.\allowbreak}%
+   \def\_{\textunderscore\allowbreak}}}
+\setlength{\tabcolsep}{5pt}
+\DeclareRobustCommand{\texttt}{\begingroup\texttt@breaks\texttt@aux}
+\newcommand{\texttt@aux}[1]{{\ttfamily #1\/}\endgroup}
+\makeatother
+
+% The wide definition display in Appendix C is set one size smaller.
+\AtBeginEnvironment{align*}{\small}
+
+\DeclareCaptionFont{singlesmall}{\small\def\baselinestretch{1}\small}
+\captionsetup{font=singlesmall,labelfont=bf,width=0.92\textwidth}
+
+% ------------------------------------------------------- numbering
+% Content is organised in sections (not chapters). Number them 1, 2, 3...
+% and, in the appendices, A, B, C...
+\renewcommand{\thesection}{\arabic{section}}
+
+% The unnumbered "Abstract" heading is centred and large, as in the
+% template's abstract page.
+\titleformat{name=\section,numberless}[block]{\normalfont\Large\bfseries\centering}{}{0pt}{}
+
+\emergencystretch=3em
+\tolerance=2000
+
+% ------------------------------------------------------- styling
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning,calc,fit,backgrounds,decorations.pathreplacing}
+
 \definecolor{coepblue}{RGB}{20,60,110}
 \definecolor{lstbg}{RGB}{247,247,247}
 \definecolor{lstkw}{RGB}{20,60,110}
 \definecolor{lstcm}{RGB}{110,110,110}
-
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\small COEP Technological University}
-\fancyhead[R]{\small University Course Timetabling System}
-\fancyfoot[C]{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-
-\captionsetup{font=small,labelfont=bf,width=0.92\textwidth,skip=4pt}
-
-% tighter vertical rhythm so the evidence tables fit without being cut
-\titlespacing*{\section}{0pt}{8pt plus 1pt minus 2pt}{3pt plus 1pt}
-\titlespacing*{\subsection}{0pt}{6pt plus 1pt minus 1pt}{2pt plus 1pt}
-\titlespacing*{\paragraph}{0pt}{4pt plus 1pt}{0.8em}
-\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
-\setlength{\intextsep}{6pt plus 2pt minus 2pt}
-\setlength{\abovecaptionskip}{3pt}
-\setlength{\belowcaptionskip}{1pt}
-\setlength{\parskip}{1pt plus 1pt}
-\emergencystretch=3em
-\renewcommand{\arraystretch}{0.98}
-\setlist{itemsep=0.5pt,topsep=2pt,parsep=0pt}
 
 \lstset{
   basicstyle=\ttfamily\scriptsize,
@@ -91,66 +131,48 @@
 \setlist[itemize]{topsep=2pt,itemsep=1pt,parsep=0pt,leftmargin=1.4em}
 \setlist[enumerate]{topsep=2pt,itemsep=1pt,parsep=0pt,leftmargin=1.6em}
 
-\title{University Course Timetabling System}
-\author{Mihir Shah \and Riya Kulkarni \and Ved Mundhada \and Akshay Sathaye}
-
 \begin{document}
 
-% ================================================================ COVER
-\begin{titlepage}
-\centering
-\vspace*{0.6cm}
+% Front matter is numbered in lowercase roman, as the template's own
+% comment intends; main text restarts in arabic below.
+\pagenumbering{roman}
 
-% COEP logo placeholder -- replace with the official crest when available
-\includegraphics[width=2.5cm]{figures/COEP_Tech_University_Logo.jpg}
+% ================================================================ TITLE PAGE
+\input{titlepage}
 
-\vspace{0.8cm}
-{\Large\bfseries COEP Technological University, Pune\par}
-\vspace{0.3cm}
-{\large Department of Computer Engineering\par}
+% ================================================================ CERTIFICATE
+\input{certi}
 
-\vspace{1.6cm}
-{\LARGE\bfseries University Course Timetabling System\par}
-\vspace{0.4cm}
-{\large Project \emph{taasika-v3}\par}
+% ================================================ PLAGIARISM REPORT PAGE
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+  \todo{Insert the scanned plagiarism-percentage page, signed by the Project Guide, here.}
+\end{center}
+\vspace*{\fill}
 
-\vspace{1.2cm}
-{\Large Semester VII B.Tech. Project Report\par}
-
-\vspace{1.8cm}
-\begin{tabular}{rl}
-  \textbf{Academic Year:} & 2026--2027 \\[4pt]
-  \textbf{Semester:}      & VII \\[4pt]
-  \textbf{Guide:}         & Abhijit A. M. \\
-\end{tabular}
-
-\vspace{1.4cm}
-{\large\bfseries Submitted by\par}
-\vspace{0.4cm}
-{\large
-\begin{tabular}{c}
-  Mihir Shah \\[3pt]
-  Riya Kulkarni \\[3pt]
-  Ved Mundhada \\[3pt]
-  Akshay Sathaye \\
-\end{tabular}\par}
-
-\vfill
-{\small Repository: \url{https://github.com/kul-riya/coep-unitime-pilot}\par}
-\end{titlepage}
-
-% ============================================================== ABSTRACT
+% ================================================================ ABSTRACT
+\newpage
 \input{sections/00_abstract}
 
+% ================================================ CONTENTS AND LISTS
 \newpage
 \tableofcontents
-\newpage
-\listoffigures
-\vspace{1.2em}
-\listoftables
-\newpage
 
-% ============================================================== SECTIONS
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+\input{symbols}
+\addcontentsline{toc}{chapter}{List of Symbols}
+
+\newpage
+\pagenumbering{arabic}
+
+% ================================================================ SECTIONS
 \input{sections/01_introduction}
 \input{sections/02_problem}
 \input{sections/03_unitime}
@@ -167,17 +189,17 @@
 \input{sections/14_future}
 \input{sections/15_conclusion}
 
-% ============================================================ REFERENCES
-\newpage
-\bibliographystyle{IEEEtran}
-\bibliography{references}
-
 % ============================================================ APPENDICES
-\newpage
 \appendix
+\renewcommand{\thesection}{\Alph{section}}
 \input{sections/A_imports}
 \input{sections/B_spr6}
 \input{sections/C_kpis}
 \input{sections/D_evidence}
+
+% ============================================================ REFERENCES
+% Template order: appendices, then bibliography.
+\bibliographystyle{plain}
+\bibliography{references}
 
 \end{document}

@@ -5,14 +5,14 @@
 
 The working dataset is \texttt{unitime-out/0gen\_all} containing all sixteen Data Exchange XML files for one academic session.
 Each file contains the terms \texttt{Spr12} and year \texttt{2026} to create the Data Exchange ID \texttt{Spr122026}.
-This session begins on 19 January 2026 and will end on 30 April 2026 with exams beginning on 4 May 2026.
+The session runs from 19 January 2026 to 22 May 2026. Classes end on 30 April 2026 and examinations begin on 4 May 2026.
 The weekly grid covers 7 days and 10 hourly periods (from 08:30 to 18:30), and the solver is solving on a 5 minute resolution.
 
 The exact inventory is provided in Table~\ref{tab:dataset} and was taken directly from the XML files, not from old docs.
 
 \begin{table}[H]
 \centering
-Inventory of \texttt{unitime-out/0gen\_all} (term \texttt{Spr122026}).
+\caption{Inventory of \texttt{unitime-out/0gen\_all} (term \texttt{Spr122026}).}
 \label{tab:dataset}
 \footnotesize
 \begin{tabular}{@{}rL{5.0cm}rL{6.6cm}@{}}
@@ -47,7 +47,7 @@ So we checked the snapshot by comparing the number of entities.
 
 \begin{table}[H]
 \centering
-\caption{Counting entities to identify the source snapshot.
+\caption{Counting entities to identify the source snapshot.}
 \label{tab:snapshot}
 \footnotesize
 \begin{tabular}{@{}L{4.6cm}rrrl@{}}
@@ -67,18 +67,18 @@ The loader supports a newer snapshot - snapshot 263 for the next academic year -
 The stale header string is a known bug that is noted in Section~\ref{sec:limitations}.
 
 The room count is less than the snapshot's 49 because the virtual ``Online'' building (7 rooms) is not included in the pipeline.
-These are spread over six buildings: Academic Complex (14 rooms), Computer Engineering and IT (15), ENTC Extension (5), Bhau Institute (2) and a pool of four lab rooms which are not used on purpose so that if they are used, it is reflected in the KPI report.
+These 42 rooms are spread over six buildings: Academic Complex (14), Computer Engineering and IT (15), the New CSE Building (2), ENTC Extension (5), Bhau Institute (2) and the unavailable-lab pool (4). The pool is kept so that use of an unavailable laboratory shows up in the KPI report.
 
 \subsection{Student population}
 
 Since the MIS data for the institutes was not available, the student population was simulated based on the headcounts confirmed with the department in \texttt{scripts/intake.py}.
 The cohorts are broken down in Table~\ref{tab:students}.
-The IDs are based on the format \texttt{61yy03aaa} with \texttt{yy} representing the year of study.
+The simulated identifiers have the shape \texttt{61yy03aaa}. In a real MIS number such as 612303118 the digits \texttt{yy} are the admission year. The generator does not copy that scheme: it writes 01 for the first year, 02 for the second, 03 for the third, 04 for the final year and 05 for M.Tech, so a first-year identifier looks like \texttt{610103001}.
 The repo does not contain any real student data, nor does this report.
 
 \begin{table}[H]
 \centering
-Simulated student population for the current data set.
+\caption{Simulated student population for the current data set.}
 \label{tab:students}
 \footnotesize
 \begin{tabular}{@{}lrrrL{6.2cm}@{}}
@@ -86,7 +86,7 @@ Simulated student population for the current data set.
 Year & CSE & AI\,\&\,ML & Total & Structure \\
 \midrule
 First year (FY)   & 300 & 100 & 400   & single cohort, reserved blocks \\
-Direct second year entrants join here, 200 & 0 2nd year (SY) & two lecture divisions.
+Direct second year entrants join here, 200 & 0 2nd year (SY) & two lecture divisions. \\
 Third year (TY)   & 200 & 0   & 200   & two divisions, departmental electives \\
 Final year (BT)   & 200 & 0   & 200   & two divisions, one departmental elective each \\
 M.Tech (MT)       & \multicolumn{2}{c}{130} & 130 & specialisation streams \\
@@ -112,7 +112,7 @@ These are listed in Table~\ref{tab:instances} so that each number in this report
 
 \begin{table}[H]
 \centering
-Caption for instances used in this report.
+\caption{Caption for instances used in this report.}
 \label{tab:instances}
 \footnotesize
 \begin{tabular}{@{}L{4.4cm}lrrrL{4.0cm}@{}}

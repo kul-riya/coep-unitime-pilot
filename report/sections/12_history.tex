@@ -3,10 +3,10 @@
 
 \subsection{Version history}
 
-The repository contains 30 commits by two authors between 23 June 2026 and 8 October 2026. It
-carries no tags, so the version history was reconstructed from commit messages and dates rather
-than from release markers. Table~\ref{tab:history} groups the commits into seven phases and maps
-the informal version labels used in the project's presentation material onto them.
+The repository contains 30 commits from 23 June 2026 to 8 October 2026, with two contributors. It
+has no tags, and the version history was built from commit comments and dates rather than from
+release markers. Table~\ref{tab:history} summarises the seven phases in the order they occurred,
+with the labels used in the project's presentation material (the informal version).
 
 \begin{table}[H]
 \centering
@@ -17,32 +17,31 @@ the informal version labels used in the project's presentation material onto the
 \toprule
 \textbf{Phase} & \textbf{Dates} & \textbf{Content} & \textbf{Deck label} \\
 \midrule
-1 & 23 Jun 2026 & Repository bootstrap; first generators; first exported solutions. & v1 \\
-2 & 29 Jul -- 22 Aug 2026 & Preference-based enrolment simulation with \texttt{61yy03aaa}
-    identifiers and course-type reports; time-pattern update; elective lecture/laboratory pairing
-    fix for the offering import. & v2, v3, v5 \\
-3 & 26--29 Aug 2026 & Constraint work: term advanced to Spr5 then Spr6; minor-degree block
-    scheduling; migration of lecture patterns to $2\times120$; the flexible time-preference rule
-    engine; emission of matching slots rather than blanket prohibitions; the master pipeline
-    \texttt{gen\_all.py}; lunch-break persistence repair; the purge utility; renaming of the
-    first-year reserved course. & v4 \\
-4 & 7--11 Sep 2026 & Full Taasika dump added; snapshot 263 integrated into the loader; KPI
-    evaluation improved and a room-preference toggle added. & --- \\
-5 & 28 Sep 2026 & The reinforcement-learning module lands in a single commit, together with a
-    Spring 2026 solution and the setup guide through arm B1. & RL \\
-6 & 29 Sep -- 1 Oct 2026 & Curriculum corrections: departmental and open-elective logic, open
-    elective restricted to second year, online rooms removed from generation, open-elective block
-    enrolments added, automatic archive generation. & --- \\
-7 & 8 Oct 2026 & Student group membership derived from enrolments. & --- \\
+1 & 23 Jun 2026 & Repository bootstrapped; first generators; first exported solutions. & v1 \\
+2 & 29 Jul -- 22 Aug 2026 & Preference-based enrolment simulation; time-pattern update; elective
+    lecture/lab pairing fix on the course offering import. & v2, v3, v5 \\
+3 & 26--29 Aug 2026 & Constraint work: term advanced to Spr5, then to Spr6; minor-degree block
+    scheduling; flexible time-preference rule engine; emission of matching slots, instead of
+    blanket prohibitions; master pipeline \texttt{gen\_all.py}; lunch-break persistence repair;
+    purge utility; renamed the first-year reserved course. & v4 \\
+4 & 7--11 Sep 2026 & Full Taasika dump is added; snapshot 263 is integrated into the loader, with
+    improvements to the KPI evaluation, and a room-preference toggle has been added. & --- \\
+5 & 28 Sep 2026 & The reinforcement-learning module and the solution for Spring 2026 land directly
+    in one commit, along with the setup guide via arm B1. & RL \\
+6 & 29 Sep -- 1 Oct 2026 & Departmental and open-elective logic and curriculum correction; open
+    elective that can only appear in second year; automatic archive generation; online rooms
+    removed from generation; open-elective block enrolments added. & --- \\
+7 & 8 Oct 2026 & Student group membership is based on enrolments. & --- \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-One correction to the informal history is required. The elective pairing fix is recorded in the
-project's handover notes as reducing the offering count from 63 to \textbf{58}, not to 54; the
-current dataset, after the later curriculum corrections of phase 6, contains 56 offerings. The
-labels v1--v5 do not correspond to tags and only loosely to individual commits, so the phase
-structure above should be treated as the authoritative account.
+The elective pairing fix is recorded in the handover notes as an offering reduction from 63 to 58:
+five standalone laboratory offerings were absorbed into their lecture partners. An earlier note
+said 63 reduced to 54. That 54 is not in the notes or in the files. The current dataset, after
+the later curriculum edits, contains 56 offerings (Table~\ref{tab:dataset}). The phase structure
+above is not necessarily in sync with the labels v1--v5, and is only loosely tied to the
+individual commits.
 
 \subsection{Repository layout}
 
@@ -55,15 +54,17 @@ structure above should be treated as the authoritative account.
 \toprule
 \textbf{Path} & \textbf{Contents} \\
 \midrule
-\texttt{scripts/}    & 25 Python generators, validators and evaluators, plus two Jython scripts in
-                       \texttt{unitime\_scripts/} that run inside UniTime \\
-\texttt{unitime-out/}& Generated Data Exchange XML, the frozen dataset \texttt{0gen\_all/} and its archive \\
-\texttt{rl/}         & The \texttt{unitime-rl} Maven module, the Python training package,
-                       configuration, instances, models and experiment runs \\
-\texttt{cpsolver/}    & Local clone of the CPSolver library, built and installed for the module \\
-\texttt{solutions/}  & Exported timetables and the KPI reports scoring them \\
-\texttt{taasika-db/} & The institutional SQL dumps \\
-\texttt{compare/}    & Human-readable snapshot summaries used to compare snapshots \\
+\texttt{scripts/}     & 25 Python generators, validators and evaluators, and two Jython scripts in
+                        \texttt{unitime\_scripts/} that execute inside UniTime \\
+\texttt{unitime-out/} & Created XML for the generalised Data Exchange, the frozen dataset
+                        \texttt{0gen\_all/} and the archive \\
+\texttt{rl/}          & Maven module, Python training package, configuration, instance, models and
+                        experiment runs for \texttt{unitime-rl} \\
+\texttt{cpsolver/}    & Local copy of the CPSolver library, ready to be built and installed into
+                        the module system \\
+\texttt{solutions/}   & Exported timetables used on report sheets for the KPI reports to score \\
+\texttt{taasika-db/}  & The institutional SQL dumps \\
+\texttt{compare/}     & Snapshot summaries usable by humans to compare snapshots \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -108,49 +109,56 @@ Figure~\ref{fig:arch} shows how these parts relate at run time.
 \draw[ar] (sol) -- (kpi);
 \draw[ar] (xml.south) |- ++(-4mm,-6mm) |- (kpi.north);
 \end{tikzpicture}
-\caption{System architecture. The generators turn a Taasika snapshot into Data Exchange XML; the
-UniTime server and the headless module both solve against it; the evaluator scores the result
-against the same XML rather than against the solver.}
+\caption{The \texttt{scripts/} generators and validators read the Taasika SQL dump (snapshot 242)
+and create the 16 XML files and archive in \texttt{unitime-out/0gen\_all}. That output goes to the
+UniTime server (Java 21, Tomcat 9, MySQL 8.4) using CPSolver (IFS + CBS), and also to the headless
+\texttt{unitime-rl} module with the RL layer. Both solve one XML and write CSV and solver XML to
+\texttt{solutions/}. The KPI evaluator scores those solutions against the same XML and returns a
+JSON report.}
 \label{fig:arch}
 \end{figure}
 
 \subsection{The generation and solving procedure}
 
-The following is the procedure actually used, in the style of the corresponding section of the
+The procedure actually followed is the one below, in the style of the corresponding section of the
 Semester~VI report but updated for the current tooling.
 
 \begin{enumerate}
-  \item \textbf{Generate.} \texttt{python scripts/gen\_all.py --term Spr12}. The eight generators
-    run in dependency order.
+  \item \textbf{Generate.} \texttt{python scripts/gen\_all.py --term Spr12 --sql
+    taasika-db/taasika3.sql --snapshot 242}, the same command as
+    Listing~\ref{lst:genall}. The eight generators are dependent on one another.
   \item \textbf{Validate and archive.} The same command runs the three validators and writes
-    \texttt{0gen\_all.zip}, documents at the archive root, only if all three pass.
-  \item \textbf{Import.} Upload the archive through Data Exchange, which processes files 1 to 16
-    in order.
-  \item \textbf{Attach buildings and instructors.} Run \textbf{Buildings\,$\rightarrow$\,Update
-    Data}, or every class reports that it has no room, and add staff through \textbf{Manage
+    \texttt{0gen\_all.zip} if all three pass.
+  \item \textbf{Import.} Upload the archive through Data Exchange; it uploads files 1--16 one by
+    one.
+  \item \textbf{Attach buildings and teachers.} Run \textbf{Buildings\,$\rightarrow$\,Update
+    Data}. There is no need to send any data at this point merely because a building has no room,
+    or each building reports that it does not have room. Add staff through \textbf{Manage
     Instructor List}.
   \item \textbf{Lunch breaks.} Run \texttt{setup\_lunch\_breaks.py} under
     \textbf{Utilities\,$\rightarrow$\,Scripts}.
-  \item \textbf{Pin enrolments.} Apply the three settings of Section~\ref{sec:setup}.
-  \item \textbf{Check, solve, export.} Load with the \texttt{Check} configuration, confirm that
-    every class and a non-zero student population loaded, then solve in \texttt{Initial} mode to
-    the timeout and export CSV. For a solver XML, set \texttt{unitime.solution.export.names=true}
-    first.
-  \item \textbf{Evaluate and refine.} Score with \texttt{eval\_timetable\_kpis.py} against the same
-    dataset, fix the worst check, and return to step 1.
+  \item \textbf{Pin enrolments.} Set up the three functions of Section~\ref{sec:setup}.
+  \item \textbf{Check, solve, export.} Run with the \texttt{Check} configuration. It cycles through
+    all classes and prints the loaded classes and the number of students loaded (there must be at
+    least one). Load in \texttt{Initial} mode, then solve and export CSV until the timeout occurs.
+    If the solver XML is to be exported, set \texttt{unitime.solution.export.names=true}
+    beforehand.
+  \item \textbf{Evaluate and refine.} Repeat the steps above for the same dataset, and score with
+    \texttt{eval\_timetable\_kpis.py} using the check to be fixed.
 \end{enumerate}
 
 \subsection{The most recent change: enrolment-derived group membership}
 
-The final commit of the phase changed how student groups are populated. Previously the dataset
-declared 242 groups but left them empty, because bulk group updates had triggered Hibernate
-transient-object failures during import. The generator now derives membership from enrolment: for
-each class a student is enrolled in, the class's schedule note is looked up in the offering index
-and emitted as a group reference inside that student's record in file 14. The codes are validated
-against those declared in file 6, so an unrecognised note is dropped rather than imported.
+In the last commit of the phase, the way student groups are populated was changed. In the past the
+data had been reported as 242 groups, back-filled as empty groups, since bulk updates of the
+groups caused a Hibernate failure while importing the data. The generator now operates on
+enrolments: membership of a class is determined by the schedule note for that class, and this is
+emitted as a group reference for that class within the student's record in file 14. If a note is
+not recognised it is dropped and not imported. The codes are checked against the codes declared in
+file 6.
 
-The result is 5{,}767 group references across 1{,}130 students, verified exhaustively: every
-student enrolled in a class is a member of that class's group, across all classes, with no
-unrecognised codes and well-formed output. As Section~\ref{sec:constraints} explains, this makes
-the cohort structure visible without changing the timetable. The conflict count after the change,
-with the pinning flags applied, is the 40 reported in Section~\ref{sec:experiments}.
+The result is 5{,}767 group references from 1{,}130 students, verified exhaustively: each student
+enrolled in a class is part of the group of that class, for all classes, with no unrecognised code
+and well-formed output. As Section~\ref{sec:constraints} explains, this is possible without
+altering the timetable, so the cohort structure is visible. With the pinning flags applied, 40
+conflicts were present after the change.

@@ -1,110 +1,104 @@
-\contentsline {section}{Abstract}{1}{Doc-Start}%
-\contentsline {section}{\numberline {1}Introduction}{5}{section.1}%
-\contentsline {subsection}{\numberline {1.1}What Semester VI established}{5}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}What Semester VII contributes}{5}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Problem Definition}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Scheduling model}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Hard and soft constraints}{6}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Student conflicts and the measurement problem}{6}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Overview of UniTime and CPSolver}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}The UniTime system}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}The constraint solver}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Iterative Forward Search}{7}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Conflict-based Statistics}{7}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Constraint enforcement guarantees}{8}{subsection.3.5}%
-\contentsline {section}{\numberline {4}System Setup and Configuration}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Software stack}{8}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Resolving the Java version question}{8}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}CPSolver dependency}{8}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Solver configuration}{8}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Data Pipeline: Taasika to UniTime}{9}{section.5}%
-\contentsline {subsection}{\numberline {5.1}The source system}{9}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Pipeline structure}{10}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}The sixteen imports and why their order matters}{10}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Design decisions}{10}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Entry point and validation}{11}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Institution-Specific Constraints}{11}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Inherited constraint mapping}{11}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}From mapping to implementation}{11}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}The modular time-block mechanism}{12}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Meeting patterns}{12}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Lunch breaks}{12}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Student groups and what they do not do}{13}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Shared laboratory sessions}{13}{subsection.6.7}%
-\contentsline {section}{\numberline {7}Datasets Used}{13}{section.7}%
-\contentsline {subsection}{\numberline {7.1}The current dataset}{13}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Source snapshot}{13}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Student population}{14}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Other instances used in the experiments}{14}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Simulation, Testing and UniTime Debugging}{14}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Why students had to be simulated}{14}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Section filling and its consequences}{15}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Conflict types encountered}{15}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}UniTime debugging log}{15}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Pinning students to their sections}{15}{subsection.8.5}%
-\contentsline {section}{\numberline {9}Evaluation Framework and Tools}{16}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Why an external evaluator was required}{16}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Two modes, two denominators}{16}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}What is measured}{16}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}The conflict rule and its cross-validation}{16}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Supporting tools}{17}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}The refinement loop}{17}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}Known limitations of the evaluator}{17}{subsection.9.7}%
-\contentsline {section}{\numberline {10}Experiments and Results}{17}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Solver checker versus KPI evaluator}{17}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Tuning the student-conflict weight in UniTime}{18}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}A controlled weight sweep}{18}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Why several ``zero conflict'' results are not results}{19}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}The final solution under pinned enrolments}{19}{subsection.10.5}%
-\contentsline {paragraph}{Interpretation.}{20}{paragraph*.23}%
-\contentsline {subsection}{\numberline {10.6}Cross-run comparison}{20}{subsection.10.6}%
-\contentsline {section}{\numberline {11}Reinforcement-Learning Layer}{20}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Research question and hypothesis}{20}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Design invariant}{21}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}The decision process}{21}{subsection.11.3}%
-\contentsline {paragraph}{State.}{21}{paragraph*.25}%
-\contentsline {paragraph}{Actions.}{21}{paragraph*.26}%
-\contentsline {paragraph}{Reward.}{21}{paragraph*.28}%
-\contentsline {subsection}{\numberline {11.4}Architecture}{21}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}Evaluation design}{22}{subsection.11.5}%
-\contentsline {subsection}{\numberline {11.6}What was implemented, measured, and not established}{22}{subsection.11.6}%
-\contentsline {paragraph}{Implemented.}{22}{paragraph*.31}%
-\contentsline {paragraph}{Measured on synthetic data only.}{22}{paragraph*.32}%
-\contentsline {paragraph}{Measured on real data.}{22}{paragraph*.33}%
-\contentsline {paragraph}{Not established.}{22}{paragraph*.34}%
-\contentsline {subsection}{\numberline {11.7}Outcome: the control answered the question}{22}{subsection.11.7}%
-\contentsline {subsection}{\numberline {11.8}Risks}{23}{subsection.11.8}%
-\contentsline {section}{\numberline {12}Implementation History and Codebase Overview}{23}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Version history}{23}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Repository layout}{23}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}The generation and solving procedure}{24}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}The most recent change: enrolment-derived group membership}{24}{subsection.12.4}%
-\contentsline {section}{\numberline {13}Limitations}{24}{section.13}%
-\contentsline {paragraph}{The student body is simulated.}{24}{paragraph*.38}%
-\contentsline {paragraph}{Known defects in the generated data.}{24}{paragraph*.39}%
-\contentsline {paragraph}{Scope is one department and one term.}{25}{paragraph*.40}%
-\contentsline {paragraph}{The residual conflicts are unresolved.}{25}{paragraph*.41}%
-\contentsline {paragraph}{Soft-constraint quality is poor.}{25}{paragraph*.42}%
-\contentsline {paragraph}{The evaluator has a broken check.}{25}{paragraph*.43}%
-\contentsline {paragraph}{The learning layer is untested on real data.}{25}{paragraph*.44}%
-\contentsline {paragraph}{One experimental artefact is inconsistent.}{25}{paragraph*.45}%
-\contentsline {paragraph}{Dataset provenance is recorded incorrectly in the files.}{25}{paragraph*.46}%
-\contentsline {paragraph}{No instructor-facing interface exists.}{25}{paragraph*.47}%
-\contentsline {section}{\numberline {14}Future Scope}{25}{section.14}%
-\contentsline {subsection}{\numberline {14.1}Status of the items carried over from Semester VI}{25}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}New directions arising from this phase}{26}{subsection.14.2}%
-\contentsline {section}{\numberline {15}Conclusion}{26}{section.15}%
-\contentsline {section}{\numberline {A}The Sixteen XML Imports}{29}{appendix.A}%
-\contentsline {section}{\numberline {B}Spr6 Instance Inventory}{29}{appendix.B}%
-\contentsline {subsection}{\numberline {B.1}The solver instance}{29}{subsection.B.1}%
-\contentsline {subsection}{\numberline {B.2}Derived artefacts}{30}{subsection.B.2}%
-\contentsline {subsection}{\numberline {B.3}Why 990 and not 1{,}290}{30}{subsection.B.3}%
-\contentsline {section}{\numberline {C}KPI Definitions}{30}{appendix.C}%
-\contentsline {subsection}{\numberline {C.1}The overlap predicate}{30}{subsection.C.1}%
-\contentsline {subsection}{\numberline {C.2}Hard checks}{30}{subsection.C.2}%
-\contentsline {subsection}{\numberline {C.3}Student conflict quantities}{30}{subsection.C.3}%
-\contentsline {subsection}{\numberline {C.4}Preference checks}{31}{subsection.C.4}%
-\contentsline {subsection}{\numberline {C.5}Aggregate scores}{31}{subsection.C.5}%
-\contentsline {subsection}{\numberline {C.6}Efficiency metrics}{31}{subsection.C.6}%
-\contentsline {section}{\numberline {D}Evidence Table}{31}{appendix.D}%
-\contentsline {paragraph}{Open items.}{32}{paragraph*.52}%
+\contentsline {section}{Abstract}{iii}{figure.caption.1}%
+\contentsline {chapter}{List of Tables}{x}{chapter*.3}%
+\contentsline {chapter}{List of Figures}{xii}{chapter*.4}%
+\contentsline {chapter}{List of Symbols}{xiii}{chapter*.5}%
+\contentsline {section}{\numberline {1}Introduction}{1}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}The school values that were set by Semester\nobreakspace {}VI}{1}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}There are 1.2 credits earned for Semester\nobreakspace {}VII}{2}{subsection.0.1.2}%
+\contentsline {section}{\numberline {2}Problem Definition}{3}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Scheduling model}{3}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Hard and soft constraints}{4}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {2.3}Student conflicts and the measurement problem}{5}{subsection.0.2.3}%
+\contentsline {section}{\numberline {3}Overview of UniTime and CPSolver}{6}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}The UniTime system}{6}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.2}The constraint solver}{7}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Iterative Forward Search}{7}{subsection.0.3.3}%
+\contentsline {subsection}{\numberline {3.4}Conflict-based Statistics}{8}{subsection.0.3.4}%
+\contentsline {subsection}{\numberline {3.5}Constraint enforcement guarantees}{9}{subsection.0.3.5}%
+\contentsline {section}{\numberline {4}System Setup and Configuration}{9}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Software stack}{9}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}Solving the Java version issue}{10}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.3}CPSolver dependency}{10}{subsection.0.4.3}%
+\contentsline {subsection}{\numberline {4.4}Solver configuration}{11}{subsection.0.4.4}%
+\contentsline {section}{\numberline {5}Data Pipeline: Taasika to UniTime}{12}{section.0.5}%
+\contentsline {subsection}{\numberline {5.1}The source system}{12}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {5.2}Pipeline structure}{13}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {5.3}The sixteen imports and why their order matters}{14}{subsection.0.5.3}%
+\contentsline {subsection}{\numberline {5.4}Design decisions}{15}{subsection.0.5.4}%
+\contentsline {subsection}{\numberline {5.5}Entry point and validation}{16}{subsection.0.5.5}%
+\contentsline {section}{\numberline {6}Institution-Specific Constraints}{17}{section.0.6}%
+\contentsline {subsection}{\numberline {6.1}Inherited constraint mapping}{17}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {6.2}The modular time-block mechanism}{18}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {6.3}Meeting patterns}{19}{subsection.0.6.3}%
+\contentsline {subsection}{\numberline {6.4}Lunch breaks}{19}{subsection.0.6.4}%
+\contentsline {subsection}{\numberline {6.5}Shared laboratory sessions}{20}{subsection.0.6.5}%
+\contentsline {section}{\numberline {7}Datasets Used}{21}{section.0.7}%
+\contentsline {subsection}{\numberline {7.1}The current dataset}{21}{subsection.0.7.1}%
+\contentsline {subsection}{\numberline {7.2}Source snapshot}{21}{subsection.0.7.2}%
+\contentsline {subsection}{\numberline {7.3}Student population}{22}{subsection.0.7.3}%
+\contentsline {section}{\numberline {8}Simulation, Testing and UniTime Debugging}{24}{section.0.8}%
+\contentsline {subsection}{\numberline {8.1}Conflict types encountered}{25}{subsection.0.8.1}%
+\contentsline {subsection}{\numberline {8.2}UniTime debugging log}{25}{subsection.0.8.2}%
+\contentsline {section}{\numberline {9}Evaluation Framework and Tools}{27}{section.0.9}%
+\contentsline {subsection}{\numberline {9.1}Why an external evaluator was required}{27}{subsection.0.9.1}%
+\contentsline {subsection}{\numberline {9.2}What is measured}{28}{subsection.0.9.2}%
+\contentsline {subsection}{\numberline {9.3}Supporting tools}{29}{subsection.0.9.3}%
+\contentsline {subsection}{\numberline {9.4}The refinement loop}{30}{subsection.0.9.4}%
+\contentsline {subsection}{\numberline {9.5}Known limitations of the evaluator}{30}{subsection.0.9.5}%
+\contentsline {section}{\numberline {10}Experiments and Results}{31}{section.0.10}%
+\contentsline {subsection}{\numberline {10.1}Solver checker versus KPI evaluator}{31}{subsection.0.10.1}%
+\contentsline {subsection}{\numberline {10.2}Adjusting the student-conflict weight in UniTime}{32}{subsection.0.10.2}%
+\contentsline {subsection}{\numberline {10.3}A controlled weight sweep}{33}{subsection.0.10.3}%
+\contentsline {subsection}{\numberline {10.4}Why several ``zero conflict'' results are not results}{34}{subsection.0.10.4}%
+\contentsline {subsection}{\numberline {10.5}The final solution under pinned enrolments}{35}{subsection.0.10.5}%
+\contentsline {paragraph}{Interpretation.}{36}{paragraph*.29}%
+\contentsline {subsection}{\numberline {10.6}Cross-run comparison}{37}{subsection.0.10.6}%
+\contentsline {section}{\numberline {11}Reinforcement-Learning Layer}{37}{section.0.11}%
+\contentsline {subsection}{\numberline {11.1}Research question and hypothesis}{37}{subsection.0.11.1}%
+\contentsline {subsection}{\numberline {11.2}Design invariant}{38}{subsection.0.11.2}%
+\contentsline {subsection}{\numberline {11.3}The decision process}{38}{subsection.0.11.3}%
+\contentsline {paragraph}{State.}{38}{paragraph*.31}%
+\contentsline {paragraph}{Actions.}{39}{paragraph*.32}%
+\contentsline {paragraph}{Reward.}{39}{paragraph*.34}%
+\contentsline {subsection}{\numberline {11.4}Architecture}{40}{subsection.0.11.4}%
+\contentsline {subsection}{\numberline {11.5}Evaluation design}{41}{subsection.0.11.5}%
+\contentsline {subsection}{\numberline {11.6}What was put into place, assessed and not determined}{41}{subsection.0.11.6}%
+\contentsline {paragraph}{Implemented.}{42}{paragraph*.37}%
+\contentsline {paragraph}{Based on synthetic data, only.}{42}{paragraph*.38}%
+\contentsline {paragraph}{Based on the actual data.}{42}{paragraph*.39}%
+\contentsline {paragraph}{Not established.}{42}{paragraph*.40}%
+\contentsline {subsection}{\numberline {11.7}Outcome: the weight sweep, not the learned comparison}{42}{subsection.0.11.7}%
+\contentsline {subsection}{\numberline {11.8}Risks}{43}{subsection.0.11.8}%
+\contentsline {section}{\numberline {12}Implementation History and Codebase Overview}{43}{section.0.12}%
+\contentsline {subsection}{\numberline {12.1}Version history}{43}{subsection.0.12.1}%
+\contentsline {subsection}{\numberline {12.2}Repository layout}{44}{subsection.0.12.2}%
+\contentsline {subsection}{\numberline {12.3}The generation and solving procedure}{45}{subsection.0.12.3}%
+\contentsline {subsection}{\numberline {12.4}The most recent change: enrolment-derived group membership}{46}{subsection.0.12.4}%
+\contentsline {section}{\numberline {13}Limitations}{47}{section.0.13}%
+\contentsline {paragraph}{Student population is emulated.}{47}{paragraph*.44}%
+\contentsline {paragraph}{Defects in the data that is created.}{47}{paragraph*.45}%
+\contentsline {paragraph}{Scope is a department and a term.}{47}{paragraph*.46}%
+\contentsline {paragraph}{The war is still alive and kicking.}{48}{paragraph*.47}%
+\contentsline {paragraph}{The quality of the soft constraints is low.}{48}{paragraph*.48}%
+\contentsline {paragraph}{The evaluator presents the evaluator's broken check.}{48}{paragraph*.49}%
+\contentsline {paragraph}{The learning layer has never been implemented with real data.}{48}{paragraph*.50}%
+\contentsline {paragraph}{There is one experimental artefact that is not consistent.}{48}{paragraph*.51}%
+\contentsline {paragraph}{Provenance records in the dataset are incorrect in the files.}{49}{paragraph*.52}%
+\contentsline {paragraph}{There is no teacher version interface.}{49}{paragraph*.53}%
+\contentsline {section}{\numberline {14}Future Scope}{49}{section.0.14}%
+\contentsline {subsection}{\numberline {14.1}Status of the items carried over from Semester VI}{49}{subsection.0.14.1}%
+\contentsline {subsection}{\numberline {14.2}New directions that came out of this phase}{50}{subsection.0.14.2}%
+\contentsline {section}{\numberline {15}Conclusion}{52}{section.0.15}%
+\contentsline {section}{\numberline {A}The Sixteen XML Imports}{54}{section.Alph0.1}%
+\contentsline {section}{\numberline {B}Spr6 Instance Inventory}{55}{section.Alph0.2}%
+\contentsline {subsection}{\numberline {B.1}The solver instance}{55}{subsection.Alph0.2.1}%
+\contentsline {subsection}{\numberline {B.2}Derived artefacts}{56}{subsection.Alph0.2.2}%
+\contentsline {subsection}{\numberline {B.3}Why 990 and not 1{,}290}{56}{subsection.Alph0.2.3}%
+\contentsline {section}{\numberline {C}KPI Definitions}{56}{section.Alph0.3}%
+\contentsline {subsection}{\numberline {C.1}The overlap predicate}{57}{subsection.Alph0.3.1}%
+\contentsline {subsection}{\numberline {C.2}Hard checks}{57}{subsection.Alph0.3.2}%
+\contentsline {subsection}{\numberline {C.3}Student conflict quantities}{57}{subsection.Alph0.3.3}%
+\contentsline {subsection}{\numberline {C.4}Preference checks}{58}{subsection.Alph0.3.4}%
+\contentsline {subsection}{\numberline {C.5}Aggregate scores}{58}{subsection.Alph0.3.5}%
+\contentsline {subsection}{\numberline {C.6}Efficiency metrics}{59}{subsection.Alph0.3.6}%
+\contentsline {section}{\numberline {D}Evidence Table}{59}{section.Alph0.4}%

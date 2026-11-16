@@ -32,12 +32,11 @@ ONNX Runtime      & 1.30.0          & in-process inference of the frozen policy 
 
 \subsection{Solving the Java version issue}
 
-Our presentation slides say the project runs on Java~21, while the Semester~VI report lists Java~17 for the pipeline and learning code.
-There is no actual conflict here.
-The Maven config specifies \texttt{<maven.compiler.release>17</maven.compiler.release>}, and both \texttt{rl/README.md} and \texttt{rl/SETUP.md} list ``JDK~17+'' as the requirement.
-So Java~17 is just the compile target for our Java code, not a hard cap on the runtime.
-Bytecode built for release~17 runs fine on Java~21.
-The UniTime server stays on Java~21 with Tomcat~9.0 and MySQL~8.4, and the headless solver and training tools run on either 17 or 21 without downgrading anything.
+The presentation slides say the UniTime server runs on Java~21. The reinforcement-learning module was added on 28 September 2026, so the Semester~VI report does not, and could not, list Java~17 for that code.
+The Maven file of the module sets \texttt{<maven.compiler.release>17</maven.compiler.release>}, and both \texttt{rl/README.md} and \texttt{rl/SETUP.md} ask for JDK~17 or newer.
+Java~17 is the compile target, not a cap on the runtime.
+Bytecode built for release~17 runs on Java~21.
+The UniTime server stays on Java~21 with Tomcat~9.0 and MySQL~8.4, and the headless solver runs on 21 without a downgrade.
 
 \subsection{CPSolver dependency}
 

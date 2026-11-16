@@ -1,14 +1,14 @@
 \section{Experiments and Results}
 \label{sec:experiments}
 
-This section reports five experiments. The first three concern how student conflicts are measured
-and whether the solver's objective can be tuned to reduce them; the fourth shows why several
-apparently excellent results are not results at all; the fifth is the outcome of the phase.
+This section reports five experiments. The first three concern how student conflicts are defined
+and whether the solver's objective can be adjusted to reduce them; the fourth shows why some
+apparently good results are not results; the fifth is the result of the phase.
 
 \subsection{Solver checker versus KPI evaluator}
 
-The first measurement to reconcile was a pair of figures that appeared to contradict each other on
-the same term.
+The first figures that had to be reconciled were a set that seemed mutually contradictory for the
+same term.
 
 \begin{table}[H]
 \centering
@@ -22,24 +22,25 @@ the same term.
 Value          & 526 of 990 conflicted, $C = 0.5313$ & 587 of 1{,}290 conflicted (45.5\,\%) \\
 Instance       & \texttt{rl/instances/spr2026.xml} & \texttt{COEPSpr62026\_v2.csv} \\
 Denominator    & students the solver loaded (990)  & all students in the enrolment file (1{,}290) \\
-Membership     & the student block inside the solver file & re-derived by joining the CSV to file 16 \\
+Membership     & the student block within the solver file & re-derived from the CSV to file 16 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The two are not inconsistent; they measure different populations of a different artefact. The
-solver export carried enrolments for 990 of the 1{,}290 simulated students, and the CSV scored a
-different exported solution. As Section~\ref{sec:evaluation} established, the two implementations
-agree exactly when pointed at the same file. The lesson taken forward was procedural: every
-conflict figure in this report is stated with its instance and its denominator, and no two figures
-are compared unless both match.
+The two are not mutually exclusive; they measure a different population of a different artefact.
+The solver export included enrolments for 990 of the 1{,}290 simulated students, and the CSV scored
+a different exported solution. As Section~\ref{sec:evaluation} established, the two implementations
+are identical when both are pointed at the same file. The next step was procedural: every conflict
+figure in this report is given with its instance and its denominator, and no two figures are
+compared unless both match.
 
-\subsection{Tuning the student-conflict weight in UniTime}
+\subsection{Adjusting the student-conflict weight in UniTime}
 
-CPSolver prices each student clash through \texttt{StudentConflictWeight}, and
-\texttt{HardStudentConflictWeight} adds a further charge when the student has no alternative
-section to move to. Raising the first should buy fewer conflicts at the cost of other soft
-criteria. Two runs were made in the UniTime interface and exported as CSV.
+\texttt{StudentConflictWeight} charges a cost for each student clash, and
+\texttt{HardStudentConflictWeight} adds a further cost when the student has no alternative section
+to move to. Raising the first should cost something in the other soft criteria. Two runs in the
+UniTime interface were exported as CSV and scored against the then-current dataset (1{,}290
+students, 262 classes).
 
 \begin{table}[H]
 \centering
@@ -57,21 +58,21 @@ dataset (1{,}290 students, 262 classes).}
 \end{tabular}
 \end{table}
 
-Read naively this says that raising the weight makes the timetable worse, which would be a strange
-property for an optimiser. The correct reading is that this is not a controlled experiment. The
-CSV join re-derives student membership from an enrolment file that the solver did not necessarily
-use, the two runs started from different states, and the instance itself was changing during this
-period. The experiment's real value was in motivating the controlled version that follows. The
-figure of 676 at weight 5 supersedes an earlier figure of 614 quoted in the project's presentation
-material, which no committed artefact reproduces.
+Read naively, the heavier weight produces the worse timetable, which would be a peculiar property
+for an optimiser. The correct reading is that this is not a controlled experiment. The instance
+itself was changing during this period, and the two runs were not necessarily on the same student
+membership, because the solver may have been using a different enrolment file. The real interest
+of the experiment was that it motivated the controlled experiment that follows. The figure of 676
+at weight 5 replaces an earlier figure of 614 given in the project's presentation material, and
+that earlier figure is not reproduced by any committed artefact.
 
 \subsection{A controlled weight sweep}
 
-To tune the weight properly the instance must be held fixed and the only variable must be the
-weight. This was done headlessly, outside the UniTime server, using the project's own solver
-runner. The instance was \texttt{rl/instances/spr2026.xml} (262 classes, 990 students, loaded with
-an initial conflict rate of $C = 0.5313$); each configuration was run for 900 seconds of
-wall-clock time with three random seeds; the reference arm B0 used the stock weight of 0.2.
+To tune the weight properly the instance has to be held fixed, and the only remaining variable is
+the weight. This was done headlessly, outside the UniTime server, using the project's own solver
+runner. The instance was \texttt{rl/instances/spr2026.xml} (262 classes, 990 students, initial
+conflict rate $C = 0.5313$). Each configuration was run for 900 seconds of wall-clock time with
+three random seeds, and arm B0 used the stock weight of 0.2.
 
 \begin{figure}[H]
 \centering
@@ -95,15 +96,17 @@ wall-clock time with three random seeds; the reference arm B0 used the stock wei
 \addlegendentry{B0 reference ($C=0.0414$)}
 \end{axis}
 \end{tikzpicture}
-\caption{Student violation rate against the student-conflict weight, on a fixed instance with a
-900-second budget and three seeds per weight. Every weight at or above 0.5 improves on the stock
-B0 configuration, and seed-to-seed variance is comparable to the effect size.}
+\caption{Student violation rate against weight. Open circles are individual seeds and the solid
+line is the three-seed median. The dashed line is the B0 median, $C = 0.0414$. The medians at
+weight 0.5 and above lie below that line. One seed at weight 0.5 is 0.0778, above both 0.06 and
+the B0 median.}
 \label{fig:sweep}
 \end{figure}
 
 \begin{table}[H]
 \centering
-\caption{Weight sweep, median over three seeds (recorded in \texttt{rl/runs/sweep/summary.md}).}
+\caption{Weight sweep, median over three seeds (recorded in \texttt{rl/runs/sweep/summary.md}).
+B0 and B1 at weight 0.2 use the same selector and the same weight; 0.0414 and 0.0343 differ by seed.}
 \label{tab:sweep}
 \footnotesize
 \begin{tabular}{@{}lrrrr@{}}
@@ -121,26 +124,27 @@ B1 & 10   & 0.0040 & 1.00 & 64 \\
 \end{tabular}
 \end{table}
 
-Two observations follow. First, the solver starts from $C = 0.5313$ and every configuration drives
-it below 0.06 within the budget while keeping all 262 classes assigned, so the overwhelming
-majority of the reduction comes from the search itself rather than from the weight. Second, the
-weight does matter at the margin: the best setting reduces the residual rate by roughly an order of
-magnitude relative to the stock value.
+The solver begins at $C = 0.5313$, and the median of every configuration falls below 0.06 with all
+262 classes assigned, so most of the reduction comes from the search itself. Individual seeds do
+not. One B1 seed at weight 0.5 is 0.0778, and one at weight 1 is 0.0616.
 
-One caveat must be attached to the weight-5 row. Recomputing the medians from the per-seed metric
-files currently on disk reproduces every row of Table~\ref{tab:sweep} except that one, for which
-the stored files give a median of 0.0263 and make weight 2 ($C = 0.0030$) the minimum instead. The
-discrepancy is confined to a single seed whose run appears to have been repeated after the summary
-was written. The choice between the two readings does not affect any conclusion: measured against
-B0's 0.0414, the best weight achieves a relative reduction of either 1.000 or 0.927, and both
-clear the 25\,\% threshold that had been fixed in advance. The honest statement is that weight
-tuning alone reduces the residual conflict rate by well over 25\,\%, not that it reaches exactly
-zero.
+B0 and B1 at weight 0.2 are the same configuration: the same neighbour selector and the same
+comparator, and the same weight. Their medians, 0.0414 and 0.0343, differ by about 17\,\%. That
+gap is seed noise, and it is large enough to undercut a claim that the weight reduces the residual
+by an order of magnitude. Weight 1 lowers the B0 median only from 0.0414 to 0.0263, a 36\,\%
+reduction. The best weight on disk is 2, at a median of 0.0030, which is a 92.7\,\% reduction
+against 0.0414.
+
+The weight-5 row of Table~\ref{tab:sweep} is the archived summary value. Recomputing the median
+from the three per-seed files for that weight gives 0.0263, which makes weight 2 the minimum
+instead. The difference is confined to one seed that appears to have been repeated after the
+summary was written. The 25\,\% bar fixed for the learning layer was a different comparison, a
+learned policy against a tuned baseline on a held-out instance, and that comparison was not run.
 
 \subsection{Why several ``zero conflict'' results are not results}
 
-Four artefacts in the repository report zero student conflicts. None of them represents a better
-timetable, and Table~\ref{tab:zeros} gives the mechanism in each case.
+Four artefacts in the repository report no student conflicts. Each is an inferior schedule, and
+Table~\ref{tab:zeros} gives the mechanism in each case.
 
 \begin{table}[H]
 \centering
@@ -154,35 +158,36 @@ timetable, and Table~\ref{tab:zeros} gives the mechanism in each case.
 \texttt{spr2026\_mihir.kpi.json}, \texttt{spr2026\_10m\_w5.kpi.json}
   & 0 of 990
   & Student switching and initial sectioning moved students between parallel laboratory batches
-    until the overlaps vanished. The placements did not change; the cohort structure did. \\
+    until the overlaps disappeared. The placements stayed the same; the cohort structure changed. \\
 \texttt{rl/runs/bakeoff-spr2026\_10m\_w5} (3 arms $\times$ 10 seeds, 900\,s)
   & 0 for all arms
-  & The instance was \emph{already} conflict-free when loaded: the initial violation rate recorded
-    in every metrics file is 0.0. A 900-second run that begins and ends at zero measures nothing
-    about conflict reduction. \\
+  & The instance was \emph{already} conflict-free when loaded: the initial violation rate in every
+    metrics file, including \texttt{violations.rl}, is 0. A 900-second run that begins and ends at
+    zero says nothing about conflict reduction. \\
 \texttt{spr2026\_10\_LE\_90m\_w5.kpi.json}
   & 0 of 0
-  & No students were loaded at all. The rate is zero over an empty denominator. \\
+  & No students were loaded at all. The ratio is undefined when the denominator is zero. \\
 \texttt{kpi\_report\_MacMini\_v1.json}
   & 0 of 2{,}130
-  & A different and earlier instance with only 254 classes, and two instructor conflicts. \\
+  & Not a mistype of 1{,}130. This earlier instance has 254 classes and two instructor conflicts,
+    and its simulation contained 2{,}130 students (500 in each B.Tech year and 130 M.Tech). \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The first row is the mechanism that mattered. UniTime's final sectioning pass is permitted, by
-default, to move a student from one laboratory batch to another in order to resolve a clash. For a
-university that assigns batches administratively this is not a solution but a corruption of the
-input, and it makes the reported metric unfalsifiable: any timetable can be made conflict-free if
-the students are allowed to move. The remedy is the three settings of Section~\ref{sec:setup}, and
-applying them is what produced the final experiment.
+The first row is the mechanism that mattered. By default, UniTime's final sectioning pass may move
+a student from one laboratory batch to another to resolve a clash. For a university that assigns
+batches administratively this does not solve the problem; it corrupts the input, and it makes the
+reported metric unfalsifiable: any timetable can be made conflict-free if the students are free to
+move. The remedy is the three settings of Section~\ref{sec:setup}, and applying them produced the
+final experiment.
 
 \subsection{The final solution under pinned enrolments}
 
 With \emph{Enrolled Student Course Demands} selected, \texttt{General.SwitchStudents} set to
 \texttt{false} and \texttt{Global.LoadStudentEnrlsFromSolution} set to \texttt{true}, the solver
-can no longer move students, and the conflict count becomes a property of the timetable alone. The
-exported solution \texttt{spr2026\_11\_all\_flags.csv} was scored against the current dataset:
+can no longer move students, and the number of conflicts becomes a property of the timetable. The
+scored solution is \texttt{spr2026\_11\_all\_flags.csv}, exported from the current dataset:
 
 \begin{lstlisting}[style=plainlst,language=bash]
 python scripts/eval_timetable_kpis.py \
@@ -213,7 +218,8 @@ python scripts/eval_timetable_kpis.py \
 \end{axis}
 \end{tikzpicture}
 \caption{Hard-check pass rates of the final solution (term Spr11 solution scored against the
-Spr12 dataset). The vertical axis starts at 85\,\% to make the three non-perfect checks legible.}
+Spr12 dataset). The vertical axis starts at 85\,\% so that the four checks below 100\,\%
+(coverage, instructor lunch, student lunch and student conflicts) are legible.}
 \label{fig:hardchecks}
 \end{figure}
 
@@ -250,30 +256,29 @@ Preference score                      & 6.29 / 100       & --- \\
 \end{tabular}
 \end{table}
 
-\paragraph{Interpretation.} The timetable is hard-feasible in every respect that the institution
-treats as non-negotiable: no room is double-booked, no instructor is double-booked, every class
-respects its meeting pattern and its room capacity, and 290 of 291 classes are placed. The
-remaining student conflicts are a small and highly localised set. All 40 are first-year students,
-and all 40 arise from the same pair of courses: a first-year programming laboratory overlapping the
-first-year reserved lecture block, in four specific lab/lecture combinations---laboratory 1 against
-reserved lecture 3 on Tuesday, laboratory 2 against reserved lecture 3 on Friday, laboratory 7
-against reserved lecture 2 on Wednesday, and laboratory 9 against reserved lecture 1 or 2 on
-Friday. Because the conflicts are concentrated in four placements rather than spread across the
-cohort, they are addressable either by re-timing those four laboratories or by adding explicit
+\paragraph{Interpretation.} The timetable is hard-feasible in every respect the institution treats
+as non-negotiable: no room is double-booked, no instructor is double-booked, meeting patterns and
+room capacities are respected, and 290 of 291 classes are placed. The remaining student conflicts
+are few and localised. All 40 are first-year students, and each is a pair of one first-year
+programming laboratory with the reserved lecture block: laboratory 1 against reserved lecture 3 on
+Tuesday, laboratory 2 against reserved lecture 3 on Friday, laboratory 7 against reserved lecture 2
+on Wednesday, and laboratory 9 against reserved lecture 2 on Friday. Reserved lecture 1 on Friday
+is not paired with any laboratory. Because the conflicts sit in four placements rather than across
+the cohort, they can be addressed by re-timing those four laboratories, or by adding explicit
 different-time distribution constraints between the laboratory and the reserved block.
 
-Two results should not be over-read. The room preference rate of 12.59\,\% is genuinely poor and is
-the clearest remaining optimisation target; it reflects that room preferences were generated
-permissively from Taasika associations and that the solver traded them away cheaply. The
-instructor identity rate of 0\,\% is not a result at all, but the name-format artefact described in
-Section~\ref{sec:evaluation}.
+Two results should not be over-read. The room preference rate of 12.59\,\% is genuinely poor, and
+it is the clearest remaining optimisation target: the preferences were an opt-in reading of the
+Taasika associations, and the solver gave them away at a low price. The instructor identity rate of
+0\,\% is not a result, but the name-format artefact described in Section~\ref{sec:evaluation}.
 
 \subsection{Cross-run comparison}
 
-Table~\ref{tab:crossrun} collects every evaluated artefact so that no figure in this report
-circulates without its context. The progression from the top group to the bottom row is the
-substance of the phase: the apparent zeros disappear as the measurement is tightened, and what
-remains is a small, real, diagnosable number.
+Table~\ref{tab:crossrun} brings together every evaluated artefact so that no figure in this report
+is without its context. Reading from top to bottom is the content of the phase: the apparent zeros
+disappear as the measurement is tightened, and what remains at the bottom is a small, real,
+diagnosable number. In CSV mode a timetable is joined to an enrolment file; in XML mode the student
+block inside a solver file is scored.
 
 \begin{table}[H]
 \centering
@@ -298,6 +303,6 @@ student block inside a solver file.}
 \textbf{\texttt{spr2026\_11\_all\_flags.csv}} & CSV & Spr11/12 & 291 & \textbf{40 / 1{,}130} & \textbf{98.85} \\
 \bottomrule
 \multicolumn{6}{@{}l@{}}{\footnotesize \textsuperscript{a} students re-sectioned;
-  \textsuperscript{b} no students loaded. Neither is a conflict-reduction result.}
+  \textsuperscript{b} no students loaded. Neither is a valid conflict-reduction result.}
 \end{tabular}
 \end{table}

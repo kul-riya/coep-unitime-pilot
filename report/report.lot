@@ -1,27 +1,27 @@
-\contentsline {table}{\numberline {1}{\ignorespaces Software stack, with the component each version applies to.\relax }}{8}{table.caption.2}%
-\contentsline {table}{\numberline {2}{\ignorespaces Solver parameters relevant to the reported results.\relax }}{9}{table.caption.3}%
-\contentsline {table}{\numberline {3}{\ignorespaces Mapping decisions implemented in the generator scripts.\relax }}{11}{table.caption.6}%
-\contentsline {table}{\numberline {4}{\ignorespaces Constraint mapping established in Semester VI.\relax }}{11}{table.caption.7}%
-\contentsline {table}{\numberline {5}{\ignorespaces Constraints as implemented in the generated data.\relax }}{12}{table.caption.8}%
-\contentsline {table}{\numberline {6}{\ignorespaces The fixed time-block rules, in evaluation order.\relax }}{12}{table.caption.9}%
-\contentsline {table}{\numberline {7}{\ignorespaces Inventory of \texttt {unitime-out/0gen\_all} (term \texttt {Spr122026}).\relax }}{13}{table.caption.10}%
-\contentsline {table}{\numberline {8}{\ignorespaces Identifying the source snapshot by counting entities.\relax }}{13}{table.caption.11}%
-\contentsline {table}{\numberline {9}{\ignorespaces Simulated student population of the current dataset.\relax }}{14}{table.caption.12}%
-\contentsline {table}{\numberline {10}{\ignorespaces Instances referenced in this report.\relax }}{14}{table.caption.13}%
-\contentsline {table}{\numberline {11}{\ignorespaces Import and solver failures encountered, with causes and resolutions.\relax }}{15}{table.caption.14}%
-\contentsline {table}{\numberline {12}{\ignorespaces Two conflict rates for the Spr6 instance, and why they differ.\relax }}{17}{table.caption.16}%
-\contentsline {table}{\numberline {13}{\ignorespaces Conflict weight raised in the UniTime solver, scored in CSV mode against the then-current dataset (1{,}290 students, 262 classes).\relax }}{18}{table.caption.17}%
-\contentsline {table}{\numberline {14}{\ignorespaces Weight sweep, median over three seeds (recorded in \texttt {rl/runs/sweep/summary.md}).\relax }}{18}{table.caption.19}%
-\contentsline {table}{\numberline {15}{\ignorespaces Zero-conflict results and their actual causes.\relax }}{19}{table.caption.20}%
-\contentsline {table}{\numberline {16}{\ignorespaces Full evaluation of the final solution: 291 classes, 1{,}130 students, 42 rooms, 115 staff.\relax }}{20}{table.caption.22}%
-\contentsline {table}{\numberline {17}{\ignorespaces All evaluated runs. CSV mode joins a timetable to an enrolment file; XML mode scores the student block inside a solver file.\relax }}{20}{table.caption.24}%
-\contentsline {table}{\numberline {18}{\ignorespaces The eight operators available to the policy.\relax }}{21}{table.caption.27}%
-\contentsline {table}{\numberline {19}{\ignorespaces Experimental arms.\relax }}{22}{table.caption.30}%
-\contentsline {table}{\numberline {20}{\ignorespaces Development phases reconstructed from the commit history.\relax }}{23}{table.caption.35}%
-\contentsline {table}{\numberline {21}{\ignorespaces Top-level repository structure.\relax }}{23}{table.caption.36}%
-\contentsline {table}{\numberline {22}{\ignorespaces Semester VI proposals and their current status.\relax }}{25}{table.caption.48}%
-\contentsline {table}{\numberline {23}{\ignorespaces The sixteen Data Exchange documents and their dependencies.\relax }}{29}{table.23}%
-\contentsline {table}{\numberline {24}{\ignorespaces Properties of \texttt {rl/instances/spr2026.xml}.\relax }}{29}{table.caption.49}%
-\contentsline {table}{\numberline {25}{\ignorespaces Artefacts derived from the Spr6 session.\relax }}{30}{table.caption.50}%
-\contentsline {table}{\numberline {26}{\ignorespaces The ten hard checks.\relax }}{30}{table.caption.51}%
-\contentsline {table}{\numberline {27}{\ignorespaces Source for each claim made in this report.\relax }}{31}{table.27}%
+\contentsline {table}{\numberline {1}{\ignorespaces Software stack and where each version applies.\relax }}{10}{table.caption.7}%
+\contentsline {table}{\numberline {2}{\ignorespaces Solver parameters used for the reported results.\relax }}{11}{table.caption.8}%
+\contentsline {table}{\numberline {3}{\ignorespaces Mapping decisions made in the generator scripts.\relax }}{16}{table.caption.12}%
+\contentsline {table}{\numberline {4}{\ignorespaces Constraint mapping done in Semester VI.\relax }}{17}{table.caption.13}%
+\contentsline {table}{\numberline {5}{\ignorespaces Constraints in the generated data.\relax }}{18}{table.caption.14}%
+\contentsline {table}{\numberline {6}{\ignorespaces The fixed time-block rules, in order of evaluation.\relax }}{18}{table.caption.15}%
+\contentsline {table}{\numberline {7}{\ignorespaces Inventory of \texttt {unitime-out/0gen\_all} (term \texttt {Spr122026}).\relax }}{21}{table.caption.16}%
+\contentsline {table}{\numberline {8}{\ignorespaces Counting entities to identify the source snapshot.\relax }}{22}{table.caption.17}%
+\contentsline {table}{\numberline {9}{\ignorespaces Simulated student population for the current data set.\relax }}{23}{table.caption.18}%
+\contentsline {table}{\numberline {10}{\ignorespaces Caption for instances used in this report.\relax }}{23}{table.caption.19}%
+\contentsline {table}{\numberline {11}{\ignorespaces Import and solver failures that were observed, with their causes and resolutions.\relax }}{26}{table.caption.20}%
+\contentsline {table}{\numberline {12}{\ignorespaces Two conflict rates for the Spr6 instance, and why they differ.\relax }}{31}{table.caption.22}%
+\contentsline {table}{\numberline {13}{\ignorespaces Conflict weight raised in the UniTime solver, scored in CSV mode against the then-current dataset (1{,}290 students, 262 classes).\relax }}{32}{table.caption.23}%
+\contentsline {table}{\numberline {14}{\ignorespaces Weight sweep, median over three seeds (recorded in \texttt {rl/runs/sweep/summary.md}). B0 and B1 at weight 0.2 use the same selector and the same weight; 0.0414 and 0.0343 differ by seed.\relax }}{33}{table.caption.25}%
+\contentsline {table}{\numberline {15}{\ignorespaces Zero-conflict results and their actual causes.\relax }}{34}{table.caption.26}%
+\contentsline {table}{\numberline {16}{\ignorespaces Full evaluation of the final solution: 291 classes, 1{,}130 students, 42 rooms, 115 staff.\relax }}{36}{table.caption.28}%
+\contentsline {table}{\numberline {17}{\ignorespaces All evaluated runs. CSV mode joins a timetable to an enrolment file; XML mode scores the student block inside a solver file.\relax }}{37}{table.caption.30}%
+\contentsline {table}{\numberline {18}{\ignorespaces The eight operators available to the policy.\relax }}{39}{table.caption.33}%
+\contentsline {table}{\numberline {19}{\ignorespaces Experimental arms.\relax }}{41}{table.caption.36}%
+\contentsline {table}{\numberline {20}{\ignorespaces Development phases reconstructed from the commit history.\relax }}{44}{table.caption.41}%
+\contentsline {table}{\numberline {21}{\ignorespaces Top-level repository structure.\relax }}{44}{table.caption.42}%
+\contentsline {table}{\numberline {22}{\ignorespaces Semester VI proposals and their current status.\relax }}{50}{table.caption.54}%
+\contentsline {table}{\numberline {23}{\ignorespaces The sixteen Data Exchange documents and their dependencies.\relax }}{54}{table.Alph0.23}%
+\contentsline {table}{\numberline {24}{\ignorespaces Properties of \texttt {rl/instances/spr2026.xml}.\relax }}{55}{table.caption.55}%
+\contentsline {table}{\numberline {25}{\ignorespaces Artefacts derived from the Spr6 session.\relax }}{56}{table.caption.56}%
+\contentsline {table}{\numberline {26}{\ignorespaces Hard checks. The feasibility score averages the ten checks used in both modes. \texttt {room\_unavailable} applies to XML mode only and is not part of that average.\relax }}{57}{table.caption.57}%
+\contentsline {table}{\numberline {27}{\ignorespaces Source for each claim made in this report.\relax }}{59}{table.Alph0.27}%

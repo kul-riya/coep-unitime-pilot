@@ -1,0 +1,30 @@
+%_____________________________________________________________________________________________
+% List of Symbols (the template provides an empty heading; the entries below
+% are the symbols this report defines, with the section that defines them).
+%_____________________________________________________________________________________________
+\chapter*{List of Symbols}
+
+\begin{center}
+\begin{tabular}{@{}l p{8.2cm} l@{}}
+\toprule
+Symbol & Meaning & Section \\
+\midrule
+$\omega$ & current (partial) timetable in Iterative Forward Search & 3 \\
+$\sigma$ & best timetable found so far & 3 \\
+$S$ & set of students in the enrolment data & Appendix C \\
+$A$ & set of assigned classes in a solution & Appendix C \\
+$E(s)$ & assigned classes student $s$ is enrolled in & Appendix C \\
+$\mathrm{ov}(c_1,c_2)$ & classes $c_1$ and $c_2$ overlap for a student & Appendix C \\
+$C$ & student violation rate: conflicted students over students enrolled in at least two classes & 10, Appendix C \\
+$C_{\mathrm{checker}}$ & conflicted students over all students & Appendix C \\
+$H$ (checks) & set of hard checks in the aggregate score & Appendix C \\
+$P$ & set of preference checks in the aggregate score & Appendix C \\
+$r$ & pass rate of one check, in $[0,1]$ & Appendix C \\
+$K$ & solver iterations per reinforcement-learning macro-step ($K=50$) & 11 \\
+$\Phi$ & potential used for reward shaping & 11 \\
+$U$ & unassigned fraction of classes & 11 \\
+$H$ (violations) & number of hard violations & 11 \\
+$O$ & normalised soft objective & 11 \\
+\bottomrule
+\end{tabular}
+\end{center}

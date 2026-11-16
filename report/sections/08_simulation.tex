@@ -31,9 +31,9 @@ They are tracked because they are a tie that binds two divisions together in an 
 During this stage, three types of student conflict emerged and we needed to distinguish each type before we could do anything about it:
 
 \begin{itemize}
-  True overlap of two classes that the student is truly enrolled in. These are the types of conflicts that the solver should delete, and all 40 remaining conflicts in the final solution are of this type.
-  Artefacts of cross-division batches, where a clash only occurs as a result of a student being placed in another division's batch by section filling.
-  Artefacts of measurement: where the number of students reported has changed due to changes in the student population, rather than the timetable. Section~\ref{sec:experiments} analyses these.
+  \item True overlap of two classes that the student is truly enrolled in. These are the types of conflicts that the solver should delete, and all 40 remaining conflicts in the final solution are of this type.
+  \item Artefacts of cross-division batches, where a clash only occurs as a result of a student being placed in another division's batch by section filling.
+  \item Artefacts of measurement: where the number of students reported has changed due to changes in the student population, rather than the timetable. Section~\ref{sec:experiments} analyses these.
 \end{itemize}
 
 \subsection{UniTime debugging log}
@@ -43,7 +43,7 @@ This is not documented in the UniTime docs, so each symptom is listed with its r
 
 \begin{table}[H]
 \centering
-Table 1 shows the number of import and solver failures that were observed, along with the causes and resolutions.
+\caption{Import and solver failures that were observed, with their causes and resolutions.}
 \label{tab:debug}
 \footnotesize
 \begin{tabular}{@{}L{4.0cm}L{5.4cm}L{5.4cm}@{}}
@@ -51,34 +51,34 @@ Table 1 shows the number of import and solver failures that were observed, along
 \textbf{Symptom} & \textbf{Cause} & \textbf{Resolution} \\
 \midrule
 Every class reports \emph{``has no available room (class not loaded)''} although all rooms imported
-  & Buildings, built by file 7, are global and not scoped to the session, thus no session has
-    Wait for the teacher to tell you to pick up the buildings.
-  Click & \textbf{Administration\,$\rightarrow$\,Academic Sessions\,$\rightarrow$\,Buildings\,$\rightarrow$\,Update Data} and then reload the solver.
-Solver loads a few variables rather than hundreds of variables.
-  If there is no time pattern on the subpart, UniTime assumes that a class is a ``arrange hours'' subpart and excludes
+  & Buildings, built by file 7, are global and not scoped to the session, so no session has buildings
+    until it is told to pick them up
+  & \textbf{Administration\,$\rightarrow$\,Academic Sessions\,$\rightarrow$\,Buildings\,$\rightarrow$\,Update Data}, then reload the solver \\
+Solver loads a few variables rather than hundreds
+  & If there is no time pattern on the subpart, UniTime treats the class as ``arrange hours'' and excludes
     it from the solver
   & Import \texttt{13preferences.xml}, and re-import it whenever offerings are reloaded \\
-The imported archive is empty.
-  Data Exchange reads the archive root; & \texttt{zip -r} puts the documents in a directory.
-  & Flatten the name of the entries, like the archive scripts do now.
-Teachers aren't attached to classes
-  The 10 imported & Staff are not yet in the session's instructor list.
+The imported archive is empty
+  & Data Exchange reads the archive root; \texttt{zip -r} puts the documents in a directory
+  & Flatten the name of the entries, as the archive scripts do now \\
+Teachers are not attached to classes
+  & The staff imported by file 10 are not yet in the session's instructor list
   & \textbf{Courses\,$\rightarrow$\,Input Data\,$\rightarrow$\,Instructors\,$\rightarrow$\,Manage Instructor List} \\
-Solver reports no student conflicts \texttt{Student conflicts: 0} and exports an empty student block.
-  & \emph{Projected Student Course Demands} reads last-like demand and curriculum projections, of
-    where the session has neither, then 0 students load.
+Solver reports \texttt{Student conflicts: 0} and exports an empty student block
+  & \emph{Projected Student Course Demands} reads last-like demand and curriculum projections;
+    where the session has neither, zero students load
   & Set \emph{Student Course Demands} to \emph{Enrolled Student Course Demands} and reload \\
-When re-importing offerings, classes are unexpectedly deleted.
-  & \texttt{incremental="true"} will not delete unmatched offerings, but will delete
-    Classes that are not matched in offerings in the file.
-  Uncommit any saved solution first; & Treat file 12 as authoritative for the offerings it mentions;
-The exported solver XML does not contain any class or room names.
-  By default, the solution export is anonymised.
+Re-importing offerings deletes classes unexpectedly
+  & \texttt{incremental="true"} will not delete unmatched offerings, but will delete unmatched
+    classes within offerings in the file
+  & Uncommit any saved solution first, and treat file 12 as authoritative for the offerings it mentions \\
+The exported solver XML has no class or room names
+  & By default, the solution export is anonymised
   & Set \texttt{unitime.solution.export.names=true} in
     \textbf{Administration\,$\rightarrow$\,Defaults\,$\rightarrow$\,Configuration} \\
-The Student group import fails with a Hibernate \texttt{TransientObjectException}.
-  Combining two large groups into one transaction
-  Do not include & Emit group membership in the student records of file 14, but instead as bulk group updates \\
+Student group import fails with a Hibernate \texttt{TransientObjectException}
+  & Combining two large groups into one transaction
+  & Emit group membership in the student records of file 14, rather than as bulk group updates \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -93,9 +93,9 @@ To summarize: UniTime respects imported enrolments, if you tell the solver to do
 All three are required:
 
 \begin{enumerate}
-  Enrolments are read at all, with \emph{Student Course Demands} being replaced by \emph{Enrolled Student Course Demands};
-  \item \texttt{General.SwitchStudents=false, which means that the last pass of the sectioning does not allow for switching students between parallel sections to hide conflicts;
-  \item \texttt{Global.The loadStudentEnrlsFromSolution=true option is used, which means that sections are loaded from the stored enrolments and not recomputed.
+  \item Enrolments are read at all, with \emph{Student Course Demands} set to \emph{Enrolled Student Course Demands}.
+  \item \texttt{General.SwitchStudents=false}, so the last sectioning pass does not move students between parallel sections to hide conflicts.
+  \item \texttt{Global.LoadStudentEnrlsFromSolution=true}, so sections are loaded from the stored enrolments and not recomputed.
 \end{enumerate}
 
 With these enabled, the conflict count rises from an apparent zero to a real 40, exactly what we wanted to see: see Section~\ref{sec:experiments}.

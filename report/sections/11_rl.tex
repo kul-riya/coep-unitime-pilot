@@ -3,46 +3,48 @@
 
 \subsection{Research question and hypothesis}
 
-The weight sweep of Section~\ref{sec:experiments} tunes a single scalar. A more ambitious question
-is whether the \emph{choice of search move} can be learned. At each step CPSolver's neighbourhood
-selector picks a kind of move---change a time, change a room, swap two classes, ask for a
-suggestion---according to fixed probabilities. The hypothesis of this part of the project was that
-a policy conditioned on the state of the search could choose better than those fixed probabilities,
-and thereby reach a lower student-conflict rate within the same budget.
+The weight sweep of Section~\ref{sec:experiments} is used to tune one scalar. An even more
+ambitious question is whether the \emph{choice of search move} can be learned. CPSolver's
+neighbourhood selector selects a type of move at each step---change a time, change a room, swap
+two classes, ask for a suggestion---from a set of moves, by using fixed probabilities. The
+assumption of this part of the project was that a policy based on the state of the search could
+perform better than these fixed probabilities, and thus achieve a lower rate of student conflict
+for the same spending.
 
-A success criterion was fixed in advance: a learned policy would be considered to have succeeded if
-it reduced the student violation rate by at least 25\,\% relative to a tuned baseline, at equal
-wall-clock budget, on a held-out term. Fixing the threshold before running the experiment is what
-makes the negative result reported below meaningful.
+A success criterion was predetermined: a learned policy would be deemed a success if it decreased
+the student violation rate by at least 25\,\% compared to a tuned baseline policy, at the same
+wall-clock budget, on a held-out term. The negative result reported below is meaningful because
+the threshold was fixed prior to running the experiment.
 
 \subsection{Design invariant}
 
-The layer is implemented as a \texttt{NeighbourSelection}, which is CPSolver's own extension point
-for move selection. This matters for safety: \emph{nothing in the layer writes a placement}. Every
-candidate move is produced by a stock CPSolver generator and is then accepted or rejected by
-CPSolver's Great Deluge acceptance criterion~\cite{dueck1993deluge}, exactly as in an ordinary solve. Hard constraints are
-enforced by the same filter that enforces them without the layer, and
-\texttt{Basic.DisobeyHard} remains \texttt{false}. A learned policy can therefore make the search
-slower or less effective, but it cannot make the timetable illegal.
+The layer is realised as a \texttt{NeighbourSelection}, CPSolver's extension point for move
+selection. This is important for safety, as no placement is written in the layer. Every candidate
+move comes from a stock CPSolver generator and is then accepted or rejected by CPSolver's Great
+Deluge acceptance criterion~\cite{dueck1993deluge}, the same as in a normal solve. The hard
+constraints do not need to be re-enforced by any extra filter; they are enforced by the same
+filter as in the absence of the layer, and \texttt{Basic.DisobeyHard} remains \texttt{false}. An
+informed policy may thus make the search slower or less effective, but may not render the
+timetable illegal.
 
 \subsection{The decision process}
 
-The search is modelled as a Markov decision process (MDP)~\cite{sutton2018rl}, a formalism in which an agent observes a
-state, chooses an action, and receives a reward that depends on the resulting state. Here the agent
-is consulted once per \emph{macro-step} of $K = 50$ solver iterations rather than at every
-iteration, which keeps the inference cost negligible against the cost of the search itself.
+The search is formulated as a Markov decision process (MDP)~\cite{sutton2018rl}, in which an agent
+sees a state, takes an action, and gets a reward based on the state that follows. Here the agent
+is sampled only once every $K = 50$ solver iterations, rather than at every iteration, so the cost
+of the inference itself is not significantly higher than the cost of the search itself.
 
-\paragraph{State.} A 48-dimensional real vector, listed in \texttt{StateEncoder.NAMES}, grouped as:
-conflict features (violation rate, pair rate, intensity, concentration, the share of classes
-involved in a conflict, pairs per conflicted student); a ten-bin histogram of conflict load across
-the day; search-progress features (improvement gap, recent slope, progress, acceptance rate, idle
-and null fractions, churn); solution features (assigned ratio, unassigned fraction, hard
-violations, and normalised time, room, distribution, too-big-room, useless-half-hour, back-to-back
-and broken-pattern criteria); utilisation features for rooms and instructors; and a one-hot record
-of the previous operator.
+\paragraph{State.} A real vector with 48 dimensions, as listed in \texttt{StateEncoder.NAMES},
+grouped as: conflict features (violation rate, pair rate, intensity, concentration, the share of
+classes involved in a conflict, pairs per conflicted student); a ten-bin histogram of conflict
+load across the day; search-progress features (improvement gap, recent slope, progress, acceptance
+rate, idle and null fractions, churn); solution features (assigned ratio, unassigned fraction,
+hard violations, and normalised time, room, distribution, too-big-room, useless-half-hour,
+back-to-back and broken-pattern criteria); utilisation features for rooms and instructors; and a
+one-hot record of the previous operator.
 
-\paragraph{Actions.} Eight operators, of which six are stock CPSolver generators and two were
-written for this project to bias sampling towards classes that are actually in conflict:
+\paragraph{Actions.} Eight operators, six of which are stock CPSolver generators and two of which
+were developed for this project and biased to sample classes in conflict:
 
 \begin{table}[H]
 \centering
@@ -53,94 +55,112 @@ written for this project to bias sampling towards classes that are actually in c
 \toprule
 \textbf{Id} & \textbf{Operator} & \textbf{Description} \\
 \midrule
-0 & \texttt{TimeChange}          & move one class to a different time, same room \\
-1 & \texttt{RoomChange}          & move one class to a different room, same time \\
-2 & \texttt{TimeAndRoom}         & move one class to a different time and room \\
-3 & \texttt{LectureSwap}         & exchange the placements of two classes \\
+0 & \texttt{TimeChange}          & change a class time in the same room \\
+1 & \texttt{RoomChange}          & change room, same time, same class \\
+2 & \texttt{TimeAndRoom}         & relocate one class to a different time or room \\
+3 & \texttt{LectureSwap}         & swap the class locations \\
 4 & \texttt{Suggestion}          & CPSolver's suggestion search; repairs unassigned classes \\
-5 & \texttt{StudentSwap}         & move a student between parallel sections \\
-6 & \texttt{BiasedTimeChange}    & time change, sampled towards conflicted classes \\
+5 & \texttt{StudentSwap}         & exchange a student between parallel courses \\
+6 & \texttt{BiasedTimeChange}    & time change, sampled towards conflicting classes \\
 7 & \texttt{BiasedStudentSwap}   & student swap, sampled towards conflicted students \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Operators are masked when they cannot apply: operator 4 is masked while the solution is complete,
-since suggestions only repair unassigned classes, and operators 5 and 7 are masked when no class
-has an alternative section. An operator that returns no move is masked for the remainder of the
-macro-step and the policy is re-queried with the updated mask. Because the institution assigns
-batches administratively, the two student-swap operators can be disabled permanently through
-\texttt{Rl.DisabledOperators}, which makes the layer consistent with the pinning policy of
+Operators which cannot apply are masked: operator 4 is masked when the solution is complete,
+because suggestions only repair unassigned classes, and operators 5 and 7 are masked if there is
+no alternative section for the corresponding class. An operator that returns no move is masked for
+the rest of the macro-step and the policy is re-queried with the new mask. The two student-swap
+operators can be permanently disabled through \texttt{Rl.DisabledOperators}, since the batches are
+assigned administratively. This keeps the layer consistent with the pinning policy of
 Section~\ref{sec:setup}.
 
-\paragraph{Reward.} A potential-based shaping term over the incumbent solution,
+\paragraph{Reward.} A shaping term for the incumbent solution, based on potential,
 \[
   \Phi = -C - 0.5\,U - 5\,H - 0.05\,O ,
 \]
 where $C$ is the student violation rate, $U$ the unassigned fraction, $H$ the hard violations and
-$O$ the normalised soft objective. The step reward is the change in $\Phi$ between successive
-macro-steps, less a constant $10^{-4}$ per step to discourage stalling. Potential-based shaping~\cite{ng1999shaping} is
-used so that the reward signal is dense without altering the ordering of final solutions.
+$O$ the normalised soft objective. The step reward is the difference in $\Phi$ between successive
+macro-steps, minus a fixed penalty of $10^{-4}$ per macro-step to prevent stalling.
+Potential-based shaping~\cite{ng1999shaping} is employed so that the reward signal is dense but
+does not change the ordering of final solutions.
 
 \subsection{Architecture}
 
-Figure~\ref{fig:rl} shows the two configurations in which the layer runs. During training, each
-worker is a Java virtual machine holding a resident solver and exposing reset and step operations
-over gRPC, a remote-procedure-call framework; the Python side runs Maskable PPO (Proximal Policy
-Optimization~\cite{schulman2017ppo}, a policy-gradient reinforcement-learning algorithm, with action masking~\cite{schulte2017maskable}) across
-several such workers. In production there is no Python and no network: the trained policy is
-exported to ONNX (Open Neural Network Exchange, a portable model format) and evaluated inside the
-solver's own JVM, with a timeout and a fallback to the stock selector if inference is too slow.
+Figure~\ref{fig:rl} shows the two modes in which the layer is executed. Each worker is a virtual
+machine with a resident solver, providing reset and step operations via gRPC, a remote-procedure
+call protocol. A number of such workers are used to train Maskable PPO (Proximal Policy
+Optimization~\cite{schulman2017ppo}, a policy-gradient reinforcement-learning algorithm, with
+action masking~\cite{schulte2017maskable}) on the Python side. Training consists of three
+EnvServer workers, each with a JVM and a solver, driven by the Python Maskable PPO trainer via
+gRPC Reset and Step calls, and a behaviour-cloning prior from SHADOW trajectories. In production
+there is no Python and no network: the trained policy is exported to ONNX (Open Neural Network
+Exchange, a portable model format) and evaluated within the solver's own JVM, with a timeout and a
+fallback to the stock selector if the model evaluates too slowly. UniTime or the headless CPSolver
+calls \texttt{RlNeighbourSelection} every $K = 50$ iterations. It passes the 48-dimensional state
+vector and the operator mask to ONNX Runtime within the same JVM (about 0.08\,ms per forward
+pass), which returns an operator id. If inference times out or takes a long time, the stock
+selector takes over.
 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
-  font=\small,
-  blk/.style={draw,rounded corners=2pt,align=center,font=\scriptsize,minimum height=8mm,inner xsep=4pt},
+  font=\scriptsize,
+  blk/.style={draw,rounded corners=2pt,align=center,font=\scriptsize,inner xsep=3.5pt,inner ysep=2.5pt},
   jvm/.style={blk,fill=orange!14},
   py/.style={blk,fill=coepblue!12},
   pol/.style={blk,fill=green!12},
-  ar/.style={-{Stealth[length=1.8mm]},gray!75},
-  lbl/.style={font=\scriptsize\bfseries}
+  ar/.style={-{Stealth[length=1.7mm]},gray!70},
+  lbl/.style={font=\scriptsize\bfseries},
+  tag/.style={font=\tiny,fill=white,inner sep=1.2pt}
 ]
-% --- training
-\node[lbl] (tl) {Training};
-\node[py, below=4mm of tl, text width=30mm] (ppo) {Maskable PPO\\{\tiny Python, Gymnasium}};
+% Training. The three workers are the widest row; everything else in this
+% column is centred on them, and the production column is placed to their right.
+\node[py, text width=34mm] (ppo) {Maskable PPO\\{\tiny Python, Gymnasium}};
 \node[jvm, below=9mm of ppo, text width=24mm] (w1) {EnvServer worker 1\\{\tiny JVM + solver}};
-\node[jvm, right=3mm of w1, text width=20mm] (w2) {worker 2};
-\node[jvm, right=3mm of w2, text width=20mm] (w3) {worker 3};
-\draw[ar] (ppo.south) -- node[right,font=\tiny,pos=0.45]{gRPC: Reset / Step} (w1.north);
-\draw[ar] (ppo.south) -- (w2.north);
+\node[jvm, anchor=north west, text width=16.5mm] (w2) at ($(w1.north east)+(2.5mm,0)$) {worker 2};
+\node[jvm, anchor=north west, text width=16.5mm] (w3) at ($(w2.north east)+(2.5mm,0)$) {worker 3};
+\draw[ar] (ppo.south) -- (w1.north);
+\draw[ar] (ppo.south) -- node[tag, midway] {gRPC: Reset / Step} (w2.north);
 \draw[ar] (ppo.south) -- (w3.north);
-\node[py, below=8mm of w2, text width=34mm] (bc) {behaviour cloning prior\\{\tiny from SHADOW trajectories}};
+\coordinate (wmid) at ($(w1.south)!0.5!(w3.south)$);
+\node[py, below=4mm of wmid, text width=42mm] (bc)
+  {behaviour cloning prior\\{\tiny from SHADOW trajectories}};
 \draw[ar] (bc.north) -- (w2.south);
-\node[pol, right=14mm of ppo, text width=24mm] (onnx) {export to ONNX\\{\tiny \texttt{policy.onnx}}};
-\draw[ar] (ppo) -- (onnx);
+\node[pol, below=4mm of bc, text width=32mm] (onnx)
+  {export to ONNX\\{\tiny \texttt{policy.onnx}}};
+\draw[ar] (bc.south) -- (onnx.north);
+\node[lbl, above=2.5mm of ppo] {Training};
 
-% --- production
-\node[lbl, right=30mm of tl] (pl) {Production};
-\begin{scope}[xshift=84mm]
-\node[jvm, below=4mm of pl, text width=38mm] (solver) {UniTime / headless CPSolver};
-\node[blk, below=7mm of solver, text width=38mm, fill=coepblue!8] (rlns) {\texttt{RlNeighbourSelection}\\{\tiny every $K{=}50$ iterations}};
-\node[pol, below=7mm of rlns, text width=30mm] (ort) {ONNX Runtime in-JVM\\{\tiny $\sim$0.08\,ms forward pass}};
-\node[blk, below=7mm of ort, text width=38mm, fill=gray!12] (fb) {fallback to stock selector\\{\tiny on timeout or slow calls}};
-\draw[ar] (solver) -- node[right,font=\tiny]{state} (rlns);
-\draw[ar] (rlns) -- node[right,font=\tiny]{48-d vector + mask} (ort);
-\draw[ar] (ort) -- node[right,font=\tiny]{operator id} (fb);
-\draw[ar] (fb.west) -- ++(-7mm,0) |- (solver.west);
-\end{scope}
-\draw[ar,dashed] (onnx.east) -- ++(7mm,0) |- (ort.west);
+% Production, top-aligned with the PPO box and clear of the workers.
+\coordinate (prodwest) at ($(ppo.north -| w3.east)+(12mm,0)$);
+\node[jvm, anchor=north west, text width=46mm] (solver) at (prodwest)
+  {UniTime / headless CPSolver};
+\node[blk, below=8mm of solver, text width=46mm, fill=coepblue!8] (rlns)
+  {\texttt{RlNeighbourSelection}\\{\tiny every $K{=}50$ iterations}};
+\node[pol, below=8mm of rlns, text width=46mm] (ort)
+  {ONNX Runtime in-JVM\\{\tiny $\sim$0.08\,ms forward pass}};
+\node[blk, below=8mm of ort, text width=46mm, fill=gray!12] (fb)
+  {fallback to stock selector\\{\tiny on timeout or slow calls}};
+\node[lbl, above=2.5mm of solver] {Production};
+\draw[ar] (solver.south) -- node[tag, midway] {state} (rlns.north);
+\draw[ar] (rlns.south) -- node[tag, midway] {48-d vector + mask} (ort.north);
+\draw[ar] (ort.south) -- node[tag, midway] {operator id} (fb.north);
+\draw[ar] (fb.east) -- ++(6mm,0) |- (solver.east);
+\coordinate (gutter) at ($(w3.east)+(6mm,0)$);
+\draw[ar, dashed] (onnx.east) -- (onnx.east -| gutter) |- (ort.west);
 \end{tikzpicture}
 \caption{Training and production configurations of the learning layer. During training, Python
-drives several resident JVM workers over gRPC; in production the frozen policy runs inside the
-solver's own JVM with a fallback path.}
+drives three EnvServer workers over gRPC, with a behaviour-cloning prior from SHADOW
+trajectories; in production the frozen policy runs inside the solver's own JVM and falls back to
+the stock selector.}
 \label{fig:rl}
 \end{figure}
 
 \subsection{Evaluation design}
 
-Five arms were defined so that any effect attributable to learning could be separated from effects
-attributable to re-weighting or to a different search strategy.
+Five arms were defined to isolate an effect of learning from an effect of re-weighting or from a
+different search strategy.
 
 \begin{table}[H]
 \centering
@@ -152,7 +172,7 @@ attributable to re-weighting or to a different search strategy.
 \textbf{Arm} & \textbf{Role} & \textbf{Selector} & \textbf{Comparator} \\
 \midrule
 B0 & untuned baseline & \texttt{FixCompleteSolutionNeighbourSelection}, stock weights & native \\
-B1 & tuned baseline   & as B0, with the student-conflict weight raised                & native \\
+B1 & tuned baseline   & as B0, but the student-conflict weight is increased            & native \\
 B2 & strategy control & \texttt{SimpleSearch} Great Deluge, student swap, suggestions  & native \\
 L  & online learning  & the layer with LinUCB over the eight operators                & lexicographic \\
 R  & frozen policy    & the layer with the exported ONNX policy                       & lexicographic \\
@@ -160,51 +180,53 @@ R  & frozen policy    & the layer with the exported ONNX policy                 
 \end{tabular}
 \end{table}
 
-Arm L uses LinUCB~\cite{li2010linucb}, a disjoint linear contextual bandit from the
-upper-confidence-bound family~\cite{auer2002ucb}: it is an online, linear method, not a neural
-network, and serves as a cheap learner that needs no pre-training. Arm R is the PPO-trained policy
-frozen into ONNX. A sixth mode, SHADOW, executes the default selector while logging what the policy
-\emph{would} have chosen, and supplies the trajectories for behaviour cloning.
+Arm L is a linear method based on LinUCB~\cite{li2010linucb}, from the family of
+upper-confidence-bound algorithms~\cite{auer2002ucb}. It is an online algorithm, not a neural
+network, and a cheap learner that does not require any pre-training. The PPO-trained policy is
+the policy in arm R, which is frozen to ONNX. SHADOW is a sixth mode that runs the default
+selector while recording the behaviour it \emph{would} have chosen, and provides the trajectories
+for behaviour cloning.
 
-\subsection{What was implemented, measured, and not established}
+\subsection{What was put into place, assessed and not determined}
 
-The layer is complete. Its central claim is not.
+The layer is full. Its key premise is not.
 
-\paragraph{Implemented.} 25 Java classes and 11 Python modules: the neighbour-selection wrapper,
-all eight operators, the incremental conflict oracle, the 48-feature encoder, four policy back-ends,
-the headless runner, the gRPC environment and a synthetic instance generator. The oracle matches a
-full recompute over 200 batches of random moves, and the exported ONNX graph matches the PyTorch
-model.
+\paragraph{Implemented.} 25 Java classes and 11 Python modules: a neighbour-selection wrapper, all
+eight operators, the incremental conflict oracle, the 48-feature encoder, four policy back-ends,
+the headless runner, the gRPC environment and a synthetic instance generator. It recovers a full
+recompute over more than 200 batches of random moves, and the exported ONNX graph is the same as
+the PyTorch model.
 
-\paragraph{Measured on synthetic data only.} On 120 classes, 600 students and 6 rooms, 30 seconds,
-one seed, the pipeline runs end to end: about 100 macro-steps per second per worker, reset under a
-second, an ONNX forward pass of about 0.08\,ms, and a PyTorch--ONNX deviation of $2\times10^{-6}$.
-Every arm ties at $C = 0.133$ and the behaviour-cloned policy is worse, at $0.267$, having collapsed
-onto one operator. The project's own notes call this a pipeline check, and so does this report.
+\paragraph{Based on synthetic data, only.} For 120 classes, 600 students, 6 rooms, 30 seconds and
+one seed, the pipeline runs end to end, with an average of 100 macro-steps per second per worker,
+0.08\,ms for an ONNX forward pass, and a PyTorch--ONNX deviation of $2\times10^{-6}$. All arms tie
+at $0.133$ and the behaviour-cloned policy is inferior, at $0.267$, having collapsed on one
+operator. This is a pipeline check, as noted in the project's own notes and in this report.
 
-\paragraph{Measured on real data.} Training ran for 100{,}000 timesteps on three workers over the
-Spr6 instance and exported a policy. The only bake-off on a real instance covers B0, B1 and B2, and
-that instance was already conflict-free when loaded, so it could not have separated the arms.
+\paragraph{Based on the actual data.} Training was conducted for 100{,}000 timesteps on three
+workers on the Spr6 instance, and a policy was exported. The only bake-off on a real instance is
+for B0, B1 and B2, and that instance, when loaded, was conflict-free, so it could not have
+separated the arms.
 
-\paragraph{Not established.} No claim is made that the learned policy beats the baselines. Arms L
-and R have never run on a COEP instance, and there is no held-out term.
+\paragraph{Not established.} No claim is made that the learned policy is better than the
+baselines. There is no held-out term, and arms L and R have never been run on a COEP instance.
 
-\subsection{Outcome: the control answered the question}
+\subsection{Outcome: the weight sweep, not the learned comparison}
 
-Arm B1 exists to ask whether the objective was simply under-weighted, and
-Section~\ref{sec:experiments} shows that it was. Raising the weight on a fixed instance took the
-median violation rate from 0.0414 to 0.0030 or below, a reduction of over 90\,\%, well past the
-25\,\% the learned policy had been set to beat. The sweep summary says so directly: the research
-question is answered in the negative, and the learned run is optional.
+Arm B1 was created to determine whether the objective was under-weighted. On this fixed instance,
+raising the weight takes the median from 0.0414 to 0.0030 at weight 2, the best weight on disk
+(Section~\ref{sec:experiments}). The 25\,\% bar was a different test, a learned policy against a
+tuned baseline on a held-out instance, and that comparison was not run.
 
-That is a finding, not a failure. On this instance and this budget the residual conflicts came from
-how the objective was priced, not from how the search explored, and a tuned stock solver is enough.
-The oracle, the encoder and the headless runner stay useful: they are what made the controlled
-comparison possible, and they are ready if a larger instance turns out not to yield to the weight.
+This is a discovery, not a mistake. On this instance and this budget the residual conflicts were
+due to the objective being priced, rather than to how the search explored, and a tuned stock
+solver will suffice. This does not put the oracle, the encoder or the headless runner out of use:
+they are what facilitated the controlled comparison, and they will be available if a larger
+instance fails to yield to the weight.
 
 \subsection{Risks}
 
-Inference cost is limited by macro-stepping, the ONNX timeout and the fallback. A policy that
-cheats by leaving classes unassigned is discouraged by the unassigned term in $\Phi$ and by a
-callback that drops the gradient of any episode whose assigned ratio falls by more than five
-points. Over-fitting to one term is not handled, which is why no generalisation claim is made.
+Inference cost is limited by macro-stepping, the ONNX timeout and the fallback. The unassigned
+term in $\Phi$ discourages a policy that cheats by leaving classes unassigned, since it results in
+a decrease in the gradient for any episode in which the assigned ratio has fallen by less than
+five points. No generalisation claim is made, as over-fitting to one term is not handled.
